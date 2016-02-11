@@ -1,0 +1,57 @@
+#imagewrapper a img {
+border: none;
+}
+
+#imagewrapper {
+position: relative;
+float: left;
+}
+
+#imagewrapper span {
+position: absolute;
+z-index: 2;
+height: 12px;
+width: 12px;
+}
+
+
+
+#secondimage2 a img {
+border: none;
+}
+
+#secondimage2 {
+position: relative;
+float: left;
+}
+
+#secondimage2 span {
+position: absolute;
+z-index: 2;
+height: 12px;
+width: 12px;
+}
+
+.curve1 {
+
+top: 0;
+right: 0;
+}
+
+.curve2 {
+background: transparent url(topleft.gif) top left no-repeat;
+top: 0;
+left: 0;
+}
+
+.curve3 {
+background: transparent url(bottomright.gif) bottom right no-repeat;
+bottom: 0;
+right: 0;
+}
+
+.curve4 {
+
+bottom: 0;
+left: 0;
+}

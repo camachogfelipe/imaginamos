@@ -1,0 +1,105 @@
+/* CSS Document */
+
+
+
+
+
+
+
+
+
+
+
+
+#slidefechaevent {
+float:left;
+margin-bottom:12px;
+width:266px;
+height:230px;
+margin-top:12px;
+background-image: url(../images/bgmodulo.png);
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+#slidefechaeventact {
+float:left;
+margin-bottom:12px;
+width:245px;
+height:auto;
+margin-top:12px;
+border-top-width: 0px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+border-top-style: dotted;
+border-right-style: none;
+border-bottom-style: solid;
+border-left-style: none;
+border-color: #CCCCCC;
+background-image: url(../images/icionballonfechaact.png);
+background-repeat: no-repeat;
+background-position: left top;
+}
+
+	
+#env_titslideevento {
+  font-family: 'AvantGardeMdBTMedium';
+float:left;
+text-align:left;
+width:241px;	
+margin-top:4px;
+font-size: 18px;
+color: #d5d5d5;
+font-weight:bold;
+}
+
+#env_textslideevento {
+  font-family: 'AvantGardeMdBTMedium';
+	float:left;
+	text-align:left;
+	width:241px;
+	margin-top:4px;
+	font-size: 12px;
+	color: #686868;
+	line-height: 18px;
+}
+
+
+
+
+#env_enlacemas {
+	font-family: 'AvantGardeMdBTMedium';
+	float:left;
+	text-align:left;
+	width:210px;
+	height:35px;
+	margin-top:10px;
+	font-size: 12px;
+	color: #686868;
+	background-image: url(../images/iconmas.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left:23px;
+}
+#env_enlacemas a {
+font-family: 'AvantGardeMdBTMedium';
+font-size: 12px;
+color: #686868;
+text-decoration:none;
+}
+#env_enlacemas a:hoover {
+font-family: 'AvantGardeMdBTMedium';
+font-size: 12px;
+color: #777726;
+text-decoration:none;
+}
+#env_enlacemas a:active {
+font-family: 'AvantGardeMdBTMedium';
+font-size: 12px;
+color: #686868;
+text-decoration:none;
+}
+
+
+

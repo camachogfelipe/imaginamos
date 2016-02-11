@@ -1,0 +1,84 @@
+Function: getUsersOnline
+File: functions.php
+PDOException: 3D000-SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+
+Function: getUsersOnline
+File: functions.php
+PDOException: 3D000-SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+
+Function: getUserRooms
+File: functions.php
+PDOException: 3D000-SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+
+Function: getUserGenders
+File: functions.php
+PDOException: 3D000-SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+
+Function: getLoginNews
+File: functions.php
+PDOException: 3D000-SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+
+Function: db_connect
+File: functions.php
+PDOException: 1045-SQLSTATE[HY000] [1045] Access denied for user 'JABALIES'@'localhost' (using password: YES)
+
+Function: db_connect
+File: functions.php
+PDOException: 2002-SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket 'MySQL' (2)
+
+Function: db_connect
+File: functions.php
+PDOException: 2002-SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket 'MySQL' (2)
+
+Function: db_connect
+File: functions.php
+PDOException: 2002-SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket 'MySQL' (2)
+
+Function: db_connect
+File: functions.php
+PDOException: 2002-SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket 'MySQL' (2)
+
+Function: db_connect
+File: functions.php
+PDOException: 2002-SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket 'MySQL' (2)
+
+Function: db_connect
+File: functions.php
+PDOException: 2002-SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket 'MySQL' (2)
+
+Function: db_connect
+File: functions.php
+PDOException: 2002-SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket 'MySQL' (2)
+
+Function: db_connect
+File: functions.php
+PDOException: 2002-SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket 'MySQL' (2)
+
+Function: db_connect
+File: functions.php
+PDOException: 2002-SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket 'MySQL' (2)
+
+Function: db_connect
+File: functions.php
+PDOException: 2002-SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket 'MySQL' (2)
+
+Function: db_connect
+File: functions.php
+PDOException: 2002-SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket 'MySQL' (2)
+
+Function: db_connect
+File: functions.php
+PDOException: 1040-SQLSTATE[08004] [1040] Too many connections
+
+Function: db_connect
+File: functions.php
+PDOException: 1040-SQLSTATE[08004] [1040] Too many connections
+
+Function: db_connect
+File: functions.php
+PDOException: 1040-SQLSTATE[HY000] [1040] Too many connections
+
+Function: db_connect
+File: functions.php
+PDOException: 1040-SQLSTATE[08004] [1040] Too many connections
+

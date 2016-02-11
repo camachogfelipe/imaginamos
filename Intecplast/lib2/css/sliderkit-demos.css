@@ -1,0 +1,117 @@
+
+
+
+
+/*---------------------------------
+
+ *  Photos slider > With nav bullets
+
+ *---------------------------------*/
+
+.photoslider-bullets{width:940px;height:420px; margin:auto; float:right;}
+
+
+
+/* Nav */
+
+.photoslider-bullets .sliderkit-nav{position:absolute;top:308px;left:7px;}
+
+.photoslider-bullets .sliderkit-nav-clip ul li{float:left;margin:0 7px 0 0;}
+
+
+
+
+
+
+
+
+
+
+.sliderkit .sliderkit-nav-clip {
+	width:700px !important;
+}
+
+.photoslider-bullets .sliderkit-nav-clip ul li a{
+
+	width:220px;
+
+	height:37px;
+
+	background-repeat: repeat-x;
+
+	background-position: top;
+
+	font-family: 'DejaVuSansCondensed';
+
+	font-size:16px;
+
+	text-decoration: none;
+
+	text-align:center;
+
+	float:left;
+
+	color: #464646;
+
+	padding-top:12px;
+
+	padding-bottom:10px;
+
+	font-weight:bold;
+
+
+
+	
+
+	
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+.photoslider-bullets .sliderkit-nav-clip ul li.sliderkit-selected a{
+
+
+
+	background-image: url(../../images/sombraover.png);
+
+	background-repeat: no-repeat;
+
+	background-position: 0 0;
+
+	font-family: 'DejaVuSansCondensed';
+
+	font-size:16px;
+
+	text-decoration: none;
+
+	text-align:center;
+
+	float:left;
+
+	color: #3F8AC2;
+
+		padding-top:12px;
+
+	padding-bottom:10px;
+
+	font-weight:bold;
+
+	}
+
+	
+
+
+
+
+
+
+

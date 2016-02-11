@@ -1,0 +1,876 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*---------------------------------------------------
+
+* Nombre del proyecto: 				STANDARD FORM
+* Nombre del archivo: 				s_form.css
+* Descripción:						Hoja de estilos formulario
+* Fecha de creación:				4 de Abril de 2013
+* Autor:							Adri Rodríguez
+
+== COMENTARIOS ===========
+
+El formulario maneja width:100%, con lo que se adapta al div que lo contiene.
+
+Para implementar el formulario debemos poner al <form> la clase  ".s_form".
+
+Tenemos clases secundarios para customizar algunas opciones:
+
+- 2 columnas (sólo más de 480px de ancho):
+
+	Class:  ".s_form_columns"
+	
+- label e input en paralelo (sólo más de 480px de ancho):
+
+	Class:  ".s_form_inline"
+
+---------------------------------------------------*/
+
+
+
+/*--------------------------------ELEMENTOS FORMULARIO--------------------------------*/
+
+/* GENERALES 
+
+*/
+.s_form legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 40px;
+  color: #333333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.s_form .clear{
+	clear:both;
+}
+
+.s_form legend small {
+  font-size: 15px;
+  color: #999999;
+}
+
+.s_form fieldset{
+	border: 0 none;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.s_form label,
+.s_form input,
+.s_form button,
+.s_form select,
+.s_form textarea {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.s_form input,
+.s_form button,
+.s_form select,
+.s_form textarea {
+  font-family:inherit;
+  min-height: 30px;
+}
+
+.s_form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.s_form,
+.s_form label,
+.s_form select, 
+.s_form textarea,
+.s_form input[type="text"],
+.s_form input[type="password"],
+.s_form input[type="datetime"],
+.s_form input[type="datetime-local"],
+.s_form input[type="date"],
+.s_form input[type="month"],
+.s_form input[type="time"],
+.s_form input[type="week"],
+.s_form input[type="number"],
+.s_form input[type="email"],
+.s_form input[type="url"],
+.s_form input[type="search"],
+.s_form input[type="tel"],
+.s_form input[type="color"]{
+	
+    width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.s_form select,
+.s_form textarea,
+.s_form input[type="text"],
+.s_form input[type="password"],
+.s_form input[type="datetime"],
+.s_form input[type="datetime-local"],
+.s_form input[type="date"],
+.s_form input[type="month"],
+.s_form input[type="time"],
+.s_form input[type="week"],
+.s_form input[type="number"],
+.s_form input[type="email"],
+.s_form input[type="url"],
+.s_form input[type="search"],
+.s_form input[type="tel"],
+.s_form input[type="color"]{
+  display: inline-block;
+  height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.s_form textarea {
+  height: auto;
+}
+
+.s_form textarea,
+.s_form input[type="text"],
+.s_form input[type="password"],
+.s_form input[type="datetime"],
+.s_form input[type="datetime-local"],
+.s_form input[type="date"],
+.s_form input[type="month"],
+.s_form input[type="time"],
+.s_form input[type="week"],
+.s_form input[type="number"],
+.s_form input[type="email"],
+.s_form input[type="url"],
+.s_form input[type="search"],
+.s_form input[type="tel"],
+.s_form input[type="color"]{
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	 -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	 -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+	   -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+		  transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.s_form textarea:focus,
+.s_form input[type="text"]:focus,
+.s_form input[type="password"]:focus,
+.s_form input[type="datetime"]:focus,
+.s_form input[type="datetime-local"]:focus,
+.s_form input[type="date"]:focus,
+.s_form input[type="month"]:focus,
+.s_form input[type="time"]:focus,
+.s_form input[type="week"]:focus,
+.s_form input[type="number"]:focus,
+.s_form input[type="email"]:focus,
+.s_form input[type="url"]:focus,
+.s_form input[type="search"]:focus,
+.s_form input[type="tel"]:focus,
+.s_form input[type="color"]:focus{
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+
+.s_form input[type="radio"],
+.s_form input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  *margin-top: 0;
+  line-height: normal;
+}
+
+.s_form input[type="file"],
+.s_form input[type="image"],
+.s_form input[type="submit"],
+.s_form input[type="reset"],
+.s_form input[type="button"],
+.s_form input[type="radio"],
+.s_form input[type="checkbox"] {
+  width: auto;
+}
+
+.s_form select,
+.s_form input[type="file"] {
+  height: 30px;
+  /* In IE7, the height of the select element cannot be changed by height, only font-size */
+
+  *margin-top: 4px;
+  /* For IE7, add top margin to align select with labels */
+
+  line-height: 30px;
+}
+
+.s_form select {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.s_form select[multiple],
+.s_form select[size] {
+  height: auto;
+}
+
+.s_form select:focus,
+.s_form input[type="file"]:focus,
+.s_form input[type="radio"]:focus,
+.s_form input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.s_form input:-moz-placeholder,
+.s_form textarea:-moz-placeholder {
+  color: #999999;
+}
+
+.s_form input:-ms-input-placeholder,
+.s_form textarea:-ms-input-placeholder {
+  color: #999999;
+}
+
+.s_form input::-webkit-input-placeholder,
+.s_form textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.s_form .radio,
+.s_form .checkbox {
+  min-height: 20px;
+  padding-left: 20px;
+}
+
+.s_form .radio input[type="radio"],
+.s_form .checkbox input[type="checkbox"] {
+    float: left;
+    margin: 0;
+    max-height: 20px;
+    min-height: 20px;
+    width: 20px;
+}
+
+.s_form .radio.inline, 
+.s_form .checkbox.inline {
+    margin-right: 10px;
+}
+.s_form .radio.inline, 
+.s_form .checkbox.inline {
+    display: inline-block;
+    margin-bottom: 0;
+    padding-top: 5px;
+    vertical-align: middle;
+	width: auto;
+}
+
+.s_form .select2-container {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.s_form input[disabled], 
+.s_form select[disabled], 
+.s_form textarea[disabled], 
+.s_form input[readonly], 
+.s_form select[readonly], 
+.s_form textarea[readonly] {
+    background-color: #EEEEEE;
+    cursor: default;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+.s_form .input-append .add-on:last-child, 
+.s_form .input-append .btn:last-child, 
+.s_form .input-append .btn-group:last-child > .dropdown-toggle{
+    border-radius: 0 4px 4px 0;
+}
+.s_form .input-append .add-on, 
+.s_form .input-prepend .add-on {
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    height: 28px;
+    line-height: 20px;
+    min-width: 20px;
+    padding: 0;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+    vertical-align: top;
+    width: auto;
+}
+.s_form .input-append.date .add-on i, 
+.s_form .input-prepend.date .add-on i {
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+.s_form .add-on i {
+    margin: 6px auto 0 3px;
+}
+.s_form .btn-field{
+	text-align:center;
+	width:100%;
+}
+.s_form .req:after {
+    color: #FF0000;
+    content: " *";
+}
+.s_form label.error {
+    color: #A60D10;
+    font-size: 12px;
+    font-weight: 700;
+}
+.s_form .f-error input, 
+.s_form .f-error select, 
+.s_form .f-error textarea,
+.s_form .f-error .select2-container .select2-choice,
+.s_form .f-error .select2-container-multi .select2-choices{
+    border-color: #B94A48;
+    color: #A60D10;
+}
+.s_form .f-error .select2-container-multi .select2-choices .select2-search-field input{
+	color: #A60D10;
+}
+
+.select2-container .select2-choice
+/* INLINE   
+
+*/
+.s_form_inline select,
+.s_form_inline textarea,
+.s_form_inline input[type="text"],
+.s_form_inline input[type="password"],
+.s_form_inline input[type="datetime"],
+.s_form_inline input[type="datetime-local"],
+.s_form_inline input[type="date"],
+.s_form_inline input[type="month"],
+.s_form_inline input[type="time"],
+.s_form_inline input[type="week"],
+.s_form_inline input[type="number"],
+.s_form_inline input[type="email"],
+.s_form_inline input[type="url"],
+.s_form_inline input[type="search"],
+.s_form_inline input[type="tel"],
+.s_form_inline input[type="color"],
+.s_form_inline .date,
+.s_form_inline .checklist,
+.s_form_inline .select2-container,
+.s_form_inline .fileupload,
+.s_form_inline .multi_upload  {
+   display: inline-block;
+   *display: inline;
+   margin-bottom: 0;
+   vertical-align: middle;
+   *zoom: 1;
+   width: 69%;
+    
+}
+.s_form_inline .multi_upload,
+.s_form_inline .checklist{
+    vertical-align: top;
+}
+.s_form_inline .date input{
+	width:100%;
+}
+
+.s_form_inline fieldset > label{
+    display: inline-block;
+    padding-right: 2%;
+    text-align: right;
+    vertical-align: middle;
+    width: 30%;
+}
+
+.s_form_inline .radio,
+.s_form_inline .checkbox {
+  padding-left: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.s_form_inline .radio input[type="radio"],
+.s_form_inline .checkbox input[type="checkbox"] {
+  float: left;
+  margin-right: 3px;
+  margin-left: 0;
+}
+.s_form_inline label.error {
+    text-align: right;
+    width: 100%;
+}
+
+
+/* COLUMNS   
+
+*/
+.s_form_columns{
+	
+}
+.s_form_columns fieldset{
+	float: left;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    width: 45%;
+}
+.s_form_columns fieldset.field-double{
+	padding-left: 2.5%;
+    padding-right: 2.5%;
+    width: 95%;
+	clear:both;
+}
+
+
+
+/*--------------------------------ELEMENTOS FORMULARIO--------------------------------*/
+
+
+/*--------------------------------ESTILOS PLUGINS--------------------------------*/
+/*  ESTILOS PLUGINS -  
+
+ESTOS PLUGINS TIENEN SUS PROPIAS HOJAS DE ESTILOS, PERO AQUÍ ESTÁN LOS LLAMADOS MÁS GENERALES PARA ESTILIZAR, CÓMO COLORES, BORDES, TAMAÑOS DE LETRA, MARGENES...
+
+SI SE NECESITA MODIFICAR ALGO MÁS, IR DIRECTAMENTE A LA HOJA DE ESTILOS PROPIA  */
+
+                            
+.s_form .select2-container .select2-choice span {
+    font-size: 13px;
+}
+.select2-results {
+    font-family: arial;
+	font-size: 13px;
+	color: #555555;
+}
+.s_form .select2-container-multi .select2-choices .select2-search-field input {
+     border: 0 none;
+    box-shadow: 0 0;
+    color: #555555;
+    font-family: arial;
+    font-size: 13px;
+    height: 20px;
+    line-height: 12px;
+    margin: -1px 0 0;
+    padding: 4px 6px;
+    vertical-align: middle;
+    width: 100% !important;
+}
+.s_form .select2-container-multi .select2-choices .select2-search-choice {
+    color: #555555;
+    font-size: 13px;
+}
+.s_form .fileupload {
+    margin-bottom: 0;
+}
+.s_form .input-append, .input-prepend {
+    font-size: 0;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+.s_form .input-prepend div[class*="input-"], 
+.s_form .input-append div[class*="input-"], 
+.s_form .input-prepend div[class*="span"], 
+.s_form .input-append div[class*="span"] {
+    max-width: 140px;
+    min-width: 140px;
+    width: auto;
+}
+.s_form .fileupload .uneditable-input {
+    display: inline-block;
+    line-height: 20px;
+    margin-bottom: 0;
+    height: 20px;
+    vertical-align: middle;
+}
+.s_form .uneditable-input, 
+.s_form .uneditable-textarea {
+    background-color: transparent;
+    border: 1px solid #CCCCCC;
+    color: #555555;
+    cursor: default;
+    padding: 4px 6px;
+}
+.s_form .fileupload-preview{
+	font-size:13px;
+}
+
+
+.s_form .input-append input, 
+.s_form .input-append select, 
+.s_form .input-append .uneditable-input {
+    border-radius: 4px 0 0 4px;
+}
+.s_form .input-prepend input, 
+.s_form .input-prepend select, 
+.s_form .input-prepend .uneditable-input {
+    border-radius: 0 4px 4px 0;
+}
+.s_form .input-prepend .add-on:first-child, 
+.s_form .input-prepend .btn:first-child {
+    border-radius: 4px 0 0 4px;
+}
+.s_form .fileupload-exists .fileupload-new, 
+.s_form .fileupload-new .fileupload-exists {
+    display: none;
+}
+.s_form .icon-file {
+    background-position:-24px -24px !important;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+    background-image: url("../img/glyphicons-halflings.png");
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    margin-right: 4px;
+    margin-top: -8px;
+    vertical-align: middle;
+    width: 14px;
+}
+.s_form .fileupload-new .input-append .btn-file {
+    border-radius: 0 3px 3px 0;
+}
+.s_form .fileupload .btn {
+    vertical-align: middle;
+}
+.s_form .input-append .add-on, 
+.s_form .input-append .btn, 
+.s_form .input-append .btn-group {
+    margin-left: -1px;
+}
+.s_form .btn-file {
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+}
+.s_form .btn-file > input { 
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	margin: 0; 
+	cursor: pointer; 
+	border: solid transparent; 
+	border-width: 0 0 100px 200px; 
+	opacity: 0; 
+	filter: alpha(opacity=0); 
+	-moz-transform: translate(-300px, 0) scale(4); 
+	direction: ltr; }
+.s_form .input-append .btn{
+    border-radius: 0 0 0 0;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+
+.datepicker table {
+    color: #555555;
+    font-family: arial;
+    font-size: 13px;
+    margin: 0;
+}
+.datepicker th.switch {
+    font-size: 14px;
+}
+.datepicker td.active,
+.datepicker td.active:hover,
+.datepicker td.active.disabled,
+.datepicker td.active.disabled:hover {
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(top, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.icon-arrow-right {
+    background-position: -264px -96px;
+}
+.icon-arrow-left {
+    background-position: -240px -96px;
+}
+.icon-calendar {
+    background-position: -192px -120px;
+}
+.s_form .ez-checkbox, 
+.s_form .ez-radio {
+	float: left;
+    height: 20px;
+    margin-right: 10px;
+    width: 16px;
+}
+
+/*--------------------------------ESTILOS PLUGINS--------------------------------*/
+
+
+/*---------------------------BOTONTES__________________*/
+.s_form .btn {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #cccccc;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.s_form .btn:hover,
+.s_form .btn:focus,
+.s_form .btn:active,
+.s_form .btn.active,
+.s_form .btn.disabled,
+.s_form .btn[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+
+.s_form .btn:active,
+.s_form .btn.active {
+  background-color: #cccccc \9;
+}
+
+.s_form .btn:first-child {
+  *margin-left: 0;
+}
+
+.s_form .btn:hover,
+.s_form .btn:focus {
+  color: #333333;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+}
+
+.s_form .btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.s_form .btn.active,
+.s_form .btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.s_form .btn.disabled,
+.s_form .btn[disabled] {
+  cursor: default;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.s_form .btn-large {
+  padding: 11px 19px;
+  font-size: 17.5px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.s_form .btn-large [class^="icon-"],
+.s_form .btn-large [class*=" icon-"] {
+  margin-top: 4px;
+}
+
+.s_form .btn-small {
+  padding: 2px 10px;
+  font-size: 11.9px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.s_form .btn-small [class^="icon-"],
+.s_form .btn-small [class*=" icon-"] {
+  margin-top: 0;
+}
+
+.s_form .btn-mini [class^="icon-"],
+.s_form .btn-mini [class*=" icon-"] {
+  margin-top: -1px;
+}
+
+.s_form .btn-mini {
+  padding: 0 6px;
+  font-size: 10.5px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.s_form .btn-block {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.s_form .add-on{
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.s_form .btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+.s_form input[type="submit"].btn-block,
+.s_form input[type="reset"].btn-block,
+.s_form input[type="button"].btn-block {
+  width: 100%;
+}
+/*---------------------------BOTONTES-----------------------*/
+
+
+/*---------------------------MEDIAQUERIES---------------*/
+@media (max-width: 480px) {
+	
+.s_form_inline fieldset > label {
+    display: inline-block;
+    padding-right: 0;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.s_form_inline select,
+.s_form_inline textarea,
+.s_form_inline input[type="text"],
+.s_form_inline input[type="password"],
+.s_form_inline input[type="datetime"],
+.s_form_inline input[type="datetime-local"],
+.s_form_inline input[type="date"],
+.s_form_inline input[type="month"],
+.s_form_inline input[type="time"],
+.s_form_inline input[type="week"],
+.s_form_inline input[type="number"],
+.s_form_inline input[type="email"],
+.s_form_inline input[type="url"],
+.s_form_inline input[type="search"],
+.s_form_inline input[type="tel"],
+.s_form_inline input[type="color"],
+.s_form_inline .date,
+.s_form_inline .checklist,
+.s_form_inline .select2-container,
+.s_form_inline .fileupload,
+.s_form_inline .multi_upload{
+   width: 100%;
+    
+}
+.s_form_inline .select2-container {
+   width: 100%;
+}
+
+.s_form_columns fieldset{
+	float: none;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+.s_form_columns fieldset.field-double{
+	float: none;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+}
+
+/*---------------------------MEDIAQUERIES---------------*/

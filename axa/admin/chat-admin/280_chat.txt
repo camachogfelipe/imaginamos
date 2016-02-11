@@ -1,0 +1,10 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de Digiware. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>conny</span><br/>hola heidy ~2011-08-18 21:40:20
+<span class='admin'>Agente</span><br/>hola  ~2011-08-18 21:40:26
+<span class='admin'>Agente</span><br/>ves lo que escribo? ~2011-08-18 21:40:32
+<span class='usuario'>conny</span><br/>aii ~2011-08-18 21:40:35
+<span class='usuario'>conny</span><br/>siii ~2011-08-18 21:40:38
+<span class='admin'>Agente</span><br/>ok ~2011-08-18 21:40:39
+<span class='admin'>Agente</span><br/>gracias ~2011-08-18 21:40:42
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

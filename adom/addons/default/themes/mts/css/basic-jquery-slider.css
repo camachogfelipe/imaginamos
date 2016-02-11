@@ -1,0 +1,96 @@
+/* Basic jQuery Slider essential styles */
+
+ul.bjqs{display: none;
+    list-style: none outside none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+	width: 100% !important;}
+li.bjqs-slide{display: none;
+    position: absolute;
+    width: 100% !important;}
+
+.bjqs-wrapper{
+	width:100% !important;
+}
+ul.bjqs-controls{display: block;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    z-index: 9999;}
+
+ol.bjqs-markers{list-style:none;margin:0;padding:0;z-index:9999;}
+ol.bjqs-markers li{float:left;}
+
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+
+
+#banner {
+    margin: 0 auto;
+    position: relative;
+}
+
+ ul.bjqs-controls li a{
+ 	background-image: url("../img/slide-arrows.png");
+    display: block;
+    height: 149px;
+    position: absolute;
+    top: 30px !important;
+    width: 100px;
+	text-indent:-3000px;
+}
+ ul.bjqs-controls li a.bjqs-next{
+	  background-position: right center;
+    right: 2px;
+}
+
+ ul.bjqs-controls li a.bjqs-prev{
+	  background-position: left center;
+    left: 2px;
+}
+
+a.bjqs-prev{
+  left:0;
+}
+
+a.bjqs-next{
+  right:0;
+}
+
+ p.bjqs-caption{
+  background:rgba(0,0,0,0.7);
+  color:#fff;
+  text-align:center;
+}
+
+ ol.bjqs-markers{
+ bottom: 15px;
+    position: absolute;
+    right: 10px;
+}
+
+ ol.bjqs-markers li{
+  float:left;
+  margin:0 3px;
+}
+
+ ol.bjqs-markers li a{
+ background-color: transparent;
+    background-image: url("../img/slide-bullet.png");
+    border-radius: 0 0 0 0;
+    box-shadow: 0 0;
+    display: block;
+    font-size: 0;
+    height: 17px;
+    width: 16px;
+}
+
+ol.bjqs-markers li.active-marker a{
+  background-position:bottom;
+  
+}
+

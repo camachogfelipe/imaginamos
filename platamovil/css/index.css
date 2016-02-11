@@ -1,0 +1,438 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*fonts*/
+/*'SansBOLD'*/
+@font-face {
+    font-family: 'SansBOLD';
+    src: url('fonts/helveticabold-webfont.eot');
+    src: url('fonts/helveticabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticabold-webfont.woff') format('woff'),
+         url('fonts/helveticabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*'SansLightRegular'*/
+@font-face {
+    font-family: 'SansLightRegular';
+    src: url('fonts/helveticalight-webfont.eot');
+    src: url('fonts/helveticalight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticalight-webfont.woff') format('woff'),
+         url('fonts/helveticalight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*'SansRegular'*/
+@font-face {
+    font-family: 'SansRegular';
+    src: url('fonts/helveticareg-webfont.eot');
+    src: url('fonts/helveticareg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticareg-webfont.woff') format('woff'),
+         url('fonts/helveticareg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {background: url(../imagenes/indexFondoSuperior.png) top no-repeat;
+}
+/*clases*/
+a {
+	text-decoration:none;
+	border:none;
+}
+
+.clear {
+	clear:both;
+	}
+.lineaseparadora{
+	border-top-style:dotted;
+	border-top-color:#CCC;
+	border-top-width:thin;
+	height:20px;
+	}
+.botones a:link{
+		text-decoration:none;
+		text-align:right;
+		color:#0d427c;
+		}
+.botones a:hover p{
+		color:#7ab929;
+		text-align:right;
+		}
+.footer_autor{
+	text-align:center;
+	}
+
+/*class fonts*/
+/*cuerpoa*/
+/*cuerpoa_ (ambos lados) _titulo*/
+.textverdebig{
+	color:#7ab929;
+	font-size:32px; 
+	font-family:'SansRegular', sans-serif;
+	display:block;
+	}
+/*cuerpoa_texto (ambos lados) azul_titulo*/	
+.textazultit{
+	color: #0D427C;
+    font-family: 'SansRegular',sans-serif;
+    font-size: 32px;
+    line-height: 78%;
+	}
+/*cuerpoa_texto (ambos lados) */
+.text{
+	font-family: 'HelveticaNL', sans-serif;
+	color:#404040;
+	font-size:21px;
+	line-height:130%;
+	}
+/*cuerpoa_texto_(lado izq)*/
+.enfasis{
+	font-family:'SansBOLD',Verdana, Geneva, sans-serif;
+	color:#7ab929;
+	font-size:24px;
+	line-height:130%;
+	}
+/*cuerpoa_texto_(tado der)*/
+.enfasisdos{
+	font-family:'SansBOLD',Verdana, Geneva, sans-serif;
+	color:#0d427c;
+	font-size:24px;
+	line-height:130%;
+	}	
+/*cuerpob*/
+/*cuerpob_texto_bol (antes del logo)*/
+.letranuncio{
+	font-family:'SansBOLD',Verdana, Geneva, sans-serif;
+	}	
+/*cuerpoc*/
+/*cuerpoc_titulo de botones*/
+.titbt {
+		font-family:"Arial Black", Gadget, sans-serif;
+		font-size:40px;
+		}
+/*cuerpoc_texto botones*/
+.titbtsub{
+		font-family:'SansRegular',Verdana, Geneva, sans-serif;
+		font-size:15px;
+		padding-left:80px;
+		padding-right:20px;
+		color:#0d427c;
+		margin-top:10px;
+		line-height:130%;
+		text-align:right;
+		}
+/*cuerpod*/
+/*cuerpoe*/
+/*cuerpoe antes de logos*/
+.pequeno{
+	color:#5d5d5d;
+	font-size:16px; 
+	font-family:Arial, Helvetica, sans-serif;
+	}	
+/*cuerpof*/
+/*texto parte abajo*/
+.pequenoblanco{
+	color:#FFF;
+	font-size:14px; 
+	font-family:'SansRegular',Verdana, Geneva, sans-serif;
+	}
+/*texto titulo bold*/
+.pequenobold{
+	color:#FFF;
+	font-size:18px; 
+	font-family:'SansBOLD',Verdana, Geneva, sans-serif;
+	}
+/*texto parte abajo bold*/
+.pequenobolddos{
+	color:#FFF;
+	font-size:14px; 
+	font-family:"Arial Black", Gadget, sans-serif;
+	}
+/*lado derecho_anuncio*/
+.anuncioder{
+	font-family:'SansLightRegular',Verdana, Geneva, sans-serif;
+	color:#0d427c;
+	font-size:18px;
+	line-height:80%;
+	}
+.anunciobolder{
+	font-family:'SansBOLD',Verdana, Geneva, sans-serif;
+	color:#7ab929;
+	font-size:18px;
+}
+/*columna izquierda*/
+#columnaizq{
+	position:absolute;
+	margin-top:130%;
+	}
+#vigilado{
+	left:10px;
+	}
+/*center*/
+#center{
+	width:1024px;
+	margin:0px auto;
+	}
+/*cabecera*/	
+#logo{
+	margin-top:7%;
+	margin-left:28%;
+	}
+/*cuerpoa*/
+#aizq{
+	width:482px;
+	border-right-style:dotted;
+	border-right-color:#CCC;
+	border-right-width:thin;
+	padding-right:30px;
+	float:left;
+	}
+#aizqsup{
+	padding-bottom:5px;
+	border-bottom-style:dashed;
+	border-bottom-color:#CCC;
+	border-bottom-width:thin;
+	}
+#aizqlog{
+	width:80px;
+	float:left;
+	margin-right:24px;
+	}
+#aizqtext{
+	width:360px;
+	float:left
+	}
+#aizqtext p{
+	position: relative; 
+	top: -10px;
+	left: -20px;
+	}
+#aizqinf{
+	text-align:justify;
+	}
+#bder{
+	width:482px;
+	float:right;
+	}
+#bdersup{
+	border-bottom-style:dotted;
+	border-bottom-color:#CCC;
+	border-bottom-width:thin;
+    padding-bottom: 5px;
+	}
+#bderlog{
+	width:80px;
+	float:left;
+	padding-top:15px;
+	}
+#bdertext{
+	width:360px;
+	float:right;
+	}
+#bdertext p{
+	position: relative; 
+	top: -10px;
+	left: -20px;
+	}
+#bderinf{
+	text-align:justify;
+	}
+/*cuerpob* donde esta el cuadro de la mitad y las lineas*/
+#cuadroa{
+	margin-left:100px;
+	margin-right:100px;
+	background-color:#FAFAFA;
+	box-shadow: 3px 3px 4px #DEDEDE;
+	text-align:center;
+	}
+#cuadroa p{
+	font-family:'SansLightRegular',Verdana, Geneva, sans-serif;
+	color:#0d427c;
+	font-size:23px;
+	text-align:center;
+	text-height:10px;
+	}
+#lineas{
+	margin-top:-20px;
+	}
+#unover{
+	float:left;
+	border-right-style:dotted;
+	border-right-color:#CCC;
+	border-right-width:thin;
+	height:20px;
+	width:512px;
+	}
+#unohor{
+	border-top-style:dotted;
+	border-top-color:#CCC;
+	border-top-width:thin;
+	margin-right:160px;
+	margin-left:160px;
+	}
+#borderuno{
+	float:left;
+	border-right-style:dotted;
+	border-right-color:#CCC;
+	border-right-width:thin;
+	height:20px;
+	width:160px;
+}
+#borderdos{
+	float:left;
+	border-right-style:dotted;
+	border-right-color:#CCC;
+	border-right-width:thin;
+	height:20px;
+	width:351px;
+}
+#bordertres{
+	float:left;
+	border-right-style:dotted;
+	border-right-color:#CCC;
+	border-right-width:thin;
+	height:20px;
+	width:350px;
+}
+/*cuerpoc* donde estan los botones*/
+#cuerpoc{
+	margin-top:-10px;
+	text-align:right;
+	}
+#btuno{
+	float:left;
+	width:330px;
+	height:123px;
+	}
+#btuno a{
+		display:block;
+		background-image:url("../imagenes/bt_persona.png");
+		height:123px;
+	}
+#btuno a:hover{
+		display:block;
+		background-position:bottom;
+		height:121px;
+		}
+#btdos{
+	float:left;
+	width:330px;
+	margin-left:15px;
+	height:123px;
+	}
+#btdos a{
+		display:block;
+		background-image:url("../imagenes/bt_carro.png");
+		height:123px;
+	}
+#btdos a:hover{
+		display:block;
+		background-position:bottom;
+		height:121px;
+		}
+#bttres{
+	float:left;
+	width:330px;
+	margin-left:15px;
+	height:123px;
+	}
+#bttres a{
+		display:block;
+		background-image:url("../imagenes/bt_maleta.png");
+		height:123px;
+		}
+#bttres a:hover{
+		display:block;
+		background-position:bottom;
+		height:121px;
+		}
+/*cuerpo d*/
+/*cuerpoe logos*/
+#cuerpoe{
+	margin-top:50px;
+	}
+#apoyo{
+	float:left;
+	margin-left:130px;
+	}
+#logofenalco{
+	float:left;
+	margin-left:50px;
+	}
+#logocaf{
+	float:left;
+	margin-left:50px;
+	}
+#logoasegurado{
+	border-left-style:dotted;
+	border-left-color:#CCC;
+	border-left-width:thin;
+	padding-left:30px;
+	float:left;
+	margin-left:50px;
+	}
+#logoazul{
+	margin-top:-20px;
+	margin-right:30px;
+	float:right;
+	}
+/*cuerpo f*/
+#imagenverde{
+	margin-left:-184px;
+	margin-right:-184px;
+	height:140px;
+	margin-top:-10px;
+	}
+#textofinal{
+	text-align:center;
+	margin-top:-120px;
+	}
+/*columna derecha*/
+#columnader{
+	position:fixed;
+	right:0px;
+	height:100px;
+	width:120px;
+	top:10%;
+	}
+#contenedoruno{
+	position:fixed;
+	margin-left:0.2%;
+	}
+#contenedordos{
+	position:fixed;
+	width:120px;
+	margin-top:13%;
+	background-color:#e4e4e4;
+	}
+#miniaviso{
+	text-align:center;
+	margin-left:-2%;
+	}
+#flecha{
+	margin-left:45%;
+	margin-bottom:20px;
+	}
+#roundbtuno{
+	margin-left:15%;
+	margin-bottom:20px;
+	}
+#roundbtdos{
+	margin-left:15%;
+	margin-bottom:20px;
+	}
+#roundbttres{
+	margin-left:15%;
+	margin-bottom:20px;
+	}
+
+.logo-miplata{
+	background-image: url(../imagenes/03_center_miproducto.png);
+    float: left;
+    height: 64px;
+    width: 990px;
+}
+.logo-miplata a{
+	padding: 0 !IMPORTANT;
+    position: static !IMPORTANT;
+}

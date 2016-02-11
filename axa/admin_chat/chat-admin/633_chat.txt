@@ -1,0 +1,7 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>78888888</span><br/>buenas noches ~2012-06-21 19:21:54
+<span class='usuario'>78888888</span><br/>tengo una pregunta con ~2012-06-21 19:22:00
+<span class='admin'>Agente</span><br/>si claro digame ~2012-06-21 19:22:11
+<span class='usuario'>78888888</span><br/>lo que pasa es que cuando ~2012-06-21 19:25:16
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

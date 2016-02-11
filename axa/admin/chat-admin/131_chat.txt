@@ -1,0 +1,6 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Ricardo Rodriguez</span>Buenas tardes, 
+<span class='usuario'>Ricardo Rodriguez</span>Quiero saber si se le dio tramite a una solicitud que realize en horas de la ma&ntilde;ana 
+<span class='usuario'>Ricardo Rodriguez</span>me pueden colaborar con este tema? 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

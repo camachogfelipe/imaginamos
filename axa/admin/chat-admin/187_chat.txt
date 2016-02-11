@@ -1,0 +1,4 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Carolina</span><br/>Buenos d&iacute;as~2011-01-03 06:22:07
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

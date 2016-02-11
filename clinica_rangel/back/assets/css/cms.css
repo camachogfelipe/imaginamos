@@ -1,0 +1,20 @@
+.clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";}
+.clearfix:after{clear:both;}
+.alertbox{*zoom:1;position:relative;padding:10px 35px 10px 14px;margin-bottom:1em;text-shadow:0 1px 0 rgba(255, 255, 255, 0.5);font-size:1em;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}.alertbox:before,.alertbox:after{display:table;content:"";}
+.alertbox:after{clear:both;}
+.alertbox h4{margin:0;}
+.alertbox p:first-child{margin:0;}
+.alertbox .close{position:absolute;top:.5em;right:.8em;}
+.alertbox.success{background-color:#dff0d8;border-color:#d6e9c6;color:#468847;}.alertbox.success .close{color:#468847;}
+.alertbox.error,.alertbox danger{background-color:#f2dede;border-color:#eed3d7;color:#b94a48;}.alertbox.error .close,.alertbox danger .close{color:#b94a48;}
+.alertbox.info{background-color:#d9edf7;border-color:#bce8f1;color:#3a87ad;}.alertbox.info .close{color:#3a87ad;}
+.alertbox.warning{background-color:#fcf8e3;border:1px solid #fbeed5;color:#c09853;}.alertbox.warning .close{color:#c09853;}
+.cms-info-table{width:100%;font-size:1.1em;}.cms-info-table tr{border-top:1px solid #000000;}
+.cms-info-table td{padding:1.5em 1em;width:50%;}
+.ta-left{text-align:left;display:block;}
+.ta-right{text-align:right;display:block;}
+#drag-drop-area{width:100%;display:block;border:3px dashed #cccccc;}#drag-drop-area .drag-drop-inside{display:block;text-align:center;margin:3em 0;}#drag-drop-area .drag-drop-inside p{color:#cccccc;font-size:1.5em;}
+#pickfiles{font-size:.6em;padding:.2em 1em;}
+#uploader-file-list{margin-top:2em;}#uploader-file-list .file-uploader-item{border:1px solid #cccccc;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:relative;display:block;}#uploader-file-list .file-uploader-item .file-uploader-content{padding:.8em 1em;display:block;z-index:1999;}
+#uploader-file-list .file-uploader-item .file-uploader-remove{float:right;}
+#uploader-file-list .file-uploader-item .file-uploader-progress{position:absolute;width:0;height:100%;background:#069edb;display:block;top:0;left:0;z-index:9;opacity:.9;}

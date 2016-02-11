@@ -1,0 +1,32 @@
+	// Nombre del proyecto: INCOLACTEOS
+	// Nombre del archivo: actions.js
+	// Descripción: Funciones globales
+	// Fecha de creación: Mayo del 2013
+	// Autor: Stive Zambrano
+
+
+	$(document).ready(function(){
+    $(window).bind("load", function(){jQuery("#loader").fadeOut("slow");});	
+		if($.browser.msie){$("input[placeholder], textarea[placeholder]").each(function(){var input = $(this); $(input).val(input.attr("placeholder")); $(input).focus(function(){if (input.val() == input.attr("placeholder")){input.val('');}}); $(input).blur(function(){if (input.val() == '' || input.val() == input.attr("placeholder")){input.val(input.attr("placeholder"));}});});};
+		if($("#full-width-slider").size()>0){$("#full-width-slider").royalSlider({arrowsNav:true, loop:true, keyboardNavEnabled:true, controlsInside:false, imageScaleMode:"fill", arrowsNavAutoHide:true, autoScaleSlider:true,  autoScaleSliderWidth:1080, autoScaleSliderHeight:516, controlNavigation:"bullets", thumbsFitInViewport:false, navigateByClick:true, startSlideId:0, transitionType:"move", globalCaption:true, autoPlay: {enabled: true, pauseOnHover: false, stopAtAction:false}});};
+		$(".destacados .info-destacado").last().css({marginRight:0});
+		var over = 0; $(".destacado-vn").hover(function(){if(over==0){$(this).children("span").fadeIn(100); /*$(this).parent().parent().children(".destacado-pro").children("img").animate({width:270, height:168, top:0, right:0, bottom:0, left:0}, 240);*/ over=1}else{$(this).children("span").fadeOut(500); /*$(this).parent().parent().children(".destacado-pro").children("img").animate({width:240, height:149, top:10, right:15, bottom:10, left:15}, 120);*/ over=0;}});
+		if($(".slider-sedes").size()>0){$(".slider-sedes").bxSlider({slideWidth:300, minSlides:2, maxSlides:3, moveSlides:1, slideMargin:20, controls:true, pager:false});};
+		if($(".modals-act").size()>0){$(".modals-act").fancybox();};
+		if($(".scroll-wrap").size()>0){$(".scroll-wrap").jScrollPane({autoReinitialise:true});};
+		$(function(){$("a.fx-nav").bind("click", function(event){var $anchor = $(this); $("html, body").stop().animate({scrollTop: $($anchor.attr("href")).offset().top}, 800, "easeInOutExpo"); event.preventDefault();});});
+		$(".fx-pick").hover(function(){$(this).children(".fx-nav-tip").fadeIn(400);}, function(){$(this).children(".fx-nav-tip").fadeOut(400);});
+		if($(".fm-int").size()>0){$(".fm-int").validationEngine();};
+		$('.fx-pick-1 .fx-nav-tip').delay(500).queue(function(next){$(this).fadeIn(400); next();}); $('.fx-pick-1 .fx-nav-tip').delay(1000).queue(function(next){$(this).fadeOut(800); next();}); $('.fx-pick-2 .fx-nav-tip').delay(750).queue(function(next){$(this).fadeIn(400); next();}); $('.fx-pick-2 .fx-nav-tip').delay(1500).queue(function(next){$(this).fadeOut(800); next();}); $('.fx-pick-3 .fx-nav-tip').delay(1000).queue(function(next){$(this).fadeIn(400); next();}); $('.fx-pick-3 .fx-nav-tip').delay(2000).queue(function(next){$(this).fadeOut(800); next();}); $('.fx-pick-4 .fx-nav-tip').delay(1250).queue(function(next){$(this).fadeIn(400); next();}); $('.fx-pick-4 .fx-nav-tip').delay(2500).queue(function(next){$(this).fadeOut(800); next();}); /*Pro.*/ $('.fx-pick-5 .fx-nav-tip').delay(500).queue(function(next){$(this).fadeIn(400); next();}); $('.fx-pick-5 .fx-nav-tip').delay(1000).queue(function(next){$(this).fadeOut(800); next();}); $('.fx-pick-6 .fx-nav-tip').delay(750).queue(function(next){$(this).fadeIn(400); next();}); $('.fx-pick-6 .fx-nav-tip').delay(1500).queue(function(next){$(this).fadeOut(800); next();}); $('.fx-pick-7 .fx-nav-tip').delay(1000).queue(function(next){$(this).fadeIn(400); next();}); $('.fx-pick-7 .fx-nav-tip').delay(2000).queue(function(next){$(this).fadeOut(800); next();}); /*Ot.*/ $('.fx-pick-8 .fx-nav-tip').delay(500).queue(function(next){$(this).fadeIn(400); next();}); $('.fx-pick-8 .fx-nav-tip').delay(1000).queue(function(next){$(this).fadeOut(800); next();});
+		if($(".pager-pro-1").size()>0){$(".pager-pro-1").pajinate({items_per_page:2});}; if($(".pager-pro-2").size()>0){$(".pager-pro-2").pajinate({items_per_page:2});}; if($(".pager-pro-3").size()>0){$(".pager-pro-3").pajinate({items_per_page:2});};
+		$(".con-pager li:odd").find(".img-promo").css({float:"right"}); $(".con-pager li:odd").find(".tx-promo").css({float:"left"});
+		$(".promo-vn").hover(function(){$(this).children("span").fadeIn(100);}, function(){$(this).children("span").fadeOut(500);}); $(".back-vn").hover(function(){$(this).children("span").fadeIn(100);}, function(){$(this).children("span").fadeOut(500);});
+		var over2 = 0; $(".item-pro-t2").hover(function(){if(over2==0){$(this).stop().animate({height:420}, 200, "linear"); $(this).find(".sub-items-pro").stop().animate({height:184}, 200, "linear"); over2=1}else{$(this).stop().animate({height:220}, 100); $(this).find(".sub-items-pro").stop().animate({height:0}, 0); over2=0;}});
+		$(".receta-vn").hover(function(){$(this).children("span").fadeIn(100);}, function(){$(this).children("span").fadeOut(500);}); $(".receta-vn").hover(function(){$(this).children("span").fadeIn(100);}, function(){$(this).children("span").fadeOut(500);}); $(".receta-mas-vn").hover(function(){$(this).children("span").fadeIn(100);}, function(){$(this).children("span").fadeOut(500);}); $(".receta-mas-vn").hover(function(){$(this).children("span").fadeIn(100);}, function(){$(this).children("span").fadeOut(500);}); $(".resultado-vn").hover(function(){$(this).children("span").fadeIn(100);}, function(){$(this).children("span").fadeOut(500);}); $(".resultado-vn").hover(function(){$(this).children("span").fadeIn(100);}, function(){$(this).children("span").fadeOut(500);});
+		if($(".car-recetas").size()>0){$(".car-recetas").bxSlider({slideWidth:180, minSlides:4, maxSlides:5, moveSlides:1, slideMargin:10, pager:false, infiniteLoop: false, hideControlOnEnd: true});};
+		$(".receta-b").first().css({display:"block"});
+		$(".item-rec-small").click(function(){$(".rec-act").removeClass("rec-act"); $(this).addClass("rec-act"); $(".receta-b").hide(); var ver_contenido = $(this).attr("data-id"); var titulo = $(this).attr("data-title"); $("."+ver_contenido).fadeIn(400, "easeInQuart"); $(".receta_titulo").html(titulo); });
+		if($("#modal-ok").size()>0){$("#modal-ok").fancybox().trigger('click');};
+		$(function(){$(window).scroll(function(){if($(this).scrollTop()!=0){$("#toTop").fadeIn(500);	}else{$("#toTop").fadeOut(250);}}); $("#toTop").click(function(){$("body,html").animate({scrollTop:0}, 800, "easeInOutExpo");});});
+		$(".footer-ahorranito").ahorranito();
+  });

@@ -1,0 +1,17 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>GABRIEL ALFONSO ROLON FORERO</span>Hola Carlos Cano mi codigo es 54569 
+<span class='admin'>Carlos Cano</span>pERMITAME UN MOMENTO SR rOLON 
+<span class='admin'>Carlos Cano</span>Sr Rolon, su usuario es el numero de cedula y su contrase&ntilde;a son los suatro ultimos digitos de la cedula 
+<span class='usuario'>GABRIEL ALFONSO ROLON FORERO</span>gracias ya pruebo
+<span class='admin'>Carlos Cano</span>LIsto, por favor me confirma si puede ingresar al portal 
+<span class='usuario'>GABRIEL ALFONSO ROLON FORERO</span>El sistema me dice que datos incorrectos 
+<span class='admin'>Carlos Cano</span>Permitame un momento por favor 
+<span class='admin'>Carlos Cano</span>Sr Rolon , lo voy a guiar para ingresar a la sucursal virtual, 
+<span class='usuario'>GABRIEL ALFONSO ROLON FORERO</span>dime carlos 
+<span class='admin'>Carlos Cano</span>En la pagina de Feval, hay un banner , para el ingreso a la sucursal, por favor le damos click 
+<span class='admin'>Carlos Cano</span>Luego el sistema nos pide un usuario y una clave, el usuario es su numero de cedula y la clave los cuatro ultimos digitos 
+<span class='usuario'>GABRIEL ALFONSO ROLON FORERO</span>ok carlos por ahi si puedo entrar, no me deja es por arriba
+<span class='admin'>Carlos Cano</span>Por donde estaba ingresado, Entrar a mi cuenta, ese link es para registrarse en la pagina,publicar los avisos clasificados y para participar del chat, es un usuario y una clave diferente para ingresar  a  la sucursal virtual . 
+<span class='admin'>Carlos Cano</span>Sr Rolon le puedo ayudar en algo m&aacute;s? 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

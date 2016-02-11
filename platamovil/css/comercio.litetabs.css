@@ -1,0 +1,82 @@
+@charset 'utf-8';
+/*************************************************
+*
+*	project:  	liteTabs - Lightweight jQuery tabs plugin
+*	author:   	Nicola Hibbert
+*	url:	  	http://nicolahibbert.com/lightweight-jquery-tab-plugin/
+*	demo:	  	http://www.nicolahibbert.com/demo/liteTabs/
+*
+/*************************************************/
+/****************************************** Core */
+
+.liteTabs { position: relative; margin: 0; padding: 0; overflow: hidden; width: 500px; font-size:14px; font-family:'Trebuchet ms', sans-serif;  }
+.liteTabs ul { margin: 0; padding: 0; overflow: hidden; 
+margin-left:67px }
+.liteTabs li { float: left; list-style-type: none; }
+.liteTabs li a { display: block; text-decoration: none; outline: 0; padding: 6px 0px; margin-right: 2px; color: #111; background: #b1b1b1; border-color:#eeefee !important;
+width:136px; height:88px; margin-right:15px; background:url(../imagenes/tabsComercio/tabsSelectedBg.jpg) repeat-x; text-align:center; color:#0d427c }
+.liteTabs a:hover { /*background: #fff*/ }
+.liteTabs a:focus { text-decoration: underline }
+.liteTabs a.selected { background:#fafafa; color:#90bd1a; border-color:#CACACB !important; text-decoration:none }
+.liteTabs div { float: left; width: 100%; padding: 10px; background: white;
+width:1007px; }
+.liteTabs div.noborder { border:none; }
+.liteTabs div.selected { position: static !important;  background:#fafafa; }
+
+/*************************************** Rounded */
+.rounded ul { -moz-border-radius: 8px 8px 0 0; border-radius: 8px 8px 0 0 }
+.rounded li a { -moz-border-radius: 8px 8px 0 0px; border-radius: 8px 8px 0 0px }
+.rounded div { -moz-border-radius: 8px 8px 8px 8px; border-radius: 8px 8px 8px 8px }
+
+/**************************************** Borders */
+.borders ul { position: relative; top: 1px }
+.borders li a { border: 1px solid #CACACB; border-bottom:0; }
+.borders div { border: 1px solid #CACACB }
+
+/****************************************** Boxed */
+.boxed { padding: 2px; background: #ddd; border: 1px solid #666 }
+.boxed ul {	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(204,204,204)), color-stop(1, rgb(238,238,238)));
+	background: -moz-linear-gradient(center bottom, rgb(204,204,204) 0%, rgb(238,238,238) 100%) }
+
+/****************************************** MODIFICATIONS */
+.subTab { position: relative; margin: 0; padding: 0; overflow: hidden; width: 500px;  font-size:14px; font-family:'Trebuchet ms', sans-serif;  background:none !important;}
+.subTab ul { margin: 0; padding: 0; overflow: hidden; width:187px; float:left; position:relative; left:1px; }
+.subTab li { float: left; list-style-type: none; width:187px; display:inline-block; margin-bottom:4px }
+.subTab li a { display: block; text-decoration: none; outline: 0; width:162px; height:65px; padding: 6px 12px; margin-right: 2px; color: #0d427c; background:url(../imagenes/tabsComercio/tabsVerticalSelectedBg.jpg) right repeat-y #fff;  margin-right:0px;
+-moz-border-radius: 8px 0px 0 8px; border-radius: 8px 0px 0 8px; border: 1px solid #CACACB; border-right:0;  }
+.subTab a:hover { /*background: #999*/ }
+.subTab a:focus { text-decoration: underline }
+.subTab a.selected/*, .liteTabs a.selected:hover*/ { background: white;  margin-right:0px;  position:relative; left:1px !important;  text-decoration:none }
+
+.subTab a p { display: table-cell; vertical-align: middle; text-align: left; height:62px; width:139px; padding-left:20px; }
+.subTab div { float:left; width: auto; padding:10px 25px; background: white; font-family: 'HelveticaNL', sans-serif; font-size:17px; color:#404040 }
+.subTab div.selected { position: static !important; float:left; width: 100px; background:#fff; -moz-border-radius: 0px; border-radius:0px; min-height:710px;  }
+.subTab li span.icon { width:51px; height:49px; background: url(../imagenes/tabsComercio/icon1Selected.png) no-repeat #fff; display:block; float:right;
+-moz-border-radius: 5px 0px 0 5px; border-radius: 5px 0px 0 5px; border: 1px solid #eeefee; border-right:0; margin:4px 0}
+
+.subTab li a.icon1 {display: block;width:51px; height:49px; background: url(../imagenes/tabsComercio/icon1Selected.png) no-repeat #fff; display:block; float:right; padding:0;
+-moz-border-radius: 5px 0px 0 5px; border-radius: 5px 0px 0 5px; border: 1px solid #eeefee; border-right:0; margin:4px 0; position:relative; left:-1px }
+.subTab li a.icon2 {display: block;width:51px; height:49px; background: url(../imagenes/tabsComercio/icon2Selected.png) no-repeat #fff; display:block; float:right; padding:0;
+-moz-border-radius: 5px 0px 0 5px; border-radius: 5px 0px 0 5px; border: 1px solid #eeefee; border-right:0; margin:4px 0; position:relative; left:-1px }
+.subTab li a.icon3 {display: block;width:51px; height:49px; background: url(../imagenes/tabsComercio/icon3Selected.png) no-repeat #fff; display:block; float:right; padding:0;
+-moz-border-radius: 5px 0px 0 5px; border-radius: 5px 0px 0 5px; border: 1px solid #eeefee; border-right:0; margin:4px 0; position:relative; left:-1px }
+.subTab li a.icon4 {display: block;width:51px; height:49px; background: url(../imagenes/tabsComercio/icon4Selected.png) no-repeat #fff; display:block; float:right; padding:0;
+-moz-border-radius: 5px 0px 0 5px; border-radius: 5px 0px 0 5px; border: 1px solid #eeefee; border-right:0; margin:4px 0; position:relative; left:-1px }
+.subTab li a.icon5 {display: block;width:51px; height:49px; background: url(../imagenes/tabsComercio/icon5Selected.png) no-repeat #fff; display:block; float:right; padding:0;
+-moz-border-radius: 5px 0px 0 5px; border-radius: 5px 0px 0 5px; border: 1px solid #eeefee; border-right:0; margin:4px 0; position:relative; left:-1px }
+.subTab li a.icon6 {display: block;width:51px; height:49px; background: url(../imagenes/tabsComercio/icon6Selected.png) no-repeat #fff; display:block; float:right; padding:0;
+-moz-border-radius: 5px 0px 0 5px; border-radius: 5px 0px 0 5px; border: 1px solid #eeefee; border-right:0; margin:4px 0; position:relative; left:-1px }
+
+
+
+
+
+
+.liteTabs a span.tabIcon { width:35px; height:39px; display:block; margin:0 auto; margin-bottom:5px; }
+.liteTabs a.selected span.tabIcon { width:35px; height:39px; display:block; margin:0 auto;background-position:0 -39px; margin-bottom:5px;}
+.liteTabs a span.img1 {background:url(../imagenes/tabsComercio/icon1.png);}
+.liteTabs a span.img2 {background:url(../imagenes/tabsComercio/icon2.png);}
+.liteTabs a span.img3 {background:url(../imagenes/tabsComercio/icon3.png);}
+.liteTabs a span.img4 {background:url(../imagenes/tabsComercio/icon4.png);}
+.liteTabs a span.img5 {background:url(../imagenes/tabsComercio/icon5.png);}
+.liteTabs a span.img6 {background:url(../imagenes/tabsComercio/icon6.png);}

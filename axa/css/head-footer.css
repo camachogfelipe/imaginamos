@@ -1,0 +1,235 @@
+/*
+Autor: Cristian Esteban De la Hoz (cristandelahoz@gamingculture.net)
+Version: 1.0
+*/
+
+/* =1 Header
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+#header-main { position: relative; 
+               z-index: 500;}
+	
+	.franja-organica {
+		position: relative;
+		width: 960px;
+		height: 5px;
+		background: url(../images/head-footer/linea-organica.jpg) no-repeat scroll 0 0 transparent;
+		z-index: 1000; }
+	
+	.menu-header { 
+		position: absolute;
+		margin-top: -157px;
+		width: 960px;
+		height: 181px;
+		background: url(../images/head-footer/bg-header.png) no-repeat scroll 0 0 transparent;
+		color: #FFF;
+		z-index: 500; }
+		
+		.menu-header a { 
+			color: #FFF;
+			text-decoration: none; }
+		
+			.menu-header a:hover { text-decoration: underline; }
+		
+		.top-menu-header { 
+			overflow: hidden;
+			padding: 10px 0 0; }
+		
+			.top-menu-header nav { 
+				float: left;
+				padding: 5px 12px;
+				height: 128px; }
+			
+			.top-menu-header nav header { 
+				padding: 0 0 0 25px;
+				font: 20px/130% MyriadPro-Regular, Tahoma, Geneva, sans-serif; }
+			
+			.menu-coporativo, .menu-portales, .menu-mapa-sitio { border-right: 1px solid #FFF; }
+			
+			nav.menu-coporativo { 
+				padding: 5px 6px;
+				width: 170px; }
+			
+				.menu-coporativo section { padding: 12px 0 0 45px; }
+			
+				.menu-coporativo ul {  }
+				
+					.menu-coporativo ul li { padding: 0 0 5px; }
+			
+			.menu-portales {  }
+			
+				.menu-portales section { padding: 15px 0 0; }
+				
+				.menu-portales ul { list-style: none; border: }
+				
+					.menu-portales ul li { 
+						float: left;
+						width: 115px;
+						text-align: center; }
+				
+				.menu-portales a { display: block; }
+
+				.link-to-entretenimiento a, .link-to-juegos-linea a { padding: 5px 0 3px; }
+				
+				.link-to-video-extremo a { padding: 27px 0 14px; }
+				
+				.link-to-tienda a { padding: 14px 0 9px; }  
+				
+			.menu-mapa-sitio { width: 125px; }
+			
+				.top-menu-header nav.menu-mapa-sitio header { 
+					text-align: center;
+					padding: 0; }
+				
+				.menu-mapa-sitio a { 
+					display: block;
+					width: 25px;
+					margin: 0 auto;
+					padding: 10px 0 10px 40px;
+					font: 20px/130% MyriadPro-Cond, Tahoma, Geneva, sans-serif;
+					background: url(../images/head-footer/img-Mapa.png) no-repeat scroll 0 center transparent;
+					text-decoration: none; }
+					
+					.menu-mapa-sitio a:hover { text-decoration: underline; }
+			
+			.menu-datos { font: 15px/130% Tahoma, Geneva, sans-serif; }
+			
+				.menu-datos ul { 
+					padding: 15px 0 0;
+					list-style: none; }
+				
+					.menu-datos ul li { }
+					
+				.menu-datos a { 
+					display: block;
+					padding: 0 0 0 23px;
+					margin: 0 0 5px; }
+					
+				.link-to-contact { background: url(../images/head-footer/img-Contactenos.png) no-repeat scroll 0 center transparent; }
+				
+				.link-to-calificar { background: url(../images/head-footer/img-Calificanos.png) no-repeat scroll 0 center transparent; }
+				
+				.link-to-encuesta { background: url(../images/head-footer/img-Encuesta.png) no-repeat scroll 0 center transparent; }
+	
+		#open-menu { 
+			position: absolute;
+			padding: 0 0 0 27px;
+			top: 155px;
+			right: 0;
+			width: 143px;
+			font: 15px/130% Tahoma, Geneva, sans-serif;
+			cursor: pointer; }
+			
+			#open-menu span { 
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				margin: 2px 20px 0 0;
+				width: 43px;
+				height: 29px;
+				background: url(../images/head-footer/flecha.png) no-repeat scroll 0 0 transparent; }
+	
+	.content-logos { padding: 15px 12px; }
+	
+		span.logo-ETB, span.sello-marca { display: inline-block;}
+		
+		.logo-ETB { }
+		
+		.sello-marca { margin: 0 0 0 48px; } 
+
+/* =2 Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+#footer-main {
+	position: absolute;
+	margin-top: 0;
+	width: 960px;
+	background: url(../images/head-footer/bg-footer.png) no-repeat scroll 0 0 transparent;
+	color: #fff;
+	z-index: 500; }
+	
+	#footer-main a { 
+		text-decoration: none;
+		color: #fff; }
+		
+		#footer-main a:hover { text-decoration: underline; }
+
+	#footer-main header { height: 12px; }
+	
+		#footer-main header nav { 
+			margin: 0 0 0 465px;
+			width: 40px;
+			text-indent: -9999px;
+			cursor: pointer; }
+	
+	#content-footer {
+		position: relative;
+		height: 0;
+		overflow: hidden; }
+	
+	#footer-main section { 
+		padding: 25px 25px 15px;
+		overflow: hidden; }
+	
+		#footer-main section nav { 
+			float: left;
+			height: 135px; }
+		
+		#footer-main section dt { 
+			font: 15px/130%  Tahoma, Geneva, sans-serif;
+			padding: 0 0 8px 15px; }
+			
+		#footer-main nav.legal { border-right: 1px solid #fff; }
+		
+			#footer-main nav.legal dl { width: 365px; }
+			
+			#footer-main nav.legal dt {  }
+			
+			#footer-main nav.legal dd {
+				float: left;
+				width: 170px;
+				background: url(../images/head-footer/footer/flecha.png) no-repeat scroll 0 11px transparent;
+				padding: 5px 0 5px 8px; }
+	
+		#footer-main nav.servicios { 
+			border-right: 1px solid #fff;
+			padding: 0 25px;}
+		
+			#footer-main nav.servicios dl { width: 260px; }
+			
+			#footer-main nav.servicios dt { }
+			
+			#footer-main nav.servicios dd { 
+				float: left;
+				padding: 5px 0;
+				width: 130px; }
+				
+				#footer-main nav.servicios dd a { margin: 0 0 0 5px;  }
+	
+		#footer-main nav.linea-atencion { padding: 0 25px; }
+		
+			#footer-main nav.linea-atencion dl { }
+			
+			#footer-main nav.linea-atencion dt { }
+			
+			#footer-main nav.linea-atencion dd {
+				position: relative;
+				padding: 5px 0; }
+				
+				.nombreServicio, .numeroServicio, .imagenServicio { display: inline-block; }
+				
+				.nombreServicio { width: 60px; }
+				
+				.numeroServicio { }
+				
+				.imagenServicio { 
+					position: absolute;
+					margin: 5px 0 0 160px;
+					top: 0;
+					left: 0; }
+	
+	#footer-main footer { 
+		font: 10px/100% Tahoma, Geneva, sans-serif;
+		padding: 5px 0;
+		text-align: center; }

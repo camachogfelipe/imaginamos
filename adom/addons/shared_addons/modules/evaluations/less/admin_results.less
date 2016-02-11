@@ -1,0 +1,36 @@
+@maxHeightAnswersContent: 800px;
+
+.item(@color: rgba(0,0,0,.6)){
+	background: @color; 
+	color: #FFF;
+	font-weight: bold;
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&.inline{
+		display: inline-block;
+		padding: .5em;
+	}
+}
+
+.anwsers-content{
+	max-height: @maxHeightAnswersContent;
+	overflow: auto;
+}
+
+.option{
+	display: block;
+	padding: .5em;
+	margin-top: 2px;
+}
+
+.selected{.item()}
+.is_correct{
+	.item(orange);
+	&.selected{ background: green; }
+}
+
+.conventions{
+	font-size: .8em;
+}

@@ -1,0 +1,227 @@
+<table cellpadding="0" cellspacing="0" align="center" width="900">
+	<tr>
+		<td>
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td class="header_line"><!--lang_stats_visitors--></td>
+					<td class="header_line" align="right">21.03.2013</td>
+				</tr>
+				<tr>
+					<td class="header_nav_line">&nbsp;&nbsp;4 <!--lang_stats_visitors--></td>
+					<td class="header_nav_line" align="right">Status:&nbsp;&nbsp;<!--lang_stats_status_closed-->&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table class="bt_values" cellspacing="0" cellpadding="2" width="100%">
+				<tr>
+					<td class="bt_column_header" width="15">#</td>
+					<td class="bt_column_header" width="40" align="center"><!--lang_stats_pages--></td>
+					<td class="bt_column_header" width="60" align="center"><!--lang_stats_entrance--></td>
+					<td class="bt_column_header" width="60" align="center"><!--lang_stats_exit--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_country--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_city--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_browser--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_system--></td>
+					<td class="bt_column_header" width="25">&nbsp;</td>
+				</tr>
+				
+	<tr>
+		<td>1</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_1');"><strong>7</strong></a></td>
+		<td align="center">15:09:08</td>
+		<td align="center">15:24:51</td>
+		<td NOWRAP>Colombia</td>
+		<td NOWRAP>Medellin</td>
+		<td NOWRAP>Chrome 25</td>
+		<td NOWRAP>Windows 7</td>
+		<td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('Epm Telecomunicaciones S.a. E.s.p.','1','1','181.135.234.170','BAMovil-181-135-234-170.une.net.co','ba5930940f',this); return true;"></div></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_11">
+		<td>&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">15:09:08</td>
+		<td colspan="5">Referrer: <a href="http://dereferrer.livezilla.biz/?url=http://repositorio.imaginamos.com/OC/Norquimicos/index.php?seccion=contactenos" target="_blank">http://repositorio.imaginamos.com/OC/Norquimicos/index.php?seccion=contactenos</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_12">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">15:09:08</td>
+		<td align="center">15:13:39</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://repositorio.imaginamos.com/OC/Norquimicos/index.php?seccion=company" target="_blank">http://repositorio.imaginamos.com/OC/Norquimicos/index.php?seccion=company</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_13">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">15:13:39</td>
+		<td align="center">15:24:37</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://repositorio.imaginamos.com/OC/Norquimicos/index.php?seccion=contactenos" target="_blank">http://repositorio.imaginamos.com/OC/Norquimicos/index.php?seccion=contactenos</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_14">
+		<td>&nbsp;</td>
+		<td align="center">3</td>
+		<td align="center">15:09:14</td>
+		<td align="center">15:09:14</td>
+		<td colspan="5"><!--lang_stats_browser--> 2: <a href="http://dereferrer.livezilla.biz/?url=http://repositorio.imaginamos.com/OC/Norquimicos/livezilla/chat.php" target="_blank">http://repositorio.imaginamos.com/OC/Norquimicos/livezilla/chat.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_15">
+		<td>&nbsp;</td>
+		<td align="center">4</td>
+		<td align="center">15:10:10</td>
+		<td align="center">15:10:10</td>
+		<td colspan="5"><!--lang_stats_browser--> 3: <a href="http://dereferrer.livezilla.biz/?url=http://repositorio.imaginamos.com/OC/Norquimicos/livezilla/chat.php" target="_blank">http://repositorio.imaginamos.com/OC/Norquimicos/livezilla/chat.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_16">
+		<td>&nbsp;</td>
+		<td align="center">5</td>
+		<td align="center">15:10:54</td>
+		<td align="center">15:10:48</td>
+		<td colspan="5"><!--lang_stats_browser--> 4: <a href="http://dereferrer.livezilla.biz/?url=http://repositorio.imaginamos.com/OC/Norquimicos/livezilla/chat.php" target="_blank">http://repositorio.imaginamos.com/OC/Norquimicos/livezilla/chat.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_17">
+		<td>&nbsp;</td>
+		<td align="center">6</td>
+		<td align="center">15:12:00</td>
+		<td align="center">15:10:30</td>
+		<td colspan="5"><!--lang_stats_browser--> 5: <a href="http://dereferrer.livezilla.biz/?url=http://repositorio.imaginamos.com/OC/Norquimicos/livezilla/chat.php" target="_blank">http://repositorio.imaginamos.com/OC/Norquimicos/livezilla/chat.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_18">
+		<td>&nbsp;</td>
+		<td align="center">7</td>
+		<td align="center">15:24:51</td>
+		<td align="center">15:26:21</td>
+		<td colspan="5"><!--lang_stats_browser--> 6: <a href="http://dereferrer.livezilla.biz/?url=http://repositorio.imaginamos.com/OC/Norquimicos/livezilla/chat.php" target="_blank">http://repositorio.imaginamos.com/OC/Norquimicos/livezilla/chat.php</a></td>
+	</tr>
+
+	<tr>
+		<td>2</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_2');"><strong>5</strong></a></td>
+		<td align="center">17:35:45</td>
+		<td align="center">17:55:18</td>
+		<td NOWRAP>Colombia</td>
+		<td NOWRAP>Medellin</td>
+		<td NOWRAP>Chrome 25</td>
+		<td NOWRAP>Windows 7</td>
+		<td class="vm" align="right"><div class="ico_info" onclick="showInfoBox('Epm Telecomunicaciones S.a. E.s.p.','2','2','181.135.234.170','BAMovil-181-135-234-170.une.net.co','ba5930940f',this); return true;"></div></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_21">
+		<td>&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">17:35:45</td>
+		<td colspan="5">Referrer: <a href="http://dereferrer.livezilla.biz/?url=http://localhost/Norquimicos/index.php?seccion=editar&amp;ss=48" target="_blank">http://localhost/Norquimicos/index.php?seccion=editar&amp;ss=48</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_22">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">17:35:45</td>
+		<td align="center">17:41:27</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://localhost/Norquimicos/index.php?seccion=contactenos" target="_blank">http://localhost/Norquimicos/index.php?seccion=contactenos</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_23">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">17:41:27</td>
+		<td align="center">17:42:01</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://localhost/Norquimicos/index.php?seccion=company" target="_blank">http://localhost/Norquimicos/index.php?seccion=company</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_24">
+		<td>&nbsp;</td>
+		<td align="center">3</td>
+		<td align="center">17:42:01</td>
+		<td align="center">17:46:18</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://localhost/Norquimicos/index.php?seccion=contactenos" target="_blank">http://localhost/Norquimicos/index.php?seccion=contactenos</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_25">
+		<td>&nbsp;</td>
+		<td align="center">4</td>
+		<td align="center">17:46:18</td>
+		<td align="center">17:55:18</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://localhost/Norquimicos/index.php?seccion=company" target="_blank">http://localhost/Norquimicos/index.php?seccion=company</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_26">
+		<td>&nbsp;</td>
+		<td align="center">5</td>
+		<td align="center">17:43:07</td>
+		<td align="center">17:44:37</td>
+		<td colspan="5"><!--lang_stats_browser--> 2: <a href="http://dereferrer.livezilla.biz/?url=http://repositorio.imaginamos.com/OC/Norquimicos/livezilla/chat.php" target="_blank">http://repositorio.imaginamos.com/OC/Norquimicos/livezilla/chat.php</a></td>
+	</tr>
+
+	<tr>
+		<td>3</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_3');"><strong>2</strong></a></td>
+		<td align="center">20:24:16</td>
+		<td align="center">20:33:21</td>
+		<td NOWRAP>Colombia</td>
+		<td NOWRAP>Bogota</td>
+		<td NOWRAP>Chrome 25</td>
+		<td NOWRAP>MAC OS X 10.7 (Lion)</td>
+		<td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('Ifx Networks Colombia','1','1','190.60.239.146','146.239.60.190.host.ifxnetworks.com','7c8c0fb7b8',this); return true;"></div></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_31">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">20:24:16</td>
+		<td align="center">20:33:21</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://repositorio.imaginamos.com/OC/Norquimicos/index.php?seccion=contactenos" target="_blank">http://repositorio.imaginamos.com/OC/Norquimicos/index.php?seccion=contactenos</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_32">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">20:33:21</td>
+		<td align="center">20:33:21</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://repositorio.imaginamos.com/OC/Norquimicos/index.php?seccion=company" target="_blank">http://repositorio.imaginamos.com/OC/Norquimicos/index.php?seccion=company</a></td>
+	</tr>
+
+	<tr>
+		<td>4</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_4');"><strong>2</strong></a></td>
+		<td align="center">22:17:41</td>
+		<td align="center">22:20:33</td>
+		<td NOWRAP>Colombia</td>
+		<td NOWRAP>Medellin</td>
+		<td NOWRAP>Chrome 25</td>
+		<td NOWRAP>Windows 7</td>
+		<td class="vm" align="right"><div class="ico_info" onclick="showInfoBox('Epm Telecomunicaciones S.a. E.s.p.','3','3','181.135.245.157','BAMovil-181-135-234-170.une.net.co','ba5930940f',this); return true;"></div></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_41">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">22:17:41</td>
+		<td align="center">22:19:03</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://repositorio.imaginamos.com/OC/Norquimicos/index.php?seccion=contactenos" target="_blank">http://repositorio.imaginamos.com/OC/Norquimicos/index.php?seccion=contactenos</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_42">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">22:19:03</td>
+		<td align="center">22:20:34</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://repositorio.imaginamos.com/OC/Norquimicos/index.php?seccion=company" target="_blank">http://repositorio.imaginamos.com/OC/Norquimicos/index.php?seccion=company</a></td>
+	</tr>
+
+			</table>
+			<br>
+		</td>
+	</tr>
+</table>

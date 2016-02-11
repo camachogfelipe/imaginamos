@@ -1,0 +1,60 @@
+a {
+	text-decoration:none;
+	border:none;
+}
+
+
+.acceso-cont {
+    height: auto;
+    position: fixed;
+    right:10px;
+    top: 25px;
+    width: 111px;
+	z-index:100;
+}
+.acceso-rapido{
+    height: 53px;
+    margin-left:-50px;
+    margin-top:200px;
+    position: absolute;
+    width:54px;
+	cursor:pointer;
+	text-decoration:none;
+	border:0px;
+	z-index:100;
+	
+}
+
+.acceso-nav{
+	padding-left: 0px;
+    padding-top: 0px;
+}
+.acceso-nav ul.men li{
+	list-style:none;
+}
+.acceso-nav ul.menhome li{
+	list-style:none;
+	margin-left:-40px;
+}
+.acceso-nav li{
+	background-position: center 0;
+    color: #4B9ED2;
+    font-family: 'Museo700Regular';
+    font-size: 12px;
+    height: 40px;
+    line-height: 11px;
+    padding-top: 0px;
+    text-align: center;
+    width: 111px;
+	cursor:pointer;
+}
+.acceso-nav li:hover{
+	background-position: center -148px;
+}
+.a1{
+	margin-bottom:45px;
+}
+.a2{
+	
+}
+

@@ -1,0 +1,275 @@
+<?php
+/**
+ * @file
+ * Modulo para generar las graficas
+ *
+ * Autor information: David Carvajal
+ * email: davidgcarvajal@gmail.com
+ */
+function baloto_chart_menu() {
+  $items['chart'] = array(
+    'title' => t('chart'),
+    'description' => 'Prueba.',
+    'page callback' => '_baloto_chart_block',
+    'access arguments' => array('access content'),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+function _baloto_chart_block () {
+	$chart_array = cache_get("_baloto_chart_cached");
+  if(!isset($chart_array->data)){
+     _baloto_chart_cached();
+     $chart_array = cache_get("_baloto_chart_cached");
+  }
+	drupal_add_js('https://www.google.com/jsapi', 'external');
+	$chart_code = "
+  google.load(\"visualization\", \"1\", {packages:[\"corechart\"]});
+	google.setOnLoadCallback(drawChart);
+
+	function drawChart() {
+	  var data = google.visualization.arrayToDataTable([
+		" . $chart_array->data['grande'] . "
+	  ]);
+    
+	  var options = {
+			width: 800,
+			height: 200,
+			backgroundColor: 'none',
+      legend: {position: 'none',},
+			bar: {groupWidth: '95%'},
+			chartArea: {left:0,right: 100,top:1, width:'80%',height:'80%'},
+			colors: ['white'],
+			hAxis: {
+				baselineColor: 'none',
+				textStyle: {fontSize: 13, color: '#FFF200'},
+				gridlines: {color: 'none', count: 45, left: 0, right: 0},
+				textPosition: 'out',
+			},
+			vAxis: {
+				gridlines: {color: 'none', count: 2},
+				baselineColor: 'none',
+			}
+	  };
+	  var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+	  chart.draw(data, options);
+    jQuery('#chart_div iframe').attr('allowTransparency', 'true');
+    jQuery('#chart_div iframe').contents().find('body').css('background', 'transparent');
+
+
+	}";
+  $numero_balotas = (count(explode(',', $chart_array->data['revancha']))/2) - 2;
+  $chart_code_rv = "
+  google.load(\"visualization\", \"1\", {packages:[\"corechart\"]});
+  google.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+    " . $chart_array->data['revancha'] . "
+    ]);
+    
+    var options = {
+      width: 800,
+      height: 200,
+      backgroundColor: 'none',
+      legend: {position: 'none',},
+      bar: {groupWidth: '95%'},
+      chartArea: {left:0,right: 100,top:1, width:'80%',height:'80%'},
+      colors: ['white'],
+      hAxis: {
+        baselineColor: 'none',
+        textStyle: {fontSize: 13, color: '#FFF200'},
+        gridlines: {color: 'none', count: " . $numero_balotas . ", left: 0, right: 0},
+        textPosition: 'out',
+      },
+      vAxis: {
+        gridlines: {color: 'none', count: 2},
+        baselineColor: 'none',
+      }
+    };
+    var chart = new google.visualization.ColumnChart(document.getElementById('chart_div_rv'));
+    chart.draw(data, options);
+    jQuery('#chart_div_rv iframe').attr('allowTransparency', 'true');
+    jQuery('#chart_div_rv iframe').contents().find('body').css('background', 'transparent');
+
+
+  }";
+  drupal_add_js($chart_code_rv, array('type' => 'inline', 'scope' => 'footer', 'weight' => 5));
+  drupal_add_js($chart_code, array('type' => 'inline', 'scope' => 'footer', 'weight' => 5));
+  $retorna = '<h2>Baloto</h2><div id="chart_div"></div>';
+  if($numero_balotas > 0 ) $retorna .= '<h2>Revancha</h2><div id="chart_div_rv"></div>';
+	return $retorna;
+}
+
+
+function _baloto_get_items($value, $field) {
+  $cifra = field_get_items('node', $value, $field);
+  return $cifra[0]['value'];
+}
+
+/**
+* Implementation of hook_node_insert
+* Hook para verificar si el nodo creado es un sorteo
+* Declaracion de variable de control para cache
+*/
+
+
+function baloto_chart_node_insert($node) {
+	if($node->type == "sorteo"){
+		variable_set("baloto_chart_validacion_cache", true);
+	}
+}
+
+/**
+* Implementation of hook_node_delete
+* Hook para verificar si el nodo eliminado es un sorteo
+* Declaracion de variable de control para cache
+*/
+
+function baloto_chart_node_delete($node) {
+	if($node->type == "sorteo"){
+		variable_set("baloto_chart_validacion_cache", true);
+	}
+}
+
+/**
+* Implementation of hook_node_update
+* Hook para verificar si el nodo actualizado es un sorteo
+* Declaracion de variable de control para cache
+*/
+
+function baloto_chart_node_update($node) {
+	if($node->type == "sorteo"){
+		variable_set("baloto_chart_validacion_cache", true);
+	}
+}
+
+/**
+* Implentation of hook_block_info
+**/
+
+function baloto_chart_block_info() {
+  $blocks['block_chart'] = array(
+    'info' => t('Grafica de estadisticas por numero en sorteos.'),
+    'cache' => DRUPAL_CACHE_PER_PAGE,
+  );
+  return $blocks;
+}
+
+/**
+* Implentation of hook_block_view
+**/
+
+function baloto_chart_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'block_chart':
+      $block['subject'] = t('Grafica estadistica');
+      $block['content'] = _baloto_chart_block();
+      break;
+  }
+  return $block;
+}
+
+function _baloto_chart_cached(){
+	//drupal_add_js('http://www.google.com/jsapi', array('type' => 'external', 'group' => JS_DEFAULT, 'every_page' => FALSE));
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+          ->entityCondition('bundle', 'sorteo');
+          //->range(0, 100);
+  $result = $query->execute();
+  foreach ($result['node'] as $key) {
+    $nid[] = $key->nid;
+  }
+  $sorteos = node_load_multiple($nid);
+  
+  foreach ($sorteos as $value) {
+    $cifras[] = _baloto_get_items($value, 'field_cifra_uno');
+    $cifras[] = _baloto_get_items($value, 'field_cifra_dos');
+    $cifras[] = _baloto_get_items($value, 'field_cifra_tres');
+    $cifras[] = _baloto_get_items($value, 'field_cifra_cuatro');
+    $cifras[] = _baloto_get_items($value, 'field_cifra_cinco');
+    $cifras[] = _baloto_get_items($value, 'field_cifra_seis');
+    $total[] = _baloto_get_items($value, 'field_revancha_cifra_uno');
+    $total[] = _baloto_get_items($value, 'field_revancha_cifra_dos');
+    $total[] = _baloto_get_items($value, 'field_revancha_cifra_tres');
+    $total[] = _baloto_get_items($value, 'field_revancha_cifra_cuatro');
+    $total[] = _baloto_get_items($value, 'field_revancha_cifra_cinco');
+    $total[] = _baloto_get_items($value, 'field_revancha_cifra_seis');
+  }
+  $valor_minimo = min($cifras);
+  $valor_maximo = max($cifras);
+  $array_unique = array_unique($cifras);
+  sort($array_unique);
+
+  $valor_minimo_rv = min($total);
+  $valor_maximo_rv = max($total);
+  $array_unique_rv = array_unique($total);
+  sort($array_unique_rv);
+
+  foreach ($array_unique as $values) {
+    $contador = 0;
+    foreach ($cifras as $values2) {
+      if ($values == $values2) {
+        $contador ++;
+      }
+    }
+    $indices[] = $values;
+    $cantidad[] = $contador;
+  }
+  unset($indices[0]);
+  unset($cantidad[0]);
+  $cantidad_maxima = max($cantidad);
+  $size = sizeof($indices);
+  $chart_array = "['Balotas', 'Cantidad'],";
+  for ($i=1; $i <= $size; $i++) {
+    if($i==$size){
+      $chart_array .= "[$indices[$i], $cantidad[$i]]";
+    } else {
+      $chart_array .= "[$indices[$i], $cantidad[$i]],";
+    }
+    
+  }
+  foreach ($array_unique_rv as $values_rv) {
+    $contador_rv = 0;
+    foreach ($total as $values2_rv) {
+      if ($values_rv == $values2_rv) {
+        $contador_rv ++;
+      }
+    }
+    $indices_rv[] = $values_rv;
+    $cantidad_rv[] = $contador_rv;
+  }
+  unset($indices_rv[0]);
+  unset($cantidad_rv[0]);
+  $chart_array_rv= "['Balotas', 'Cantidad'],";
+  if(count($cantidad_rv) > 0){
+	  $cantidad_maxima_rv = max($cantidad_rv);
+	  $size_rv = sizeof($indices_rv);
+	  for ($i = 1; $i <= $size_rv; $i++) {
+		if($i == $size_rv){
+		  $chart_array_rv .= "[$indices_rv[$i], $cantidad_rv[$i]]";
+		} else if(isset($indices_rv[$i])){
+		  $chart_array_rv .= "[$indices_rv[$i], $cantidad_rv[$i]],";
+		}
+	  }
+  }
+   $final = array(
+	'grande' => $chart_array,
+	'revancha' => $chart_array_rv
+  );
+  //return $final;
+  cache_set("_baloto_chart_cached",$final);
+  //dpm($final);
+  //variable_del("baloto_chart_validacion_cache");
+}
+
+function baloto_chart_cron(){
+	$validacion_cache = variable_get("baloto_chart_validacion_cache");
+	if(isset($validacion_cache)){
+		_baloto_chart_cached();
+	}
+}

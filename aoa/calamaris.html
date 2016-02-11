@@ -1,0 +1,2676 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+	"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+ <head>
+  <title>Proxy Report (26.Aug 12 04:03:13 - 29.Aug 12 13:01:58)</title>
+  <meta name="generator" content="Calamaris/$Revision: 2.59 $">
+ </head>
+ <body bgcolor="#FFFFFF">
+  <table border="0">
+   <tr>
+    <td>
+     <h1><a name="top">Proxy Report</a></h1>
+     <p>26.Aug 12 04:03:13 - 29.Aug 12 13:01:58</p>
+    </td>
+   </tr>
+  </table>
+  <hr>
+  <ul>
+   <li><a href="#0">Summary</a>
+   <li><a href="#3">Incoming requests by method</a>
+   <li><a href="#4">Incoming UDP-requests by status</a>
+   <li><a href="#5">Incoming TCP-requests by status</a>
+   <li><a href="#6">Outgoing requests by status</a>
+   <li><a href="#7">Outgoing requests by destination</a>
+   <li><a href="#8">Request-destinations by 2nd-level-domain</a>
+   <li><a href="#9">Request-destinations by toplevel-domain</a>
+   <li><a href="#10">TCP-Request-protocol</a>
+   <li><a href="#11">Requested content-type</a>
+   <li><a href="#12">Requested extensions</a>
+   <li><a href="#13">Incoming UDP-requests by host</a>
+   <li><a href="#14">Incoming TCP-requests by host</a>
+   <li><a href="#15">Distribution Histogram</a>
+   <li><a href="#16">Performance in 1 hour steps</a>
+  </ul>
+  <hr>
+  <h2><a name="0">Summary</a></h2>
+  <table border="1">
+   <tr>
+    <th align="left">lines parsed:</th>
+    <td align="right">393329</td>
+   </tr>
+   <tr>
+    <th align="left">invalid lines:</th>
+    <td align="right">0</td>
+   </tr>
+   <tr>
+    <th align="left">unique hosts/users:</th>
+    <td align="right">46</td>
+   </tr>
+   <tr>
+    <th align="left">parse time (sec):</th>
+    <td align="right">660</td>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <h2><a name="3">Incoming requests by method</a></h2>
+  <table border="1">
+   <tr>
+    <th>method</th>
+    <th>request</th>
+    <th>%</th>
+    <th>Byte</th>
+    <th>%</th>
+    <th>sec</th>
+    <th>kB/sec</th>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">GET</th>
+    <td align="right">345330</td>
+    <td align="right">87.80</td>
+    <td align="right">8329538K</td>
+    <td align="right">90.90</td>
+    <td align="right">1</td>
+    <td align="right">22.81</td>
+   </tr>
+   <tr>
+    <th align="left">POST</th>
+    <td align="right">40460</td>
+    <td align="right">10.29</td>
+    <td align="right">783532K</td>
+    <td align="right">8.55</td>
+    <td align="right">1</td>
+    <td align="right">10.83</td>
+   </tr>
+   <tr>
+    <th align="left">HEAD</th>
+    <td align="right">3214</td>
+    <td align="right">0.82</td>
+    <td align="right">1262646</td>
+    <td align="right">0.01</td>
+    <td align="right">0</td>
+    <td align="right">0.86</td>
+   </tr>
+   <tr>
+    <th align="left">PROPFIND</th>
+    <td align="right">2224</td>
+    <td align="right">0.57</td>
+    <td align="right">1625133</td>
+    <td align="right">0.02</td>
+    <td align="right">0</td>
+    <td align="right">4.28</td>
+   </tr>
+   <tr>
+    <th align="left">CONNECT</th>
+    <td align="right">2086</td>
+    <td align="right">0.53</td>
+    <td align="right">49130179</td>
+    <td align="right">0.52</td>
+    <td align="right">35</td>
+    <td align="right">0.65</td>
+   </tr>
+   <tr>
+    <th align="left">OPTIONS</th>
+    <td align="right">10</td>
+    <td align="right">0.00</td>
+    <td align="right">5239</td>
+    <td align="right">0.00</td>
+    <td align="right">0</td>
+    <td align="right">3.54</td>
+   </tr>
+   <tr>
+    <th align="left">NONE</th>
+    <td align="right">4</td>
+    <td align="right">0.00</td>
+    <td align="right">6780</td>
+    <td align="right">0.00</td>
+    <td align="right">0</td>
+    <td align="right">497.83</td>
+   </tr>
+   <tr>
+    <th align="left">CONNECT</th>
+    <td align="right">1</td>
+    <td align="right">0.00</td>
+    <td align="right">3603</td>
+    <td align="right">0.00</td>
+    <td align="right">0</td>
+    <td align="right">35185.55</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">Sum</th>
+    <td align="right">393329</td>
+    <td align="right">100.00</td>
+    <td align="right">9163884K</td>
+    <td align="right">100.00</td>
+    <td align="right">1</td>
+    <td align="right">17.85</td>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <h2><a name="4">Incoming UDP-requests by status</a></h2>
+  <table border="1">
+   <tr>
+    <th align="left">no matching requests</th>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <h2><a name="5">Incoming TCP-requests by status</a></h2>
+  <table border="1">
+   <tr>
+    <th>status</th>
+    <th>request</th>
+    <th>%</th>
+    <th>Byte</th>
+    <th>%</th>
+    <th>sec</th>
+    <th>kB/sec</th>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">HIT</th>
+    <td align="right">73177</td>
+    <td align="right">18.60</td>
+    <td align="right">423301K</td>
+    <td align="right">4.62</td>
+    <td align="right">0</td>
+    <td align="right">59.39</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;TCP_REFRESH_HIT</td>
+    <td align="right">38491</td>
+    <td align="right">9.79</td>
+    <td align="right">139472K</td>
+    <td align="right">1.52</td>
+    <td align="right">0</td>
+    <td align="right">22.34</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;TCP_IMS_HIT</td>
+    <td align="right">15711</td>
+    <td align="right">3.99</td>
+    <td align="right">5731796</td>
+    <td align="right">0.06</td>
+    <td align="right">0</td>
+    <td align="right">26.16</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;TCP_HIT</td>
+    <td align="right">10965</td>
+    <td align="right">2.79</td>
+    <td align="right">219764K</td>
+    <td align="right">2.40</td>
+    <td align="right">0</td>
+    <td align="right">416.70</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;TCP_MEM_HIT</td>
+    <td align="right">7043</td>
+    <td align="right">1.79</td>
+    <td align="right">57460767</td>
+    <td align="right">0.61</td>
+    <td align="right">0</td>
+    <td align="right">469.05</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;TCP_NEGATIVE_HIT</td>
+    <td align="right">967</td>
+    <td align="right">0.25</td>
+    <td align="right">2409441</td>
+    <td align="right">0.03</td>
+    <td align="right">0</td>
+    <td align="right">97.85</td>
+   </tr>
+   <tr>
+    <th align="left">MISS</th>
+    <td align="right">303621</td>
+    <td align="right">77.19</td>
+    <td align="right">8694459K</td>
+    <td align="right">94.88</td>
+    <td align="right">1</td>
+    <td align="right">17.19</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;TCP_MISS</td>
+    <td align="right">280324</td>
+    <td align="right">71.27</td>
+    <td align="right">8490014K</td>
+    <td align="right">92.65</td>
+    <td align="right">1</td>
+    <td align="right">17.14</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;TCP_REFRESH_UNMODIFIED</td>
+    <td align="right">12097</td>
+    <td align="right">3.08</td>
+    <td align="right">28575574</td>
+    <td align="right">0.30</td>
+    <td align="right">0</td>
+    <td align="right">29.99</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;TCP_CLIENT_REFRESH_MISS</td>
+    <td align="right">6081</td>
+    <td align="right">1.55</td>
+    <td align="right">90736012</td>
+    <td align="right">0.97</td>
+    <td align="right">1</td>
+    <td align="right">10.65</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;TCP_REFRESH_MISS</td>
+    <td align="right">4172</td>
+    <td align="right">1.06</td>
+    <td align="right">71842981</td>
+    <td align="right">0.77</td>
+    <td align="right">0</td>
+    <td align="right">61.70</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;TCP_REFRESH_MODIFIED</td>
+    <td align="right">741</td>
+    <td align="right">0.19</td>
+    <td align="right">15281997</td>
+    <td align="right">0.16</td>
+    <td align="right">0</td>
+    <td align="right">76.49</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;TCP_SWAPFAIL_MISS</td>
+    <td align="right">206</td>
+    <td align="right">0.05</td>
+    <td align="right">2914651</td>
+    <td align="right">0.03</td>
+    <td align="right">0</td>
+    <td align="right">33.74</td>
+   </tr>
+   <tr>
+    <th align="left">ERROR</th>
+    <td align="right">16531</td>
+    <td align="right">4.20</td>
+    <td align="right">47230857</td>
+    <td align="right">0.50</td>
+    <td align="right">0</td>
+    <td align="right">164.89</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;TCP_DENIED</td>
+    <td align="right">16431</td>
+    <td align="right">4.18</td>
+    <td align="right">46414374</td>
+    <td align="right">0.49</td>
+    <td align="right">0</td>
+    <td align="right">163.67</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;TCP_MISS</td>
+    <td align="right">97</td>
+    <td align="right">0.02</td>
+    <td align="right">805678</td>
+    <td align="right">0.01</td>
+    <td align="right">0</td>
+    <td align="right">281.94</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;NONE</td>
+    <td align="right">3</td>
+    <td align="right">0.00</td>
+    <td align="right">10805</td>
+    <td align="right">0.00</td>
+    <td align="right">0</td>
+    <td align="right">35172.53</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">Sum</th>
+    <td align="right">393329</td>
+    <td align="right">100.00</td>
+    <td align="right">9163884K</td>
+    <td align="right">100.00</td>
+    <td align="right">1</td>
+    <td align="right">17.85</td>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <h2><a name="6">Outgoing requests by status</a></h2>
+  <table border="1">
+   <tr>
+    <th>status</th>
+    <th>request</th>
+    <th>%</th>
+    <th>Byte</th>
+    <th>%</th>
+    <th>sec</th>
+    <th>kB/sec</th>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">DIRECT Fetch from Source</th>
+    <td align="right">342136</td>
+    <td align="right">100.00</td>
+    <td align="right">8834413K</td>
+    <td align="right">100.00</td>
+    <td align="right">1</td>
+    <td align="right">17.25</td>
+   </tr>
+   <tr>
+    <td>&nbsp;&nbsp;DIRECT</td>
+    <td align="right">342136</td>
+    <td align="right">100.00</td>
+    <td align="right">8834413K</td>
+    <td align="right">100.00</td>
+    <td align="right">1</td>
+    <td align="right">17.25</td>
+   </tr>
+   <tr>
+    <th align="left">SIBLING</th>
+    <td align="right">0</td>
+    <td align="right">0.00</td>
+    <td align="right">0</td>
+    <td align="right">0.00</td>
+    <td align="right">0</td>
+    <td align="right">0.00</td>
+   </tr>
+   <tr>
+    <th align="left">PARENT</th>
+    <td align="right">0</td>
+    <td align="right">0.00</td>
+    <td align="right">0</td>
+    <td align="right">0.00</td>
+    <td align="right">0</td>
+    <td align="right">0.00</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">Sum</th>
+    <td align="right">342136</td>
+    <td align="right">100.00</td>
+    <td align="right">8834413K</td>
+    <td align="right">100.00</td>
+    <td align="right">1</td>
+    <td align="right">17.25</td>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <h2><a name="7">Outgoing requests by destination</a></h2>
+  <table border="1">
+   <tr>
+    <th>neighbor type</th>
+    <th>request</th>
+    <th>%</th>
+    <th>Byte</th>
+    <th>%</th>
+    <th>sec</th>
+    <th>kB/sec</th>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">DIRECT</th>
+    <td align="right">342136</td>
+    <td align="right">100.00</td>
+    <td align="right">8834413K</td>
+    <td align="right">100.00</td>
+    <td align="right">1</td>
+    <td align="right">17.25</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">Sum</th>
+    <td align="right">342136</td>
+    <td align="right">100.00</td>
+    <td align="right">8834413K</td>
+    <td align="right">100.00</td>
+    <td align="right">1</td>
+    <td align="right">17.25</td>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <h2><a name="8">Request-destinations by 2nd-level-domain</a></h2>
+  <table border="1">
+   <tr>
+    <th>destination</th>
+    <th>request</th>
+    <th>%</th>
+    <th>Byte</th>
+    <th>%</th>
+    <th>hit-%</th>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">*.aoacolombia.com</th>
+    <td align="right">128601</td>
+    <td align="right">32.70</td>
+    <td align="right">6109693K</td>
+    <td align="right">66.67</td>
+    <td align="right">0.00</td>
+   </tr>
+   <tr>
+    <th align="left">&lt;error&gt;</th>
+    <td align="right">23174</td>
+    <td align="right">5.89</td>
+    <td align="right">63356099</td>
+    <td align="right">0.68</td>
+    <td align="right">2.44</td>
+   </tr>
+   <tr>
+    <th align="left">*.google.com</th>
+    <td align="right">18653</td>
+    <td align="right">4.74</td>
+    <td align="right">278797K</td>
+    <td align="right">3.04</td>
+    <td align="right">22.89</td>
+   </tr>
+   <tr>
+    <th align="left">*.eltiempo.com</th>
+    <td align="right">17219</td>
+    <td align="right">4.38</td>
+    <td align="right">81952234</td>
+    <td align="right">0.87</td>
+    <td align="right">42.28</td>
+   </tr>
+   <tr>
+    <th align="left">*.doubleclick.net</th>
+    <td align="right">17022</td>
+    <td align="right">4.33</td>
+    <td align="right">33083123</td>
+    <td align="right">0.35</td>
+    <td align="right">0.32</td>
+   </tr>
+   <tr>
+    <th align="left">*.googlesyndication.com</th>
+    <td align="right">12385</td>
+    <td align="right">3.15</td>
+    <td align="right">79788793</td>
+    <td align="right">0.85</td>
+    <td align="right">35.99</td>
+   </tr>
+   <tr>
+    <th align="left">*.gstatic.com</th>
+    <td align="right">9078</td>
+    <td align="right">2.31</td>
+    <td align="right">70211481</td>
+    <td align="right">0.75</td>
+    <td align="right">8.03</td>
+   </tr>
+   <tr>
+    <th align="left">*.google.com.co</th>
+    <td align="right">8704</td>
+    <td align="right">2.21</td>
+    <td align="right">67923698</td>
+    <td align="right">0.72</td>
+    <td align="right">6.16</td>
+   </tr>
+   <tr>
+    <th align="left">*.elempleo.com</th>
+    <td align="right">6816</td>
+    <td align="right">1.73</td>
+    <td align="right">13042556</td>
+    <td align="right">0.14</td>
+    <td align="right">84.80</td>
+   </tr>
+   <tr>
+    <th align="left">*.transitobogota.gov.co</th>
+    <td align="right">6328</td>
+    <td align="right">1.61</td>
+    <td align="right">6826119</td>
+    <td align="right">0.07</td>
+    <td align="right">92.45</td>
+   </tr>
+   <tr>
+    <th align="left">*.scorecardresearch.com</th>
+    <td align="right">5862</td>
+    <td align="right">1.49</td>
+    <td align="right">2464997</td>
+    <td align="right">0.03</td>
+    <td align="right">0.00</td>
+   </tr>
+   <tr>
+    <th align="left">*.avast.com</th>
+    <td align="right">4573</td>
+    <td align="right">1.16</td>
+    <td align="right">6703469</td>
+    <td align="right">0.07</td>
+    <td align="right">0.00</td>
+   </tr>
+   <tr>
+    <th align="left">*.elespectador.com</th>
+    <td align="right">4514</td>
+    <td align="right">1.15</td>
+    <td align="right">28369544</td>
+    <td align="right">0.30</td>
+    <td align="right">59.95</td>
+   </tr>
+   <tr>
+    <th align="left">*.rubiconproject.com</th>
+    <td align="right">4489</td>
+    <td align="right">1.14</td>
+    <td align="right">10201669</td>
+    <td align="right">0.11</td>
+    <td align="right">0.96</td>
+   </tr>
+   <tr>
+    <th align="left">static.elespectador.co</th>
+    <td align="right">3923</td>
+    <td align="right">1.00</td>
+    <td align="right">32727472</td>
+    <td align="right">0.35</td>
+    <td align="right">58.02</td>
+   </tr>
+   <tr>
+    <th align="left">osdir.com</th>
+    <td align="right">3697</td>
+    <td align="right">0.94</td>
+    <td align="right">6006286</td>
+    <td align="right">0.06</td>
+    <td align="right">0.08</td>
+   </tr>
+   <tr>
+    <th align="left">*.radiosfm.org</th>
+    <td align="right">3628</td>
+    <td align="right">0.92</td>
+    <td align="right">1804411</td>
+    <td align="right">0.02</td>
+    <td align="right">98.79</td>
+   </tr>
+   <tr>
+    <th align="left">190.85.62.*</th>
+    <td align="right">3595</td>
+    <td align="right">0.91</td>
+    <td align="right">43476961</td>
+    <td align="right">0.46</td>
+    <td align="right">0.00</td>
+   </tr>
+   <tr>
+    <th align="left">*.googleapis.com</th>
+    <td align="right">3533</td>
+    <td align="right">0.90</td>
+    <td align="right">13193166</td>
+    <td align="right">0.14</td>
+    <td align="right">3.54</td>
+   </tr>
+   <tr>
+    <th align="left">*.aleovias.com</th>
+    <td align="right">3456</td>
+    <td align="right">0.88</td>
+    <td align="right">2841544</td>
+    <td align="right">0.03</td>
+    <td align="right">91.93</td>
+   </tr>
+   <tr>
+    <th align="left">other: 1526 2nd-level-domains</th>
+    <td align="right">104079</td>
+    <td align="right">26.46</td>
+    <td align="right">2224638K</td>
+    <td align="right">24.28</td>
+    <td align="right">30.50</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">Sum</th>
+    <td align="right">393329</td>
+    <td align="right">100.00</td>
+    <td align="right">9163884K</td>
+    <td align="right">100.00</td>
+    <td align="right">18.60</td>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <h2><a name="9">Request-destinations by toplevel-domain</a></h2>
+  <table border="1">
+   <tr>
+    <th>destination</th>
+    <th>request</th>
+    <th>%</th>
+    <th>Byte</th>
+    <th>%</th>
+    <th>hit-%</th>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">*.com</th>
+    <td align="right">291971</td>
+    <td align="right">74.23</td>
+    <td align="right">7894619K</td>
+    <td align="right">86.15</td>
+    <td align="right">17.44</td>
+   </tr>
+   <tr>
+    <th align="left">*.co</th>
+    <td align="right">31576</td>
+    <td align="right">8.03</td>
+    <td align="right">285558K</td>
+    <td align="right">3.12</td>
+    <td align="right">39.67</td>
+   </tr>
+   <tr>
+    <th align="left">*.net</th>
+    <td align="right">27841</td>
+    <td align="right">7.08</td>
+    <td align="right">471885K</td>
+    <td align="right">5.15</td>
+    <td align="right">8.77</td>
+   </tr>
+   <tr>
+    <th align="left">&lt;error&gt;</th>
+    <td align="right">23174</td>
+    <td align="right">5.89</td>
+    <td align="right">63356099</td>
+    <td align="right">0.68</td>
+    <td align="right">2.44</td>
+   </tr>
+   <tr>
+    <th align="left">*.org</th>
+    <td align="right">7640</td>
+    <td align="right">1.94</td>
+    <td align="right">88852196</td>
+    <td align="right">0.95</td>
+    <td align="right">79.11</td>
+   </tr>
+   <tr>
+    <th align="left">&lt;unresolved&gt;</th>
+    <td align="right">4365</td>
+    <td align="right">1.11</td>
+    <td align="right">239295K</td>
+    <td align="right">2.61</td>
+    <td align="right">3.55</td>
+   </tr>
+   <tr>
+    <th align="left">*.in</th>
+    <td align="right">2557</td>
+    <td align="right">0.65</td>
+    <td align="right">32957900</td>
+    <td align="right">0.35</td>
+    <td align="right">1.17</td>
+   </tr>
+   <tr>
+    <th align="left">*.es</th>
+    <td align="right">1702</td>
+    <td align="right">0.43</td>
+    <td align="right">7142531</td>
+    <td align="right">0.08</td>
+    <td align="right">12.69</td>
+   </tr>
+   <tr>
+    <th align="left">*.coop</th>
+    <td align="right">313</td>
+    <td align="right">0.08</td>
+    <td align="right">2341691</td>
+    <td align="right">0.02</td>
+    <td align="right">27.80</td>
+   </tr>
+   <tr>
+    <th align="left">*.info</th>
+    <td align="right">274</td>
+    <td align="right">0.07</td>
+    <td align="right">9000631</td>
+    <td align="right">0.10</td>
+    <td align="right">1.46</td>
+   </tr>
+   <tr>
+    <th align="left">*.gov</th>
+    <td align="right">220</td>
+    <td align="right">0.06</td>
+    <td align="right">3935086</td>
+    <td align="right">0.04</td>
+    <td align="right">0.91</td>
+   </tr>
+   <tr>
+    <th align="left">*.mx</th>
+    <td align="right">211</td>
+    <td align="right">0.05</td>
+    <td align="right">2155963</td>
+    <td align="right">0.02</td>
+    <td align="right">19.91</td>
+   </tr>
+   <tr>
+    <th align="left">*.de</th>
+    <td align="right">178</td>
+    <td align="right">0.05</td>
+    <td align="right">14599946</td>
+    <td align="right">0.16</td>
+    <td align="right">0.56</td>
+   </tr>
+   <tr>
+    <th align="left">*.cl</th>
+    <td align="right">142</td>
+    <td align="right">0.04</td>
+    <td align="right">7783515</td>
+    <td align="right">0.08</td>
+    <td align="right">15.49</td>
+   </tr>
+   <tr>
+    <th align="left">*.us</th>
+    <td align="right">126</td>
+    <td align="right">0.03</td>
+    <td align="right">2781618</td>
+    <td align="right">0.03</td>
+    <td align="right">3.97</td>
+   </tr>
+   <tr>
+    <th align="left">*.ar</th>
+    <td align="right">114</td>
+    <td align="right">0.03</td>
+    <td align="right">2772736</td>
+    <td align="right">0.03</td>
+    <td align="right">1.75</td>
+   </tr>
+   <tr>
+    <th align="left">*.tv</th>
+    <td align="right">93</td>
+    <td align="right">0.02</td>
+    <td align="right">8315427</td>
+    <td align="right">0.09</td>
+    <td align="right">2.15</td>
+   </tr>
+   <tr>
+    <th align="left">*.cu</th>
+    <td align="right">86</td>
+    <td align="right">0.02</td>
+    <td align="right">510432</td>
+    <td align="right">0.01</td>
+    <td align="right">0.00</td>
+   </tr>
+   <tr>
+    <th align="left">*.fr</th>
+    <td align="right">75</td>
+    <td align="right">0.02</td>
+    <td align="right">1107243</td>
+    <td align="right">0.01</td>
+    <td align="right">9.33</td>
+   </tr>
+   <tr>
+    <th align="left">*.br</th>
+    <td align="right">73</td>
+    <td align="right">0.02</td>
+    <td align="right">9217704</td>
+    <td align="right">0.10</td>
+    <td align="right">34.25</td>
+   </tr>
+   <tr>
+    <th align="left">other: 31 top-level-domains</th>
+    <td align="right">598</td>
+    <td align="right">0.15</td>
+    <td align="right">22236768</td>
+    <td align="right">0.24</td>
+    <td align="right">11.37</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">Sum</th>
+    <td align="right">393329</td>
+    <td align="right">100.00</td>
+    <td align="right">9163884K</td>
+    <td align="right">100.00</td>
+    <td align="right">18.60</td>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <h2><a name="10">TCP-Request-protocol</a></h2>
+  <table border="1">
+   <tr>
+    <th>protocol</th>
+    <th>request</th>
+    <th>%</th>
+    <th>Byte</th>
+    <th>%</th>
+    <th>hit-%</th>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">http:</th>
+    <td align="right">368224</td>
+    <td align="right">93.62</td>
+    <td align="right">9054534K</td>
+    <td align="right">98.81</td>
+    <td align="right">19.72</td>
+   </tr>
+   <tr>
+    <th align="left">&lt;error&gt;</th>
+    <td align="right">23174</td>
+    <td align="right">5.89</td>
+    <td align="right">63356099</td>
+    <td align="right">0.68</td>
+    <td align="right">2.44</td>
+   </tr>
+   <tr>
+    <th align="left">&lt;secure&gt;</th>
+    <td align="right">1931</td>
+    <td align="right">0.49</td>
+    <td align="right">48617951</td>
+    <td align="right">0.52</td>
+    <td align="right">0.00</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">Sum</th>
+    <td align="right">393329</td>
+    <td align="right">100.00</td>
+    <td align="right">9163884K</td>
+    <td align="right">100.00</td>
+    <td align="right">18.60</td>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <h2><a name="11">Requested content-type</a></h2>
+  <table border="1">
+   <tr>
+    <th>content-type</th>
+    <th>request</th>
+    <th>%</th>
+    <th>Byte</th>
+    <th>%</th>
+    <th>hit-%</th>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">text/html</th>
+    <td align="right">98360</td>
+    <td align="right">25.01</td>
+    <td align="right">3263385K</td>
+    <td align="right">35.61</td>
+    <td align="right">1.42</td>
+   </tr>
+   <tr>
+    <th align="left">&lt;unknown&gt;</th>
+    <td align="right">79809</td>
+    <td align="right">20.29</td>
+    <td align="right">39189376</td>
+    <td align="right">0.42</td>
+    <td align="right">28.69</td>
+   </tr>
+   <tr>
+    <th align="left">image/jpeg</th>
+    <td align="right">41930</td>
+    <td align="right">10.66</td>
+    <td align="right">2773188K</td>
+    <td align="right">30.26</td>
+    <td align="right">27.19</td>
+   </tr>
+   <tr>
+    <th align="left">text/javascript</th>
+    <td align="right">40064</td>
+    <td align="right">10.19</td>
+    <td align="right">304595K</td>
+    <td align="right">3.32</td>
+    <td align="right">9.58</td>
+   </tr>
+   <tr>
+    <th align="left">image/png</th>
+    <td align="right">26234</td>
+    <td align="right">6.67</td>
+    <td align="right">355523K</td>
+    <td align="right">3.88</td>
+    <td align="right">29.39</td>
+   </tr>
+   <tr>
+    <th align="left">image/gif</th>
+    <td align="right">23754</td>
+    <td align="right">6.04</td>
+    <td align="right">50544766</td>
+    <td align="right">0.54</td>
+    <td align="right">37.34</td>
+   </tr>
+   <tr>
+    <th align="left">&lt;error&gt;</th>
+    <td align="right">23169</td>
+    <td align="right">5.89</td>
+    <td align="right">63354384</td>
+    <td align="right">0.68</td>
+    <td align="right">2.44</td>
+   </tr>
+   <tr>
+    <th align="left">application/x-javascript</th>
+    <td align="right">14810</td>
+    <td align="right">3.77</td>
+    <td align="right">124838K</td>
+    <td align="right">1.36</td>
+    <td align="right">18.81</td>
+   </tr>
+   <tr>
+    <th align="left">application/vnd.google.safebrowsing-chunk</th>
+    <td align="right">8052</td>
+    <td align="right">2.05</td>
+    <td align="right">177684K</td>
+    <td align="right">1.94</td>
+    <td align="right">30.61</td>
+   </tr>
+   <tr>
+    <th align="left">text/css</th>
+    <td align="right">6229</td>
+    <td align="right">1.58</td>
+    <td align="right">41875753</td>
+    <td align="right">0.45</td>
+    <td align="right">42.58</td>
+   </tr>
+   <tr>
+    <th align="left">application/json</th>
+    <td align="right">5592</td>
+    <td align="right">1.42</td>
+    <td align="right">19275210</td>
+    <td align="right">0.21</td>
+    <td align="right">5.51</td>
+   </tr>
+   <tr>
+    <th align="left">application/javascript</th>
+    <td align="right">5416</td>
+    <td align="right">1.38</td>
+    <td align="right">21924809</td>
+    <td align="right">0.23</td>
+    <td align="right">66.10</td>
+   </tr>
+   <tr>
+    <th align="left">text/plain</th>
+    <td align="right">4443</td>
+    <td align="right">1.13</td>
+    <td align="right">108284K</td>
+    <td align="right">1.18</td>
+    <td align="right">34.91</td>
+   </tr>
+   <tr>
+    <th align="left">application/octet-stream</th>
+    <td align="right">3238</td>
+    <td align="right">0.82</td>
+    <td align="right">403762K</td>
+    <td align="right">4.41</td>
+    <td align="right">2.90</td>
+   </tr>
+   <tr>
+    <th align="left">application/x-shockwave-flash</th>
+    <td align="right">2740</td>
+    <td align="right">0.70</td>
+    <td align="right">146777K</td>
+    <td align="right">1.60</td>
+    <td align="right">63.14</td>
+   </tr>
+   <tr>
+    <th align="left">text/xml</th>
+    <td align="right">2067</td>
+    <td align="right">0.53</td>
+    <td align="right">5940594</td>
+    <td align="right">0.06</td>
+    <td align="right">28.25</td>
+   </tr>
+   <tr>
+    <th align="left">&lt;secure&gt;</th>
+    <td align="right">1931</td>
+    <td align="right">0.49</td>
+    <td align="right">48617951</td>
+    <td align="right">0.52</td>
+    <td align="right">0.00</td>
+   </tr>
+   <tr>
+    <th align="left">application/vnd.google.safebrowsing-update</th>
+    <td align="right">1282</td>
+    <td align="right">0.33</td>
+    <td align="right">1998962</td>
+    <td align="right">0.02</td>
+    <td align="right">0.00</td>
+   </tr>
+   <tr>
+    <th align="left">application/ocsp-response</th>
+    <td align="right">712</td>
+    <td align="right">0.18</td>
+    <td align="right">1425550</td>
+    <td align="right">0.02</td>
+    <td align="right">12.36</td>
+   </tr>
+   <tr>
+    <th align="left">image/x-icon</th>
+    <td align="right">574</td>
+    <td align="right">0.15</td>
+    <td align="right">3463137</td>
+    <td align="right">0.04</td>
+    <td align="right">38.15</td>
+   </tr>
+   <tr>
+    <th align="left">other: 68 content-types</th>
+    <td align="right">2923</td>
+    <td align="right">0.74</td>
+    <td align="right">1215213K</td>
+    <td align="right">13.26</td>
+    <td align="right">15.09</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">Sum</th>
+    <td align="right">393329</td>
+    <td align="right">100.00</td>
+    <td align="right">9163884K</td>
+    <td align="right">100.00</td>
+    <td align="right">18.60</td>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <h2><a name="12">Requested extensions</a></h2>
+  <table border="1">
+   <tr>
+    <th>extensions</th>
+    <th>request</th>
+    <th>%</th>
+    <th>Byte</th>
+    <th>%</th>
+    <th>hit-%</th>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">&lt;dynamic&gt;</th>
+    <td align="right">178450</td>
+    <td align="right">45.37</td>
+    <td align="right">4301876K</td>
+    <td align="right">46.94</td>
+    <td align="right">3.45</td>
+   </tr>
+   <tr>
+    <th align="left">jpg</th>
+    <td align="right">43825</td>
+    <td align="right">11.14</td>
+    <td align="right">2542914K</td>
+    <td align="right">27.75</td>
+    <td align="right">32.13</td>
+   </tr>
+   <tr>
+    <th align="left">png</th>
+    <td align="right">42408</td>
+    <td align="right">10.78</td>
+    <td align="right">247800K</td>
+    <td align="right">2.70</td>
+    <td align="right">29.96</td>
+   </tr>
+   <tr>
+    <th align="left">js</th>
+    <td align="right">31219</td>
+    <td align="right">7.94</td>
+    <td align="right">148831K</td>
+    <td align="right">1.62</td>
+    <td align="right">36.87</td>
+   </tr>
+   <tr>
+    <th align="left">gif</th>
+    <td align="right">24991</td>
+    <td align="right">6.35</td>
+    <td align="right">38853340</td>
+    <td align="right">0.41</td>
+    <td align="right">55.67</td>
+   </tr>
+   <tr>
+    <th align="left">&lt;error&gt;</th>
+    <td align="right">23174</td>
+    <td align="right">5.89</td>
+    <td align="right">63356099</td>
+    <td align="right">0.68</td>
+    <td align="right">2.44</td>
+   </tr>
+   <tr>
+    <th align="left">&lt;none&gt;</th>
+    <td align="right">16091</td>
+    <td align="right">4.09</td>
+    <td align="right">282057K</td>
+    <td align="right">3.08</td>
+    <td align="right">32.52</td>
+   </tr>
+   <tr>
+    <th align="left">css</th>
+    <td align="right">8771</td>
+    <td align="right">2.23</td>
+    <td align="right">22857375</td>
+    <td align="right">0.24</td>
+    <td align="right">32.28</td>
+   </tr>
+   <tr>
+    <th align="left">php</th>
+    <td align="right">5217</td>
+    <td align="right">1.33</td>
+    <td align="right">211702K</td>
+    <td align="right">2.31</td>
+    <td align="right">0.12</td>
+   </tr>
+   <tr>
+    <th align="left">html</th>
+    <td align="right">4025</td>
+    <td align="right">1.02</td>
+    <td align="right">13082284</td>
+    <td align="right">0.14</td>
+    <td align="right">31.80</td>
+   </tr>
+   <tr>
+    <th align="left">swf</th>
+    <td align="right">2051</td>
+    <td align="right">0.52</td>
+    <td align="right">99443918</td>
+    <td align="right">1.06</td>
+    <td align="right">66.85</td>
+   </tr>
+   <tr>
+    <th align="left">&lt;secure&gt;</th>
+    <td align="right">1931</td>
+    <td align="right">0.49</td>
+    <td align="right">48617951</td>
+    <td align="right">0.52</td>
+    <td align="right">0.00</td>
+   </tr>
+   <tr>
+    <th align="left">JPG</th>
+    <td align="right">1817</td>
+    <td align="right">0.46</td>
+    <td align="right">35785961</td>
+    <td align="right">0.38</td>
+    <td align="right">3.96</td>
+   </tr>
+   <tr>
+    <th align="left">bz2</th>
+    <td align="right">1358</td>
+    <td align="right">0.35</td>
+    <td align="right">14894479</td>
+    <td align="right">0.16</td>
+    <td align="right">75.26</td>
+   </tr>
+   <tr>
+    <th align="left">xml</th>
+    <td align="right">1223</td>
+    <td align="right">0.31</td>
+    <td align="right">4653872</td>
+    <td align="right">0.05</td>
+    <td align="right">49.14</td>
+   </tr>
+   <tr>
+    <th align="left">asp</th>
+    <td align="right">1024</td>
+    <td align="right">0.26</td>
+    <td align="right">2929468</td>
+    <td align="right">0.03</td>
+    <td align="right">0.00</td>
+   </tr>
+   <tr>
+    <th align="left">ico</th>
+    <td align="right">960</td>
+    <td align="right">0.24</td>
+    <td align="right">3675189</td>
+    <td align="right">0.04</td>
+    <td align="right">31.35</td>
+   </tr>
+   <tr>
+    <th align="left">jpeg</th>
+    <td align="right">599</td>
+    <td align="right">0.15</td>
+    <td align="right">5025132</td>
+    <td align="right">0.05</td>
+    <td align="right">82.14</td>
+   </tr>
+   <tr>
+    <th align="left">aspx</th>
+    <td align="right">573</td>
+    <td align="right">0.15</td>
+    <td align="right">6019256</td>
+    <td align="right">0.06</td>
+    <td align="right">0.35</td>
+   </tr>
+   <tr>
+    <th align="left">com</th>
+    <td align="right">438</td>
+    <td align="right">0.11</td>
+    <td align="right">199939</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+   </tr>
+   <tr>
+    <th align="left">other: 119 extensions</th>
+    <td align="right">3184</td>
+    <td align="right">0.81</td>
+    <td align="right">1077733K</td>
+    <td align="right">11.76</td>
+    <td align="right">32.69</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">Sum</th>
+    <td align="right">393329</td>
+    <td align="right">100.00</td>
+    <td align="right">9163884K</td>
+    <td align="right">100.00</td>
+    <td align="right">18.60</td>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <h2><a name="13">Incoming UDP-requests by host</a></h2>
+  <table border="1">
+   <tr>
+    <th align="left">no matching requests</th>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <h2><a name="14">Incoming TCP-requests by host</a></h2>
+  <table border="1">
+   <tr>
+    <th>host</th>
+    <th>request</th>
+    <th>hit-%</th>
+    <th>Byte</th>
+    <th>hit-%</th>
+    <th>sec</th>
+    <th>kB/sec</th>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.118</th>
+    <td align="right">80084</td>
+    <td align="right">15.08</td>
+    <td align="right">515402K</td>
+    <td align="right">10.64</td>
+    <td align="right">2</td>
+    <td align="right">2.31</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.63</th>
+    <td align="right">32176</td>
+    <td align="right">26.90</td>
+    <td align="right">414736K</td>
+    <td align="right">4.32</td>
+    <td align="right">0</td>
+    <td align="right">14.73</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.76</th>
+    <td align="right">21169</td>
+    <td align="right">42.45</td>
+    <td align="right">210167K</td>
+    <td align="right">6.92</td>
+    <td align="right">0</td>
+    <td align="right">12.08</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.126</th>
+    <td align="right">20444</td>
+    <td align="right">12.32</td>
+    <td align="right">389742K</td>
+    <td align="right">9.59</td>
+    <td align="right">3</td>
+    <td align="right">6.11</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.180.123</th>
+    <td align="right">16691</td>
+    <td align="right">9.44</td>
+    <td align="right">613389K</td>
+    <td align="right">1.03</td>
+    <td align="right">1</td>
+    <td align="right">29.38</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.116</th>
+    <td align="right">16107</td>
+    <td align="right">10.68</td>
+    <td align="right">418825K</td>
+    <td align="right">3.80</td>
+    <td align="right">0</td>
+    <td align="right">52.72</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.61</th>
+    <td align="right">13741</td>
+    <td align="right">14.21</td>
+    <td align="right">308265K</td>
+    <td align="right">13.26</td>
+    <td align="right">0</td>
+    <td align="right">43.62</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.125</th>
+    <td align="right">12392</td>
+    <td align="right">26.02</td>
+    <td align="right">85245698</td>
+    <td align="right">20.36</td>
+    <td align="right">0</td>
+    <td align="right">34.15</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.60</th>
+    <td align="right">12026</td>
+    <td align="right">7.43</td>
+    <td align="right">284830K</td>
+    <td align="right">2.38</td>
+    <td align="right">0</td>
+    <td align="right">57.94</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.109</th>
+    <td align="right">11977</td>
+    <td align="right">46.05</td>
+    <td align="right">332787K</td>
+    <td align="right">2.71</td>
+    <td align="right">1</td>
+    <td align="right">14.66</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.81</th>
+    <td align="right">11293</td>
+    <td align="right">5.76</td>
+    <td align="right">278337K</td>
+    <td align="right">6.10</td>
+    <td align="right">0</td>
+    <td align="right">49.56</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.180.122</th>
+    <td align="right">11072</td>
+    <td align="right">1.89</td>
+    <td align="right">414012K</td>
+    <td align="right">0.73</td>
+    <td align="right">1</td>
+    <td align="right">31.76</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.124</th>
+    <td align="right">9701</td>
+    <td align="right">11.53</td>
+    <td align="right">79331665</td>
+    <td align="right">6.86</td>
+    <td align="right">1</td>
+    <td align="right">4.96</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.113</th>
+    <td align="right">9701</td>
+    <td align="right">46.41</td>
+    <td align="right">84305989</td>
+    <td align="right">22.99</td>
+    <td align="right">0</td>
+    <td align="right">63.43</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.57</th>
+    <td align="right">9114</td>
+    <td align="right">14.98</td>
+    <td align="right">244497K</td>
+    <td align="right">3.24</td>
+    <td align="right">0</td>
+    <td align="right">71.35</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.105</th>
+    <td align="right">8658</td>
+    <td align="right">4.12</td>
+    <td align="right">1332502K</td>
+    <td align="right">0.41</td>
+    <td align="right">1</td>
+    <td align="right">110.26</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.180.114</th>
+    <td align="right">8551</td>
+    <td align="right">16.78</td>
+    <td align="right">121266K</td>
+    <td align="right">4.03</td>
+    <td align="right">0</td>
+    <td align="right">74.00</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.181.54</th>
+    <td align="right">7588</td>
+    <td align="right">0.11</td>
+    <td align="right">440073K</td>
+    <td align="right">0.07</td>
+    <td align="right">0</td>
+    <td align="right">70.83</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.180.125</th>
+    <td align="right">7491</td>
+    <td align="right">20.60</td>
+    <td align="right">233351K</td>
+    <td align="right">5.46</td>
+    <td align="right">0</td>
+    <td align="right">122.86</td>
+   </tr>
+   <tr>
+    <th align="left">192.192.180.94</th>
+    <td align="right">7234</td>
+    <td align="right">23.79</td>
+    <td align="right">190071K</td>
+    <td align="right">8.11</td>
+    <td align="right">0</td>
+    <td align="right">36.13</td>
+   </tr>
+   <tr>
+    <th align="left">other: 26 requesting hosts</th>
+    <td align="right">66119</td>
+    <td align="right">19.89</td>
+    <td align="right">2178582K</td>
+    <td align="right">5.13</td>
+    <td align="right">0</td>
+    <td align="right">4.24</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">Sum</th>
+    <td align="right">393329</td>
+    <td align="right">18.60</td>
+    <td align="right">9163884K</td>
+    <td align="right">4.62</td>
+    <td align="right">1</td>
+    <td align="right">17.85</td>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <h2><a name="15">Distribution Histogram</a></h2>
+  <table border="1">
+   <tr>
+    <th>object-size (bytes)</th>
+    <th>request</th>
+    <th>hit-%</th>
+    <th>Byte</th>
+    <th>hit-%</th>
+    <th>sec</th>
+    <th>kB/sec</th>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">0-0</th>
+    <td align="right">1756</td>
+    <td align="right">0.91</td>
+    <td align="right">0</td>
+    <td align="right">0.00</td>
+    <td align="right">0</td>
+    <td align="right">0.00</td>
+   </tr>
+   <tr>
+    <th align="left">1-9</th>
+    <td align="right">60</td>
+    <td align="right">0.00</td>
+    <td align="right">420</td>
+    <td align="right">0.00</td>
+    <td align="right">0</td>
+    <td align="right">0.30</td>
+   </tr>
+   <tr>
+    <th align="left">10-99</th>
+    <td align="right">23</td>
+    <td align="right">0.00</td>
+    <td align="right">897</td>
+    <td align="right">0.00</td>
+    <td align="right">0</td>
+    <td align="right">1.01</td>
+   </tr>
+   <tr>
+    <th align="left">100-999</th>
+    <td align="right">183579</td>
+    <td align="right">27.52</td>
+    <td align="right">86361499</td>
+    <td align="right">23.84</td>
+    <td align="right">1</td>
+    <td align="right">0.38</td>
+   </tr>
+   <tr>
+    <th align="left">1000-9999</th>
+    <td align="right">136489</td>
+    <td align="right">10.67</td>
+    <td align="right">458932K</td>
+    <td align="right">11.25</td>
+    <td align="right">0</td>
+    <td align="right">3.93</td>
+   </tr>
+   <tr>
+    <th align="left">10000-99999</th>
+    <td align="right">55902</td>
+    <td align="right">13.19</td>
+    <td align="right">1758842K</td>
+    <td align="right">11.88</td>
+    <td align="right">1</td>
+    <td align="right">26.04</td>
+   </tr>
+   <tr>
+    <th align="left">100000-999999</th>
+    <td align="right">14346</td>
+    <td align="right">4.76</td>
+    <td align="right">3718259K</td>
+    <td align="right">2.98</td>
+    <td align="right">1</td>
+    <td align="right">140.65</td>
+   </tr>
+   <tr>
+    <th align="left">1000000-9999999</th>
+    <td align="right">1135</td>
+    <td align="right">1.41</td>
+    <td align="right">2120685K</td>
+    <td align="right">1.49</td>
+    <td align="right">31</td>
+    <td align="right">60.11</td>
+   </tr>
+   <tr>
+    <th align="left">10000000-99999999</th>
+    <td align="right">38</td>
+    <td align="right">0.00</td>
+    <td align="right">818026K</td>
+    <td align="right">0.00</td>
+    <td align="right">1214</td>
+    <td align="right">17.73</td>
+   </tr>
+   <tr>
+    <th align="left">100000000-999999999</th>
+    <td align="right">1</td>
+    <td align="right">0.00</td>
+    <td align="right">204800K</td>
+    <td align="right">0.00</td>
+    <td align="right">224</td>
+    <td align="right">913.37</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">Sum</th>
+    <td align="right">393329</td>
+    <td align="right">18.60</td>
+    <td align="right">9163884K</td>
+    <td align="right">4.62</td>
+    <td align="right">1</td>
+    <td align="right">17.85</td>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <h2><a name="16">Performance in 1 hour steps</a></h2>
+  <table border="1">
+   <tr>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>incomin</th>
+    <th>hit</th>
+    <th>miss</th>
+    <th>direct</th>
+    <th>sibling</th>
+    <th>fetch</th>
+   </tr>
+   <tr>
+    <th>date</th>
+    <th>request</th>
+    <th>Byte</th>
+    <th>kB/sec</th>
+    <th>kB/sec</th>
+    <th>kB/sec</th>
+    <th>kB/sec</th>
+    <th>kB/sec</th>
+    <th>kB/sec</th>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 04:00</th>
+    <td align="right">16</td>
+    <td align="right">67379</td>
+    <td align="right">19.26</td>
+    <td>&nbsp;</td>
+    <td align="right">19.26</td>
+    <td align="right">19.26</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 05:00</th>
+    <td align="right">18</td>
+    <td align="right">60953</td>
+    <td align="right">15.98</td>
+    <td>&nbsp;</td>
+    <td align="right">15.98</td>
+    <td align="right">15.98</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 06:00</th>
+    <td align="right">18</td>
+    <td align="right">64776</td>
+    <td align="right">12.43</td>
+    <td>&nbsp;</td>
+    <td align="right">12.43</td>
+    <td align="right">12.43</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 07:00</th>
+    <td align="right">125</td>
+    <td align="right">101K</td>
+    <td align="right">4.16</td>
+    <td align="right">1.57</td>
+    <td align="right">9.08</td>
+    <td align="right">4.16</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 08:00</th>
+    <td align="right">17</td>
+    <td align="right">65307</td>
+    <td align="right">7.22</td>
+    <td>&nbsp;</td>
+    <td align="right">7.22</td>
+    <td align="right">7.22</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 09:00</th>
+    <td align="right">17</td>
+    <td align="right">74594</td>
+    <td align="right">17.91</td>
+    <td>&nbsp;</td>
+    <td align="right">17.91</td>
+    <td align="right">17.91</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 10:00</th>
+    <td align="right">17</td>
+    <td align="right">78627</td>
+    <td align="right">20.13</td>
+    <td>&nbsp;</td>
+    <td align="right">20.13</td>
+    <td align="right">20.13</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 11:00</th>
+    <td align="right">23</td>
+    <td align="right">40124</td>
+    <td align="right">9.55</td>
+    <td>&nbsp;</td>
+    <td align="right">9.55</td>
+    <td align="right">9.55</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 12:00</th>
+    <td align="right">18</td>
+    <td align="right">43787</td>
+    <td align="right">11.16</td>
+    <td>&nbsp;</td>
+    <td align="right">11.16</td>
+    <td align="right">11.16</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 13:00</th>
+    <td align="right">18</td>
+    <td align="right">52751</td>
+    <td align="right">12.53</td>
+    <td>&nbsp;</td>
+    <td align="right">12.53</td>
+    <td align="right">12.53</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 14:00</th>
+    <td align="right">19</td>
+    <td align="right">61741</td>
+    <td align="right">13.11</td>
+    <td>&nbsp;</td>
+    <td align="right">13.11</td>
+    <td align="right">13.11</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 15:00</th>
+    <td align="right">18</td>
+    <td align="right">64751</td>
+    <td align="right">13.75</td>
+    <td>&nbsp;</td>
+    <td align="right">13.75</td>
+    <td align="right">13.75</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 16:00</th>
+    <td align="right">19</td>
+    <td align="right">71414</td>
+    <td align="right">16.17</td>
+    <td>&nbsp;</td>
+    <td align="right">16.17</td>
+    <td align="right">16.17</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 17:00</th>
+    <td align="right">21</td>
+    <td align="right">72744</td>
+    <td align="right">16.67</td>
+    <td>&nbsp;</td>
+    <td align="right">16.67</td>
+    <td align="right">16.67</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 18:00</th>
+    <td align="right">21</td>
+    <td align="right">58410</td>
+    <td align="right">8.21</td>
+    <td>&nbsp;</td>
+    <td align="right">8.21</td>
+    <td align="right">8.21</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 19:00</th>
+    <td align="right">17</td>
+    <td align="right">51128</td>
+    <td align="right">10.05</td>
+    <td>&nbsp;</td>
+    <td align="right">10.05</td>
+    <td align="right">10.05</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 20:00</th>
+    <td align="right">15</td>
+    <td align="right">33715</td>
+    <td align="right">9.75</td>
+    <td>&nbsp;</td>
+    <td align="right">9.75</td>
+    <td align="right">9.75</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 21:00</th>
+    <td align="right">18</td>
+    <td align="right">60794</td>
+    <td align="right">12.62</td>
+    <td>&nbsp;</td>
+    <td align="right">12.62</td>
+    <td align="right">12.62</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 22:00</th>
+    <td align="right">19</td>
+    <td align="right">57666</td>
+    <td align="right">14.38</td>
+    <td>&nbsp;</td>
+    <td align="right">14.38</td>
+    <td align="right">14.38</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">26.Aug 12 23:00</th>
+    <td align="right">23</td>
+    <td align="right">69490</td>
+    <td align="right">15.36</td>
+    <td>&nbsp;</td>
+    <td align="right">15.36</td>
+    <td align="right">15.36</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 00:00</th>
+    <td align="right">18</td>
+    <td align="right">52509</td>
+    <td align="right">13.61</td>
+    <td>&nbsp;</td>
+    <td align="right">13.61</td>
+    <td align="right">13.61</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 01:00</th>
+    <td align="right">11</td>
+    <td align="right">45131</td>
+    <td align="right">13.57</td>
+    <td>&nbsp;</td>
+    <td align="right">13.57</td>
+    <td align="right">13.57</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 02:00</th>
+    <td align="right">17</td>
+    <td align="right">58663</td>
+    <td align="right">17.93</td>
+    <td>&nbsp;</td>
+    <td align="right">17.93</td>
+    <td align="right">17.93</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 03:00</th>
+    <td align="right">18</td>
+    <td align="right">61593</td>
+    <td align="right">17.43</td>
+    <td>&nbsp;</td>
+    <td align="right">17.43</td>
+    <td align="right">17.43</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 04:00</th>
+    <td align="right">23</td>
+    <td align="right">53996</td>
+    <td align="right">0.05</td>
+    <td align="right">2.14</td>
+    <td align="right">0.05</td>
+    <td align="right">0.05</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 05:00</th>
+    <td align="right">16</td>
+    <td align="right">52735</td>
+    <td align="right">16.41</td>
+    <td>&nbsp;</td>
+    <td align="right">16.41</td>
+    <td align="right">16.41</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 06:00</th>
+    <td align="right">232</td>
+    <td align="right">5257K</td>
+    <td align="right">17.51</td>
+    <td align="right">6.43</td>
+    <td align="right">17.84</td>
+    <td align="right">17.80</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 07:00</th>
+    <td align="right">4569</td>
+    <td align="right">87M</td>
+    <td align="right">37.44</td>
+    <td align="right">12.11</td>
+    <td align="right">41.56</td>
+    <td align="right">36.90</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 08:00</th>
+    <td align="right">18922</td>
+    <td align="right">228M</td>
+    <td align="right">8.14</td>
+    <td align="right">88.36</td>
+    <td align="right">7.16</td>
+    <td align="right">7.51</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 09:00</th>
+    <td align="right">9851</td>
+    <td align="right">304M</td>
+    <td align="right">10.20</td>
+    <td align="right">63.89</td>
+    <td align="right">9.83</td>
+    <td align="right">9.83</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 10:00</th>
+    <td align="right">11593</td>
+    <td align="right">260M</td>
+    <td align="right">8.43</td>
+    <td align="right">33.85</td>
+    <td align="right">8.00</td>
+    <td align="right">7.98</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 11:00</th>
+    <td align="right">14478</td>
+    <td align="right">334M</td>
+    <td align="right">9.18</td>
+    <td align="right">25.20</td>
+    <td align="right">8.52</td>
+    <td align="right">8.38</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 12:00</th>
+    <td align="right">10704</td>
+    <td align="right">155M</td>
+    <td align="right">6.48</td>
+    <td align="right">43.32</td>
+    <td align="right">5.85</td>
+    <td align="right">6.00</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 13:00</th>
+    <td align="right">18886</td>
+    <td align="right">245M</td>
+    <td align="right">10.77</td>
+    <td align="right">95.44</td>
+    <td align="right">9.69</td>
+    <td align="right">9.97</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 14:00</th>
+    <td align="right">13282</td>
+    <td align="right">330M</td>
+    <td align="right">15.14</td>
+    <td align="right">78.71</td>
+    <td align="right">14.28</td>
+    <td align="right">14.59</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 15:00</th>
+    <td align="right">10194</td>
+    <td align="right">546M</td>
+    <td align="right">30.04</td>
+    <td align="right">38.19</td>
+    <td align="right">29.87</td>
+    <td align="right">29.65</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 16:00</th>
+    <td align="right">12676</td>
+    <td align="right">603M</td>
+    <td align="right">67.08</td>
+    <td align="right">155.18</td>
+    <td align="right">64.28</td>
+    <td align="right">65.47</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 17:00</th>
+    <td align="right">6450</td>
+    <td align="right">109M</td>
+    <td align="right">10.77</td>
+    <td align="right">80.06</td>
+    <td align="right">9.56</td>
+    <td align="right">9.83</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 18:00</th>
+    <td align="right">3119</td>
+    <td align="right">66M</td>
+    <td align="right">15.84</td>
+    <td align="right">57.72</td>
+    <td align="right">15.00</td>
+    <td align="right">14.88</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 19:00</th>
+    <td align="right">287</td>
+    <td align="right">3987K</td>
+    <td align="right">55.98</td>
+    <td align="right">64.84</td>
+    <td align="right">56.44</td>
+    <td align="right">56.07</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 20:00</th>
+    <td align="right">101</td>
+    <td align="right">1681K</td>
+    <td align="right">62.79</td>
+    <td align="right">459.22</td>
+    <td align="right">62.01</td>
+    <td align="right">60.89</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 21:00</th>
+    <td align="right">98</td>
+    <td align="right">1468K</td>
+    <td align="right">44.09</td>
+    <td align="right">56.82</td>
+    <td align="right">51.53</td>
+    <td align="right">50.79</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 22:00</th>
+    <td align="right">106</td>
+    <td align="right">1472K</td>
+    <td align="right">47.22</td>
+    <td align="right">56.01</td>
+    <td align="right">50.91</td>
+    <td align="right">50.18</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">27.Aug 12 23:00</th>
+    <td align="right">111</td>
+    <td align="right">1499K</td>
+    <td align="right">54.23</td>
+    <td align="right">20.32</td>
+    <td align="right">59.41</td>
+    <td align="right">56.59</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 00:00</th>
+    <td align="right">103</td>
+    <td align="right">1456K</td>
+    <td align="right">56.47</td>
+    <td align="right">48.05</td>
+    <td align="right">58.41</td>
+    <td align="right">57.64</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 01:00</th>
+    <td align="right">106</td>
+    <td align="right">1692K</td>
+    <td align="right">60.57</td>
+    <td align="right">479.12</td>
+    <td align="right">55.63</td>
+    <td align="right">54.91</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 02:00</th>
+    <td align="right">103</td>
+    <td align="right">1485K</td>
+    <td align="right">59.43</td>
+    <td align="right">52.60</td>
+    <td align="right">66.06</td>
+    <td align="right">64.81</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 03:00</th>
+    <td align="right">105</td>
+    <td align="right">1405K</td>
+    <td align="right">55.26</td>
+    <td align="right">84.34</td>
+    <td align="right">63.72</td>
+    <td align="right">62.65</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 04:00</th>
+    <td align="right">97</td>
+    <td align="right">1460K</td>
+    <td align="right">49.11</td>
+    <td align="right">27.32</td>
+    <td align="right">54.12</td>
+    <td align="right">53.39</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 05:00</th>
+    <td align="right">106</td>
+    <td align="right">1498K</td>
+    <td align="right">44.73</td>
+    <td align="right">83.30</td>
+    <td align="right">47.76</td>
+    <td align="right">47.12</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 06:00</th>
+    <td align="right">873</td>
+    <td align="right">14M</td>
+    <td align="right">29.07</td>
+    <td align="right">47.45</td>
+    <td align="right">28.60</td>
+    <td align="right">28.56</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 07:00</th>
+    <td align="right">11453</td>
+    <td align="right">102M</td>
+    <td align="right">28.28</td>
+    <td align="right">37.83</td>
+    <td align="right">26.99</td>
+    <td align="right">26.55</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 08:00</th>
+    <td align="right">21740</td>
+    <td align="right">407M</td>
+    <td align="right">14.72</td>
+    <td align="right">91.08</td>
+    <td align="right">13.52</td>
+    <td align="right">13.79</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 09:00</th>
+    <td align="right">10415</td>
+    <td align="right">198M</td>
+    <td align="right">5.66</td>
+    <td align="right">56.40</td>
+    <td align="right">5.39</td>
+    <td align="right">5.45</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 10:00</th>
+    <td align="right">14045</td>
+    <td align="right">296M</td>
+    <td align="right">9.87</td>
+    <td align="right">53.02</td>
+    <td align="right">9.41</td>
+    <td align="right">9.54</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 11:00</th>
+    <td align="right">13523</td>
+    <td align="right">254M</td>
+    <td align="right">8.72</td>
+    <td align="right">40.01</td>
+    <td align="right">8.30</td>
+    <td align="right">8.44</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 12:00</th>
+    <td align="right">8317</td>
+    <td align="right">219M</td>
+    <td align="right">11.02</td>
+    <td align="right">69.77</td>
+    <td align="right">10.36</td>
+    <td align="right">10.79</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 13:00</th>
+    <td align="right">8016</td>
+    <td align="right">138M</td>
+    <td align="right">31.41</td>
+    <td align="right">56.26</td>
+    <td align="right">30.96</td>
+    <td align="right">30.38</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 14:00</th>
+    <td align="right">9795</td>
+    <td align="right">166M</td>
+    <td align="right">7.26</td>
+    <td align="right">178.71</td>
+    <td align="right">6.89</td>
+    <td align="right">6.91</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 15:00</th>
+    <td align="right">14908</td>
+    <td align="right">276M</td>
+    <td align="right">22.48</td>
+    <td align="right">1813.53</td>
+    <td align="right">21.63</td>
+    <td align="right">21.63</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 16:00</th>
+    <td align="right">15941</td>
+    <td align="right">295M</td>
+    <td align="right">30.63</td>
+    <td align="right">822.22</td>
+    <td align="right">29.01</td>
+    <td align="right">29.01</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 17:00</th>
+    <td align="right">6667</td>
+    <td align="right">220M</td>
+    <td align="right">43.75</td>
+    <td align="right">946.41</td>
+    <td align="right">42.97</td>
+    <td align="right">42.97</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 18:00</th>
+    <td align="right">6582</td>
+    <td align="right">123M</td>
+    <td align="right">60.85</td>
+    <td align="right">462.63</td>
+    <td align="right">59.41</td>
+    <td align="right">59.41</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 19:00</th>
+    <td align="right">387</td>
+    <td align="right">5770K</td>
+    <td align="right">42.27</td>
+    <td align="right">60.45</td>
+    <td align="right">40.28</td>
+    <td align="right">40.28</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 20:00</th>
+    <td align="right">2</td>
+    <td align="right">1732</td>
+    <td align="right">3.36</td>
+    <td>&nbsp;</td>
+    <td align="right">3.36</td>
+    <td align="right">3.36</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 22:00</th>
+    <td align="right">4</td>
+    <td align="right">16622</td>
+    <td align="right">299.49</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">28.Aug 12 23:00</th>
+    <td align="right">1</td>
+    <td align="right">4356</td>
+    <td align="right">101.28</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">29.Aug 12 00:00</th>
+    <td align="right">2</td>
+    <td align="right">1936</td>
+    <td align="right">5.14</td>
+    <td>&nbsp;</td>
+    <td align="right">5.14</td>
+    <td align="right">5.14</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">29.Aug 12 01:00</th>
+    <td align="right">3</td>
+    <td align="right">6088</td>
+    <td align="right">13.45</td>
+    <td>&nbsp;</td>
+    <td align="right">4.62</td>
+    <td align="right">4.62</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">29.Aug 12 05:00</th>
+    <td align="right">3</td>
+    <td align="right">6368</td>
+    <td align="right">20.59</td>
+    <td>&nbsp;</td>
+    <td align="right">7.50</td>
+    <td align="right">7.50</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">29.Aug 12 06:00</th>
+    <td align="right">2</td>
+    <td align="right">1770</td>
+    <td align="right">10.17</td>
+    <td>&nbsp;</td>
+    <td align="right">10.17</td>
+    <td align="right">10.17</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">29.Aug 12 07:00</th>
+    <td align="right">5910</td>
+    <td align="right">159M</td>
+    <td align="right">81.22</td>
+    <td align="right">440.16</td>
+    <td align="right">79.31</td>
+    <td align="right">79.31</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">29.Aug 12 08:00</th>
+    <td align="right">11478</td>
+    <td align="right">367M</td>
+    <td align="right">70.51</td>
+    <td align="right">850.17</td>
+    <td align="right">68.87</td>
+    <td align="right">68.87</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">29.Aug 12 09:00</th>
+    <td align="right">14168</td>
+    <td align="right">707M</td>
+    <td align="right">50.42</td>
+    <td align="right">447.90</td>
+    <td align="right">50.02</td>
+    <td align="right">50.02</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">29.Aug 12 10:00</th>
+    <td align="right">25610</td>
+    <td align="right">960M</td>
+    <td align="right">61.38</td>
+    <td align="right">1071.59</td>
+    <td align="right">61.07</td>
+    <td align="right">61.07</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">29.Aug 12 11:00</th>
+    <td align="right">32113</td>
+    <td align="right">500M</td>
+    <td align="right">30.33</td>
+    <td align="right">451.33</td>
+    <td align="right">29.61</td>
+    <td align="right">29.61</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">29.Aug 12 12:00</th>
+    <td align="right">23700</td>
+    <td align="right">240M</td>
+    <td align="right">37.44</td>
+    <td align="right">494.70</td>
+    <td align="right">36.03</td>
+    <td align="right">36.03</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <th align="left">29.Aug 12 13:00</th>
+    <td align="right">812</td>
+    <td align="right">8320K</td>
+    <td align="right">27.80</td>
+    <td>&nbsp;</td>
+    <td align="right">27.49</td>
+    <td align="right">27.49</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+   <tr>
+    <th align="left">overall</th>
+    <td align="right">393329</td>
+    <td align="right">8949M</td>
+    <td align="right">17.85</td>
+    <td align="right">59.39</td>
+    <td align="right">17.19</td>
+    <td align="right">17.25</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <hr>
+  <address><a href="http://Calamaris.Cord.de/">Calamaris</a>
+   $Revision: 2.59 $, Copyright &copy; 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004
+   <a href="http://Cord.de/">Cord Beermann</a>.
+  </address>
+  <p>Calamaris comes with ABSOLUTELY NO WARRANTY. It is free software, and you
+   are welcome to redistribute it under certain conditions.  See source for
+   details.
+  </p>
+ </body>
+</html>

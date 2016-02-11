@@ -1,0 +1,39 @@
+.anwsers-content {
+  max-height: 800px;
+  overflow: auto;
+}
+.option {
+  display: block;
+  padding: .5em;
+  margin-top: 2px;
+}
+.selected {
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFF;
+  font-weight: bold;
+}
+.selected:first-child {
+  margin-top: 0;
+}
+.selected.inline {
+  display: inline-block;
+  padding: .5em;
+}
+.is_correct {
+  background: #ffa500;
+  color: #FFF;
+  font-weight: bold;
+}
+.is_correct:first-child {
+  margin-top: 0;
+}
+.is_correct.inline {
+  display: inline-block;
+  padding: .5em;
+}
+.is_correct.selected {
+  background: green;
+}
+.conventions {
+  font-size: .8em;
+}

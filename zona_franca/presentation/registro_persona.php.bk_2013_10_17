@@ -1,0 +1,547 @@
+<?php
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of registro_persona
+ *
+ * @author carlos
+ */
+class registroPersona
+{
+  public $mSiteUrl      = NULL;
+  public $mThisUrl      = NULL;
+  public $mList         = NULL;
+  public $mModo         = NULL;
+  public $cTitulo       = NULL;
+  public $cData         = NULL;
+  public $cEdit         = NULL;
+  public $cCaptcha      = NULL;
+
+  // Class constructor
+  public function __construct()
+  {
+    $this -> mSiteUrl = Link::Build("");
+    $this -> mThisUrl = Link::ToSection( array( "s" => $_GET["seccion"] ) );
+    $this -> mVolver  = $this->mSiteUrl;
+
+    require_once( SITE_ROOT.'libs/recaptcha/recaptchalib.php' );
+  }
+
+  public function init()
+  {
+    $mGenero = new Dbzona_genero();
+    $this -> cGeneros = $mGenero -> getList();
+
+    $mRamo = new Dbzona_estados_civil();
+    $this -> cEstciv = $mRamo -> getList();
+
+    $mDeparta = new Dbcms_departamentos();
+    $this -> cDeparts = $mDeparta -> getList();
+
+    $mPobla = new Dbzona_poblaciones();
+    $this -> cPoblacion = $mPobla -> getList( array( "ind_estado" => "1" ) );
+
+    /*$mProfe = new Dbzona_profesion();
+    $this -> cProfe = $mProfe -> getList( array( "ind_estado" => "1" ) );*/
+    
+    $mArea = new Dbzona_area_laboral();
+    $this->cArea = $mArea->getList(array("ind_estado" => "1"));
+    
+    $this->cProfe = NULL;
+    if(isset($_POST["id_area"])){
+      $mProfesion = new Dbzona_profesion();
+      $this->cProfe = $mProfesion->getList(array( "ind_estado" => "1", "id_area"=>(int)$_POST["id_area"]));
+    }
+
+    $mAspira = new Dbzona_aspiracion();
+    $this -> cAspira = $mAspira -> getList( array( "ind_estado" => "1" ) );
+    
+    $mAspira = new Dbzona_tipos_trabajos();
+    $this -> cTipoTrabajo = $mAspira -> getList( array( "ind_estado" => "1" ) );
+
+    $this -> cArealab = $this->cArea;
+
+    $mNivEst = new Dbzona_nivel_estudio();
+    $this -> cNivEst = $mNivEst -> getList( array( "ind_estado" => "1" ) );
+
+    $mIdioma = new Dbzona_idiomas();
+    $this -> cIdioma = $mIdioma -> getList( array( "ind_estado" => "1" ) );
+
+    $mIdioDomi = new Dbzona_idioma_dominio();
+    $this -> cIdioDomi = $mIdioDomi -> getList( array( "ind_estado" => "1" ) );
+
+    $mInfoDomi = new Dbzona_informa_dominio();
+    $this -> cInfoDomi = $mInfoDomi -> getList( array( "ind_estado" => "1" ) );
+
+    $this -> cData = array();
+
+    $mCiudad = new Dbcms_ciudades();
+    if( NULL !== $this -> cData["id_departamento"] && "" != $this -> cData["id_departamento"])
+      $this -> cCiudades = $mCiudad -> getList( array( "id_departamento" => $this -> cData["id_departamento"] ) );
+    else
+      $this -> cCiudades = NULL;
+
+    $mEnviar = GetData( "enviar", FALSE );
+
+    if( FALSE !== $mEnviar )
+    {
+      $this -> capturar();
+
+      $mCiudad = new Dbcms_ciudades();
+      if( NULL !== $this -> cData["id_departamento"] && "" != $this -> cData["id_departamento"])
+        $this -> cCiudades = $mCiudad -> getList( array( "id_departamento" => $this -> cData["id_departamento"] ) );
+      else
+        $this -> cCiudades = NULL;
+
+      if( !isset( $this -> cData["id_registro"] ) )
+      {
+        if( $this -> cData["txt_passwd"] != GetData( "txt_passwd2" ) )
+        {
+          $this -> cScript = "alert( 'Las claves no coinciden' )";
+          /*exit;*/
+        }
+
+        if( FALSE === filter_var( $this -> cData["txt_email"], FILTER_VALIDATE_EMAIL ) )
+        {
+          $this -> cScript = "alert( 'El email no tiene un formato valido' )";
+          /*exit;*/
+        }
+        else
+        {
+          if( $this -> cData["txt_email"] != GetData( "txt_email2" ) )
+          {
+            $this -> cScript = "alert( 'Los e-mails no coinciden' )";
+            /*exit;*/
+          }
+
+          $cRegistrados = new Dbzona_registrados();
+          $mData = $cRegistrados -> getList( array( "txt_nickname" => $this -> cData["txt_nickname"] ) );
+
+          if( count( $mData ) > 0 )
+          {
+            $this -> cScript = "alert( 'El nombre de usuario ya se encuentra registrado' )";
+            /*exit;*/
+          }
+
+          $cRegistrados = new Dbzona_registrados();
+          $mData = $cRegistrados -> getList( array( "txt_email" => $this -> cData["txt_email"] ) );
+
+          if( count( $mData ) > 0 )
+          {
+            $this -> cScript = "alert( 'El email ya se encuentra registrado' )";
+            /*exit;*/
+          }
+        }
+
+        /*$resp = recaptcha_check_answer ( recap_prikey,
+                                         $_SERVER["REMOTE_ADDR"],
+                                         $_POST["recaptcha_challenge_field"],
+                                         $_POST["recaptcha_response_field"]);
+        if ( !$resp->is_valid )
+        {
+          $this -> cScript = "alert( 'El captcha esta mal llenado' )";
+          //exit;
+        }*/
+      }
+
+      $mRegistro = new Dbzona_registrados();
+
+      if( isset( $this -> cData["id_registro"] ) )
+        $mRegistro -> getByPk( $this -> cData["id_registro"] );
+      else
+      {
+        $mRegistro -> setfil_image( "default.jpg" );
+        $mRegistro -> setind_privaci( "1" );
+        $mRegistro -> setfec_creasi( date( "Y-m-d h:i:s" ) );
+      }
+
+      $mRegistro -> setid_tipo( "2" );
+      $mRegistro -> settxt_nickname( $this -> cData["txt_nickname"] );
+      $mRegistro -> settxt_email( $this -> cData["txt_email"] );
+      $mRegistro -> settxt_passwd( sha1( $this -> cData["txt_passwd"] ) );
+      $mRegistro -> setind_estado( "1" );
+      
+      $mRegistro -> save();
+
+      if( isset( $this -> cData["id_registro"] ) )
+        $mIdRegistro = $this -> cData["id_registro"];
+      else
+        $mIdRegistro = $mRegistro -> getMaxId();
+
+      $mPersona = new Dbzona_personas();
+
+      if( isset( $this -> cData["id_persona"] ) )
+        $mPersona -> getByPk( $this -> cData["id_persona"] );
+      else
+        $mPersona -> setid_registrado( $mIdRegistro );
+
+      $mPersona -> setnum_identifica( $this -> cData["num_identifica"] );
+      $mPersona -> settxt_prim_nom( $this -> cData["txt_prim_nom"] );
+      $mPersona -> settxt_seg_nom( $this -> cData["txt_seg_nom"] );
+      $mPersona -> settxt_prim_apell( $this -> cData["txt_prim_apell"] );
+      $mPersona -> settxt_seg_apell( $this -> cData["txt_seg_apell"] );
+      $mPersona -> setid_genero( $this -> cData["id_genero"] );
+      $mPersona -> setfec_nacimiento( $this -> cData["fec_nacimiento"] );
+      $mPersona -> setid_estado_civ( $this -> cData["id_estado_civ"] );
+      $mPersona -> setid_departamento( $this -> cData["per_id_departamento"] );
+      $mPersona -> setid_ciudad( $this -> cData["per_id_ciudad"] );
+      $mPersona -> settxt_barrio( $this -> cData["txt_barrio"] );
+      $mPersona -> settxt_telefono( $this -> cData["txt_telefono"] );
+      $mPersona -> settxt_movil( $this -> cData["txt_movil"] );
+      $mPersona -> setid_poblacion( $this -> cData["id_poblacion"] );
+      $mPersona -> setind_estado( "1" );
+      $mPersona -> setfec_creasi( date( "Y-m-d h:i:s" ) );
+      $mPersona -> save();
+
+      if( isset( $this -> cData["id_persona"] ) )
+        $mIdPersona = $this -> cData["id_persona"];
+      else
+        $mIdPersona = $mPersona -> getMaxId();
+
+      $mProfeci = new Dbzona_personas_perfil();
+
+      if( isset( $this -> cData["id_perfil"] ) )
+        $mProfeci -> getByPk( $this -> cData["id_perfil"] );
+      else
+        $mProfeci -> setid_persona( $mIdPersona );
+
+      $mProfeci -> setid_profesion( $this -> cData["id_profesion"] );
+      $mProfeci -> setind_trabajando( $this -> cData["ind_trabajando"] );
+      $mProfeci -> setid_aspiracion( $this -> cData["id_aspiracion"] );
+      $mProfeci -> settxt_tipotrabajo( $this -> cData["txt_tipotrabajo"] );
+      $mProfeci -> settxt_perfil( $this -> cData["txt_perfil"] );
+      $mProfeci -> settxt_habilidades( $this -> cData["txt_habilidades"] );
+      $mProfeci -> save();
+
+      $mSqlDel = "DELETE FROM zona_personas_experiencia WHERE id_persona = '".$mIdPersona."' ";
+      DbHandler::Execute( $mSqlDel );
+
+      for( $i = 0, $tot = count( $this -> cData["lab_txt_empresa"] ); $i < $tot; $i++ )
+      {
+        if( NULL !== $this -> cData["lab_txt_empresa"] && "" != $this -> cData["lab_txt_empresa"] )
+        {
+          $mExperie = new Dbzona_personas_experiencia();
+          $mExperie -> setid_persona( $mIdPersona );
+          $mExperie -> settxt_empresa( $this -> cData["lab_txt_empresa"][$i] );
+          $mExperie -> settxt_cargo( $this -> cData["lab_txt_cargo"][$i] );
+          $mExperie -> setid_arealab( $this -> cData["lab_id_arealab"][$i] );
+          $mExperie -> setfec_ingreso( $this -> cData["lab_fec_ingreso"][$i] );
+          $mExperie -> setind_actual( $this -> cData["lab_ind_actual"][$i] );
+          $mExperie -> setfec_finaliza( $this -> cData["lab_fec_finaliza"][$i] );
+          $mExperie -> setid_departamento( $this -> cData["lab_id_departamento"][$i] );
+          $mExperie -> setid_ciudad( $this -> cData["lab_id_ciudad"][$i] );
+          $mExperie -> settxt_telefono( $this -> cData["lab_txt_telefono"][$i] );
+          $mExperie -> settxt_funciones( $this -> cData["lab_txt_funciones"][$i] );
+          $mExperie -> setind_estado( "1" );
+          $mExperie -> save();
+        }
+      }
+
+      $mSqlDel = "DELETE FROM zona_personas_eduformal WHERE id_persona = '".$mIdPersona."' ";
+      DbHandler::Execute( $mSqlDel );
+
+      for( $i = 0, $tot = count( $this -> cData["edf_id_nivel_estudio"] ); $i < $tot; $i++ )
+      {
+        if( NULL !== $this -> cData["edf_id_nivel_estudio"][$i] && "" != $this -> cData["edf_id_nivel_estudio"][$i] )
+        {
+          $mEduform = new Dbzona_personas_eduformal();
+          $mEduform -> setid_persona( $mIdPersona );
+          $mEduform -> setid_nivel_estudio( $this -> cData["edf_id_nivel_estudio"][$i] );
+          $mEduform -> setid_nivel_estudio( $this -> cData["edf_id_nivel_estudio"][$i] );
+          $mEduform -> settxt_titulo( $this -> cData["edf_txt_titulo"][$i] );
+          $mEduform -> settxt_institucion( $this -> cData["edf_txt_institucion"][$i] );
+          $mEduform -> setec_ingreso( $this -> cData["edf_fec_ingreso"][$i] );
+          $mEduform -> setind_encurso( $this -> cData["edf_ind_encurso"][$i] );
+          $mEduform -> setfec_finaliza( $this -> cData["edf_fec_finaliza"][$i] );
+          $mEduform -> setid_departamento( $this -> cData["edf_id_departamento"][$i] );
+          $mEduform -> setid_ciudad( $this -> cData["edf_id_ciudad"][$i] );
+          $mEduform -> setind_estado( "1" );
+          $mEduform -> save();
+        }
+      }
+
+      $mSqlDel = "DELETE FROM zona_personas_edunoformal WHERE id_persona = '".$mIdPersona."' ";
+      DbHandler::Execute( $mSqlDel );
+
+      for( $i = 0, $tot = count( $this -> cData["ednf_txt_titulo"] ); $i < $tot; $i++ )
+      {
+        if( NULL !== $this -> cData["ednf_txt_titulo"][$i] && "" != $this -> cData["ednf_txt_titulo"][$i] )
+        {
+          $mEdnform = new Dbzona_personas_edunoformal();
+          $mEdnform -> setid_persona( $mIdPersona );
+          $mEdnform -> settxt_titulo( $this -> cData["ednf_txt_titulo"][$i] );
+          $mEdnform -> settxt_institucion( $this -> cData["ednf_txt_institucion"][$i] );
+          $mEdnform -> setfec_ingreso( $this -> cData["ednf_fec_ingreso"][$i] );
+          $mEdnform -> setind_encurso( $this -> cData["ednf_ind_encurso"][$i] );
+          $mEdnform -> setfec_finaliza( $this -> cData["ednf_fec_finaliza"][$i] );
+          $mEdnform -> setid_departamento( $this -> cData["ednf_id_departamento"][$i] );
+          $mEdnform -> setid_ciudad( $this -> cData["ednf_id_ciudad"][$i] );
+          $mEdnform -> save();
+        }
+      }
+
+      $mSqlDel = "DELETE FROM zona_personas_idiomas WHERE id_persona = '".$mIdPersona."' ";
+      DbHandler::Execute( $mSqlDel );
+
+      for( $i = 0, $tot = count( $this -> cData["id_idioma"] ); $i < $tot; $i++ )
+      {
+        if( NULL !== $this -> cData["id_idioma"][$i] && "" != $this -> cData["id_idioma"][$i] )
+        {
+          $mIdiomas = new Dbzona_personas_idiomas();
+          $mIdiomas -> setid_persona( $mIdPersona );
+          $mIdiomas -> setid_idioma( $this -> cData["id_idioma"][$i] );
+          $mIdiomas -> settxt_cual( $this -> cData["txt_cual"][$i] );
+          $mIdiomas -> setid_habla( $this -> cData["id_habla"][$i] );
+          $mIdiomas -> setid_escritura( $this -> cData["id_escritura"][$i] );
+          $mIdiomas -> setid_lectura( $this -> cData["id_lectura"][$i] );
+          $mIdiomas -> save();
+        }
+      }
+
+      $mSqlDel = "DELETE FROM zona_personas_informatica WHERE id_persona = '".$mIdPersona."' ";
+      DbHandler::Execute( $mSqlDel );
+
+      for( $i = 0, $tot = count( $this -> cData["inf_txt_aplicacion"] ); $i < $tot; $i++ )
+      {
+        if( NULL !== $this -> cData["inf_txt_aplicacion"][$i] && "" != $this -> cData["inf_txt_aplicacion"][$i] )
+        {
+          $mInforma = new Dbzona_personas_informatica();
+          $mInforma -> setid_persona( $mIdPersona );
+          $mInforma -> settxt_aplicacion( $this -> cData["inf_txt_aplicacion"][$i] );
+          $mInforma -> setid_dominio( $this -> cData["inf_id_dominio"][$i] );
+          $mInforma -> setind_estado( "1" );
+          $mInforma -> save();
+        }
+      }
+      $this -> cScript = "alert( 'Usuario registrado con exito' )";
+    }
+    else
+    {
+      if( isset( $_SESSION["user"] ) )
+      {
+        $mCiudades = new Dbcms_ciudades();
+
+        $mSql = "SELECT a.id AS id_registro, a.id_tipo, a.txt_nickname, a.txt_email, ".
+                       "b.id AS id_persona, b.num_identifica, b.txt_prim_nom, b.txt_seg_nom, b.txt_prim_apell, ".
+                       "b.txt_seg_apell, b.id_genero, b.fec_nacimiento, b.id_estado_civ, ".
+                       "b.id_departamento AS per_id_departamento, b.id_ciudad AS per_id_ciudad, ".
+                       "b.txt_barrio, b.txt_telefono, b.txt_movil, b.id_poblacion, ".
+                       "c.id AS id_perfil, c.id_profesion, c.ind_trabajando, c.id_aspiracion, c.txt_tipotrabajo, ".
+                       "c.txt_perfil, c.txt_habilidades ".
+                  "FROM zona_registrados AS a LEFT JOIN zona_personas AS b ON a.id = b.id_registrado ".
+                                             "LEFT JOIN zona_personas_perfil AS c ON b.id = c.id_persona ".
+                 "WHERE a.id = '".$_SESSION["user"]["id"]."' ";
+
+        $this -> cData = DbHandler::GetRow( $mSql );
+
+        $this -> cPerCiudades = $mCiudades -> getList( array( "id_departamento" => $this -> cData["per_id_departamento"] ) );
+
+        $mSql = "SELECT a.id, a.txt_empresa, a.txt_cargo, a.id_arealab, ".
+                       "a.fec_ingreso, a.ind_actual, a.fec_finaliza, a.id_departamento, ".
+                       "a.id_ciudad, a.txt_telefono, a.txt_funciones ".
+                  "FROM zona_personas_experiencia AS a ".
+                 "WHERE a.id_persona = '".$this -> cData["id_persona"]."' ";
+
+        $mResoult = DbHandler::GetAll( $mSql );
+
+        foreach( $mResoult as $item )
+        {
+          $this -> cData["lab_txt_empresa"][] = $item["txt_empresa"];
+          $this -> cData["lab_txt_cargo"][] = $item["txt_cargo"];
+          $this -> cData["lab_id_arealab"][] = $item["id_arealab"];
+          $this -> cData["lab_fec_ingreso"][] = $item["fec_ingreso"];
+          $this -> cData["lab_ind_actual"][] = $item["ind_actual"];
+          $this -> cData["lab_fec_finaliza"][] = $item["fec_finaliza"];
+          $this -> cData["lab_id_departamento"][] = $item["id_departamento"];
+          $this -> cData["lab_id_ciudad"][] = $item["id_ciudad"];
+          $this -> cData["lab_txt_telefono"][] = $item["txt_telefono"];
+          $this -> cData["lab_txt_funciones"][] = $item["txt_funciones"];
+
+          $this -> cLabCiud[] = $mCiudades -> getList( array( "id_departamento" => $item["id_ciudad"] ) );
+        }
+
+        $mSql = "SELECT a.id, a.id_nivel_estudio, a.txt_titulo, a.txt_institucion, ".
+                       "a.ind_encurso, a.fec_finaliza, a.id_departamento, a.id_ciudad ".
+                  "FROM zona_personas_eduformal AS a ".
+                 "WHERE a.id_persona = '".$this -> cData["id_persona"]."' ";
+
+        $mResoult = DbHandler::GetAll( $mSql );
+
+        foreach( $mResoult as $item )
+        {
+          $this -> cData["edf_id_nivel_estudio"][] = $item["id_nivel_estudio"];
+          $this -> cData["edf_txt_titulo"][] = $item["txt_titulo"];
+          $this -> cData["edf_txt_institucion"][] = $item["txt_institucion"];
+          $this -> cData["edf_ind_encurso"][] = $item["ind_encurso"];
+          $this -> cData["edf_fec_finaliza"][] = $item["fec_finaliza"];
+          $this -> cData["edf_id_departamento"][] = $item["id_departamento"];
+          $this -> cData["edf_id_ciudad"][] = $item["id_ciudad"];
+
+          $this -> cEdfCiud[] = $mCiudades -> getList( array( "id_departamento" => $item["id_ciudad"] ) );
+        }
+
+        $mSql = "SELECT a.id, a.txt_titulo, a.txt_institucion, a.ind_encurso, ".
+                       "a.fec_finaliza, a.id_departamento, a.id_ciudad ".
+                  "FROM zona_personas_edunoformal AS a ".
+                 "WHERE a.id_persona = '".$this -> cData["id_persona"]."' ";
+
+        $mResoult = DbHandler::GetAll( $mSql );
+
+        foreach( $mResoult as $item )
+        {
+          $this -> cData["ednf_txt_titulo"][] = $item["txt_titulo"];
+          $this -> cData["ednf_txt_institucion"][] = $item["txt_institucion"];
+          $this -> cData["ednf_ind_encurso"][] = $item["ind_encurso"];
+          $this -> cData["ednf_fec_finaliza"][] = $item["fec_finaliza"];
+          $this -> cData["ednf_id_departamento"][] = $item["id_departamento"];
+          $this -> cData["ednf_id_ciudad"][] = $item["id_ciudad"];
+
+          $this -> cEdnfCiud[] = $mCiudades -> getList( array( "id_departamento" => $item["id_ciudad"] ) );
+        }
+
+        $mSql = "SELECT a.id, a.id_idioma, a.txt_cual, a.id_habla, ".
+                       "a.id_escritura, a.id_lectura ".
+                  "FROM zona_personas_idiomas AS a ".
+                 "WHERE a.id_persona = '".$this -> cData["id_persona"]."' ";
+
+        $mResoult = DbHandler::GetAll( $mSql );
+
+        foreach( $mResoult as $item )
+        {
+          $this -> cData["id_idioma"][] = $item["id_idioma"];
+          $this -> cData["txt_cual"][] = $item["txt_cual"];
+          $this -> cData["id_habla"][] = $item["id_habla"];
+          $this -> cData["id_escritura"][] = $item["id_escritura"];
+          $this -> cData["id_lectura"][] = $item["id_lectura"];
+        }
+
+        $mSql = "SELECT a.id, a.id_idioma, a.txt_cual, a.id_habla, ".
+                       "a.id_escritura, a.id_lectura ".
+                  "FROM zona_personas_idiomas AS a ".
+                 "WHERE a.id_persona = '".$this -> cData["id_persona"]."' ";
+
+        $mResoult = DbHandler::GetAll( $mSql );
+
+        foreach( $mResoult as $item )
+        {
+          $this -> cData["id_idioma"][] = $item["id_idioma"];
+          $this -> cData["txt_cual"][] = $item["txt_cual"];
+          $this -> cData["id_habla"][] = $item["id_habla"];
+          $this -> cData["id_escritura"][] = $item["id_escritura"];
+          $this -> cData["id_lectura"][] = $item["id_lectura"];
+        }
+
+        $mSql = "SELECT a.id, a.txt_aplicacion, a.id_dominio ".
+                  "FROM zona_personas_informatica AS a ".
+                 "WHERE a.id_persona = '".$this -> cData["id_persona"]."' ";
+
+        $mResoult = DbHandler::GetAll( $mSql );
+
+        foreach( $mResoult as $item )
+        {
+          $this -> cData["inf_txt_aplicacion"][] = $item["txt_aplicacion"];
+          $this -> cData["inf_id_dominio"][] = $item["id_dominio"];
+        }
+
+        $this -> cEdit = "edit";
+      }
+      else
+      {
+        $this->cCaptcha = recaptcha_get_html( recap_pubkey );
+        $this -> capturar();
+      }
+    }
+  }
+
+  private function capturar()
+  {
+    //tabla registro
+    $mIdRegistro = GetData( "id_registro", NULL );
+    if( NULL !== $mIdRegistro && "" != $mIdRegistro )
+      $this -> cData["id_registro"] = $mIdRegistro;
+
+    $this -> cData["txt_nickname"] = GetData( "txt_nickname", NULL );
+    $this -> cData["txt_email"] = GetData( "txt_email", NULL );
+    $this -> cData["txt_passwd"] = GetData( "txt_passwd", NULL );
+
+    //tabla persona
+    $mIdPersona = GetData( "id_persona", NULL );
+    if( NULL !== $mIdPersona && "" != $mIdPersona )
+      $this -> cData["id_persona"] = $mIdPersona;
+
+    $this -> cData["num_identifica"] = GetData( "num_identifica", NULL );
+    $this -> cData["txt_prim_nom"] = GetData( "txt_prim_nom", NULL );
+    $this -> cData["txt_seg_nom"] = GetData( "txt_seg_nom", NULL );
+    $this -> cData["txt_prim_apell"] = GetData( "txt_prim_apell", NULL );
+    $this -> cData["txt_seg_apell"] = GetData( "txt_seg_apell", NULL );
+    $this -> cData["id_genero"] = GetData( "id_genero", NULL );
+    $this -> cData["fec_nacimiento"] = GetData( "fec_nacimiento", NULL );
+    $this -> cData["id_estado_civ"] = GetData( "id_estado_civ", NULL );
+    $this -> cData["per_id_departamento"] = GetData( "per_id_departamento", NULL );
+    $this -> cData["per_id_ciudad"] = GetData( "per_id_ciudad", NULL );
+    $this -> cData["txt_barrio"] = GetData( "txt_barrio", NULL );
+    $this -> cData["txt_telefono"] = GetData( "txt_telefono", NULL );
+    $this -> cData["txt_movil"] = GetData( "txt_movil", NULL );
+    $this -> cData["id_poblacion"] = GetData( "id_poblacion", NULL );
+
+    //tabla perfil profesional
+    $mIdPerfil = GetData( "id_perfil", NULL );
+    if( NULL !== $mIdPerfil && "" != $mIdPerfil )
+      $this -> cData["id_perfil"] = $mIdPerfil;
+
+    $this -> cData["id_profesion"] = GetData( "id_profesion", NULL );
+    $this -> cData["id_area"] = GetData( "id_area", NULL );
+    $this -> cData["ind_trabajando"] = GetData( "ind_trabajando", NULL );
+    $this -> cData["id_aspiracion"] = GetData( "id_aspiracion", NULL );
+    $this -> cData["txt_tipotrabajo"] = GetData( "txt_tipotrabajo", NULL );
+    $this -> cData["txt_perfil"] = GetData( "txt_perfil", NULL );
+    $this -> cData["txt_habilidades"] = GetData( "txt_habilidades", NULL );
+
+    //tabla zona_personas_experiencia
+    $this -> cData["lab_txt_empresa"] = GetData( "lab_txt_empresa", NULL );
+    $this -> cData["lab_txt_cargo"] = GetData( "lab_txt_cargo", NULL );
+    $this -> cData["lab_id_arealab"] = GetData( "lab_id_arealab", NULL );
+    $this -> cData["lab_ind_actual"] = GetData( "lab_ind_actual", NULL );
+    $this -> cData["lab_fec_finaliza"] = GetData( "lab_fec_finaliza", NULL );
+    $this -> cData["lab_id_departamento"] = GetData( "lab_id_departamento", NULL );
+    $this -> cData["lab_id_ciudad"] = GetData( "lab_id_ciudad", NULL );
+    $this -> cData["lab_txt_telefono"] = GetData( "lab_txt_telefono", NULL );
+    $this -> cData["lab_txt_funciones"] = GetData( "lab_txt_funciones", NULL );
+
+    //tabla Educacion formal
+    $this -> cData["edf_id_nivel_estudio"] = GetData( "edf_id_nivel_estudio", NULL );
+    $this -> cData["edf_txt_titulo"] = GetData( "edf_txt_titulo", NULL );
+    $this -> cData["edf_txt_institucion"] = GetData( "edf_txt_institucion", NULL );
+    $this -> cData["edf_fec_ingreso"] = GetData( "edf_fec_ingreso", NULL );
+    $this -> cData["edf_ind_encurso"] = GetData( "edf_ind_encurso", NULL );
+    $this -> cData["edf_fec_finaliza"] = GetData( "edf_fec_finaliza", NULL );
+    $this -> cData["edf_id_departamento"] = GetData( "edf_id_departamento", NULL );
+    $this -> cData["edf_id_ciudad"] = GetData( "edf_id_ciudad", NULL );
+
+    //tabla Educacion no formal
+    $this -> cData["ednf_txt_titulo"] = GetData( "ednf_txt_titulo", NULL );
+    $this -> cData["ednf_txt_institucion"] = GetData( "ednf_txt_institucion", NULL );
+    $this -> cData["ednf_fec_ingreso"] = GetData( "ednf_fec_ingreso", NULL );
+    $this -> cData["ednf_ind_encurso"] = GetData( "ednf_ind_encurso", NULL );
+    $this -> cData["ednf_fec_finaliza"] = GetData( "ednf_fec_finaliza", NULL );
+    $this -> cData["ednf_id_departamento"] = GetData( "ednf_id_departamento", NULL );
+    $this -> cData["ednf_id_ciudad"] = GetData( "ednf_id_ciudad", NULL );
+
+    //tabla Idiomas
+    $this -> cData["id_idioma"] = GetData( "id_idioma", NULL );
+    $this -> cData["txt_cual"] = GetData( "txt_cual", NULL );
+    $this -> cData["id_habla"] = GetData( "id_habla", NULL );
+    $this -> cData["id_escritura"] = GetData( "id_escritura", NULL );
+    $this -> cData["id_lectura"] = GetData( "id_lectura", NULL );
+
+    //tabla Informatica
+    $this -> cData["inf_txt_aplicacion"] = GetData( "inf_txt_aplicacion", NULL );
+    $this -> cData["inf_id_dominio"] = GetData( "inf_id_dominio", NULL );
+  }
+}
+
+?>

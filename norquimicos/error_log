@@ -1,0 +1,7 @@
+[27-May-2013 15:28:36 UTC] PHP Fatal error:  Uncaught <span style="color: #AA0000; font-weight: bold;">ERREUR n°6</span><br>Fichier : /home/norquimi/public_html/secciones/pdfs/html2pdf.class.php<br>Ligne : 1278<br><br>Impossible de charger l'image <b>imagenes/productos/</b>
+  thrown in /home/norquimi/public_html/secciones/pdfs/html2pdf.class.php on line 1278
+[05-Jun-2013 23:09:19 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/norquimi/public_html/secciones/pdfs/_class/parsingCss.class.php on line 1262
+[05-Jun-2013 23:14:21 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/norquimi/public_html/secciones/pdfs/_class/parsingCss.class.php on line 1262
+[06-Jun-2013 13:19:38 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/norquimi/public_html/secciones/pdfs/_class/parsingCss.class.php on line 1262
+[06-Jun-2013 13:20:08 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/norquimi/public_html/secciones/pdfs/_class/parsingCss.class.php on line 1255
+[24-Jun-2013 19:16:19 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/norquimi/public_html/secciones/pdf1.php on line 36

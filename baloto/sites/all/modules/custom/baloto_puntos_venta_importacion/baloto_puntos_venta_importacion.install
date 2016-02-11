@@ -1,0 +1,317 @@
+<?php
+/**
+ * @file
+ * Importar informacion de los establecimientos de baloto, y crear nodos en el sistema a partir de la misma
+ * Autor information: Yesid Camilo Ortiz Castillo
+ * email: yeskmilo@gmail.com
+ */
+
+/**
+* Implements hook_install().
+*/
+function baloto_puntos_venta_importacion_install() {
+  // validamos si el vocabulario "tac" existe
+  if (!taxonomy_vocabulary_machine_name_load('CIUDAD')) {
+    // crear el vocabulario tac
+    $vocabulary = new stdClass();
+    $vocabulary->name = t('CIUDAD');
+    $vocabulary->description = t('Vocabulario referenciar la ciudad de un establecimiento');
+    $vocabulary->machine_name = drupal_strtolower('CIUDAD');
+    $vocabulary->help = '';
+    taxonomy_vocabulary_save($vocabulary);
+
+    // Creamos e instanciamos los campos de la taxonomía
+    /**
+    * Creacion del campo CIUDAD nombre
+    */
+    if (!field_info_field('field_city_name')) {
+      $field[1] = array(
+        'field_name' => 'field_city_name',
+        'type' => 'text',
+        'description' => t('Nombre de la ciudad'),
+        'required' => TRUE,
+      );
+      field_create_field($field[1]);
+    }
+
+    // Instancia del campo CIUDAD nombre
+    $instance[1] = array(
+      'field_name' => $field[1]['field_name'],
+      'entity_type' => 'taxonomy_term',
+      'label' => 'Nombre ciudad',
+      'bundle' => $vocabulary->machine_name,
+      'required' => TRUE,
+    );
+    field_create_instance($instance[1]);
+    // Fin de la creación de campos
+  }
+  if (!array_key_exists('establecimiento', node_type_get_types())) {
+    $type_values = baloto_puntos_venta_importacion_type_values();
+    $type = node_type_set_defaults();
+    $type->type = trim($type_values['type']);
+    $type->name = trim($type_values['name']);
+    $type->orig_type = trim($type_values['orig_type']);
+    $type->old_type = $type_values['old_type'];
+    $type->description = $type_values['description'];
+    $type->help = $type_values['help'];
+    $type->title_label = $type_values['title_label'];
+    $type->body_label = $type_values['body_label'];
+    $type->has_title = ($type->title_label != '');
+    $type->has_body = ($type->body_label != '');
+    $type->base = $type_values['base'];
+    $type->custom = $type_values['custom'];
+    $type->modified = TRUE;
+    $type->locked = $type_values['locked'];
+    $status = node_type_save($type);
+    node_types_rebuild();
+    menu_rebuild();
+    if ($status == SAVED_NEW) {
+      node_add_body_field($type);
+    }elseif ($status == SAVED_UPDATED) {
+    }
+    // Creamos e instanciamos los campos del tipo de contenido
+    /**
+    * Creacion del campo Establecimiento ID
+    */
+    if (!field_info_field('field_punto_id')) {
+      $field[1] = array(
+        'field_name' => 'field_punto_id',
+        'type' => 'text',
+        'description' => t('ID del establecimiento'),
+        'required' => TRUE,
+      );
+      field_create_field($field[1]);
+    }
+
+    // Instancia del campo Establecimiento ID
+    $instance[1] = array(
+      'field_name' => $field[1]['field_name'],
+      'entity_type' => 'node',
+      'label' => 'ID del Establecimiento',
+      'bundle' => $type->type,
+      'required' => TRUE,
+    );
+    field_create_instance($instance[1]);
+    /**
+    * Creacion del campo Establecimiento nombre
+    */
+    if (!field_info_field('field_punto_name')) {
+      $field[2] = array(
+        'field_name' => 'field_punto_name',
+        'type' => 'text',
+        'description' => t('nombre del establecimiento'),
+        'required' => TRUE,
+      );
+      field_create_field($field[2]);
+    }
+
+    // Instancia del campo Establecimiento ID
+    $instance[2] = array(
+      'field_name' => $field[2]['field_name'],
+      'entity_type' => 'node',
+      'label' => 'Nombre del Establecimiento',
+      'bundle' => $type->type,
+      'required' => TRUE,
+    );
+    field_create_instance($instance[2]);
+    /**
+    * Creacion del campo Establecimiento direccion
+    */
+    if (!field_info_field('field_punto_address')) {
+      $field[3] = array(
+        'field_name' => 'field_punto_address',
+        'type' => 'text',
+        'description' => t('Direccion del establecimiento'),
+        'required' => TRUE,
+      );
+      field_create_field($field[3]);
+    }
+
+    // Instancia del campo Establecimiento direccion
+    $instance[3] = array(
+      'field_name' => $field[3]['field_name'],
+      'entity_type' => 'node',
+      'label' => 'Direccion del Establecimiento',
+      'bundle' => $type->type,
+      'required' => TRUE,
+    );
+    field_create_instance($instance[3]);
+    /**
+    * Creacion del campo Establecimiento telefono
+    */
+    if (!field_info_field('field_punto_phone')) {
+      $field[4] = array(
+        'field_name' => 'field_punto_phone',
+        'type' => 'text',
+        'description' => t('Telefono del establecimiento'),
+        'required' => TRUE,
+      );
+      field_create_field($field[4]);
+    }
+
+    // Instancia del campo Establecimiento telefono
+    $instance[4] = array(
+      'field_name' => $field[4]['field_name'],
+      'entity_type' => 'node',
+      'label' => 'Telefono del Establecimiento',
+      'bundle' => $type->type,
+      'required' => TRUE,
+    );
+    field_create_instance($instance[4]);
+    /**
+    * Creacion del campo Establecimiento ciudad
+    */
+    if (!field_info_field('field_punto_city')) {
+      $field[5] = array(
+        'field_name' => 'field_punto_city',
+        'type' => 'taxonomy_term_reference',
+        'settings' => array(
+          'allowed_values' => array(
+            0 => array(
+              'vocabulary' => 'ciudad',
+              'parent' => 0,
+            ),
+          ),
+        ),
+        'description' => t('Ciudad del establecimiento'),
+        'required' => TRUE,
+      );
+      field_create_field($field[5]);
+    }
+
+    // Instancia del campo Establecimiento ciudad
+    $instance[5] = array(
+      'field_name' => $field[5]['field_name'],
+      'entity_type' => 'node',
+      'label' => 'Ciudad del Establecimiento',
+      'bundle' => $type->type,
+      'display' => array(
+        'default' => array(
+          'type' => 'hs_taxonomy_term_reference_hierarchical_links',
+          //'type' => 'taxonomy_term_reference_link',
+        ),
+      ),
+      'required' => TRUE,
+    );
+    field_create_instance($instance[5]);
+    /**
+    * Creacion del campo Establecimiento departamento
+    */
+    /*if (!field_info_field('field_punto_state')) {
+      $field[6] = array(
+        'field_name' => 'field_punto_state',
+        'type' => 'taxonomy_term_reference',
+        'settings' => array(
+          'allowed_values' => array(
+            0 => array(
+              'vocabulary' => 'ciudad',
+              'parent' => 0,
+            ),
+          ),
+        ),
+        'description' => t('Departamento del establecimiento'),
+        'required' => TRUE,
+      );
+      field_create_field($field[6]);
+    }
+
+    // Instancia del campo Establecimiento departamento
+    $instance[6] = array(
+      'field_name' => $field[6]['field_name'],
+      'entity_type' => 'node',
+      'label' => 'Departamento del Establecimiento',
+      'bundle' => $type->type,
+      'display' => array(
+        'default' => array(
+          'type' => 'taxonomy_term_reference_link',
+        ),
+      ),
+      'required' => TRUE,
+    );
+    field_create_instance($instance[6]);*/
+    // Fin de la creación de campos
+  }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function baloto_puntos_venta_importacion_uninstall() {
+  /**
+  * Eliminacion de campos y taxonomia (Taxonomia)
+  */
+  // Eliminamos la instancia de los field
+  $instance[1] = field_info_instance('taxonomy_term', 'field_city_name', 'CIUDAD');
+  field_delete_instance($instance[1]);
+  // Eliminamos los fields
+  field_delete_field('field_city_name');
+  // Eliminamos el vocabulario
+  $vocabulary = taxonomy_vocabulary_machine_name_load('ciudad');
+  if ($vocabulary != NULL){
+    taxonomy_vocabulary_delete($vocabulary->vid);
+  }
+  /**
+  * Eliminacion de contenido, campos del tipo de contenido y el mismo tipo de contenido (Tipo de contenido)
+  */
+  //Eliminacion del contenido perteneciente al tipo de contenido establecimiento
+  $nodes = node_load_multiple(array(),array('type' => 'establecimiento'));
+  $nids = array();
+  foreach ($nodes as $key) {
+    $nids[] = $key->vid;
+  }
+  node_delete_multiple($nids);
+  //Eliminacion dle tipo de contenido Establecimiento
+  if (array_key_exists('establecimiento', node_type_get_types())) {
+    $type_values = baloto_puntos_venta_importacion_type_values();
+    node_type_delete($type_values['type']);
+  }
+  //Eliminacion de la instacia del campo field_punto_id
+  $instance[2] = field_info_instance('node', 'field_punto_id', 'establecimiento');
+  field_delete_instance($instance[2]);
+  // Eliminamos los fields
+  field_delete_field('field_punto_id');
+  //Eliminacion de la instacia del campo field_punto_name
+  $instance[3] = field_info_instance('node', 'field_punto_name', 'establecimiento');
+  field_delete_instance($instance[3]);
+  // Eliminamos los fields
+  field_delete_field('field_punto_name');
+  //Eliminacion de la instacia del campo field_punto_address
+  $instance[4] = field_info_instance('node', 'field_punto_address', 'establecimiento');
+  field_delete_instance($instance[4]);
+  // Eliminamos los fields
+  field_delete_field('field_punto_address');
+  //Eliminacion de la instacia del campo field_punto_phone
+  $instance[5] = field_info_instance('node', 'field_punto_phone', 'establecimiento');
+  field_delete_instance($instance[5]);
+  // Eliminamos los fields
+  field_delete_field('field_punto_phone');
+  //Eliminacion de la instacia del campo field_punto_city
+  $instance[6] = field_info_instance('node', 'field_punto_city', 'establecimiento');
+  field_delete_instance($instance[6]);
+  // Eliminamos los fields
+  field_delete_field('field_punto_city');
+  //Eliminacion de la instacia del campo field_punto_state
+  /*$instance[7] = field_info_instance('node', 'field_punto_state', 'establecimiento');
+  field_delete_instance($instance[7]);
+  // Eliminamos los fields
+  field_delete_field('field_punto_state');*/
+}
+
+function baloto_puntos_venta_importacion_type_values(){
+  $type_values = array(
+      'op' => 'Save content type',
+      'type' => 'establecimiento',
+      'name' => 'Establecimiento',
+      'orig_type' => '',
+      'old_type' => '',
+      'description' => 'Desc',
+      'help' => 'Exp',
+      'title_label' => '',
+      'body_label' => '',
+      'base' => 'node_content',
+      'custom' => '1',
+      'locked' => '0',
+      'modified' => '1'
+    );
+  return $type_values;
+}

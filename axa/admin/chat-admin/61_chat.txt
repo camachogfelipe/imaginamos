@@ -1,0 +1,10 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>omar leonardo rojas</span>buenos dias . 
+<span class='usuario'>omar leonardo rojas</span>quiesiera saber en cuanto estan las tasas de interes de:; 
+<span class='usuario'>omar leonardo rojas</span>Credito ordinario  
+<span class='admin'>Carlos Cano</span>Buenos dias Sr Rojas , mi nombre es Carlos Cano 
+<span class='usuario'>omar leonardo rojas</span>buenos dias 
+<span class='admin'>Carlos Cano</span>Las tasas para el credito ordinario hasta 12 meses 1.1%, hasta 24 meses 1.2% y mas de 24 meses 1.25% 
+<span class='admin'>Carlos Cano</span>Sr Rojas, le puedo ayudar en algo m&aacute;s 
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

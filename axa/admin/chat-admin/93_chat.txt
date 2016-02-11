@@ -1,0 +1,15 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>ADRIANA</span>BUENAS TARDES! 
+<span class='usuario'>ADRIANA</span>Helooooooouuuuuuuu!! 
+<span class='usuario'>ADRIANA</span>tal ves!!!!! llevo mas de 3 minutos esperando!!!! Carlitosssssssssss!!! 
+<span class='admin'>Carlos Cano</span>hOLA aDRI 
+<span class='usuario'>ADRIANA</span>que pasa que no existe una alarma que te indique que hay alguine en el chat!!?? 
+<span class='usuario'>ADRIANA</span>ese requerimiento ya lo pasaste por escrito o por mail?? 
+<span class='usuario'>ADRIANA</span>tambien es una hartera no darse cuenta que el asesor esta escribiendo una respuesta... esto es como hablar solo!! 
+<span class='admin'>Carlos Cano</span>Lo siento Adri, el d&iacute;a se hoy se han presentado fallas tecnicas, en este momento nuestro equipo tecnico esta trabajando para solucionarlas, pedimos disculpas por las molestrias presentadas 
+<span class='admin'>Carlos Cano</span>aja 
+<span class='usuario'>ADRIANA</span>deberias dejar por escrito estos  requerimientos ... no demorn en presentar una queja por este servicio!! 
+<span class='admin'>Carlos Cano</span>aja 
+<span class='usuario'>ADRIANA</span>es mejor tener la evidencia de que se solicito... se informo y no han resuleto nada!!  bye bye
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

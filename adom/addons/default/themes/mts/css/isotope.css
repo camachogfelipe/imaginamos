@@ -1,0 +1,97 @@
+.isotope-item {
+  z-index: 2;
+}
+.isotope-item.isotope-hidden {
+  pointer-events: none;
+  z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+.isotope {
+  -moz-transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  -moz-transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -moz-transition-duration: 0s;
+  -webkit-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+/* End: Recommended Isotope styles */
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+/* isotope gallery */
+.isotope-gallery .isotope-item {
+  width: 340px;
+  float: left;
+  background-image: url(../img/sombra-lateral.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 22px;
+  margin-left: 0px;
+  padding-left: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.isotope-gallery .isotope-item .isotope-image-container {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.isotope-gallery .isotope-item .isotope-image-container img {
+  max-width: 100%;
+  width:100%;
+  height: auto;
+  display: block;
+}
+.isotope-gallery .isotope-item.large {
+  width: 690px;
+  margin: 0 0 0 10px;
+}
+.isotope-gallery .isotope-item.large .isotope-image-container {
+  height: 200px;
+}
+.isotope-gallery .isotope-item .isotope-title {
+  color: #52ae31;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.isotope-gallery .isotope-item .isotope-box {
+  background: white;
+  padding: 8px 0.8em;
+}
+.isotope-gallery.hide-content .isotope-item .isotope-content {
+  /*display: none;*/
+  height: 43px;
+  overflow: hidden;
+}
+.isotope-gallery.hide-content .isotope-item.large .isotope-content {
+  height: auto;
+  overflow: hidden;
+}

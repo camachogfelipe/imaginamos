@@ -1,0 +1,81 @@
+<?php
+/**
+ * @file
+ * Genera XML del ultimo sorteo
+ *
+ * Autor information: Jorge DUarte
+ *
+ */
+
+function baloto_actualiza_xml_node_presave($node){
+  //dpm($node);
+  if($node->type == "sorteo"){
+    $dias = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado");
+    $meses = array("Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic");
+    $intdate = strtotime($node->field_fecha_sorteo[LANGUAGE_NONE][0]['value']);
+    $datos['sorteo_n'] = $node->title;
+    $datos['sorteo_acumulado'] = $node->field_acumulado[LANGUAGE_NONE][0]['value'];
+    $datos['sorteo_fecha'] = $dias[date('w',$intdate)].", ".date('d',$intdate)." de ".$meses[date('n')-1].". de ".date('Y',$intdate);
+    $datos['sorteo_cifra_uno'] = $node->field_cifra_uno[LANGUAGE_NONE][0]['value'];
+    $datos['sorteo_cifra_dos'] = $node->field_cifra_dos[LANGUAGE_NONE][0]['value'];
+    $datos['sorteo_cifra_tres'] = $node->field_cifra_tres[LANGUAGE_NONE][0]['value'];
+    $datos['sorteo_cifra_cuatro'] = $node->field_cifra_cuatro[LANGUAGE_NONE][0]['value'];
+    $datos['sorteo_cifra_cinco'] = $node->field_cifra_cinco[LANGUAGE_NONE][0]['value'];
+    $datos['sorteo_cifra_seis'] = $node->field_cifra_seis[LANGUAGE_NONE][0]['value'];
+    $datos['revancha_acumulado'] = $node->field_revancha_acumulado[LANGUAGE_NONE][0]['value'];
+    $datos['revancha_cifra_uno'] = $node->field_revancha_cifra_uno[LANGUAGE_NONE][0]['value'];
+    $datos['revancha_cifra_dos'] = $node->field_revancha_cifra_dos[LANGUAGE_NONE][0]['value'];
+    $datos['revancha_cifra_tres'] = $node->field_revancha_cifra_tres[LANGUAGE_NONE][0]['value'];
+    $datos['revancha_cifra_cuatro'] = $node->field_revancha_cifra_cuatro[LANGUAGE_NONE][0]['value'];
+    $datos['revancha_cifra_cinco'] = $node->field_revancha_cifra_cinco[LANGUAGE_NONE][0]['value'];
+    $datos['revancha_cifra_seis'] = $node->field_revancha_cifra_seis[LANGUAGE_NONE][0]['value'];
+    //dpm($datos);
+    actualizar_archivo($datos);
+  }
+}
+
+function actualizar_archivo($datos){
+  $path = drupal_get_path('module', 'baloto_actualiza_xml');
+  set_include_path($path . '/phpseclib');
+  include('Net/SFTP.php');
+
+  $sftp = new Net_SFTP('50.56.87.78');
+  if (!$sftp->login('balotoftp', 'AnJRsb7c=7JH')) {
+      exit('Login Failed');
+  }
+
+  $fp = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n\n";
+  $fp .= "<baloto>\n";
+  $fp .= "<Acummulado name=\"".calcular_acumulado($datos['sorteo_acumulado'])."\">\n";
+  $fp .= "<sorteo>".$datos['sorteo_n']."</sorteo>\n";
+  $fp .= "<fecha>".$datos['sorteo_fecha']."</fecha>\n";
+  $fp .= "<num1>".$datos['sorteo_cifra_uno']."</num1>\n";
+  $fp .= "<num2>".$datos['sorteo_cifra_dos']."</num2>\n";
+  $fp .= "<num3>".$datos['sorteo_cifra_tres']."</num3>\n";
+  $fp .= "<num4>".$datos['sorteo_cifra_cuatro']."</num4>\n";
+  $fp .= "<num5>".$datos['sorteo_cifra_cinco']."</num5>\n";
+  $fp .= "<num6>".$datos['sorteo_cifra_seis']."</num6>\n";
+  $fp .= "</Acummulado>\n";
+  $fp .= "<Acummulado name=\"".calcular_acumulado($datos['revancha_acumulado'])."\">\n";
+  $fp .= "<sorteo>".$datos['sorteo_n']."</sorteo>\n";
+  $fp .= "<fecha>".$datos['sorteo_fecha']."</fecha>\n";
+  $fp .= "<num1>".$datos['revancha_cifra_uno']."</num1>\n";
+  $fp .= "<num2>".$datos['revancha_cifra_dos']."</num2>\n";
+  $fp .= "<num3>".$datos['revancha_cifra_tres']."</num3>\n";
+  $fp .= "<num4>".$datos['revancha_cifra_cuatro']."</num4>\n";
+  $fp .= "<num5>".$datos['revancha_cifra_cinco']."</num5>\n";
+  $fp .= "<num6>".$datos['revancha_cifra_seis']."</num6>\n";
+  $fp .= "</Acummulado>\n";
+  $fp .= "</baloto>\n";
+  $sftp->put('/var/www/html/AcumuladosFechas.xml', $fp);
+}
+
+function calcular_acumulado($valor){
+  setlocale(LC_MONETARY, 'es_CO');
+  $resultado = str_replace("'","",$valor);
+  $resultado = str_replace(".","",$resultado);
+  $resultado = $resultado/1000000;
+  $resultado = money_format('%(#1.00n', $resultado);
+  $resultado = substr($resultado, 1);
+  return $resultado;
+}

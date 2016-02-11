@@ -1,0 +1,16 @@
+Function: 
+File: settings.js.php
+PDOException: 3D000-SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+
+Function: getAdmin
+File: functions.php
+PDOException: 3D000-SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+
+Function: getModerator
+File: functions.php
+PDOException: 3D000-SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+
+Function: getSpeaker
+File: functions.php
+PDOException: 3D000-SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+

@@ -1,0 +1,5 @@
+name = Actualiza el XML al crear o actualizar el ultimo sorteo
+description = Actualiza el XML de Baloto
+core = 7.x
+package = Baloto
+files[] = baloto_actualiza_xml.module

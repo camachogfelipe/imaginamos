@@ -1,0 +1,11 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de Digiware. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Jose Jair Bonilla</span><br/>efesf~2011-02-09 17:46:47
+<span class='admin'>Agente</span><br/>sfdc~2011-02-09 17:47:08
+<span class='usuario'>Jose Jair Bonilla</span><br/>fvdfvdf~2011-02-09 17:47:20
+<span class='usuario'>Jose Jair Bonilla</span><br/>wdcdc~2011-02-09 17:49:22
+<span class='usuario'>Jose Jair Bonilla</span><br/>dcds~2011-02-09 17:49:25
+<span class='usuario'>Jose Jair Bonilla</span><br/>sdcdsc~2011-02-09 17:49:27
+<span class='usuario'>Jose Jair Bonilla</span><br/>sdcsdc~2011-02-09 17:49:30
+<span class='usuario'>Jose Jair Bonilla</span><br/>sdcdsc~2011-02-09 17:49:34
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

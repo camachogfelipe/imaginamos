@@ -1,0 +1,212 @@
+<?php
+require_once 'core/validation.php';
+require_once 'procesos/class_procesos.php';
+$objecta = new Procesos();
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/skyproject.css" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+        <link href="css/demo_table.css" rel="stylesheet" type="text/css">
+        <link href="css/demo_page.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" language="javascript" src="js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="http://www.imaginamos.com/footer_ahorranito/jquery.ahorranito.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        $('.footer-ahorranito').ahorranito({theme:'oscuro', type:3});
+        });
+        </script>
+        <script>
+            $(document).ready(function(){
+            
+                $('.guardar').click(function(){
+                    //alert('Hola mundo');
+                    var credito = $("#cash").val();
+                
+                    if(confirm("¿Desea asignar "+credito+" creditos?")){
+                    
+                        $.ajax({
+                            url: "ajax.php",
+                            type: "POST",
+                            dataType: "json",
+                            data: { sebas2: $("#vendedor").val(),cash: $("#cash").val()},
+                            success: function( data ) {
+                                if (data.respuesta == "ok") {
+                                    alert("Creditos cargados correctamente");
+                                    window.location.reload();
+                                }else if(data.respuesta == "empty"){
+                                    alert("Los campos estan vacios");
+                                }else{
+                                    alert("No se pudo asignar creditos");
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown){
+                                // Si se presento algun error, mostramos la descripcion
+                                alert( "Error\algo ha salido mal. Por favor inténtalo de nuevo en unos minutos -> "+textStatus);
+                            }
+                        });
+
+                        return false;
+               
+                    }else{
+                        return false;
+                    }
+                }); 
+                $('.consultar').click(function(){   
+                   // alert('hola');
+                    elegidoTi=$('#email').val();
+                    $.post("ajax.php", { elegidoTi: elegidoTi }, function(data){
+                        $("#datosVendedor").html(data);
+                        //alert($("#vendedor").val());
+                         elegido4=$("#vendedor").val();
+                        $.post("ajax.php", { elegido4: elegido4 }, function(data){
+                               $("#respuesta").text(data);
+                        }); 
+
+                    });
+                   
+                });
+
+                $("#tienda").change(function () {
+                    $("#tienda option:selected").each(function () {
+                        elegido3=$(this).val();
+                        $.post("ajax.php", { elegido3: elegido3 }, function(data){
+                            $("#vendedor").html(data);
+                        });            
+                    });
+                });
+                $("#vendedor1").change(function () {
+                    $("#vendedor1 option:selected").each(function () {
+                       // alert('ok')
+                        elegidoTi1=$('#vendedor1').val();
+                        $.post("ajax.php", { elegidoTi1: elegidoTi1 }, function(data){
+                        $("#datosVendedor").html(data);
+                        //alert($("#vendedor").val());
+                         elegido41=$("#vendedor1").val();
+                        $.post("ajax.php", { elegido41: elegido41 }, function(data){
+                               $("#respuesta").text(data);
+                        }); 
+
+                    });            
+                    });
+                });
+           
+                $("#email")
+            })
+        </script>
+
+    </head>
+    <body>
+        <?php include 'header.php'; ?>
+        <form action="" method="POST" id="part1">
+            <div class="con-reportes">
+                <div class="contenedor-info nav-header">
+                    
+                        <h2>Asignar Creditos</h2>
+                        <div style="float: left;">
+                            <table border="0"> 
+                                <tr>
+                                  <td width="150px">
+                                         <table>
+                                             <tr>
+                                                 <td>
+                                                     <label>Email del vendedor</label>
+                                                 </td>
+                                                 <td>
+                                                    <input type="text" id="email" name="email" /> 
+                                                 </td>
+                                                 <td>
+                                                     <input type="button" class="btn-primary consultar" value="Consultar"/>
+                                                 </td>
+                                             </tr>
+                                         </table>
+                                  </td>
+                                  <td align="left" rowspan="4">
+                                    <div id="datosVendedor">
+                                    </div>
+                                    <div style="float: right;width: 410px;height: 200px;text-align: center;">
+                                         <label style="float: left;margin-right: -45px;width: 100%;margin-top: 20px;"><b>Creditos Actuales</b></label>
+                                            <div id="respuesta" style="float: left;margin-right: -45px;width: 100%;font-size: 70px;margin-top: 20px;">
+                                                 000
+                                             </div>
+                                       </div>  
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                             <tr>
+                                                 <td>
+                                                     <label>Nombre del vendedor</label>
+                                                 </td>
+                                                 <td>
+                                                    <select name="vendedor1" id="vendedor1" style="float: left;margin-right: 5px;">
+                                                        <option value="seleccione">-- Seleccione vendedor --</option>
+                                                        <?php
+                                                           $result = $objecta->GetVendedor('*');
+                                                            for ($i = 0; $i < count($result); $i++) {
+                                                        ?>
+                                                                <option value="<?php  echo $result[$i]['id_Usuario']?>"><?php  echo $result[$i]['nombre_Usuario']?></option>
+                                                        <?php
+                                                            }
+                                                        ?>
+                                                    </select> 
+                                                 </td>
+                                             </tr>
+                                         </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <label>Numero Creditos</label>
+                                                </td>
+                                                <td>
+                                                   <select name="creditos" id="cash" style="float: left;margin-left: 115px;width: 100px;">
+                                                        <option value="36">$36.00</option>
+                                                        <option value="72">$72.00</option>
+                                                        <option value="150">$150.00</option>
+                                                        <option value="360">$360.00</option>
+                                                        <option value="720">$720.00</option>
+                                                  </select> 
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" class="btn-primary guardar" style="float: left;margin-left: 238px;width: 90px;height: 30px;margin-top: 20px;" value="Guardar"/>
+                                    </td>
+                                </tr>
+                                </table>
+                            </div>
+                          
+                          
+
+
+                        </div>
+                        
+                    </div>  
+             <br><br><br><br> <br><br><br><br>
+  <div class="con-footer">
+    <div class="cloud"></div>
+    <div class="copy-footer">
+    <p>&copy; 2013 <strong>SKYPROJECT</strong> - Todos los derechos reservados - Prohibida su
+    reproducción parcial o total.</p>
+    </div>
+    <div class="copy-footer-2"><div class="footer-ahorranito"></div></div>
+    </div>
+                    </form>
+                
+           
+    </body>
+</html>

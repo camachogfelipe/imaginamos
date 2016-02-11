@@ -1,0 +1,5 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>34526975</span><br/>Necesito la carta de asistencia m&eacute;dica en el exterior, con mi tarjeta de cr&eacute;dito del Banco Caja Social. Necesito la direcci&oacute;n en la Internet donde debo enviar los documentos que se requieren. mi c&eacute;dula 34526975~2012-08-06 12:06:40
+<span class='usuario'>34526975</span><br/>me podrian por favor confirmar recepci&oacute;n ~2012-08-06 12:11:33
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

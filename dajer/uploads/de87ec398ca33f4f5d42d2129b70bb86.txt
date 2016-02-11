@@ -1,0 +1,87 @@
+- barner 
+    max 5 barner
+    titulo 
+    imagen 
+    texto descriptivo
+    link
+
+- producto 
+  titulo 
+  intro 
+  texto
+  imagenes
+
+- videos 
+  titulo 
+  fecha_publicacion
+  intro
+  texto
+
+- acerca_de
+  texto
+  imagen
+
+- logos
+  imagen
+
+    
+- bienvenida
+    titulo
+    parrafo bienbenida
+    imagen
+
+- servicio
+  titulo
+  texto
+  imagen
+
+- catalogos
+  titulo
+  texto_corto
+  imagen
+  file
+
+- contactenos
+  imagen
+  telefonos
+     |- telefono
+  emails
+     |- email
+  horario de atencion
+      |- dia_inicio -> lunes a viernes
+      |- dia_fin -> lunes a viernes
+      |- hora_inicio_temp1 -> lunes a viernes
+      |- hora_inicio_temp2 -> lunes a viernes
+      |- hora_fin_temp1 -> lunes a viernes
+      |- hora_fin_temp2 -> lunes a viernes
+  lugar
+
+- destacados slider 
+   imagen
+   titulo
+   texto
+
+- destacados link 
+   imagen
+   titulo
+   texto 
+   link
+
+Panadería
+Tiendas Café
+Cool
+Gourmet
+Automatización
+
+
+
+
+
+
+
+  
+
+
+  
+
+

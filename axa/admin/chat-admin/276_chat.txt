@@ -1,0 +1,7 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de Digiware. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>willi</span><br/>buen dia prueba ~2011-08-17 17:21:10
+<span class='usuario'>willi</span><br/>zczcxz~2011-08-17 17:53:27
+<span class='admin'>Agente</span><br/>buena tarde will~2011-08-17 17:59:14
+<span class='usuario'>willi</span><br/>ok, gracias~2011-08-17 17:59:25
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

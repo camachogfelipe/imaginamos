@@ -1,0 +1,126 @@
+a:3:{s:16:"__cache_contents";O:8:"stdClass":16:{s:2:"id";s:1:"2";s:4:"slug";s:4:"home";s:5:"title";s:4:"Home";s:11:"description";s:0:"";s:9:"stream_id";s:2:"16";s:10:"meta_title";s:0:"";s:13:"meta_keywords";N;s:16:"meta_description";s:0:"";s:4:"body";s:5483:"<div class="container"><!-- container -->
+    <div class="row">
+        <div class="span4 border-bottom titulo">
+            <h2>Escritorio</h2>
+        </div>
+    </div>
+    <div class="menuContainer">
+        <div class="opciones humana span4"><!-- item -->
+            <a href="#">
+                <div class="iconos"><span class="ico-humana flr"></span></div>
+                <div class="tituloMenu">
+                    <h1>GESTIÓN HUMANA</h1>
+                    <h3>Ligula eguet consectour</h3>
+                </div>
+                <div class="bodymenu">
+                    <ul class="lista">
+                        <li><a href="#">2-A  Plan de Carrera</a></li>
+                        <li><a href="#">2-B  Oferta Interna</a></li>
+                        <li><a href="#">2-C  Directorio MTS</a></li>
+                        <li><a href="#">2-D  Certificaciones y Desprendibles Nómina</a></li>
+                    </ul>
+                </div>
+            </a>
+        </div><!-- / item -->
+        <!-- widget forums -->
+        {{ widgets:instance id="1"}}
+        <!-- / item -->
+        <div class="opciones biblioteca span3"><!-- item -->
+            <a href="#">
+                <div class="bodybiblioteca">
+                    <div class="tituloMenu">
+                        <h1>BIBLIOTECA MTS</h1>
+                        <h3>Lorem ipsum dolor</h3>
+                    </div>
+                    <ul class="lista">
+                        <li><a href="#">3-A  Biblioteca por tareas</a></li>
+                        <li><a href="#">3-B  Actividades de Aprendizaje</a></li>
+                    </ul>
+                </div>
+                <div class="iconos"><span class="ico-biblioteca flr"></span></div>
+            </a>
+        </div><!-- / item -->
+        <div class="opciones mantenimiento span3"><!-- item -->
+            <div class="bodymantenimiento">
+                <div class="titulomantenimiento">
+                    <h3>SOFWARE</h3>
+                    <h1>MANTENIMIENTO</h1>
+                </div>
+            </div>
+            <div class="iconos"><span class="ico-mantenimiento flr"></span></div>
+        </div><!-- / item -->
+        <div class="opciones sigc span3"><!-- item -->
+            <a href="#">
+                <div class="iconos"><span class="ico-sigc"></span></div>
+                <div class="bodymantenimiento">
+                    <div class="titulosigc">
+                        <h1>SIGC</h1>
+                    </div>
+                </div>
+            </a>
+        </div><!-- / item -->
+        {{ widgets:instance id="2"}}
+        {{ widgets:instance id="3"}}
+        <div class="opciones cumpleanos span4"><!-- item -->
+            <div class="carousel-cumpleanos">
+                <div class="contienecarouse"><!-- item interno-->
+                    <a href="#">
+                        <div class="iconos"><span class="ico-cumpleanos flr"></span></div>
+                        <div class="fotocumple">
+                            <img src="assets/img/foto-cumple1.jpg" alt="">
+                        </div>
+                        <div class="bodycumpleanos">
+                            <div class="titulocumpleanos">
+                                <h1>CUMPLEA��OS</h1>
+                                <h2>SR. CARLOS VANEGAS</h2>
+                                <h3>Ligula eguet consectour</h3>
+                            </div>
+                            <p>Phasellus molestie magna non est bibendum non venenatis nisl.</p>
+                        </div>
+                    </a>
+                </div><!-- item interno-->
+                <div class="contienecarouse"><!-- item interno-->
+                    <a href="#">
+                        <div class="iconos"><span class="ico-cumpleanos flr"></span></div>
+                        <div class="fotocumple">
+                            <img src="assets/img/foto-cumple2.jpg" alt="">
+                        </div>
+                        <div class="bodycumpleanos">
+                            <div class="titulocumpleanos">
+                                <h1>CUMPLEA��OS</h1>
+                                <h2>SR. CARLOS VANEGAS</h2>
+                                <h3>Ligula eguet consectour</h3>
+                            </div>
+                            <p>Phasellus molestie magna non est bibendum non venenatis nisl.</p>
+                        </div>
+                    </a>
+                </div><!-- item interno-->
+            </div>
+            <div class="arowscumpleanos">
+                <a href="#" class="prevcumpleanos" > </a>
+                <a href="#" class="nextcumpleanos" > </a>
+            </div>
+        </div><!-- / item -->
+
+        <div class="opciones pqr span3"><!-- item -->
+            <a href="#">
+                <div class="iconos"><span class="ico-pqr"></span></div>
+                <div class="bodypqr">
+                    <div class="titulopqr">
+                        <h1>PQR</h1>
+                    </div>
+                </div>
+            </a>
+        </div><!-- / item -->
+        <div class="opciones proveedores span3"><!-- item -->
+            <a href="{{ url:site }}providers/">
+                <div class="iconos"><span class="ico-proveedores"></span></div>
+                <div class="bodypqr">
+                    <div class="tituloproveedores">
+                        <h1>PROVEEDORES</h1>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>";s:3:"css";s:0:"";s:2:"js";s:0:"";s:12:"theme_layout";s:9:"home.html";s:10:"updated_on";s:10:"1377895325";s:13:"save_as_files";s:1:"y";s:13:"content_label";s:0:"";s:11:"title_label";s:0:"";}s:15:"__cache_created";i:1378765959;s:20:"__cache_dependencies";a:0:{}}

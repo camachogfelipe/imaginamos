@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: 'HelveticaNB';
+    src: url('fonts/helveticaneueltstd-bd.eot');
+    src: url('fonts/helveticaneueltstd-bd.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneueltstd-bd.woff') format('woff'),
+         url('fonts/helveticaneueltstd-bd.ttf') format('truetype'),
+         url('fonts/helveticaneueltstd-bd.svg#helveticaneueltstd-bd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNL';
+    src: url('fonts/helveticaneueltstd-lt.eot');
+    src: url('fonts/helveticaneueltstd-lt.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneueltstd-lt.woff') format('woff'),
+         url('fonts/helveticaneueltstd-lt.ttf') format('truetype'),
+         url('fonts/helveticaneueltstd-lt.svg#helveticaneueltstd-lt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DIN-Medium';
+    src: url('fonts/dinmedium.eot');
+    src: url('fonts/dinmedium.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dinmedium.woff') format('woff'),
+         url('fonts/dinmedium.ttf') format('truetype'),
+         url('fonts/dinmedium.svg#dinmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	background-color: #F2F4F7;
+	margin:0; padding:0;
+
+}
+
+.footer-content{
+	position:relative;
+	z-index:10;
+	margin-top:40px;
+   	min- width: 990px;
+    background-image: url("../imagenes/fondo-footer.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+.footer{
+	margin: 0 auto;
+    width: 990px;
+}
+.vigilado{
+	margin-left: 30px;
+	margin-top: -40px;
+	position: absolute;
+	z-index: 10;
+}
+.logo-miplata{
+	background-image: url("../imagenes/logo-miplata.png");
+    float: left;
+    height: 64px;
+    width: 990px;
+}
+.logo-miplata a{
+	padding: 0 !IMPORTANT;
+    position: static !IMPORTANT;
+}
+.pre-footer a{
+	background:#f2f4f7;
+	padding:0 10px;
+	float: left;
+	position:absolute;
+	top:20px;
+	right:50px;
+}
+.bot-volver{
+	
+}
+.bot-volver-in{
+	background-image:url(../imagenes/bot-volver.png);
+	width:140px;
+	height:30px;
+}
+.bot-volver-act{
+	background-image: url("../imagenes/bot-volver-act.png");
+    height: 30px;
+    margin-top: -30px;
+    position: absolute;
+    width: 140px;
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity: 0;
+	opacity: 0;
+}
+.separador2{
+	background-image: url("../imagenes/separador-2.png");
+    float: left;
+    height: 1px;
+    margin-left: 8px;
+    margin-top: 35px;
+    width: 35px;
+}
+.pre-footer{
+	height: 200px;
+	position:relative;
+}
+.logos-footer{
+	margin-left: 135px;
+    margin-top: 30px;
+}
+.logos-footer a{
+	padding: 0;
+    position: static;
+}
+.logos-footer .logos-txt{
+	color: #5D5D5D;
+    float: left;
+    font-family: 'HelveticaNB';
+    font-size: 16px;
+    margin-top: 35px;
+}
+.logos-footer .logo-footer{
+	float: left;
+    margin-left: 16px;
+}
+.logos-footer .separador{
+	background-image: url("../imagenes/separador.png");
+    float: left;
+    height: 82px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 12px;
+}
+
+.footer-verde{
+	height:132px;
+}
+.medalla{
+	/*background-image: url("../imagenes/medalla.png");*/
+    height: 105px;
+    margin-left: 874px;
+    margin-top: -55px;
+    position: absolute;
+    width: 105px;
+}
+.datos{
+	color: #FFFFFF;
+    font-family: 'HelveticaNL';
+    font-size: 14px;
+    margin-left: 172px;
+    padding-top: 23px;
+    text-align: center;
+    width: 680px;
+}
+.datos b{
+	font-family:'HelveticaNB';
+	font-size:18px;
+	font-weight:normal;
+	
+}
+.datos a{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bolder;
+	text-decoration:underline;
+	color:#fff;
+	
+}
+
+.footer-autorhome {
+    height: 40px;
+    line-height: 40px;
+    margin-left: 402px;
+    margin-top:-15px;
+    position: relative;
+    width: 210px;
+}
+.footer-autorhome #ahorranito2 {
+	background: url(http://www.imaginamos.com/derechos_autor_gris/ahorranito-2.png) no-repeat 0px 0px;
+	width: 21px;
+	height: 22px;
+	display: block;
+	float: left;
+	margin: 9px 10px 0px 0px;
+}
+.footer-autorhome a {
+	font-family: "Helvetica";
+	font-weight: 500;
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.footer-autorhome a:hover {
+	text-decoration: underline;
+}
+.footer-autorhome a span {
+	color: #0CF;
+}
+.footer-autor {
+    height: 40px;
+    line-height: 40px;
+    margin-left: 402px;
+    margin-top:0px;
+    position: relative;
+    width: 210px;
+}
+.footer-autor #ahorranito2 {
+	background: url(http://www.imaginamos.com/derechos_autor_gris/ahorranito-2.png) no-repeat 0px 0px;
+	width: 21px;
+	height: 22px;
+	display: block;
+	float: left;
+	margin: 9px 10px 0px 0px;
+}
+.footer-autor a {
+	font-family: "Helvetica";
+	font-weight: 500;
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.footer-autor a:hover {
+	text-decoration: underline;
+}
+.footer-autor a span {
+	color: #0CF;
+}

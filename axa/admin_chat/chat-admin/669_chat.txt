@@ -1,0 +1,17 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>52258866</span><br/>Hola~2012-08-08 11:58:38
+<span class='usuario'>52258866</span><br/>Q seguro cubre 30000 euros? Y q costo tiene?~2012-08-08 12:00:17
+<span class='admin'>Agente</span><br/>muy buenos dias, con quien tengo el gusto de hablar? a que pais se dirige ~2012-08-08 12:01:45
+<span class='usuario'>52258866</span><br/>A s ~2012-08-08 12:06:29
+<span class='admin'>Agente</span><br/>con quien tengo el gusto de hablar? (OMS) ~2012-08-08 12:06:40
+<span class='admin'>Agente</span><br/>en respuesta a su pregunta, le informamos que la cobertura minima de nuestro seguros es 30.000 Euros (OMS) ~2012-08-08 12:07:59
+<span class='usuario'>52258866</span><br/>Con Carlos Bernal ~2012-08-08 12:13:39
+<span class='usuario'>52258866</span><br/>ok entonces desde esta misma pagina puedo comprar el seguro para la visa? ~2012-08-08 12:13:58
+<span class='usuario'>52258866</span><br/>quisiera el m&aacute;s economico, viajo a Italia del 20 de agosto al 3 de septiembre ~2012-08-08 12:14:36
+<span class='usuario'>52258866</span><br/>pero es importante que cubra 30 mil euros ~2012-08-08 12:15:12
+<span class='admin'>Agente</span><br/>Buenas Tardes Sr. Carlos (dty) ~2012-08-08 12:15:33
+<span class='admin'>Agente</span><br/>Por favor mantenerse en linea, mientras proceso su solicitud (dty) ~2012-08-08 12:16:17
+<span class='usuario'>52258866</span><br/>muchas gracias ~2012-08-08 12:16:24
+<span class='admin'>Agente</span><br/>Gracias ~2012-08-08 12:16:27
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

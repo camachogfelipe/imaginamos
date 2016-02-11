@@ -1,0 +1,143 @@
+<table cellpadding="0" cellspacing="0" align="center" width="900">
+	<tr>
+		<td>
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td class="header_line"><!--lang_stats_visitors--></td>
+					<td class="header_line" align="right">24.07.2013</td>
+				</tr>
+				<tr>
+					<td class="header_nav_line">&nbsp;&nbsp;5 <!--lang_stats_visitors--></td>
+					<td class="header_nav_line" align="right">Status:&nbsp;&nbsp;<!--lang_stats_status_closed-->&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table class="bt_values" cellspacing="0" cellpadding="2" width="100%">
+				<tr>
+					<td class="bt_column_header" width="15">#</td>
+					<td class="bt_column_header" width="40" align="center"><!--lang_stats_pages--></td>
+					<td class="bt_column_header" width="60" align="center"><!--lang_stats_entrance--></td>
+					<td class="bt_column_header" width="60" align="center"><!--lang_stats_exit--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_country--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_city--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_browser--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_system--></td>
+					<td class="bt_column_header" width="25">&nbsp;</td>
+				</tr>
+				
+	<tr>
+		<td>1</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_1');"><strong>1</strong></a></td>
+		<td align="center">06:06:58</td>
+		<td align="center">09:48:18</td>
+		<td NOWRAP><!--lang_stats_unknown--></td>
+		<td NOWRAP><!--lang_stats_unknown--></td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 7</td>
+		<td class="vs" align="right"><div class="ico_info" onclick="showInfoBox('','2','1','157.253.195.149','host149-195.uniandes.edu.co','5465c9f310',this); return true;"></div></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_11">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">06:06:58</td>
+		<td align="center">09:48:18</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://norquimicos.com.co/index.php?seccion=contactenos" target="_blank">http://norquimicos.com.co/index.php?seccion=contactenos</a></td>
+	</tr>
+
+	<tr>
+		<td>2</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_2');"><strong>2</strong></a></td>
+		<td align="center">07:06:13</td>
+		<td align="center">07:09:43</td>
+		<td NOWRAP>Colombia</td>
+		<td NOWRAP><!--lang_stats_unknown--></td>
+		<td NOWRAP>Internet Explorer 10</td>
+		<td NOWRAP>Windows 7</td>
+		<td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','201.184.47.225','adsl201-184-47-225.une.net.co','2a51cf8ea0',this); return true;"></div></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_21">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">07:06:13</td>
+		<td align="center">07:09:43</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://norquimicos.com.co/index.php?seccion=contactenos" target="_blank">http://norquimicos.com.co/index.php?seccion=contactenos</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_22">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">07:07:54</td>
+		<td align="center">07:11:09</td>
+		<td colspan="5"><!--lang_stats_browser--> 2: <a href="http://dereferrer.livezilla.biz/?url=http://www.norquimicos.com.co/livezilla/chat.php" target="_blank">http://www.norquimicos.com.co/livezilla/chat.php</a></td>
+	</tr>
+
+	<tr>
+		<td>3</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_3');"><strong>1</strong></a></td>
+		<td align="center">07:37:00</td>
+		<td align="center">07:37:30</td>
+		<td NOWRAP>Colombia</td>
+		<td NOWRAP><!--lang_stats_unknown--></td>
+		<td NOWRAP>Internet Explorer 10</td>
+		<td NOWRAP>Windows 7</td>
+		<td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','190.26.70.226','corporat190-2670226.sta.etb.net.co','081649610c',this); return true;"></div></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_31">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">07:37:00</td>
+		<td align="center">07:37:30</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://www.norquimicos.com.co/index.php?seccion=contactenos" target="_blank">http://www.norquimicos.com.co/index.php?seccion=contactenos</a></td>
+	</tr>
+
+	<tr>
+		<td>4</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_4');"><strong>1</strong></a></td>
+		<td align="center">15:45:34</td>
+		<td align="center">17:20:09</td>
+		<td NOWRAP>Spain</td>
+		<td NOWRAP><!--lang_stats_unknown--></td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 7</td>
+		<td class="vs" align="right"><div class="ico_info" onclick="showInfoBox('','3','1','186.31.224.232','adsl186-31224232.sta.etb.net.co','da0d364407',this); return true;"></div></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_41">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">15:45:33</td>
+		<td align="center">17:20:09</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://norquimicos.com.co/index.php?seccion=contactenos" target="_blank">http://norquimicos.com.co/index.php?seccion=contactenos</a></td>
+	</tr>
+
+	<tr>
+		<td>5</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_5');"><strong>1</strong></a></td>
+		<td align="center">17:53:15</td>
+		<td align="center">18:16:36</td>
+		<td NOWRAP>Spain</td>
+		<td NOWRAP><!--lang_stats_unknown--></td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 7</td>
+		<td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','190.152.40.141','','4dd7cf269d',this); return true;"></div></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_51">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">17:53:15</td>
+		<td align="center">18:16:36</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://www.norquimicos.com.co/index.php?seccion=contactenos" target="_blank">http://www.norquimicos.com.co/index.php?seccion=contactenos</a></td>
+	</tr>
+
+			</table>
+			<br>
+		</td>
+	</tr>
+</table>

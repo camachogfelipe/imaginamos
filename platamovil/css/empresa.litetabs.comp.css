@@ -1,0 +1,211 @@
+/**************************************************************/
+/* 			Se agrega para complementar los estilos			  */
+/**************************************************************/
+/*
+ Sección: Empresa
+ SubSección: Características, cuanto le cuesta	
+*/
+/***/
+
+.tab-txt2{
+	color: #595959;
+    font-family: 'HelveticaNL', sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 21px;
+    text-align: justify;
+}
+.tab-txt2 ul { 
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 526px; 
+}
+.tab-txt2 li:first-child{
+	width: 500px;
+	background: #edffd5; padding:15px; display: inline-block; color:#0d427c;
+	margin-bottom: 20px;
+}
+.tab-txt2 li{background: #edffd5; padding:15px; display: list-item; color:#0d427c; margin-bottom: 20px; width: 500px;}
+.tab-txt2 li:last-child{
+	width: 500px;
+	background: #edffd5; padding:15px; display: inline-block; color:#0d427c;
+	margin-bottom: 60px;
+}
+/* Texto en verde */
+.tab-txt2 h1{ color:#4f8509;  font-size:19px; font-weight: lighter; }
+/**/
+
+/* Texto Azul */
+.tab-txt2 h2{ color: #185290; font-family: 'HelveticaNL', sans-serif; font-size:17px; font-weight: lighter; }
+/**/
+
+.tab-txt2 a {
+    background: url("../imagenes/flechaLink2.png") no-repeat scroll 8px 50% #BCDE62;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    display: block;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    margin-top: 10px;
+    padding: 7px 10px 7px 25px;
+    text-align: left;
+    text-decoration: none;
+	width:auto;
+	height:auto;
+}
+.tab-txt2 a:hover {
+    background: url("../imagenes/flechaLink2.png") no-repeat scroll 8px 50% #7CA512;
+    text-decoration: none;
+	margin-bottom:-1px;
+}
+
+
+
+/***/
+
+/*
+ Sección: Empresa
+ SubSección: Para que sirve?, como funciona?
+*/
+/***/
+
+.tab-txt3{
+	color: #595959;
+    font-family: 'HelveticaNL', sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 21px;
+    text-align: justify;
+}
+
+.tab-txt3 ul { 
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 422px; 
+}
+.tab-txt3 li:first-child{
+	width: 400px;
+	background: #edffd5; padding:15px; display: inline-block; color:#0d427c;
+	margin-bottom: 20px;
+}
+.tab-txt3 li{background: #edffd5; padding:15px; display: list-item; color:#0d427c; margin-bottom: 20px; width: 400px;}
+.tab-txt3 li:last-child{
+	width: 400px;
+	background: #edffd5; padding:15px; display: inline-block; color:#0d427c;
+	margin-bottom: 60px;
+}
+
+.tab-txt3 a {
+    background: url("../imagenes/flechaLink2.png") no-repeat scroll 8px 50% #BCDE62;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    display: block;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    margin-top: 10px;
+    padding: 7px 10px 7px 25px;
+    text-align: left;
+    text-decoration: none;
+	width:auto;
+	height:auto;
+}
+.tab-txt3 a:hover {
+    background: url("../imagenes/flechaLink2.png") no-repeat scroll 8px 50% #7CA512;
+    text-decoration: none;
+	margin-bottom:-1px;
+}
+
+/* Texto Azul */
+.tab-txt3 h2{ color: #185290; font-family: 'HelveticaNL', sans-serif; font-size:17px; font-weight: lighter; }
+/**/
+
+
+/***/
+
+
+.tab-txt4{
+	color: #595959;
+    font-family: 'HelveticaNL', sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 21px;
+    text-align: justify;
+}
+.tab-txt4 ul { 
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 422px; 
+}
+.tab-txt4 li:first-child{
+	width: 400px; display: inline-block; line-height: 18px;	color: #185290; font-family: 'HelveticaNL', sans-serif;	margin-bottom: 20px;
+}
+.tab-txt4 li{width: 400px; display: inline-block; line-height: 18px;	color: #185290; font-family: 'HelveticaNL', sans-serif;	margin-bottom: 20px;}
+.tab-txt4 li:last-child{
+	width: 400px; display: inline-block; line-height: 18px;	color: #185290; font-family: 'HelveticaNL', sans-serif;	margin-bottom: 20px;
+}
+
+.tab-txt4 a {
+    color: #90BD1A;
+	font-weight:normal;
+	font-family:'HelveticaNL', sans-serif;
+}
+
+
+.tab-txt5{
+	color: #595959;
+    font-family: 'HelveticaNL', sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 21px;
+    text-align: justify;
+}
+
+.tab-txt5 ul { 
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 422px; 
+}
+.tab-txt5 li:first-child{
+	width: 400px;
+	background: none repeat scroll 0 0 #F1F1F1; padding:15px; display: block; color: #333333;
+	margin-bottom: 20px;
+}
+.tab-txt5 li{ background: none repeat scroll 0 0 #F1F1F1; padding:15px; display: block; color: #333333; margin-bottom: 20px; width: 400px;}
+.tab-txt5 li:last-child{
+	width: 400px;
+	 background: none repeat scroll 0 0 #F1F1F1; padding:15px; display: block; color: #333333;
+	margin-bottom: 60px;
+}
+
+.tab-txt5 a {
+    background: url("../imagenes/flechaLink2.png") no-repeat scroll 8px 50% #BCDE62;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    display: block;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    margin-top: 10px;
+    padding: 7px 10px 7px 25px;
+    text-align: left;
+    text-decoration: none;
+	width:auto;
+	height:auto;
+}
+.tab-txt5 a:hover {
+    background: url("../imagenes/flechaLink2.png") no-repeat scroll 8px 50% #7CA512;
+    text-decoration: none;
+	margin-bottom:-1px;
+}
+
+/* Texto Azul */
+.tab-txt5 h2{ color: #185290; font-family: 'HelveticaNL', sans-serif; font-size:17px; font-weight: lighter; }
+/**/
+
+

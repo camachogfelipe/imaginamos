@@ -1,0 +1,5 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Andres Alfonso</span>Buenos dias me gustaria saber como puedo ingresar ala nueva pagina de feval con que usuario y contrase&ntilde;a ingreso
+<span class='admin'>Carlos Cano</span>Buenos dias Andres, por favor  me recuerda su numero de cedula
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

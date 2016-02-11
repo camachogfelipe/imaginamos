@@ -1,0 +1,109 @@
+/* 
+    Document   : skyproject
+    Created on : 19/03/2013, 01:48:58 PM
+    Author     : Sebastian
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-size: 14px;
+    color: #363636;
+    background-color: #f5f5f5;
+}
+
+div.login{
+    
+    margin-top: -180px;
+    margin-left: -325px;
+    border:1px solid #CCC;
+    background-color: white;
+    width: 650px;
+    height: 250px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+}
+.formulario{
+    float:right;
+    margin-top: 30px;
+     width: 430px;
+    height: auto; 
+    
+}
+.image{
+    float: left;
+    
+}
+input.boton{
+    width: 100px;
+    height: 45px;
+    float: right;
+    margin-right: 100px;
+}
+input.txt{
+    width: 250px;
+    height: 35px;
+}
+.seccion{
+    margin: 10px 0 10px 10px;
+}
+label{
+    
+    width:110px;
+    float: left;
+}
+div.sec{
+    margin-top: 30px;
+}
+.image{
+    margin-top: 35px;
+    float: left;
+}
+.bienvenida{
+    margin: 30px auto 0 auto;
+    
+    width: 1000px;
+}
+.avatar{
+    float: left;
+    
+    width: 100px;
+    height: 100px;
+}
+.menu{
+     float: right;
+     width: 880px;
+         
+}
+.usuario{
+    width: 1000px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.contenido{
+    margin-top: -180px;
+    margin-left: -380px;
+    border:1px solid #CCC;
+    width: 800px;
+    height: 350px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+}
+.asignar{
+     margin-top: -170px;
+    margin-left: -375px;
+    border: 1px solid #CCC;
+    width: 700px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+}

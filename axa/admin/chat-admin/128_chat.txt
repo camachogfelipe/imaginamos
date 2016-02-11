@@ -1,0 +1,12 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Carolina Ramirez</span>Buenos d&iacute;as! 
+<span class='admin'>Carlos Cano</span>Buenos d&iacute;as Carolina, en que puedo ayudarla 
+<span class='usuario'>Carolina Ramirez</span>Carlos, es que estoy viendo que ustedes compran cartera y quisiera saber como es el proceso 
+<span class='admin'>Carlos Cano</span>Carolina por favor me recuerda su codigo 
+<span class='usuario'>Carolina Ramirez</span>30717 
+<span class='admin'>Carlos Cano</span>Permitame un momento 
+<span class='usuario'>Carolina Ramirez</span>vale 
+<span class='admin'>Carlos Cano</span>Carolina, para  esta linea de cr&eacute;dito se deben cumplir algunos requisitos. el primero es la antig&uuml;edad, que debe ser minimo de cinco a&ntilde;os, a la fecha no los cumple, y los aportes deben ser mayores que la deuda, no los cumple,  en este momento no seria posible utilizar esta modalidad de credito 
+<span class='usuario'>Carolina Ramirez</span>ahhh ok, mil gracias!!! 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

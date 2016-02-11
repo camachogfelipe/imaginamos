@@ -1,0 +1,7 @@
+#sliderContent { width:900px; margin:auto; padding:0 0px 0px;   }
+.viewer { width:900px;  margin:0 auto 0px;  overflow:hidden; position:relative;  }
+.content-conveyor { width:800;  position:relative; }
+.item { width:940px; float:left; font-family:Tahoma; text-align:center;  }
+
+
+.item img {   }

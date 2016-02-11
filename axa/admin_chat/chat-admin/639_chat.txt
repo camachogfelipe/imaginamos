@@ -1,0 +1,8 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>8888888</span><br/>buenos dias ~2012-07-13 10:31:18
+<span class='usuario'>8888888</span><br/>prueba nuevamente ~2012-07-13 10:31:22
+<span class='admin'>Agente</span><br/>hola en que te puedo ayudar ~2012-07-13 10:31:54
+<span class='usuario'>8888888</span><br/>si mira pasa que cuando requiero hacer una prueba del chat se borra&ccedil; ~2012-07-13 10:32:21
+<span class='admin'>Agente</span><br/>ok, no hay problema seguiremos probando ~2012-07-13 10:32:36
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

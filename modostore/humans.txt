@@ -1,0 +1,17 @@
+﻿/*Coonsolcargo*/
+/* Jabalíes */
+	Líder de Desarrollo: Felipe camacho
+	Contacto: felipe.camacho@imaginamos.com
+	
+	Maquetador: Stive Zambrano
+	Contacto: stive.zambrano@imaginamos.com.co
+	
+	Desarrollador : Elbert tous
+        Contacto: elbert.tous@imaginamos.co  
+
+
+/* SITE */
+	Last update:2013/11/01
+	Language: Español
+	Doctype:HTML5
+	IDE: Sublime Text, FileZilla, Photoshop, Easy Projects

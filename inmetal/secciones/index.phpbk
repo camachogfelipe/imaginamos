@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Industrias Metalurgicas Inmetal LTDA</title>
+    <meta name="viewport" content="width=1184" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta http-equiv="content-language" content="es" />
+    <meta http-equiv="pragma" content="No-Cache" />
+    <meta name="Keywords" lang="es" content="" />
+    <meta name="Description" lang="es" content="" />
+    <meta name="copyright" content="imaginamos.com" />
+    <meta name="date" content="2012" />
+    <meta name="author" content="diseño web: imaginamos.com" />
+    <meta name="robots" content="All" />
+    <link href="css/css_home.css" rel="stylesheet" type="text/css" />
+    <link href="css/menu.css" rel="stylesheet" type="text/css" />
+    <!--<link rel="stylesheet" href="css/mosaic.css" type="text/css" media="screen" />-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mosaic.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+				$('.fade').mosaic();
+      });
+    </script>
+  </head>
+  
+  <body>
+  
+  <div class="con-fondo-home">
+  
+    <div class="wrapper">   
+    
+      <div class="menu_home"></div><!--Menu fondo-->
+    	<ul id="navi">
+        <a href="index.php?seccion=index"><li>HOME</li></a>
+        <a href="index.php?seccion=quienessomos"><li>QUIENES SOMOS</li></a>
+        <a href="index.php?seccion=industrias"><li>INDUSTRIAS</li></a>
+        <a href="index.php?seccion=contactenos"><li>CONT&Aacute;CTENOS</li></a><!--./index.php?seccion=-->
+      </ul>
+    
+       
+      <div class="logo_home"><a href="./index.php" target="_self" ><img src="images/logo_home.png" width="600" height="285" /></a></div>
+
+      <div class="mosaic-block fade destacado-1">
+      	<a href="#"><div class="link-destacado"></div></a>
+        <div class="mosaic-overlay">
+          <div class="details">
+            <h4>Prueba Prueba</h4>
+            <p>dfgdfvxv dfgdfvxv</p>
+            <div class="destacado_mas"></div>
+          </div>
+          <img src="images/home/1.png"/>
+        </div>
+        <div class="mosaic-backdrop"><img src="images/home/1bn.png"/></div>
+      </div>
+      
+      <div class="mosaic-block fade destacado-2">
+      	<a href="#"><div class="link-destacado"></div></a>
+        <div class="mosaic-overlay">
+          <div class="details">
+            <h4>Prueba Prueba 2</h4>
+            <p>dfgdfvxv dfgdfvxv</p>
+            <div class="destacado_mas"></div>
+          </div>
+          <img src="images/home/2.png"/>
+        </div>
+        <div class="mosaic-backdrop"><img src="images/home/2bn.png"/></div>
+      </div>
+      
+      <div class="mosaic-block fade destacado-3">
+      	<a href="#"><div class="link-destacado"></div></a>
+        <div class="mosaic-overlay">
+          <div class="details">
+            <h4>Prueba Prueba 3</h4>
+            <p>dfgdfvxv dfgdfvxv</p>
+            <div class="destacado_mas"></div>
+          </div>
+          <img src="images/home/3.png"/>
+        </div>
+        <div class="mosaic-backdrop"><img src="images/home/3bn.png"/></div>
+      </div>
+      
+      <div class="mosaic-block fade destacado-4">
+      	<a href="#"><div class="link-destacado"></div></a>
+        <div class="mosaic-overlay">
+          <div class="details">
+            <h4>Prueba Prueba 4</h4>
+            <p>dfgdfvxv dfgdfvxv</p>
+            <div class="destacado_mas"></div>
+          </div>
+          <img src="images/home/4.png"/>
+        </div>
+        <div class="mosaic-backdrop"><img src="images/home/4bn.png"/></div>
+      </div>
+
+      <div class="social_home"><img src="images/social_home.png" width="67" height="32" usemap="#Map" border="0" />
+        <map name="Map" id="Map">
+          <area shape="rect" coords="1,5,32,29" href="http://www.linkedin.com/company/2938725/" target="_self" />
+          <area shape="rect" coords="37,2,65,32" href="https://www.facebook.com/inmetalltda/" target="_self" />
+        </map>
+      </div>
+
+      <div class="clear"></div>
+      <div class="slogan">UN PASO ADELANTE</div>
+
+    </div>
+    
+    </div>
+    
+    
+    
+
+    <div class="footer_home">
+      <div class="footer_txt"> <strong>Dirección:</strong> Calle14b No 123 - 41 <strong>Tel:</strong> +571-4189320 <strong>Fax:</strong> +571 4189320 <strong>Correo:</strong> comercial@inmetal.co 
+        <span class="negrilla">BOGOTÁ DC - COLOMBIA</span>
+      </div>
+      <div class="copy"> © 2012 INMETAL LTDA - Todos los derechos reservados</div>
+      <div class="footer-autor"><span id="ahorranito2"></span><a href="http://www.imaginamos.com" target="_new">Diseño Web: </a><a href="http://www.imaginamos.com" target="_new">imagin<span>a</span>mos.com</a></div>
+    </div>
+
+  </body>
+</html>

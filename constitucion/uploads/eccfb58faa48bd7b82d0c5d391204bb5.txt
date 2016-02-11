@@ -1,0 +1,6 @@
+--http://repositorio.imaginamos.com.co/JG/constitucionaldia/articulos/17
+--http://repositorio.imaginamos.com.co/JG/constitucionaldia/cms/constitucion/comentario/texto
+
+Casos de prueba
+
+https://docs.google.com/a/imaginamos.com/spreadsheet/ccc?key=0As_oU3UbJxhhdEkwV3R0RlJuXzFVZzJkb0xPVjM4ZEE&usp=drive_web#gid=1

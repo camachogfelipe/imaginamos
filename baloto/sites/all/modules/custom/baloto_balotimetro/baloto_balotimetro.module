@@ -1,0 +1,144 @@
+<?php
+/**
+ * @file
+ * Modulo generar números aleatorios en la sección llamada balotimetro
+ *
+ * Autor information: Yesid Camilo Ortiz Castillo
+ * email: yeskmilo@gmail.com
+ */
+
+function _baloto_balotimetro_block () {
+  $path = drupal_get_path('module', 'baloto_balotimetro');  
+  $content = array();
+  $content['#attached']['js'][] = $path . '/js/baloto_balotimetro.js';
+  $content['#attached']['css'][] = $path . '/css/baloto_balotimetro.css';
+  $formulario_cifras = drupal_get_form('_baloto_balotimetro_form');
+  $formulario_cifras_render = render($formulario_cifras);
+  $content['#markup'] = $formulario_cifras_render;
+  return $content;
+}
+
+/*
+* Implentation of hook_block_info
+**/
+function baloto_balotimetro_block_info() {
+  $blocks['block_balotimetro'] = array(
+    'info' => t('Generación de cifras aleatorias en el balotimetro'),
+    'cache' => DRUPAL_CACHE_PER_PAGE,
+  );
+  return $blocks;
+}
+
+/*
+* Implentation of hook_block_view
+**/
+function baloto_balotimetro_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'block_balotimetro':
+      $block['subject'] = t('Balotimetro, generación de numeros aleatorios para jugar');
+      $block['content'] = _baloto_balotimetro_block();
+      break;
+  }
+  return $block;
+}
+
+/**
+* Contrucción del formulario donde se mostraran los numeros
+* aleatorios del balotimetro
+*/
+
+function _baloto_balotimetro_form ($form, $form_state){
+
+	$form['cifra_uno'] = array(
+		'#prefix' => '<div id="t-valores-generados">',
+    '#field_prefix' => '<div class="p-gif"></div>',
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'class' => array('disabled')
+    ),
+  );
+	$form['cifra_dos'] = array(
+    '#field_prefix' => '<div class="p-gif"></div>',
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'class' => array('disabled')
+    ),
+  );
+	$form['cifra_tres'] = array(
+    '#field_prefix' => '<div class="p-gif"></div>',
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'class' => array('disabled')
+    ),
+  );
+	$form['cifra_cuatro'] = array(
+    '#field_prefix' => '<div class="p-gif"></div>',
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'class' => array('disabled')
+    ),
+  );
+	$form['cifra_cinco'] = array(
+    '#field_prefix' => '<div class="p-gif"></div>',
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'class' => array('disabled')
+    ),
+  );
+	$form['cifra_seis'] = array(
+    '#field_prefix' => '<div class="p-gif"></div>',
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'class' => array('disabled')
+    ),
+		'#suffix' => '</div>',
+  );
+	$form['actions'] = array('#type' => 'actions');
+  $form['actions']['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('JUGAR'),
+		'#ajax' => array(
+      'callback' => '_baloto_balotimetro_numeros_aleatorio',
+      'progress' => array('type' => 'none'),
+			'method' => 'replace',
+			'effect' => 'fade',
+    ),
+  );
+  $form['actions']['reset'] = array(
+    '#markup' => '<input id="reset" type="reset" value="BORRAR" />',
+    '#weight' => 1000
+  );
+	return $form;
+}
+
+function _baloto_balotimetro_numeros_aleatorio ($form, $form_state){
+	$commands[] = array();
+	$aleatorios[] = array();
+	$campos = array('uno'=>'uno','dos'=>'dos','tres'=>'tres','cuatro'=>'cuatro','cinco'=>'cinco','seis'=>'seis');
+	for ($i = 0;$i < 6; $i++){
+		if($i != 0){
+			$numero_alea = rand(1,45);
+      $bandera = TRUE;
+			for($k = 0; $k < sizeof($aleatorios); $k++){
+				if($aleatorios[$k] == $numero_alea){
+					$i--;
+          $bandera = FALSE;
+          break;
+				}
+			}
+      if($bandera == TRUE){
+        $aleatorios[$i] = $numero_alea;
+      }
+		}else{
+			$aleatorios[$i] = rand(1,45);
+		}
+	}
+	$j=0;
+  $commands[] = ajax_command_invoke('.p-gif', 'addClass', array('p-anima-gif'));
+	foreach($campos as $key){
+		$commands[] = ajax_command_invoke('#edit-cifra-'.$key, 'attr', array('value', $aleatorios[$j]));
+		$j++;
+	}
+	return array('#type' => 'ajax', '#commands' => $commands);
+}

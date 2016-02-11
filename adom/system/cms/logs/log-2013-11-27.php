@@ -1,0 +1,30 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2013-11-27 02:16:05 --> Page Missing: robots.txt
+ERROR - 2013-11-27 02:17:01 --> Page Missing: compromisos
+ERROR - 2013-11-27 04:24:43 --> Page Missing: home.htm
+ERROR - 2013-11-27 04:44:51 --> Page Missing: robots.txt
+ERROR - 2013-11-27 04:47:16 --> Page Missing: home.html
+ERROR - 2013-11-27 05:59:01 --> Page Missing: servicios/estudios/getEstudios
+ERROR - 2013-11-27 06:12:29 --> Page Missing: robots.txt
+ERROR - 2013-11-27 07:05:04 --> Page Missing: robots.txt
+ERROR - 2013-11-27 07:28:43 --> Page Missing: robots.txt
+ERROR - 2013-11-27 07:33:24 --> Page Missing: home.htm
+ERROR - 2013-11-27 08:16:49 --> Page Missing: robots.txt
+ERROR - 2013-11-27 10:13:14 --> Page Missing: robots.txt
+ERROR - 2013-11-27 12:09:28 --> Page Missing: gente.htm
+ERROR - 2013-11-27 12:33:07 --> Page Missing: robots.txt
+ERROR - 2013-11-27 12:33:12 --> Page Missing: home.htm
+ERROR - 2013-11-27 12:58:05 --> Page Missing: robots.txt
+ERROR - 2013-11-27 14:20:47 --> Page Missing: servicios/estudios/getEstudios
+ERROR - 2013-11-27 14:20:51 --> Page Missing: servicios/favicon.ico
+ERROR - 2013-11-27 14:20:51 --> Page Missing: servicios/favicon.ico
+ERROR - 2013-11-27 14:39:40 --> Page Missing: robots.txt
+ERROR - 2013-11-27 15:19:50 --> Page Missing: robots.txt
+ERROR - 2013-11-27 17:11:25 --> Page Missing: servicios/estudios/getEstudios
+ERROR - 2013-11-27 17:11:27 --> Page Missing: servicios/favicon.ico
+ERROR - 2013-11-27 17:12:13 --> Page Missing: servicios/estudios/getEstudios
+ERROR - 2013-11-27 19:25:37 --> Page Missing: robots.txt
+ERROR - 2013-11-27 21:34:10 --> Page Missing: robots.txt
+ERROR - 2013-11-27 23:50:43 --> Page Missing: robots.txt
+ERROR - 2013-11-27 23:50:53 --> Page Missing: photos/1.jpg

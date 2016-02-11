@@ -1,0 +1,33 @@
+/* @group rounded-corners pics */.rounded_wrapper {	position: relative;}.rounded_wrapper img {	border-width: 0;	border-style: none;}.rounded_wrapper div {	height: 7px;	position: absolute;	width: 100%;}.rounded_wrapper .tl {	top: 0;	left: 0;	background: url(img/rounded_corners/tl.gif) no-repeat left top;}.rounded_wrapper .tr {	top: 0;	right: 0;	background: url(img/rounded_corners/tr.gif) no-repeat right top;	}.rounded_wrapper .br {	bottom: 0;	right: 0;	background: url(img/rounded_corners/br.gif) no-repeat right bottom; }.rounded_wrapper .bl {	bottom: 0;	left: 0;	background: url(img/rounded_corners/bl.gif) no-repeat left bottom;}/* IE6 fix */.ie6_width .tr {	right: -1px;}.ie6_width .br {	right: -1px;}.ie6_height .br {	bottom: -1px;}.ie6_height .bl {	bottom: -1px;}/* @end */#carousel_inner {margin: auto; /* important for inline positioning */width:890px; /* important (this width = width of list item(including margin) * items shown */ overflow: hidden;  /* important (hide the items outside the div) *//* non-important styling bellow */}#carousel_ul {position:relative;left:0px; /* important (this should be negative number of list items width(including margin) */list-style-type: none; /* removing the default styling for unordered list items */margin: 0px;padding: 0px;width:9999px; /* important *//* non-important styling bellow */padding-bottom:10px;}
+	#carousel_ul li{
+		float: left;                             
+		width:185px;
+		padding:0px;
+		height:127px;
+		background: url("../images/menu/btn.png") 0 0 no-repeat;margin: 0px;
+		position: relative;
+	}
+	#carousel_ul li:hover {
+		background: url("../images/menu/btn.png") -185px 0 no-repeat;
+	}
+		.amarillo {
+			background: url("../images/menu/btn.png") -185px 0 no-repeat !important;
+		}
+
+		
+			#carousel_ul li a {
+				opacity: 0.5;
+				padding-top: 78px;
+				padding-left:35px;
+				width: 145px;
+				height: 100%;
+				display: block;
+				overflow: hidden;
+				font-family: 'AvantGardeMdBTMedium';
+				color: #ffffff;
+				font-weight: normal;
+				text-align:left;
+				font-size: 19px;
+				text-decoration: none;
+			} 
+				#carousel_ul li a .num {	font-family: 'AvantGardeMdBTMedium';	 color: #010350;	font-weight: bold;	text-align:center;	font-size: 35px;	position: absolute;	top: 20px;	left: 10px;	width: 60px;	display: none;}/*#carousel_ul li img {.margin-bottom:-4px; /* IE is making a 4px gap bellow an image inside of an anchor (<a href...>) so this is to fix that*//* styling *//*cursor:pointer;cursor: hand; border:0px; }*/#left_scroll, #right_scroll{	position: absolute;	top: 55px;	left:15px;	height:46px; 	width:31px;}#right_scroll {	left:950px;}#left_scroll img, #right_scroll img{/*styling*/cursor: pointer;cursor: hand;}

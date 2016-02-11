@@ -1,0 +1,117 @@
+	@charset 'utf-8';
+	/*************************************************
+	*
+	*	project:  	liteTabs - Lightweight jQuery tabs plugin
+	*	author:   	Nicola Hibbert
+	*	url:	  	http://nicolahibbert.com/lightweight-jquery-tab-plugin/
+	*	demo:	  	http://www.nicolahibbert.com/demo/liteTabs/
+	*
+	/*************************************************/
+	/****************************************** Core */
+	.liteTabs {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 690px;
+		font: 12px/14px Verdana, Arial, sans-serif
+	}
+	.liteTabs ul.menutabs {
+		margin: 0 0px 0 40px;
+		padding: 0;
+		height: 29px;
+		width: 100%;
+
+	}
+	.liteTabs ul.menutabs li {
+		float: left;
+		list-style-type: none;
+		background-color: #5bb23c;
+		background-image: url(../img/bgn-tabs.png);
+		background-repeat: repeat-x;
+		height: 29px;
+	}
+	.liteTabs ul.menutabs li a {
+		display: block;
+		text-decoration: none;
+		outline: 0;
+		padding: 0px 25px 0 30px;
+		margin-right: 0px;
+		color: #fff;
+		line-height: 29px;
+		position:relative;
+		text-align:center;
+	}
+	.liteTabs a:hover {
+	}
+	.liteTabs a:focus {
+		text-decoration: underline
+	}
+	.liteTabs .menutabs a.selected, .liteTabs .menutabs a.selected:hover {
+		background-color: #FFF;
+		color:#666666;
+	}
+	.liteTabs .tabs {
+		float: left;
+		width: 650px;
+		padding: 20px;
+		background: white
+	}
+	.liteTabs .tabs.selected {
+		position: static !important
+	}
+	.liteTabs a.selected .izqborde{
+		width: 41px;
+		float: right;
+		height: 29px;
+		background-image: url(../img/sprite.png);
+		background-position: -389px 0px;
+		background-repeat: no-repeat;
+		position: absolute;
+		right: -38px;
+		top:0;
+		z-index: 10;
+	}
+	.liteTabs a.selected .derborde{
+		width: 28px;
+		float: left;
+		height: 29px;
+		background-image: url(../img/sprite.png);
+		background-position: -360px 0px;
+		background-repeat: no-repeat;
+		position: absolute;
+		left: 0px;
+		top:0;
+		z-index: 10;
+	}
+	.derborde{
+		width: 28px;
+		float: left;
+		height: 29px;
+		background-image: url(../img/sprite.png);
+		background-position: -360px -37px;
+		background-repeat: no-repeat;
+		position: absolute;
+		left: 0px;
+		top:0;
+		z-index: 10;
+	}
+	.izqborde{
+		width: 41px;
+		float: right;
+		height: 29px;
+		background-image: url(../img/sombra-tabs.png);
+		background-position: right top;
+		background-repeat: no-repeat;
+		position: absolute;
+		right: -25px;
+		top:0;
+		z-index: 10;
+	}
+	.menosr{
+		margin-right: -25px !important;
+	}
+	.menosl{
+		margin-left: -25px !important;
+	}
+

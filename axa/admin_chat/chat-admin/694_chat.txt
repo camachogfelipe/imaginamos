@@ -1,0 +1,7 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>80001086</span><br/>buenas tardes ~2012-08-24 15:54:34
+<span class='usuario'>80001086</span><br/>Deseo saber costo asistencia en viaje del 4 de diciembre al 3 de febrero del 2013 66 a&ntilde;os de edad. Viaje a Houston Tx. ~2012-08-24 15:55:03
+<span class='admin'>Agente</span><br/>Buenos Tardes gracias por usar nuestro servicio en l&iacute;nea, mi nombre es  carmen lopez- clf		 ~2012-08-24 16:42:44
+<span class='admin'>Agente</span><br/>&iquest;Con quien tengo el gusto? - clf		 ~2012-08-24 16:43:13
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

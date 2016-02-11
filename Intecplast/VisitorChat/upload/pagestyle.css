@@ -1,0 +1,28 @@
+/* 
+    Document   : pagestyle.css
+    Created on : 22.5.2011, 2:05:17
+    Author     : Gregor Kuplenik
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body {
+
+}
+.sell {
+	background-image:url(VisitorChat/views/image/sk.png);
+	width:551px;
+	height: 529px;
+	position:absolute;
+	right:400px;
+	bottom:0px;
+}
+.forum {
+    position:absolute;
+    z-index: 100;
+    right:670px;
+    bottom:50px;
+    font-family: sans-serif;
+}
+.forum a { color:#fff; text-decoration: underline }
+.forum a:hover { text-decoration: none }
+.admin_area { display:block; width:215px; height:60px; bottom:90px; right:705px; position: absolute; z-index: 300  }

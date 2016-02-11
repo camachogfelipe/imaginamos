@@ -1,0 +1,6 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>1127945487</span><br/>Buenas Tardes. ~2012-09-04 15:44:42
+<span class='admin'>Agente</span><br/>Buenos Tardes gracias por usar nuestro servicio en l&iacute;nea, mi nombre es  Daniela Ahumada - DAT. 		 ~2012-09-04 15:46:20
+<span class='admin'>Agente</span><br/>&iquest;Como puedo ayudarle el d&iacute;a de hoy? - DAT ~2012-09-04 15:46:35
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

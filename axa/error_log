@@ -1,0 +1,19 @@
+[15-Jun-2012 17:33:54] PHP Fatal error:  Call to a member function getRefTransacciontbl_ventas() on a non-object in /home/nuevasca/public_html/axa_desarrollo/php/dao/ventaDAO.php on line 418
+[15-Jun-2012 17:36:54] PHP Fatal error:  Call to a member function getRefTransacciontbl_ventas() on a non-object in /home/nuevasca/public_html/axa_desarrollo/php/dao/ventaDAO.php on line 418
+[15-Jun-2012 17:38:55] PHP Fatal error:  Call to a member function getRefTransacciontbl_ventas() on a non-object in /home/nuevasca/public_html/axa_desarrollo/php/dao/ventaDAO.php on line 417
+[15-Jun-2012 17:44:01] PHP Fatal error:  Call to a member function getRefTransacciontbl_ventas() on a non-object in /home/nuevasca/public_html/axa_desarrollo/php/dao/ventaDAO.php on line 417
+[15-Jun-2012 17:44:36] PHP Fatal error:  Call to a member function getRefTransacciontbl_ventas() on a non-object in /home/nuevasca/public_html/axa_desarrollo/php/dao/ventaDAO.php on line 418
+[15-Jun-2012 17:45:14] PHP Fatal error:  Call to a member function getPagoonlinetbl_ventas() on a non-object in /home/nuevasca/public_html/axa_desarrollo/php/dao/ventaDAO.php on line 418
+[19-Jun-2012 09:57:15] PHP Fatal error:  Call to a member function getNombretbl_pasajeros() on a non-object in /home/nuevasca/public_html/axa_desarrollo/respuesta.php on line 131
+[19-Jun-2012 10:03:34] PHP Fatal error:  Call to undefined function  getapellidostbl_pasajeros() in /home/nuevasca/public_html/axa_desarrollo/respuesta.php on line 135
+[19-Jun-2012 10:29:28] PHP Warning:  fopen(test.csv) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/nuevasca/public_html/axa_desarrollo/respuesta.php on line 159
+[19-Jun-2012 10:31:09] PHP Warning:  fopen(archivos/pedidos20120619.csv) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/nuevasca/public_html/axa_desarrollo/respuesta.php on line 160
+[19-Jun-2012 10:31:57] PHP Warning:  fopen(test.csv) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/nuevasca/public_html/axa_desarrollo/respuesta.php on line 162
+[19-Jun-2012 10:57:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nuevasca/public_html/axa_desarrollo/respuesta.php:28) in /home/nuevasca/public_html/axa_desarrollo/respuesta.php on line 166
+[19-Jun-2012 10:57:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nuevasca/public_html/axa_desarrollo/respuesta.php:28) in /home/nuevasca/public_html/axa_desarrollo/respuesta.php on line 167
+[19-Jun-2012 10:57:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nuevasca/public_html/axa_desarrollo/respuesta.php:28) in /home/nuevasca/public_html/axa_desarrollo/respuesta.php on line 168
+[19-Jun-2012 10:57:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nuevasca/public_html/axa_desarrollo/respuesta.php:28) in /home/nuevasca/public_html/axa_desarrollo/respuesta.php on line 169
+[19-Jun-2012 10:57:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nuevasca/public_html/axa_desarrollo/respuesta.php:28) in /home/nuevasca/public_html/axa_desarrollo/respuesta.php on line 170
+[19-Jun-2012 12:19:42] PHP Warning:  readfile() [<a href='function.readfile'>function.readfile</a>]: Filename cannot be empty in /home/nuevasca/public_html/axa_desarrollo/respuesta.php on line 167
+[19-Jun-2012 17:26:09] PHP Fatal error:  Call to a member function getDescripciontbl_plan() on a non-object in /home/nuevasca/public_html/axa_desarrollo/index2_prueba.php on line 99
+[19-Jun-2012 17:26:30] PHP Fatal error:  Call to a member function getDescripciontbl_plan() on a non-object in /home/nuevasca/public_html/axa_desarrollo/index2_prueba.php on line 99

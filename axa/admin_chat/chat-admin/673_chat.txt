@@ -1,0 +1,9 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>42001095</span><br/>Buenas tardes ustedes me pueden por favor informar como adquiero el seguro al que tengo derecho por mi tarjeta de credito~2012-08-08 12:30:04
+<span class='usuario'>42001095</span><br/>el banco me informo que tenia que contactarlos a ustedes ~2012-08-08 12:30:25
+<span class='admin'>Agente</span><br/> Buenos D&iacute;as/Tardes gracias por usar nuestro servicio en l&iacute;nea mi nombre es Jose Romero,  Con quien tengo el gusto? - JRF ~2012-08-08 12:31:02
+<span class='usuario'>42001095</span><br/>pero no estoy seguro si tengo que comprar el tiquete con la tarjeta para que sea valido ~2012-08-08 12:31:09
+<span class='admin'>Agente</span><br/>Con que entidad meneja el producto? - JRF ~2012-08-08 12:33:49
+<span class='usuario'>42001095</span><br/>bancolombia ~2012-08-08 12:34:06
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

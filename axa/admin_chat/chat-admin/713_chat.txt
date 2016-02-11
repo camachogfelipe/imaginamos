@@ -1,0 +1,4 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>1072657645</span><br/>hola, mi nombre es susana y ahora estoy estudiando en espa&ntilde;a, mi NIE se caduca pronto y para renovarlo necesito un seguro m&eacute;dico, yo solo lo quiero del 29 de septiembre hasta el 7 de noviembre, soy estudiante~2012-09-27 14:06:27
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

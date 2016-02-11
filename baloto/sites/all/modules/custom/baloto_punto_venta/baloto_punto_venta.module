@@ -1,0 +1,183 @@
+<?php
+
+/**
+ * @file
+ * Create the vocabulary tac with all the tac information and images
+ * Autor information: David Carvajal
+ * email: davidgcarvajal@gmail.com
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function baloto_punto_venta_menu() {
+  $items = array();
+  $items['admin/config/puntos_venta'] = array(
+    'title' => t('Cargar masiva de puntos de venta'),
+    'description' => t('Carga masiva de puntos de venta desde un cvs hasta el vocabulario TAC'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('baloto_punto_venta_import_form'),
+    'access arguments' => array('Local import'),
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function baloto_punto_venta_permission() {
+  $perms = array();
+  $perms = array(
+    'Local import' => array(
+      'title' => t('Carga masiva de puntos de venta desde un cvs'),
+    ),
+  );
+  return $perms;
+}
+
+/**
+ * Form constructor for the form
+ */
+function baloto_punto_venta_import_form($form, &$form_state) {
+  $form = array('#attributes' => array('enctype' => 'multipart/form-data'));
+  $form['source'] = array('#type' => 'fieldset', '#title' => t('Source'));
+  $form['source']['upload'] = array(
+    '#type' => 'file',
+    '#title' => t('file'),
+  );
+  if ($max_size = _baloto_punto_venta_file_upload_parse_size(ini_get('upload_max_filesize'))) {
+    $form['source']['upload']['#description'] = t('Due to server restrictions, the maximum upload file size is !size. Files that exceed this size will be disregarded without notice.', array('!size' => format_size($max_size)));
+  }
+  $form['submit'] = array('#type' => 'submit', '#value' => t('Send'));
+  return $form;
+}
+
+/**
+ * Parses PHP configuration size values into bytes.
+ *
+ * Edited from an example at http://php.net/manual/en/function.ini-get.php
+ */
+function _baloto_punto_venta_file_upload_parse_size($value) {
+  $value = trim($value);
+  $number = (int) drupal_substr($value, 0, -1);
+  $suffix = drupal_strtoupper(drupal_substr($value, -1));
+  switch ($suffix) {
+      case 'G':
+          $number *= 1024;
+      case 'M':
+          $number *= 1024;
+      case 'K':
+          $number *= 1024;
+  }
+  return $number;
+}
+
+/**
+ * Handles file import form validation.
+ */
+function baloto_punto_venta_import_form_validate($form, &$form_state) {
+  $form_state['upload_file'] = file_save_upload('upload', array('file_validate_extensions' => array(0 => 'csv')));
+  if (!$form_state['upload_file']) {
+    form_set_error('upload', t('Please upload a file.'));
+  } else {
+    $form_state['upload_file']->filepath = drupal_realpath($form_state['upload_file']->uri);
+  }
+}
+
+/**
+ * Handles file import form submission.
+ */
+function baloto_punto_venta_import_form_submit($form, &$form_state) {
+  baloto_punto_venta_import_batch($form, $form_state);
+}
+
+/**
+ * Batch operation.
+ * Used for validation and saving
+ */
+function baloto_punto_venta_import_batch($form, &$form_state) {
+  $file = $form_state['upload_file'];
+  // Automatically detect line endings.
+  ini_set('auto_detect_line_endings', '1');
+  $handle = fopen($file->filepath, 'r');
+  $first = TRUE;
+  $operations = array();
+  $i = 0;
+  while ($line = fgetcsv($handle, 4096, ',')) {
+    if ($i == 20) {
+      break;
+    }
+    if (!empty($line)){
+      // Convert line to UTF-8.
+      $line = array_map('_baloto_punto_venta_to_utf8', $line);
+      $operations[] = array('_baloto_punto_venta_batch', array($line));
+    }
+    $i++;
+  }
+  $batch = array(
+    'operations' => $operations,
+    'finished' => '_baloto_punto_venta_finished',
+  );
+  batch_set($batch);
+}
+
+/**
+ * Helper function to convert each line item to UTF-8.
+ */
+function _baloto_punto_venta_to_utf8($value) {
+  $enc = mb_detect_encoding($value, "UTF-8, ISO-8859-1, ISO-8859-15", TRUE);
+  if ($enc != "UTF-8") {
+    $value = drupal_convert_to_utf8($value, $enc);
+  }
+  return $value;
+}
+
+function _baloto_punto_venta_batch($line, &$context) {
+  $punto_id = $line[0];
+  $punto_name = $line[1];
+  $punto_address = $line[2];
+  $punto_phone = $line[3];
+  $punto_city = $line[4];
+  $punto_state = $line[5];
+  $punto_city_taxonomy = taxonomy_get_term_by_name($punto_city, $vocabulary = 'ciudades');
+}
+
+/**
+ * Batch 'finished' callback
+ */
+function _baloto_punto_venta_finished($success, $results, $operations) {
+  if ($success) {
+    variable_del('dummy_tac');
+    drupal_set_message(t('Termino correctamente', array('%final' => end($results))));
+  }
+  else {
+    $error_operation = reset($operations);
+    drupal_set_message(t('An error occurred while processing @operation'));
+  }
+}
+
+/**
+ * funcion para crear los terminos de la taxonomia TAC
+ */
+function _baloto_punto_venta_crear_terminos($term_name, $marca, $modelo, $categoria, $image_name) {
+  $vocabulary = taxonomy_vocabulary_machine_name_load('tac');
+  $vid = $vocabulary->vid;
+  $marca_array = array('value' => $marca, 'format' => NULL, 'safe_value' => $marca) ;
+  $modelo_array = array('value' => $modelo, 'format' => NULL, 'safe_value' => $modelo) ;
+  $categoria_array = array('value' => $categoria, 'format' => NULL, 'safe_value' => $categoria) ;
+  $term = _tigo_online_tac_term($vid, $term_name, $marca_array, $modelo_array, $categoria_array);
+  taxonomy_term_save($term);
+}
+
+/**
+ * Crear el termino con los valores correspondientes
+ */
+function _tigo_online_tac_term($vid, $term_name, $marca, $modelo, $categoria, $image) {
+  $term = new stdClass();
+  $term->vid = $vid;
+  $term->name = $term_name;
+  $term->field_tac_marca[LANGUAGE_NONE][0] = $marca;
+  $term->field_tac_model[LANGUAGE_NONE][0] = $modelo;
+  $term->field_tac_classification[LANGUAGE_NONE][0] = $categoria;
+  return $term;
+}

@@ -1,0 +1,7 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>41624085</span><br/>buenos dias, ustedes me puedes informar si tienen seguros para estudiantes, y que costo tienen? ~2012-08-30 11:35:27
+<span class='usuario'>41624085</span><br/>me pueden informar como comunicarme con ustedes ya que por aca veo que no recibo respuesta.... ~2012-08-30 11:43:31
+<span class='admin'>Agente</span><br/>buenas dias ~2012-08-30 11:59:32
+<span class='admin'>Agente</span><br/>Disculpe la demora en la respuesta-clf ~2012-08-30 11:59:59
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

@@ -1,0 +1,10 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Jhon Jairo</span>hola 
+<span class='admin'>Oscar Hernandez</span>Hola, Jhonson. GLS 
+<span class='usuario'>Jhon Jairo</span>ca se ve bien 
+<span class='usuario'>Jhon Jairo</span>estoy desde el chrome 
+<span class='admin'>Oscar Hernandez</span>Ah, entonces es su Mocosoft Explorer 
+<span class='usuario'>Jhon Jairo</span>ya se ve bien desde los dos 
+<span class='usuario'>Jhon Jairo</span>bye 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

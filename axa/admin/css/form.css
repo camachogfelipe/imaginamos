@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+.label {
+	font-size:11px;
+	text-align:left;
+	color:#404648;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom: 6px;
+	margin-top: 10px;
+}
+label.error           { font-weight:normal;color:red;text-align:left;width:140px; padding-left:25px;
+                        background: transparent url(/images/cancel.png) no-repeat scroll left; }
+input.text-input {
+	color:#666666;
+	border: 1px solid #AAAAAA;
+	padding-top: 5px;
+	padding-right: 0;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #FFFFFF;
+	height: 16px;
+	background-image: url(../imagenes/form/fondo1.png);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+input.text-input-activo {
+	color:#244A89;
+	border: 1px solid #2FACFF;
+	padding-top: 5px;
+	padding-right: 0;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #F0F4F8;
+	background-image: url(../imagenes/form/fondo2.png);
+}
+
+label#name_label      {
+	position:absolute;
+}
+/*input#name            { position:absolute; top:0; left:110px; }*/
+label#name_error  {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #DB7531;
+}
+
+#campo_vacio {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #DB7531;
+}
+
+.mensaje_alerta {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #232730;
+	text-align: center;
+	margin: 30px;
+}
+
+label#email_label     { position:absolute; top:45px; left:0px; }
+input#email           { position:absolute; top:45px; left:110px; }
+label#email_error      { position:absolute; top:67px; left:120px; }
+
+label#phone_label     { position:absolute; top:90px; left:0px; }
+input#phone           { position:absolute; top:90px; left:110px; }
+label#phone_error      { position:absolute; top:112px; left:120px; }
+
+input.button-modificar {
+	/*-moz-border-radius:5px;*/
+	background-image: url(../imagenes/botones/bt_modificar1.png);
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-repeat: no-repeat;
+	height: 23px;
+	color: #FFFFFF;
+	width: 70px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+input.button-modificar:hover		{
+	color:white;
+	background-color: #FFFFFF;
+	background-image: url(../imagenes/botones/bt_modificar2.png);
+	background-repeat: no-repeat;
+	height: 23px;
+	width: 70px;
+}
+#message							{ width:180px;margin:60px 0 0 100px; }
+#message h2						{ font-size:150%;color:white; }
+#message p						{ color:white;font-weight:bold;margin:6px 0px; }
+#checkmark						{ position:relative;top:-46px;left:-60px; }

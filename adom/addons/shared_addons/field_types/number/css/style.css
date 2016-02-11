@@ -1,0 +1,28 @@
+/* 
+    Document   : style
+    Created on : 27-ago-2013, 14:01:30
+    Author     : rigobcastro
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+input[type="number"]{
+    padding: 5px 5px;
+    margin-bottom: 5px;
+    background: #eee;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+
+    -webkit-transition: 250ms linear all;
+    -moz-transition: 250ms linear all;
+    transition: 250ms linear all;
+
+    width: auto;
+}
+
+
+input[type="number"]:focus{
+    background: #fff;
+}
+

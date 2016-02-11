@@ -1,0 +1,469 @@
+<?php
+/**
+ * @file
+ * Modulo generar tpl del cual parte la visualizaci�n del acumulado y cifras del ultimo sorteo
+ *
+ * Autor information: Yesid Camilo Ortiz Castillo
+ * email: yeskmilo@gmail.com
+ */
+function baloto_acumulado_menu() {
+  $items['acumulado'] = array(
+    'title' => t('acumulado'),
+    'description' => 'acumulado.',
+    'page callback' => '_baloto_acumulado_block',
+    'access arguments' => array('access content'),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  $items['admin/config/baloto/acumulado'] = array(
+    'title' => t('Baloto acumulado'),
+    'description' => t('Page to configure the acumulado increasing speed'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' =>  array('acumulado_config_form'),
+    'access arguments' => array('administer site configuration'),
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+  $items['admin/config/baloto/sorteo'] = array(
+    'title' => t('Baloto sorteo'),
+    'description' => t('Page to configure the sorteo falling speed'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' =>  array('sorteo_config_form'),
+    'access arguments' => array('administer site configuration'),
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+  $items['admin/config/baloto/manage'] = array(
+    'title' => 'Baloto',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'description' => 'description',
+    'weight' => -10,
+  );
+
+   $items['admin/quicktabs_superior'] = array(
+    'title' => t('quicktabs_superior'),
+    'page callback' => '_baloto_tabs_navegacion_superior',
+    'access callback' => TRUE,
+  );
+
+  return $items;
+}
+
+function _baloto_tabs_navegacion_superior() {
+  // Carga los quicktabs
+  $quicktabs = quicktabs_load('navegacion_internas_baloto');
+  // Arreglo a popular como menu
+  $menu = array();
+  // Prepara el arreglo para el tema
+  foreach ($quicktabs->tabs as $key => $value) {
+    $menu[] = $value['title'];
+  }  
+
+  // Tema de los quicktabs como menu 
+  return _baloto_tabs_navegacion_superior_tema($menu);
+}
+
+function _baloto_tabs_navegacion_superior_tema($menu) {
+  $path = drupal_get_path('module', 'baloto_acumulado');
+  $content = array();
+
+  $content['#attached']['js'][] = $path . '/js/menu_superior.js';
+  $content['#attached']['js'][] = $path . '/js/jquery.cookie.js';
+  $content['#attached']['css'][] = $path . '/css/menu_superior.css';
+
+  $total = count($menu);
+  $i = 1;
+
+  $output = '<a href="#" class="prev-tab btn-tab"></a>';
+  $output .= '<ul id="tabs-navegacion-h">';
+  foreach ($menu as $key => $value) {
+    if ($i == 1) {
+      $output .= '<li class="tab-navegacion-h first-tab">';
+    } elseif ($i == $total) {
+      $output .= '<li class="tab-navegacion-h last-tab">';
+    } else {
+      $output .= '<li class="tab-navegacion-h">';
+    }
+    $output .= '<span>';
+    $output .= $value;
+    $output .= '</span>';
+    $output .= '</li>';
+    ++$i;
+  }  
+  $output .= '</ul>'; 
+  $output .= '<a href="#" class="next-tab active btn-tab"></a>';
+
+  $content['#markup'] = $output;
+  return $content;
+
+}
+
+/**
+ *
+ */
+function _baloto_acumulado_block () {
+  // Name module configuration
+	global $base_path;
+  define('BALOTO_COMPONENTS_MODULE', drupal_get_path('module', 'baloto_acumulado'));
+  define('SITE_BASE_PATH', $base_path);
+
+
+  // Loading libraries
+  drupal_add_library('system', 'effects.bounce');
+
+  // General javascript configuration settings
+  drupal_add_js(array('baloto' => array(
+    'path' => BALOTO_COMPONENTS_MODULE,
+  )), 'setting');
+
+  // Inject variable direct on javascript as a global
+  drupal_add_js('var path_to_fireworks = "' . SITE_BASE_PATH . BALOTO_COMPONENTS_MODULE . '/fireworks/";', 'inline');
+  drupal_add_js('var path_to_bacumulado= "' . SITE_BASE_PATH . BALOTO_COMPONENTS_MODULE . '";', 'inline');
+
+
+  // JS Resources
+  drupal_add_js(BALOTO_COMPONENTS_MODULE . '/js/baloto_acumulado.js', array('group' => JS_DEFAULT, 'every_page' => FALSE));
+	drupal_add_js(BALOTO_COMPONENTS_MODULE . '/js/component-acumulado.js', array('group' => JS_DEFAULT, 'every_page' => FALSE));
+  drupal_add_js(BALOTO_COMPONENTS_MODULE . '/js/component-sorteo.js', array('group' => JS_DEFAULT, 'every_page' => FALSE));
+  drupal_add_js(BALOTO_COMPONENTS_MODULE . '/fireworks/script/soundmanager2-nodebug-jsmin.js');
+  drupal_add_js(BALOTO_COMPONENTS_MODULE . '/fireworks/script/fireworks.js');
+  // CSS Resources
+	drupal_add_css(BALOTO_COMPONENTS_MODULE . '/css/baloto_acumulado.css', array('group' => CSS_DEFAULT, 'every_page' => FALSE));
+	drupal_add_css(BALOTO_COMPONENTS_MODULE . '/css/baloto_acumulado_animate.css', array('group' => CSS_DEFAULT, 'every_page' => FALSE));
+
+  $ultimo_sorteo = cache_get("_baloto_acumulado_ultimo_sorteo");
+	if(!isset($ultimo_sorteo->data)){
+		_baloto_acumulado_ultimo_sorteo();
+		$ultimo_sorteo = cache_get("_baloto_acumulado_ultimo_sorteo");
+	}
+	$ultimo_sorteo_info = $ultimo_sorteo->data;
+  $acumulado_cayo_ciudad = "";
+  if (array_key_exists('und', $ultimo_sorteo_info->field_cayo_en_ciudad)){
+    $acumulado_cayo_ciudad = $ultimo_sorteo_info->field_cayo_en_ciudad['und'][0]['value'];
+  }
+	$acumulado_valor = $ultimo_sorteo_info->field_acumulado['und'][0]['value'];
+	$acumulado=str_replace("'","",$acumulado_valor);
+	$acumulado=str_replace(".","",$acumulado);
+	$acumulado = $acumulado/1000000;
+
+   // Loading settings
+  $falling_speed = variable_get('sorteo_falling_speed') ? variable_get('sorteo_falling_speed') : 231;
+  $sorteo_active_rain = variable_get('sorteo_active_rain') ? variable_get('sorteo_active_rain') : 1;
+  $delay_rain = variable_get('delay_rain') ? variable_get('delay_rain') : 0;
+  $acumulado_speed = variable_get('acumulado_increasing_speed') ? variable_get('acumulado_increasing_speed') : 231;
+
+  drupal_add_js('var global_delay_rain = ' . $delay_rain . ';', 'inline');
+  $numero_sorteo = $ultimo_sorteo_info->title;
+  $fecha_sorteo = strtotime(_baloto_get_cifras($ultimo_sorteo_info, 'field_fecha_sorteo'));
+  $fecha_sorteo_formato = format_date($fecha_sorteo, 'custom', 'l\, d \d\e F \d\e Y');
+
+  $settings = array (
+    'falling_speed' => $falling_speed,
+    'sorteo_active_rain' => $sorteo_active_rain,
+    'delay_rain' => $delay_rain,
+    'acumulado_speed' => $acumulado_speed,
+		'acumulado' => floor($acumulado),
+		'cifra_uno' => _baloto_get_cifras($ultimo_sorteo_info, 'field_cifra_uno'),
+		'cifra_dos' => _baloto_get_cifras($ultimo_sorteo_info, 'field_cifra_dos'),
+		'cifra_tres' => _baloto_get_cifras($ultimo_sorteo_info, 'field_cifra_tres'),
+		'cifra_cuatro' => _baloto_get_cifras($ultimo_sorteo_info, 'field_cifra_cuatro'),
+		'cifra_cinco' => _baloto_get_cifras($ultimo_sorteo_info, 'field_cifra_cinco'),
+		'cifra_seis' => _baloto_get_cifras($ultimo_sorteo_info, 'field_cifra_seis'),
+    'numero_sorteo' => $numero_sorteo,
+    'fecha_sorteo' => $fecha_sorteo_formato,
+    'acumulado_cayo' => $acumulado_cayo_ciudad,
+	);
+
+	drupal_add_js( array ('baloto_acumulado' => $settings), 'setting');
+
+  /**
+   * Baloto Componente Revancha
+   **/
+  // Obtiene el valor del acumulado
+  if (isset($ultimo_sorteo_info->field_revancha_acumulado['und'][0]['value'])) {
+    $r_acumulado = $ultimo_sorteo_info->field_revancha_acumulado['und'][0]['value']; 
+  } else {
+    $r_acumulado = 0;
+  }
+  // Limpia el formato del acumulado
+  $r_acumulado = _baloto_convert_acumulado($r_acumulado); 
+  // Número del sorteo de la revancha
+  $r_numero_sorteo = isset($ultimo_sorteo_info->field_revancha_sorteo_n_['und'][0]['value']) ? 
+    $ultimo_sorteo_info->field_revancha_sorteo_n_ ['und'][0]['value'] : NULL;    
+  // Ciudad del sorteo de la revancha
+  $r_cayo_ciudad = isset($ultimo_sorteo_info->field_revancha_cayo_en_ciudad['und'][0]['value']) ? 
+    $ultimo_sorteo_info->field_revancha_cayo_en_ciudad['und'][0]['value'] : NULL;
+  // Valores de configuracion para el componente
+  // acumulado de revancha  
+  $revancha = array(
+    'acumulado' => floor($r_acumulado),
+    'acumulado_cayo' => $r_cayo_ciudad,
+    'cifra_1' => _baloto_get_cifras($ultimo_sorteo_info, 'field_revancha_cifra_uno'),
+    'cifra_2' => _baloto_get_cifras($ultimo_sorteo_info, 'field_revancha_cifra_dos'),
+    'cifra_3' => _baloto_get_cifras($ultimo_sorteo_info, 'field_revancha_cifra_tres'),
+    'cifra_4' => _baloto_get_cifras($ultimo_sorteo_info, 'field_revancha_cifra_cuatro'),
+    'cifra_5' => _baloto_get_cifras($ultimo_sorteo_info, 'field_revancha_cifra_cinco'),
+    'cifra_6' => _baloto_get_cifras($ultimo_sorteo_info, 'field_revancha_cifra_seis'),
+    'sorteo_numero' => $r_numero_sorteo,
+    'sorteo_fecha' => $fecha_sorteo_formato,
+  );
+
+  // Adiciona
+  drupal_add_js( array('baloto_revancha' => $revancha), 'setting');
+
+  return theme('baloto_acumulado_template', array(
+    'acumulado'=>$acumulado,
+    'cifra_uno' => _baloto_get_cifras($ultimo_sorteo_info, 'field_cifra_uno'),
+    'cifra_dos' => _baloto_get_cifras($ultimo_sorteo_info, 'field_cifra_dos'),
+    'cifra_tres' => _baloto_get_cifras($ultimo_sorteo_info, 'field_cifra_tres'),
+    'cifra_cuatro' => _baloto_get_cifras($ultimo_sorteo_info, 'field_cifra_cuatro'),
+    'cifra_cinco' => _baloto_get_cifras($ultimo_sorteo_info, 'field_cifra_cinco'),
+    'cifra_seis' => _baloto_get_cifras($ultimo_sorteo_info, 'field_cifra_seis'),
+    'numero_sorteo' => $numero_sorteo,
+    'fecha_sorteo' => $fecha_sorteo_formato,
+    'acumulado_cayo' => $acumulado_cayo_ciudad,
+  ));
+}
+
+function _baloto_convert_acumulado($acumulado) {
+  $acumulado = str_replace("'","",$acumulado);
+  $acumulado = str_replace(".","",$acumulado);
+  $acumulado = $acumulado / 1000000;
+
+  return $acumulado;
+}
+/**
+ * Funcion para traer los valores de cada una de las cifras
+ */
+function _baloto_get_cifras($value, $field) {
+  $cifra = field_get_items('node', $value, $field);
+  return $cifra[0]['value'];
+}
+
+/**
+ * Implentation of hook_block_info
+ */
+function baloto_acumulado_block_info() {
+  $blocks['block_acumulado'] = array(
+    'info' => t('Acumulado y cifras del ultimo sorteo'),
+    'cache' => DRUPAL_CACHE_PER_PAGE,
+  );
+  $blocks['menu_superior_quicktabs'] = array(
+    'info' => t('Menu Superior de Quicktabs'),
+    'cache' => DRUPAL_CACHE_PER_PAGE,
+  );  
+  
+  return $blocks;
+}
+
+/**
+ * Implentation of hook_block_view
+ */
+function baloto_acumulado_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'block_acumulado':
+      $block['subject'] = t('Acumulado y cifras ultimo sorteo');
+      $block['content'] = _baloto_acumulado_block();
+      break;
+    case 'menu_superior_quicktabs':
+      $block['content'] = _baloto_tabs_navegacion_superior();
+      break;
+  }
+  return $block;
+}
+
+/**
+* Implementation of hook_node_insert
+* Hook para verificar si el nodo creado es un sorteo
+* Declaracion de variable de control para revisar el acumulado y ultimo sorteo
+*/
+function baloto_acumulado_node_insert($node) {
+	if($node->type == "sorteo"){
+		_baloto_acumulado_ultimo_sorteo();
+	}
+}
+
+/**
+* Implementation of hook_node_delete
+* Hook para verificar si el nodo eliminado es un sorteo
+* Declaracion de variable de control para revisar el acumulado y ultimo sorteo
+*/
+function baloto_acumulado_node_delete($node) {
+	if($node->type == "sorteo"){
+		_baloto_acumulado_ultimo_sorteo();
+	}
+}
+
+/**
+* Implementation of hook_node_update
+* Hook para verificar si el nodo actualizado es un sorteo
+* Declaracion de variable de control para revisar el acumulado y ultimo sorteo
+*/
+function baloto_acumulado_node_update($node) {
+	if($node->type == "sorteo"){
+    _baloto_acumulado_ultimo_sorteo();
+	}
+}
+
+/**
+* Implementation of hook_theme
+*/
+function baloto_acumulado_theme(){
+	return array(
+		'baloto_acumulado_template' => array(
+			'variables' => array('acumulado' => NULL),
+			'template' => 'baloto_acumulado_template',
+			'path' => drupal_get_path('module', 'baloto_acumulado'),
+		),
+	);
+}
+
+/**
+* Funcion para obtener el ultimo sorteo que se ha realizado
+* filtrando por fecha de sorteo, y generando cache del ultimo sorteo
+*/
+function _baloto_acumulado_ultimo_sorteo(){
+	$query = new EntityFieldQuery();
+	$query->entityCondition('entity_type', 'node')
+		  ->entityCondition('bundle', 'sorteo')
+		  ->fieldOrderBy('field_fecha_sorteo', 'value', 'DESC')
+		  ->range(0, 1);
+	$result = $query->execute();
+	foreach ($result['node'] as $key) {
+		$nid[] = $key->nid;
+	}
+	$ultimo_sorteo = node_load($nid[0]);
+	cache_set("_baloto_acumulado_ultimo_sorteo",$ultimo_sorteo);
+	variable_del("baloto_acumulado_validacion_cache");
+}
+
+
+/**
+ * Implements hook_build_page()
+ * Hook necesario para que se puedan crear las instancias de
+ * fireworks.
+ */
+function baloto_acumulado_page_build(&$page) {
+  $page['page_top']['fireworks']['#markup'] = _fireworks_markup();
+}
+
+/**
+ * Funcion que genera el markup para las instacias de fireworks.
+ */
+function _fireworks_markup() {
+  if (drupal_is_front_page()) {
+    // CSS Load resources
+    drupal_add_css(BALOTO_COMPONENTS_MODULE . '/fireworks/style/fireworks.css');
+
+    return '
+    <div id="fireworks-template">
+     <div id="fw" class="firework"></div>
+     <div id="fp" class="fireworkParticle"><img src="' . BALOTO_COMPONENTS_MODULE . '/fireworks/image/particles.gif" alt="" /></div>
+    </div>
+    <div id="fireContainer">
+    </div>';
+  } else {
+    return '';
+  }
+
+}
+
+
+/**
+ * Form to select the increasing speed of the 'acumulado' component
+ */
+function acumulado_config_form($form, &$form_state) {
+  // Load Settings
+  $inc_speed = variable_get('acumulado_increasing_speed') ? variable_get('acumulado_increasing_speed') : 231;
+
+  // Message
+   $form['message'] = array(
+    '#type' => 'item',
+    '#markup' => '<p>Formulario para cambiar la configuración del componente acumulado</p>',
+  );
+  // Fied: Increasing speed
+   $form['inc_speed'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Numero de incremento para llegar al tope. (231 Recomendado), entre mas alto sea este numero mas rapido llegara al tope.'),
+    '#default_value' => $inc_speed,
+    '#required' => TRUE,
+  );
+  // Action 'save'
+  $form['save'] = array(
+    '#type' => 'submit',
+    '#value' => t('Guardar configuracion'),
+    '#weight' => 50,
+  );
+
+  return $form;
+}
+
+function acumulado_config_form_submit($form, $form_state) {
+  $value = $form_state['values']['inc_speed'];
+  variable_set('acumulado_increasing_speed', $value);
+
+  drupal_set_message('Configuracion actualizada');
+}
+
+/**
+ * Form to select the increasing speed of the 'acumulado' component
+ */
+function sorteo_config_form($form, &$form_state) {
+  // Load Settings
+  $falling_speed = variable_get('sorteo_falling_speed') ? variable_get('sorteo_falling_speed') : 500;
+  $delay_rain = variable_get('delay_rain') ? variable_get('delay_rain') : 0;
+  $sorteo_active_rain = variable_get('sorteo_active_rain') ? variable_get('sorteo_active_rain') : 1;
+
+  // Message
+   $form['message'] = array(
+    '#type' => 'item',
+    '#markup' => '<p>Formulario para cambiar la configuración del componente sorteo</p>',
+  );
+  // Fied: Increasing speed
+   $form['falling_speed'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Tiempo en milisegundos para que las balotas lleguen a su base. Configuracion recomendada: 500'),
+    '#default_value' => $falling_speed,
+    '#required' => TRUE,
+  );
+
+     // Fied: Increasing speed
+   $form['delay_rain'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Tiempo en milisegundos para retrasar la lluvia de balotas, Nota: debe ser una valor positio.'),
+    '#default_value' => $delay_rain,
+    '#required' => TRUE,
+  );
+
+  $active = array(0 => t('Desactivar'), 1 => t('Activar'));
+
+  $form['active_rain'] = array(
+    '#type' => 'radios',
+    '#title' => t('Lluvia de balotas'),
+    '#options' => $active,
+    '#default_value' => $sorteo_active_rain,
+    '#description' => t('Activa o desactiva la lluvia de balotas'),
+  );
+
+  // Action 'save'
+  $form['save'] = array(
+    '#type' => 'submit',
+    '#value' => t('Guardar configuracion'),
+    '#weight' => 50,
+  );
+
+  return $form;
+}
+
+function sorteo_config_form_submit($form, $form_state) {
+  $falling_speed = $form_state['values']['falling_speed'];
+  $active_rain = $form_state['values']['active_rain'];
+  $delay_rain = $form_state['values']['delay_rain'];
+
+  variable_set('sorteo_falling_speed', $falling_speed);
+  variable_set('sorteo_active_rain', $active_rain);
+  variable_set('delay_rain', $delay_rain);
+
+  drupal_set_message('Configuracion actualizada');
+}

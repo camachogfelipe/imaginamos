@@ -1,0 +1,62 @@
+<?php
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of home
+ *
+ * @author carlos
+ */
+class home
+{
+  public $mSiteUrl      = NULL;
+  public $mThisUrl      = NULL;
+  public $mList         = NULL;
+  public $mModo         = NULL;
+  public $cTitulo       = NULL;
+
+  // Class constructor
+  public function __construct()
+  {
+    $this -> mSiteUrl = Link::Build("");
+    $this -> mThisUrl = Link::ToSection( array( "s" => $_GET["seccion"] ) );
+    $this -> mVolver  = $this->mSiteUrl;
+  }
+
+  public function init()
+  {
+    /* *
+    $mUrlBas = Link::Build( "" );
+    $mUrlImg = Link::Build( "/images/" );
+
+    $mQuery = "SELECT b.txt_nombre, CONCAT( '".$mUrlBas."', '/index.php?seccion=', b.txt_clase ) AS link, ".
+                     "CONCAT( '".$mUrlImg."', b.fil_image ) AS fil_image ".
+                "FROM cms_permisos AS a INNER JOIN cms_modulos AS b ON a.id_modulo = b.id ".
+               "WHERE a.id_rol = '".StripHtml( $_SESSION["user"]["id_rol"] )."' ".
+                 "AND b.ind_show = '1' ".
+                 "AND b.ind_estado = '1' ";
+
+    $this -> mList = DbHandler::GetAll( $mQuery );
+    /* */
+
+    $this -> mTipo = StripHtml( GetData( "id_tipo", "1" ) );
+
+    $mSql = "SELECT id, txt_titulo, fil_image, fec_creasi, ".
+                   "CONCAT( SUBSTRING( txt_descripcion, 1, 200 ), '...' ) AS descripcion ".
+              "FROM cms_articulos ".
+             "WHERE ind_estado = '1' ".
+               "AND id_tipo = '".$this -> mTipo."' ".
+             "ORDER BY fec_creasi DESC ".
+             "LIMIT 0, 4 ";
+
+    $this -> cData = DbHandler::GetAll( $mSql );
+
+
+
+  }
+}
+
+?>

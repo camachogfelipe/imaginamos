@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+.slider {
+	width:1500px;
+}
+#slides {
+	width:1500px;
+	border-bottom:solid 1px #ccc;
+	height:341px;
+}
+#slides .slides_container {
+	width:1500px;
+	display:none;
+}
+#slides .slides_container .slider_box {
+	width:1500px;
+	height:340px;
+	display:block;
+}
+#slides .pagination {
+	display:none;
+}
+#slides .prev, #slides .next{
+	display:block;
+	width:38px;
+	height:68px;
+	top:100px;
+	overflow:hidden;
+	line-height:500px;
+	position:absolute;
+	z-index:99;
+}
+#slides .prev:hover, #slides .next:hover {
+	background-position:0px -68px;
+}
+#slides .prev {
+	left:0px;
+	background-image:url(../img/003.png);
+}
+#slides .next {
+	right:0px;
+	background-image:url(../img/004.png);
+}
+
+/*  ---------- slides clientes ----------------- */
+#slides_b {
+	width:290px;
+}
+#slides_b .slides_container {
+	width:290px;
+	display:none;
+}
+#slides_b .slides_container .slider_box {
+	width:290px;
+	text-align:center;
+	height:240px;
+	display:table-cell;
+	vertical-align:middle;
+}
+#slides_b .pagination {
+	display:none;
+}
+.table_cell {
+	text-align:center;
+	width:290px;
+	height:190px;
+	display:table-cell;
+	vertical-align:middle;
+}
+.table_cell img {
+	max-width:210px;
+	max-height:190px;
+}
+#slides_b .prev, #slides_b .next{
+	display:block;
+	width:27px;
+	height:24px;
+	bottom:-10px;
+	overflow:hidden;
+	line-height:500px;
+	position:absolute;
+	z-index:99;
+}
+#slides_b .name {
+	position: absolute;
+	bottom:0px;
+	font-size:16px;
+}
+#slides_b .prev:hover, #slides_b .next:hover {
+	background-position:0px -24px;
+}
+#slides_b .prev {
+	right:22px;
+	background-image:url(../img/019.png);
+}
+#slides_b .next {
+	right:0px;
+	background-image:url(../img/020.png);
+}
+

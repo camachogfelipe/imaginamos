@@ -1,0 +1,7 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='admin'>Agente</span><br/>kjghukglkg hghjg jhg jhg hj ~2012-08-02 11:58:43
+<span class='admin'>Agente</span><br/>hgjhylkhlk ~2012-08-02 11:59:27
+<span class='admin'>Agente</span><br/>Hola ~2012-08-02 12:20:33
+<span class='admin'>Agente</span><br/>Hola (JRF) ~2012-08-02 12:20:42
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

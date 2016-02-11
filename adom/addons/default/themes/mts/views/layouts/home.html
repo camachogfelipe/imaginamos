@@ -1,0 +1,268 @@
+{{ theme:partial name="header" }}
+<section id="content">
+    <div class="main-slide-cont">
+        <div class="flexslider slider1" id="banner">
+            <script id="banner-template" type="text/x-handlebars-template">
+                <ul class="slides">
+                    {{ noparse }}
+                    {{#each banner}}
+                    {{#if is_live}}
+                    <li class="slide1">
+                        <img src="{{ /noparse }}{{ url:base }}uploads/default/files/{{ noparse }}{{image}}"/>
+                        <div class="carousel-caption">
+                            <h2>{{name}}</h2>
+                            <p>{{description}}</p>
+                            {{#if is_url}}
+                            <a target="_blank" href="{{url}}">MÁS INFORMACIÓN</a>
+                            {{/if}}
+                        </div>
+                    </li>
+                    {{/if}}
+                    {{/each}}
+                    {{ /noparse }}
+
+                </ul>
+                </script>
+            </div>
+
+            <img src="{{ theme:image_url file='instrucciones.png' }}" class="instrucciones">
+        </div>
+
+        {{ theme:partial name="menu" }}
+
+        <div class="main-content">
+            <div class="hero-block">
+                <h2>BIENVENIDOS A <b>MTS</b></h2>
+                {{ theme:image file='hero-line.png' }}
+                <div id="desHome"></div>
+            </div>
+
+            <div id="title_services" class="section-banner first">
+                <h3>SERVICIOS</h3>
+                <div class="banner-line"></div>
+            </div>
+
+
+
+            <div class="cont-slider" id="services">
+
+                <script id="services-template" type="text/x-handlebars-template">
+                    <ul class="bjqs">
+                        {{ noparse }}
+                        {{#each services}}
+                        {{#if is_live}}
+                        <li>
+                            <div class="slide-img">
+
+                                {{#if is_video_url}}
+                                <iframe class="youtube-player" type="text/html" width="460" height="310"  src="http://www.youtube.com/embed/{{url_video}}" frameborder="0"></iframe>
+                                {{/if}}
+
+                                {{#if is_video}}
+                                <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="460" height="310"
+                                       poster="{{ /noparse }}{{ url:base }}uploads/default/files/video_play.jpg{{ noparse }}"
+                                       data-setup="{}">
+                                    <source src="{{ /noparse }}{{ url:base }}uploads/default/files/{{ noparse }}{{video}}" type='video/mp4' />
+                                </video>
+                                {{/if}}
+
+                                {{#if is_image}}
+                                <img src="{{ /noparse }}{{ url:base }}uploads/default/files/{{ noparse }}{{image}}"/>
+                                {{/if}}
+                            </div>
+
+                            <div class="slide-info">
+                                <h3>{{title}}</h3>
+                                <p>{{description}}</p>
+                                <a href="{{ url:base }}services/index/{{id}}">LEER MÁS </a>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        {{/if}}
+                        {{/each}}
+                        {{ /noparse }}
+                    </ul>
+                    </script>
+                </div>
+
+
+
+                <div id="title_testimonies" class="section-banner second">
+                    <h3>TESTIMONIOS</h3>
+                    <div class="banner-line"></div>
+                </div>
+
+                <div class="cont-slider" id="testimonies">
+
+                    <script id="testimonies-template" type="text/x-handlebars-template">
+                        <ul class="bjqs">
+                            {{ noparse }}
+                            {{#each testimonies}}
+                            {{#if is_live}}
+                            <li>
+                                <div class="slide-img">
+
+                                    {{#if is_video_url}}
+                                    <iframe class="youtube-player" type="text/html" width="460" height="310"  src="http://www.youtube.com/embed/{{url_video}}" frameborder="0"></iframe>
+                                    {{/if}}
+
+                                    {{#if is_video}}
+                                    <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="460" height="310"
+                                           poster="{{ /noparse }}{{ url:base }}uploads/default/files/video_play.jpg{{ noparse }}"
+                                           data-setup="{}">
+                                        <source src="{{ /noparse }}{{ url:base }}uploads/default/files/{{ noparse }}{{video}}" type='video/mp4' />
+                                    </video>
+                                    {{/if}}
+
+                                    {{#if is_image}}
+                                    <img src="{{ /noparse }}{{ url:base }}uploads/default/files/{{ noparse }}{{image}}"/>
+                                    {{/if}}
+                                </div>
+
+                                <div class="slide-info">
+                                    <h3>{{title}}</h3>
+                                    <p>{{description}}</p>
+                                    <a href="{{ url:site }}testimonies">LEER MÁS </a>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            {{/if}}
+                            {{/each}}
+                            {{ /noparse }}
+                        </ul>
+                        </script>
+
+                    </div>
+
+
+                    <div class="section-banner third">
+                        <h3>NOTICIAS</h3>
+                        <div class="banner-line"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+
+                    <!--div class="newslider slider1" id="notices">
+                        <script id="notices-template" type="text/x-handlebars-template">
+                            <ul class="noticias" style="height: 330px;">
+                                {{ noparse }}
+                                {{#each notices}}
+                                {{#if is_live}}
+                                <li class="slide">
+                                    <div class="new-cont">
+                                        <div class="new-box">
+                                            <div class="fecha">
+                                                {{month}}<br>{{day}}
+                                            </div>
+                                            <div class="new-img">
+                                                <img src="{{ /noparse }}{{ url:base }}uploads/default/files/{{ noparse }}{{image}}"/>
+                                            </div>
+                                            <div class="new-info">
+                                                <h3>{{title}}</h3>
+                                                <p>{{intro}}
+                                                    <a target="_blank" href="{{ url:site }}blog/{{year}}/{{month}}/{{slug}}">LEER MÁS »</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                {{/if}}
+                                {{/each}}
+                                {{ /noparse }}
+                            </ul>
+                             <div class="pager_n"></div>
+                            </script>
+
+                        </div-->
+
+
+
+                    <div class="newslider slider1" id="notices">
+                        <script id="notices-template" type="text/x-handlebars-template">
+                            <ul class="noticias">
+                                {{ noparse }}
+                                {{#each notices}}
+                                {{#if is_live}}
+                                <a href="{{ url:site }}blog/{{year}}/{{month}}/{{slug}}">
+                                    <li class="slide">
+                                        <div class="new-cont">
+                                            <div class="new-box">
+                                                <div class="fecha">
+                                                    {{month}}<br>{{day}}
+                                                </div>
+                                                <div class="new-img">
+                                                    <img src="{{ /noparse }}{{ url:base }}uploads/default/files/{{ noparse }}{{image}}"/>
+                                                </div>
+                                                <div class="new-info">
+                                                    <h3>{{title}}</h3>
+                                                    <div class="new-div"></div>
+                                                    <p>{{{intro}}}
+                                                        <a href="{{ url:site }}blog/{{year}}/{{month}}/{{slug}}">LEER MÁS »</a>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+                                </a>
+                                {{/if}}
+                                {{/each}}
+                                {{ /noparse }}
+                            </ul>
+                            <div class="pager_n"></div>
+                            </script>               
+
+                        </div>
+
+
+
+
+                        <div class="section-banner fourth">
+                            <h3>CONTÁCTENOS</h3>
+                            <div class="banner-line"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="contact-intro">
+                            <p>Aliquam eleifend lacus sed leo consectetur pulvinar. Suspendisse non nibh augue. Ut non tincidunt libero. Proin non nibh lectus. Nulla faucibus purus quis lobortis scelerisque. Duis lacinia elementum nisi, ut sodales
+                                quam lacinia quis. Curabitur faucibus pellentesque felis lobortis vehicula. Ut eleifend pulvinar malesuada.</p>
+                        </div>
+
+                        <div class="contact-box">
+                            <form id="id_form">
+                                <div style="text-align: center;" class="message"></div>
+                                <input type="text" placeholder="Nombre" name="nombre">
+                                <input type="text" placeholder="Apellido" name="apellido">
+                                <input type="text" placeholder="Celular" name="celular" class="no-marg">
+                                <input type="text" placeholder="E-mail" name="email">
+                                <input type="text" placeholder="Ciudad" class="no-marg" name="coment">
+                                <div class="campo" style="float: right; border-right: 0px solid #fff; margin-left: 0px; margin-top: 0; width: 258px; border:0 solid #fff; padding:3px 2px;">
+                                    <select name="asunto">
+                                        <option>Asunto</option>
+                                        <option>Requerimiento</option>
+                                        <option>Gestión ambiental</option>
+                                        <option>Información general</option>
+                                        <option>Preguntas</option>
+                                        <option>Quejas</option>
+                                        <option>Reclamos</option>
+                                        <option>Sugerencias</option>
+                                        <option>Felicitaciones</option>
+                                        <option>Otros</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="clear"></div>
+                                <textarea name="observation">Observaciones</textarea>
+                                <input type="button" id="formContact" value="ENVIAR">
+                            </form>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- /content -->
+                {{ theme:partial name="footer" }}
+                {{ theme:js file="home.js" }}

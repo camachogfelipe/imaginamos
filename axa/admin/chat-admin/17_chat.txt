@@ -1,0 +1,7 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='admin'>Oscar Hernandez</span>Ah? 
+<span class='usuario'>BlakcBerry</span>Hola 
+<span class='admin'>Oscar Hernandez</span>Hola. Blakc 
+<span class='usuario'>BlakcBerry</span>Chao 
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

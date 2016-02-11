@@ -1,0 +1,6 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='admin'>Agente</span><br/>Buenos D&iacute;as gracias por usar nuestro servicio en l&iacute;nea, mi nombre es Jose Romero - JRF ~2012-08-14 10:29:09
+<span class='admin'>Agente</span><br/>&iquest;Con quien tengo el gusto? - JRF ~2012-08-14 10:29:23
+<span class='admin'>Agente</span><br/>Buenos tardes gracias por usar  nuestro servicio en l&iacute;nea, la conversaci&oacute;n se finalizara por falta de comunicaci&oacute;n, en caso de necesitar de nuestra asesor&iacute;a ingresar nuevamente a <a href="http://www.tarjetasdeasistencia-axa.com/" target="_blank">http://www.tarjetasdeasistencia-axa.com/</a> - JRF~2012-08-14 13:10:04
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

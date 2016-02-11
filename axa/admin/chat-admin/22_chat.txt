@@ -1,0 +1,9 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='admin'>Oscar Hernandez</span>Buenos D&iacute;as. En que le puedo colaborar? 
+<span class='usuario'>Ricardo Franklin</span>Esto, que? 
+<span class='admin'>Oscar Hernandez</span>De que en QUE le puedo colaborar.... 
+<span class='usuario'>Ricardo Franklin</span>Pues no se todav&iacute;a... 
+<span class='admin'>Oscar Hernandez</span>Entoces? 
+<span class='usuario'>Ricardo Franklin</span>Pue smejor me voy 
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

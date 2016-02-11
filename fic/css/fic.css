@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'MyriadPro-Light';
+	src: url('../fonts/myriadpro-light.eot');
+	src: url('../fonts/myriadpro-light.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/myriadpro-light.woff') format('woff'),
+			 url('../fonts/myriadpro-light.ttf') format('truetype'),
+			 url('../fonts/myriadpro-light.svg#myriadpro-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MyriadPro-Semibold';
+	src: url('../fonts/myriadpro-semibold_0.eot');
+	src: url('../fonts/myriadpro-semibold_0.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/myriadpro-semibold_0.woff') format('woff'),
+			 url('../fonts/myriadpro-semibold_0.ttf') format('truetype'),
+			 url('../fonts/myriadpro-semibold_0.svg#myriadpro-semibold_0') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* { margin:0; padding:0;}
+body { margin:0; padding:0; color:#727272; font-size:15px; background:url(../images/fondo-fic.png) top center no-repeat #e5e5e5;font-family: 'MyriadPro-Light';}
+a { text-decoration:none; outline:none}
+input[type='button']:hover, input[type='submit']:hover { cursor:pointer;}
+.clear{ clear:both;}
+
+.standardButton1 {
+width: 103px;
+height: 30px;
+background: url(../images/btnLoginForm.png);
+display: block;
+float: right;
+line-height: 28px;
+font-size: 13px;
+color: white;
+text-shadow: 0px 1px 0px black;
+border: none;
+font-weight: bold;
+text-align:center;
+}
+
+
+/*Header*/
+.headerBox { width:1000px;height: 105px; margin:0 auto; position:relative}
+.headerBox .logo { position:absolute; top:12px; left:0px; }
+.headerBox .regLogBox { width:217px; height:21px; background:#d9d9d9; position:absolute; top:20px; right:0px; -webkit-border-radius: 3px; border-radius: 3px;-webkit-box-shadow:  1px 1px 0px 0px rgba(255, 255, 255, 0.8); box-shadow:  1px 1px 0px 0px rgba(255, 255, 255, 0.8); font-family: 'MyriadPro-Semibold'; font-size:12px; padding:4px; }
+.headerBox .regLogBox .loginBtn { width:106px; height:21px; background:url(../images/loginBtn.png); display:block; color:#fff; line-height:20px; text-indent:24px;text-shadow: 0px 1px 0px #000000; filter: dropshadow(color=#000000, offx=0, offy=1); float:left;}
+.headerBox .regLogBox .loginBtn:hover { background-position:0 -21px;}
+.headerBox .regLogBox .chatBtn { width:106px; height:21px; background:url(../images/chatBtn.png); display:block; color:#939393; line-height:20px; text-indent:24px;text-shadow: 0px 1px 0px #fff; float:left;margin-left: 5px;}
+.headerBox .regLogBox .chatBtn:hover { background-position:0 -21px;}
+.headerBox .logInBox { width: 354px; height:235px; background:url(../images/loginBoxBg.png); position:absolute;top: 33px;left: 550px; z-index:100;  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; display:none }
+.headerBox .logInBox .closeBtn { width:26px; height:26px; background:url(../images/closeBtn.png);  position:absolute; right: 4px;top: 11px; }
+.headerBox .logInBox .closeBtn:hover { cursor:pointer;}
+.headerBox .logInBox .logInFormBox { width:275px; height:155px; margin: 40px 0 0 40px;}
+.headerBox .logInBox .logInFormBox input.inpText { width:275px; height:30px; border:solid #ccdadd 1px; -webkit-border-radius: 5px; border-radius: 5px; padding:0 10px; margin-bottom:15px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif }
+.headerBox .logInBox .logInFormBox input[type=submit] { width:103px; height:30px; background:url(../images/btnLoginForm.png); display:block; float:right; line-height:28px; font-size: 13px; color:#fff;text-shadow: 0px 1px 0px #000;border:none; font-weight:bold}
+.headerBox .logInBox .logInFormBox input[type=submit]:hover { background-position:0 -30px; }
+.headerBox .logInBox .logInFormBox .opt { width:100%; font-size:12px; text-align:right; margin-bottom: 27px; }
+.headerBox .logInBox .logInFormBox .opt a{ color:#404041; }
+.headerBox .logInBox .logInFormBox .opt a:hover {  text-decoration:underline;}
+.headerBox .chatBox { width:304px; height:407px; background:url(../images/chatBg.png); position:absolute;top: 33px;left: 710px; z-index:100;  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; display:none}
+.headerBox .chatBox .closeBtn { width:26px; height:26px; background:url(../images/closeBtn.png);  position:absolute; right: 4px;top: 11px; }
+.headerBox .chatBox .closeBtn:hover { cursor:pointer;}
+
+
+.headerBox .menuHeaderBox { position:absolute; top:70px; right:0px; z-index:3}
+.headerBox .menuHeaderBox a { width:125px; height:31px; background:url(../images/menuHeaderBtn.png); display:block; float:left; text-transform:uppercase; line-height:31px;font-family: 'MyriadPro-Semibold'; font-size:12px;color:#939393; text-indent:10px; text-shadow: 0px 1px 0px #fff; margin-left:5px; }
+.headerBox .menuHeaderBox a:hover { background-position:0 -31px; color:#fff;text-shadow: 0px 1px 0px #000; }
+.headerBox .menuHeaderBox .servBtn:hover { background:none;}
+.headerBox .menuHeaderBox .servBtnOv { background-image: none; color:#fff;text-shadow: 0px 1px 0px #000;}
+
+
+.submenuWrap { width:100%; height:0px; background-image:url(../images/submenu.png); position:absolute; background-position:0px 0px;top:70px;left: 0px; z-index:2; overflow:hidden; }
+.submenuBox { width:1000px; height:40px; margin:0 auto;margin-top: 45px;}
+.submenuBox .submenu { width:260px; float:right; margin-right:40px;}
+.submenuBox .submenu a { width:160px; height:20px; display:block; float:left; color:#fff; text-transform:uppercase;font-size: 11px; background:url(../images/submenuBullet.png) no-repeat center left;text-indent: 8px; line-height:20px;  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;  }
+.submenuBox .submenu a:hover {color:#dfdfdf}
+
+/*slider*/
+.sliderBox { width:1000px; height:445px; margin:0 auto; position:relative; z-index:1; }
+.sliderBox img { position:absolute}
+.sliderBox .navSlider{ width:64px; height:30px;  position:absolute;top: 15px;right: 0px;; }
+.sliderBox .navSlider .goLeft { width:25px; height:30px; background:url(../images/sliderArrLeft.png); float:left; margin-right:2px; }
+.sliderBox .navSlider .goRight { width:25px; height:30px; background:url(../images/sliderArrRight.png) ; float:left }
+.sliderBox .navSlider .goLeft:hover, .sliderBox .navSlider .goRight:hover { background-position:0 -30px; cursor:pointer}
+
+.destWrap { width:100%; height:212px; background:url(../images/homeDestBg.png) top center; margin-top:-200px; position:relative; z-index:2; }
+.destWrap .destBox { width:1000px; margin:0 auto;}
+.destWrap .destBox .indicadoresBox {  height:40px; width:490px; float:right; margin-top:7px; font-size: 12px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif}
+.destWrap .destBox .indicadoresBox .indicadores { width:100%; height:40px }
+.destWrap .destBox .indicadoresBox .indicadores div { float:left; padding-left:20px; width: 225px; display:block; margin-bottom:4px; background-position:center left; background-repeat:no-repeat}
+.destWrap .destBox .indicadoresBox .indicadores div.up { background-image:url(../images/indUp.png)}
+.destWrap .destBox .indicadoresBox .indicadores div.down { background-image:url(../images/indDown.png)}
+.destWrap .destBox .indicadoresBox .indicadores .name { width:126px; display:inline-block; color:#631332}
+.destWrap .destBox .indicadoresBox .indicadores .num { background:#525252; width:83px; display:inline-block; text-align:center; color:#fff; -webkit-border-radius: 9px; border-radius: 9px;}
+
+.destWrap .destBox .destacados { width:100%; height:135px; position:relative;margin-top: 16px;}
+.destWrap .destBox .destacados .goLeft { width:50px; height:50px; background:url(../images/sliderDestArrLeft.png); position:absolute; top:41px; left:10px; z-index:3; }
+.destWrap .destBox .destacados .goRight { width:50px; height:50px; background:url(../images/sliderDestArrRight.png); position:absolute; top:41px; right:10px; z-index:3; }
+.destWrap .destBox .destacados .goLeft:hover, .destWrap .destBox .destacados .goRight:hover {cursor:pointer; background-position:0 -50px;}
+.destWrap .destBox .destacados .destacadosMask { width:920px; height:135px; overflow:hidden; margin:0 auto;  position:relative;  z-index:4; }
+.destWrap .destBox .destacados .destacadosMask .destacadosScroll { width:500000px; position:absolute; top:0px; left:0px;}
+.destWrap .destBox .destacados .destacadosMask .destItem { width:210px; height:115px; display:block; float:left; position:relative;margin:10px;-webkit-box-shadow:  0px 0px 3px 1px rgba(0, 0, 0, 0.5); box-shadow:  0px 0px 3px 1px rgba(0, 0, 0, 0.5);}
+.destWrap .destBox .destacados .destacadosMask .destItem .frame { width:138px; height:42px; position:absolute; top:-3px; left:-4px; background:url(../images/destFrame.png); color:#fff; font-family: 'MyriadPro-Semibold'; text-align:center; padding:40px; display:none; }
+
+
+/*INTERNAS*/
+
+.internasWrapper { width:1000px; margin:0 auto;margin-bottom: 90px;margin-top: 40px;}
+
+/*blog*/
+.blogContain { width:975px; margin:0 auto; height:427px; overflow:hidden }
+.blogContain .blogContScroll { width:5000px; height:390px}
+.blogContain .blogItem { width:305px; height:390px; background:#f4f4f4; float:left; -webkit-box-shadow:  1px 1px 0px 0px rgba(0, 0, 0, 0.3); box-shadow:  1px 1px 0px 0px rgba(0, 0, 0, 0.3); margin-right:20px;}
+.blogContain .blogItem .texts { width:265px; height:230px; padding:20px; font-family: 'MyriadPro-Semibold';}
+.blogContain .blogItem .texts .ticon { width:100%; height:20px; background:url(../images/blogIcon.png) center left no-repeat; text-indent:20px; line-height:20px; text-transform:uppercase; font-family: 'MyriadPro-Semibold'; color:#bcbcbc }
+.blogContain .blogItem .texts .tit { color:#404041; font-size:21px; border-bottom:1px solid #404041; margin: 20px 0 5px 0; }
+.blogContain .blogItem .texts .t { font-size:13px; margin: 10px 0px 20px 0;}
+.blogContain .blogItem .texts .dataBox{  width:100%;  height:30px; padding:10px 0; border-top:#c7ccd2 solid 1px; border-bottom:#c7ccd2 solid 1px  }
+.blogContain .blogItem .texts .dataBox .fecha { width:120px; height:30px; line-height:33px; text-indent:27px; margin-left:10px;margin-right: 20px; background:url(../images/calIconBlog.png) center left no-repeat;  color:#404041;  border-right:#c7ccd2 solid 1px; float:left;}
+.blogContain .blogItem .texts .dataBox .verMasBlog { width:103px; height:30px; background:url(../images/verPostBtn.png); display:block; float:left; line-height:28px; text-indent: 8px;font-size: 13px;color:#939393;text-shadow: 0px 1px 0px #fff;}
+.blogContain .blogItem .texts .dataBox .verMasBlog:hover { background-position:0 -30px; color:#fff;text-shadow: 0px 1px 0px #000;}
+.blogContain .blogItem .texts .tags {font-size: 14px;margin: 12px 0 0 0 ;}
+.blogContain .blogItem .texts .tags span { color:#000;}
+.blogContain .blogItem .texts .tags a { color:#404041; text-decoration:underline}
+
+/*blog detalles*/
+.blogDetRight { width:460px; height:420px; margin-left:40px; background:url(../images/quienesShadow.png) center left no-repeat; float:left; position:relative}
+.blogDetRight .addthis_toolbox {position: absolute;width: 140px;top: 60px;right: -50px;}
+.blogDetRight .volverBlog, .servDetRight .volverBlog {width: 125px;height: 31px;background: url(../images/menuHeaderBtn.png); background-position:0 -31px;display: block;float: left;text-transform: uppercase;line-height: 31px;font-family: 'MyriadPro-Semibold';font-size: 12px;text-indent: 10px;margin-left: 5px;color: white; text-shadow: 0px 1px 0px black;position: absolute;top: 0px;right: -48px; }
+.blogDetRight .volverBlog:hover, .servDetRight .volverBlog:hover {text-shadow: 0px 1px 0px white;color: #939393; background-position:0 0}
+.blogDetRight .imgGal { width:448px; height:282px; position:absolute;top: 90px;left: 50px; border:5px solid #fff;}
+.blogDetRight .imgGal img{ position:absolute; }
+.blogDetRight .galNav { width:100px; position:absolute;top: 400px;left: 247px;}
+.blogDetRight .galNav .goleft { width:28px; height:36px; background:url(../images/quienesGalLeft.png); float:left; margin-right:2px}
+.blogDetRight .galNav .goright { width:28px; height:36px; background:url(../images/quienesGalRight.png); float:left}
+.blogDetRight .galNav .goleft:hover, .quienesRight .galNav .goright:hover { cursor:pointer}
+
+
+/*quienes*/
+.tituloLine { width:100%; border-bottom:1px solid #404041; color:#404041;  text-transform:uppercase; font-size:31px }
+.tituloLine span { font-family: 'MyriadPro-Semibold';}
+.quienesLeft { width:435px; float:left; }
+.quienesLeft .subtit { font-family: 'MyriadPro-Semibold'; color:#8a8a8a; text-transform:uppercase; font-size:21px; margin-top:10px}
+.quienesLeft .fecha { font-size:14px; font-style:italic; font-family: 'MyriadPro-Semibold';}
+.quienesLeft .text { color:#404041; margin: 20px 0; text-align:justify; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:13px; }
+.quienesRight { width:460px; height:420px; margin-left:40px; background:url(../images/quienesShadow.png) center left no-repeat; float:left; position:relative}
+.quienesRight .volverBlog {width: 125px;height: 31px;background: url(../images/menuHeaderBtn.png); background-position:0 -31px;display: block;float: left;text-transform: uppercase;line-height: 31px;font-family: 'MyriadPro-Semibold';font-size: 12px;text-indent: 10px;margin-left: 5px;color: white; text-shadow: 0px 1px 0px black;position: absolute;top: 0px;right: -48px; }
+.quienesRight .volverBlog:hover {text-shadow: 0px 1px 0px white;color: #939393; background-position:0 0}
+.quienesRight .imgGal { width:448px; height:282px; position:absolute;top: 40px;left: 50px; border:5px solid #fff;}
+.quienesRight .imgGal img{ position:absolute; }
+.quienesRight .galNav { width:100px; position:absolute;top: 360px;left: 247px;}
+.quienesRight .galNav .goleft { width:28px; height:36px; background:url(../images/quienesGalLeft.png); float:left; margin-right:2px}
+.quienesRight .galNav .goright { width:28px; height:36px; background:url(../images/quienesGalRight.png); float:left}
+.quienesRight .galNav .goleft:hover, .quienesRight .galNav .goright:hover { cursor:pointer}
+
+/*servicios*/
+.servItem { width:305px; height:390px; background:#f4f4f4; display:block; float:left-webkit-box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.3);box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.3); float:left; margin:14px}
+.servItem .icon { width:149px; height:149px; margin:0 auto; margin-top: 30px}
+.servItem .icon1 { background:url(../images/servIcon1.png)}
+.servItem .texts { width:245px; padding: 4px 30px; text-align:center;}
+.servItem .texts .tit { font-family: 'MyriadPro-Semibold'; color:#404041; font-size:21px}
+.servItem .texts .subtit { font-family: 'MyriadPro-Semibold'; color:#404041; font-size:16px; border-bottom: solid #404041 1px;padding-bottom: 7px;}
+.servItem .texts .t { margin:15px 0; color:#767676; font-family: 'MyriadPro-Semibold'; line-height:17px  }
+.servItem .texts .verMasBtn { width:148px; height:30px; background:url(../images/moreInfoBtn.png);color: #939393; text-align:left; margin:0 auto;
+text-indent: 10px;text-shadow: 0px 1px 0px white;line-height: 30px;font-size: 12px;font-family: 'MyriadPro-Semibold';}
+
+.servItem:hover { background:#87415d} 
+.servItem:hover .icon { background-position:0 -149px;}
+.servItem:hover .texts div {color:#fff}
+.servItem:hover .texts .subtit {border-bottom-color:#fff;}
+.servItem:hover .texts .verMasBtn {background-position: 0 -30px;color: white;text-shadow: 0px 1px 0px black;}
+
+/*servicios detalle*/
+
+.servDetRight { width:460px; height:420px; margin-left:40px; background:url(../images/quienesShadow.png) center left no-repeat; float:left; position:relative}
+.servDetRight table { position:absolute; top:50px; left:80px; font-family: 'MyriadPro-Semibold';}
+.servDetRight table th { padding: 8px; font-size: 24px; background:#f4f4f4; color:#333333; border-bottom:#333 solid 1px}
+.servDetRight table td { padding:10px 20px; background:#f4f4f4; border-bottom:#E5E5E5 solid 1px}
+
+
+/*mi cuenta*/
+.miCuentaRight { width:460px; height:420px;margin-left: 50px;padding-left: 50px; border-left:1px solid #c9cfd4; margin-top:37px;  float:left; position:relative}
+.miCuentaRight .tit {color: #404041;text-transform: uppercase;font-size: 31px; font-family: 'MyriadPro-Semibold';}
+.miCuentaRight .subtit {color: #8B8B8B;text-transform: uppercase;font-size: 21px; font-family: 'MyriadPro-Semibold';}
+.miCuentaRight .descargCont { width:100%; height:240px;margin-top: 30px; }
+.miCuentaRight .descargCont table td { height:60px; border-bottom:1px solid #c7cdd2; border-top:1px solid #fff; padding:10px 0	}
+.miCuentaRight .descargCont table tr:hover td { background-color:#fff;}
+.miCuentaRight .descargCont table tr:hover td.icon{ background:url(../images/descIconPurp.png) center center no-repeat #fff;  }
+.miCuentaRight .descargCont table td.icon { background:url(../images/descIconGray.png) center center no-repeat;  }
+.miCuentaRight .descargCont table td.text{color: #404041; font-family: 'MyriadPro-Semibold'; padding-right:15px; line-height:15px;}
+.miCuentaRight .descargCont table td.text span {color: #8B8B8B; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px;}
+.miCuentaRight .descargCont table td.btn a {width: 125px;height: 31px;background: url(../images/menuHeaderBtn.png);display: block;float: left;text-transform: uppercase;line-height: 31px;font-family: 'MyriadPro-Semibold';font-size: 12px;color: #939393;text-indent: 10px;text-shadow: 0px 1px 0px white;margin-left: 5px;}
+.miCuentaRight .descargCont table td.btn a:hover{background-position: 0 -31px;color: white;text-shadow: 0px 1px 0px black;}
+
+/*Contactenos*/
+.contLeft {width:430px; height:300px; margin-top:37px;  float:left; position:relative; font-family: 'MyriadPro-Semibold'; }
+.contLeft .t {font-size: 16px; padding:20px}
+.contRight {width:460px; height:340px;margin-left: 50px;padding-left: 50px; border-left:1px solid #c9cfd4; margin-top:73px;  float:left; position:relative}
+.contRight input[type=text]{width: 370px;height: 30px;border: solid #CCDADD 1px;-webkit-border-radius: 5px;border-radius: 5px;padding: 0 10px;margin-bottom: 15px;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;}
+.contRight textarea {width: 370px;height: 150px;border: solid #CCDADD 1px;-webkit-border-radius: 5px;border-radius: 5px;padding: 10px;margin-bottom: 15px;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; resize:none;}
+.contRight input[type=button] { width:103px; height:30px; background:url(../images/btnLoginForm.png); display:block; float:right; line-height:28px; font-size: 13px; color:#fff;text-shadow: 0px 1px 0px #000;border:none; font-weight:bold; margin-right: 90px;}
+.contRight input[type=button]:hover { background-position:0 -30px;}
+
+.modalBox { width:400px; padding:20px;}
+.modalBox h1 { border-bottom:1px solid #CCC; padding-bottom:5px; margin-bottom:10px; }
+.modalBox form { margin-top:30px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif}
+.modalBox form .inputText {width: 100%;height: 30px;border: solid #CCDADD 1px;-webkit-border-radius: 5px;border-radius: 5px;padding: 0 10px;margin-bottom: 15px;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;}
+.modalBox form .select {width: 100%;height: 30px;border: solid #CCDADD 1px;-webkit-border-radius: 5px;border-radius: 5px;padding: 0 10px;margin-bottom: 15px;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;}
+.modalBox form  td { vertical-align:top; height:40px;}
+.inputSubmit {width: 103px;
+height: 30px;
+background: url(../images/btnLoginForm.png);
+display: block;
+float: right;
+line-height: 28px;
+font-size: 13px;
+color: white;
+text-shadow: 0px 1px 0px black;
+border: none;
+font-weight: bold;}
+
+
+.footerWrap{ width:100%; height:45px; background:url(../images/footerBg.png); display:none;}
+.footerWrap .footerBox { width:1000px; height:45px; margin:0 auto; position:relative  }
+.footerWrap .footerBox .rights { color:#fff; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;font-size: 12px; position:absolute; top:13px; left:0px;}
+.footerWrap .footerBox .logo { width:210px; height:32px; margin:0 auto;padding-top: 5px;}
+.footerWrap .footerBox .smbox { width:100px; position:absolute; top:10px; left:270px;}
+.footerWrap .footerBox .smbox a { width:26px; height:24px; display:block; float:left; margin-right:5px;}
+.footerWrap .footerBox .smbox a.fb { background:url(../images/social_fb.png)}
+.footerWrap .footerBox .smbox a.twt { background:url(../images/social_tw.png)}
+.footerWrap .footerBox .smbox a.li { background:url(../images/social_li.png)}
+.footerWrap .footerBox .smbox a:hover { background-position:0 -24px;}
+
+.footer-ahorranito { position:absolute;right: 0px;bottom:8px;}

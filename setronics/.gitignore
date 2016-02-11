@@ -1,0 +1,9 @@
+.DS_Store
+.buildpath
+.project
+.settings
+.idea
+assets/cache/*
+app/logs/log-*.php
+nbproject/
+uploads/*

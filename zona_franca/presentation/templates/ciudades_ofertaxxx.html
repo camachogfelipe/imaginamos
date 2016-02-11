@@ -1,0 +1,35 @@
+{load_presentation_object filename="ciudades_oferta" assign="obj"}
+
+{include file="buscador-interna.tpl"}
+
+<!-- buscador_internas -->
+<div class="clear espacio_en_blancogrande"></div>
+<div class="contenedor_internas">
+  <div class="container cont_contenidos">
+    <div class="row">
+      <div class="span4">
+        {include file="buscador_columna.tpl"}
+      </div>
+      <!-- izquierda -->
+      <div class="span8">
+        <div class="cont_titulos inline">
+          <h1 class="inline">Ciudades con <span>mayor oferta</span></h1>
+          <div class="clear"></div>
+        </div>
+        <div class="row">
+          <div class="span8 slider_ofertaempleo">
+            <div class="row">
+              {section name=k loop=$obj->cCiudadOferta}
+              <div class="campo_ofertaempleo2"><span class="numero-dv">12</span>
+                <span class="campo_ofertaempleocont3"> <a href="{$obj->cOfPubli}&id_ciudad={$obj->cCiudadOferta[k].id}">{$obj->cCiudadOferta[k].txt_nombre}</a></span>
+              </div>
+              {/section}
+            </div>
+          </div>
+        </div>
+        <!-- ROW --> 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contenedor_internas -->

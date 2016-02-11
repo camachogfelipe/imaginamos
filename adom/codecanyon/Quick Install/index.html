@@ -1,0 +1,131 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>VisitorChat v1.0 - Online support system</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Gregor Kuplenik">
+	<meta name="copyright" content="Gregor Kuplenik">
+	<meta name="generator" content="Documenter v1.3 http://rxa.li/documenter">
+	<meta name="date" content="2011-06-01T12:29:45+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	<script src="js/jquery.1.5.1.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#EDF6EE;color:#412E28;}
+		::-moz-selection{background:#2B2302;color:#B3204D;}
+		::selection{background:#2B2302;color:#B3204D;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#B3204D;}
+		hr{border-top:1px solid #DBE3DC;border-bottom:1px solid #F6FFF7;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#261F02;color:#EDF6EE;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #382E03;-moz-text-shadow:1px 1px 0px #382E03;text-shadow:1px 1px 0px #382E03;}
+		#documenter_sidebar ol{border-top:1px solid #0F0C01;}
+		#documenter_sidebar ol a{border-top:1px solid #382E03;border-bottom:1px solid #0F0C01;color:#EDF6EE;}
+		#documenter_sidebar ol a:hover{background:#2B2302;color:#B3204D;border-top:1px solid #2B2302;}
+		#documenter_sidebar ol a.current{background:#2B2302;color:#B3204D;border-top:1px solid #2B2302;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#quick_integration">Quick Integration</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright Gregor Kuplenik 2011<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.3</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>VisitorChat v1.0</h1><h2>Online support system</h2><hr><ul><li>Created: 05/01/2011</li><li>By: Gregor Kuplenik</li><li><a href=""></a></li><li>Email: <a href="mailto:&#103;&#114;&#101;&#103;&#111;&#114;&#46;&#107;&#117;&#112;&#108;&#101;&#110;&#105;&#107;&#64;&#105;&#110;&#115;&#105;&#115;&#46;&#115;&#105;">&#103;&#114;&#101;&#103;&#111;&#114;&#46;&#107;&#117;&#112;&#108;&#101;&#110;&#105;&#107;&#64;&#105;&#110;&#115;&#105;&#115;&#46;&#115;&#105;</a></li></ul></section><section id="installation">
+	<h3>Installation</h3><hr class="notop">
+<p>
+	Upload the contents of the &quot;upload&quot; folder to your root web folder like this:</p>
+<p>
+	&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_3.png" style="width: 820px; height: 345px; "></p>
+<p>
+	&nbsp;</p>
+<p>
+	Now that your files are uploaded, navigate to the installer:</p>
+<p>
+	<strong>http://www.yourdomain.com/VisitorChat/install/</strong></p>
+<p>
+	Insert your database credentials: host, username, database and your e-mail address and click install.</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="quick_integration">
+	<h3>Quick Integration</h3><hr class="notop">
+<p>
+	In this part, we assume that you have successfully installed VisitorChat on your system. Therefore, your administration interface is allready working. You can navigate to the interface by following path:</p>
+<p>
+	<strong>http://www.yourdomain.com/VisitorChat/admin/</strong></p>
+<p>
+	Default credentials are:</p>
+<p>
+	Username: <strong>admin</strong><br>
+	Password: <strong>pass</strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	The next and final step is to integrate VisitorChat in any application you want (Website, Shopping cart, etc). Open your webpage template that holds your &lt;head&gt;&lt;/head&gt; tag with your favorite text editor. This is an example of how the head of the page looks like so you can find it:</p>
+<p>
+	&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_1.png" style="width: 820px; height: 345px; "></p>
+<p>
+	&nbsp;</p>
+<p>
+	We must insert the following javascript and css files:<br>
+	&nbsp;</p>
+<ol>
+	<li>
+		VisitorChat/views/stylesheet/stylesheet.css</li>
+	<li>
+		http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js</li>
+	<li>
+		VisitorChat/views/javascript/visitorchat.js</li>
+</ol>
+<p>
+	Let me explain what the following files do.</p>
+<p>
+	<strong>VisitorChat/views/stylesheet/stylesheet.css</strong> is the main css styles file for displaying the client area talking window. Please note that it must be loaded always before the other VisitorChat scripts, because of the DOM (HTML) manipulation. If it is not loaded the first in line, this may result in bad behavior.</p>
+<p>
+	<strong>http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js</strong> is the main jQuery file. It is required for jQuery to operate. This is linked to googleapis ajax repository, so it should work at all times, but you can download it from this address and link it to your server directory if you wish.</p>
+<p>
+	<strong>VisitorChat/views/javascript/visitorchat.js </strong>is the main VisitorChat javascript file written in jQuery. This is actually just an extension of jQuery main file if you like.</p>
+
+	&nbsp;</p>
+<p>
+	This is the code to include <strong>ON EVERY PAGE WHERE YOU WAN&#39;T VISITORCHAT TO SHOW:</strong></p>
+<p>
+	This is how your website source code should look afterwards:</p>
+<p>
+	<img alt="" src="assets/images/image_2.png"></p>
+</section>
+
+	</div>
+</body>
+</html>

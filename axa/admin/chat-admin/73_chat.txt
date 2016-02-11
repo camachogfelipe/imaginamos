@@ -1,0 +1,11 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Erika Mari&Atilde;&plusmn;o Rubiano</span>Carlos, que pena contigo se me bloque&oacute; lotus, mi c&oacute;digo es 19727 
+<span class='admin'>Carlos Cano</span>No hay problema, estoy revisando las opciones que tenemos en este momento, la consulta va a tomar unos minutos, desea continuar en linea o le enviamos esta informacion a su correo 
+<span class='usuario'>Erika Mari&Atilde;&plusmn;o Rubiano</span>S  quieres retomamos el tema despu&eacute;s del almuerzo.
+<span class='admin'>Carlos Cano</span>De acuerdo Erika 
+<span class='usuario'>Erika Mari&Atilde;&plusmn;o Rubiano</span>Hola Carlos!
+<span class='admin'>Carlos Cano</span>
+<span class='admin'>Carlos Cano</span>Buenas tardes Erika 
+<span class='usuario'>Erika Mari&Atilde;&plusmn;o Rubiano</span>Qu&eacute; tal tu almuerzo? 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

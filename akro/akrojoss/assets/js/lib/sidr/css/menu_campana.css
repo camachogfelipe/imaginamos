@@ -1,0 +1,9 @@
+ul.sidr .lista_menuresponsivo{
+
+}
+
+.sidr ul.lista_menuresponsivo li {
+    background-image: url("../img/botones/bg_botoneshome.png");
+    background-position: center bottom;
+    width: 100%;
+}

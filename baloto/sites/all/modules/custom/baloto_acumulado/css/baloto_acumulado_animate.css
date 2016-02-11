@@ -1,0 +1,61 @@
+/* Generic classes */
+.display-inline-float {
+  float: left;  
+  width: 100px;
+  height: 90px;
+  margin-right: 20px;
+  position: relative;
+}
+
+/* Cifras del sorteo de Baloto*/
+#t-balotas { 
+  padding-top: 103px;
+  width: 702px;
+  margin: 20px auto;
+  overflow: visible;
+  height: 90px;
+}
+
+.podio-balota {
+  margin: auto;
+	width: 77px;
+	height: 90px;
+	background: url(../imagenes/balota-podio.png) no-repeat center center;
+  position: relative;
+  bottom: 20px;
+}
+
+#t-balota-seis {
+  margin-right: 0px;
+}
+
+.balota {
+  width: 102px;
+  height: 102px;
+  background: url(../imagenes/balota-on-podio.png) no-repeat;
+  position: absolute;
+  top: -102px;
+  text-align: center;
+}
+
+.random-balota {
+  width: 128px;
+  height: 128px;
+  background: url(../imagenes/balota.png) no-repeat;
+  position: absolute;
+  text-align: center;
+}
+
+.balota .cifra,
+.random-balota .cifra{
+  color: #3A351F;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 105px;
+  text-shadow: -2px 0px 1px black;
+}
+
+#content-wrapper {
+  z-index: 1000;
+}

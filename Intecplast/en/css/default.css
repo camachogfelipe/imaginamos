@@ -1,0 +1,52 @@
+﻿body
+{
+
+color: #333333;
+font-family: helvetica;
+}
+
+.hidden
+{
+display: none;
+}
+
+#prevNext
+{
+position:absolute;
+width:800px;
+margin-top:100px;
+}
+
+#prevNext img
+{
+position: relative;
+z-index: 2;
+cursor: pointer;
+}
+
+p
+{
+margin: 0;
+padding: 0 1em;
+font-size: 14px;
+position: relative;
+top: -80px;
+line-height: 20px;
+height: 80px;
+background: white;
+opacity: .7;
+filter:alpha(opacity=70);
+padding-top:15px;
+}
+
+
+#titulocaption {
+position:absolute;
+margin-top:245px;
+margin-left:12px;
+font-size:22px;
+color: #ffffff;
+
+
+
+}

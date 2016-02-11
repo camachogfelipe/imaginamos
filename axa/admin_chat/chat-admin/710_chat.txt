@@ -1,0 +1,5 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='admin'>Agente</span><br/>Buenos D&iacute;as, gracias por usar nuestro servicio en l&iacute;nea, mi nombre es  Erika Llanos-evl		 ~2012-09-13 08:30:23
+<span class='admin'>Agente</span><br/>&iquest;Con quien tengo el gusto? y &iquest;Como puedo ayudarle el d&iacute;a de hoy? - evl	 ~2012-09-13 08:31:27
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

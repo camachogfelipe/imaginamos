@@ -1,0 +1,16 @@
+﻿/* Su Viaje */
+/* Motorhead */
+	PM: Maria Angelica Martinez.
+
+	Maquetador: Gisell Rodriguez O.
+
+	Desarrollador:
+
+/* SITE */
+	Last update: YYYY/MM/DD
+	Standards: HTML5, CSS3,..
+	Language: Spanish
+	Software: Sublime Text, Eclipse, Photoshop
+
+
+                    

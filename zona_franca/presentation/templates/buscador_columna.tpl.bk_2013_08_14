@@ -1,0 +1,147 @@
+{load_presentation_object filename="buscador_columna" assign="obj"}
+
+<div class="cont_izqgris bg_grisobscuro height970">
+  <div class="contcontenidos_izqgris">
+    <h3>Filtrar búsqueda de empleo por:</h3>
+    <div class="clear espacio_en_blanco"></div>
+    {if $obj->cSection=="directorio_empresas"}
+    <form action="{$obj->cOfPubli}" name="registro" id="registro" method="post" >
+    {else}
+    <form name="registro" id="registro" method="post" >
+    {/if}
+      <h2 class="acc_trigger"><a href="#">Área</a></h2>
+      <div class="acc_container">
+        <div class="block">
+          <div class="opciones">
+            {section name=k loop=$obj->cAreas max=4}
+            <p>
+              <input type="radio" name="area" value="{$obj->cAreas[k].id}" id="area_{$smarty.section.k.index}" {*class="cform"*} {if $obj->cAreas[k].id==$obj->cIdArea}checked="checked"{/if} >
+              <label for="area_{$smarty.section.k.index}" class="lblr">{$obj->cAreas[k].txt_nombre} <span>({$obj->cAreas[k].num})</span></label>
+            </p>
+            {/section}
+          </div>
+          {if $obj->cContador.area>=5}
+          <div class="mas-opciones-1">
+            {section name=k start=4 loop=$obj->cAreas}
+            <p style="width: 100%; margin: 0; padding: 0;">
+              <input type="radio" name="area" value="{$obj->cAreas[k].id}" id="area_{$smarty.section.k.index}" {*class="cform"*} {if $obj->cAreas[k].id==$obj->cIdArea}checked="checked"{/if}>
+              <label for="area_{$smarty.section.k.index}" class="lblr">{$obj->cAreas[k].txt_nombre} <span>({$obj->cAreas[k].num})</span></label>
+            </p>
+            {/section}
+          </div>
+          <div class="clear"></div>
+          <a class="float_right ampliar-opciones-1" href="#">Más opciones</a>
+          {/if}
+        </div>
+      </div>
+      <h2 class="acc_trigger"><a href="#">Lugar de trabajo</a></h2>
+      <div class="acc_container">
+        <div class="block">
+          <div class="opciones">
+            {section name=k loop=$obj->cLugares max=4}
+            <p>
+              <input type="radio" name="lugar" value="{$obj->cLugares[k].id}" id="lugar_{$smarty.section.k.index}" {*class="cform"*} {if $obj->cLugares[k].id==$obj->cIdLugar}checked="checked"{/if}>
+              <label for="lugar_{$smarty.section.k.index}" class="lblr">{$obj->cLugares[k].txt_nombre} <span>({$obj->cLugares[k].num})</span></label>
+            </p>
+            {/section}
+          </div>
+          {if $obj->cContador.lugar>=5}
+          <div class="mas-opciones-2">
+            {section name=k start=4 loop=$obj->cLugares}
+              <p style="width: 100%; margin: 0; padding: 0;">
+              <input type="radio" name="lugar" value="{$obj->cLugares[k].id}" id="lugar_{$smarty.section.k.index}" {*class="cform"*} {if $obj->cLugares[k].id==$obj->cIdLugar}checked="checked"{/if}>
+              <label for="lugar_{$smarty.section.k.index}" class="lblr">{$obj->cLugares[k].txt_nombre} <span>({$obj->cLugares[k].num})</span></label>
+            </p>
+            {/section}
+          </div>
+          <div class="clear"></div>
+          <a class="float_right ampliar-opciones-2" href="#">Más opciones</a>
+          {/if}
+        </div>
+      </div>
+      <h2 class="acc_trigger"><a href="#">Jerarquía</a></h2>
+      <div class="acc_container">
+        <div class="block">
+          <div class="opciones">
+            {section name=k loop=$obj->cJerar}
+            <p>
+              <input type="radio" name="jerar" value="{$obj->cJerar[k].id}" id="jerar_{$smarty.section.k.index}" {*class="cform"*} {if $obj->cJerar[k].id==$obj->cIdJerar}checked="checked"{/if}>
+              <label for="jerar_{$smarty.section.k.index}" class="lblr">{$obj->cJerar[k].txt_nombre} <span>({$obj->cJerar[k].num})</span></label>
+            </p>
+            {/section}
+          </div>
+        </div>
+      </div>
+      <h2 class="acc_trigger"><a href="#">Fecha de publicación</a></h2>
+      <div class="acc_container">
+        <div class="block">
+          <div class="opciones">
+            <p>
+              <input type="radio" name="fecha" value="1" id="fecha_1" {*class="cform"*} {if $obj->cFecha==1}checked="checked"{/if}>
+              <label for="fecha_1" class="lblr">Último día</label>
+            </p>
+            <p>
+              <input type="radio" name="fecha" value="3" id="fecha_2" {*class="cform"*} {if $obj->cFecha==3}checked="checked"{/if}>
+              <label for="fecha_2" class="lblr">Últimos (3) días</label>
+            </p>
+            <p>
+              <input type="radio" name="fecha" value="7" id="fecha_3" {*class="cform"*} {if $obj->cFecha==7}checked="checked"{/if}>
+              <label for="fecha_3" class="lblr">Últimos (7) días</label>
+            </p>
+            <p>
+              <input type="radio" name="fecha" value="15" id="fecha_4" {*class="cform"*} {if $obj->cFecha==15}checked="checked"{/if}>
+              <label for="fecha_4" class="lblr">Últimos (15) días</label>
+            </p>
+          </div>
+          <div class="mas-opciones-4">
+            <p style="width: 100%; margin: 0; padding: 0;">
+              <input type="radio" name="fecha" value="30" id="fecha_5" {*class="cform"*} {if $obj->cFecha==30}checked="checked"{/if}>
+              <label for="fecha_5" class="lblr">Últimos (30) días</label>
+            </p>
+            <p style="width: 100%; margin: 0; padding: 0;">
+              <input type="radio" name="fecha" value="60" id="fecha_6" {*class="cform"*} {if $obj->cFecha==60}checked="checked"{/if}>
+              <label for="fecha_6" class="lblr">Últimos (60) días</label>
+            </p>
+          </div>
+          <div class="clear"></div>
+          <a class="float_right ampliar-opciones-4" href="#">Más opciones</a>
+        </div>
+      </div>
+						<h2 class="acc_trigger"><a href="#">Aspiración laboral</a></h2>
+			<div class="acc_container">
+				<div class="opciones">
+				<div class="block">
+				
+			
+					<p>
+						<input type="radio" name="data[radio]4" value="option16" id="option16" {*class="cform"*}>
+						<label for="option16" class="lblr">Menos de 1.000.000 <span>(15)</span></label>
+					</p>
+					<p>
+						<input type="radio" name="data[radio]4" value="option17" id="option17" {*class="cform"*}>
+						<label for="option17" class="lblr">Entre 1.000.000 y 1.500.000 <span>(15)</span></label>
+					</p>
+					<p>
+						<input type="radio" name="data[radio]4" value="option18" id="option18" {*class="cform"*}>
+						<label for="option18" class="lblr">Entre 1.500.000 y 2.000.000 <span>(15)</span></label>
+					</p>
+					<p>
+						<input type="radio" name="data[radio]4" value="option19" id="option19" {*class="cform"*}>
+						<label for="option19" class="lblr">Entre 2.000.000 y 5.000.000 <span>(15)</span></label>
+					</p>
+					<p>
+						<input type="radio" name="data[radio]4" value="option20" id="option20" {*class="cform"*}>
+						<label for="option20" class="lblr"> Más de 5.000.000 <span>(15)</span></label>
+					</p>
+					</div>
+
+					<div class="clear"></div>
+					</div>
+			</div> 
+      <div class="campo_buscadorinternas">
+        <input class="bt_buscarinternas buscar-columna" type="submit" value="Buscar Empleo" onclick="location.href = 'ofertas_publicadas.php'">
+      </div>
+    </form>
+  </div>
+		
+</div>

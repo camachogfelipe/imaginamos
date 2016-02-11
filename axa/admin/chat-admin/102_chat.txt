@@ -1,0 +1,10 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>MILENA RICO</span>buenas tardes 
+<span class='admin'>Carlos Cano</span>Buenas tardes Milena mi nombre es Carlos Cano en que puedo ayudarle 
+<span class='usuario'>MILENA RICO</span>gracias si es q quisiera saber si yo puedo 
+<span class='usuario'>MILENA RICO</span>consignar en la mi cuenta de plan milenio junior un dinero q tengo para ahorrarlo 
+<span class='usuario'>MILENA RICO</span>y cual es el procedimiento  
+<span class='admin'>Carlos Cano</span>Que pena Milena la demora, sali a una reunion pero ya estoy de regreso, claro que si, puedes consignar en cualquiera de las cuentas de Feval y hacernos llegar el soporte de la  consignacion y nos confirmas que es para abonar en plan milenio junior
+<span class='usuario'>MILENA RICO</span>ok, gracias y a q correo lo envio? 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

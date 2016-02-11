@@ -1,0 +1,11 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Camilo Alberto S&Atilde;&iexcl;nchez</span><br/>Buenas tardes  ~2010-11-23 13:43:19
+<span class='admin'>Carlos Cano</span><br/>Buenas tardes Sr Sanchez, en que lo puedo ayudar ~2010-11-23 13:43:39
+<span class='usuario'>Camilo Alberto S&Atilde;&iexcl;nchez</span><br/>Carlitos si le aparece el aviso cuando estoy escribiendo el mensaje ~2010-11-23 13:44:07
+<span class='admin'>Carlos Cano</span><br/>Si Cami ~2010-11-23 13:44:25
+<span class='usuario'>Camilo Alberto S&Atilde;&iexcl;nchez</span><br/>listo carlitos, como lo ve? ~2010-11-23 13:44:40
+<span class='usuario'>Camilo Alberto S&Atilde;&iexcl;nchez</span><br/>mejoro? ~2010-11-23 13:44:43
+<span class='admin'>Carlos Cano</span><br/>Si Buenas ~2010-11-23 13:46:26
+<span class='usuario'>Camilo Alberto S&Atilde;&iexcl;nchez</span><br/>listo carlitos, muchas gracias ~2010-11-23 13:46:30
+<span class='usuario'>Camilo Alberto S&Atilde;&iexcl;nchez</span><br/>nos vemos ~2010-11-23 13:46:35
+<span class='admin'>Carlos Cano</span><br/>Listo Cami ~2010-11-23 13:46:42

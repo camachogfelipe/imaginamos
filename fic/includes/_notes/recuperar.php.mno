@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_correo" value="name:config_id;datatype:int,name:config_date;datatype:datetime,name:config_path;datatype:string,name:config_web;datatype:string,name:config_mail_remitent;datatype:string,name:config_company;datatype:string" />
+	<infoitem key="UD_rs_recuperar" value="name:id_usuario;datatype:int,name:nombre;datatype:string,name:apellido;datatype:string,name:email;datatype:string,name:telefono;datatype:string,name:pais;datatype:string,name:ciudad;datatype:string,name:contrasena;datatype:string,name:subtitulo;datatype:string,name:descripcion;datatype:blob,name:carpeta de archivos;datatype:string,name:estado;datatype:int" />
+</info>

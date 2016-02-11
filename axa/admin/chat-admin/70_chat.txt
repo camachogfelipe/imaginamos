@@ -1,0 +1,9 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>GABRIEL ALFONSO ROLON FORERO</span>Hola, si no recuerdo mi contrase&ntilde;a como hago para volver a conseguirla 
+<span class='usuario'>GABRIEL ALFONSO ROLON FORERO</span> g
+<span class='usuario'>GABRIEL ALFONSO ROLON FORERO</span>gracias
+<span class='admin'>Carlos Cano</span>Buenos dias sr Rolon, mi nombre es Carlos Cano, por favor me recuerda su codigo 
+<span class='usuario'>GABRIEL ALFONSO ROLON FORERO</span>54569 
+<span class='usuario'>GABRIEL ALFONSO ROLON FORERO</span>54569
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

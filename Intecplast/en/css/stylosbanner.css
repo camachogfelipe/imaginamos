@@ -1,0 +1,180 @@
+/* CSS Document */
+
+
+#mod_carousel {
+position:relative;
+margin:auto;
+width:880px;
+height:295px;
+z-index:0;
+
+
+}
+
+#envmod_carousel {
+margin:auto;
+width:781px;
+height:295px;
+z-index:0;
+}
+
+
+
+#imgfondo_carousel {
+position:relative;
+width:880px;
+height:295px;
+z-index:1;
+
+}
+
+
+#left_modbann {
+	position:absolute;
+	margin-top:245px;
+	width:782px;
+	height:51px;
+	background-repeat: repeat-x;
+	background-position: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 33px;
+	color: #847f2f;
+	text-align:center;
+	font-weight: bold;
+	z-index:100;
+	background-image: url(../images/bgfranja.png);
+}
+#subleft_modbann {
+margin:auto;
+margin-top:20px;
+	width:350px;
+	display:block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #4d492c;
+	text-align:center;
+	font-weight: bold;
+		z-index:100;
+}
+
+
+#right_modbann {
+	position:absolute;
+	float:right;
+	right:95px;
+	padding-top:25px;
+	padding-left:10px;
+	padding-right:25px;
+	overflow:scroll;
+	overflow-x:hidden;
+	width:380px;
+	height:270px;
+	z-index:100;
+	background-image: url(../images/fdazul.png);
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 22px;
+	color: #333333;
+
+}
+
+
+
+#right_modbann h1 {
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 26px;
+	color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#text_leftbannhome {
+float:left;
+width:300px;
+height:40px;
+}
+
+#seccion_banner {
+float:right;
+	 font-family: 'MentoneSemiBold';
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background-image: url(../images/flechabanner.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left:30px;
+	text-align:left;
+	height:30px;
+	padding-top:0px;
+	margin-top:15px;
+	text-decoration:none;
+}
+#seccion_banner a {
+
+	 font-family: 'MentoneSemiBold';
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration:none;
+			}
+			#seccion_banner a:hover {
+
+	 font-family: 'MentoneSemiBold';
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #FFCC00;
+	text-decoration:none;
+			}
+			#seccion_banner a:active {
+
+	 font-family: 'MentoneSemiBold';
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration:none;
+			}
+
+
+
+#text_rightbannhome {
+float:right;
+width:450px;
+height:40px;
+}
+
+
+
+#frase_banner {
+float:center;
+	 font-family: 'MentoneSemiBold';
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align:right;
+	height:30px;
+	padding-top:0px;
+	padding-right:20px;
+	margin-top:13px;
+	padding-left:10px;
+}
+
+
+
+#scroll {  
+     width:440px;  
+     height:240px;  
+    overflow:auto;  
+}  

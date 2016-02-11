@@ -1,0 +1,711 @@
+﻿/*
+Item Name: jQuery Carousel Evolution
+Author: Mapalla
+Author URI: http://codecanyon.net/user/Mapalla
+Version: 1.1
+*/
+
+/* _______________________________________________ */
+
+/* CONTAINER */
+/* _______________________________________________ */
+
+.carousel
+{
+	position :relative ;
+	margin :30px auto;
+	width :1000px;
+	height :auto;
+	border :none;
+	overflow : hidden ;
+}
+
+/* _______________________________________________ */
+
+/* SLIDES */
+/* _______________________________________________ */
+
+/* slide container */
+.carousel .slides
+{
+	margin :0;
+	margin-top:25px;
+	padding :0;
+	border :none;
+	list-style :none;
+	position :relative ;
+	overflow :visible ;
+}
+
+/* slide item */
+.carousel .slides .slideItem 
+{
+	position :absolute ;
+	cursor :pointer ;
+	overflow : hidden;
+	padding :3px;
+	margin :0;
+	border :none;
+	background:#e8e8e8;
+}
+
+.carousel .slides .slideItem a
+{
+	display: block ;
+	text-decoration :none;
+	margin :0;
+	padding :0;
+	border :none;
+	outline :none;
+}
+
+.carousel .slides .slideItem img
+{
+	margin :0;
+	padding :0;
+	border :none;
+	width :100px;
+	height :100px;
+	position:absolute;
+}
+
+/* _______________________________________________ */
+
+/* DIRECTION BUTTON */
+/* _______________________________________________ */
+
+.carousel .nextButton
+{
+	position :absolute ;
+	right :33px;
+	top :88px;
+	width :51px;
+	height :54px;
+	background:url(../img/btn_next_slider2.png) no-repeat;
+	cursor :pointer ;
+	z-index :9999;
+}
+
+.carousel .prevButton
+{
+	position :absolute ;
+	left :38px;
+	top :88px;
+	width :46px;
+	height: 54px;		
+	background:url(../img/btn_prev_slider2.png);
+	cursor :pointer ;
+	z-index :9999;
+}
+
+.carousel .prevButton:hover, .carousel .nextButton:hover{
+	background-position:bottom;
+}
+
+/* _______________________________________________ */
+
+/* NAVIGATION BUTTON */
+/* _______________________________________________ */
+
+/* buttons container */
+.carousel .buttonNav
+{
+	position : relative ;
+	margin :0 auto;
+	z-index :999;
+}
+
+/* numbers */
+.carousel .buttonNav .numbers 
+{
+	position :relative ;
+	float :left ;
+	margin :5px;
+	color : #828282 ;
+	cursor :pointer ;
+	font-weight :bold ;
+	text-decoration :none;
+	font-size :1em;
+	font-family :Arial, Verdana ;
+}
+
+.carousel .buttonNav .numbers:hover
+{
+	color: #000;
+	text-decoration :underline;
+}
+
+.carousel .buttonNav .numberActive
+{
+	background : none;
+	color :#000;
+	cursor :default ;
+}
+
+/* bullets */
+.carousel .buttonNav .bullet
+{
+	position :relative ;
+	float :left ;
+	width :16px;
+	height :16px;
+	background : url(images/Bullet-White.png) no-repeat center ;
+	margin :5px;
+	float :left ;
+	cursor :pointer ;
+}
+
+.carousel .buttonNav .bullet:hover
+{
+	background : url(images/Bullet-Black.png) no-repeat center ;
+}
+
+.carousel .buttonNav .bulletActive
+{
+	background : url(images/Bullet-Black.png) no-repeat center ;
+	cursor :default ;
+}
+
+/* ____________________________________________________________ */
+
+/* VIDEO */
+/* ____________________________________________________________ */
+
+.carousel .slides .videoOverlay
+{
+	background :url("images/video.png") no-repeat center; /* play button */
+}
+
+.carousel .slides .spinner
+{
+	background : #000 url(images/loading.gif) no-repeat center; /* video preloader */
+}
+
+/* _____________________________ *
+
+/* SHADOW */
+/* _____________________________ */
+
+.carousel .shadow
+{
+	width :100%;
+	height :82px;      
+}
+
+.carousel .shadow .shadowLeft
+{
+	background : url("images/shadowLeft.png") no-repeat;
+	width :100px;
+	height :82px;
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale);   /* IE6 & 7 */         
+}
+
+.carousel .shadow .shadowMiddle
+{
+	height :82px;
+	background:url("images/shadowTile.png") repeat-x;    
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale);   /* IE6 & 7 */         
+}
+
+
+.carousel .shadow .shadowRight
+{
+	width :100px;
+	height :82px;
+	background:url("images/shadowRight.png") no-repeat; 
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale);   /* IE6 & 7 */         
+}
+
+/* ____________________________________________________________ */
+
+/* REFLECTION GRADIENT */
+/* ____________________________________________________________ */
+
+/* gradient color for Opera */
+.carousel .gradient
+{
+	background-image :url(scripts/gradient.svg);
+}
+
+.sombra_slide1{
+	background:url(../img/sombra_left1.png);
+	width:11px;
+	height:258px;
+	position:absolute;
+	left:74px;
+	z-index:100000000;
+}
+
+.sombra_slide2{
+	background:url(../img/sombra_right1.png);
+	width:11px;
+	height:258px;
+	position:absolute;
+	right:74px;
+	z-index:100000000;
+}
+
+
+
+
+
+
+
+
+
+/*---estilo carousel1_tecno --*/
+
+
+.carousel1_tecno
+{
+	position :relative ;
+	margin :30px auto;
+	width :1000px;
+	height :auto;
+	border :none;
+	overflow : hidden ;
+}
+
+.carousel1_tecno .slides
+{
+	margin :0;
+	margin-top:25px;
+	padding :0;
+	border :none;
+	list-style :none;
+	position :relative ;
+	overflow :visible ;
+}
+
+.carousel1_tecno .slides .slideItem 
+{
+	position :absolute ;
+	cursor :pointer ;
+	overflow : hidden;
+	padding :3px;
+	margin :0;
+	border :none;
+	background:#e8e8e8;
+}
+
+.carousel1_tecno .slides .slideItem a
+{
+	display: block ;
+	text-decoration :none;
+	margin :0;
+	padding :0;
+	border :none;
+	outline :none;
+}
+
+.carousel1_tecno .slides .slideItem img
+{
+	margin :0;
+	padding :0;
+	border :none;
+	width :100px;
+	height :100px;
+	position:absolute;
+}
+/* _______________________________________________ */
+
+/* DIRECTION BUTTON */
+/* _______________________________________________ */
+
+.carousel1_tecno .nextButton
+{
+	position :absolute ;
+	right :33px;
+	top :88px;
+	width :51px;
+	height :54px;
+	background:url(../img/btn_next_slider2.png) no-repeat;
+	cursor :pointer ;
+	z-index :9999;
+}
+
+.carousel1_tecno .prevButton
+{
+	position :absolute ;
+	left :38px;
+	top :88px;
+	width :46px;
+	height: 54px;		
+	background:url(../img/btn_prev_slider2.png);
+	cursor :pointer ;
+	z-index :9999;
+}
+
+.carousel1_tecno .prevButton:hover, .carousel1_tecno .nextButton:hover{
+	background-position:bottom;
+}
+
+/* _______________________________________________ */
+
+/* NAVIGATION BUTTON */
+/* _______________________________________________ */
+
+/* buttons container */
+.carousel1_tecno .buttonNav
+{
+	position : relative ;
+	margin :0 auto;
+	z-index :999;
+}
+
+/* numbers */
+.carousel1_tecno .buttonNav .numbers 
+{
+	position :relative ;
+	float :left ;
+	margin :5px;
+	color : #828282 ;
+	cursor :pointer ;
+	font-weight :bold ;
+	text-decoration :none;
+	font-size :1em;
+	font-family :Arial, Verdana ;
+}
+
+.carousel1_tecno .buttonNav .numbers:hover
+{
+	color: #000;
+	text-decoration :underline;
+}
+
+.carousel1_tecno .buttonNav .numberActive
+{
+	background : none;
+	color :#000;
+	cursor :default ;
+}
+
+/* bullets */
+.carousel1_tecno .buttonNav .bullet
+{
+	position :relative ;
+	float :left ;
+	width :16px;
+	height :16px;
+	background : url(images/Bullet-White.png) no-repeat center ;
+	margin :5px;
+	float :left ;
+	cursor :pointer ;
+}
+
+.carousel1_tecno .buttonNav .bullet:hover
+{
+	background : url(images/Bullet-Black.png) no-repeat center ;
+}
+
+.carousel1_tecno .buttonNav .bulletActive
+{
+	background : url(images/Bullet-Black.png) no-repeat center ;
+	cursor :default ;
+}
+
+/* ____________________________________________________________ */
+
+/* VIDEO */
+/* ____________________________________________________________ */
+
+.carousel1_tecno .slides .videoOverlay
+{
+	background :url("images/video.png") no-repeat center; /* play button */
+}
+
+.carousel1_tecno .slides .spinner
+{
+	background : #000 url(images/loading.gif) no-repeat center; /* video preloader */
+}
+
+/* _____________________________ *
+
+/* SHADOW */
+/* _____________________________ */
+
+.carousel1_tecno .shadow
+{
+	width :100%;
+	height :82px;      
+}
+
+.carousel1_tecno .shadow .shadowLeft
+{
+	background : url("images/shadowLeft.png") no-repeat;
+	width :100px;
+	height :82px;
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale);   /* IE6 & 7 */         
+}
+
+.carousel1_tecno .shadow .shadowMiddle
+{
+	height :82px;
+	background:url("images/shadowTile.png") repeat-x;    
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale);   /* IE6 & 7 */         
+}
+
+
+.carousel1_tecno .shadow .shadowRight
+{
+	width :100px;
+	height :82px;
+	background:url("images/shadowRight.png") no-repeat; 
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale);   /* IE6 & 7 */         
+}
+
+/* ____________________________________________________________ */
+
+/* REFLECTION GRADIENT */
+/* ____________________________________________________________ */
+
+/* gradient color for Opera */
+.carousel1_tecno .gradient
+{
+	background-image :url(scripts/gradient.svg);
+}
+
+
+
+
+
+
+
+/*---estilo carousel2_tecno --*/
+
+
+.carousel2_tecno
+{
+	position :relative ;
+	margin :30px auto;
+	width :1000px;
+	height :auto;
+	border :none;
+	overflow : hidden ;
+}
+
+.carousel2_tecno .slides
+{
+	margin :0;
+	margin-top:25px;
+	padding :0;
+	border :none;
+	list-style :none;
+	position :relative ;
+	overflow :visible ;
+}
+
+.carousel2_tecno .slides .slideItem 
+{
+	position :absolute ;
+	cursor :pointer ;
+	overflow : hidden;
+	padding :3px;
+	margin :0;
+	border :none;
+	background:#e8e8e8;
+}
+
+.carousel2_tecno .slides .slideItem a
+{
+	display: block ;
+	text-decoration :none;
+	margin :0;
+	padding :0;
+	border :none;
+	outline :none;
+}
+
+.carousel2_tecno .slides .slideItem img
+{
+	margin :0;
+	padding :0;
+	border :none;
+	width :100px;
+	height :100px;
+	position:absolute;
+}
+/* _______________________________________________ */
+
+/* DIRECTION BUTTON */
+/* _______________________________________________ */
+
+.carousel2_tecno .nextButton
+{
+	position :absolute ;
+	right :33px;
+	top :88px;
+	width :51px;
+	height :54px;
+	background:url(../img/btn_next_slider2.png) no-repeat;
+	cursor :pointer ;
+	z-index :9999;
+}
+
+.carousel2_tecno .prevButton
+{
+	position :absolute ;
+	left :38px;
+	top :88px;
+	width :46px;
+	height: 54px;		
+	background:url(../img/btn_prev_slider2.png);
+	cursor :pointer ;
+	z-index :9999;
+}
+
+.carousel2_tecno .prevButton:hover, .carousel2_tecno .nextButton:hover{
+	background-position:bottom;
+}
+
+/* _______________________________________________ */
+
+/* NAVIGATION BUTTON */
+/* _______________________________________________ */
+
+/* buttons container */
+.carousel2_tecno .buttonNav
+{
+	position : relative ;
+	margin :0 auto;
+	z-index :999;
+}
+
+/* numbers */
+.carousel2_tecno .buttonNav .numbers 
+{
+	position :relative ;
+	float :left ;
+	margin :5px;
+	color : #828282 ;
+	cursor :pointer ;
+	font-weight :bold ;
+	text-decoration :none;
+	font-size :1em;
+	font-family :Arial, Verdana ;
+}
+
+.carousel2_tecno .buttonNav .numbers:hover
+{
+	color: #000;
+	text-decoration :underline;
+}
+
+.carousel2_tecno .buttonNav .numberActive
+{
+	background : none;
+	color :#000;
+	cursor :default ;
+}
+
+/* bullets */
+.carousel2_tecno .buttonNav .bullet
+{
+	position :relative ;
+	float :left ;
+	width :16px;
+	height :16px;
+	background : url(images/Bullet-White.png) no-repeat center ;
+	margin :5px;
+	float :left ;
+	cursor :pointer ;
+}
+
+.carousel2_tecno .buttonNav .bullet:hover
+{
+	background : url(images/Bullet-Black.png) no-repeat center ;
+}
+
+.carousel2_tecno .buttonNav .bulletActive
+{
+	background : url(images/Bullet-Black.png) no-repeat center ;
+	cursor :default ;
+}
+
+/* ____________________________________________________________ */
+
+/* VIDEO */
+/* ____________________________________________________________ */
+
+.carousel2_tecno .slides .videoOverlay
+{
+	background :url("images/video.png") no-repeat center; /* play button */
+}
+
+.carousel2_tecno .slides .spinner
+{
+	background : #000 url(images/loading.gif) no-repeat center; /* video preloader */
+}
+
+/* _____________________________ *
+
+/* SHADOW */
+/* _____________________________ */
+
+.carousel2_tecno .shadow
+{
+	width :100%;
+	height :82px;      
+}
+
+.carousel2_tecno .shadow .shadowLeft
+{
+	background : url("images/shadowLeft.png") no-repeat;
+	width :100px;
+	height :82px;
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale);   /* IE6 & 7 */         
+}
+
+.carousel2_tecno .shadow .shadowMiddle
+{
+	height :82px;
+	background:url("images/shadowTile.png") repeat-x;    
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale);   /* IE6 & 7 */         
+}
+
+
+.carousel2_tecno .shadow .shadowRight
+{
+	width :100px;
+	height :82px;
+	background:url("images/shadowRight.png") no-repeat; 
+	
+	/* fix png problems in ie */
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale);   /* IE6 & 7 */         
+}
+
+/* ____________________________________________________________ */
+
+/* REFLECTION GRADIENT */
+/* ____________________________________________________________ */
+
+/* gradient color for Opera */
+.carousel2_tecno .gradient
+{
+	background-image :url(scripts/gradient.svg);
+}

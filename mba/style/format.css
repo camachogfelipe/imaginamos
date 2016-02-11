@@ -1,0 +1,62 @@
+/***********************************************************************************************************************
+DOCUMENT: style/format.css
+DEVELOPED BY: Ryan Stemkoski
+COMPANY: Zipline Interactive
+EMAIL: ryan@gozipline.com
+PHONE: 509-321-2849
+DATE: 2/26/2009
+DESCRIPTION: This document contains the structural formatting files for the accordion style menu.
+************************************************************************************************************************/
+#wrapperdespliegue {
+	width: 510px;
+	float:left;
+	}
+
+.accordionButton {
+	font-family: 'FranklinGothicMediumCondRg';
+	font-size:12px;
+	color:#8D8D8D;
+	width: 510px;
+	float: left;
+	padding-left:0px;
+	padding-top:6px;
+	_float: none;  /* Float works in all browsers but IE6 */
+	border-bottom: 1px solid #FFFFFF;
+	cursor: pointer;
+	background-image: url(../images/bgtabfq.png);
+	background-repeat: no-repeat;
+	height:45px;
+	margin-bottom:2px;
+	text-shadow: 1px 1px 1px #666666;
+	background-position: right top;
+	text-align:right
+	}
+	
+.accordionContent {	
+font-family: 'AvantGardeMdBTMedium';
+font-size:14px;
+color:#8D8D8D;
+	width: 510px;
+	float: left;
+	_float: none; /* Float works in all browsers but IE6 */
+	background: #ffffff;
+	padding-top:20px;
+	padding-left:0px;
+	padding-right:20px;
+	padding-bottom:30px;
+	line-height:20px;
+	}
+	
+/***********************************************************************************************************************
+ EXTRA STYLES ADDED FOR MOUSEOVER / ACTIVE EVENTS
+************************************************************************************************************************/
+
+.on {
+	background-image: url(../images/bgtabfq3.png);
+	background-repeat: no-repeat;
+	}
+	
+.over {
+	background-image: url(../images/bgtabfq2.png);
+	background-repeat: no-repeat;
+	}

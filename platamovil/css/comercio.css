@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ComerciotabsWrapper { width:990px; height:auto; margin:0 auto; }
+.ComerciotabsWrapper .titleSection { width:100%; height:50px; clear:both; border-bottom:1px solid #CACACB; display:block; font-family: 'HelveticaNB', sans-serif; font-size:22px; color:#90BD1A;; line-height:50px; margin-bottom:24px;}
+.ComerciotabsWrapper .colLeft { width:300px; display:block; padding:0px 22px 20px 30px; margin-top:24px; float:left; text-align:left; border-right:1px solid #CACACB;}
+.ComerciotabsWrapper .colRight { width:300px; display:block; padding:0px 22px 20px 22px; margin-top:24px; float:left; text-align:left; border-left:1px solid #CACACB; position:relative; left:-1px;}
+.ComerciotabsWrapper a.link { width:auto; color:#fff; text-decoration:none; font-style:normal; font-size:15px; font-family:"Trebuchet MS", sans-serif; padding:7px 10px 7px 25px;  background-position:7px center;-moz-border-radius: 3px; border-radius:3px; text-align:left; display:block; max-width:300px; background: url(../imagenes/degrade.png); background-repeat:repeat-x; background-color:#1e5799; /* Old browsers */
+background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 98%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(98%,#1e5799)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* IE10+ */
+background: linear-gradient(to bottom, #7db9e8 0%,#1e5799 98%); /* W3C */}
+.ComerciotabsWrapper a.link2 { color:#fff; text-decoration:none; font-style:normal; font-size:15px; font-family:"Trebuchet MS", sans-serif; padding:7px 10px 7px 25px;  background-position:7px center;-moz-border-radius: 3px; border-radius:3px; text-align:left; display:block; max-width:300px; background: url(../imagenes/degrade2.png); background-repeat:repeat-x; background-color:#1e5799;
+}
+
+.ComerciotabsWrapper a.link:hover {text-decoration:none; background: url(../imagenes/flechaLink.png) no-repeat left #CCC !important;background-position:8px center !important; color:#003 !important;}
+
+.ComerciotabsWrapper a.link2:hover {text-decoration:none; background: url(../imagenes/flechaLink.png) no-repeat left #CCC !important;background-position:8px center !important; color:#003 !important;}
+
+.ComerciotabsWrapper .subtitle {font-family:'HelveticaNB', sans-serif; font-size:18px; color:#0d427c; text-align:left}
+.ComerciotabsWrapper .bulletBg {background: #f1f1f1; padding:15px; display:block; color:#0d427c}
+.ComerciotabsWrapper .letraAzul { color:#0d427c; font-size:19px; }
+.ComerciotabsWrapper a.simplificada { width:233px; height:60px; background:url(../imagenes/tiposCuentaSimplificada.png) no-repeat; display:block}
+.ComerciotabsWrapper a.tipica { width:233px; height:60px; background:url(../imagenes/tiposCuentaTipica.png) no-repeat; display:block}
+.ComerciotabsWrapper a.simplificada:hover, .ComerciotabsWrapper a.tipica:hover { background-position:0 -60px;}
+.ComerciotabsWrapper a.inlineLink { color:#90bd1a}
+
+.comercioTable { margin-top:30px; }
+.comercioTable th, .comercioTable td { height:30px; padding:4px 20px;border:1px solid #fff;}
+.comercioTable th { text-align:left; background:#d6e1fb}
+.comercioTable td { text-align:left; background:#f2f7fa}
+
+.smallTb { margin-top:30px; font-size:12px }
+.smallTb th, .smallTb td { height:30px; padding:2px 5px;border:1px solid #fff; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif}
+.smallTb th { text-align:left; background:#d6e1fb}
+.smallTb td { text-align:left; background:#f2f7fa}
+
+.comercioTable2 { margin-top:30px; }
+.comercioTable2 th, .comercioTable2 td { height:30px; padding:4px 20px;border:1px solid #fff;}
+.comercioTable2 th { text-align:left; background:#d2fa9f}
+.comercioTable2 td { text-align:left; background:#e5ffc3}
+
+.comercioTable3 { margin-top:30px; }
+.comercioTable3 th, .comercioTable3 td { height:30px; padding:4px 5px;border:1px solid #fff;}
+.comercioTable3 th { text-align:left; background:#d6e1fb}
+.comercioTable3 td { text-align:left; background:#f2f7fa}
+
+.comercioTable4 { margin-top:30px; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; font-size:13px }
+.comercioTable4 th, .comercioTable4 td { height:30px; padding:8px 9px;border:1px solid #fff;}
+.comercioTable4 th { text-align:left; background:#d6e1fb}
+.comercioTable4 td { text-align:left; background:#f2f7fa;}

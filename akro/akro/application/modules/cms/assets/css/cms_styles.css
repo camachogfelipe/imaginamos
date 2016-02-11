@@ -1,0 +1,22 @@
+/*///////////////////////////////
+//@autor: Brayan Acebo
+//brayan.acebo@imaginamos.co
+//Agencia: imaginamos.com
+//Bogotá, Colombia, 2012
+///////////////////////////////*/
+
+small{
+    color: #999;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 13px;
+    margin-top: 3px;
+    text-transform: none;
+}
+
+.formEl_b strong{
+    color: red;
+}
+
+

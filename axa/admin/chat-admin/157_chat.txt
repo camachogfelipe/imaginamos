@@ -1,0 +1,12 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='admin'>Carlos Cano</span><br/>hola se&ntilde;or cliente ~2010-11-21 21:56:32
+<span class='usuario'>ca</span><br/>hola se&ntilde;or asesor ~2010-11-21 21:56:51
+<span class='usuario'>ca</span><br/>como va todo? ~2010-11-21 21:56:58
+<span class='usuario'>ca</span><br/>sera que si? ~2010-11-21 21:58:40
+<span class='admin'>Carlos Cano</span><br/>hollllalalalaa ~2010-11-21 21:58:51
+<span class='admin'>Carlos Cano</span><br/>holalallalalala ~2010-11-21 21:59:08
+<span class='admin'>Carlos Cano</span><br/>hoallalalalalala ~2010-11-21 21:59:12
+<span class='usuario'>ca</span><br/>hoalalallalalalalallaa ~2010-11-21 21:59:18
+<span class='usuario'>ca</span><br/>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa ~2010-11-21 21:59:26
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

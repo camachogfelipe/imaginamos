@@ -1,0 +1,6 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>CARLOS AUGUSTO POSADA VALDES</span>Buenas tardes , 
+<span class='admin'>Carlos Cano</span>Buenas tardes sr Posada ,mi nombre es Carlos Cano,en que puedo ayudarlo 
+<span class='usuario'>CARLOS AUGUSTO POSADA VALDES</span>gracias, una preguntas sobre el seguro de vida: con que aseguradora es?  donde puedo consultar la tabla de monto asegurado y cuotas mensuales ?  
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

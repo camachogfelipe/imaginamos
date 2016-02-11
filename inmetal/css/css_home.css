@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+/* TIPOGRAFIA*/
+
+@font-face {
+	font-family: "Century Gothic";
+	src: url("../fonts/Century%20Gothic.html") format("truetype"); }
+	
+	@font-face {
+    font-family: 'ostrich_sansmedium';
+    src: url('../fonts/ostrich-regular-webfont.eot');
+    src: url('../fonts/ostrich-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ostrich-regular-webfont.woff') format('woff'),
+         url('../fonts/ostrich-regular-webfont.html') format('truetype'),
+         url('../fonts/ostrich-regular-webfont.svg#ostrich_sansmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'atrotissemisans-lightregular';
+    src: url('../fonts/atrssl_1-webfont.eot');
+    src: url('../fonts/atrssl_1-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/atrssl_1-webfont.woff') format('woff'),
+         url('../fonts/atrssl_1-webfont.html') format('truetype'),
+         url('../fonts/atrssl_1-webfont.svg#atrotissemisans-lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+	@font-face {
+	font-family: 'MyriadProRegular';
+	src: url('../fonts/myriad_pro_regular-webfont.eot');
+	src: url('../fonts/myriad_pro_regular-webfontd41d.eot?#iefix') format('embedded-opentype'), url('../fonts/myriad_pro_regular-webfont.woff') format('woff'), url('../fonts/myriad_pro_regular-webfont.html') format('truetype'), url('../fonts/myriad_pro_regular-webfont.svg#MyriadProRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* RESET*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+body {background-color:#000; line-height: 1;/*Add*/ width:100%; height:100%; min-width:1184px;}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear {clear: both;}
+
+.negrilla { font-weight: bold;}
+
+*:focus {outline: none;}
+
+/***/
+
+
+.con-fondo-home {width:100%; min-width:1184px; height:800px; margin:0 auto; background:url(../images/bg_body_home.png) top center no-repeat; position:relative;}
+.wrapper {width: 1184px; height:800px; margin: 0 auto; position: relative; padding:0; color:#fff; /*background:transparent url(../images/mascara-home.png) top center no-repeat;*/}
+.logo_home {width: 600px; margin: 0 auto; position:absolute; left:50%; margin-left:-300px; top:0; z-index:1;}
+
+
+
+
+
+.social_home {float: right; /*margin: -90px 420px 0 0;*/ position:absolute; right:400px; bottom:180px; z-index:99;}
+
+.slogan { width: 600px;
+/*margin: 20px auto 0*/;
+font-family: 'ostrich_sansmedium';
+/*margin-left: 468px;*/
+font-size: 38px;
+color:whitesmoke;
+text-align: center;
+position:absolute; left:50%; margin-left:-300px; bottom:50px;
+}
+
+.slogan1 { font-family: 'MyriadProRegular';
+	color:red;
+        margin: 20px auto 0;
+      	font-weight: normal;
+	font-style: normal;}
+
+.footer { padding: 15px 0;
+background: #000;
+margin: 50px 0 0;
+height: 40px;}
+
+.footer_home {padding: 0;
+background: #000;
+margin: 20px 0 10px;
+height: auto;}
+
+.footer_txt {font-family: 'MyriadProRegular';
+color: #FFF;
+font-size: 13px;
+margin: 0 auto;
+text-align:center;
+}
+
+.copy {font-family: 'MyriadProRegular';
+color: #FFF;
+font-size: 12px;
+text-align:center;
+margin: 10px auto;
+}
+
+
+.footer-autor {
+	height: 30px;
+	line-height: 40px;
+	width: 240px;
+	position: relative;
+	margin: 10px auto 0px;
+}
+.footer-autor #ahorranito2 {
+	background: url(../../../../www.imaginamos.com/derechos_autor_gris/ahorranito-2.png) no-repeat 0px 0px;
+	width: 21px;
+	height: 22px;
+	display: block;
+	float: left;
+	margin: 9px 10px 0px 0px;
+}
+.footer-autor a {
+	font-family: 'Arial';
+	font-weight: 500;
+	font-size: 13px;
+	color: #fff;
+	text-decoration: none;
+}
+.footer-autor a:hover {
+	text-decoration: underline;
+}
+.footer-autor a span {
+	color: #0CF;
+}
+
+/**/
+/* Mosaic - Sliding Boxes and Captions jQuery Plugin Version 1.0.1 www.buildinternet.com/project/mosaic By Sam Dunn / One Mighty Roar (www.onemightyroar.com) Released under MIT License / GPL License*/
+* {margin:0; padding:0; border:none; outline:none;}
+/*General Mosaic Styles*/
+.mosaic-block {width:246px; height:246px; border:8px solid #d1d1d8; position:absolute; -moz-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); -webkit-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); -o-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); -ms-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.8); box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.8); overflow:hidden;}
+
+.destacado-1 {left:50%; margin-left:-526px; top: 356px; z-index:2;} .destacado-2 {left:50%; margin-left:-329px; top: 158px; z-index:2;} .destacado-3 {right:50%; margin-right:-327px; top: 158px; z-index:2;} .destacado-4 {right:50%; margin-right:-524px; top: -39px; z-index:2;}
+
+
+.mosaic-backdrop {display:none; position:absolute; top:0; height:100%; width:100%; -moz-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); -webkit-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); -o-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); -ms-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);}
+
+.mosaic-backdrop img {position:absolute; top:-54px; left:-60px;}
+
+.mosaic-overlay {display:none; z-index:5; position:absolute; width:100%; height:100%; -moz-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); -webkit-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); -o-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); -ms-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);}
+
+.mosaic-overlay img {position:absolute; top:-54px; left:-60px; z-index:-1;}
+
+.fade .mosaic-overlay {opacity:0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)"; filter:alpha(opacity=00); background:url(../img/bg-black.png);}
+
+.details {margin:0;}	
+.details h4{font-family: 'ostrich_sansmedium'; text-align:center; color: #fff; font-size: 34px; line-height: 36px; text-align: center; font-weight: bold; background: url(../images/over_home.png) center center no-repeat; margin:80px auto 0; width:220px;}
+
+.details p {font-family: 'ostrich_sansmedium'; color: #fff; font-size: 25px; text-align: center; background: url(../images/over_home.png) center center no-repeat; text-align:center; width:220px; margin:0 auto;}
+
+
+.destacado_mas {position: absolute; background: url(../images/destacado_mas.png); width: 138px; height: 68px; top: 230px; left: 50%; margin-left:-69px; z-index: 9999;}
+
+
+.link-destacado {width:260px; height:260px; position:absolute; background-color:#333; z-index:9; -moz-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); -webkit-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); -o-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); -ms-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); opacity:0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)"; filter:alpha(opacity=00);}
+
+
+a{text-decoration:none; }
+
+/*** End Animation Styles ***/

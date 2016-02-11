@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "bioempak.com Statistics"
+AuthUserFile /var/chroot/home/content/11/10110711/html/stats/.statspwd
+Require valid-user
+DirectoryIndex index.html

@@ -1,0 +1,23 @@
+name = Baloto
+description = Tema creado para el sitio web de Baloto
+package = Core
+version = VERSION
+core = 7.x
+stylesheets[all][] = css/style.css
+stylesheets[all][] = fuentes/tablero/MyFontsWebfontsKit.css
+stylesheets[all][] = fuentes/astri/stylesheet.css
+scripts[] = js/script.js
+scripts[] = js/customSelect.jquery.js
+
+regions[header] = Header
+regions[top] = Top
+regions[precontent] = Precontent
+regions[content] = Content
+regions[footer-log] = Footer Logos
+regions[footer] = Footer
+regions[footer-copy] = Footer Copy
+
+; Information added by drupal.org packaging script on 2012-05-02
+version = "7.14"
+project = "drupal"
+datestamp = "1335997555"

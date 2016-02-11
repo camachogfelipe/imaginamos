@@ -1,0 +1,28 @@
+.tabs {/*float:left;*/ width:282px; margin:0 auto; background:url(../images/bgTabs.png) no-repeat;}
+.tabs ul.tabs-list {height: 40px;
+    list-style: none outside none;
+    margin: 0 0 -49px;
+    padding: 10px 10px 0;}
+.tabs ul.tabs-list li {float:left; background:url("../images/left.png") no-repeat left top; margin-left:12px; /*margin-right:10px;*/ padding:0 0 0 6px;}
+.tabs ul.tabs-list a {float:left; display:block; background:url("../images/right.png") no-repeat right top; padding:10px 17px 7px 11px; text-decoration:none; color:#a6a6a6; font:400 19px 'BebasNeueRegular';}
+/*Commented Backslash Hack hides rule from IE5-Mac*/
+.tabs ul.tabs-list a {float:none;}
+/*End IE5-Mac hack*/
+.tabs ul.tabs-list a:hover {color:#e82e7c;}
+.tabs ul.tabs-list .current {background-image: url("../images/left_on.png") !important;
+    border-width: 0;}
+.tabs ul.tabs-list .current a {background-image:url("../images/right_on.png"); color:#fff; padding-bottom:7px;}
+
+.tabbody { height: 326px;
+    margin-top: 32px;
+    overflow: auto;
+    position: absolute;
+    width: 282px;;}
+
+.tabhead {background-color:#000;left: -999em;
+    position: absolute;}
+
+.js .tabs .current-info, .js .tabs .accessibletabsanchor, .js .tabs .tabhead /*position each individual tab's heading (default class .tabhead) off-screen*/ {position:absolute; left:-999em;}
+.js .tabs .content {clear:both; margin:0;}
+.js .tabs {/*width:250px;*/}
+.tabs {/*padding:2px;*/}

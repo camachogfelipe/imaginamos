@@ -1,0 +1,42 @@
+
+
+
+/*======================================================*/
+/* MODULO CARRUSEL DE ESPECIALES
+/*======================================================*/
+.bloque_carrusel { width:308px; height:100%; float:left;}
+
+.bloque_carrusel .slideable .wrapper {overflow: hidden; padding:0 0 0 0px;}
+.bloque_carrusel .slideable .navigation{  top:0px; left:0px; width:308px;}
+.bloque_carrusel .box_carrusel { margin:0 auto; padding:0; width:308px;}
+.bloque_carrusel .box_carrusel .slideable .navigation p {display: block;cursor: auto;width:40px;height: 40px;text-indent: -9999px;}
+.bloque_carrusel .box_carrusel .slideable .navigation p a {background: url() no-repeat 0 0;}
+.bloque_carrusel .slideable .navigation p a {display: block;cursor: auto;width:40px;height:40px;}
+.bloque_carrusel .slideable .navigation p.previous { float:left;}
+.bloque_carrusel .slideable .navigation p.previous a {background-position: -40px -40px;}
+.bloque_carrusel .slideable .navigation p.previous_on a {background-position: 0 -40px;}
+.bloque_carrusel .slideable .navigation p.previous_on a:hover {background-position: -80px -40px;}
+.bloque_carrusel .slideable .navigation p.previous_on a,.slideable .navigation p.next_on a {cursor: pointer;cursor: hand;}
+.bloque_carrusel .slideable .navigation p.next { float:right;}
+.bloque_carrusel .slideable .navigation p.next a {background-position: -40px 0;}
+.bloque_carrusel .slideable .navigation p.next_on a {background-position: -80px 0;}
+.bloque_carrusel .slideable .navigation p.next_on a:hover {background-position: 0 0;}
+.bloque_carrusel .box_carrusel .slideable .wrapper { margin:0;}
+.bloque_carrusel .box_carrusel .wrapper { height:168px; overflow:hidden; position:relative;}
+.bloque_carrusel li.slide img { border:1px solid #eaeaea; margin:0 0 3px 0;}
+.bloque_carrusel li.slide {height:168px; position:relative;}
+.bloque_carrusel ul.slides {width:308px; list-style:none;position:absolute;}
+.bloque_carrusel li.slide {width:308px; float:left; text-align:left;margin:0;}
+.bloque_carrusel li.slide a {
+	padding:15px 20px;
+	display:block;
+	height:168px;
+	overflow:hidden;
+	border: 1px solid #dcdcdc;
+}
+.bloque_carrusel li.slide a:hover { background:#e9e9e9; text-decoration:none;}
+.bloque_carrusel li.slide a h3 { color:#c00; font:bold 11px Arial, Helvetica, sans-serif; margin:0 0 4px 0;}
+.bloque_carrusel li.slide a p { color:#333; font:normal 12px Arial, Helvetica, sans-serif;}
+/*======================================================*/
+
+

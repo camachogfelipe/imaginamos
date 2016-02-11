@@ -1,0 +1,9 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Johanna Pacheco</span>Hola 
+<span class='usuario'>Johanna Pacheco</span>Buenas tardes 
+<span class='usuario'>Johanna Pacheco</span>me podrias ayudar con mi numero de identificacion y clave por que en esta nueva pag no puedo ingresar a mi cuenta con los que tenia 
+<span class='usuario'>Johanna Pacheco</span>Gracias 
+<span class='admin'>Carlos Cano</span>Buenas tardes Johanna , me recuerda su codigo por favor 
+<span class='usuario'>Johanna Pacheco</span>52866020 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

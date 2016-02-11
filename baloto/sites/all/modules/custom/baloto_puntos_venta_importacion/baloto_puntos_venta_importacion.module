@@ -1,0 +1,361 @@
+<?php
+
+/**
+ * @file
+ * Modulo para importar informacion de los establecimientos de baloto, y crear nodos en el sistema a partir de la misma
+ * Autor information: Yesid Camilo Ortiz Castillo
+ * email: yeskmilo@gmail.com
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function baloto_puntos_venta_importacion_menu() {
+  $items = array();
+  $items['admin/content/puntos_venta'] = array(
+    'title' => t('Carga masiva de puntos de venta'),
+    'description' => t('Carga masiva de puntos de venta desde un archivo con formato CSV'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('baloto_puntos_venta_importacion_form'),
+    'access arguments' => array('Local import'),
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function baloto_puntos_venta_importacion_permission() {
+  $perms = array();
+  $perms = array(
+    'Local import' => array(
+      'title' => t('Carga masiva de puntos de venta desde un csv'),
+    ),
+  );
+  return $perms;
+}
+/**
+ * Form constructor for the form
+ */
+function baloto_puntos_venta_importacion_form($form, &$form_state) {
+  $form = array('#attributes' => array('enctype' => 'multipart/form-data'));
+  $form['source'] = array('#type' => 'fieldset', '#title' => t('Source'));
+  $form['source']['upload'] = array(
+    '#type' => 'file',
+    '#title' => t('file'),
+  );
+  if ($max_size = _baloto_puntos_venta_importacion_file_upload_parse_size(ini_get('upload_max_filesize'))) {
+    $form['source']['upload']['#description'] = t('Due to server restrictions, the maximum upload file size is !size. Files that exceed this size will be disregarded without notice.', array('!size' => format_size($max_size)));
+  }
+  $form['submit'] = array('#type' => 'submit', '#value' => t('Cargar'));
+  return $form;
+}
+
+/**
+ * Parses PHP configuration size values into bytes.
+ *
+ * Edited from an example at http://php.net/manual/en/function.ini-get.php
+ */
+function _baloto_puntos_venta_importacion_file_upload_parse_size($value) {
+  $value = trim($value);
+  $number = (int) drupal_substr($value, 0, -1);
+  $suffix = drupal_strtoupper(drupal_substr($value, -1));
+  switch ($suffix) {
+      case 'G':
+          $number *= 1024;
+      case 'M':
+          $number *= 1024;
+      case 'K':
+          $number *= 1024;
+  }
+  return $number;
+}
+
+/**
+ * Handles file import form validation.
+ */
+function baloto_puntos_venta_importacion_form_validate($form, &$form_state) {
+  $form_state['upload_file'] = file_save_upload('upload', array('file_validate_extensions' => array(0 => 'csv')));
+  if (!$form_state['upload_file']) {
+    form_set_error('upload', t('Please upload a file.'));
+  } else {
+    $form_state['upload_file']->filepath = drupal_realpath($form_state['upload_file']->uri);
+  }
+}
+
+/**
+ * Handles file import form submission.
+ */
+function baloto_puntos_venta_importacion_form_submit($form, &$form_state) {
+  baloto_puntos_venta_importacion_import_batch($form, $form_state);
+}
+
+/**
+ * Batch operation.
+ * Used for validation and saving
+ */
+function baloto_puntos_venta_importacion_import_batch($form, &$form_state) {
+  $file = $form_state['upload_file'];
+  // Automatically detect line endings.
+  ini_set('auto_detect_line_endings', '1');
+  $handle = fopen($file->filepath, 'r');
+  $first = TRUE;
+  $operations = array();
+  $i = 0;
+  while ($line = fgetcsv($handle, 4096, ';')) {
+    /*if ($i == 20) {
+      break;
+    }*/
+    if (!empty($line)){
+      // Convert line to UTF-8.
+      $line = array_map('_baloto_puntos_venta_importacion_to_utf8', $line);
+      if($i!=0){
+        $operations[] = array('_baloto_puntos_venta_importacion_batch', array($line));
+      }
+    }
+    $i++;
+  }
+  $batch = array(
+    'operations' => $operations,
+    'finished' => '_baloto_puntos_venta_importacion_finished',
+  );
+  batch_set($batch);
+}
+
+/**
+ * Helper function to convert each line item to UTF-8.
+ */
+function _baloto_puntos_venta_importacion_to_utf8($value) {
+  $enc = mb_detect_encoding($value, "UTF-8, ISO-8859-1, ISO-8859-15", TRUE);
+  if ($enc != "UTF-8") {
+    $value = drupal_convert_to_utf8($value, $enc);
+  }
+  return $value;
+}
+
+function _baloto_puntos_venta_importacion_batch($line, &$context) {
+  //dpm($line);
+  $punto_id = $line[0];
+  $punto_name = $line[1];
+  $punto_address = $line[2];
+  $punto_phone = $line[3];
+  $punto_city = $line[4];
+  $punto_state = $line[5];
+  $punto_state_taxonomy = array_pop(taxonomy_get_term_by_name($punto_state, $vocabulary = 'ciudad'));
+  $punto_city_taxonomy = array_pop(taxonomy_get_term_by_name($punto_city, $vocabulary = 'ciudad'));
+  if (empty($punto_state_taxonomy)) {
+    _baloto_puntos_venta_importacion_crear_terminos($punto_state, 0);
+    $punto_state_taxonomy = array_pop(taxonomy_get_term_by_name($punto_state, $vocabulary = 'ciudad'));
+  }
+  if (empty($punto_city_taxonomy)) {
+    _baloto_puntos_venta_importacion_crear_terminos($punto_city, $punto_state_taxonomy->tid);
+    $punto_city_taxonomy = array_pop(taxonomy_get_term_by_name($punto_city, $vocabulary = 'ciudad'));
+  }
+  $node = new stdClass();
+  $node->type = 'establecimiento';
+  $node->title = $punto_name;
+  $node->language = LANGUAGE_NONE;
+  $node->field_punto_id[$node->language][0]['value'] = $punto_id;
+  $node->field_punto_name[$node->language][0]['value'] = $punto_name;
+  $node->field_punto_address[$node->language][0]['value'] = $punto_address;
+  $node->field_punto_phone[$node->language][0]['value'] = $punto_phone;
+  $node->field_punto_city[$node->language][]['tid'] = $punto_city_taxonomy->tid;
+  //$node->field_punto_state[$node->language][]['tid'] = $punto_state_taxonomy->tid;
+  $node = node_submit($node);
+  node_save($node);
+}
+
+/**
+ * Batch 'finished' callback
+ */
+function _baloto_puntos_venta_importacion_finished($success, $results, $operations) {
+  if ($success) {
+    variable_del('dummy_tac');
+    drupal_set_message(t('Termino correctamente', array('%final' => end($results))));
+  }
+  else {
+    $error_operation = reset($operations);
+    drupal_set_message(t('An error occurred while processing @operation'));
+  }
+}
+
+/**
+ * funcion para crear los terminos de la taxonomia CIUDAD
+ */
+function _baloto_puntos_venta_importacion_crear_terminos($city_taxonomy_name, $city_parent) {
+  $vocabulary = taxonomy_vocabulary_machine_name_load('CIUDAD');
+  $vid = $vocabulary->vid;
+  $city_taxonomy = array('value' => $city_taxonomy_name, 'format' => NULL, 'safe_value' => $city_taxonomy_name);
+  if($city_parent != 0){
+    $city_parent = $city_parent;
+    //array('value' => $city_parent, 'format' => NULL, 'safe_value' => $city_parent);
+  }else{
+    $city_parent = 0;
+  }
+  $term = _baloto_puntos_venta_importacion_term($vid, $city_taxonomy, $city_parent);
+  $status = taxonomy_term_save($term);
+}
+
+/**
+ * Crear el termino con los valores correspondientes
+ */
+function _baloto_puntos_venta_importacion_term($vid, $city_taxonomy_name, $city_parent) {
+  $term = new stdClass();
+  $term->vid = $vid;
+  $term->name = $city_taxonomy_name['value'];
+  $term->parent = $city_parent;
+  return $term;
+}
+
+function _baloto_puntos_venta_importacion_block() {
+  $content = array();
+  $content['#attached']['js'][] = drupal_get_path('module', 'baloto_puntos_venta_importacion') . '/js/baloto_puntos_venta_importacion.js';
+  $formulario_busqueda_ciudad = drupal_get_form('baloto_puntos_venta_importacion_form_busqueda');
+  $formulario_busqueda_ciudad_render = render($formulario_busqueda_ciudad);
+  $content['#markup'] = $formulario_busqueda_ciudad_render;
+  return $content;
+}
+
+/**
+* Implentation of hook_block_info
+**/
+
+function baloto_puntos_venta_importacion_block_info() {
+  $blocks['block_puntos_busqueda'] = array(
+    'info' => t('Busqueda de establecimientos Baloto'),
+    'cache' => DRUPAL_CACHE_PER_PAGE,
+  );
+  return $blocks;
+}
+
+/**
+* Implentation of hook_block_view
+**/
+
+function baloto_puntos_venta_importacion_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'block_puntos_busqueda':
+      $block['subject'] = t('Busqueda de establecimientos Baloto');
+      $block['content'] = _baloto_puntos_venta_importacion_block();
+      break;
+  }
+  return $block;
+}
+
+/**
+* Implementacion del formulario de busqueda
+*/
+
+function baloto_puntos_venta_importacion_form_busqueda($form, &$form_state) {
+  $city_defalut = arg(1);
+  $departamento_defalut = _baloto_puntos_venta_importacion_default_departamento();
+  if($departamento_defalut == NULL){
+    $city_opcion  = array( 0 => 'Seleccione una ciudad', );
+  } else {
+    $city_opcion = _baloto_puntos_venta_importacion_options_city($departamento_defalut);
+  }
+  
+  $form['depto_active'] = array(
+    '#title' => '',
+    '#prefix' => '<div id="depto_active">',
+    '#suffix' => '</div>',
+  );
+  $form['departamento'] = array(
+   '#type' => 'select',
+   '#title' => t('Seleccione un departamento'),
+   //'#title' => t('Departamento'),
+   '#options' => _baloto_puntos_venta_importacion_load_departamentos(),
+   '#default_value' => $departamento_defalut,
+   '#ajax' => array(
+      'callback' => '_baloto_puntos_venta_importacion_load_ciudades',
+      'wrapper' => 'ciudad_establecimiento_buscar',
+      'progress' => array('type' => 'none'),
+      'method' => 'replace',
+      'effect' => 'fade',
+    ),
+  );
+  $form['ciudad'] = array(
+    '#prefix' => '<div id="ciudad_establecimiento_buscar">',
+    '#suffix' => '</div>',
+    '#type' => 'select',
+    '#title' => t('Seleccione una ciudad'),
+    //'#title' => t('ciudad'),
+    '#options' => $city_opcion,
+    '#validated' => TRUE,
+    '#default_value' => $city_defalut,
+  );
+  $form['actions'] = array('#type' => 'actions');
+  $form['actions']['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Buscar'),
+    '#suffix' => '<a class="p-inicio" href="/">Volver al inicio</a>',
+  );
+  return $form;
+}
+
+//Funcion para el evento submit del formulario que muestra los terminos encontrados
+function baloto_puntos_venta_importacion_form_busqueda_submit($form, &$form_state){
+  $ciudad = $form_state['input']['ciudad'];
+  drupal_goto('establecimientos/' . $ciudad);
+}
+
+/**
+* Funcion que retorna los terminos de taxonomia padres, es decir los departamentos
+*/
+
+function _baloto_puntos_venta_importacion_load_departamentos(){
+  $vocabulary = taxonomy_vocabulary_machine_name_load('ciudad');
+  $departamentos = taxonomy_get_tree($vocabulary->vid, $parent = 0,$max_depth = 1);
+  $opciones = array( 0 => 'Seleccione un departamento', );
+  foreach ($departamentos as $key) {
+    $tid = $key->tid;
+    $name = $key->name;
+    $opciones[$tid] = $name;
+  }
+  return $opciones;
+}
+
+/**
+* Funcion que retorna las ciudades de un departamento
+*/
+
+function _baloto_puntos_venta_importacion_load_ciudades($form, &$form_state){
+  $departamento = $form_state['input']['departamento'];
+  if($departamento != 0){
+	  $vocabulary = taxonomy_vocabulary_machine_name_load('ciudad');
+	  $ciudades = taxonomy_get_tree($vocabulary->vid, $parent=$departamento,$max_depth = 1);
+	  foreach ($ciudades as $key) {
+		$tid = $key->tid;
+		$name = $key->name;
+		$opciones[$tid] =$name;
+	}
+  } else {
+	$opciones = array(0 => 'Seleccione una ciudad');
+	}
+  $form['ciudad']['#options'] = $opciones;
+  return $form['ciudad'];
+}
+
+function _baloto_puntos_venta_importacion_default_departamento(){
+  $city_defalut = arg(1);
+  $parent = taxonomy_get_parents($city_defalut);
+  if (count($parent) == 0 ){
+    $departamento = FALSE;
+  }
+  foreach ($parent as $key) {
+    $departamento = $key->tid;
+  }
+  return $departamento;
+}
+function _baloto_puntos_venta_importacion_options_city($departamento_defalut){
+  $departamento = $departamento_defalut;
+  $vocabulary = taxonomy_vocabulary_machine_name_load('ciudad');
+  $ciudades = taxonomy_get_tree($vocabulary->vid, $parent=$departamento,$max_depth = 1);
+  foreach ($ciudades as $key) {
+    $tid = $key->tid;
+    $name = $key->name;
+    $opciones[$tid] =$name;
+  }
+  return $opciones;
+}

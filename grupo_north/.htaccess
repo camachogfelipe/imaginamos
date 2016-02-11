@@ -1,0 +1,22 @@
+# Enable mod_rewrite
+RewriteEngine On
+# Redirigimos al sitio sin www
+#RewriteCond %{HTTP_HOST} ^www.misitio.co [NC]
+#RewriteRule ^(.*)$ http://misitio.co/$1 [L,R=301]
+
+# Especificamoe el folder donde existe la aplicacion
+RewriteBase /grupo_north
+#arriba va la url base
+# Sobreescribimos las secciones del sitio
+RewriteRule ^site/(.*)/?$ index.php?seccion=$1 [L]
+
+# Url por defecto
+RewriteRule ^/?$ index.php?seccion=home [L]
+
+# Set the default 500 page for Apache errors
+#ErrorDocument 500 /index.php?seccion=500
+
+# Set the default 404 page
+ErrorDocument 404 /index.php?seccion=404
+
+#IndexIgnore *.html *.php *.flv *.htaccess

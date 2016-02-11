@@ -1,0 +1,23 @@
+#lz_chat_alert_box_text{font-size:12px;font-family:verdana,arial;padding:5px;padding-right:15px;padding-left:18px;color:#000000;}
+#lz_chat_alert_box{position:absolute;z-index:99999;background:#f0f0f0;border:1px solid #808080;border-top:0px solid #808080;width:350px;background-repeat:repeat-x;display:none;-moz-box-shadow: 5px 5px 5px #8d8d8d;-webkit-box-shadow: 5px 5px 5px #8d8d8d;box-shadow: 5px 5px 5px #8d8d8d;}
+
+.lz_index_box{background-color:#FAFAFA;border:1px solid #777777;color:#000000;}
+.lz_index_inner_box{text-align:left;background-color:#FFFFFF;border:1px solid #777777;color:#000000;}
+.lz_index_description_box{font-family:verdana,arial;font-size:11px;color:#000000;}
+.lz_index_light_text{font-family:verdana,arial;font-size:11px;color:#808080;}
+
+.lz_form_button{cursor:pointer;width:120px;font-size:12px;}
+.lz_chat_clickable_image{cursor:pointer;}
+
+.lz_index_help_text{text-align:left;font-family:verdana,arial;font-size:11px;color:#6c6c6c;white-space:nowrap;padding-left:10px;padding-bottom:5px;}
+.lz_index_red{font-family:verdana,arial;color:#c40000;font-weight:bold;font-size:11px;}
+.lz_index_blue{font-family:verdana,arial;color:#0099ff;font-weight:bold;font-size:11px;}
+.lz_index_howto_cat{font-family:verdana,arial;color:#5C5C5C;font-size:11px;font-weight:bold;}
+.lz_index_error_cat{font-family:verdana,arial;color:#3A3A3A;font-size:11px;font-weight:bold;}
+.lz_index_helplink{font-family:verdana,arial;font-size:11px;font-weight:bold;color:#7F7F7F;text-decoration:underline;}
+.lz_index_link{font-family:verdana,arial;font-size:11px;font-weight:bold;color:#7BB05D;text-decoration:none;}
+.lz_index_link:hover{font-family:verdana,arial;font-size:11px;font-weight:bold;color:#808080;text-decoration:none;}
+
+.unmovable{cursor:default;padding:0px;}
+#csschktr{display:none;}
+

@@ -1,0 +1,148 @@
+
+
+@charset "utf-8";
+/* CSS Document */
+
+.nivoSlider {
+    position:relative;
+	float: left;
+  width: 1260px;
+ height: 378px;
+ margin: 0px 0 0px;
+
+
+ z-index: 1;
+}
+
+.over_slider {   width: 1067px;
+ height: 378px;
+ background: url(../images/over_slider_1.png) top center no-repeat;
+ position: absolute;
+ z-index: 2;
+ 
+ top: 0px; }
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+  width: 1260px;
+ height: 378px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom: 43px;
+	font-family: 'BebasNeueRegular';
+	text-align: left;
+	text-transform: uppercase;
+	color:#fff;
+	font-size: 40px;
+	width:639px;
+	height: 50px;
+	margin: 0;
+	padding: 13px 0 10px 110px;
+	background: url(../images/bg_caption.png) top left no-repeat;
+	z-index:8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	display:block;
+	height: 44px;
+	position:  absolute;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	/*background-position:-30px 0;*/
+	width:43px;
+	bottom: 160px;
+	right: 16px;
+	border: 1px solid #F00;
+	background: url(../images/icon_adelante.png) no-repeat;
+	z-index: 99999999999999999999999999999999999;
+}
+a.nivo-prevNav {
+	/*left:15px;*/
+	width:43px;
+	bottom: 160px;
+	left: 16px;
+	background: url(../images/icon_atras.png) no-repeat;
+	z-index: 999999999999999999999999999999999;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+.nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.nivo-controlNav {
+	position: absolute;
+	bottom: 10px;
+    right: 20px; /* Tweak this to center bullets */
+	z-index: 99999999999999999999999999999;
+}
+.nivo-controlNav a {
+	
+	display:block;
+	width:41px;
+	height:38px;
+	margin: 0 0 0 3px;
+	background: url(../images/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	float:left;
+
+	
+	
+}
+.nivo-controlNav a.active {
+	background-position:0 -41px;
+	margin: 0 0 0 3px;
+	
+}

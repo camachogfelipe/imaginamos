@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+#slider2 { overflow-x:hidden; margin:0 0 0 40px; padding-top:40px; }
+#slider2 .viewport {height: 280px; margin-top:-100px;  width:920px; overflow-x:hidden; overflow-y:visible !important; position: absolute; }
+#slider2 .buttons { display: block; width:51px; height:54px; display:block;  position:absolute !important; }
+#slider2 .next { position:absolute; background:url(../img/btn_next_slider2.png); right:-40px; top:100px;  }
+#slider2 .prev { position:absolute; background:url(../img/btn_prev_slider2.png); left:-36px; top:100px;  width:46px !important; }
+#slider2 .buttons:hover{background-position:bottom;}
+#slider2 .disable { visibility: hidden; }
+#slider2 .overview { list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 100px; }
+#slider2 .overview li{position:relative; float: left; margin: 0 5px 0 5px; padding:5px;  height: 170px; background:#e7e7e7; width: 210px; overflow:visible}
+#slider2 .overview li:hover{background:#1d5b8f;}	
+#slider2 .overview li:hover .detalle1{display:block}				

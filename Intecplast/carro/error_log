@@ -1,0 +1,42 @@
+[04-Jun-2012 18:12:44] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:13:03] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:13:19] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:13:25] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:14:30] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:14:35] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:14:35] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:14:44] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:15:01] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:15:12] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:15:15] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:15:17] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:15:18] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:15:20] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:15:22] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:15:29] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:25:32] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:25:32] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eggfr801/public_html/carro/lib_carrito.php:64) in /home/eggfr801/public_html/carro/mete_producto.php on line 5
+[04-Jun-2012 18:25:54] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:25:56] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:25:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eggfr801/public_html/carro/lib_carrito.php:64) in /home/eggfr801/public_html/carro/mete_producto.php on line 5
+[04-Jun-2012 18:25:58] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:25:59] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:26:05] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:26:09] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:26:09] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eggfr801/public_html/carro/lib_carrito.php:64) in /home/eggfr801/public_html/carro/mete_producto.php on line 5
+[04-Jun-2012 18:26:13] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:26:30] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:26:30] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eggfr801/public_html/carro/lib_carrito.php:64) in /home/eggfr801/public_html/carro/mete_producto.php on line 5
+[04-Jun-2012 18:28:33] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:28:39] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:28:39] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eggfr801/public_html/carro/lib_carrito.php:64) in /home/eggfr801/public_html/carro/mete_producto.php on line 7
+[04-Jun-2012 18:29:00] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:29:01] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:29:02] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:29:02] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eggfr801/public_html/carro/lib_carrito.php:64) in /home/eggfr801/public_html/carro/mete_producto.php on line 7
+[04-Jun-2012 18:29:10] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:33:30] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 18:33:32] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 19:22:48] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Jun-2012 22:06:19] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[05-Jun-2012 09:52:57] PHP Warning:  PHP Startup: Unable to load dynamic library '../htscanner.so' - ../htscanner.so: cannot open shared object file: No such file or directory in Unknown on line 0

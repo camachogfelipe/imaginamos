@@ -1,0 +1,536 @@
+#page-wrap {
+	margin: auto;
+	min-height: 10px;
+	overflow: hidden;
+}
+.ui-tabs {
+	zoom: 1;
+}
+.ui-tabs .ui-tabs-nav {
+	list-style: none;
+	position: relative;
+	padding: 2px 2px 0;
+	overflow: hidden;
+	top: 1px;
+	z-index: 1000;
+	display: none;
+}
+.ui-tabs .ui-tabs-nav li {
+	position: relative;
+	float: left;
+	border: 1px solid #00F;
+	border-bottom-width: 0 !important;
+	margin: 0 2px -1px 0;
+	background: #ccc;
+}
+.ui-tabs .ui-tabs-nav li a {
+	float: left;
+	text-decoration: none;
+	padding: 5px 10px;
+	color: black;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+	padding-bottom: 1px;
+	border-bottom-width: 0;
+	background: white;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+	cursor: text;
+}
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+	cursor: pointer;
+} /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel {
+	padding: 0px;
+	display: block;
+	border-width: 0;
+	background: none;
+	border: none;
+	position: relative;
+	min-height: 200px;
+}
+.ui-tabs .ui-tabs-hide {
+	display: none !important;
+}
+a.mover {
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+.next-tab {
+	width: 45px;
+	height: 45px;
+	bottom: 185px;
+	right: 10px;
+
+	background: url(../imagenes/sprite-tabs.png) 0px 0px no-repeat;
+}
+.prev-tab {
+	width: 45px;
+	height: 45px;
+	bottom: 185px;
+	left: 10px;
+	background: url(../imagenes/sprite-tabs.png) -45px 0px no-repeat;
+}
+.scroll-pane {
+	width: 960px;
+	height: 520px;
+	overflow: auto;
+	margin: 10px 0 0 10px;
+}
+.scroll-pane-2 {
+	width: 860px;
+	height: 420px;
+	overflow: auto;
+	margin: 0px auto 20px;
+	padding: 0 0 0px;
+}
+.jspContainer {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.jspPane {
+	position: absolute;
+}
+.jspVerticalBar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 20px;
+	height: 100%;
+}
+.jspHorizontalBar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+.jspVerticalBar *, .jspHorizontalBar * {
+	margin: 0;
+	padding: 0;
+}
+.jspCap {
+	display: none;
+}
+.jspHorizontalBar .jspCap {
+	float: left;
+}
+.scroll-pane .jspTrack {
+	width: 20px;
+	background: #3F9987;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+.scroll-pane .jspDrag {
+	position: relative;
+	top: 1px;
+	left: 1px;
+	cursor: pointer;
+	width: 14px;
+	height: 46px;
+	border: 2px dashed #FFFFFF;
+	background: url(../imagenes/icono-scroll.png) center center no-repeat;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	position: relative;
+}
+.scroll-pane-2 .jspTrack {
+	width: 20px;
+	background: #E7435B;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+.scroll-pane-2 .jspDrag {
+	position: relative;
+	top: 1px;
+	left: 1px;
+	cursor: pointer;
+	width: 14px;
+	height: 46px;
+	border: 2px dashed #FFFFFF;
+	background: url(../imagenes/icono-scroll.png) center center no-repeat;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	position: relative;
+}
+.jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag {
+	float: left;
+	height: 100%;
+}
+.jspArrow {
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+.jspArrow.jspDisabled {
+	cursor: default;
+	background: #80808d;
+}
+.jspVerticalBar .jspArrow {
+	height: 16px;
+}
+.jspHorizontalBar .jspArrow {
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+.jspVerticalBar .jspArrow:focus {
+	outline: none;
+}
+.jspCorner {
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+	margin: 0 -3px 0 0;
+}
+
+/**/
+
+div#container {
+	overflow: hidden;
+}
+div.content {
+	display: none;
+	clear: both;
+	float: left;
+	width: 550px;
+	height: 420px;
+}
+div.content a, div.navigation a {
+	text-decoration: none;
+}
+div.content a:hover, div.content a:active {
+	text-decoration: underline;
+}
+div.navigation a.pageLink {
+	height: 77px;
+	line-height: 77px;
+}
+div.controls {
+	margin-top: 5px;
+	height: 23px;
+	display: none;
+}
+div.controls a {
+	padding: 5px;
+}
+div.ss-controls {
+	float: left;
+}
+div.nav-controls {
+	float: right;
+}
+div.slideshow-container, div.loader, div.slideshow a.advance-link {
+	width: 550px;
+}
+div.loader, div.slideshow a.advance-link, div.caption-container {
+	height: 20px; /* This should be set to be at least the height of the largest image in the slideshow with padding */
+}
+div.slideshow-container {
+	position: relative;
+	clear: both;
+	float: left;
+	height: 400px;
+}
+div.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('images/loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+div.slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0;
+}
+div.slideshow a.advance-link {
+	display: block;
+	line-height: 0px; /* This should be set to be at least the height of the largest image in the slideshow with padding */
+	text-align: center;
+}
+div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+div.slideshow a.advance-link:focus {
+	outline: none;
+}
+div.slideshow img {
+	width: 546px;
+	height: 396px;
+	border: 2px dashed #E7435B;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+div.caption-container {
+	float: left;
+	position: relative;
+	margin-top: 10px;
+	width: 550px;
+}
+span.image-caption {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div.caption-container, span.image-caption {
+	width: 550px;
+}
+div.caption {
+	padding: 0 12px;
+}
+div.image-title {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+div.image-desc {
+	line-height: 1.3em;
+	padding-top: 12px;
+}
+div.download {
+	margin-top: 8px;
+}
+div.photo-index {
+	position: absolute;
+	display: none;
+	bottom: 0;
+	left: 0;
+	padding: 0 12px;
+}
+div.navigation-container {
+	float: left;
+	width: 400px;
+	height: 160px;
+	margin: 0px 0 0 120px;
+	position: relative;
+}
+div.navigation {
+	float: left;
+	position: relative;
+	left: 50%;
+	margin: 0 0 0 -200px;
+	width: 400px;
+	min-height: 140px;
+}
+div.navigation a.pageLink {
+	display: block;
+	position: relative;
+	float: left;
+	margin: 15px 10px 0 10px;
+	width: 16px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+div.navigation a.pageLink:focus {
+	outline: none;
+}
+ul.thumbs {
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+ul.thumbs li {
+	float: left;
+	padding: 0;
+	margin: 10px;
+	list-style: none;
+}
+a.thumb {
+	padding: 0px;
+	display: block;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border: 2px dashed #E7435B;
+	margin: 0 0 0 0px;
+}
+a.thumb:hover {
+	padding: 0px;
+	display: block;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border: 2px dashed #E7435B;
+}
+a.thumb:focus {
+	outline: none;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border: 2px dashed #E7435B;
+}
+ul.thumbs img {
+	border: none;
+	display: block;
+	width: 150px;
+	height: 120px;
+}
+div.pagination {
+	clear: both;
+	position: relative;
+	left: -50%;
+}
+div.pagination a, div.pagination span.current, div.pagination span.ellipsis {
+	position: relative;
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 4px 7px 2px 7px;
+}
+div.pagination a:hover {
+	text-decoration: none;
+}
+div.pagination span.current {
+	font-weight: bold;
+}
+div.pagination span.ellipsis {
+	border: none;
+	padding: 5px 0 3px 2px;
+}
+div.gallery-gutter {
+	clear: both;
+	padding-bottom: 20px;
+}
+div#page {
+	background-color: #fff;
+	border-color: #ddd;
+}
+div#footer {
+	color: #777;
+}
+div.caption-container {
+	color: #111;
+}
+div.image-title {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+div.image-desc {
+	line-height: 1.3em;
+	padding-top: 12px;
+}
+div.download {
+	margin-top: 8px;
+}
+div.photo-index {
+	color: #777;
+}
+div.navigation a.prev {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: -80px;
+	bottom: 25px;
+	z-index: 9999;
+	border: none;
+	cursor: pointer;
+	background: url(../imagenes/icono-carrousel.png) 0 0 no-repeat;
+}
+div.navigation a.next {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: -55px;
+	bottom: 25px;
+	z-index: 9999;
+	border: none;
+	cursor: pointer;
+	background: url(../imagenes/icono-carrousel.png) -41px 0 no-repeat;
+}
+div.loader {
+	background-image: url(loader.gif);
+}
+div.slideshow img {
+}
+ul.thumbs li.selected a.thumb {
+}
+div.pagination a:hover {
+}
+div.pagination span.current {
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+}
+/**/
+
+ul.paginacion, ul.paginacion-2 {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	min-height: 10px;
+	overflow: hidden;
+	padding: 0 0 60px;
+}
+ul.paginacion li, ul.paginacion-2 li {
+	float: left;
+	list-style: none;
+}
+
+
+ul.simplePagerNav {
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+}
+ul.simplePagerNav li {
+	display: block;
+	float: left;
+	margin: 20px 10px 20px 0;
+	font-family: 'Aller-Bold';
+	font-size: 18px;
+}
+ul.simplePagerNav li a {
+	color: #000;
+	background: fff;
+	padding:5px 10px;
+	text-decoration: none;
+	border: 2px dashed #803680;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+ul.simplePagerNav li a:hover {
+	background: #803680;
+	color: #fff;
+	border: 2px dashed #fff;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+li.currentPage {
+}
+ul.simplePagerNav li.currentPage a {
+	color: #fff;
+	padding:5px 10px;
+	background: #803680;
+	border: 2px dashed #fff;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+table.pageme {
+	border-collapse: collapse;
+	
+}
+table.pageme td {
+	border-collapse: collapse;
+
+}

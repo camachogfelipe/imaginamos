@@ -1,0 +1,23 @@
+
+/*  ========== Jquery Plugin Css Import Base ==========  */
+
+/* Tispy */
+@import "../../css/admin/tipsy-style.css";
+
+/* Uniform */
+@import "../../css/admin/uniform.default.css";
+
+/* Jwysiwyg Text editor */
+@import "../../css/admin/jquery.wysiwyg.css";
+
+/* prettyPhoto */
+@import "../../css/admin/prettyphoto-style.css";
+
+/* Tableshorter */
+@import "../../css/admin/tableshorter-theme.css";
+
+/* Full Calendar */
+@import "../../css/admin/fullcalendar.css";
+
+/* Iphone style switches */
+@import "../../css/admin/iphone-style-switches.css";

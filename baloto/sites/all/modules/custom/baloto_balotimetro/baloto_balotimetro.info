@@ -1,0 +1,4 @@
+name = Baloto Balotimetro
+description = Bloque balotimetro
+core = 7.x
+package = Baloto

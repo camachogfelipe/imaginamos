@@ -1,0 +1,243 @@
+/*---------------------------------------------------
+* Nombre del proyecto: Paola Turbay
+* Nombre del archivo: style.css
+* Descripción: reset
+* Fecha de creación: 16 del 06 del 2013
+* Autor: Jose Montenegro
+
+============COMENTARIOS============
+
+* Ancho: 1000px
+* Numero de columnas: null
+* Parallax: SI
+* Responsivo: NO
+---------------------------------------------------*/
+
+@charset "UTF-8";
+
+/*---RESET---*/
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+a:hover{
+  text-decoration: none;
+}
+a.bt_azul{
+  color: #19546E;
+  font-family: 'PT Sans Narrow',sans-serif;
+  font-size: 13px;
+}
+.bt_azulborde {
+  background-color: #19546E;
+  height: 8px;
+  margin: 0 5px;
+  width: 1px;
+}
+.clear {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+
+*{
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+a{
+    display: block;
+  text-decoration:none;
+}
+
+
+img{
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+/* Estilo fuente */
+
+.italic, p.italic, a.italic{
+  font-style: italic;
+}
+
+/* Alinear */
+
+.centrar_inline, p.centrar_inline, a.centrar_inline{
+    text-align: center;
+    width: 100%;
+}
+
+.centrar_contenido, p.centrar_contenido, a.centrar_contenido, .cont_interior p.centrar_contenido{
+    text-align: center;
+}
+
+.text_centrado, p.text_centrado, .cont_interior p.text_centrado{
+  text-align: center;
+}
+
+.midle{
+  vertical-align: middle;
+}
+
+.float_left{
+  float: left;  
+}
+
+.margin_left{
+    margin-left: 3%;
+}
+
+.float_right{
+  float: right;
+}
+
+/* Display */
+
+.inline, a.inline{
+  display:inline-block;
+  zoom: 1; /* IE7 (hasLayout)*/
+  *display: inline; /* IE */
+
+}
+
+.midle{
+  vertical-align: middle;
+}
+
+/* Espacios */
+
+.espacio_en_blanco, .espacio_en_blancopeque, .espacio_en_blancogrande, .espacio_en_blancopequepuntos{
+  margin-top:20px;
+  display:inline-block;
+  zoom: 1; /* IE7 (hasLayout)*/
+  *display: inline; /* IE */
+  width:100%;
+}
+
+.espacio_en_blancopequepuntos{
+    border-bottom: medium dotted #7E7E7E;
+    margin: 20px 0;
+}
+
+.espacio_en_blancopeque{
+  margin-top: 10px;
+}
+
+.espacio_en_blancogrande{
+  margin-top: 40px;
+}
+
+/*---Tamaños---*/
+
+.ancho100, a.ancho100{
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+/*---Margen---*/
+
+.marginleft{
+  margin-left: 20px;
+}
+
+.marginright{
+  margin-right: 20px;
+}
+
+
+
+/*---Position---*/
+
+.relative{
+  position: relative;
+}
+
+/*---Colores---*/
+
+
+.color_negro, p.color_negro, a.color_negro{
+  color: #000000;
+}
+
+.color_gris1, p.color_gris1, a.color_gris1{
+  color: #333333;
+}
+
+.color_gris2, p.color_gris2, a.color_gris2{
+  color: #666666;
+}
+
+.color_gris3, p.color_gris3, a.color_gris3{
+  color: #999999;
+}
+
+.color_gris4, p.color_gris4, a.color_gris4{
+  color: #cccccc;
+}
+
+.color_blanco, p.color_blanco, a.color_blanco{
+  color: #fff;
+}
+
+.color_rojo, p.color_rojo, a.color_rojo{
+  color: #e32119;
+}
+
+
+
+/*---RESET---*/
+
+
+
+
+
+
+
+
+

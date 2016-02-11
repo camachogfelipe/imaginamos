@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+ <Diego Velásquez> -- <Front-end> -- <diego.velasquez@imaginamos.co>
+ <name> -- <role> -- <mail>
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Normalize
+    Javascript, jQuery, Modernizr
+    Prefix-free
+    Selectivizr
+

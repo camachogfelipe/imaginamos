@@ -1,0 +1,11 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de Digiware. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>ramiro2</span><br/>buenas? ~2011-02-14 22:20:26
+<span class='usuario'>ramiro2</span><br/>Moni? ~2011-02-14 22:20:32
+<span class='usuario'>ramiro2</span><br/>Estas ahi? ~2011-02-14 22:21:05
+<span class='admin'>Agente</span><br/>sip ~2011-02-14 22:21:09
+<span class='admin'>Agente</span><br/>me aparecen dos usuarios  ~2011-02-14 22:21:16
+<span class='usuario'>ramiro2</span><br/>oki perfecto ~2011-02-14 22:21:21
+<span class='admin'>Agente</span><br/>tengo a ramiro gomez y ramiro2 ~2011-02-14 22:21:29
+<span class='usuario'>ramiro2</span><br/>yo creoq ue ahi tambien hayq ue agregarle un captcha o pueden disparar muchas ventanas.,.... :S ~2011-02-14 22:21:46
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

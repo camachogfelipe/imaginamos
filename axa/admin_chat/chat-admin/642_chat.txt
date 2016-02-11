@@ -1,0 +1,7 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>1130678771</span><br/>Hola~2012-07-13 11:50:45
+<span class='admin'>Agente</span><br/>Hola. En que puedo ayudarte?~2012-07-13 11:51:02
+<span class='usuario'>1130678771</span><br/>quiero comprar un seguro de viaje para toda la compa&ntilde;&iacute;a ~2012-07-13 11:51:20
+<span class='admin'>Agente</span><br/>Yo tambi&eacute;n~2012-07-13 11:51:27
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

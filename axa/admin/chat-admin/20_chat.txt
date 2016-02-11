@@ -1,0 +1,15 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Jhon Jairo</span>listo 
+<span class='admin'>Oscar Hernandez</span>Hola, Jhonson 
+<span class='admin'>Oscar Hernandez</span>Esta roncando? 
+<span class='admin'>Oscar Hernandez</span>Jhon, no ronque 
+<span class='admin'>Oscar Hernandez</span>Jonson 
+<span class='usuario'>Jhon Jairo</span>necesita que haga algo 
+<span class='admin'>Oscar Hernandez</span>Si, se&ntilde;or. Que deje de reoncar y escriba 
+<span class='usuario'>Jhon Jairo</span>digame 
+<span class='admin'>Oscar Hernandez</span>Nada, que le de click en Salir y acepte el env&iacute;o de al correo... 
+<span class='usuario'>Jhon Jairo</span>ok 
+<span class='usuario'>Jhon Jairo</span>bye 
+<span class='usuario'>Jhon Jairo</span>see you 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

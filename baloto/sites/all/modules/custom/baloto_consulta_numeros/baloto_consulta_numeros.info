@@ -1,0 +1,8 @@
+name = Consulta numeros (Mejoras al filtro)
+description = Mejoras al filtro expuesto de la view
+core = 7.x
+package = Baloto
+dependencies[] = views
+dependencies[] = clientside_validation
+dependencies[] = fapi_validation
+dependencies[] = baloto_sorteos_anteriores

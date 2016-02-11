@@ -1,0 +1,43 @@
+	
+/* Sudo Slider */
+.slider ul, .slider li, .slider2 ul, .slider2 li, .slider3 ul, .slider3 li{margin:0;padding:0;list-style:none;position:relative;display:block;}
+/* Uncomment this if you wan't to only have 1 visible slide before the javascript kicks in. 
+#slider li {display:none;}	
+#slider li:first-child {display:block;}
+*/
+
+.slider, .slider li {overflow:hidden; margin:0 !important; width:926px; height:356px;}
+.slider{border:7px solid #f4f4f4;}
+.slider2, .slider2 li {overflow:hidden; margin:0 !important; width:928px; }
+.slider3{width:100% !important; overflow:hidden;}
+.slider3 li{width:200px; height:300px;}
+/* // Sudo Slider */	
+/* Numeric Navigation */
+ol {margin: 0;padding:0;height:24px; position:absolute; text-align:center; bottom:70px; z-index:10; right:10px;}
+ol li{margin:0 5px 0 0; padding:0; list-style:none; height:24px; display:inline-block}
+ol li a{height:15px; width:15px; text-decoration:none; display:inline-block; background:#212d79; border:1px solid #fff; opacity:0.4; filter:alpha(opacity=40); position:relative; text-indent:-8000px; border-radius:50%}
+
+ ol li.current a, ol li a:hover{background:#212d79 !important; opacity:1; filter:alpha(opacity=100);}
+
+
+
+.graphic, .prevBtn, .nextBtn{margin:0;padding:0;display:block;overflow:hidden;text-indent:-8000px;}
+.content_slider_logos .prevBtn, .content_slider_logos .nextBtn {display:block; line-height:19px !important; color:#666; width:54px; height:54px;position:absolute; z-index:1;  cursor:pointer; text-indent:-8000px; background-image:url(../img/btns_slider.png); bottom:0; left:50%}	
+.content_slider_logos .nextBtn{ margin-left:5px; background-position: top right; transition:right 0.3s}	
+.content_slider_logos .prevBtn{margin-left:-35px;}
+.content_slider_logos .prevBtn:hover{background-position:left bottom;}
+.content_slider_logos .nextBtn:hover{background-position:right bottom;}
+
+.content_main_slider {margin:25px auto 0;}
+.content_main_slider .prevBtn, .content_main_slider .nextBtn {display:block; line-height:19px !important; color:#666; width:54px; height:54px;position:absolute; z-index:1;  cursor:pointer; text-indent:-8000px; background-image:url(../img/btns_slider.png); left:-27px; }	
+.content_main_slider .nextBtn{ top:110px; background-position: top right; transition:right 0.3s}	
+.content_main_slider .prevBtn{top:50px;}
+.content_main_slider .prevBtn:hover{background-position:left bottom;}
+.content_main_slider .nextBtn:hover{background-position:right bottom;}
+
+.content_slider_descargas .prevBtn{margin-top:auto; top:320px; left:auto; right:80px;}
+.content_slider_descargas .nextBtn{margin-top:auto; top:320px; left:auto; right:20px;}
+.main_products .prevBtn, .main_products .nextBtn{background-image:url(../img/btns_slider2.png)}
+/* Some demos use this line */
+
+/*-- custom links --*/

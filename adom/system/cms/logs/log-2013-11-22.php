@@ -1,0 +1,35 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2013-11-22 02:54:40 --> Page Missing: servicios/estudios/getEstudios
+ERROR - 2013-11-22 02:55:15 --> Page Missing: servicios/estudios/getEstudios
+ERROR - 2013-11-22 03:46:42 --> Page Missing: robots.txt
+ERROR - 2013-11-22 04:24:03 --> Page Missing: conocenos.htm
+ERROR - 2013-11-22 05:17:02 --> Page Missing: robots.txt
+ERROR - 2013-11-22 06:07:45 --> Page Missing: admin.php
+ERROR - 2013-11-22 06:07:48 --> Page Missing: administrator/index.php
+ERROR - 2013-11-22 09:01:31 --> Page Missing: photos/1.jpg
+ERROR - 2013-11-22 09:02:38 --> Page Missing: photos/2.jpg
+ERROR - 2013-11-22 09:13:12 --> Page Missing: robots.txt
+ERROR - 2013-11-22 09:15:30 --> Page Missing: compromisos
+ERROR - 2013-11-22 09:27:33 --> Page Missing: home.htm
+ERROR - 2013-11-22 09:42:22 --> Page Missing: servicios/estudios/getEstudios
+ERROR - 2013-11-22 09:42:39 --> Page Missing: servicios/favicon.ico
+ERROR - 2013-11-22 10:45:47 --> Page Missing: compromisos
+ERROR - 2013-11-22 12:00:01 --> Page Missing: files/large
+ERROR - 2013-11-22 12:03:01 --> Page Missing: servicios/estudios/getEstudios
+ERROR - 2013-11-22 12:03:08 --> Page Missing: servicios/favicon.ico
+ERROR - 2013-11-22 12:13:41 --> Page Missing: servicios/estudios/getEstudios
+ERROR - 2013-11-22 12:13:42 --> Page Missing: servicios/favicon.ico
+ERROR - 2013-11-22 15:24:24 --> Page Missing: robots.txt
+ERROR - 2013-11-22 15:31:28 --> Page Missing: robots.txt
+ERROR - 2013-11-22 15:35:05 --> Page Missing: servicios/estudios/getEstudios
+ERROR - 2013-11-22 15:35:08 --> Page Missing: servicios/favicon.ico
+ERROR - 2013-11-22 15:47:38 --> Page Missing: robots.txt
+ERROR - 2013-11-22 16:54:20 --> Page Missing: robots.txt
+ERROR - 2013-11-22 16:58:35 --> Page Missing: robots.txt
+ERROR - 2013-11-22 17:19:20 --> Page Missing: robots.txt
+ERROR - 2013-11-22 19:33:39 --> Page Missing: robots.txt
+ERROR - 2013-11-22 21:06:13 --> Page Missing: serviciosempresas.htm
+ERROR - 2013-11-22 21:18:46 --> Page Missing: servicios/estudios/getEstudios
+ERROR - 2013-11-22 22:27:51 --> Page Missing: robots.txt
+ERROR - 2013-11-22 23:20:10 --> Page Missing: robots.txt

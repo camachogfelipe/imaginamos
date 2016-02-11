@@ -1,0 +1,212 @@
+/* Acumulado de Baloto*/
+#block-baloto-acumulado-block-acumulado {
+  margin-top: 5px;
+}
+#block-baloto-acumulado-block-acumulado #t-acumulado{
+  width: 715px;
+  height: 245px;
+  background: URL('../imagenes/tablero.png') no-repeat center center;
+  margin: auto;
+  position: relative;
+}
+#block-baloto-acumulado-block-acumulado #t-acumulado #t-mascaranum {
+  background: URL('../imagenes/sobre.png') no-repeat center center;
+  width: 686px;
+  height: 172px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+#block-baloto-acumulado-block-acumulado #t-acumulado #t-sorteo-valor {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  width: 690px;
+  left: 13px;
+  text-align: center;
+  /*font-size: 750%;*/
+  font-size: 960%;
+  font-weight: normal;
+  color: #FFF200;
+  letter-spacing: -20px;
+  /*font-family: 'CodenameCoderFree4F-Bold';*/
+  font-family: 'AstronautIIRegular';
+  -moz-opacity: 0.80;
+  opacity: 0.80;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=80);
+}
+
+.display-inline-block.number-baloto {
+  /*width: 640px;*/
+  height: 114px;
+  text-align: center;
+  /*letter-spacing: -6px;*/
+  position: relative;
+  bottom: 22px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  line-height: 85%;
+}
+
+#value-baloto-acumulado .format-acumulado.display-inline-block #symbol-baloto-acumulado{
+  position: relative;
+  bottom: 12px;
+  display: inline-block;
+  width: 75px;
+}
+.display-inline-block {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  /*float: left;*/
+}
+#t-sorteo-info {
+  text-align: center;
+  font-size: 130%;
+  color: #FFF;
+  margin-top: 5px;
+}
+#t-sorteo-info span {
+  color: #8eb6d5;
+}
+/* REVANCHA */
+#t-revancha-logo {
+  margin: 0px auto;
+  width: 325px;
+  position: relative;
+  top: 0px;
+  z-index: 500;
+  display: none;
+}
+/* TABLEROS DOBLE */
+#t-tablero-doble {
+  margin-top: 50px;
+  display: none;  
+  position: relative;
+}
+#tablero-baloto-acumulado {
+  width: 454px;
+  height: 345px;
+  float:left;
+  margin-right: 92px;
+  position: relative;
+}
+#tablero-baloto-revancha {
+  width: 454px;
+  height: 345px;
+  float:left;
+  position: relative;
+}
+
+#tablero-baloto-revancha .wrapper-cifras{
+  left: -2px;
+}
+#tablero-baloto-revancha .wrapper-cifras .cifra {
+  margin-right: 12px;
+}
+
+#tablero-baloto-revancha .wrapper-cifras .cifra.cifra-5 {
+  margin-right: 10px;
+}
+#tablero-baloto-revancha .wrapper-cifras .cifra.cifra-6 {
+  margin-right: 0px;
+}
+
+#wrapper-tableros {
+  position: absolute;
+}
+#wrapper-tableros {}
+#wrapper-tableros .acumulado {
+  width: 454px;
+  height: 50px;  
+  position: absolute;
+  top: 119px;
+  left: 0px;
+  text-align: center;
+} 
+#wrapper-tableros .acumulado span{
+  font-size: 460%;
+  font-weight: normal;
+  color: #FFF200;
+  letter-spacing: 0px;
+  font-family: 'AstronautIIRegular';
+  -moz-opacity: 0.80;
+  opacity: 0.80;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha"(Opacity=80);
+  line-height: 65%;
+}
+
+#wrapper-tableros .wrapper-cifras {
+  width: 458px;
+  height: 60px;  
+  top: 237px;
+  left: 0px;
+  position: relative;
+}
+#wrapper-tableros .cifra {
+  width: 66px;
+  height: 60px;
+  float: left;
+  margin-right: 12px;
+  color: #3A351F;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 66px;
+  text-shadow: -2px 0px 1px black;
+  text-align: center;
+}
+#wrapper-tableros .cifra-6 {  
+  margin-right: 0px;
+}
+#wrapper-tableros .cifra-5 {  
+  margin-right: 10px;
+}
+
+/* BACKGROUNDS*/
+#page-bkg-revancha {
+  width: 100%;
+  height: 672px;
+  position: absolute;
+  background: top center no-repeat;
+  display: none;
+  top: 0px;
+  left: 0px;
+}
+#page-bkg-dobles {
+  width: 100%;
+  height: 672px;
+  position: absolute;
+  background: top center no-repeat;
+  display: none;
+  top: 0px;
+  left: 0px;  
+}
+/*#page-bkg-normal {
+  width: 100%;
+  height: 672px;
+  position: absolute;
+  background: url(../imagenes/bkg-normal.png) top center no-repeat;
+  display: block;
+  top: 0px;
+  left: 0px;
+}*/
+
+#top {
+  position: relative;
+  z-index: 600;
+}
+
+.t-sorteo-info {
+  font-size: 115%;
+  color: white;
+  margin-top: 30px;
+  position: absolute;
+  top: 360px;
+  left: 0px;
+  text-align: center;
+  width: 1000px;
+}
+.t-sorteo-info span {
+  color: #8eb6d5;
+}

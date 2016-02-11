@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <title><?php echo $_['ADMIN_SITE_TITLE']; ?></title>
+  <meta name="description" content="" />
+  
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<script src="js/cufon-yui.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="views/stylesheet/stylesheet.css" />
+	<script language="JavaScript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script src="js/AgencyFB_700.font.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			Cufon.replace('#topmenu a');
+			Cufon.replace('#logout_form,#ban_form,.head_talk');
+			
+	        function createUploader(){            
+	            var uploader = new qq.FileUploader({
+	                element: document.getElementById('file-uploader-demo1'),
+	                action: 'index.php?page=upload',
+	                debug: true
+	            });           
+	        }
+	        
+	        // in your app create uploader as soon as the DOM is ready
+	        // don't wait for the window to load  
+	        window.onload = createUploader; 			
+
+			</script>
+<link href="views/stylesheet/fileuploader.css" rel="stylesheet" type="text/css">	
+<script type="text/javascript" src="js/custom.js"></script>
+<script src="js/fileuploader.js" type="text/javascript"></script> 
+
+</head>
+
+<body>
+
+<?php include 'views/template/header.html'; ?>
+
+<div id="login_form"><div class="talking_area"><div class="head_talk"><?php echo $_['ADMIN_NOW_TALKING']; ?> "<span id="talking_to"><?php echo $first_nick; ?></span>"</div><div id="messages"></div></div>
+
+<div class="visitors"><div class="head_talk"><?php echo $_['ADMIN_VISITORS']; ?></div><div id="users_online"></div></div>
+
+<div class="message"><textarea id="message"></textarea>
+<a href="#" class="smiley_button" id="smiley_button"></a>
+<div id="file-uploader-demo1">		
+		<noscript>			
+			<p>Please enable JavaScript to use file uploader.</p>
+		</noscript>         
+</div>
+    
+    
+<input type="hidden" id="to_user" value="<?php echo $first_user; ?>">
+</div>
+</div>
+<div id="ban_form"><input type="hidden" id="ban_user" /><p><center><?php echo $_['ADMIN_REALLY_BAN']; ?></center></p><a class="l1" id="button_ban" href="#"><?php echo $_['ADMIN_BAN']; ?></a><a class="l2 cancel" id="cancel_ban" href="#"><?php echo $_['ADMIN_CANCEL']; ?></a><div class="c"></div></div>
+
+
+<div class="c"></div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de Digiware. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>ramiro4</span><br/>~2011-02-14 22:23:10
+<span class='usuario'>ramiro4</span><br/>sadasd~2011-02-14 22:23:13
+<span class='admin'>Agente</span><br/>alo ~2011-02-14 22:23:25
+<span class='usuario'>ramiro4</span><br/>~2011-02-14 22:23:33
+<span class='usuario'>ramiro4</span><br/>alert(\'hola mundo\')~2011-02-14 22:23:55
+<span class='admin'>Agente</span><br/>alo ~2011-02-14 22:24:21
+<span class='usuario'>ramiro4</span><br/>viste que asi se puede saturar el servidor ~2011-02-14 22:24:29
+<span class='usuario'>ramiro4</span><br/>abren 200 ventanmas cambiando un user sencillamente... ~2011-02-14 22:24:41
+<span class='admin'>Agente</span><br/>sip ~2011-02-14 22:24:50
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

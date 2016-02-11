@@ -1,0 +1,4 @@
+name = Sorteos anteriores
+description = Bloque para filtrar los resultados anteriores
+core = 7.x
+package = Baloto

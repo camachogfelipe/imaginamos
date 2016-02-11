@@ -1,0 +1,6 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>1001315010</span><br/>Holss ~2012-09-05 12:10:04
+<span class='usuario'>1001315010</span><br/>oy a viajar con un grupo de 12 personas de Cali a una playa del Pacifico ~2012-09-05 12:10:22
+<span class='usuario'>1001315010</span><br/>Como abtengo el seguro de ellos? ~2012-09-05 12:10:33
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

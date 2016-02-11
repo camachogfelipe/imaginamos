@@ -1,0 +1,178 @@
+<div class="footer">
+    <img src="{{ theme:image_url file='curva_footer.png'}}" class="curva_footer" />
+    <div class="content_940 content_footer">
+        
+        
+        <div class="con-chat">
+          <a id="chat" class="btn_chat" href="#">
+             <script id="chat-template" type="text/x-handlebars-template">
+            {{ noparse }}
+              {{#each chat}}
+                <img src="{{ url:base }}uploads/default/files/{{cimage}}" height="75" width="75" alt=""/>
+              {{/each}}
+            {{ /noparse }}
+          </script>
+          </a>
+        	<div class="con-talk">
+          	<div class="talk"></div>
+          </div>
+        </div>
+        
+        
+        <div class="clearfix">
+            <div class="left_footer1 left">
+                <h3>Información de Contacto</h3>
+                <ul>
+                    <li class="footer_dir footer-b"><a class="modal-map" href="javascript:abrirMapa();"><span></span><label id="dire">Calle 12 No. 34 - 56 of. 789</label></a></li>
+                    <li class="footer_dir footer-b"><span></span><label id="barrio">Barrio London Country</label></li>
+                    <li class="footer_dir footer-b"><span></span><label id="ciudad">Bogotá - Colombia</label></li>
+                    <li class="footer_tel footer-b"><span></span><label id="tel">Telefóno: + 57 01 23456789</label></li>
+                    <li class="footer_cel footer-b"><span></span><label id="cel">Mobile: + 57 316 3597001</label></li>
+                    <li class="footer_mail footer-b"><span></span><label id="email">info@adom.com</label></li>
+                </ul>
+            </div>
+            <div class="left_footer1 left">
+                <h3>Acerca de Nosotros</h3>
+                <ul>
+                    <li class="footer_a"><span></span><a href="{{url:site}}quienes">Conócenos</a></li>
+                    <li class="footer_a"><span></span><a href="{{url:site}}services">Servicios</a></li>
+                    <li class="footer_a"><span></span><a href="{{url:site}}services_us">Productos empresariales</a></li>
+                </ul>
+            </div>
+            <div class="left_footer1 left">
+                <h3>Mapa de Sitio</h3>
+                <ul>
+                    <li class="footer_a"><span></span><a href="{{url:site}}faq">Preguntas Frecuentes</a></li>
+                    <li class="footer_a"><span></span><a href="{{url:site}}trabaja">Trabaja con Nosotros</a></li>
+                    <li class="footer_a"><span></span><a href="{{url:site}}novedades">Novedades </a></li>
+                    <li class="footer_a"><span></span><a href="{{url:site}}english">English</a></li>
+                    <li class="footer_a"><span></span><a href="{{url:site}}clientes">Clientes y Convenios</a></li>
+                    <li class="footer_a"><span></span> <a href="{{url:site}}contact">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="left_footer1 right">
+                <h3>Estamos Certificados</h3>
+                <img src="{{ theme:image_url file='logos_cert.png'}}" class="logos_footer" />
+                <div class="linea_footer"></div>
+                <img src="{{ theme:image_url file='logo_vigilado.png'}}" class="logos_footer" />
+            </div>
+        </div>
+        <div class="linea_footer" style="margin:20px auto 0 auto;"></div>
+        <div class="clearfix">
+            <h6 class="left">© 2013 ADOM- Todos los derechos reservados - Prohibida su reproducción parcial o total </h6>
+            <div class="footer_ahorranito right"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="popup_mapa popup1">
+  <div class="bg_popup"></div>
+  <div class="content_popup1">
+    <a href="javascript:cerrarMapa();" class="btn_cerrar"></a>
+    <div class="contenido_popup">
+      <h2 class="bold">Mapa de Ubicación</h2>
+      <div class="con-map">
+      	<iframe width="536" height="341" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/ms?msa=0&amp;msid=210883790538219805436.0004c764be959f251354c&amp;hl=es-419&amp;ie=UTF8&amp;t=m&amp;ll=4.598006,-74.076025&amp;spn=0.003743,0.005901&amp;z=17&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+{{ theme:js file="jquery.js" }}
+{{ theme:js file="jquery.sudoSlider.js" }}
+{{ theme:js file="jquery.mousewheel.js" }}
+{{ theme:js file="jquery.jscrollpane.min.js" }}
+{{ theme:js file="functions.js" }}
+{{ theme:js file="jquery.validationEngine.js" }}
+{{ theme:js file="jquery.validationEngine-es.js" }}
+
+
+{{ theme:js file="jquery.ketchup.js" }} 
+{{ theme:js file="jquery.ketchup.validations.js" }} 
+{{ theme:js file="jquery.ketchup.helpers.js" }} 
+{{ theme:js file="scaffold.js" }} 
+<script>
+    $('#validation-events').ketchup({
+        validateEvents: 'dblclick'
+    });
+
+    /*if you set the fields to validate in the call
+     you  simply pass  in a array as value.  First
+     argument is  the validations string  and  the
+     second is the events string. Like so:
+                     
+     $('#validation-events').ketchup({}, {
+     '#ve-username': ['required, minlength(3)', 'keyup focus']
+     });*/
+</script>
+
+<script type="text/javascript">var switchTo5x = false;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "f1474aa5-e1ee-44df-b21e-9863411e5230", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script type="text/javascript" src="http://www.imaginamos.com/footer_ahorranito/jquery.ahorranito.js"></script>
+
+<script>
+    // Get datos de contacto
+    $.ajax({
+        url: SITE_URL + 'contact_data',
+        type: 'post',
+        dataType: 'json',
+        data: {
+        },
+        success: function(data) {
+            $('#dire').html(data[0].direccion);
+            $('#barrio').html(data[0].barrio);
+            $('#ciudad').html(data[0].ciudad);
+            $('#tel').html(data[0].telefono);
+            $('#cel').html(data[0].tel_cel);
+						//var tmpemail = data[0].correo.split("@");
+						//var email = tmpemail[0]+"<br>@"+tmpemail[1];
+            $('#email').html(data[0].correo);
+        }
+    });
+    
+     var chat_source   = $("#chat-template").html();
+    var chat_template = Handlebars.compile(chat_source);
+    $.ajax({
+        url : SITE_URL + 'aislados/getAislados',
+        type: 'post',
+        dataType : 'json',
+        data: {
+          
+        },
+        success: function (data) {
+            var html    = chat_template({
+                chat : data
+            });
+            $('#chat').html(html);
+        }
+    });
+
+    // Get datos de contacto
+    $.ajax({
+        url: SITE_URL + 'contact_data/getRedes',
+        type: 'post',
+        dataType: 'json',
+        data: {
+        },
+        success: function(data) {
+            $('.btn_fb').attr('href',data[0].link_red);
+            $('.btn_yt').attr('href',data[1].link_red);
+            $('.btn_in').attr('href',data[2].link_red);
+        }
+    });
+
+</script>
+<script src="{{ url:site }}chat/views/javascript/visitorchat.js" type="text/javascript"></script>

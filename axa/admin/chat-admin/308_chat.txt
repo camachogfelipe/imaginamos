@@ -1,0 +1,5 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea del Juego ganador. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Usuario6922</span><br/>kljhgf ~2012-05-07 08:20:48
+<span class='admin'>Agente</span><br/>.mbvc ~2012-05-07 08:21:58
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

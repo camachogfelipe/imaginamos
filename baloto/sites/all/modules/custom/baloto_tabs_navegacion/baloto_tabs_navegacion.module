@@ -1,0 +1,68 @@
+<?php
+/**
+ * @file
+ * Modulo generar navegacion en las pestañas de quicktabs
+ *
+ * Autor information: Yesid Camilo Ortiz Castillo
+ * email: yeskmilo@gmail.com
+ */
+
+function baloto_tabs_navegacion_block_view_alter (&$data, $block) {
+	drupal_add_js(drupal_get_path('module', 'baloto_tabs_navegacion') . '/js/baloto_tabs_navegacion.js', array('group' => JS_DEFAULT, 'every_page' => FALSE));
+	drupal_add_css(drupal_get_path('module', 'baloto_tabs_navegacion') . '/css/baloto_tabs_navegacion.css', array('group' => CSS_DEFAULT, 'every_page' => FALSE));
+	if($block->module ==  "quicktabs" && $block->delta="navegacion_internas_baloto"){
+		$pestañas =$data['content']['content']['tabs']['tablinks'];
+		foreach($pestañas as $key){
+			if($key['#title'] == '¿Qué es Baloto?'){
+				$items['items'] = array(
+					l('', ''),
+					l('', ''),
+				);
+				$div_navegacion = theme('item_list', $items);
+				if (isset($data['content']['content']['container']['divs'][4])) {
+					$div_tab = $data['content']['content']['container']['divs'][4]['#suffix'];
+					$data['content']['content']['container']['divs'][4]['#suffix']=$div_navegacion.$div_tab;
+				}
+			}
+		}
+	}
+	if(isset($data['subject'])){
+		if($data['subject'] == 'Navegacion Internas Baloto'){
+			$div_arriba = $data['content']['content']['container']['divs'];
+			//Creacion del elemento de vanegacion superior de los elementos del menu
+			/*$items_arriba['items'] = array(
+                          l('', ''),
+			);
+			$div_navega_opcion_arriba = theme('item_list', array('items' => $items_arriba , 'attributes' => array('class' => array('s-arriba'))));*/
+			//Creacion de elemento indicador de la parte superior
+			/*$div_navega_indica_arriba = theme('html_tag', array(
+				'element' => array('#tag' => 'div',
+				'#attributes' => array('class' => 'p-indica-arriba',),
+				'#value' => 'Indica Arriba',),));
+			//Creacion de elemento indicador de la parte media
+			$div_navega_indica_medio = theme('html_tag', array(
+				'element' => array('#tag' => 'div',
+				'#attributes' => array('class' => 'p-indica-medio',),
+				'#value' => 'Indica Medio',),));
+			//Creacion de elemento indicador de la parte inferior
+			$div_navega_indica_abajo = theme('html_tag', array(
+				'element' => array('#tag' => 'div',
+				'#attributes' => array('class' => 'p-indica-abajo',),
+				'#value' => 'Indica Abajo',),));*/
+			//Insercion de los elementos creados
+      $arriba = array('#prefix'=>'<div class="s-arriba">','#suffix' => '</div>');
+      $centro = array('#prefix'=>'<div class="s-centro">','#suffix' => '</div>');
+      $abajo = array('#prefix'=>'<div class="s-abajo">','#suffix' => '</div>');
+      $top = array('#prefix'=>'<div class="s-top">','#suffix' => '</div>');
+      array_push($div_arriba,$arriba,$centro,$abajo,$top);
+			$data['content']['content']['container']['divs'] = $div_arriba;
+			//Creacion del elemento de navegacion inferior
+			/*$div_abajo =$data['content']['content']['container']['#suffix'];
+			$items_abajo['items'] = array(
+				l('', ''),
+			);
+			$div_navega_opcion_abajo = theme('item_list', array('items' => $items_abajo , 'attributes' => array('class' => array('s-abajo'))));
+			$data['content']['content']['container']['#suffix']=$div_navega_opcion_abajo.$div_abajo;*/
+		}
+	}
+}

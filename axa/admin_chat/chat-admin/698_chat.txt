@@ -1,0 +1,12 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>80888685</span><br/>buenas tardes ~2012-08-28 14:52:09
+<span class='usuario'>80888685</span><br/>quisiera saber cuanto vale un seguro para viajar a europa ~2012-08-28 14:52:30
+<span class='usuario'>80888685</span><br/> alguien me puee ayudar?~2012-08-28 15:01:32
+<span class='admin'>Agente</span><br/>Por supuesto con mucho gusto. (DAT)~2012-08-28 15:02:13
+<span class='admin'>Agente</span><br/>Me podr&iacute;a indicar si es tan amable &iquest;Por cu&aacute;nto tiempo viaja?. (DAT)~2012-08-28 15:03:04
+<span class='usuario'>80888685</span><br/>hola, con quien hablo ~2012-08-28 15:03:27
+<span class='admin'>Agente</span><br/>Muy buenas Tardes, Mi nombre es Daniela Ahumada. &iquest;Con q&uacute;i&eacute;n tengo el gusto?~2012-08-28 15:03:58
+<span class='usuario'>80888685</span><br/>hola daniela, quiero pedirles que esten muy pendientes de este medio, la proxima vez puede ser un potencial cliente. att CEE. Gracias ~2012-08-28 15:05:59
+<span class='admin'>Agente</span><br/>Entendido Sr. Espinosa, as&iacute; sera.~2012-08-28 15:06:58
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

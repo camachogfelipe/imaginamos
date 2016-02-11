@@ -1,0 +1,24 @@
+.scroll-content {position:absolute;top:0;left:0}
+.slider-wrap{position:absolute;right:0;top:0;background-color:lightgrey;width:20px;border-left:0px solid gray;}
+.slider-vertical{position:relative;height:100%}
+.ui-slider-handle{
+	width:20px;
+	height:10px;
+	margin:0 auto;
+	display:block;
+	position:absolute;
+	background-image: url(../images/btscroll.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.ui-slider-handle img{border:none}
+.scrollbar-top{position:absolute;top:0;}
+.scrollbar-bottom{position:absolute;bottom:0;}
+.scrollbar-grip{position:absolute;top:50%;margin-top:-6px;}
+.ui-slider-range{
+	position:absolute;
+	width:100%;
+	background-image: url(../images/barragris.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}

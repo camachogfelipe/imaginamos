@@ -1,0 +1,66 @@
+<?php
+/**
+ * @file
+ * Modulo para generar las graficas
+ *
+ * Autor information: David Carvajal
+ * email: davidgcarvajal@gmail.com
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function baloto_consulta_numeros_menu() {
+  $items = array();
+  $items['consulta_numeros'] = array(
+    'title' => t('Consulta números'),
+    'description' => t('Modulo con la descripción del bloque de consulta numeros'),
+    'page callback' => '_baloto_consulta_numeros_block',
+    'access arguments' => array('access content'),
+    'access callback' => TRUE,
+  );
+  return $items;
+}
+
+function _baloto_consulta_numeros_block(){
+  $busqueda_sorteos = drupal_get_form('_baloto_consulta_numeros_buscador_form');
+  $formulario_render = render($busqueda_sorteos);
+  return $formulario_render;
+}
+
+/**
+* Implentation of hook_block_info
+**/
+
+function baloto_consulta_numeros_block_info() {
+  $blocks['block_baloto_search_numeros'] = array(
+    'info' => t('Bloque consulta numeros'),
+    'cache' => DRUPAL_CACHE_PER_PAGE,
+  );
+  return $blocks;
+}
+
+/**
+* Implentation of hook_block_view
+**/
+
+function baloto_consulta_numeros_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'block_baloto_search_numeros':
+      $block['subject'] = t('consulta numeros de sorteos efectuados');
+      $block['content'] = _baloto_consulta_numeros_block();
+      break;
+  }
+}
+
+function _baloto_consulta_numeros_buscador_form($form, &$form_state) {
+  $form['seleccion_sorteo'] = array(
+    '#type' => 'select',
+    '#options' => array(
+      0 => t('Sin funcionamiento'),
+    ),
+    '#validated' => TRUE,
+  );
+  return $form;
+}

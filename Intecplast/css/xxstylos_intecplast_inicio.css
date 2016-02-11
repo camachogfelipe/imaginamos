@@ -1,0 +1,5211 @@
+@import url("stylos_intecplast.css");
+
+/* CSS Document */
+
+
+
+body {
+
+	margin-left: 0px;
+
+	margin-top: 0px;
+
+	margin-right: 0px;
+
+	margin-bottom: 0px;
+
+	background-image: url(../images/fondohome.png);
+
+	background-repeat: repeat-x;
+
+	background-position: top;
+
+}
+
+
+
+#covfootintecplast {
+
+	width:100%;
+
+	height:376px;
+
+	background-image: url(../images/bgbottomwarap.png);
+
+	background-repeat: no-repeat;
+
+	background-position: center top;
+
+}
+
+
+
+
+
+html {
+
+height:100%;
+
+overflow:auto;
+
+bottom:0px;
+
+}
+
+
+
+#sepclear {
+
+clear:both;
+
+height:1%;
+
+}
+
+
+
+#sepclear2 {
+
+clear:both;
+
+height:50px;
+
+}
+
+
+
+#sepclear3 {
+
+clear:both;
+
+height:21px;
+
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------HEADER INTECPLAST----------------------------------*/
+
+
+
+
+
+#wrapintecplast {
+
+	width:100%;
+
+	height:100%;
+
+	background-image: url(../images/bgbottomwarap.png);
+
+	background-repeat: no-repeat;
+
+	background-position: center bottom;
+
+}
+
+
+
+
+
+#wrapcontentintecplast {
+
+position:relative;
+
+margin:auto;
+
+width:965px;
+
+height:100%;
+
+}
+
+
+
+
+
+
+
+#cajonheaderintec {
+
+position:relative;
+
+margin:auto;
+
+width:965px;
+
+height:100%;
+
+}
+
+
+
+
+
+#topheader {
+
+width:965px;
+
+height:99px;
+
+}
+
+
+
+#logointecplast {
+
+width:370px;
+
+height:99px;
+
+float:left;
+
+}
+
+
+
+
+
+#columtophead {
+
+font-weight:normal;
+width:440px;
+
+height:99px;
+
+float:right;
+
+
+
+}
+.sliderkit-nav-clip {
+	float:left;
+}
+
+
+
+
+
+
+#bt_inil {
+
+float:right;
+
+	height:37px;
+
+	padding-top:8px;
+
+}
+
+
+
+#bt_inil a {
+
+	font-size: 13px;
+
+	color: #1d1b19;
+
+	padding-left:10px;
+
+	padding-right:10px;
+
+	padding-top:8px;
+
+	font-family: DINMedium;
+
+	padding-bottom:10px;
+
+	background-image: url(../images/linesepmenutop.png);
+
+	background-repeat: no-repeat;
+
+	background-position: right center;
+
+	text-decoration:none;
+
+	}
+
+
+
+#bt_inil a:hover {
+
+	font-family: DINMedium;
+
+	font-size: 13px;
+
+	color: #23A0DE;
+
+	padding-left:10px;
+
+	padding-right:10px;
+
+	padding-top:8px;
+
+	padding-bottom:10px;
+
+	background-image: url(../images/linesepmenutop.png);
+
+	background-repeat: no-repeat;
+
+	background-position: right center;
+
+	text-decoration:none;
+
+	}	
+
+	
+
+
+
+
+
+
+
+
+
+#envmenutop {
+
+width:400px;
+
+height:55px;
+
+float:right;
+
+margin-top:43px;
+
+}
+
+
+
+
+
+#envsearch2 {
+
+width:176px;
+
+height:26px;
+
+float:right;
+
+margin-top:14px;
+
+margin-right:16px;
+
+}
+
+
+
+#camp2search {
+
+	background-image: url(../images/camp2.png);
+
+	background-repeat: no-repeat;
+
+	height:26px;
+	line-height:26px;
+
+	width:143px;
+
+}
+
+
+
+#btlupa {
+
+width:30px;
+
+height:26px;
+
+float:right;
+
+}
+
+
+
+.transparente2 {
+
+	background-color: transparent;
+
+	border: 0px solid #0E3A6B;
+
+	height: 26px;
+
+	width:143px;
+
+	 font-family: DINMedium;
+
+	font-size: 12px;
+
+	color: #D4DCE5;
+
+	padding-top: 0px;
+
+	padding-right: 0px;
+
+	padding-bottom: 0px;
+
+	padding-left: 3px;
+
+}
+
+
+
+
+
+
+
+/*---------------------------------MENU PRINCIPAL INTECPLAST----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bgbar {
+
+	width:965px;
+
+	height:59px;
+
+	background-image: url(../images/bg_barmenu.png);
+
+	background-repeat: no-repeat;
+
+	background-position: center top;
+
+}
+
+
+
+
+
+#envbarintecplast {
+
+width:965px;
+
+height:59px;
+
+margin:auto;
+
+
+
+background-image: url(../images/bg_barmenu.png);
+
+	background-repeat: no-repeat;
+
+}
+
+
+
+
+
+#envmenu {
+
+	width:751px;
+
+	height:59px;
+
+	float:left;
+
+}
+
+
+
+
+
+
+
+
+
+#bt_bar  {
+
+float:left;
+overflow:hidden;
+margin: 0;
+
+padding: 0;
+
+width: 137px;
+
+height: 55px;
+
+text-align: center;
+
+background: url("../images/overmenu.png") 0 0 no-repeat;
+
+
+
+} 
+
+#bt_bar  a {
+
+padding-top: 20px;
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+overflow: hidden;
+
+ font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+text-decoration: none;
+
+background: url("../images/overmenu.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_bar  a:hover {
+
+ font-family: DINMedium;
+
+background-position: -137px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+#bt_bar  a:active {
+
+ font-family: DINMedium;
+
+background-position: -274px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bt_barint  {
+
+float:left;
+
+margin: 0;
+
+padding: 0;
+
+width: 110px;
+
+height: 55px;
+
+text-align: center;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_barint  a {
+
+padding-top: 18px;
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+overflow: hidden;
+
+ font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+text-decoration: none;
+
+
+
+letter-spacing: -1px;
+
+} 
+
+#bt_barint  a:hover {
+
+background: url("../images/overmenuint.png") 0 0 repeat-x;
+
+ font-family: DINMedium;
+
+background-position: -120px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+
+
+
+
+
+
+#bt_barint2  {
+
+float:left;
+
+margin: 0;
+
+padding: 0;
+
+width: 130px;
+
+height: 55px;
+
+text-align: center;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_barint2  a {
+
+padding-top: 12px;
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+overflow: hidden;
+
+ font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+text-decoration: none;
+
+
+
+letter-spacing: -1px;
+
+} 
+
+#bt_barint2  a:hover {
+
+background: url("../images/overmenuint.png") 0 0 repeat-x;
+
+ font-family: DINMedium;
+
+background-position: -120px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#bt_barint3  {
+
+float:right;
+
+margin: 0;
+
+padding: 0;
+
+width: 130px;
+
+height: 55px;
+
+text-align: center;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_barint3   a {
+
+padding-top: 12px;
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+overflow: hidden;
+
+ font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+text-decoration: none;
+
+
+
+letter-spacing: -1px;
+
+} 
+
+#bt_barint3   a:hover {
+
+background: url("../images/overmenuint.png") 0 0 repeat-x;
+
+ font-family: DINMedium;
+
+background-position: -120px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+
+
+
+
+
+
+
+
+#menuh {
+
+font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+height:55px;
+
+}
+
+#menuh ul, li {
+
+list-style-type: none;
+
+}
+
+#menuh ul {
+
+margin: 0;
+
+padding: 0;
+
+}
+
+#menuh li {
+
+float: left;
+
+}
+
+#menuh a {
+
+font-family: DINMedium;
+
+font-weight: bold;
+
+font-size: 12px;
+
+text-decoration: none;
+
+color: #ffffff;
+
+display: block;
+
+text-align: center;
+
+height:55px;
+
+padding-top: 12px;
+
+padding-right: 15px;
+
+padding-bottom: 3px;
+
+padding-left: 15px;
+
+}
+
+
+
+#menuh .primero {
+
+padding-top: 20px;
+
+
+
+
+
+      
+
+}
+
+#menuh a:hover {
+
+background: url("../images/overmenuint.png") 0 0 repeat-x;
+
+height:55px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content_idiomas{
+
+	position:absolute;
+
+	right:0;
+
+	top:10px;
+
+}
+
+.content_idiomas a{
+
+font-family: DINMedium;
+
+color:#000;
+
+text-decoration:none;
+
+}
+
+
+
+.content_idiomas a:hover{
+
+text-decoration:underline;
+
+}
+
+
+
+.btn_es{
+
+	float:left;
+
+	display:block;
+
+	background: url(../img/flag_es.png) no-repeat right;
+
+	margin-right:10px;
+
+	padding-right:19px;
+
+	font-size:12px;
+
+}
+
+
+
+.btn_en{
+
+	float:left;
+
+	display:block;
+
+	background: url(../img/flag_en.png) no-repeat right;
+
+	padding-right:19px;
+
+	font-size:12px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------FIN MENU PRINCIPAL INTECPLAST----------------------------------*/
+
+
+
+
+
+
+
+
+
+/*---------------------------------FIN HEADER INTECPLAST----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------BANNER INTECPLAST----------------------------------*/
+
+
+
+#envbanner {
+
+margin:auto;
+
+width:1024px;
+
+height:395px;
+
+background-image: url(../images/bgbanner.png);
+
+background-repeat: no-repeat;
+
+background-position: bottom;
+
+}
+
+
+
+
+
+#envsombra {
+
+margin:auto;
+
+width:965px;
+
+height:30px;
+
+}
+
+
+
+
+
+
+
+#titulolanzamientos {
+
+	width:915px;
+
+	height:30px;
+
+	 font-family: DINMedium;
+
+	font-weight: bold;
+
+	font-size: 22px;
+
+	text-decoration: none;
+
+	color: #464646;
+
+	text-align:left;
+
+	padding-left:50px;
+
+	background-image: url(../images/iconolanzamientos.png);
+
+	background-repeat: no-repeat;
+
+	background-position: left center;
+
+}
+
+
+
+
+
+#envthumbsinicio {
+
+	width:965px;
+
+	height:100%;
+
+	margin-top:15px;
+
+}
+
+
+
+#thumbinicio {
+
+width:308px;
+
+height:176px;
+
+float:left;
+
+margin-right:13px;
+
+
+
+}
+
+
+
+
+
+#thumbiniciocentral {
+
+width:308px;
+
+height:176px;
+
+float:left;
+
+margin-left:5px;
+
+
+
+
+
+}
+
+
+
+
+
+#thumbinicio2 {
+
+width:308px;
+
+height:176px;
+
+float:right;
+
+margin-right:5px;
+
+
+
+
+
+}
+
+
+
+#imgthumbinicio {
+
+	width:308px;
+
+	height:168px;
+
+	border: 1px solid #EDEDED;
+
+}
+
+
+
+
+
+#imglanzamiento {
+
+width:123px;
+
+height:168px;
+
+float:left;
+
+z-index:999;
+
+}
+
+
+
+#txtthumblanzamiento {
+
+width:168px;
+
+height:100%;
+
+float:right;
+
+font-family: Arial, Helvetica, sans-serif;
+
+font-weight: normal;
+
+font-size: 14px;
+
+text-decoration: none;
+
+color: #464646;
+
+text-align:left;
+
+margin-top:15px;
+
+z-index:999;
+
+}
+
+
+
+.titthumblanz {
+
+font-weight:bold;
+
+}
+
+
+
+
+
+#sombrathumblanzamiento {
+
+	width:308px;
+
+	height:8px;
+
+	background-image: url(../images/sombrathumbs.png);
+
+	background-repeat: no-repeat;
+
+}
+
+
+
+
+
+
+
+.over3 {
+
+	color:#333333;
+
+	font-size:12px;
+
+	font-family: 'TrebuchetMSRegular';
+
+	display:none;
+
+	z-index:1;
+
+	position: absolute;
+
+	padding-top:10px;
+
+	padding-left:10px;
+
+	width:120px;
+
+	text-decoration:none;	
+
+	padding-right:10px;	
+
+	text-align:justify;	
+
+	}
+
+
+
+#imgbann3 {
+
+	position:absolute;
+
+	width:123px;
+
+height:168px;
+
+	}
+
+#imgbann3:hover .over3 {
+
+	display:block;
+
+	width:141px;
+
+	height:178px;
+
+		background-image: url(../images/banner/overlay3.png);
+
+	background-repeat: no-repeat;
+
+	margin-top:Opx;
+
+	text-decoration:none;
+
+	color:#333333;
+
+	}
+
+#colizqrowbann {
+
+width:333px;
+
+height:178px;
+
+float:left;
+
+}
+
+
+
+#topizqrowbann {
+
+width:308px;
+
+height:168px;
+
+
+
+}
+
+
+
+/*#bt_sobre  {
+
+	position:absolute;
+
+	margin: 0;
+
+	padding: 0;
+
+	width: 100px;
+
+	height: 168px;
+
+	text-align: center;
+
+	background: url("../images/overlay2.png") 0 0 no-repeat;
+
+	letter-spacing: -1px;
+
+	margin-right:auto;
+
+	margin-left:auto;
+
+	z-index:1;
+
+	left: 330px;
+
+	top: -198px;
+
+
+
+} 
+
+
+
+#bt_sobre  a {
+
+	padding-top: 4px;
+
+	width: 100%;
+
+	height: 100%;
+
+	display: block;
+
+	overflow: hidden;
+
+	font-family: DINMedium;
+
+	color: #ffffff;
+
+	font-weight: bold;
+
+	font-size: 12px;
+
+	text-decoration: none;
+
+	background: url("../images/overlay2.png") 0 0 no-repeat;
+
+	letter-spacing: -1px;
+
+} 
+
+
+
+#bt_sobre  a:hover {
+
+	font-family: DINMedium;
+
+	background-position: -308px 0;
+
+	color: #ffffff;
+
+	font-weight: bold;
+
+	font-size: 12px;
+
+	letter-spacing: -1px;
+
+}
+
+
+
+#bt_sobre  a:active {
+
+	font-family: DINMedium;
+
+	background-position: -616px 0;
+
+	color: #ffffff;
+
+	font-weight: bold;
+
+	font-size: 12px;
+
+	letter-spacing: -1px;
+
+}
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+/*---------------------------------FIN BANNER INTECPLAST----------------------------------*/
+
+
+
+
+
+
+
+
+
+/*---------------------------------CONTENIDOS INTECPLAST----------------------------------*/
+
+
+
+
+
+#contenidosinicio {
+
+width:965px;
+
+height:100%;
+
+}
+
+
+
+
+
+#colcontinicio1 {
+
+width:452px;
+
+height:100%;
+
+float:left;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#envcolcontinicio2 {
+
+width:470px;
+
+height:100%;
+
+float:right;
+
+}
+
+
+
+#colcontinicio1 {
+
+width:470px;
+
+height:100%;
+
+
+
+}
+
+#colcontinicio2 {
+
+	width:470px;
+
+	height:332px;
+
+	background-image: url(../images/bgcajonnoticias.png);
+
+	background-repeat: no-repeat;
+
+	background-position: left;
+
+}
+
+
+
+#envofertames {
+
+width:452px;
+
+height:100%;
+
+}
+
+
+
+
+
+#titpuntosdeventa {
+
+width:401px;
+
+height:34px;
+
+background-image: url(../images/bgtituloventas.png);
+
+background-repeat: no-repeat;
+
+ font-family: DINMedium;
+
+color: #464646;
+
+font-weight: bold;
+
+font-size: 20px;
+
+letter-spacing: -1px;
+
+padding-left:51px;
+
+padding-top:10px;
+
+}
+
+
+
+
+
+#titpuntosdeventa a {
+
+ font-family: DINMedium;
+
+color: #464646;
+
+font-weight: bold;
+
+font-size: 20px;
+
+letter-spacing: -1px;
+
+text-decoration:none;
+
+}
+
+
+
+#titpuntosdeventa a:hover {
+
+ font-family: DINMedium;
+
+color: #3F8AC2;
+
+font-weight: bold;
+
+font-size: 20px;
+
+letter-spacing: -1px;
+
+text-decoration:none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contmodini {
+
+	width:452px;
+
+	height:100%;
+
+	background-image: url(../images/bgmoduloinicio.png);
+
+	background-repeat: repeat-y;
+
+}
+
+
+
+#footmodini {
+
+width:452px;
+
+height:20px;
+
+}
+
+
+
+
+
+
+
+
+
+#titofertames {
+
+width:401px;
+
+height:34px;
+
+background-image: url(../images/bgtituloofertas.png);
+
+background-repeat: no-repeat;
+
+ font-family: DINMedium;
+
+color: #464646;
+
+font-weight: bold;
+
+font-size: 20px;
+
+letter-spacing: -1px;
+
+padding-left:51px;
+
+padding-top:10px;
+
+}
+
+
+
+
+
+#titofertames a {
+
+ font-family: DINMedium;
+
+color: #464646;
+
+font-weight: bold;
+
+font-size: 20px;
+
+letter-spacing: -1px;
+
+text-decoration:none;
+
+}
+
+
+
+#titofertames a:hover {
+
+ font-family: DINMedium;
+
+color: #3F8AC2;
+
+font-weight: bold;
+
+font-size: 20px;
+
+letter-spacing: -1px;
+
+text-decoration:none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#subtit1 {
+
+width:965px;
+
+height:59px;
+
+ font-family: DINMedium;
+
+font-weight: bold;
+
+font-size: 14px;
+
+text-decoration: none;
+
+color: #3F88C1;
+
+text-align:left;
+
+padding-top:21px;
+
+}
+
+
+
+
+
+#subtit2 {
+
+	width:965px;
+
+	height:59px;
+
+	 font-family: DINMedium;
+
+	font-weight: bold;
+
+	font-size: 28px;
+
+	text-decoration: none;
+
+	color: #3F88C1;
+
+	text-align:left;
+
+	letter-spacing: -2px;
+
+}
+
+
+
+#barratit {
+
+	
+
+	width:965px;
+
+	height:47px;
+
+	background-image: url(../images/barrtitulo.png);
+
+	background-repeat: no-repeat;
+
+
+
+	}
+
+	
+
+	#barratit h1 {
+
+	padding-top:10px;
+
+	 font-family: DINMedium;
+
+	font-weight: bold;
+
+	font-size: 18px;
+
+	color: #ffffff;
+
+	text-align:center;
+
+	letter-spacing: -1px;
+
+	}
+
+	
+
+	
+
+	
+
+	#bgcontpasos {
+
+	width:965px;
+
+	height:100%;
+
+	background-image: url(../images/bgcontpasos.png);
+
+	background-repeat: repeat-y;
+
+	padding-top:26px;
+
+	}
+
+	
+
+	
+
+		#bgcontcat3 {
+
+	width:965px;
+
+	height:100%;
+
+	
+
+	padding-top:26px;
+
+	}
+
+	
+
+	#envpaso1 {
+
+	width:146px;
+
+	height:100%;
+
+	float:left;
+
+	margin-left:83px;	
+
+	}
+
+	
+
+	
+
+	#envpaso2 {
+
+	width:146px;
+
+	height:100%;
+
+	float:left;
+
+	
+
+	}
+
+	
+
+	#paso1 {
+
+	width:146px;
+
+	height:141px;		
+
+	}
+
+	
+
+	
+
+	#paso2 {
+
+	width:146px;
+
+	height:141px;		
+
+	}
+
+	
+
+	#textospasos {
+
+	width:146px;
+
+	height:100%;
+
+	 font-family: DINMedium;
+
+	font-weight: normal;
+
+	font-size: 14px;
+
+	color: #555555;
+
+	text-align:center;
+
+	}
+
+	
+
+	#textospasos h1 {
+
+	width:146px;
+
+	height:100%;
+
+	 font-family: DINMedium;
+
+	font-weight: bold;
+
+	font-size: 18px;
+
+	color: #555555;	
+
+	text-align:center;
+
+	}
+
+	
+
+		
+
+		#flecha {
+
+	width:181px;
+
+	height:141px;
+
+	float:left;
+
+	background-image: url(../images/flecha.png);
+
+	background-repeat: no-repeat;
+
+		}
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+	#piepasos {
+
+	width:965px;
+
+	height:12px;
+
+	}
+
+	
+
+	
+
+	#sepdotted {
+
+	width:965px;
+
+	height:40px;	
+
+	}
+
+	
+
+		
+
+	#sepdottedhome {
+
+	width:965px;
+
+	height:47px;
+
+		
+
+	}
+
+	
+
+	#seplineaficha {
+
+	width:288px;
+
+	height:24px;	
+
+	}
+
+	
+
+	#seplineaficha2 {
+
+	width:284px;
+
+	height:24px;	
+
+	}
+
+	
+
+	
+
+	
+
+	#envproductos {
+
+	width:965px;
+
+	height:100%;
+
+	
+
+	}
+
+	
+
+	
+
+	#columizqprod {
+
+	width:189px;
+
+	height:100%;
+
+	float:left;
+
+	border-top-width: 1px;
+
+	border-right-width: 1px;
+
+	border-bottom-width: 1px;
+
+	border-left-width: 1px;
+
+	border-top-style: none;
+
+	border-right-style: dashed;
+
+	border-bottom-style: none;
+
+	border-left-style: none;
+
+	border-top-color: #A6A6A6;
+
+	border-right-color: #A6A6A6;
+
+	border-bottom-color: #A6A6A6;
+
+	border-left-color: #A6A6A6;
+
+	}
+
+	
+
+	
+
+	#columderprod {
+
+	width:760px;
+
+	height:100%;
+
+	float:right;
+
+	margin-right:1px;	
+
+	}
+
+	
+
+	
+
+	#thumbcol {
+
+	width:189px;
+
+	height:120px;
+
+	margin-bottom:15px;
+
+	
+
+	}
+
+	
+
+	
+
+	#leftcheck {
+
+	width:30px;
+
+	float:left;
+
+	height:120px;
+
+
+
+	}
+
+	
+
+	
+
+	#imgthumb {
+
+	width:130px;
+
+	height:120px;
+
+	z-index:1;
+
+	float:right;
+
+	margin-right:20px;
+
+	border: 1px solid #E0E0E0;
+
+		}
+
+		
+
+		
+
+			
+
+	#imgthumb2 {
+
+	width:170px;
+
+	height:153px;
+
+	z-index:1;
+
+	float:left;
+
+	margin-right:20px;
+
+	border: 1px solid #E0E0E0;
+
+		}
+
+		
+
+		
+
+		#titulothumb {
+
+	position:absolute;
+
+	 font-family: DINMedium;
+
+	font-weight: bold;
+
+	font-size: 15px;
+
+	color: #ffffff;
+
+	text-align:center;
+
+	width:130px;
+
+	height:120px;
+
+	z-index:999;
+
+	background-image: url(../images/bgtextthumb.png);
+
+	background-repeat: no-repeat;
+
+	background-position: right bottom;
+
+	
+
+}
+
+		
+
+				
+
+	#txtthumb {	
+
+	float:left;
+
+	 font-family: DINMedium;
+
+	font-weight: bold;
+
+	font-size: 15px;
+
+	color: #ffffff;
+
+	text-align:left;
+
+	margin-top:100px;
+
+	margin-left:45px;
+
+	
+
+	}
+
+	
+
+	
+
+	
+
+	.espcheck {
+
+	margin-top:45px;
+
+	
+
+	
+
+	
+
+	}
+
+	
+
+	
+
+	
+
+	#colopciones1 {
+
+	float:left;
+
+	width:108px;
+
+	height:100%;	
+
+	}
+
+		
+
+	#titcolopciones1 {
+
+	float:left;
+
+	width:108px;
+
+	height:47px;
+
+	background-image: url(../images/bgcolprods1.png);
+
+	background-repeat: no-repeat;
+
+	}
+
+	
+
+	#textotituloscolop {
+
+	height:25px;
+
+	font-family: DejaVuSansCondensed;
+
+	font-weight: bold;
+
+	font-size: 12px;
+
+	color: #3F89C5;
+
+	text-align:center;
+
+	padding-top:5px;
+
+	text-transform: uppercase;		
+
+	}
+
+	.spaciotitcol {
+
+	padding-top:15px;	
+
+	}
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	#flechcol1 {
+
+	float:left;
+
+	width:108px;
+
+	height:25px;
+
+	background-image: url(../images/flech1.png);
+
+	background-repeat: no-repeat;	
+
+	}
+
+
+
+#titcolopciones2 {
+
+	float:left;
+
+	width:108px;
+
+	height:47px;
+
+	background-image: url(../images/bgcolprods2.png);
+
+	background-repeat: no-repeat;
+
+	}
+
+	
+
+		#flechcol2 {
+
+		float:left;
+
+	width:108px;
+
+	height:25px;
+
+	background-image: url(../images/flech2.png);
+
+	background-repeat: no-repeat;	
+
+	}
+
+	
+
+	
+
+			#flechcol3 {
+
+		float:left;
+
+	width:108px;
+
+	height:25px;
+
+	background-image: url(../images/flech3.png);
+
+	background-repeat: no-repeat;	
+
+	}
+
+				#flechcol4 {
+
+		float:left;
+
+	width:108px;
+
+	height:25px;
+
+	background-image: url(../images/flech4.png);
+
+	background-repeat: no-repeat;	
+
+	}
+
+	
+
+	#contcols {
+
+	width:108px;
+
+	height:100%;
+
+	background-image: url(../images/bgcontprods1.png);
+
+	background-repeat: repeat-y;	
+
+	
+
+	
+
+	
+
+	}
+
+	
+
+	
+
+		#contcols2 {
+
+	width:108px;
+
+	height:100%;
+
+	background-image: url(../images/bgcontprods2.png);
+
+	background-repeat: repeat-y;	
+
+	
+
+	
+
+	
+
+	}
+
+	
+
+	
+
+	#footcolprods1 {
+
+	width:108px;
+
+	height:39px;
+
+	background-image: url(../images/footcolprods.png);
+
+	background-repeat: no-repeat;
+
+	background-position: left top;		
+
+	}
+
+	
+
+		#footcolprods2 {
+
+	width:108px;
+
+	height:39px;
+
+	background-image: url(../images/footcolprods2.png);
+
+	background-repeat: no-repeat;
+
+	background-position: left top;		
+
+	}
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+#bt_borrar  {
+
+
+
+margin: 0;
+
+padding: 0;
+
+width: 70px;
+
+height: 23px;
+
+text-align: center;
+
+background: url("../images/btintec.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+margin-right:auto;
+
+margin-left:auto;
+
+
+
+} 
+
+#bt_borrar  a {
+
+padding-top: 4px;
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+overflow: hidden;
+
+ font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+text-decoration: none;
+
+background: url("../images/btintec.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_borrar  a:hover {
+
+ font-family: DINMedium;
+
+background-position: -70px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+#bt_borrar  a:active {
+
+ font-family: DINMedium;
+
+background-position: -140px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+	
+
+	
+
+	
+
+	
+
+	
+
+#centcolprods {
+
+	margin:auto;
+
+	width:95px;
+
+	height:100%;
+
+	font-family: DejaVuSansCondensed;
+
+	color: #333333;
+
+	font-weight: normal;
+
+	font-size: 10px;
+
+	text-align:left;
+
+	line-height: 25px;
+
+}	
+
+
+
+
+
+.textocontcols {
+
+ font-family: DINMedium;
+
+color: #333333;
+
+font-weight: bold;
+
+font-size: 10px;
+
+letter-spacing: -1px;
+
+}
+
+	
+
+	
+
+	
+
+
+
+#envcontprodinf {
+
+width:965px;
+
+height:100%;
+
+}
+
+
+
+
+
+#envpaginacion {
+
+width:490px;
+
+height:27px;
+
+float:right;
+
+}
+
+
+
+
+
+
+
+
+
+#btpag1 {
+
+	width:89px;
+
+	height:27px;
+
+	float:left;
+
+	background-image: url(../images/bgpag1.png);
+
+	background-repeat: no-repeat;
+
+	text-align:center;
+
+	padding-top:6px;
+
+}
+
+#btpag1 a {
+
+ font-family: DINMedium;
+
+color: #1C5D89;
+
+font-weight: bold;
+
+font-size: 11px;
+
+letter-spacing: -1px;
+
+text-align:center;
+
+text-decoration:none;
+
+padding-top:4px;
+
+}
+
+#btpag1 a:hover {
+
+ font-family: DINMedium;
+
+font-weight: bold;
+
+font-size: 11px;
+
+color:#23A0DE;
+
+text-align:center;
+
+text-decoration:none;
+
+padding-top:4px;
+
+}	
+
+	
+
+	
+
+	
+
+	
+
+#btpag2 {
+
+	width:25px;
+
+	height:27px;
+
+	float:left;
+
+	background-image: url(../images/bgpag2.png);
+
+	background-repeat: no-repeat;
+
+	text-align:center;
+
+	padding-top:6px;
+
+	
+
+}
+
+#btpag2 a {
+
+ font-family: DINMedium;
+
+color: #1C5D89;
+
+font-weight: bold;
+
+font-size: 11px;
+
+letter-spacing: -1px;
+
+text-align:center;
+
+text-decoration:none;
+
+
+
+}
+
+#btpag2 a:hover {
+
+ font-family: DINMedium;
+
+font-weight: bold;
+
+font-size: 11px;
+
+color:#23A0DE;
+
+text-align:center;
+
+text-decoration:none;
+
+
+
+}	
+
+
+
+
+
+#btpag2 a.activo {
+
+	width:25px;
+
+	height:27px;
+
+	float:left;
+
+	background-image: url(../images/bgpagactivo.png);
+
+	background-repeat: no-repeat;
+
+	text-align:center;
+
+	padding-top:0px;
+
+	background-position: top;	
+
+}
+
+	
+
+
+
+
+
+
+
+	#thumb2col {
+
+	width:193px;
+
+	height:100%;
+
+	margin-bottom:15px;
+
+	float:left;
+
+	
+
+	}
+
+	
+
+	
+
+		#envoverlay1 {
+
+	width:308px;
+
+	height:100%;
+
+	float:left;
+
+	
+
+	}
+
+	
+
+	#textosdetalle {
+
+	float:left;
+
+	width:170px;
+
+	height:100%;
+
+	 font-family: DINMedium;
+
+	font-weight: normal;
+
+	font-size: 12px;
+
+	color: #555555;
+
+	text-align:left;
+
+	padding-left:0px;
+
+	padding-top:15px;
+
+	
+
+	
+
+	}
+
+	
+
+	#textosdetalle h1 {
+
+
+
+	 font-family: DINMedium;
+
+	font-weight: bold;
+
+	font-size: 12px;
+
+	color: #555555;
+
+	
+
+	}
+
+	
+
+	
+
+	
+
+#bt_volver  {
+
+float:left;
+
+margin-top:9px;
+
+margin-right:4px;
+
+padding: 0;
+
+width: 163px;
+
+height: 34px;
+
+text-align: center;
+
+background: url("../images/btvolver.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_volver   a {
+
+padding-top: 12px;
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+overflow: hidden;
+
+ font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+text-decoration: none;
+
+background: url("../images/btvolver.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_volver  a:hover {
+
+ font-family: DINMedium;
+
+background-position: -163px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+#bt_volver   a:active {
+
+ font-family: DINMedium;
+
+background-position: -326px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+	
+
+	
+
+	
+
+#colcatag3_1 {
+
+width:284px;
+
+height:100%;
+
+float:left;
+
+margin-right:22px;
+
+}
+
+
+
+
+
+#envejemplos {
+
+width:284px;
+
+height:100%;
+
+
+
+}
+
+
+
+#imgej {
+
+	width:85px;
+
+	height:77px;
+
+	float:left;
+
+	margin-top:25px;
+
+	margin-right:10px;
+
+	border: 1px solid #E0E0E0;
+
+}
+
+
+
+#imgej2 {
+
+width:85px;
+
+height:77px;
+
+float:left;
+
+margin-top:25px;
+
+border: 1px solid #E0E0E0;
+
+}
+
+
+
+#envimg1bosq {
+
+width:131px;
+
+height:100%;
+
+float:left;
+
+margin-right:17px;
+
+
+
+}
+
+
+
+
+
+#img1bosq {
+
+width:131px;
+
+height:119px;
+
+border: 1px solid #E6E6E6;
+
+}
+
+
+
+
+
+#envimg1bosq2 {
+
+width:131px;
+
+height:100%;
+
+float:left;
+
+}
+
+
+
+
+
+#img1bosq2 {
+
+	width:131px;
+
+	height:119px;
+
+	border: 1px solid #E6E6E6;
+
+}
+
+
+
+
+
+#cajontxtimg1 {
+
+font-family: DejaVuSansCondensed;
+
+font-size: 14px;	
+
+text-align:center;
+
+font-style: italic;
+
+padding-top:8px;
+
+}
+
+#cajontxtimg1 a {
+
+ font-family: DINMedium;
+
+font-size: 14px;
+
+color: #666666;
+
+text-align:center;
+
+text-decoration:none;
+
+}
+
+#cajontxtimg1 a:hover {
+
+ font-family: DINMedium;
+
+font-size: 14px;
+
+color: #3F88C1;
+
+}
+
+	
+
+	
+
+#colcatag3_2 {
+
+width:339px;
+
+height:100%;
+
+float:left;
+
+border: 1px solid #E6E6E6;
+
+}	
+
+	
+
+
+
+#colcatag3_3 {
+
+width:288px;
+
+height:100%;
+
+float:right;
+
+ font-family: DINMedium;
+
+color: #333333;
+
+font-weight: normal;
+
+font-size: 14px;
+
+}	
+
+	
+
+	
+
+#tituloficha {
+
+width:288px;
+
+height:100%;
+
+ font-family: DINMedium;
+
+color: #3F88C1;
+
+font-weight: bold;
+
+font-size: 22px;
+
+}
+
+
+
+
+
+#tituloficha2 {
+
+width:284px;
+
+height:100%;
+
+ font-family: DINMedium;
+
+color: #3F88C1;
+
+font-weight: bold;
+
+font-size: 17px;
+
+}
+
+	
+
+	
+
+#bt_agregar {
+
+float:left;
+
+margin:0px;
+
+padding: 0;
+
+width: 107px;
+
+height: 32px;
+
+text-align: center;
+
+background: url("../images/btagregar.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_agregar  a {
+
+padding-top: 12px;
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+overflow: hidden;
+
+ font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+text-decoration: none;
+
+background: url("../images/btagregar.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_agregar  a:hover {
+
+ font-family: DINMedium;
+
+background-position: -107px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+#bt_agregar   a:active {
+
+ font-family: DINMedium;
+
+background-position: -214px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+	
+
+
+
+#envcoliconos {
+
+width:288px;
+
+height:100%;
+
+}
+
+
+
+#colicons {
+
+width:34px;
+
+height:100%;
+
+float:left;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#envcolfoot2 {
+
+width:1024px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#colum2credfoot {
+
+float:right;
+
+width:220px;
+
+
+
+margin-right:76px;
+
+padding-top:35px;
+
+font-family: Arial, Helvetica, sans-serif;
+
+color: #A7C2E4;
+
+font-size: 12px;
+
+text-align:right;
+
+}
+
+
+
+
+
+
+
+#colum2credfoot .titdatos2 {
+
+font-family: Arial, Helvetica, sans-serif;
+
+color:#4BB1FF;
+
+font-size: 12px;
+
+}
+
+
+
+
+
+#colum2credfoot .nombintec2 {
+
+font-family: Arial, Helvetica, sans-serif;
+
+color:#ffffff;
+
+font-size: 12px;
+
+}
+
+
+
+
+
+#envcolfoot2 {
+
+width:1024px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+#colum1crednew {
+
+float:left;
+
+width:560px;
+
+
+
+margin-left:73px;
+
+}
+
+
+
+#covfootintecplast2 {
+
+	height:310px;
+
+	background-image: url(../images/bgbottomwarap2.png);
+
+	background-repeat: no-repeat;
+
+	background-position: center top;
+
+}
+
+#sepclearfootint {
+
+clear:both;
+
+height:49px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#coltexticonos {
+
+width:200px;
+
+height:100%;
+
+float:left;
+
+margin-left:10px;
+
+}
+
+
+
+#iconficha {
+
+width:34px;
+
+height:32px;
+
+margin-bottom:10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bt_iconinfo {
+
+float:left;
+
+margin:0px;
+
+padding: 0;
+
+width: 34px;
+
+height: 32px;
+
+text-align: center;
+
+background: url("../images/icono_info.jpg") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_iconinfo  a {
+
+padding-top: 12px;
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+overflow: hidden;
+
+ font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+text-decoration: none;
+
+background: url("../images/icono_info.jpg") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_iconinfo  a:hover {
+
+ font-family: DINMedium;
+
+background-position: -34px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+#bt_iconinfo   a:active {
+
+ font-family: DINMedium;
+
+background-position: -68px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#bt_impr {
+
+float:left;
+
+margin:0px;
+
+padding: 0;
+
+width: 34px;
+
+height: 32px;
+
+text-align: center;
+
+background: url("../images/icono_descarga.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_impr  a {
+
+padding-top: 12px;
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+overflow: hidden;
+
+ font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+text-decoration: none;
+
+background: url("../images/icono_descarga.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_impr  a:hover {
+
+ font-family: DINMedium;
+
+background-position: -34px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+#bt_impr   a:active {
+
+ font-family: DINMedium;
+
+background-position: -68px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#rowtxticon {
+
+width:230px;
+
+height:32px;
+
+padding-top:10px;
+
+}
+
+
+
+
+
+#envcontador {
+
+width:100px;
+
+height:34px;
+
+position:absolute;
+
+z-index:999;
+
+margin-top:95px;
+
+margin-left:-30px;
+
+}
+
+
+
+
+
+#envbtagregar {
+
+width:107px;
+
+height:32px;
+
+float:right;
+
+margin-left:10px;
+
+}
+
+
+
+#envtablacatag {
+
+width:965px;
+
+height:100%;
+
+float:left;
+
+}
+
+
+
+#toptabla {
+
+	width:764px;
+
+	height:39px;
+
+	background-image: url(../images/bartoptabla.png);
+
+	background-repeat: no-repeat;
+
+	float:left;
+
+}
+
+
+
+#img_tamanos {
+
+	width:764px;
+
+	height:193px;
+
+	border: 1px solid #E6E6E6;
+
+	margin-bottom:15px;
+
+}
+
+
+
+.celda1 {
+
+	background-image: url(../images/celda1.png);
+
+	background-repeat: repeat-x;
+
+	height: 34px;
+
+	padding-left:15px;
+
+	padding-top:7px;
+
+	 font-family: DINMedium;
+
+	color: #333333;
+
+	font-weight: normal;
+
+	font-size: 12px;
+
+	border-top-width: 1px;
+
+	border-right-width: 1px;
+
+	border-bottom-width: 1px;
+
+	border-left-width: 1px;
+
+	border-top-style: none;
+
+	border-right-style: solid;
+
+	border-bottom-style: none;
+
+	border-left-style: none;
+
+	border-top-color: #99A3A7;
+
+	border-right-color: #99A3A7;
+
+	border-bottom-color: #99A3A7;
+
+	border-left-color: #99A3A7;
+
+}
+
+
+
+.celda2 {
+
+background-image: url(../images/celda2.png);
+
+background-repeat: repeat-x;
+
+height: 34px;
+
+padding-left:15px;
+
+padding-top:7px;
+
+ font-family: DINMedium;
+
+color: #333333;
+
+font-weight: normal;
+
+font-size: 12px;
+
+	border-top-width: 1px;
+
+	border-right-width: 1px;
+
+	border-bottom-width: 1px;
+
+	border-left-width: 1px;
+
+	border-top-style: none;
+
+	border-right-style: solid;
+
+	border-bottom-style: none;
+
+	border-left-style: none;
+
+	border-top-color: #99A3A7;
+
+	border-right-color: #99A3A7;
+
+	border-bottom-color: #99A3A7;
+
+	border-left-color: #99A3A7;
+
+}
+
+
+
+
+
+.celdatop {
+
+height: 32px;
+
+padding-left:15px;
+
+padding-top:7px;
+
+ font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: normal;
+
+font-size: 18px; 
+
+text-shadow: #333333 2px -1px 2px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#imgofemes {
+
+width:131px;
+
+height:121px;
+
+float:left;
+
+margin-left:13px;
+
+margin-top:10px;
+
+}
+
+
+
+
+
+#separadorsomb {
+
+width:13px;
+
+height:128px;
+
+float:left;
+
+margin-left:10px;
+
+margin-top:10px;
+
+}
+
+
+
+
+
+
+
+
+
+#textocajonofer {
+
+width:170px;
+
+height:100%;
+
+float:left;
+
+margin-left:10px;
+
+margin-top:10px;
+
+ font-family: DINMedium;
+
+color: #464646;
+
+font-weight: normal;
+
+font-size: 14px; 
+
+}
+
+
+
+
+
+.txttitofer {
+
+ font-family: DINMedium;
+
+color: #464646;
+
+font-weight: normal;
+
+font-size: 14px;
+
+font-weight:bold;
+
+}
+
+
+
+
+
+
+
+.unidadprecio {
+
+ font-family: DINMedium;
+
+color:#8A8A8A;
+
+font-weight: normal;
+
+font-size: 22px;
+
+font-weight:bold;
+
+}
+
+
+
+
+
+.txtlineinf {
+
+ font-family: DINMedium;
+
+color:#3B7FAF;
+
+font-weight: normal;
+
+font-size: 14px;
+
+font-weight:bold;
+
+}
+
+
+
+
+
+
+
+#envcotizar {
+
+width:82px;
+
+height:36px;
+
+float:right;
+
+margin-top:110px;
+
+margin-right:10px;
+
+}
+
+
+
+
+
+
+
+
+
+#bt_coti {
+
+float:right;
+
+width:80px;
+
+	height:37px;
+
+	padding-top:8px;
+
+}
+
+
+
+#bt_coti a {
+
+	font-size: 13px;
+
+	color: #1d1b19;
+
+	padding-left:20px;
+
+	padding-right:10px;
+
+	padding-top:8px;
+
+	font-family: DINMedium;
+
+	padding-bottom:10px;
+
+	background-image: url(../images/bgcalcu.png);
+
+	background-repeat: no-repeat;
+
+		background-position: left top;
+
+	text-decoration:none;
+
+	}
+
+
+
+#bt_coti a:hover {
+
+	font-family: DINMedium;
+
+	font-size: 12px;
+
+	color: #23A0DE;
+
+	padding-left:20px;
+
+	padding-right:10px;
+
+	padding-top:8px;
+
+	padding-bottom:10px;
+
+	background-image: url(../images/bgcalcu.png);
+
+	background-repeat: no-repeat;
+
+	background-position: left top;
+
+	text-decoration:none;
+
+	}	
+
+	
+
+
+
+#bt_cotizar {
+
+margin:0px;
+
+padding: 0;
+
+width: 82px;
+
+height: 36px;
+
+text-align: center;
+
+background: url("../images/btcotizar.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_cotizar  a {
+
+padding-top: 12px;
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+overflow: hidden;
+
+ font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+text-decoration: none;
+
+background: url("../images/btcotizar.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_cotizar  a:hover {
+
+ font-family: DINMedium;
+
+background-position: -82px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+#bt_cotizar   a:active {
+
+ font-family: DINMedium;
+
+background-position: -164px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+
+
+
+
+
+
+
+
+#cajonslideventa {
+
+	width:196px;
+
+	height:195px;
+
+	float:left;
+
+	margin-left:13px;
+
+	margin-top:10px;
+
+	background-image: url(../images/bgscroller.png);
+
+	background-repeat: no-repeat;
+
+	background-position: right top;
+
+}
+
+
+
+
+
+#cajonmapaventa {
+
+width:196px;
+
+height:100%;
+
+float:right;
+
+margin-right:13px;
+
+margin-top:10px;
+
+
+
+}
+
+
+
+#titulonoticiasslide {
+
+position:absolute;
+
+float:left
+
+width:460px;
+
+height:50px;
+
+font-family: DejaVuSansCondensed;
+
+font-weight: bold;
+
+font-size: 22px;
+
+color: #464646;
+
+text-transform: uppercase;
+
+margin-top:0px;
+
+z-index:999;
+
+padding-left:5px;
+
+}
+
+
+#slidebox .thumbs{
+  bottom: 0;
+}
+
+#slidebox .previous {
+    margin-left: 370px;
+    margin-top: 118px;
+}
+
+#slidebox .next {
+    margin-top: 117px;
+}
+
+
+
+
+
+#titulonoticiasslide a {
+
+font-family: DejaVuSansCondensed;
+
+font-weight: bold;
+
+font-size: 22px;
+
+color: #464646;
+
+text-transform: uppercase;
+
+text-decoration:none;
+
+}
+
+
+
+
+
+#titulonoticiasslide a:hover {
+
+font-family: DejaVuSansCondensed;
+
+font-weight: bold;
+
+font-size: 22px;
+
+color: #3F8AC2;
+
+text-transform: uppercase;
+
+text-decoration:none;
+
+}
+
+
+
+
+
+#titulocatalogoinicio {
+
+	position:absolute;
+
+float:left;
+
+	width:281px;
+
+	height:84px;
+
+	font-family: DejaVuSansCondensed;
+
+	font-weight: bold;
+
+	font-size: 32px;
+
+	color: #3F8AC2;
+
+	text-transform: uppercase;
+
+	margin-top:73px;
+
+	margin-left:140px;
+
+	z-index:999;
+
+	padding-right:15px;
+
+	background-image: url(../images/bgtitcatalogoprods.png);
+
+	background-repeat: no-repeat;
+
+	text-align:right;
+
+	padding-top:8px;
+
+	line-height: 36px;
+
+}
+
+
+
+#titulocatalogoinicio a{
+
+	color: #3F8AC2;
+
+	text-decoration:none;
+
+}
+
+
+
+#titulocatalogoinicio a:active{
+
+	color: #3F8AC2;
+
+	text-decoration:none;
+
+}
+
+#titulocatalogoinicio a:hover{
+
+	color: #3F8AC2;
+
+	text-decoration:none;
+
+}
+
+#titulocatalogoinicio a:visited{
+
+	color: #3F8AC2;
+
+	text-decoration:none;
+
+}
+
+
+
+.colortitcata {
+
+font-family: DejaVuSansCondensed;
+
+	font-weight: bold;
+
+	font-size: 32px;
+
+	color: #ffffff;
+
+	text-transform: uppercase;
+
+	padding-right:10px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------FIN CONTENIDOS INTECPLAST----------------------------------*/
+
+
+
+
+
+
+
+/*---------------------------------FOOTER INTECPLAST----------------------------------*/
+
+
+
+
+
+#cajonfooter {
+
+	width:1024px;
+
+	height:261px;
+
+	position:relative;
+
+	margin:auto;
+
+	background-image: url(../images/bgfooter.png);
+
+	background-repeat: no-repeat;
+
+	background-position: center;
+
+	
+
+	
+
+}
+
+
+
+
+
+
+
+
+
+#panelsuscrip {
+
+	width:877px;
+
+	height:57px;
+
+	margin:auto;
+
+	background-image: url(../images/panel_suscripcion.png);
+
+	background-repeat: no-repeat;
+
+	
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#campsearch {
+
+float:left;
+
+	width:336px;
+
+	height:36px;
+
+	z-index:1;
+
+	margin-left:14px;
+
+	margin-top:11px;
+
+	padding-left:4px;
+
+	padding-right:4px;
+
+}	
+
+
+
+
+
+#campsearch2 {
+
+float:left;
+
+	width:336px;
+
+	height:36px;
+
+	z-index:1;
+
+	margin-left:5px;
+
+	margin-top:11px;
+
+	padding-left:4px;
+
+	padding-right:4px;
+
+}
+
+
+
+.transparente {
+
+	background-color: transparent;
+
+	border: 0px solid #0E3A6B;
+
+	height: 36px;
+
+	width:323px;
+
+	 font-family: DINMedium;
+
+	font-size: 14px;
+
+	color: #666666;
+
+	padding-top: 0px;
+
+	padding-right: 0px;
+
+	padding-bottom: 0px;
+
+	padding-left: 8px;
+
+}
+
+
+
+
+
+
+
+
+
+#bt_suscrip  {
+
+float:right;
+
+margin-top:9px;
+
+margin-right:4px;
+
+padding: 0;
+
+width: 159px;
+
+height: 41px;
+
+text-align: center;
+
+background: url("../images/btsuscribirse.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_suscrip  a {
+
+padding-top: 12px;
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+overflow: hidden;
+
+ font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+text-decoration: none;
+
+background: url("../images/btsuscribirse.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_suscrip  a:hover {
+
+ font-family: DINMedium;
+
+background-position: -159px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+#bt_suscrip  a:active {
+
+ font-family: DINMedium;
+
+background-position: -318px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+
+
+
+
+
+
+
+
+#envcolfoot {
+
+width:1024px;
+
+height:100%;
+
+
+
+}
+
+
+
+#colum1cred {
+
+float:left;
+
+width:560px;
+
+height:100%;
+
+margin-left:73px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+#colum2cred {
+
+float:right;
+
+width:220px;
+
+height:100%;
+
+margin-right:76px;
+
+padding-top:35px;
+
+font-family: Arial, Helvetica, sans-serif;
+
+color: #A7C2E4;
+
+font-size: 12px;
+
+text-align:right;
+
+}
+
+
+
+
+
+
+
+#colum2cred .titdatos {
+
+font-family: Arial, Helvetica, sans-serif;
+
+color:#4BB1FF;
+
+font-size: 12px;
+
+}
+
+
+
+
+
+#colum2cred .nombintec {
+
+font-family: Arial, Helvetica, sans-serif;
+
+color:#ffffff;
+
+font-size: 12px;
+
+}
+
+
+
+
+
+
+
+
+
+#envmenufoot {
+
+width:560px;
+
+height:35px;
+
+float:left;
+
+margin-top:15px;
+
+}
+
+
+
+
+
+
+
+
+
+#bt_footl {
+
+float:left;
+
+	height:17px;
+
+	padding-top:8px;
+
+}
+
+
+
+#bt_footl a {
+
+	font-size: 12px;
+
+	color: #ffffff;
+
+	padding-left:10px;
+
+	padding-right:10px;
+
+	padding-top:8px;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	padding-bottom:10px;
+
+	background-image: url(../images/linesepmenufoot.png);
+
+	background-repeat: no-repeat;
+
+	background-position: right center;
+
+	text-decoration:none;
+
+	}
+
+
+
+#bt_footl a:hover {
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #23A0DE;
+
+	padding-left:10px;
+
+	padding-right:10px;
+
+	padding-top:8px;
+
+	padding-bottom:10px;
+
+	background-image: url(../images/linesepmenufoot.png);
+
+	background-repeat: no-repeat;
+
+	background-position: right center;
+
+	text-decoration:none;
+
+	}	
+
+	
+
+	
+
+	
+
+	#creditsfoot {
+
+width:560px;
+
+height:32px;
+
+float:left;
+
+color:#A7C2E4;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	margin-top:5px;
+
+	
+
+}
+
+
+
+	#creditsfoot a {
+
+color:#A7C2E4;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	text-decoration:none;
+
+}
+
+
+
+	#creditsfoot a:hover {
+
+color:#ffffff;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bt_face  {
+
+float:right;
+
+margin-top:17px;
+
+margin-right:11px;
+
+padding: 0;
+
+width: 40px;
+
+height: 39px;
+
+text-align: center;
+
+background: url("../images/btface.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_face  a {
+
+padding-top: 12px;
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+overflow: hidden;
+
+ font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+text-decoration: none;
+
+background: url("../images/btface.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_face a:hover {
+
+ font-family: DINMedium;
+
+background-position: -40px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+#bt_face  a:active {
+
+ font-family: DINMedium;
+
+background-position: -80px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#bt_twitt  {
+
+float:right;
+
+margin-top:17px;
+
+margin-right:4px;
+
+padding: 0;
+
+width: 40px;
+
+height: 39px;
+
+text-align: center;
+
+background: url("../images/bttwitt.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_twitt  a {
+
+padding-top: 12px;
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+overflow: hidden;
+
+ font-family: DINMedium;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+text-decoration: none;
+
+background: url("../images/bttwitt.png") 0 0 no-repeat;
+
+letter-spacing: -1px;
+
+} 
+
+#bt_twitt a:hover {
+
+ font-family: DINMedium;
+
+background-position: -40px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+#bt_twitt  a:active {
+
+ font-family: DINMedium;
+
+background-position: -80px 0;
+
+color: #ffffff;
+
+font-weight: bold;
+
+font-size: 12px;
+
+letter-spacing: -1px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#imgiso  {
+
+float:left;
+
+width:60px;
+
+height:73px;
+
+margin-left:8px;
+
+box-shadow: 2px 2px 3px #333333;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footimaginamos {
+
+float:right;
+
+	width:175px;
+
+	height:22px;
+
+	background-image: url(../images/ahorranito.png);
+
+	background-repeat: no-repeat;
+
+	background-position: left center;
+
+	padding-top:7px;
+
+	padding-left:25px;
+
+	}
+
+	
+
+	
+
+	#padcred {
+
+	width:330px;
+
+	padding-top:7px;
+
+	height:22px;
+
+	float:left;
+
+	padding-left:8px;	
+
+	}
+
+
+
+
+
+/*---------------------------------FIN FOOTER INTECPLAST----------------------------------*/
+
+#coltxtizqcontabsist select {
+	background-color:#f3f5f4 !important;
+}

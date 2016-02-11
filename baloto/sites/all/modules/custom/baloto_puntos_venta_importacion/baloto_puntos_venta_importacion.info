@@ -1,0 +1,4 @@
+name = Baloto importa punto de venta
+description = Modulo para generar un nodo con informacion de cada punto de venta
+core = 7.x
+package = Baloto

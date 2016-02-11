@@ -1,0 +1,5 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>53001085</span><br/>buenodoj ~2012-07-30 10:37:47
+<span class='admin'>Agente</span><br/>rtyhgdf ~2012-07-30 10:37:53
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

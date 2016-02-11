@@ -1,0 +1,27 @@
+
+
+#top
+{
+  background:#FFFFFF none repeat scroll 0 0;
+  border-style:solid;
+  color:#333333;
+  margin:0 auto;
+  position:relative;
+  width:1000px;
+}
+
+#top ul
+{
+  list-style:inside square;
+  margin-bottom:10px;
+}
+
+.thumb img {
+background:#EEEEEE none repeat scroll 0 0;
+border:1px solid #AAAAAA;
+padding:5px;
+width:25px;
+}
+.thumb:hover img {
+border-color:#777777;
+}

@@ -1,0 +1,30 @@
+#cont_slider
+{
+    width: 1000px;
+    overflow: hidden;
+}
+#slides
+{
+    height: 370px !important;
+}
+.slide{
+    width: 1000px;
+    height: 370px;
+}
+.prev
+{
+    position: relative;
+    z-index: 10;
+    width: 20px;
+    height: 37px;
+    top: -100px;
+    margin-left: 475px;
+}
+.next
+{
+    position: relative;
+    z-index: 10;
+    width: 20px;
+    height: 37px;
+    top: -100px;
+}

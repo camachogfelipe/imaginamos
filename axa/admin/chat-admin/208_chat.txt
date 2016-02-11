@@ -1,0 +1,11 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de Digiware. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>ramiro</span><br/>asdasdasdsadsada ~2011-01-21 21:46:05
+<span class='usuario'>ramiro</span><br/>asdasd ~2011-01-21 21:46:09
+<span class='usuario'>ramiro</span><br/>:) ~2011-01-21 21:46:49
+<span class='usuario'>ramiro</span><br/>:) ~2011-01-21 21:46:51
+<span class='usuario'>ramiro</span><br/>dfsdfsdfdsf ~2011-01-21 21:46:56
+<span class='usuario'>ramiro</span><br/>sdfsdfsdf ~2011-01-21 21:46:58
+<span class='usuario'>ramiro</span><br/>sdfsdfsdf ~2011-01-21 21:46:58
+<span class='usuario'>ramiro</span><br/>sdfsdfsd f~2011-01-21 21:46:58
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

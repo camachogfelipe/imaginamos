@@ -1,0 +1,430 @@
+@media screen and (max-width:940px){
+
+
+  .cont_imagenequipo {
+      margin: 20px auto 0;
+      width: 30%;
+  }
+
+  #container_enterate{
+    margin: 0 auto;
+    width: 460px;
+  }
+
+
+  .conttabs_general{
+    margin-top: 10px;
+    text-align: center;
+    top: 0;
+  }
+
+.conttabs_general p{
+  text-align: left;
+}
+
+
+  h1{
+    display:inline-block;
+    zoom: 1; /* IE7 (hasLayout)*/
+    *display: inline; /* IE */
+  }
+
+  .tit_secciones{
+    float: none;
+  }
+
+  .cont40big, .cont60big{
+    width: 100%;
+  }
+
+  .cont_infoizq{
+    width: 38%;
+  }
+
+  .tit_servicios_corte{
+    float: none;
+    margin: 0;
+  }
+
+  .rectangulo_equipo{
+    width: 100%;
+  }
+
+  .rectangulo_equipo{
+    height: auto;
+  }
+
+
+  .fileupload-preview {
+    font-size: 0.8em;
+  }
+
+  .abrirsecciones_trabaje{
+    margin: 5px 0;
+  }
+
+  .copy_trabaja{
+    top: 0;
+  }
+
+  .grillados, .grillatres {
+    width: 100%;
+  }
+
+  .abrirsecciones_trabaje h2{
+    font-size: 0.9em;
+  }
+ 
+  .cont_940{  
+    width: 95%;
+  }
+
+ .cont50big, .cont50small{
+    width: 48%;
+  }
+
+  .cont_navprincipal{
+    top: 0;
+  }
+
+  .bt_contactoheader{
+    margin-right: 20px;
+  }
+
+  .logo_prin{
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .nav_principal2{
+    width: 100%;
+  }
+
+  .nav_principal{
+    margin-top: 20px;
+    top: 0;
+  }
+
+  .copy_home{
+    padding-left: 20px;
+    position: static;
+    width: 100%;
+  }
+
+  .copy_home p{
+    width: 80%;
+  }
+
+  .bt_principal{
+    width: 33%
+  }
+
+  .bt_prinequipo, .bt_prinlineas{
+    clear: none;
+    top: 12px;
+  }
+
+  .footer_abajo{
+    height: auto;
+  }
+
+  .footer_desplegable{
+    display: none;
+  }
+
+.cont_seccionesfooter {
+    margin: 20px 0;
+    text-align: center;
+    width: 33%;
+}
+
+.footer2 {
+    margin: 0 auto 20px;
+}
+
+  .espacio_footer{
+    height: 20px;
+  }
+
+  .footer-autor {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .footer_cliente {
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .bt_headerdesplegable{
+    display: none;
+  }
+
+  .bt_principalpeque {
+    height: 80px;
+    width: 80px;
+  }
+
+  .abrirsecciones_trabaje{
+    height: 50px;
+    width: 100%;
+  }
+
+  .abrirsecciones_trabaje h2, .division_seccionestrabaje, .division_seccionestrabaje, .cont_seccionestrabajep{
+    top: 13px;
+  }
+
+  .ico_mas{
+    top: 6px;
+  }
+
+}
+  
+
+@media screen and (max-width:600px){
+
+  .imgcont_infoizq{
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  body{
+    font-size: 0.8em;
+  }
+
+  p, .hover_botones_enterate p{
+    line-height: inherit;
+  }
+
+  .bt_contactoheader p{
+    margin-top: 10px;
+  }
+
+  .izqcont_emergentelineas, .dercont_emergentelineas {
+    width: 100%;
+  }
+
+  .slider_documentos{
+    height: auto;
+  }
+
+  .slider_documentos li{
+    height: auto;
+    text-align: center;
+  }
+
+   .cont50big{
+    width: 100%;
+  }
+
+  .text_areaboton{
+    margin: 0;
+    width: 99%;
+  }
+
+  .logo_prin{
+    width: 40%;
+  }
+
+  .bt_principal{
+    width: 50%
+  }
+
+  .bt_prinlineas{
+    top: 0;
+  }
+
+  .bt_prindocumentos, .bt_prinenterate{
+    top:-12px;
+  }
+
+  .cont_seccionesfooter {
+    width: 48%;
+  }
+
+  .footer_cliente{
+    margin-top: 20px;
+  }
+
+  .bt_principalpeque {
+    height: 80px;
+    width: 80px;
+  }
+
+  .buscador_home{
+    display: none;
+  }
+
+  .logos_home{
+    text-align: center;
+    width: 100%;
+  }
+
+
+
+}
+
+@media screen and (max-width:480px){
+
+  .botones_enterate.seleccionado{
+    width: 220px;
+    height: auto;
+  }
+
+  .cont_infoenterate{
+    height: 650px;
+  }
+
+  .cont_botonesenterategrande{
+    text-align: center;
+  }
+
+  .cont_imagenequipo {
+    margin: 20px auto 0;
+    width: 100%;
+  }
+
+}
+
+
+
+
+@media screen and (max-width:400px){
+
+  #container_enterate{
+    margin: 0 auto;
+    width: 220px;
+  }
+
+   .parrafo_detalletrabaje50, .parrafo_detalletrabaje, .cont_infoizq, .parrafo_detalletrabaje{
+    width: 100%;
+  }
+
+  .parrafo_detalletrabaje{
+    margin:20px 0; 
+  }
+
+  .img_detalletrabaje {
+    float: right;
+    margin-top: 20px;
+    width: 100%;
+}
+
+  .cont300{
+    width: 46%;
+  }
+
+  .text_areaboton{
+    margin: 0;
+    width: 99%;
+  }
+
+  .logo_prin{
+    float: none;
+    margin: 20px auto 0;
+    width: 80%;
+  }
+
+  .bt_printrabaja{
+  }
+
+  .bt_prinequipo{
+    top: -1px;
+  }
+
+  .bt_prinlineas{
+    top: -14px;
+  }
+
+  .bt_prinservicios{
+    top: -27px;
+  }
+
+  .bt_prindocumentos{
+    top: -39px;
+  }
+
+  .bt_prinenterate{
+    top: -51px;
+  }
+
+  .bt_principal{
+    height: 80px;
+    width: 100%
+  }
+
+  .bt_principal .iconobt {
+      float: right;
+      margin: 10px;
+      width: 60px;
+  }
+
+   .bt_principal .iconobt img{
+    width: 100%;
+   }
+
+  .bt_principal .info_btgeneral{
+    top: 68px;
+  }
+
+  .bt_principal .bg_sombrabotones{
+    display: none;
+  }
+
+  .bt_contactoheader {
+    float: none;
+    margin: 20px auto 0;
+    width: 90%;
+  }
+
+  .cont_seccionesfooter {
+    width: 100%;
+  }
+
+  .logos_home{
+    text-align: center;
+    width: 100%;
+  }
+
+  .bt_principalpeque {
+    height: 80px;
+    width: 80px;
+  }
+
+.nav_principal2{
+  display: none;
+}
+
+
+
+.logo_internas img {
+	width: 104px;
+	height: 28px;
+}
+
+}
+
+
+@media screen and (max-width:300px){
+
+  .texarea_contacto {
+    width: 75%;
+}
+
+.logo_internas {
+	position: relative;
+	float: right;	
+}
+
+.logo_internas img {
+	width: 104px;
+	height: 28px;
+}
+
+}
+
+
+
+

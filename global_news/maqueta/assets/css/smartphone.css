@@ -1,0 +1,76 @@
+﻿@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width:340px){
+/* botones home */
+.btn { height: 117px; min-height: 117px; text-align: center; padding: 20px; cursor: pointer; float: left; color: white; }
+.movil { margin-top: 150px; }
+.boton1, .boton2 { width: 120px; }
+.boton3, .queHacemos { width: 100%; }
+/* Fin botones home */
+.cuerpo, .video, .left, .submitNS { clear: both; }
+.cuerpo { max-width: 340px; }
+/* Logos */
+.logo, .logo:hover { position: absolute; left: 0; top: 0; background-color: white; color: #b3b3b3; text-transform: uppercase; width: 280px; }
+.logo img { width:122px; height: 70px; }
+.video { background-image: url(../img/home/video.png); width: 320px; height: 314px; cursor: pointer; }
+.mediaLab { background-image: url(../img/home/medialab.png); }
+.servicios { background-image: url(../img/home/servicios.png); }
+.casosExito { background-image: url(../img/home/casosexito.png); }
+.contactenos { background-image: url(../img/home/contacto.png); }
+.queHacemos { padding: 20px 0; }
+.texto { position: relative; margin-top: 110px; display: none; }
+/* Fin botones home */
+.servicio { width: 100%; float: none; font-style:italic; font-size:0.8em; text-align: center; padding: 10px 0; overflow: hidden; }
+article { margin-top: 98px; }
+.hrblog, .hrarticle {
+	clear: both;
+}
+.redes_sociales { float: none; }
+
+.comentar {
+	margin: 30px 0;
+}
+
+.inputComentario, .formcontacto { width: 100%; }
+.element { margin: 0 auto; float: none; }
+.datos_persona { height: auto; background-color: #ffb100; width: 100%; margin-left: 0; color: white; padding: 10px; font-size: 0.9em; clear: left; width: 100%; }
+.extracto { color: #808080; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; margin: 10px 0; font-size: 0.8em; width: 100%; }
+}
+
+@media screen and (max-width:960px){
+.imagenContacto img { display: none; }
+	/* header */
+/*header { width: 960px; min-width: 960px; margin: 0 auto; }*/
+header { display: none; }
+#headerMovil { display: inline; }
+header#headerMovil { width: 320px; }
+header#headerMovil homeRight { float: left; }
+header#headerMovil .homeRight .video { width: 314px; overflow: hidden; }
+/* Fin Header */
+.boton1, .boton3 { background-color: #009dff; }
+.boton2 { background-color: #0264a0; }
+.btn3 { width: 100%; }
+.boton1, .menubtn, .boton3, .btn3 { background-color: #009dff; }
+.video { background-image: url(../img/home/video.png); width: 100%; height: 314px; cursor: pointer; clear:both; }
+.insight { display: none; }
+/* footer */
+footer div img {
+	width: 48px;
+	height: 48px;
+}
+footer, footer .tleft, .copy-foo, footer .left { max-width: 100%; }
+footer .tleft { overflow: hidden; }
+footer .left { width: 100%; cursor: pointer; }
+footer .texto_footer{ position: relative; float: right; height: 70px; min-height: 70px; color: white; font-size: 12px; margin: 10px 10px 0 0; min-width: 220px; max-width: 220px; display: none; }
+.copy-foo { clear: both; border-top: 1px solid #acacac; margin-top: 20px; }
+.copy-tx, .copy-tx > * {text-align: left; width: 100%; font-size: 12px; letter-spacing: none; }
+.copy-may { font-size: 12px; }
+.footer-ahorranito { margin: 1px 0 0; text-align: left; }
+/* Fin footer */
+.servicios_destacados { display: none; }
+.menu { width: 312px; position: fixed; top: 0; left: 50%; margin-left: -156px; z-index: 20000; }
+.menu a { float: left; }
+.cabecera { clear:both; width: 100%; }
+.cabecera .linkLogo { float: left; width: 100%; text-align: center; margin: 20px 0; }
+.excerpt { width: auto; margin-left: 0; }
+}

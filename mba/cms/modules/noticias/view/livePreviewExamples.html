@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Image Multi Upload - simple example</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<!--you can use this packed script and jQuery-->
+		<!--<script type='text/javascript' src='js/jquery-1.7.min.js'></script>-->
+		<!--<script type="text/javascript" src="js/upload.packed.js"></script>-->
+		
+		<!--or below scripts-->
+		<script type='text/javascript' src='js/jquery-1.7.min.js'></script>
+		<script type='text/javascript' src='js/upload.min.js'></script>
+		<script type='text/javascript' src='js/swfobject.js'></script>
+		<script type='text/javascript' src='js/myupload.js'></script>
+		
+	</head>
+	<body>
+		<!--example 1-->
+		Example 1:<br />
+		<input class="IMU" type="file" path="/asas/files/..." startOn="manually" buttonCaption="upload" afterUpload="image" maxSize="204800" fileExt="jpg,jpeg,png,gif" fileDesc="Images (*.jpg, *.jpeg, *.png, *.gif)" allowRemove="true" />
+		<br />
+		
+		<!--example 2-->
+		<br />Example 2:<br />
+		<input class="IMU" type="file" path="/asas/files/..." multi="true" startOn="auto" afterUpload="link" maxSize="204800" allowRemove="true" />
+		<br />
+		
+		<!--example 3-->
+		<br />Example 3:<br />
+		<input class="IMU" type="file" path="files/" multi="true" startOn="auto" afterUpload="image" thumbnails="90x90,100x,x200" thumbnailsFolders="files/small/,files/middle/,files/big/" thumbnailsAfterUpload="link,image,Thumbnail created!" maxSize="204800" fileExt="jpg,jpeg,png,gif" fileDesc="Images (*.jpg, *.jpeg, *.png, *.gif)" />
+		<br />
+		
+		<!--example 4-->
+		<br />Example 4:<br />
+		<input class="IMU" type="file" path="files/" multi="true" startOn="auto" afterUpload="image" allowRemove="true" data="'watermark_path0':'watermark0.jpg','watermark_bottom0':'10','watermark_right0':'5','text_watermark_text0':'sample text','text_watermark_width0':'100p','text_watermark_height0':'40','text_watermark_background_color0':'#000000','text_watermark_text_color0':'#ffffff','text_watermark_bg_transparency0':'60','text_watermark_text_transparency0':'0','text_watermark_font0':'arial.ttf','text_watermark_font_size0':'14','text_watermark_text_x0':'10','text_watermark_text_y0':'25','text_watermark_right0':'0','text_watermark_bottom0':'0'" maxSize="204800"/>
+		<br />
+		
+		<!--example 5-->
+		<br />Example 5:<br />
+		<form id="form" method="post" action="formProcessor.php">
+			Name: <input type="text" name="name" />&nbsp;&nbsp;
+			Surname: <input type="text" name="surname" /><br /><br />
+			<input class="IMU" type="file" path="files/" multi="true" startOn="onSubmit:form" afterUpload="filename" maxSize="204800" />
+			<input type="submit" value="Submit" />
+		</form>
+		<br />
+		
+		<!--example 6-->
+		<br />Example 6:<br />
+		<form id="formAjax" method="post" action="formProcessorAjax.php">
+			<p>
+			<div class="imu_info" id="info"></div>
+			<div>Name:</div><input type="text" name="name" />
+			<div>Surname:</div><input type="text" name="surname" /><br/>
+			<input class="IMU" type="file" path="files/" startOn='onSubmit:formAjax' ajax='true' ajaxInfoId='info' ajaxLoaderId='loader' multi='true' afterUpload='filename' maxSize='204800' />
+			<input type="submit" value="Submit" />
+			<span class="imu_loader" id="loader">
+				<img src='ajax-loader.gif'/>
+			</span>
+			</p>
+		</form>
+		
+		<!--example 7-->
+		<br />Example 8:<br />
+		<input class="IMU" type="file" path="files/" multi="true" startOn="auto" afterUpload="Uploaded IMUfilesUploaded files!<br />Errors: IMUerrors<br />Total size: IMUtotalSizeKB KB<br />Avg speed: IMUspeedKB kb/s" maxSize="204800" />
+		<br />
+		
+		<!--example 8-->
+		<br />Example 8:<br />
+		<input class="IMU" type="file" path="files/" multi="true" startOn="auto" afterUpload="link" button="custom_button.png" bwidth="100" bheight="30" allowRemove="false" maxSize="204800" />
+		<br />
+		
+		<!--example 9-->
+		<br />Example 9:<br />
+		<input type="text" name="firstInput" style="margin-bottom: 5px;"/><br />
+		<input type="text" name="otherInput" id="someId" style="margin-bottom: 5px;" /><br />
+		<input class="IMU" type="file" path="files/" multi="true" startOn="auto" afterUpload="link" data="'variable1':'value1', 'variable2':'value2', 'formInput':'selector:[name=firstInput]', 'otherInput':'selector:#someId'" maxSize="204800" />
+	</body>
+</html>

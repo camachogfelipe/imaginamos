@@ -1,0 +1,4 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>19134648</span><br/>solicito el envio de cotizacion de un seguro a canada por 120 dias, para 3 pasajeros edades 60,58 y 32. correo orpinto1@yahoo.com~2012-09-02 15:25:05
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

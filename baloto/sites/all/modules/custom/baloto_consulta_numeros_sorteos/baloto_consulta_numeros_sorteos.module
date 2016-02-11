@@ -1,0 +1,263 @@
+<?php
+/**
+ * @file
+ * Modulo para buscar numeros jugados en sorteos anteriores
+ *
+ * Autor information: Yesid Camilo Ortiz Castillo
+ * email: yeskmilo@gmail.com
+ */
+
+function _baloto_consulta_numeros_sorteos_block(){
+  $formulario_busqueda = drupal_get_form('_baloto_consulta_numeros_sorteos_form');
+  $formulario_busqueda_render = render($formulario_busqueda);
+  return ($formulario_busqueda_render);
+}
+
+/**
+* Implentation of hook_block_info
+**/
+
+function baloto_consulta_numeros_sorteos_block_info() {
+  $blocks['block_number_search'] = array(
+    'info' => t('Consulta de numeros basado en un sorteo mostrando coincidencias'),
+    'cache' => DRUPAL_CACHE_PER_PAGE,
+  );
+  return $blocks;
+}
+
+/**
+* Implentation of hook_block_view
+**/
+
+function baloto_consulta_numeros_sorteos_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'block_number_search':
+      $block['subject'] = t('Consulta de numeros basado en un sorteo mostrando coincidencias');
+      $block['content'] = _baloto_consulta_numeros_sorteos_block();
+      break;
+  }
+  return $block;
+}
+
+/**
+* Construccion del formulario donde se mostraran las fechas de sorteos anteriores,
+* y coincidencias de los numeros buscados con los que cayeron en el sorteo
+*/
+function _baloto_consulta_numeros_sorteos_form ($form, $form_state){
+  $opciones_fechas = _cache_process(cache_get('_baloto_sorteo_date_cached'));
+  if(sizeof($opciones_fechas) == 0){
+    _baloto_sorteos_set_sorteo_cache();
+    $opciones_fechas = _cache_process(cache_get("_baloto_sorteo_date_cached"));
+  }
+  //krsort($opciones_fechas);
+  $new_array_mapped = $opciones_fechas;
+  $first_value = reset($new_array_mapped); // First Element's Value
+  $first_key = key($new_array_mapped); // First Element's Key
+  $sorteo_array = _cache_process(cache_get("_baloto_sorteo_date_ui_cached"));
+  $resultado = $sorteo_array[$first_key];
+  $node = node_load($resultado);
+  $cifra = _baloto_sorteos_anteriores_get_cifras($node);
+  $cantidad = _baloto_sorteos_anteriores_get_cantidad($node);
+  $totalganado = _baloto_sorteos_anteriores_get_total($node);
+  $premioganador = _baloto_sorteos_anteriores_get_premio_ganador($node);
+  $mensaje = _baloto_sorteos_anteriores_get_mensaje($cantidad,$totalganado, $premioganador);
+  $form['seleccion_fecha'] = array(
+    '#type' => 'select',
+    '#options' => $new_array_mapped,
+    '#default_value' => t('Seleccione fecha de sorteo'),
+  );
+  $form['cifra_consul_uno'] = array(
+    '#prefix' => '<h2>Balotas de Baloto</h2><div id="t-numeros-jugados">',
+    '#type' => 'textfield',
+    '#required' => TRUE,
+  );
+  $form['cifra_consul_dos'] = array(
+    '#type' => 'textfield',
+    '#required' => TRUE,
+  );
+  $form['cifra_consul_tres'] = array(
+    '#type' => 'textfield',
+    '#required' => TRUE,
+  );
+  $form['cifra_consul_cuatro'] = array(
+    '#type' => 'textfield',
+    '#required' => TRUE,
+  );
+  $form['cifra_consul_cinco'] = array(
+    '#type' => 'textfield',
+    '#required' => TRUE,
+  );
+  $form['cifra_consul_seis'] = array(
+    '#type' => 'textfield',
+    '#required' => TRUE,
+    '#suffix' => '</div>',
+  );
+  $form['ganadores'] = array(
+    '#type' => 'item',
+    '#prefix' => '<div id="d-mensaje-2">',
+    '#suffix' => '</div>',
+  );
+  // $form['s-revancha'] = array(
+  //   '#markup' => '<div id="s-consulta-revancha"></div>',
+  // );
+  $content = array(
+    '#type' => 'container',
+    '#id' => 's-consulta-revancha',
+  );
+  $content['titulo'] = array(
+    '#markup' => '<h2>' . t('Balotas de Revancha') . '</h2>',
+  );
+  $content['cifra_revancha_uno'] = array(
+    '#prefix' => '<div id="t-numeros-jugados-revancha">',
+    '#type' => 'textfield',
+    //'#default_value' => $node->field_revancha_cifra_uno['und'][0]['value'],
+    //'#default_value' => $form_state['input']['cifra_consul_uno'],
+    '#required' => TRUE,
+  );
+  $content['cifra_revancha_dos'] = array(
+    '#type' => 'textfield',
+    //'#default_value' => $node->field_revancha_cifra_uno['und'][0]['value'],
+    //'#default_value' => $form_state['input']['cifra_consul_dos'],
+    '#required' => TRUE,
+  );
+  $content['cifra_revancha_tres'] = array(
+    '#type' => 'textfield',
+    //'#default_value' => $node->field_revancha_cifra_uno['und'][0]['value'],
+    //'#default_value' => $form_state['input']['cifra_consul_tres'],
+    '#required' => TRUE,
+  );
+  $content['cifra_revancha_cuatro'] = array(
+    '#type' => 'textfield',
+    //'#default_value' => $node->field_revancha_cifra_uno['und'][0]['value'],
+    //'#default_value' => $form_state['input']['cifra_consul_cuatro'],
+    '#required' => TRUE,
+  );
+  $content['cifra_revancha_cinco'] = array(
+    '#type' => 'textfield',
+    //'#default_value' => $node->field_revancha_cifra_uno['und'][0]['value'],
+    //'#default_value' => $form_state['input']['cifra_consul_cinco'],
+    '#required' => TRUE,
+  );
+  $content['cifra_revancha_seis'] = array(
+    '#type' => 'textfield',
+    '#required' => TRUE,
+    //'#default_value' => $node->field_revancha_cifra_uno['und'][0]['value'],
+    //'#default_value' => $form_state['input']['cifra_consul_seis'],
+    '#suffix' => '</div>',
+  );
+
+  $form['contenedor_revancha'] = $content;
+
+  $form['actions'] = array('#type' => 'actions');
+  $form['actions']['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Buscar'),
+    '#ajax' => array(
+      'callback' => '_baloto_consulta_numeros_sorteos_coincide',
+    ),
+    '#weight' => 1,
+  );
+  //$form['#suffix'] =  render(drupal_get_form('_baloto_consulta_numeros_sorteos_revancha'));
+  return $form;
+}
+
+/**
+* Funcion que verifica las coincidencias y muestra las mismas.
+*/
+
+function _baloto_consulta_numeros_sorteos_coincide ($form, $form_state) {
+  $sorteo_array = _cache_process(cache_get("_baloto_sorteo_date_ui_cached"));
+  $fecha = $form_state['values']['seleccion_fecha'];
+  $resultado = $sorteo_array[$fecha];
+  $node = node_load($resultado);
+  $cifras_sorteo = _baloto_sorteos_anteriores_get_cifras($node);
+  $cantidad = _baloto_sorteos_anteriores_get_cantidad($node);
+  $totalganado = _baloto_sorteos_anteriores_get_total($node);
+  $premioganador = _baloto_sorteos_anteriores_get_premio_ganador($node);
+  $mensaje = _baloto_sorteos_anteriores_get_mensaje_2($cantidad,$totalganado, $premioganador);
+  $commands[] = array();
+  $campos = array('uno'=>'uno','dos'=>'dos','tres'=>'tres','cuatro'=>'cuatro','cinco'=>'cinco','seis'=>'seis');
+  $cifras_sorteo_revancha = _baloto_consulta_revancha($node);
+  $cifras_usuario = array();
+  $cifras_usuario_revancha = array();
+  foreach ($campos as $key) {
+    $cifras_usuario[] = $form_state['values']['cifra_consul_'.$key];
+    $cifras_usuario_revancha[] = $form_state['values']['cifra_revancha_'.$key];
+    $commands[] = ajax_command_invoke('#edit-cifra-consul-'.$key, 'removeClass', array('p-coincide'));
+    $commands[] = ajax_command_invoke('#edit-cifra-revancha-'.$key, 'removeClass', array('p-coincide'));
+
+  }
+  $i = 0;
+
+  foreach($campos as $key){
+    $control = FALSE;
+    foreach ($cifras_usuario as $keysot => $valor) {
+      if ($cifras_sorteo[$i] == $valor) {
+        if ($keysot != $i) {
+          $salvar = $cifras_usuario[$i];
+          $key_search = array_search($valor, $cifras_usuario);
+          $cifras_usuario[$key_search] = $salvar;
+        }
+        $commands[] = ajax_command_invoke('#edit-cifra-consul-'.$key, 'addClass', array('p-coincide'));
+        $commands[] = ajax_command_invoke('#edit-cifra-consul-'.$key, 'attr', array('value', $valor));
+        $control = TRUE;
+        unset($cifras_sorteo[$i]);
+      }
+    }
+    if($control == FALSE){
+      $commands[] = ajax_command_invoke('#edit-cifra-consul-'.$key, 'attr', array('value', $cifras_usuario[$i]));
+    }
+    $control = FALSE;
+    foreach ($cifras_usuario_revancha as $keyrevancha => $valor) {
+      if ($cifras_sorteo_revancha[$i] == $valor) {
+        if ($keyrevancha != $i) {
+          $salvar = $cifras_usuario_revancha[$i];
+          $key_search = array_search($valor, $cifras_usuario_revancha);
+          $cifras_usuario_revancha[$key_search] = $salvar;
+        }
+        $commands[] = ajax_command_invoke('#edit-cifra-revancha-'.$key, 'addClass', array('p-coincide'));
+        $commands[] = ajax_command_invoke('#edit-cifra-revancha-'.$key, 'attr', array('value', $valor));
+        $control = TRUE;
+        unset($cifras_sorteo_revancha[$i]);
+
+      }
+    }
+    if($control == FALSE){
+      $commands[] = ajax_command_invoke('#edit-cifra-revancha-'.$key, 'removeClass', array('p-coincide'));
+      $commands[] = ajax_command_invoke('#edit-cifra-revancha-'.$key, 'attr', array('value', $cifras_usuario_revancha[$i]));
+    }
+
+    $i++;
+  }
+  return array('#type' => 'ajax', '#commands' => $commands);
+}
+
+function _baloto_consulta_revancha($node) {
+  $cifras_sorteo_revancha = array();
+  if (isset($node->field_revancha_cifra_uno[LANGUAGE_NONE][0]['value']))
+    $cifras_sorteo_revancha[] = $node->field_revancha_cifra_uno[LANGUAGE_NONE][0]['value'];
+  else
+    $cifras_sorteo_revancha[] = '';
+  if (isset($node->field_revancha_cifra_dos[LANGUAGE_NONE][0]['value']))
+    $cifras_sorteo_revancha[] = $node->field_revancha_cifra_dos[LANGUAGE_NONE][0]['value'];
+  else
+    $cifras_sorteo_revancha[] = '';
+  if (isset($node->field_revancha_cifra_tres[LANGUAGE_NONE][0]['value']))
+    $cifras_sorteo_revancha[] = $node->field_revancha_cifra_tres[LANGUAGE_NONE][0]['value'];
+  else
+    $cifras_sorteo_revancha[] = '';
+  if (isset($node->field_revancha_cifra_cuatro[LANGUAGE_NONE][0]['value']))
+    $cifras_sorteo_revancha[] = $node->field_revancha_cifra_cuatro[LANGUAGE_NONE][0]['value'];
+  else
+    $cifras_sorteo_revancha[] = '';
+  if (isset($node->field_revancha_cifra_cinco[LANGUAGE_NONE][0]['value']))
+    $cifras_sorteo_revancha[] = $node->field_revancha_cifra_cinco[LANGUAGE_NONE][0]['value'];
+  else
+    $cifras_sorteo_revancha[] = '';
+  if (isset($node->field_revancha_cifra_seis[LANGUAGE_NONE][0]['value']))
+    $cifras_sorteo_revancha[] = $node->field_revancha_cifra_seis[LANGUAGE_NONE][0]['value'];
+  else
+    $cifras_sorteo_revancha[] = '';
+  return $cifras_sorteo_revancha;
+}

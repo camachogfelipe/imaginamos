@@ -1,0 +1,33 @@
+
+
+/* Sudo Slider */
+#slider ul, #slider li, #slider2 ul, #slider2 li{margin:0;padding:0;list-style:none;position:relative;display:block;}
+/* Uncomment this if you wan't to only have 1 visible slide before the javascript kicks in. 
+#slider li {display:none;}	
+#slider li:first-child {display:block;}
+*/
+
+#slider{ position:absolute !important; top:0 !important}
+#slider, #slider li, #slider2, #slider2 li {width:1000px !important;overflow:hidden; height:472px; background:#FFF;}
+/* // Sudo Slider */	
+/* Numeric Navigation */
+.graphic, .prevBtn, .nextBtn{margin:0;padding:0;display:block;overflow:hidden;text-indent:-8000px;}
+
+.prevBtn, .nextBtn {position:absolute; display:block;width:67px;height:111px;position:absolute;top:181px;z-index:10000000; background:url(../img/btns_slide2.png); cursor:pointer;}	
+.nextBtn{left:100%;;}														
+.nextBtn { background-position: top right}	
+.prevBtn{right:100%;}
+.prevBtn:hover{
+	background-position:bottom left;
+}
+
+.nextBtn:hover{
+	background-position:bottom right;
+}
+
+/* Numeric Navigation */
+ol{ z-index:10000000000 !important; top:430px; height:13px; width:96px; left:50%; margin-left:-48px; position:absolute;  }
+ol li{margin:0 0 0 0; list-style:none; float:left; font-size:0px; padding:0;}
+ol li a{ height:24px; width:24px; background:url(../img/btns_slide.png); display:block; opacity:0.6; filter:alpha(opacity=60)}
+ol li.current a, ol li a:hover{ background-position:bottom;}
+a:focus, .prevBtn a:focus, .nextBtn a:focus{outline:none;}

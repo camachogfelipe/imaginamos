@@ -1,0 +1,8 @@
+[23-May-2013 19:17:44 UTC] PHP Fatal error:  Cannot redeclare class Database in /home/norquimi/public_html/admin/core/class/db.class.php on line 15
+[23-May-2013 19:18:59 UTC] PHP Fatal error:  Cannot redeclare class Database in /home/norquimi/public_html/admin/core/class/db.class.php on line 15
+[23-May-2013 19:20:30 UTC] PHP Fatal error:  Cannot redeclare class Database in /home/norquimi/public_html/admin/core/class/db.class.php on line 15
+[23-May-2013 21:49:52 UTC] PHP Fatal error:  Cannot redeclare class Database in /home/norquimi/public_html/admin/core/class/db.class.php on line 15
+[27-May-2013 15:08:39 UTC] PHP Fatal error:  Cannot redeclare class Database in /home/norquimi/public_html/admin/core/class/db.class.php on line 15
+[27-May-2013 15:16:00 UTC] PHP Fatal error:  Cannot redeclare class Database in /home/norquimi/public_html/admin/core/class/db.class.php on line 15
+[27-May-2013 22:03:27 UTC] PHP Fatal error:  Cannot redeclare class Database in /home/norquimi/public_html/admin/core/class/db.class.php on line 15
+[28-May-2013 02:20:24 UTC] PHP Fatal error:  Cannot redeclare class Database in /home/norquimi/public_html/admin/core/class/db.class.php on line 15

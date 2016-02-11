@@ -1,0 +1,8 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>camilo sanchez</span>Carlitos esta ahi? 
+<span class='admin'>Carlos Cano</span>si cami  
+<span class='usuario'>camilo sanchez</span>COMO VE ESTA CHAFES CARLITOS? 
+<span class='admin'>Carlos Cano</span>creo que se debe dar como un tiempo prudencial para co nfirmar como funciona
+<span class='usuario'>camilo sanchez</span>listo carlitos 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

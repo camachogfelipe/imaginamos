@@ -1,0 +1,8 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>53001085</span><br/>buenas Tardes cuanto cuesta un seguro a Doga....~2012-08-06 15:46:44
+<span class='admin'>Agente</span><br/>muy buenas tardes por cuanto tiempo piensa estar fuera del pais?? ~2012-08-06 15:47:38
+<span class='admin'>Agente</span><br/>(oms) ~2012-08-06 15:47:42
+<span class='admin'>Agente</span><br/>27 dias ~2012-08-06 15:48:36
+<span class='admin'>Agente</span><br/>correcto que paises piensa visitar? (oms) ~2012-08-06 15:49:07
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

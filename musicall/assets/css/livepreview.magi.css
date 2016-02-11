@@ -1,0 +1,47 @@
+.calender{width:210px;height:200px;margin:auto;overflow-y:auto; float:right}
+.event{padding:10px;border-bottom:1px dashed #eee;color:#aaa}
+.event h1{font:36px Century Gothic, Arial;color:#555;float:left}
+.event h2{font:24px Century Gothic, Arial;color:#888;text-align:right;padding-top:12px}
+.event p{font:14px Century Gothic, Arial;clear:both}
+.in{width:100%;height:100%;background:#fff}
+.header{height:40px;padding:10px 10px 15px;background:url('../img/headerBottom.png') repeat-x center bottom}
+.searchHolder{position:absolute;margin:2px 0 0 0px}
+.search, .home{position:absolute;width:38px;height:38px;background:#bbb url('../img/search.png') no-repeat center center;border:10px solid #fff}
+.home{margin-left:30px;background-image:url('../img/home.png')}
+.search:hover, .home:hover{background-color:#ccc}
+.search:active{margin:1px 0 0 1px}
+.home:active{margin:1px 0 0 31px}
+.arrowHolder{position:absolute;width:40px;margin:20px 0 0 160px}
+.arrow{width:24px;height:27px;padding:5px;background:#fff no-repeat 12px 12px;border-width:0}
+.arrow:hover{background-position:11px 11px}
+.arrow:active{background-position:12px 12px}
+.arrow.left{background-image:url('../img/arrowLeft.png');position:absolute}
+.arrow.right{background-image:url('../img/arrowRight.png');float:right}
+.monthYear{width:190px;text-align:right;font:12px Century Gothic, Arial;padding:0;margin:0}
+.clock{position:absolute;margin:25px 0 0 100px;font:18px ;color:#bbb}
+.clock span{font-size:12px}
+.days div{width:29.2px;float:left;margin:0 0 -1px;padding:4px 0 0;text-align:center;font:12px Century Gothic, Arial;color:#bbb}
+.dates{float:left;width:206px}
+.dates div{width:25.2px;height:15px;background:#fbfbfb;border:1px solid #f5f5f5;float:left;margin:2px 0 0 2px;padding:5px 0;text-align:center;font:14px Century Gothic, Arial;color:#aaa;cursor:default}
+.dates div.date:hover{width:25.2px;height:15px;padding:5px 0;border-width:1px;font-size:28px; background:#ebf4d6}
+.dates div.today{background:#f5f5f5;border-color:#ccc;color:#555;font-weight:bold}
+.dates div.highlight{background:#c8df94;border-color:#699800;padding:5px 0;color:#5ae;cursor:pointer;text-align:left}
+.dates div p.number{margin:0;width:27px;text-align:center}
+.dates div.highlight:hover{padding:5px 0}
+.dates div.highlight span{position:absolute;display:none;width:87px;margin-top:-2px;text-align:center;font-size:12px}
+.dates div.searched{border:1px dashed #555}.dates div.out{background:#fff;border:1px solid #fff;color:#d9d9d9}
+#calenderModal{display:none}
+#calenderModalBG{position:fixed;top:0;left:0;width:100%;height:100%;background:#000;opacity:0.6;filter:alpha(opacity = 60)}
+#calenderSearchForm, #dateInfoBox{position:absolute;display:none;left:50%;width:260px;height:145px;padding:30px;margin-left:-160px;z-index:3;background:url('../img/modalBG.png')}
+#dateInfoBox{padding:20px;width:280px;height:165px}
+#calenderSearchForm h1, #dateInfoBox h1{font:22px Century Gothic, Arial;text-align:center;margin:0 0 20px;color:#555}
+#dateInfoBox h1{margin-bottom:5px}
+#calenderSearchForm h1:first-child, #dateInfoBox h1:first-child{cursor:move}
+#calenderSearchForm input.text{width:180px;height:26px;padding:10px;background:#eee;font:16px Century Gothic, Arial;border-width:0;background:url('../img/searchText.png');color:#aaa}
+#calenderSearchForm input.submit{width:60px;height:46px;padding:0 30px;border-width:0;position:absolute;background:url('../img/searchSubmit.png')}
+#calenderSearchForm input.submit:active{margin:1px 0 0 1px}
+#calenderSearchForm a, #dateInfoBox a{display:block;font:12px Century Gothic, Arial;width:50px;text-align:center;color:#aaa;padding:10px;margin:20px auto 0}
+#dateInfoBox a{margin-top:5px;padding:5px}
+#dateInfoBox p{margin:0 0 15px;font:12px Century Gothic, Arial;color:#aaa}
+#dateInfoBox #dateInfoScroller{height:140px;overflow-y:auto}
+p.html{font: 16px Century Gothic, Arial; color: #555; width: 800px; margin: 10px auto; text-align: justify; text-justify: auto;}

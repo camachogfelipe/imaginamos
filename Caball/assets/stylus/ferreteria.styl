@@ -1,0 +1,1069 @@
+/*-----------------------------------------------------------
+* Nombre del proyecto: ferreteria
+* Nombre del archivo:  ferreteria.styl
+* Descripción: hoja de estilos global
+* Fecha de creación: __ de abril - de 2014
+* Autor: Esteban Vera
+* Correo: esteban.vg@outlook.com, esteban.vera@imagina.co
+
+------------------------------------------------------------*/
+/*--------------------COMENTARIOS-----------------------------
+* Ancho: 960px
+* Parallax: No
+* Responsivo: No
+-------------------------------------------------------------*/
+
+
+/*---pop-ups----*/
+@import url('../css/magnific-popup.css')
+
+/*------- Normalize -------*/
+@import 'normalize.styl'
+
+/*---fuentes---*/
+@import 'fuentes.styl'
+
+@import "nib"
+
+
+
+
+/*-- variables --*/
+azul = #425f9c
+azul2 = #55acee
+blanco = #fff
+gris = #edf2f3
+gris_os = #3a3a3a
+naranja = #ef7f2d
+negro = #333333
+rojo = #cc181e
+verde = #009541
+vendor-prefixes = webkit o ms moz official
+
+
+/*--------mixins---------*/
+cursiva()
+  font-style italic
+
+may()
+  text-transform uppercase
+
+bold()
+  font-weight bold
+
+block()
+  display block
+
+centrar()
+  margin 0 auto
+  block()
+
+alinear()
+   display inline-block
+   vertical-align top
+   zoom 1
+
+font-regular()
+  font-family 'aeroregular', sans-serif
+
+font(valor)
+  font-size valor
+
+box()
+  box-sizing border-box
+
+/*------------Clases globales--------------*/
+.left
+  float left
+
+.right
+  float right
+
+.border
+  border 1px solid rojo
+
+.clear
+  clear both
+
+.relative
+	position relative
+
+.padding
+	padding 1em
+
+.wrapper
+  width 960px
+  centrar()
+  position relative
+
+.margen
+  margin 20px auto
+
+.margen2
+  margin-top 15px !important
+
+.activo
+  background naranja !important
+  & span
+    opacity 1 !important
+
+.activo2
+  color gris_os !important
+
+.sombra2
+  position fixed
+  background rgba(0,0,0,0.5)
+  width 100%
+  height 100%
+  z-index 9991
+  top 0 
+  left 0
+
+.cerrar
+  background: rgb(224, 224, 224)
+  padding: 5px 10px
+  font-weight: bold
+  margin-top: 5px
+  box-shadow: #000 0px 0px 4px
+  border-radius 30px
+  cursor pointer
+  transition .3s
+  position absolute
+  top 0
+  right 10px
+  &:hover
+    background verde
+    color blanco
+
+.galeria
+  alinear()
+  background verde
+  border-bottom 2px solid naranja
+  centrar()
+  color blanco
+  font-weight bold
+  padding 10px
+  text-align center
+  transition .3s
+  width 130px
+  &:hover
+    background verde - 30%
+
+.vermas
+  color verde !important
+  margin-top 5px
+
+.volver
+  background verde
+  right 0
+  z-index 99
+  margin-bottom 20px
+  color blanco
+  padding 7px 10px
+  bold()
+  position absolute
+  transition .4s
+  &:before
+    alinear()
+    border-bottom 14px solid transparent
+    border-right 12px solid verde
+    border-top 14px solid transparent
+    content ''
+    left -12px
+    position absolute
+    top 0
+    transition .4s
+  &:hover
+    background verde - 40%
+  &:hover:before
+    border-right-color verde - 40%
+
+/*----------------POP-UDS----------------*/
+.popup-gallery
+  display none
+
+.white-popup-block
+  background blanco
+  padding 20px 30px
+  text-align left
+  max-width 500px
+  margin 40px auto
+  position relative
+  z-index 999
+
+.white-popup-block img 
+  margin 0 auto
+  display block
+
+.white-popup-block h4 
+  text-align center
+  margin 10px auto 15px auto
+  text-align center
+  font(20px)
+
+
+/*-----------------Body y Container---------------------*/
+body
+  background gris
+  color negro
+  font-family 'arial', sans-serif
+  font(14px)
+
+
+
+/*---------------------Loader---------------------------*/
+.loader
+  position fixed
+  background url(../imgs/logo.jpg) center no-repeat blanco
+  width 100%
+  height 100%
+  z-index 9999
+
+.fondoblanco
+  background-color blanco 
+  position fixed
+  left 0
+  top 0
+  z-index 10000000000000 
+  width 100% 
+  height 100% 
+  display block 
+  overflow hidden
+
+/*-------------------------header-----------------------*/
+header
+  background blanco
+  h1
+  .menu
+    float left
+  .menu
+    margin 28px 0 0 30px
+    background url(../imgs/menu.png) right 6px no-repeat
+    padding 5px 20px 5px 10px
+    color gris_os + 20%
+    font(18px)
+    cursor pointer
+    font-regular()
+    &:hover
+      color gris_os
+    may()
+  .carrito
+  .redesociales
+    float left
+    margin 25px 0 0 0
+  .redesociales
+    a
+      width 38px
+      height 38px
+      float left
+      background url(../imgs/redesociales.png) 0 0 no-repeat #cdcdcd
+      border-radius 50%
+      margin-left 10px
+      transition .3s
+    .facebook
+      background-position -48px 6px
+      &:hover
+        background-color azul
+    .twitter
+      background-position -93px 7px
+      &:hover
+        background-color azul2
+    .youtube
+      background-position -138px 7px
+      &:hover
+        background-color rojo
+.menu2
+  background verde
+  box-shadow rgba(46, 46, 46, 0.57) 0px 4px 13px inset
+  display none
+  nav
+    text-align center
+    li
+      font-regular()
+      alinear()
+      a
+        color blanco
+        padding 16px 25px
+        block()
+        transition .5s
+        position relative
+        &:hover
+          background naranja 
+          & span
+            opacity 1
+        span
+          border-left 10px solid transparent
+          border-right 10px solid transparent
+          border-top 10px solid blanco
+          left 50%
+          margin-left -10px
+          opacity 0
+          position absolute
+          top 0
+          transition .3s
+
+.carrito
+  background url(../imgs/redesociales.png) 56px 6px no-repeat naranja
+  color blanco
+  padding 12px 50px 12px 14px
+  border-radius 20px
+  margin-right 10px
+  transition .3s
+  font-regular()
+  &:hover
+    background-color naranja - 10%
+
+.contactenos
+  width 110px
+  height 110px
+  background url(../imgs/contactenos.png) center no-repeat
+  position fixed
+  top 50%
+  margin-top -55px
+  right 5px
+  z-index 999
+  cursor pointer
+
+.formulario
+  width 300px
+  padding 10px
+  position fixed
+  top 50%
+  right -320px
+  margin-top -237px
+  z-index 9999
+  z-index: 9999
+  background blanco
+  border-radius 10px 0 0 10px
+  box-shadow #222121 1px 1px 4px
+  transition .5s
+  h5
+    font(20px)
+    font-weight normal
+  input[type="text"]
+  textarea
+    width 100%
+    box()
+    padding 5px
+    margin-bottom 5px
+    border 1px solid #9E9393
+  textarea
+    resize none
+    height 100px
+    font-family 'arial',sans-serif
+  input[type="submit"]
+    background #333
+    bold()
+    border none
+    border-radius 5px
+    color #fff
+    cursor pointer
+    float right
+    padding 5px 15px
+    transition .3s
+    &:hover
+      background #000
+
+/*-----------ubicacion-----------*/
+.ubicacion
+  background url(../imgs/ubicacion.png) 103px 4px no-repeat negro
+  padding 5px 30px 5px 10px
+  color blanco
+  border-radius 5px
+  transition .3s
+  margin-bottom 15px
+  float right
+  &:hover
+    background-color #000
+
+#mapa
+  width 100%
+  float right
+  height 450px
+  border-radius 0 0 10px 10px
+  box-shadow negro 1px 16px 12px -15px
+  border 1px solid #ccc
+  margin-bottom 30px
+
+.sedes
+  margin-bottom 30px
+  position relative
+  .sede
+    width 300px
+    float left
+    margin 0 30px 10px 0
+    padding 10px
+    box()
+    background blanco
+    box-shadow #5c5b5b 1px 5px 4px -4px
+    &:nth-child(n + 3)
+      margin-right 0
+
+.slidercarrusel
+  width 960px !important
+
+/*-----------------------Slider-------------------------*/
+
+
+
+/*----------------------Contenido-----------------------*/
+
+/*----------Home-----------*/
+.destacados1
+  margin-bottom 20px
+  > div
+    color blanco
+    float left
+    height 490px
+    overflow hidden
+    position relative
+    text-align center
+    width 25%
+    &:hover
+      .sombra
+        height 0
+        opacity 0
+        position relative
+      .texto
+        bottom 10px
+        background rgba(0, 149, 65, 0.68)
+    .sombra
+      width 100%
+      height 100%
+      background rgba(0,0,0,0.5)
+      top 0 
+      left 0
+      opacity 1
+      position absolute
+      transition .5s
+    img
+      width 100%
+    .texto      
+      bottom -20%
+      box()
+      left 50%
+      margin-left -42%
+      padding 2%
+      position absolute
+      width 84%
+      transition .5s
+      h2 
+        font(20px)
+        margin-bottom 15px
+      a
+        background blanco
+        border-radius 20px
+        color verde
+        alinear()
+        may()
+        padding 5px 15px
+        bold()
+        transition .2s
+        margin-bottom 15px
+        &:hover
+          padding 5px 20px
+
+.titulo
+  border-bottom 1px solid gris - 20%
+  font(23px)
+  margin-bottom 20px
+  padding-bottom 10px
+  text-align left
+  position relative
+  font-weight normal
+  color #3a3a3a
+  &:after
+    content ''
+    position absolute
+    bottom 0 
+    height 4px
+    width 30%
+    left 0
+    background verde
+  span 
+    color verde
+
+.destacado2
+  text-align center
+  margin-bottom 30px
+  figure
+    float left
+    font-regular()
+    margin 0 15px 0 0
+    opacity 0.7
+    position relative
+    width 310px
+    transition .4s
+    &:nth-of-type(3)
+      margin 0
+    &:hover
+        opacity 1
+        transform scale(1.02)
+    img
+      width 310px
+      height 200px
+    figcaption
+      width 100%
+      padding 10px 0
+      bottom 0
+      left 0
+      position absolute
+      background blanco
+      font(18px)
+      box-shadow #5C5B5B 1px 5px 4px -4px
+      a
+         color naranja
+         block()
+  
+.destacado3
+  position relative
+  margin-bottom 40px
+  .slidercarrusel
+    width 960px !important
+    figure
+      width 300px 
+      margin-right 25px
+      position relative
+      box-shadow #949494 0px 2px 4px
+      margin-bottom 20px
+      img
+        width 100%
+      figcaption
+        border-top 1px solid verde
+        padding 5px
+        position absolute 
+        bottom 0
+        left 0
+        box()
+        color #828282
+        width 100%
+        background blanco
+        a 
+          font-regular()
+          margin-bottom 15px
+          font(18px)
+          color #828282
+
+.prevBtn
+.nextBtn
+  position absolute
+  top 50%
+  background url(../imgs/que_opina/nexprev.png)0 0 no-repeat
+  text-indent -99999px
+  width 36px
+  height 100px
+  z-index 999
+  margin-top - 50px
+  opacity 0.7
+  &:hover
+    opacity 1
+.prevBtn
+  left -40px
+.nextBtn
+  right -40px
+  background-position -80px 0px
+        
+
+/*----------Nosotros----------*/
+.col
+  float left
+  margin 0 30px 15px 0
+  width 300px
+  text-align justify
+  &:nth-of-type(3)
+    margin-right 0
+
+.aliados
+  text-align center
+  img
+    alienar()
+    width 180px
+    margin-right 10px
+    box-shadow #949494 0px 2px 4px
+    &:nth-of-type(5)
+      margin-right 0
+
+/*-----instalacion----------------*/
+.instalacion
+  > img 
+    width 60%
+    margin 0 auto 15px auto
+    box-shadow #949494 0px 16px 6px -14px
+    clear both
+    display block
+  .col
+    background blanco 
+    padding 20px
+    box()
+    box-shadow #949494 0px 2px 4px
+
+/*------ productos------------*/
+.prod
+  article
+    > ul
+      display none
+      list-style none
+      > li
+        width 290px
+        transition .4s
+        alinear()
+        margin 0 40px 20px 0 
+        &:nth-of-type(3n + 3)
+          margin-right 0
+        figure
+          opacity 1
+          figcaption
+            position relative
+
+/*-----sub-categoria-productos--------*/
+.sub_categoria_prod
+  > ul
+    list-style none
+    display none
+    text-align center
+    li
+      width 450px
+      alinear()
+      margin 0 55px 20px 0
+      box-shadow #949494 0px 2px 4px
+      &:nth-of-type(2n + 2)
+        margin-right 0px
+      figure
+      .cont_mas
+        float left
+      figure
+        width 55%
+        position relative
+        img
+          width 100%
+          height 200px
+        figcaption
+          position absolute
+          background negro
+          color blanco
+          padding 10px 5px
+          box()
+          width 100%
+          bottom 0
+          left 0
+      .cont_mas
+        width 45%
+        padding 10px
+        box()
+        min-height 200px
+        background blanco
+        text-align left
+
+/*-------------catalogo--------------------*/
+.catalago
+  text-align center
+  > ul
+    list-style none
+    display none
+    > li
+      margin 0 15px 20px 0
+      alinear()
+      width 306px
+      &:nth-of-type(3n + 3)
+       margin 0
+      figure
+        opacity 1
+        position relative 
+        overflow hidden
+        margin 0
+        &:hover
+          transform scale(1)
+        &:hover .sombra3
+          top 0
+        .sombra3
+          width 100%
+          height 100%
+          background rgba(0,0,0,0.6)
+          top -100%
+          left 0
+          transition .4s
+          z-index 3
+          position absolute
+          &:after
+            content '+'
+            color blanco
+            position absolute
+            top 50%
+            left 50%
+            font(40px)
+            margin -20px 0 0 -20px
+    
+/*-------------detalle catalogo----------*/
+.cont_slider
+  box-shadow #949494 0px 16px 6px -14px
+  position relative
+  width 400px
+  height 270px
+  float left
+  .slider
+    width 400px
+    height 270px
+  .controls
+    list-style none
+    float right
+    position absolute
+    bottom 10px
+    right 10px
+    li
+      width 10px
+      height 10px
+      border-radius 50%
+      background negro
+      text-indent -99999px
+      float left
+      margin 0 5px
+      transition .3s
+      cursor pointer
+      &:hover
+        background verde
+      &.current
+        background naranja !important
+.slider 
+  li 
+    img 
+      width 400px
+      height 270px 
+
+.info_detalle
+  width 480px
+  float right
+  .carrito
+    font-family 'arial', sans-serif
+    bold()
+  span
+    float left
+    width 50%
+    margin-bottom 10px
+    b
+      color verde
+
+.linea
+  width 100%
+  margin 5px 0
+  height 1px
+  background gris - 40%
+  clear both
+
+select
+  border 4px solid gris - 30%
+  margin 6px 10px
+  width 60px
+
+.det_catalogo
+  select
+  .carrito
+    float left
+  .carrito
+    background-position 97px 6px
+
+.catalogo
+  background verde
+  bold()
+  color blanco
+  float left 
+  padding 10px 15px
+  transition .3s
+  &:hover
+    background verde - 30%
+
+.det_catalogo
+  article
+    margin-bottom 30px
+  .videoss
+    width 130px
+    cursor pointer
+    margin 10px auto
+    color negro
+    bold()
+    font(20px)
+    font-regular()
+    position relative
+    div
+      border-left 10px solid transparent
+      border-right 10px solid transparent
+      border-top 10px solid verde
+      position absolute
+      top 6px
+      right 0
+      block()
+      transition .4s
+
+.link
+  color negro
+  margin-bottom 5px
+  block()
+.girar
+  transform rotate(180deg) !important
+  
+.videos
+  display none
+  iframe
+    width 100%
+    height 400px
+    box-shadow #949494 0px 16px 6px -14px
+
+
+/*---------------carrito de compras--------*/
+.cont_carrito
+  article
+    background blanco
+    table
+      border-bottom 1px solid #ccc
+      tr:nth-of-type(1)
+        border-bottom 1px solid #ccc
+      th
+      td
+        width 240px
+        padding 20px 10px
+        box()
+        text-align left
+      th
+        color naranja
+      td
+        margin-bottom 30px
+        img
+          width 24px
+          cursor pointer
+        span
+          background verde
+          padding 5px 10px
+          color blanco
+    .final
+      border none !important
+      width 320px
+      float right
+      margin-right 56px
+      tr
+        border none !important
+    .linea2
+      background #ccc
+      width 100%
+      height 1px
+      clear both
+
+.pago
+  padding 20px
+  width 320px
+  float right
+  margin-right 60px
+  a
+    float left
+    background verde
+    padding 10px 15px
+    color blanco
+    margin-left 12px
+    &:hover
+      background verde - 40%
+
+.pagar
+  fieldset
+    width 48%
+    float left
+    margin-right 4%
+    box()
+    &:nth-of-type(2)
+      margin-right 0
+    input[type="text"]
+    textarea
+      width 100%
+      padding 5px
+      box()
+      margin-bottom 5px
+      border 1px solid #9e9393
+    textarea
+      resize none
+      font-family 'arial',sans-serif
+      height 100px
+  input[type="submit"]
+    float right
+    padding 10px 15px
+    color blanco
+    bold()
+    background verde
+    border none
+    transition .3s
+    cursor pointer
+    &:hover
+      background verde - 40%
+
+.terminos
+  margin 5px 0
+  .texto_ter
+    height 100px
+    overflow hidden
+    margin-top 25px
+
+.cerrar2
+  float right
+  border none
+  background blanco
+  font-size 14px
+  bold()
+  cursor pointer
+
+.cont_check
+  float left
+  .check
+  a
+    float left
+  .check
+    width 24px
+    height 24px
+    background url(../imgs/checkbox.png) 0 0 no-repeat
+    cursor pointer
+    &:hover
+      background-position 0px -26px
+    input[type="checkbox"]
+      opacity 0
+  a
+    text-decoration none
+    color negro
+    margin-left 10px 
+    line-height 24px 
+    bold()
+    &:hover
+      text-decoration underline
+
+.activo_check
+  background-position 0px -52px !important
+
+
+/*------------paginador------------------*/
+.paginador
+  margin 20px 0
+  width 100%
+  text-align center
+
+.paginador div{
+  display: inline-block; 
+  vertical-align: top; 
+  zoom:1; 
+  background: #fff; 
+  color: #0067b3; 
+  padding: 0 8px;
+  font-weight: bold; 
+  transition:0.4s; 
+  cursor: pointer; 
+  height: 30px; 
+  line-height: 30px;
+  box-shadow 1px 1px 2px #ccc
+}
+
+.paginador 
+  .numeric
+    background transparent !important
+    cursor default
+    border none
+    box-shadow none
+    padding 0 !important
+    a
+      background negro 
+      text-decoration none
+      color: blanco 
+      padding 0 8px 
+      transition .4s
+      height 30px
+      line-height 30px
+      display block
+      float left
+      margin-left 10px
+      &:hover
+        background: verde 
+
+.activopaginador
+  background verde !important
+      
+
+/*---------------------Footer---------------------------*/
+footer
+  padding-top 30px
+  background negro
+  color gris
+  .wrapper
+    h5
+      font(20px)
+      padding-bottom 5px 
+      border-bottom 2px solid naranja
+      font-weight normal
+      margin-bottom 15px
+      span
+        color naranja
+    h6
+      color naranja
+      margin-bottom 10px
+    .datos
+    .certifi
+      float left
+    .datos
+      width 500px
+      margin-right 50px
+      padding-bottom 15px
+      ul
+        list-style none
+        float left
+        font-family ''
+        &:nth-of-type(1)
+          width 360px
+        &:nth-of-type(2)
+          width 130px
+        &:nth-of-type(3)
+          width 100px
+        li
+          margin 3px 0
+          a
+            color gris
+            &:hover
+              text-decoration underline
+    .certifi
+      width 150px
+    > img
+      float right
+      margin-top 45px
+
+.firma
+  background negro - 30%
+  padding 5px 0
+  font-family 'arial'
+  .wrapper
+    p
+      margin 0
+      float left
+      span
+        color gris + 30%
+        bold()
+    .footer-autor  
+      float right
+      height 20px 
+      line-height 20px
+      text-align right
+      #ahorranito2 
+      > a
+        float left
+      #ahorranito2 
+        background url(../imgs/ahorranito-2.png) no-repeat 0px 0px
+        block()
+        height 24px
+        margin 0 5px
+        width 21px 
+      a
+        color blanco
+        text-decoration none
+        margin-left 4px
+        &:hover
+        &:active
+          text-decoration underline
+        span 
+          bold()
+          color #6dc5f3
+
+
+/*------------------Mediaqueries------------------------*/
+@media only screen and (max-width: 1000px)
+  header
+  footer
+    width:960px !important;

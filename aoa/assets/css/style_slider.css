@@ -1,0 +1,40 @@
+	
+/* Sudo Slider */
+.slider ul, .slider li, .slider2 ul, .slider2 li, .slider3 ul, .slider3 li{margin:0;padding:0;list-style:none;position:relative;display:block;}
+/* Uncomment this if you wan't to only have 1 visible slide before the javascript kicks in. 
+#slider li {display:none;}	
+#slider li:first-child {display:block;}
+*/
+.slider, .slider li {overflow:hidden; margin:0 !important; min-height: 177px;}
+.slider2, .slider2 li{width:1000px; height:263px; overflow:hidden;}
+.slider3{width:100% !important; overflow:hidden;}
+.slider3 li{width:200px; height:300px;}
+/* // Sudo Slider */	
+/* Numeric Navigation */
+.main_products ol {margin: 0;padding:0;height:15px; position:absolute; width:1000px; text-align:center; bottom:-30px; z-index:10}
+.main_products ol li{margin:0 5px 0 0; padding:0; list-style:none; height:11px; display:inline-block}
+.main_products ol li a{height:11px; width:11px; text-decoration:none; display:inline-block; background:url(../img/bullet.png); position:relative; text-indent:-8000px}
+
+.main_products ol li.current a, .main_products ol li a:hover{background-position:bottom;}
+
+
+
+.graphic, .prevBtn, .nextBtn{margin:0;padding:0;display:block;overflow:hidden;text-indent:-8000px;}
+.prevBtn, .nextBtn {display:block; line-height:19px !important; color:#666; width:32px; height:32px;position:absolute; margin-top:-20px; bottom:0;z-index:100;  cursor:pointer; text-indent:-8000px; background-image:url(../img/btns_slide.png); left:40% }	
+.nextBtn{ background-position: top right}	
+.prevBtn{ margin-left:-40px;}
+.prevBtn:hover{background-position:left bottom;}
+.nextBtn:hover{background-position:right bottom}
+
+.content_slider_descargas .prevBtn{margin-top:auto; top:320px; left:auto; right:80px;}
+.content_slider_descargas .nextBtn{margin-top:auto; top:320px; left:auto; right:20px;}
+.main_products .prevBtn, .main_products .nextBtn{background-image:url(../img/btns_slider2.png)}
+/* Some demos use this line */
+
+/*-- custom links --*/
+.btns_slider{position:absolute; top:0; left:50%; width:940px; z-index:2; margin-left:-470px; height:100%} 
+.btns_slider a{display:block; position:absolute; top:50%; background-image:url(../img/btns_slider.png); width:58px; height:58px; margin-top:-29px; cursor:pointer} 
+.prev_btn{left:-68px;}
+.next_btn{right:-68px; background-position:top right}
+.prev_btn:hover{background-position:left bottom}
+.next_btn:hover{background-position:right bottom}

@@ -1,0 +1,6 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>80123789</span><br/>Buen d&iacute;a,   Viendo en su Sitio Web, vi el plan de LARGA ESTAD&Iacute;A, nos aplica para nuestro viaje.  La idea es estar como m&iacute;nimo 90 d&iacute;as, en Canad&aacute;. En la p&aacute;gina nos arroja un valor por $ 483.300 pesos x persona.   Mi pregunta es. &iquest;Tiene total cobertura en la Provincia de Quebec y m&aacute;s que todo en la Ciudad de Montreal y Laval?. ~2012-08-09 16:07:50
+<span class='admin'>Agente</span><br/>Muy buenas Tardes, Efectivamente hay cobertura total en las ciudades de Quebec, Montreal y Laval. (DAT) ~2012-08-09 16:21:48
+<span class='usuario'>80123789</span><br/>gracias ~2012-08-09 16:23:13
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

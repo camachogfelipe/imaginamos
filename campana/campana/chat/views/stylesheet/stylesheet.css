@@ -1,0 +1,174 @@
+.msg {
+        margin:8px 8px 0px 8px; padding-top: 8px; border-top:1px solid #cccccc;
+        line-height: 1.5em;
+}
+.msg_last {
+    line-height: 1.5em;
+    margin:0px 8px 0px 8px;
+}
+.current_user {
+    color:#3e606f;
+}
+.c { clear:both; height:1px; }
+#messages a {
+color:#3e606f;
+text-decoration:underline;
+}
+#messages a:hover {
+text-decoration:none;
+}
+#messages img {
+    vertical-align: middle;
+    margin-right:2px
+}
+#send_email_btn {
+    background-color:#ff0700; padding:4px 14px 4px 14px; font-weight:bold; margin-top:10px; margin-right:10px; display:block; float:left; color:#fff; text-decoration:none
+}
+#user_register, #register_anon {
+    background-color:#ff0700; padding:4px 14px 4px 14px; margin-top:10px; margin-right:10px; display:block; float:left; color:#fff; text-decoration:none
+}
+#talk_window,#send_email,#register {
+	font-family:arial,tahoma,verdana;
+	position: absolute;
+	font-size:11px; 
+	display: none;  
+	left: 50%; 
+	bottom: 100%;
+	width: 236px; 
+	color:#fff;
+	margin:0 0 27px -470px;
+	background-color: #fff; 
+	border-left: 1px solid #21252e; 
+	border-right: 1px solid #21252e; 
+	border-top: 1px solid #21252e;
+}
+#messages {
+	height:240px;
+	padding:4px 0px 4px 0px;
+	color:#333;
+	overflow: auto;
+        word-wrap:break-word;
+}
+#online a {
+color:#fff;
+text-decoration: none;
+display:inline !important;
+}
+
+.text_round {
+	background-color: #fff; border-top: 1px solid #3e606f; padding:0px 4px 2px 4px; 
+}
+#message {
+overflow: auto; height:16px; outline: none; padding:4px; width:216px; border:0; font-family:Arial, Helvetica, sans-serif; font-size:12px; margin:0;
+}
+.talk {
+	display:inline-block;
+font-family:arial,tahoma,verdana;
+outline:none;
+position: absolute; font-size:10px; text-decoration: none; left: 50%; margin:0 0 -11px -470px; bottom: 100%; width: 236px; height:38px; color:#fff; padding:8px; background-color: #ff0700;
+}
+.talk:hover {color:#fff;}
+.open {
+background-color: #ff0700;
+}
+.open2{
+
+}
+#reminder {
+float:right
+}
+.settings,.nickname,.email {
+cursor:pointer; color:#fff; padding:8px; background-color: #383435; 
+}
+.options {
+ color:#fff; padding:8px; background-color: #383435; border-bottom:1px solid #21252e;
+}
+    .options a {
+        color:#fff;
+        font-size:11px;
+        text-decoration: none;
+
+    }
+    
+#opt_hidden {
+    display: none;
+    color:#fff;
+    padding:8px;
+    background-color: #383435;
+    border-bottom:1px solid #21252e;
+}
+    #opt_hidden input 
+    {
+        border:1px solid #21252e;
+        padding:4px 4px 4px 4px;
+        outline: none;
+        width:146px;
+        float:left
+    }
+    #opt_hidden a
+    {
+         background-color:#ff0700;
+         padding:5px 6px 5px 6px;
+         font-weight:bold;
+         display:block;
+         float:left;
+         color:#fff;
+         text-decoration:none;
+         margin-left:6px
+    }
+    
+#smile_hidden {
+    display: none;
+    color:#fff;
+    padding:8px;
+    background-color: #383435;
+    border-bottom:1px solid #21252e;
+}
+
+#smile_hidden a { display:inline;}
+
+    #smile_hidden img {
+        margin-right:6px;
+        border: none
+    }
+    
+.upload {
+    background-image:url(../image/upload.png);
+    width:12px;
+    height:12px;
+    float:right;
+		display:none;
+}
+.smile {
+    background-image:url(../image/smile.png);
+    width:12px;
+    height:12px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-right: 6px;
+    float:right;
+}
+.wheel {
+    background-image:url(../image/wheel.png);
+    padding-left:20px;
+    height:12px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-right: 6px;
+    float:left;
+}
+#send_email_loading,#register_loading {
+	display:none;
+}
+#send_email_result,#send_email_loading,#register_loading,#register_result {
+margin-top:14px;
+float:left;
+}
+.email { cursor:auto;}
+.email textarea,.email input { resize:none; border:none; padding:4px; width:210px; font-family: Arial, Helvetica, sans-serif; font-size:12px }
+.email textarea { height:100px } 
+.email label { width:70px; line-height:20px; margin-top:5px; float:left; }
+.nickname { display:none; }
+.nickname input { padding:4px; border:0; font-family:Arial, Helvetica, sans-serif; font-size:12px; }
+.nickname a { color:#fff;}
+#sm_msg { height:70px }

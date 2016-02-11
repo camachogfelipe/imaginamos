@@ -1,0 +1,382 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
+a {
+	text-decoration:none;
+}
+@font-face {
+ font-family: Arial, Helvetica, sans-serif;
+}
+*:focus {
+	outline: none;
+}
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+body {
+	min-height: 600px;
+	background-color:#fcfcfb;
+}
+body * {
+	font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+	font-size: 14px;
+	color: #333;
+	line-height: 22px;
+}
+/*index*/
+
+#wrapper {
+	background-color: #fff;
+	width: 100%;
+	height:80%;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+}
+#carousel div {
+	display: block;
+	float: left;
+}
+#prev, #next {
+ background-color: #fcfcfb;
+	display: block;
+	height: 450px;
+	width: 100px;
+	top: 0;
+	position: absolute;
+	z-index:999;
+}
+#prev:hover, #next:hover {
+	background-color: #fff;
+}
+#prev {
+	left: 0px;
+}
+#next {
+	right:0px;
+}
+/*fin index*/
+
+#texbanner {
+	font-size:83px;
+	position:absolute;
+	z-index:999;
+	top:40%;
+	width:1000px;
+	text-align:center;
+	color:#fff;
+	line-height:95px;
+	left:50%;
+	margin-left:-500px;
+}
+#link a {
+	background-color:#131520;
+	color:#eaeaea;
+	padding:5px 20px 5px 20px;
+	text-align:center;
+	font-size:20px;
+}
+#principal {
+	margin:auto;
+	width:1000px;
+	height:100%;
+	background-image:url(../imagenes/bgn.png);
+	background-repeat:no-repeat;
+}
+#header {
+	width:100%;
+	height:112px;
+	background-image:url(../imagenes/bgn_header.png);
+	background-repeat:repeat-x;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:2;
+}
+.contheader {
+	width:1000px;
+	margin:auto;
+}
+#logo {
+	background-image: url(../imagenes/logo.png);
+	background-repeat:no-repeat;
+	width:191px;
+	height:102px;
+	float:left;
+}
+#redes {
+	height:55px;
+	width:800px;
+	float:right;
+}
+/*menu*/
+div#menu {
+	font-family:ebrima;
+	font-size:16px;
+	height:55px;
+	position:relative;
+	margin:auto;
+	left:5px;
+}
+div#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+div#menu ul.menu {
+	padding-left: 30px;
+}
+div#menu li {
+	position: relative;
+	z-index: 9;
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: left;
+	margin-left:10px;
+	height:55px;
+}
+div#menu li:hover>ul {
+	left: -2px;
+}
+div#menu li div#subm {
+	list-style: none;
+	float: left;
+	position: absolute;
+	top: 45px;
+	left:-20px;
+	width:300px;
+	z-index: 11;
+	visibility: hidden;
+	padding: 0 0 9px 7px;
+	margin: 10px 0 0px 0px;
+}
+div#menu li:hover>div#subm {
+	visibility: visible;
+}
+div#menu li.current a {
+}
+div#menu a {
+	position: relative;
+	z-index: 10;
+	height: 46px;
+	display: block;
+	float: left;
+	padding: 0 10px 0 10px;
+	line-height: 55px;
+	text-decoration: none;
+}
+div#menu span {
+	padding-top:15px;
+	color: #0d1e45;
+	display: block;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	font-size:18px;
+}
+div#menu ul a:hover span {
+	color: #a70047;
+}
+div#menu ul li span#circulo {
+	color:#8a8a84;
+	float:left;
+	margin-top:-15px;
+	padding-right:20px;
+}
+div#menu li.last span {
+	padding: 18px 10px 16px 0;
+}
+div#menu li#sub {
+	background-image:url(../imagenes/bgn_menu.png);
+}
+div#menu ul ul li {
+	padding: 0 10px 0 5px;
+	z-index: 9;
+	font-family:ebrima;
+	font-size:16px;
+	height:45px;
+}
+div#menu ul ul {
+	z-index: 12;
+	padding: 0;
+	margin-top:0px;
+	margin-left:-5px;
+	margin-right:5px;
+}
+div#menu ul ul a {
+	width: auto;
+	padding: 0px 0px 0px 8px;
+	height: auto;
+	float: none;
+	display: block;
+	background:none;
+	margin-bottom: 2px;
+	z-index: -1;
+	font-family:ebrima;
+	font-size:16px;
+}
+div#menu ul ul a span#flecha {
+	color:#fff;
+	float:right;
+	font-size:30px;
+	font-weight:bold;
+	padding-right:0px;
+	padding-left:10px;
+	margin-top:-20px;
+}
+div#menu ul ul a span.sub {
+	padding: 10px 0px 10px 0px;
+	line-height: 20px;
+	color: #fff;
+	text-transform: none;
+	background:none;
+	font-family:ebrima;
+	font-size:16px;
+	border-bottom:1px solid #51535c;
+}
+div#menu ul ul a span.subno {
+	padding: 10px 0px 0px 0px;
+	line-height: 20px;
+	color: #fff;
+	text-transform: none;
+	background:none;
+	font-family:ebrima;
+	font-size:16px;
+}
+div#menu ul ul a:hover {
+	color: #14769f;
+}
+div#menu ul ul a:hover span {
+	color: #14769f;
+}
+div#menu ul ul li.last {
+	background: none;
+}
+div#menu ul ul li {
+	width: 100%;
+}
+/*fin menu*/
+
+
+/*footer*/
+
+#footer {
+	width:100%;
+	background-image:url(../imagenes/bgn_footer.jpg);
+	height:60px;
+	position:fixed;
+	bottom:0;
+	left:0;
+}
+#contefooter {
+	width:1000px;
+	margin:auto;
+}
+#logofoter {
+	width:79px;
+	height:54px;
+	background-image:url(../imagenes/sprite.png);
+	background-position:right top;
+	margin-top:3px;
+	float:left;
+}
+#copi {
+	padding: 0 30px 030px;
+	line-height:60px;
+	font-size:12px;
+	color:#eaeaea;
+	float:left;
+	margin-right:20px;
+}
+#amarillo {
+	color:#eed219;
+}
+/*imaginamos*/
+
+
+.footer-autor {
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	width: 220px;
+	margin-top:20px;
+	margin-left:0px;
+}
+.footer-autor #ahorranito2 {
+	background: url(http://www.imaginamos.com/derechos_autor_gris/ahorranito-2.png) no-repeat 0px 0px;
+	width: 21px;
+	height: 22px;
+	display: block;
+	float: left;
+	margin: 0px 10px 0px 0px;
+}
+.footer-autor a {
+	font-family: "Helvetica";
+	font-weight: 500;
+	font-size: 12px;
+	color: #fff;
+	text-decoration: none;
+}
+.footer-autor a:hover {
+	text-decoration: underline;
+}
+.footer-autor a span {
+	color: #0CF;
+}
+/*redes*/
+#texsig {
+	font-size:14px;
+	color:#eaeaea;
+	float:left;
+	line-height:60px;
+	margin-left:15px;
+}
+#faceb a {
+	width:32px;
+	height:49px;
+	display:block;
+	float:left;
+	background-image:url(../imagenes/sprite.png);
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	margin:5px 0px 0 5px;
+}
+#faceb a:hover {
+	background-position:0px -57px;
+}
+#titer a {
+	width:32px;
+	height:49px;
+	display:block;
+	float:left;
+	background-image:url(../imagenes/sprite.png);
+	background-position:-37px 0px;
+	background-repeat:no-repeat;
+	margin:5px 0px 0 5px;
+}
+#titer a:hover {
+	background-position:-37px -57px;
+}
+#email a {
+	width:32px;
+	height:49px;
+	display:block;
+	float:left;
+	background-image:url(../imagenes/sprite.png);
+	background-position:-74px 0px;
+	background-repeat:no-repeat;
+	margin:5px 0px 0 5px;
+}
+#email a:hover {
+	background-position:-74px -57px;
+}
+/*fin footer*/

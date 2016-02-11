@@ -1,0 +1,9 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='admin'>Carlos Cano</span>Buenas tardes Dora Leonor, mi nombre es Carlos Cano, en que puedo ayudarla 
+<span class='usuario'>Dora Leonor Arenas Quintero</span>Hola Carlos Buenas Tardes, mil gracias solo queria registrarme  
+<span class='usuario'>Dora Leonor Arenas Quintero</span>mil gracias por tu amable atencion y colaboracion 
+<span class='usuario'>Dora Leonor Arenas Quintero</span>que tengas buena tarde 
+<span class='admin'>Carlos Cano</span>Muchas gracias , espero nuevamente su comunicacion 
+<span class='usuario'>Dora Leonor Arenas Quintero</span>o.k 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

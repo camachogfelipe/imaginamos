@@ -1,0 +1,20 @@
+Function: getUsersOnline
+File: functions.php
+PDOException: 3D000-SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+
+Function: getUsersOnline
+File: functions.php
+PDOException: 3D000-SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+
+Function: getUserRooms
+File: functions.php
+PDOException: 3D000-SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+
+Function: getUserGenders
+File: functions.php
+PDOException: 3D000-SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+
+Function: getLoginNews
+File: functions.php
+PDOException: 3D000-SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+

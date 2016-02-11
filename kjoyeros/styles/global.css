@@ -1,0 +1,198 @@
+/*
+Author: Gustavo Vera
+Author URI: guvera@misena.edu.co/
+*/
+.border{border:1px solid #F00}
+.bold{font-weight:bold}
+.tachado{text-decoration:line-through}
+.cursiva{font-style:italic;}
+.regular{font-weight:normal}
+.center{text-align:center}
+.center td{text-align:center}
+.mayus{text-transform:uppercase;}
+.minus{text-transform:none}
+.white{background-color:#FFF}
+
+.left{float:left}
+.right{float:right}
+
+
+/*fonts embeding*/
+
+.arial{
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('../fonts/gothic.eot');
+    src: url('../fonts/gothic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothic.woff') format('woff'),
+         url('../fonts/gothic.ttf') format('truetype'),
+         url('../fonts/gothic.svg#gothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.gothicregular{
+	 font-family: 'CenturyGothic';
+}
+
+
+
+
+/* size fonts*/
+.fon8{font-size:8px}
+.fon9{font-size:9px}
+.fon10{font-size:10px}
+.fon11{font-size:11px}
+.fon12{font-size:12px}
+.fon13{font-size:13px}
+.fon14{font-size:14px}
+.fon15{font-size:15px}
+.fon16{font-size:16px}
+.fon17{font-size:17px}
+.fon18{font-size:18px}
+.fon19{font-size:19px}
+.fon20{font-size:20px}
+.fon21{font-size:21px}
+.fon22{font-size:22px}
+.fon23{font-size:23px}
+.fon24{font-size:24px}
+.fon25{font-size:25px}
+.fon26{font-size:26px}
+.fon27{font-size:27px}
+.fon28{font-size:28px}
+.fon29{font-size:29px}
+.fon30{font-size:30px}
+.fon31{font-size:31px}
+.fon32{font-size:32px}
+.fon33{font-size:33px}
+.fon34{font-size:34px}
+.fon35{font-size:35px}
+.fon36{font-size:36px}
+.fon37{font-size:37px}
+.fon38{font-size:38px}
+.fon39{font-size:39px}
+.fon40{font-size:40px}
+.fon41{font-size:41px}
+.fon42{font-size:42px}
+.fon43{font-size:43px}
+.fon44{font-size:44px}
+.fon45{font-size:45px}
+.fon46{font-size:46px}
+.fon50{font-size:50px}
+
+/*color fonts*/
+
+.fonwhite{color:#FFF}
+.fongris{color:#333333;}
+.fongris2{color:#7d818f;}
+.fongris3{color:#666666;}
+.fongris4{color:#cccccc;}
+.fonblack{color:#000;}
+.fonmorado{color:#584a81;}
+
+
+
+
+
+
+ /*------ Clear Fix ------*/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+
+
+/*links*/
+.link_blanco{
+	 color:#FFF;
+}
+.link_blanco:hover{
+	 text-decoration:underline;
+}
+
+
+.link_azul{
+	 color:#265185;
+}
+a.link_azul:hover{
+	 text-decoration:underline;
+}
+
+.link_gris{
+	color:#585858;
+}
+a.link_gris:hover{
+	text-decoration:underline;
+}
+.link_marron{
+	color:#663300;
+}
+a.link_marron:hover{
+	text-decoration:underline;
+}
+.link_amarillo{
+	color:#ffcc00;
+}
+a.link_amarillo:hover{
+	text-decoration:underline;
+}
+
+/*links*/
+
+/*loading de la page*/
+
+#loader{
+
+position:fixed;/*agregamos una posición absoluta para que nos permita mover la capa en el espacio del navegador*/
+
+top:0;/*posicionamiento en Y */
+
+left:0;/*pocisionamiento en X*/
+
+
+z-index:10000000000000; /* Le asignamos la pocisión más alta en el DOM */
+
+background-color:#fff; /* le asignamos un color de fondo */
+
+width:100%; /* maximo ancho de la pantalla */
+
+height:5000px; /* maxima altura de la pantalla */
+
+display:block; /* mostramos el layer */
+color:#fff;
+
+}
+#loader .img_preload{
+top:300px;
+left:50%;
+margin:0px 0 0 -120px;
+width:239px;
+height:59px;
+position:absolute;
+}
+/*loading de la page*/
+

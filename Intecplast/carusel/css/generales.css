@@ -1,0 +1,628 @@
+/*generalesGENERALES*/
+/*=== === === === === === === === === === */
+* {padding:0;margin:0;}
+a:focus, input:focus, select:focus{ -moz-outline: none !important;}
+a {text-decoration:none;}
+img {border:0;}
+.fleft{float:left;}
+.fright{float:right;}
+.line_sep {border-top:1px solid #f2c6c6; padding:1px; margin:0 0 8px 0;}
+.line_gris {border-top:1px solid #ddd; padding:1px; margin:0 0 8px 0;}
+.red{color:#cc0000;}
+.clear { clear: both; font-size: 1px; color: #fff;}
+ul { list-style:none;}
+
+/*=estructura
+=== === === === === === === === === === */
+html, body {height: 100%;}
+body {behavior:url("/sites/all/themes/garland/css/csshover.htc");}/*permite que los :hover funcionen en explorer*/		
+body {text-align:center;font-size:60%; background:#fff;}
+#content_all { position:relative; width:998px; text-align:left; margin:0 auto; border-left:1px solid #ddd;border-right:1px solid #ddd; background:#fff;}
+.bloque_noticias_hor { margin:-10px 0 0 0; background-color:#FFF;}
+.barra_modulo {font:bold 16px Arial, Helvetica, sans-serif; color:#000; padding:4px 0 0 0; border-bottom:3px solid #666;}
+.bloque_noticias {width:638px; _overflow:hidden; _margin:0 0 20px 0;}
+.bloque_uno { padding:15px; background:url(http://static.elespectador.com/images/line_izq.gif) 294px 0 repeat-y; margin:0 0 15px 0;}
+
+/*=header
+=== === === === === === === === === === */
+#header {margin:0; padding:0;}
+
+/*Caja de =fecha, logo, =buscador*/
+.box_logo {height:115px; position:relative;}
+.logo {position:absolute; top:41px; left:260px;}
+.logo h6 { font:normal 13px Arial, Helvetica, sans-serif;  color:#666; text-align:center; border-top:1px solid #eee; margin:3px 0 0 0;}
+.logo h6 span, .logo h6 span a{ font:normal 22px/22px Georgia, "Times New Roman", Times, serif;  color:#c00; text-align:center;}
+
+/*caja del =buscador*/
+.top_gris {font:11px Arial, Helvetica, sans-serif; background:#f5F5F5; color:#999; padding:4px 10px; border-bottom:1px solid #e2e2e2;border-top:1px solid #e2e2e2;}
+.top_gris a { color:#3f3f3f;}
+.top_gris a.activo { color:#000; font-weight:bold;}
+.top_gris .versiones{float:left;}
+.top_gris .versiones a img{ margin:0 4px -1px 0;}
+.top_gris .ayudas {float:right;}
+.top_gris a:hover {color:#c00;}
+.box_patrocinio { margin:8px 0 0 0; width:210px; position:relative;}
+.box_patrocinio img { margin:0 0 -20px 3px;}
+.box_buscador {padding:20px 20px 0 0; font:normal 10px Arial, Helvetica, sans-serif;color:#666;}
+.box_buscador object { float:right; position:absolute; top:0; left:52px; border:1px solid #ccc;}
+.items_buscador a {color:#333; padding:1px 2px;}
+.items_buscador a:hover {color:#fff; background:#cc0000;}
+.items_buscador a.selected {color:#cc0000; text-decoration:underline;}
+.items_buscador a.selected:hover {color:#cc0000; background:none;}
+.items_buscador {margin:0 0 3px 0;}
+.box_buscador input.input_bus {font:normal 12px Arial, Helvetica, sans-serif;color:#666;padding:2px 4px; margin:0 5px 0 0; width:132px; border:1px solid #ccc;}
+.box_buscador input.bt_buscar {margin:0 0 -6px 0; *margin:0 0 -4px 0;}
+/*.box_buscador .box_patrocinio { padding:3px 0 0 0; margin:0; font: normal 11px Arial, Helvetica, sans-serif; color:#666;}
+.box_buscador .box_patrocinio img, .box_buscador .box_patrocinio iframe {border:1px solid #eaeaea; margin:-12px 0 0 52px; float:left;}*/
+.box_buscador .box_patrocinio { padding:3px 0 0 0; margin:0; font: normal 11px Arial, Helvetica, sans-serif; color:#666;}
+.box_buscador .box_patrocinio h5 { float:left; margin-right:5px;font: normal 11px Arial, Helvetica, sans-serif;}
+.box_buscador .box_patrocinio .pauta{ float:left; }
+/*======================================================*/
+
+
+/********************************************************/
+/* ESTILOS QUE SOLO VEN LOS ADMINISTRADORES
+/********************************************************/
+.links { padding:0; margin:-3px 0;}
+.links a { font:bold 11px Arial, Helvetica, sans-serif; color:#cc0000;}
+.links a:hover { text-decoration:underline;}
+.links li { padding:0 0 3px 19px; margin:0;}
+.admin-links .links li.first {background:url(http://static.canalcaracol.com/images/caracol/configure_icon.gif)no-repeat 0 0;}
+.admin-links .links li.update {background:url(http://static.canalcaracol.com/images/caracol/edit_icon.gif)no-repeat 0 0;}
+.tabs {padding:10px 0 0 20px; margin:0 0 0 0; height:20px;}
+.tabs li{float:left; font:bold 12px Arial, Helvetica, sans-serif; border-right:1px solid #c00; padding:0 5px;}
+.tabs li a {color:#c00;}
+.tabs li a:hover { text-decoration:underline;} 
+
+/*======================================================*/
+
+
+/*======================================================*/
+/* MODULO BREADCRUMB
+/*======================================================*/
+.barra_breadcrumb {background:url(http://static.elespectador.com/images/bg_expand.gif) repeat-x bottom; border-bottom:1px solid #ddd;}
+.breadcrumb {font:normal 12px Arial, Helvetica, sans-serif; color:#999; padding:8px 10px; width:600px; float:left;}
+.breadcrumb a { margin:0 2px; padding:2px; color:#3f3f3f;}
+.breadcrumb a:hover { text-decoration:underline;}
+/*======================================================*/
+
+
+/*======================================================*/
+/* MODULO DE INGRESO EN EL HEADER
+/*======================================================*/
+.links_login {float:right; padding:6px 0 0 15px; font:normal 12px Arial, Helvetica, sans-serif;}
+.links_login a:hover, .links_login a.bt_zonausuario:hover { text-decoration:underline; color:#c00;}
+.links_login a.bt_registro {float:left;width:88px; height:23px; cursor:pointer; display:block;}
+.links_login a.bt_ingreso {float:left; width:79px; height:23px; cursor:pointer; display:block;}
+.links_login a.zonausuario {float:left; width:79px; height:23px; cursor:pointer; display:block;}
+.links_login a.bt_registro, .links_login a.bt_ingreso, .links_login a.zonausuario {font:bold 11px/22px Arial, Helvetica, sans-serif; text-transform:uppercase; color:#666; background:url(http://static.elespectador.com/images/flechas_hor_registro.gif) 80% 44% no-repeat;}
+.links_login a.bt_registro:hover, .links_login a.bt_ingreso:hover, .links_login a.zonausuario:hover{ text-decoration:underline; color:#c00;}
+.links_login em{color:#666; font-style:normal; font-size:11px;}
+.links_login a strong{ color:#c00;font-size:12px; margin:0 -2px 0 0;}
+.links_login a.bt_zonausuario {font:bold 10px/15px Verdana, Arial, Helvetica, sans-serif; color:#666; font-weight:normal; margin:0 10px 0 0; background:url(http://static.elespectador.com/images/flechas_ver_registro.gif) right 3px no-repeat; padding:0 10px 0 0;}
+
+.close_content { border-bottom:1px solid #dadada;  padding:0 0 5px 0;}
+.content_inputsbox {padding:10px; border:5px solid #ccc; background:#fff; width:250px;}
+.content_inputsbox label { display:block; margin:10px 0 3px 20px; font-size:13px;}
+.content_inputsbox label.option input{margin:0 0 10px 0; *width:30px; *border:none; *margin:0 0 0 0;}
+.content_inputsbox form {margin:25px 0 0 0; font:normal 11px Arial, Helvetica, sans-serif; color:#666;}
+.content_inputsbox form h3 { float:left; padding:3px 8px 0 0; width:90px; text-align:right;}
+.content_inputsbox form p { float:left;}
+.content_inputsbox input {font-size: 14px; padding:5px; width:200px; margin:0 20px; border:1px solid #ccc;}
+.content_inputsbox input:focus {border:1px solid #c00;}
+.content_inputsbox input.form-submit{width:120px; background:#c00; border:none; color:#fff; margin:0 0 0 110px;}
+.content_inputsbox .item-list ul {border-top:1px solid #e5e5e5; margin:15px 0 0 0; padding:10px 20px; font-size:13px;}
+.content_inputsbox .item-list li { list-style:square; list-style-position:inside; margin:0 0 5px 0; color:#c00;}
+.content_inputsbox .item-list li a{ color:#666;}
+.content_inputsbox .item-list li a:hover{ color:#c00; tex-decoration:underline;}
+
+.toboggan-login-link {display:none;}
+
+.content_inputsbox ul.menu {list-style:square; color:#c00; padding:10px 20px;}
+.content_inputsbox ul.menu li.leaf { margin:0 0 0 10px; padding:1px 0;}
+.content_inputsbox ul.menu li.leaf a, .content_inputsbox ul.menu li.expanded ul li a{font:normal 12px Arial, Helvetica, sans-serif; color:#666;}
+.content_inputsbox ul.menu li.leaf a:hover{color:#c00; text-decoration:underline;}
+.content_inputsbox ul.menu li.collapsed { margin:0 0 0 10px; padding:1px 0;}
+.content_inputsbox ul.menu li.collapsed a{font:bold 12px Arial, Helvetica, sans-serif; color:#000;}
+.content_inputsbox ul.menu li.expanded {font:bold 15px/15px Arial, Helvetica, sans-serif; color:#c00; margin:10px 0 0 10px; padding:1px 0;}
+.content_inputsbox ul.menu li.expanded ul {margin:0; padding:5px 0 10px 10px;}
+.content_inputsbox ul.menu li.expanded a {color:#000;}
+/*======================================================*/
+
+
+
+
+
+.publicidad { margin:0 0 13px 0;}
+.publicidad_media { width:610px; text-align:center; padding:0 0 20px 0;}
+.publicidad h6, .publicidad_media h6 {font:normal 10px Arial, Helvetica, sans-serif; text-align:left; color:#666; background:#fff url(http://static.elespectador.com/images/arrowbottom.gif) no-repeat 0 5px; padding:0 0 0 8px;}
+.publicidad_big { margin:0; text-align:center; background:#ddd; padding:5px 0 10px 0; border:1px solid #ccc;}
+.publicidad_big h6 {font:normal 10px Arial, Helvetica, sans-serif; text-align:left; color:#666; background: url(http://static.elespectador.com/images/arrowbottom.gif) no-repeat 15px 5px; padding:0 0 0 24px;}
+.publicidad iframe {border:1px solid #e5e5e5;}
+.pauta_t2 {background:#ECECE7 url(http://static.elespectador.com/images/t_publicidad_ver.gif) no-repeat scroll 3px center; padding:0 0 0 15px;}
+
+.footer .publicidad { margin:0 110px 13px;}
+/*======================================================*/
+
+/*MENU 2*/
+table {border-collapse: collapse; border-spacing: 0;}
+.barra_menu {width:1000px; height:30px; position:relative; z-index:100; /*margin: 0 0 400px 0;*/ padding: 0; background:#c00 url(http://static.elespectador.com/images/bg_menu.gif) 0 0 repeat-x;}
+.barra_menu ul {padding:0;margin:0;list-style-type:none;}
+.barra_menu ul li {float:left; position:relative; border-right:1px solid #c66; margin: 0; padding: 0;}
+.barra_menu ul li a {display:block; text-decoration:none; color:#fff; padding:9px 10px 10px 10px; font:bold 11px/11px Arial, Helvetica, sans-serif}
+.barra_menu ul li a.drop {background: url(http://static.elespectador.com/images/arrow_menu.gif) 93% 10px no-repeat;}
+.barra_menu ul li a:visited {display:block; text-decoration:none; color:#fff; padding:9px 10px 10px 10px; font:bold 11px/11px Arial, Helvetica, sans-serif}
+.barra_menu ul li a:hover { background-color:#333;}
+.barra_menu ul li a.drop:hover{background:#333 url(http://static.elespectador.com/images/arrow_menu_hover.gif) 93% 10px no-repeat;}
+.barra_menu ul li a.active {background:#333;}
+.barra_menu ul li a.drop_active {background:#333 url(http://static.elespectador.com/images/arrow_menu_hover.gif) 93% 10px no-repeat;}
+
+/*Segundo nivel*/
+.barra_menu ul li ul {visibility:hidden; position:absolute; height:0; top:30px; left:0; background:#333;  padding:10px 0 0 0;}
+.barra_menu ul li:hover ul {visibility:visible; }
+.barra_menu ul li a:hover ul {visibility:visible; }
+.barra_menu ul li ul.noticias { width:242px; height:140px;}
+.barra_menu ul li ul.economia { width:242px; height:55px;}
+.barra_menu ul li ul.impreso { width:242px; height:160px;}
+.barra_menu ul li ul.tecnologia { width:242px; height:205px;}
+.barra_menu ul li ul.multimedia { width:120px; height:95px; margin:0 0 0 -20px;}
+
+html body .barra_menu ul li ul.tecnologia h2 { font:bold 12px/12px Arial, Helvetica, sans-serif; margin:0; padding:0;}
+html body .barra_menu ul li ul.tecnologia h2 a{ color:#fff; padding:10px; margin:0; border-bottom:1px solid #666;}
+html body .barra_menu ul li ul.tecnologia h2 a:hover { background-color:#666;}
+html body .barra_menu ul li ul.tecnologia h3 { font:bold 15px/15px Arial, Helvetica, sans-serif; padding:0; margin:0;}
+html body .barra_menu ul li ul.tecnologia h3 a{ font:bold 14px/14px Arial, Helvetica, sans-serif; color:#cc0000; padding:10px; margin:0;}
+html body .barra_menu ul li ul.tecnologia h3 a:hover { text-decoration:underline;}
+
+.barra_menu ul li ul.entretenimiento{ width:302px; height:260px; _height:245px; *height:265px;}
+html body .barra_menu ul li ul.entretenimiento h2 { font:bold 12px/12px Arial, Helvetica, sans-serif; margin:0; padding:0;}
+html body .barra_menu ul li ul.entretenimiento h2 a{ color:#fff; padding:10px; margin:0; border-bottom:1px solid #666; }
+html body .barra_menu ul li ul.entretenimiento h2 a:hover { background-color:#666;}
+html body .barra_menu ul li ul.entretenimiento h3 { font:bold 15px/15px Arial, Helvetica, sans-serif; padding:0; margin:0;}
+html body .barra_menu ul li ul.entretenimiento h3 a{ font:bold 14px/14px Arial, Helvetica, sans-serif; text-decoration:none; border:none; color:#cc0000; padding:10px; display:block; *margin:10px 0 0 0; background-image:none;}
+html body .barra_menu ul li ul.entretenimiento li.shock h3 a { background-image:none;  padding-left:10px;}
+html body .barra_menu ul li ul.entretenimiento li.shock h3 a:hover { text-decoration:underline; background-color:#333;}
+html body .barra_menu ul li ul.entretenimiento li.cromos h3 a { background-image:none; padding-left:10px;}
+html body .barra_menu ul li ul.entretenimiento li.cromos h3 a:hover { text-decoration:underline; background-color:#333;}
+
+.barra_menu ul li ul.entretenimiento li.cromos { width:150px; border-right:1px solid #666;}
+.barra_menu ul li ul.entretenimiento li.cromos a { display:block; width:120px; color:#fff; height:auto; font-size:12px; background:url(http://static.elespectador.com/images/bullet_menu.gif) 10px 50% no-repeat;}
+.barra_menu ul li ul.entretenimiento li.cromos a:hover{ background-color:#666666;}
+
+.barra_menu ul li ul.entretenimiento li.shock { width:150px;}
+.barra_menu ul li ul.entretenimiento li.shock a { display:block; width:120px; color:#fff; height:auto; font-size:12px; background:url(http://static.elespectador.com/images/bullet_menu.gif) 10px 50% no-repeat;}
+.barra_menu ul li ul.entretenimiento li.shock a:hover{ background-color:#666666;}
+
+.barra_menu ul li ul li { border:none;}
+.barra_menu ul li ul li a {color:#fff; height:auto; padding:5px 10px 5px 20px; width:90px; font-size:12px; background:url(http://static.elespectador.com/images/bullet_menu.gif) 10px 50% no-repeat;}
+.barra_menu ul li ul li a:visited {color:#fff; height:auto; padding:5px 10px 5px 20px; width:90px; font-size:12px; background:url(http://static.elespectador.com/images/bullet_menu.gif) 10px 50% no-repeat;}
+.barra_menu ul li ul li a:hover { background-color:#666666;}
+.barra_menu :hover > a, .menu ul li ul :hover > a {color:#fff; background-color:#333;}
+html body .menu :hover > a.drop, html body .menu ul li ul :hover > a.drop {color:#fff; background:#333 url(http://static.elespectador.com/images/arrow_menu_hover.gif) 93% 10px no-repeat;}
+/*Tercer nivel*/
+.barra_menu ul :hover ul ul{visibility:hidden;}
+.barra_menu ul :hover ul :hover ul{ visibility:visible;}
+
+/*FIN MENU 2*/
+
+/*======================================================*/
+/* MODULO FOOTER
+/*======================================================*/
+.footer { padding:10px 20px; border-top:3px solid #c00;}
+.footer .marca { background-color:#f3f3f3; padding:8px 10px;}
+.footer .columna{ border-right:1px dotted #ccc; padding:0 10px 10px 20px; margin:20px 0 0 0; width:160px; float:left; height:180px; overflow:hidden;}
+.footer .columna h3 { font:bold 11px Arial, Helvetica, sans-serif; margin:0 0 10px 0;}
+.footer .columna ul { font:11px Arial, Helvetica, sans-serif;}
+.footer .columna ul li {margin:2px 0;}
+.footer .columna ul.secciones li {float:left; width:80px;} 
+.footer .columna ul li a {color:#666;}
+.footer .columna ul li a:hover { text-decoration:underline;}
+.terminos  p { font:11px/14px Arial, Helvetica, sans-serif; color:#666; padding:10px; text-align:center; background-color:#f3f3f3; clear:both; border-top:1px solid #c00; }
+.terminos  p a { font-weight:bold; color:#666;}
+
+.messages{display:block; padding:20px 0 15px 0;font:bold 24px Arial, Helvetica, sans-serif; text-align:left;}
+.messages a, .messages a:visited { color:#336699;}
+.status {background:#ffffcc url(http://static.elespectador.com/images/caracol/check.gif) no-repeat 220px 15px;border:1px solid #c00;padding-left:260px; margin:0 15px;}
+/*======================================================*/
+
+
+/*======================================================*/
+/* MODULO EDICIONES EN EL HEADER
+/*======================================================*/
+.box_ediciones_head {font:normal 11px Arial, Helvetica, sans-serif;color:#999; margin:10px 0 0 30px; width:195px; position:relative; z-index:0; _margin-left: 14px;}
+.box_ediciones_head h3 {font:normal 10px Arial, Helvetica, sans-serif; color:#c00; margin-bottom:1px;}
+.box_ediciones_head span {font:bold 11px Arial, Helvetica, sans-serif;color:#555;}
+.box_ediciones_head small {font:normal 11px Arial, Helvetica, sans-serif;color:#cc0000;}
+.box_ediciones_head ul { padding: 0; margin:0; list-style: none; z-index: 999; }
+.fecha { margin:5px 0 0 0; width:200px; line-height:15px;}
+.fecha em {margin:0; color:#c00; font-style:normal;}
+.box_ediciones_head ul li.expandable a {padding:2px 0 2px 20px; width:155px; border-top:1px solid #ccc;}
+.box_ediciones_head ul li.expandable ul li a {border-top:0;padding:2px 0 2px 19px;}
+.box_ediciones_head ul li.expandable ul li a:hover { background:#f6f6f6 url(http://static.elespectador.com/images/icon_edicionhover.gif) no-repeat 5px 5px;}
+/*.box_ediciones_head ul li a { display: block; font:bold 11px Arial, Helvetica, sans-serif; color: #000; text-decoration: none;}*/
+.box_ediciones_head ul li a { display: block; font:bold 11px Arial, Helvetica, sans-serif; color: #999; text-decoration: none; padding:0 0 0 15px;}
+.box_ediciones_head ul li li a.active_des {font:bold 11px Arial, Helvetica, sans-serif; color: #000; text-decoration: none; background: #f6f6f6;}
+.box_ediciones_head ul li ul li a {padding: 5px 7px; font:normal 11px Arial, Helvetica, sans-serif;}
+.box_ediciones_head li { float: left; margin: 0 !important; padding: 0; list-style-image: none; background-image: none;}
+.box_ediciones_head li li { width: 175px; background: #fff;}
+.box_ediciones_head li ul { z-index:100; position: absolute; background: none; margin: 0; width: 175px; left: -999em; line-height: 1.2em; border:1px solid #ccc; top:61px;}
+.box_ediciones_head li li.expandable ul {margin: -20px 0 0 160px;}
+.box_ediciones_head li:hover ul ul, /*#barra_menu li:hover ul ul ul, #barra_menu li.sfhover ul ul, #barra_menu li.sfhover ul ul ul */{ left: -999em;}
+.box_ediciones_head li:hover ul, /*#barra_menu li li:hover ul, #barra_menu li li li:hover ul, #barra_menu li.sfhover ul, #barra_menu li li.sfhover ul, #barra_menu li li li.sfhover ul*/ { left: auto;}
+.sfhover {background: #606066; cursor:pointer;}
+.box_ediciones_head ul li.expandable { background: url(http://static.elespectador.com/images/comboicon.gif) no-repeat right;}
+.box_ediciones_head ul li a.active { background: url(http://static.elespectador.com/images/icon_edicion.gif) no-repeat 6px 5px;}
+.box_ediciones_head ul li.expandable ul li.expandable li a { background: none;}
+.box_ediciones_head .dropdown_menu  span { background: url(http://static.elespectador.com/images/comboicon.gif) no-repeat right;width:110px;}
+
+.dropdown_item_css { position: relative; z-index:0; }
+
+.dropdown_menu .dropdown_item_css { display: inline-block }
+.dropdown_item, .dropdown_item_ie { padding-left: 12px; _font-weight: bold;}
+.dropdown_menu .dropdown_item,
+.dropdown_menu .dropdown_item:hover,
+.dropdown_item_ie, .dropdown_item_ie:hover {
+ color: #62656B !important;
+background: url(http://static.elespectador.com/images/icon_edicion.gif) 0 50% no-repeat; padding: 0 0 0 15px;
+}
+.dropdown_menu i,
+.show_dropdown { display: none;}
+.dropdown_item_ie table { display: none }
+.dropdown_item_ie:hover table { display: block }
+* html .dropdown_item_css { display: none !important }
+* html .dropdown_item_ie { display: inline-block }
+* html .dropdown_item_ie:hover { he\ight: 0 }
+.dropdown_menu:hover .show_dropdown,
+.dropdown_item_ie:hover .show_dropdown {
+ display: block;
+ position: absolute;
+ top: -1px;
+ left: -11px;
+ _top: -1px;
+ _left: 1px;
+}
+.show_dropdown {
+ border: 1px solid #CCC;
+ padding: 5px 0;
+ background-color: White;
+}
+.dropdown_menu li {
+ position: relative;
+ display: block;
+ min-height: 0;
+ padding: 0 10px 5px;
+ white-space: nowrap;
+}
+* html .dropdown_menu li { height: 0 }
+.dropdown_menu li a { display: block }
+/*.dropdown_menu li a:hover {color: #c00;}*/
+.dropdown_menu li a:hover {background:url(http://static.elespectador.com/images/icon_edicion.gif) 0 50% no-repeat; color:#444;}
+/*.dropdown_menu li.first {_margin-left: 20px;}*/
+.dropdown_menu li.first a { display: inline; padding:0 0 0 15px;}
+.dropdown_menu li.separate {
+ padding: 5px 10px 1px;
+ border-top: 1px solid #E5E5E5;
+}
+/*--test--*/
+/*======================================================*/
+
+
+/*======================================================*/
+/* NOTA DESTACADA ROJA EN LOS HOME
+/*======================================================*/
+.noticia_destacada { background-color:#c00; margin:0 0 10px 0; height:52px; overflow:hidden;}
+.noticia_destacada a{ display:block;}
+.noticia_destacada h1{ padding:5px; color:#fff; font:normal 20px/22px Georgia, "Times New Roman", Times, serif; letter-spacing:-1px;}
+.noticias_right .noticia_destacada img{ display:none;}
+.noticia_destacada img{ float:left; margin:0 5px 0 0;}
+/*======================================================*/
+
+
+/*======================================================*/
+/* MODULO LO MAS EN EL EE
+/*======================================================*/
+ul.shadetabs_lomas{list-style-type: none; text-align:left; height:55px; border:1px solid #999; margin:15px 0 0 0; background-color:#e3e3e3;}
+ul.shadetabs_lomas h3 { font:bold 16px Arial, Helvetica, sans-serif; padding:5px 10px 3px 10px;}
+ul.shadetabs_lomas li {float:left;}
+ul.shadetabs_lomas li a {float:left; font:bold 12px Arial, Helvetica, sans-serif; color:#666; background-color:#f4f4f4; padding:6px 12px; border:1px solid #999; margin:0; border-left:0;}
+ul.shadetabs_lomas li a:hover{ background:#e5e5e5;}
+ul.shadetabs_lomas li.selected a {background:#fff; border-bottom:1px solid #fff; color:#c00;} 
+
+.box_lomas { margin:0 0 20px 0; border:1px solid #bbb; border-top:none;}
+.box_lomas .tabcontent ul, .box_lomas .tabcontent ol {font: normal 12px Arial, Helvetica, sans-serif; padding:10px 20px 10px 40px; /*list-style-type:decimal;*/ }
+.box_lomas .tabcontent ul li, .box_lomas .tabcontent ol li{border-bottom:1px solid #e3e3e3; padding:5px 0; /*.list-style:decimal; .list-style-type:decimal;*/ } 
+.box_lomas .tabcontent ul li strong, .box_lomas .tabcontent ol li strong, .box_lomas .tabcontent ul li strong a, .box_lomas .tabcontent ol li strong a { color:#c00; font:12px Arial, Helvetica, sans-serif;}
+.box_lomas .tabcontent ul li a, .box_lomas .tabcontent ol li a{color:#000;}
+.box_lomas .tabcontent ul li.ver_mas, .box_lomas .tabcontent ol li.ver_mas {list-style:none; text-align:right; font:bold 11px Arial, Helvetica, sans-serif;}
+.box_lomas .tabcontent ul li.ver_mas a, .box_lomas .tabcontent ol li.ver_mas a{color:#c00;}
+.box_lomas .tabcontent ul li a:hover, .box_lomas .tabcontent ol li a:hover {text-decoration:underline;}
+.box_lomas .tabcontent ul li h4, .box_lomas .tabcontent ol li h4 { color:#c00; font:normal 11px Arial, Helvetica, sans-serif; _float:left; _width:150px;}
+.box_lomas .tabcontent ul li p, .box_lomas .tabcontent ol li p{_float:left; _width:150px;}
+.box_lomas .tabcontent ul li .un_recursosecc a img, .box_lomas .tabcontent ol li .un_recursosecc a img{ border:1px solid #e5e5e5; margin:0 10px 0 0; float:left;}
+#lomas ul.shadetabs_lomas {height:55px;}
+.bloque_derecho #lomas ul.shadetabs_lomas {height:55px;}
+#lomas .box_lomas {padding-bottom:10px;}
+
+/********************************************************/
+/* ESTILOS PARA MODULOS DE ESPECIALES GENERALES
+/********************************************************/
+.especial {background:#fff url(http://static.elespectador.com/images/bgespecialmod.gif) repeat-x bottom; border:1px solid #e5e5e5; border-bottom:3px solid #ccc; margin:0 0 20px 0; padding:0 0 15px 0;}
+.especial h2 { font:normal 23px Georgia, "Times New Roman", Times, serif; letter-spacing:-1px; border-bottom:1px solid #cc0000; padding:2px 90px 2px 105px; background:url(http://static.elespectador.com/images/especialrojo.gif) no-repeat left; margin:0 0 10px 0;}
+.especial h2 img {float:right; border:1px solid #ccc; border-bottom:1px solid #c00; margin:-30px -91px 0 0;}
+.especial h3 {font:bold 12px Arial, Helvetica, sans-serif; color:#cc0000;}  
+
+.colfleft { float:left; padding:0 0 0 25px;}
+.colfleft img { margin:8px 0;}
+.colright { float:right; width:233px; border-left:1px solid #e1e1e1; padding:10px 15px;}
+ul.list_modes { list-style:none; font:normal 12px Arial, Helvetica, sans-serif;} 
+.colfleft h3, .colright h3 {font:bold 12px Arial, Helvetica, sans-serif; color:#cc0000; margin:0 0 10px 0; border-bottom:1px solid #ccc; padding:0 0 2px 0;} 
+ul.list_modes li.reportaje{font:normal 14px Arial, Helvetica, sans-serif; margin-bottom:10px;} 
+ul.list_modes li { margin-bottom:5px; padding:0 0 0 12px; background:url(http://static.elespectador.com/images/bulletsquare.gif) no-repeat 2px 6px;}
+ul.list_modes li a { color:#000000; text-decoration:none;}
+ul.list_modes li a:hover { text-decoration:underline;}
+/*======================================================*/
+
+
+/********************************************************/
+/* ESTILOS PARA MODULO ESPECIAL - LO MEJOR DEL 2009 
+/********************************************************/
+.header_especiales { margin:20px 0 -1px 0;}
+.header_especiales h2{ background-color:#c00; border-bottom:1px solid #fff; padding:5px 0 6px 0; font:normal 24px/24px Georgia, "Times New Roman", Times, serif; color:#fff;}
+.header_especiales h2 span {background-color:#333; font:normal 18px/24px Arial, Helvetica, sans-serif;  margin:0 10px 0 0; padding:8px 10px;}
+
+.box_entretenimiento {position: relative; height:240px; overflow:hidden;}
+.box_entretenimiento .box_infoprod {position:absolute; color:#fff; z-index:999; right:0; width:262px;}
+.box_entretenimiento .box_infoprod_back { background:#e5e5e5; position:absolute; color:#fff; z-index:999; right:0; width:262px; height:240px; border-left:1px solid #999;}
+.box_entretenimiento img {width:375px;}
+
+.c_btprod h3 { font:normal 22px/22px Georgia, "Times New Roman", Times, serif; background-color:#000; margin:0 0 10px 0;}
+.c_btprod h3 a { color:#fff; display:block; padding:0 10px 8px 10px;}
+.c_btprod h3 a:hover { text-decoration:none;}
+.c_btprod h6 { font:bold 12px Arial, Helvetica, sans-serif; color:#C00; background:#000;  padding:8px 0 0 10px ;}
+.c_btprod p {font:12px/17px Arial, Helvetica, sans-serif; margin:0 10px 10px 15px;}
+.c_btprod p a { color:#333; display:block;}
+.c_btprod p a:hover { text-decoration:none;}
+.sliderwrapper{ position: relative; height: 240px;}
+.sliderwrapper .contentdiv{ visibility: hidden; position: absolute; left:0; top: 0; z-index: 0;background: white; width: 638px; height: 100%;  -moz-opacity: 1; opacity: 1;}
+.pagination{ text-align: left; padding: 5px;  *padding: 5px 5px 5px 220px; *margin:-28px 0 0 0; *width:100%; border-bottom:1px solid #ccc; border-top:1px solid #000; font: bold 13px Arial, Helvetica, sans-serif; height:30px; margin-bottom: 13px;}
+.pagination a { margin:0 3px; color:#000;}
+.pagination a:hover, .pagination a.selected{ color: #fff; background-color: #c00;}
+.pagination .prev {background: #FF0000; float: left; background:#e5e5e5; padding:6px 10px; margin:0;}
+.pagination .next {background: #FF0000; float: right; background:#e5e5e5; padding:6px 10px; margin:0 0 0 15px;}
+.pagination .toc { display: inline-block;}
+.pagination a.toc {background:#fff; padding: 5px 10px; border:1px solid; color: #999;}
+.pagination a:hover.toc {background-color:#c00; color: #fff; text-decoration: none;}
+.pagination a.selected {background-color:#c00; color: #fff; border:1px solid #fff; text-decoration: none;}
+/*======================================================*/
+
+.box_indicadores {
+border:1px solid #BBBBBB;
+margin:0 0 15px;
+}
+
+/*======================================================*/
+
+
+/*======================================================*/
+/* MODULO LIGHTBOX
+/*======================================================*/
+#tweenWindow  .white_bl {height:12px;width:14px;display: block;position:absolute;bottom:1px;left: 0;}
+#tweenWindow  .white_tr {height: 13px;width:12px;display:block;position: absolute;top:0;right: 1px;}
+#tweenWindow  .white_tl {height: 6px;width: 6px;display: block;position: absolute;top: 0;left: 0;}
+#tweenWindow {overflow:visible;padding: 40px 25px 25px 25px;position: absolute;z-index:110;opacity:0;filter: alpha(opacity=0);	-moz-opacity: 0;background: #fff;left:-500px; height: 430px; width:560px;}
+#tweenWindow p{text-align:left;color:#666;width:560px;font:normal 11px Arial, Helvetica, sans-serif;margin:0;}
+#tweenWindow h3{text-align:left;color:#666;font:normal 12px Arial, Helvetica, sans-serif;margin:5px 0 5px 0;}
+#tweenWindow h3 strong{color:#cc0000;}
+#tweenClose {cursor: pointer;height: 19px;width:57px;display:block;position:absolute;top:12px;right:12px;background: url(http://static.elespectador.com/images/close.gif) 0 0 no-repeat;}
+#tweenContent {display:block;background:#fff;}
+#tweenOverlay {position:absolute;z-index: 100;width:100%;height:100%;top:0;left:0;min-height: 100%;opacity: 0;filter:alpha(opacity=0);-moz-opacity: 0;background:#000;}
+#tweenLoad {position:absolute;display: none;height: 100px;width: 100px;z-index: 201;}
+*html #tweenWindow .white_bl {height: 12px;width:14px;display:block;position:absolute;bottom:-5px;left:0;}
+.img_lighbox{position:relative;}
+.img_lighbox h1{position:absolute;top:-25px;left:-1px;}
+.img_lighbox h6{font:10px Arial, Helvetica, sans-serif; letter-spacing:-1px; position:absolute; top: 0; right:0; color:#000; background-color:#fff; padding: 0 3px;	opacity: 0.7; -moz-opacity: 0.7; filter: alpha(opacity=70);}
+/*======================================================*/
+
+
+/*======================================================*/
+/* DESPLIEGUE DE TAGS
+/*======================================================*/
+.box_tagcloud {border-bottom:1px solid #ddd; padding:10px 0;}
+.box_tagcloud ul#tagcloud li a .more-link { font:bold 12px Arial, Helvetica, sans-serif; color:#c00; text-align:right;}
+.box_tagcloud ul#tagcloud li a:hover .more-link { text-decoration:underline;}
+ul#tagcloud { text-align:left; list-style:none; line-height:22px; *line-height:26px; font-family:Arial, Helvetica, sans-serif; padding:0;}
+ul#tagcloud li { display:inline; background:none; padding:0;}
+ul#tagcloud li a, ul#tagcloud li a:link {text-decoration:none; color:#666;}
+.box_tagcloud ul#tagcloud li a:hover { color:#cc0000;}
+ul#tagcloud li a.tagadelic.level1 { font-size: 11px;}
+ul#tagcloud li a.tagadelic.level2 { font-size: 14px;}
+ul#tagcloud li a.tagadelic.level3 { font-size: 19px;}
+ul#tagcloud li a.tagadelic.level4 { font-size: 22px;}
+ul#tagcloud li a.tagadelic.level5 { font-size: 24px;}
+ul#tagcloud li a.tagadelic.level6 { font-size: 26px;}
+ul#tagcloud li a.tagadelic.level7 { font-size: 29px;}
+ul#tagcloud li a.tagadelic.level8 { font-size: 32px;}
+ul#tagcloud li a.tagadelic.level9 { font-size: 34px;}
+ul#tagcloud li a.tagadelic.level10 { font-size: 36px;}
+
+
+
+
+.box_comunidad { margin:0 0 15px 0; background:url(http://static.elespectador.com/images/bg_lineres.gif) repeat-y;}
+
+
+/*======================================================*/
+/* MODULO REVISTAS
+/*======================================================*/
+.box_revistas { border:1px solid #bbb; margin:0 0 15px 0; width:300px;}
+.box_revistas .revista {padding: 10px; background: #f3f3f3; font:normal 11px Arial, Helvetica, sans-serif;}
+.box_revistas .revista img {float: left; margin: 0 10px 0 0;}
+.box_revistas .revista ul {margin-bottom: 7px;  width:210px; float:left; *float:none;}
+.box_revistas .revista ul li a {background: url(http://static.elespectador.com/images/bullet_revistasn.gif) no-repeat left 5px; padding:0 0 0 10px;}
+.box_revistas .revista h3 {font-size: 10px; text-transform: uppercase; float:left; width:210px;}
+.box_revistas .revista h3 a { color:#FF6600 }
+.box_revistas .revista h5 {font-size: 14px;}
+.box_revistas .revista ul li h5 a {background: url(http://static.elespectador.com/images/bullet_revistasn.gif) no-repeat left 7px;}
+.box_revistas .revista a {color: #333;}
+.box_revistas .revista a:hover {text-decoration: underline;}
+.box_revistas .selects_revistas { padding: 10px; background: #ddd; border-top:1px solid #ccc;}
+.box_revistas .selects_revistas p {font:bold 11px Arial, Helvetica, sans-serif; color:#333; margin:0 0 5px 0;}
+.box_revistas .selects_revistas select {font:normal 12px Arial, Helvetica, sans-serif; color:#000; border:1px solid #ccc; padding:2px; width:270px; margin: 5px 0 0; display:block;}
+/*======================================================*/
+
+
+
+/*======================================================*/
+/* MODULO DE JUEGOS
+/*======================================================*/
+.box_juegos { width:970px; margin:0 auto 30px auto;}
+.zona_juegos {background-color:#f0f0f0; border:1px solid #dbdbdb; padding:10px 5px 10px 15px;}
+.un_juego {float:left; width:145px; height:65px; overflow:hidden;padding:0; border-right:1px solid #ccc; margin:0 8px 0 0;}
+.un_juego a img {	border:1px solid #e5e5e5; float:left; margin:0 10px 0 0;}
+.un_juego a.texto { color:#333; float:left; font:bold 12px/14px Arial, Helvetica, sans-serif; text-align:left;text-decoration:none; width:50px;}
+/*======================================================*/
+
+/*======================================================*/
+/* MODULO EMERGENCIA EN EL HOME
+/*======================================================*/
+.emergencia {padding:0; margin:0 0 25px 0; background-color:#FFF; overflow:hidden;}
+.preemergencia h2{font:normal 24px Georgia, "Times New Roman", Times, serif; color:#000; display:block; background:#eae7d4; padding:3px 10px 3px 0;}
+.preemergencia h2 span{ background:#c00; color:#FFF; padding:3px 10px; margin:0 10px 0 0;}
+.preemergencia a{ color:#000000;}
+.preemergencia a:hover{ text-decoration:underline;}
+
+.imagen_emergencia { position:relative; margin:0 0 10px 0; width:638px; height:319px; overflow:hidden;}
+.imagen_emergencia img { width:100%;}
+.imagen_emergencia h1 {font:normal 33px Georgia, "Times New Roman", Times, serif; letter-spacing:-1px; position:absolute; bottom:0; left:0; width:100%; background-color:#000; color:#FFF; padding:5px 15px; opacity: 0.8; -moz-opacity: 0.8; filter: alpha(opacity=80);}
+.imagen_emergencia h1 a{color:#FFF;  text-decoration:none;}
+.imagen_emergencia h1 a:hover{ text-decoration:none;}
+
+.emergencia p{font:normal 14px/18px Arial, Helvetica, sans-serif; color:#666; margin:0 0 10px 0;}
+.emergencia p a, .emergencia p a:hover{color:#666; text-decoration:none;}
+.emergencia p strong{ color:#c00; margin:0 5px 0 0; font: bold 12px/16px Arial, Helvetica, sans-serif; float:left;}
+.emergencia p strong a{ color:#c00; text-decoration:none;}
+.emergencia p strong a:hover{ color:#c00; text-decoration:none; background-color:#feffe9;}
+
+.relacionados_emergencia{ margin:0; padding:0;}
+.relacionados_emergencia h3{ text-align:right; font:bold 11px Arial, Helvetica, sans-serif; color:#FFF; padding:3px 15px 0 0; margin:5px 0 0 0; background:url(http://static.elespectador.com/images/back_recursos_emer.gif) right 0 no-repeat ;}
+.listas_emergencia { padding:10px 0; border-top:3px solid #c00; border-bottom:3px solid #bbb;}
+.listas_emergencia ul{font:normal 18px Arial, Helvetica, sans-serif; font-weight:normal; color:#039; _font-size:18px;}
+.listas_emergencia li{ list-style-position:inside; width:305px; float:left; border-bottom:1px dotted #e5e5e5; margin:0 0 0 10px; padding:5px 0; list-style:none;}
+.listas_emergencia li a{ list-style-position:inside; width:280px; margin:0 10px 0 0; text-decoration:none; color:#000;}
+.listas_emergencia li a:hover{ text-decoration: underline;}
+.listas_emergencia li strong{ color:#c00;}
+.listas_emergencia li h6 a, .listas_emergencia li h6 { font-weight:normal; *font-size:12px;}
+/*======================================================*/
+
+/*ESTILOS PAUTE FACIL*/
+.pautafacil {background-color:#f3f3f3; border:1px solid #ccc; border-bottom:6px solid #ccc; border-top:none; margin:0 0 20px 0; display:block; clear:both;}
+.pautafacil br {display:none;}
+.pautafacil .header_pautafacil {padding:0; border-bottom:3px solid #c00; border-top:1px solid #ccc; background:#fff url(http://static.elespectador.com/images/logo_pautefacil.gif) 0 1px no-repeat;}
+.pautafacil .header_pautafacil h1 {float:left; width:80px; height:30px; overflow:hidden;}
+.pautafacil .header_pautafacil h1 a {display:block; text-indent:-10000px;}
+.pautafacil .header_pautafacil h2 {float:right; width:85px; font:bold 14px/1px Arial, Helvetica, sans-serif; color:#c00; padding:0; margin:10px 0 0 0;}
+.pautafacil .header_pautafacil h2 a { font:bold 10px/10px Arial, Helvetica, sans-serif; margin:0 0 0 5px; color:#c00; text-decoration:none;}
+.pautafacil .header_pautafacil h2 a:hover { text-decoration:underline;}
+.pautafacil .columna { float:left; overflow:hidden; margin:10px 0 10px 10px; padding:0 5px 0 0; border-right:1px solid #666;}
+.pautafacil .columna h3 { font:bold 12px Arial, Helvetica, sans-serif; margin:0 0 3px 0;}
+.pautafacil .columna h3 a {color:#333; text-decoration:none;}
+.pautafacil .columna h3 a:hover { text-decoration:underline;}
+.pautafacil .columna p { font:11px/12px Arial, Helvetica, sans-serif; margin:0 0 3px 0;}
+.pautafacil .columna p a {color:#000; background:none;  text-decoration:none;}
+.pautafacil .columna p a:hover { text-decoration:none;}
+.pautafacil .columna h6 {font:10px Arial, Helvetica, sans-serif; }
+.pautafacil .columna h6 a { color:#c00; text-decoration:none;}
+.pautafacil .columna h6 a:hover { text-decoration: underline;}
+.pautafacil_espectador {margin:20px;}
+.pautafacil_espectador .columna {width:23%;}
+.pautafacil_intespectador  {margin-top:20px;} 
+.pautafacil_intespectador .columna {width:22%;}
+.pautafacil_relespectador .columna { border:none; border-bottom:1px solid #e5e5e5; padding:5px 10px; margin:0; clear:both; width:220px;}
+.pautafacil_relespectador .columna p:hover { text-decoration:none;}
+.pautafacil_ultimasespectador { width:160px; border:none; border:1px solid #ccc;}
+.pautafacil_ultimasespectador .columna { border:none; border-bottom:1px solid #e5e5e5; padding:5px 10px; margin:0;}
+.pautafacil_ultimasespectador .columna h6, .pautafacil_ultimasespectador .columna h6 a {padding:0; margin:0; background-image:none; font-size:9px;}
+
+
+.patrocinio_der {margin:0; width:170px; height:32px;}
+.patrocinio_der span { font: normal 10px Arial, Helvetica, sans-serif; color:#666; float:left; display:block; width:80px; padding:8px 0 0 0; }
+.patrocinio_der .box_patrocinio {width:88px; height:31px; float:right; margin:-11px 0 0 0;}
+.patrocinio_der img, .patrocinio_der object, .patrocinio_der iframe {border:1px solid #f4f4f4;}
+.box_pauta_top {/*z-index:9999;position:relative;*/ margin-left:-1px;}
+
+
+.suscripciones {width:300px; font: bold 11px Arial, Helvetica, sans-serif; margin:0 0 15px 0; padding:0 0 10px 0; color:#333; border:1px solid #bbb;}
+.suscripciones .barra_modulo { font:bold 16px Arial, Helvetica, sans-serif; padding:4px 10px 3px 10px; background:url(http://static.elespectador.com/images/bg_modtitle.gif) repeat-x; border-bottom:1px solid #bbb;}
+.suscripciones .suscripcion_impresa{background:url(http://static.elespectador.com/images/flechas_carrusel.jpg) right 5px no-repeat; border-bottom:1px solid #e5e5e5; margin:0 10px; padding:0 0 10px 0;}
+.suscripciones .suscripcion_impresa h2 {background:url(http://static.elespectador.com/images/bullet_modulos.gif) no-repeat 0 18px; font-size:14px; padding:15px 0 0 13px; margin:0 0 10px 10px;}
+.suscripciones .suscripcion_impresa a{ border:none; width:63px; font:normal 12px/12px Arial, Helvetica, sans-serif; padding:2px 5px; margin:0 0 0 25px; background-color:#c00; color:#fff; text-decoration:none;}
+.suscripciones .suscripcion_circulo { margin:5px 10px 0 10px;}
+.suscripciones .suscripcion_circulo img {margin:0 10px; float:left;}
+.suscripciones .suscripcion_circulo h2 {font-size:11px; line-height:12px; padding:5px 0 3px 0; margin:0; float:left; width:170px;}
+.suscripciones .suscripcion_circulo p { float:left; width:170px; font-size:12px; line-height:12px; font-weight:normal; margin:0 0 5px 0; padding:0;}
+.suscripciones .suscripcion_circulo a { border:none; width:83px; font:normal 11px/11px Arial, Helvetica, sans-serif; padding:3px 5px; margin:0; background-color:#000; color:#fff; text-decoration:none; float:right; text-align:center;}
+
+/*ESTILOS COL ES PASION*/
+* {padding:0;margin:0;}
+.positivas a:focus, input:focus, select:focus{ -moz-outline: none !important;}
+.positivas a {text-decoration:none;}
+.positivas img {border:0;}
+.mod_cp .positivas .fleft{float:left;}
+.positivas .fright{float:right;}
+.positivas .line_sep {border-top:1px solid #f2c6c6; padding:1px; margin:0 0 8px 0;}
+.positivas .line_gris {border-top:1px solid #ddd; padding:1px; margin:0 0 8px 0;}
+.positivas .red{color:#cc0000;}
+.positivas .clear { clear: both; font-size: 1px; color: #fff;}
+.positivas ul { list-style:none;}
+
+/*=estructura
+=== === === === === === === === === === */
+body {behavior:url("/sites/all/themes/garland/css/csshover.htc");}/*permite que los :hover funcionen en explorer*/
+html, body {height: 100%;}
+body {text-align:center;font-size:60%; background:#fff;}
+#content_all { position:relative; width:998px; text-align:left; margin:0 auto; border-left:1px solid #ddd;border-right:1px solid #ddd; background:#fff;}
+.barra_modulo {font:bold 16px Arial, Helvetica, sans-serif; color:#000; padding:4px 0 0 0; border-bottom:3px solid #666;}
+.bloque_noticias {width:638px; _overflow:hidden; _margin:0 0 20px 0;}
+.bloque_uno { padding:15px; background:url(http://static.elespectador.com/images/line_izq.gif) 294px 0 repeat-y; margin:0 0 15px 0;}
+.bloque_noticias_hor { margin:-10px 0 0 0; background-color:#FFF;}
+
+/*=estilos Colombia es Pasion
+=== === === === === === === === === === */
+
+.mod_cp .head {margin-bottom: 20px;}
+.mod_cp .positivas {border: solid 1px #c00; padding: 6px; width: 288px;}
+.mod_cp .positivas h4 {background: #f3f3f3; padding: 3px 6px; font: normal 22px Georgia, "Times New Roman", Times, serif; color: #000;}
+.mod_cp .positivas ul {padding: 6px 6px 0; font: normal 13px Arial, Helvetica, sans-serif; line-height: 18px}
+.mod_cp .positivas li {border-bottom: solid 1px #ccc; padding-bottom: 13px; margin-bottom: 13px}
+.mod_cp .positivas li strong {font-weight: normal; color: #c00;}
+.mod_cp .positivas li a {color: #000;}
+.mod_cp .positivas li a:hover {text-decoration: underline}
+.mod_cp .posi_multimedia {width: 300px;}
+.mod_cp .posi_multimedia h4 {background: #f3f3f3; padding: 3px 6px; font: normal 22px Georgia, "Times New Roman", Times, serif; color: #000;}
+.mod_cp .posi_multimedia li {font: normal 16px Georgia, "Times New Roman", Times, serif; padding: 6px 0;}
+.mod_cp .posi_multimedia li img {float: left; margin-right: 10px; border: solid 1px #ccc;}
+.mod_cp .posi_multimedia li a {color: #000;}
+.mod_cp .posi_multimedia li a:hover {text-decoration: underline;}
+.mod_cp .pos_novedades {background: #f3f3f3; margin-top: 20px;}
+.mod_cp .pos_novedades h4 {border-bottom: solid 1px #999; font: normal 22px Georgia, "Times New Roman", Times, serif; height: 34px}
+.mod_cp .pos_novedades h4 span {color: #fff; padding: 4px 60px 0 37px; display: block; float: left; background: #c00 url(http://static.elespectador.com/modules/col_pasion/ico_cp_novedades.gif) no-repeat 10px center; height: 30px;}
+.mod_cp .pos_novedades ul {padding: 20px 0 20px 25px;}
+.mod_cp .pos_novedades li {float: left; width: 250px; margin-right: 56px}
+.mod_cp .pos_novedades li img {margin-bottom: 10px}
+.mod_cp .pos_novedades li h5 {margin-bottom: 5px}
+.mod_cp .pos_novedades li h5 a {font: normal 16px Georgia, "Times New Roman", Times, serif; color: #000;}
+.mod_cp .pos_novedades li h5 a:hover {text-decoration: underline;}
+.mod_cp .pos_novedades li h6 {margin: 6px 0; text-align: right;}
+.mod_cp .pos_novedades li h6 a {font: bold 11px Arial, Helvetica, sans-serif, Times, serif; color: #c00;}
+.mod_cp .pos_novedades li h6 a:hover {text-decoration: underline;}
+.mod_cp .pos_novedades li p a {font: normal 12px Arial, Helvetica, sans-serif; color: #000; line-height: 16px;}
+
+/*======================================================*/
+/* BOTON MUNDIALISTA
+/*======================================================*/
+.para_mundial_middle {margin-bottom:10px; background: #fff url(http://static.elespectador.com/images/mundial_center.jpg) repeat-x; height:30px;}
+.para_mundial_middle input {border:1px solid #ccc; margin-left:150px; padding:3px; width:50px; margin-top:5px; color:#c00; text-align:center;}
+.para_mundial_left {margin-bottom:10px; background: #fff url(http://static.elespectador.com/images/mundial_left.jpg) repeat-x; height:30px;}
+.para_mundial_left input {border:1px solid #ccc; margin-left:260px; padding:3px; width:50px; margin-top:5px; color:#c00; text-align:center;}
+
+/*======================================================*/

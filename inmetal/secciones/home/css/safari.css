@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+.rombo-1, .rombo-2, .rombo-3, .rombo-4 {width:357px; height:357px; position:absolute; overflow:hidden; z-index:50 !important;}
+.rombo-1 {left:12px; top:304px;}
+.rombo-2 {left:400px; top:-200px;}
+.rombo-3 {right:210px; top:107px;}
+.rombo-4 {right:15px; top:-89px;}

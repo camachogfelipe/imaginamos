@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_excel" value="name:id_contacto;datatype:int,name:nombre;datatype:string,name:email;datatype:string,name:asunto;datatype:string,name:mensaje;datatype:blob" />
+</info>

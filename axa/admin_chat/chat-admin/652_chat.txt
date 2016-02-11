@@ -1,0 +1,5 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>69696969696</span><br/>escribe cualquier cosa ~2012-08-02 10:40:47
+<span class='admin'>Agente</span><br/>respondeles algo ~2012-08-02 10:41:06
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

@@ -1,0 +1,30 @@
+a:3:{s:16:"__cache_contents";O:8:"stdClass":16:{s:2:"id";s:2:"61";s:4:"slug";s:8:"services";s:5:"title";s:22:"lang:services:services";s:11:"description";s:27:"A simple page type services";s:9:"stream_id";s:3:"157";s:10:"meta_title";s:0:"";s:13:"meta_keywords";N;s:16:"meta_description";s:0:"";s:4:"body";s:1554:"<div class="content_940 content_home">
+    <div class="menu_servicios clearfix">
+   
+      <a  {{ if {url:segments segment="2"} == "consulta-medica-domiciliaria" }} class="servicio_activo" {{endif}} href="{{ url:base }}servicios/consulta-medica-domiciliaria">Consulta Médica Domiciliaria</a>
+	 
+	 <a {{ if page:slug == "enfermeria" }} class="servicio_activo"  {{ endif }} href="{{ url:base }}servicios/enfermeria">Enfermería</a>
+	 
+	  <a {{ if page:slug == "terapias" }} class="servicio_activo"  {{ endif }} href="{{ url:base }}servicios/terapias">Terapias</a>
+	 
+	  <a {{ if page:slug == "hospitalizacion-en-casa" }} class="servicio_activo" {{ endif }} href="{{ url:base }}servicios/hospitalizacion-en-casa">Hospitalización en Casa</a>
+	 
+	 <a {{ if page:slug == "telemedicina" }} class="servicio_activo"  {{ endif }} href="{{ url:base }}servicios/telemedicina">Especialistas por Telemedicina</a>
+    </div>
+    <div class="linea_home">
+      <h1 class="title_dest bold">{{title}}</h1>
+    </div>
+    <div class="clearfix">
+      <div class="content_serv left">
+      	<div class="main_text_serv" style="text-align:justify;">
+          {{description_services}}
+        </div>
+    <img src="{{ url:site }}files/large/{{image_internal:filename}}" width="700" height="298" class="img_serv" />
+        <div class="main_p">{{texto_inferior_services}}</div>
+      </div>
+      <a class="fixed_box right" href="{{ url:site }}contact" style="top: 300px;">
+          {{texto_contacta_asesor}}
+        <h4>Contacta un asesor</h4>
+      </a>
+    </div>
+  </div>";s:3:"css";s:0:"";s:2:"js";s:0:"";s:12:"theme_layout";s:13:"internas.html";s:10:"updated_on";s:10:"1383855654";s:13:"save_as_files";s:1:"n";s:13:"content_label";s:0:"";s:11:"title_label";s:0:"";}s:15:"__cache_created";i:1384897471;s:20:"__cache_dependencies";a:0:{}}

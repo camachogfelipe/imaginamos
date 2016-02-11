@@ -1,0 +1,5 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>42001095</span><br/>Se desconecto~2012-08-08 12:36:28
+<span class='usuario'>42001095</span><br/>Mi tarjeta es bancolombia amex dorada~2012-08-08 12:37:00
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

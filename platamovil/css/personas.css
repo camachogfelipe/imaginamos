@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+.detallesWrapper { width:990px; margin:0 auto}
+.migasVolverBox { width:100%; clear:both; height:37px;}
+.migasWrapper { width:85%; height:37px; float:left}
+.migasLeft { width:5px; height:37px; background:url(../imagenes/migasBgLeft.png); float:left }
+.migasCenter { height:37px; background:url(../imagenes/migasBgCenter.png); float:left; padding:0 10px }
+.migasRight {width:7px; height:37px; background:url(../imagenes/migasBgRight.png); float:left}
+.migasWrapper .arrow { width:6px; height:37px; background:url(../imagenes/migasFlecha.jpg) no-repeat; display:inline-block; float:left; margin:0 5px; background-position:0px 11px; }
+.migasWrapper .migaslink { display:inline-block; height:37px; float:left; font-family: 'HelveticaNL', sans-serif; color:#6f6f6f; font-size:17px; margin-top:6px; text-decoration:none }
+.migasWrapper .migaslink:hover { text-decoration:underline}
+.migasWrapper .migaslinkS { display:inline-block; height:37px; float:left; font-family: 'HelveticaNL', sans-serif; color:#7ab929; font-size:17px; margin-top:6px; font-weight:bold }
+.volverBtnBox { width:15%; float:left; }
+.volverBtnBox .volverBtn { width:130px; height:30px; display:block; background:url(../imagenes/volverBtn.png) no-repeat; float:right }
+.volverBtnBox .volverBtn:hover { background-position:0 -30px;}
+
+.mainContetBoxLeft { width:990px; float:left; margin-top:48px; margin-right:40px;}
+.tituloWrapper { width:100%; float:left; font-family: 'HelveticaNL', sans-serif; font-size:28px; color:#0d427c; border-bottom:1px dashed #a9abac; padding-bottom:15px;}
+.tituloWrapper strong { color:#7ab929; font-size:40px; font-weight:bold;font-family: 'HelveticaBN', sans-serif;}
+.tituloWrapper .icono { width:100px; height:80px;float:left }
+.tituloWrapper .titulo { width:790px; float:left; margin-top:17px; font-size:40px; }
+.mainContetBoxLeft .subtitle {font-family: 'HelveticaNL', sans-serif; font-size:18px; color:#0d427c; text-align:left}
+.mainContetBoxLeft .textosBox { font-family: 'HelveticaNL', sans-serif; font-size:17px; padding-top:25px; width:100%; clear:both; text-align:justify }
+.mainContetBoxLeft .textosBox .textoGrande {font-family: 'HelveticaNL', sans-serif; font-size:28px; color:#0d427c;}
+.mainContetBoxLeft .destacado {background: #c2d3db; padding:15px; display:block; color:#333}
+.mainContetBoxLeft a.link { color:#fff; text-decoration:none; font-style:normal; font-size:13px; font-family:"Trebuchet MS", sans-serif; padding:7px 10px 7px 25px; background: url(../imagenes/flechaLink.png) no-repeat left #bcde62; background-position-x:7px;-moz-border-radius: 3px; border-radius:3px; display:block; text-align:left}
+.mainContetBoxLeft a.link:hover {text-decoration:none; background: url(../imagenes/flechaLink.png) no-repeat left #7ca512;background-position-x:8px }
+
+.mainContetBoxRight { width:456px; float:left; margin-top:135px;}
+.imagenDetalles { 
+	width:425px; 
+	height:315px; 
+	padding:10px 12px;
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+.descargarPdfBox { width:404px; background:#fff; margin-top:15px; padding:26px;font-family: Trebuchet MS; color:#222222}
+.descargarPdfBox .titulo { width:100%; padding-bottom:10px; border-bottom:1px #e5e5e5 solid; margin-bottom:10px;}
+.descargarPdfBox .descargar { width:80%; display:block; background:url(../imagenes/PDF-Icon.jpg)  no-repeat; padding:10px 10px 10px 60px; font-size:12px; color:#222222; text-decoration:none;}
+.descargarPdfBox .descargar:hover { text-decoration:underline;}
+.descargarPdfBox .descargar span { color:#999999}
+
+.imagenDetalles { 
+	width:425px; 
+	height:315px; 
+	padding:10px 12px;
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+	margin-top: 10px;
+}
+
+.imagenDetalles2 { 
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 728px;
+    margin-top: 10px;
+    padding: 10px 12px;
+    width: 423px;
+}
+.imagenDetalles3 { 
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 395px;
+    margin-top: 10px;
+    padding: 10px 12px;
+    width: 423px;
+}
+
+.detalles-form{
+	background-color: #FFFFFF;
+    border: 1px solid #CACBCE;
+    border-radius: 10px 10px 10px 10px;
+    color: #185290;
+    display: block;
+    font-family: 'HelveticaNL', sans-serif;
+    font-size: 16px;
+    margin-top: 40px;
+    padding: 24px;
+	text-align:left;
+}
+.detalles-form input{
+	background-color: #F1F1F1;
+    border: 1px solid #CACBCE;
+    border-radius: 10px 0 0 10px;
+    color: #333333;
+    font-family: 'HelveticaNL', sans-serif;
+    font-size: 17px;
+    height: 32px;
+    padding-left: 10px;
+    width: 390px;
+}
+.detalles-form .radius{
+	background-color: #333333;
+    height: 20px;
+    margin-left: 40px;
+    width: 32px;
+}
+.detalles-form select{
+	background-color: #F1F1F1;
+    border: 1px solid #CACBCE;
+    border-radius: 10px 0 0 10px;
+    font-family: 'HelveticaNL', sans-serif;
+    font-size: 17px;
+    height: 30px;
+    margin-left: 87px;
+    margin-top: 0;
+    padding-top: 3px;
+    width: 230px;
+}
+.detalles-form-tit{
+	color: #7AB929;
+    font-family: 'HelveticaNB', sans-serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.detalles-cam-ob{
+	font-size: 14px;
+    text-align: right;
+}
+.detalles-form .est{
+	color: #7AB929;
+    font-family: 'HelveticaNB', sans-serif;
+    font-size: 20px;
+	margin-right:5px;
+}
+.detalles-form #cliente{
+	border-bottom: 1px solid #CACBCE;
+    border-top: 1px solid #CACBCE;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+}
+.detalles-form .pregunta{
+	margin-bottom: 20px;
+    margin-top: 40px;
+}
+.detalles-form #cliente select{
+	margin-left: 0;
+    width: 185px;
+}
+
+.detalles-form #cliente .acotacion{
+	font-style: italic;
+}
+.detalles-form .tab-iz{
+	float: left;
+    margin-bottom: 11px;
+    margin-right: 35px;
+    width: 270px;
+
+}
+.detalles-form .radius2{
+	background-color: #333333;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    width: 32px;
+}
+.detalles-form #num-cel{
+	display:none;
+}
+.detalles-form .comentarios{
+	background-color: #F1F1F1;
+    border: 1px solid #CACBCE;
+    border-radius: 10px 0 0 10px;
+    color: #333333;
+    font-family: 'HelveticaNL', sans-serif;
+    font-size: 17px;
+    height: 132px;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 390px;
+}
+.detalles-form .bot-env{
+	border-radius: 10px 10px 10px 10px;
+    margin-right: 59px;
+    width: 171px;
+	font-family: 'HelveticaNB', sans-serif;
+}
+.detalles-form .bot-bor{
+	margin-right: 10px;
+    width: 171px;
+	border-radius: 10px;
+	font-family: 'HelveticaNB', sans-serif;
+}
+.detalles-form .bot-env:hover{
+	background-color:#90BD1A;
+	color:#fff;
+	font-family: 'HelveticaNB', sans-serif;
+}
+.detalles-form .bot-bor:hover{
+	background-color:#90BD1A;
+	color:#fff;
+	font-family: 'HelveticaNB', sans-serif;
+}

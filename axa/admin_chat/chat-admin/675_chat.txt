@@ -1,0 +1,15 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>42001095</span><br/>Se desconecta~2012-08-08 12:39:05
+<span class='usuario'>42001095</span><br/>Tienen Algun telefono al q pueda llamar?~2012-08-08 12:39:39
+<span class='usuario'>42001095</span><br/>?~2012-08-08 12:41:06
+<span class='admin'>Agente</span><br/>Buenas Tardes gracias por usar nuestro servicio en l&iacute;nea, mi nombre es Jose Romero -JRF ~2012-08-08 12:42:06
+<span class='admin'>Agente</span><br/>Como le puedo ayudar? - JRF ~2012-08-08 12:42:35
+<span class='usuario'>42001095</span><br/>Yo ya habia escrito pero se desconecto~2012-08-08 12:43:33
+<span class='usuario'>42001095</span><br/>Tengo tarjeta bancolombia~2012-08-08 12:43:48
+<span class='usuario'>42001095</span><br/>Y necesito el seguro~2012-08-08 12:43:59
+<span class='admin'>Agente</span><br/>Me permito informar que para este tipo de solicitud debe comunicarse con la l&iacute;nea en Bogota 1 644 6185 - JRF ~2012-08-08 12:44:38
+<span class='usuario'>42001095</span><br/>Muchas gracias~2012-08-08 12:44:59
+<span class='admin'>Agente</span><br/>De nada, sin embargo d&eacute;jeme saber si hay algo mas en lo que le pueda ayudar? ? JRF ~2012-08-08 12:45:16
+<span class='admin'>Agente</span><br/>Gracias por usar nuestro servicio en l&iacute;nea, la conversaci&oacute;n se finalizara por falta de comunicaci&oacute;n, en caso de necesitar de nuestra asesor&iacute;a ingresar nuevamente a nuestro Chat de servicio en l&iacute;nea en <a href="http://www.tar" target="_blank">http://www.tar</a>jetasdeasistencia-a xa.com/ - JRF.~2012-08-08 12:47:42
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

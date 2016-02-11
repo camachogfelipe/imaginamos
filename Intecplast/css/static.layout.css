@@ -1,0 +1,41 @@
+
+@font-face {
+font-family: 'OceaniaRegular';
+src: url('http://www.nuevascaras.com/rtiwebsite/fuentes/oceania-regular-webfont.eot');
+    src: url('http://www.nuevascaras.com/rtiwebsite/fuentes/oceania-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.nuevascaras.com/rtiwebsite/fuentes/oceania-regular-webfont.woff') format('woff'),
+         url('http://www.nuevascaras.com/rtiwebsite/fuentes/oceania-regular-webfont.ttf') format('truetype'),
+         url('http://www.nuevascaras.com/rtiwebsite/fuentes/oceania-regular-webfont.svg#OceaniaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+
+
+}
+
+
+/* FORMS */
+
+
+
+
+
+
+span.select {
+	position: absolute;
+	width: 87px;
+	height: 38px;
+	color: #4F83AC;
+	background: url(../images/select.png) no-repeat;
+	overflow: hidden;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0;
+	padding-left: 8px;
+font-family: 'TrebuchetMSRegular';
+	font-size: 14px;
+	line-height: 22px;
+	vertical-align: middle;
+	
+}
+

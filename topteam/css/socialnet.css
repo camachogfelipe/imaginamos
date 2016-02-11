@@ -1,0 +1,32 @@
+/* CSS Document */
+
+#redeslike {
+	width:325px;
+	height:37px;
+	float:left;
+	font-family: 'BebasNeueRegular';
+	font-size:18px;
+	color:#000000;
+	text-transform:uppercase;
+
+}
+
+
+.txtredeslike {
+	width:80px;
+	height:27px;
+	padding-left:4px;
+	float:left;
+	font-family: 'BebasNeueRegular';
+	font-size:18px;
+	color:#000000;
+	text-transform:uppercase;
+
+}
+
+
+#rowreds {
+width:230px;
+h37px;
+float:right;
+}

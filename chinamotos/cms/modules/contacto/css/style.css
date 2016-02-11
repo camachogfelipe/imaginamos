@@ -1,0 +1,98 @@
+.uploadifyQueue
+{
+	width: 450px;
+}
+.uploadifyQueueItem a
+{
+	font-size: 12px;
+	text-decoration: none;
+	color: #2779AA !important;
+}
+.uploadifyQueueItem a:hover
+{
+	text-decoration: underline;
+}
+.uploadifyQueueItem:first-child
+{
+	margin-top: 20px;
+}
+.uploadifyQueueItem
+{
+	margin-top: 5px;
+	padding: 5px;
+	border: 1px solid #D6D6D6;
+	background-color: #FFFFFF;
+}
+.uploadedImage
+{
+	border: none;
+	max-width: 438px;
+}
+.uploadedThumbnail
+{
+	border: none;
+	max-width: 200px;
+}
+.afterUploadThumbnail
+{
+	display: block;
+}
+.cancel
+{
+	float: right;
+	margin-left: 5px;
+}
+.uploadifyProgress
+{
+	background-color: #FFFFFF;
+	border-color: #808080 #C5C5C5 #C5C5C5 #808080;
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 10px;
+	width: 100%;
+}
+.uploadifyProgressBar
+{
+	background-color: #869FB7;
+	height: 3px;
+	width: 1px;
+}
+.uploadButton
+{
+	width: 257px;
+	margin-top: 10px;
+}
+.button_cancel
+{
+	width: 10px;
+	height: 10px;
+	background: transparent url("close.png") no-repeat scroll 0 0;
+	border: none;
+	cursor: pointer;
+	padding: 0px;
+	margin-bottom: 0px !important;
+	margin-top: 4px !important;
+	line-height: 1 !important;
+}
+/*--- misc ---*/
+.uploadifyQueue:after
+{
+    font-size: 0px;
+    content: ".";
+    display: block;
+    height: 0px;
+    visibility: hidden;
+    clear: both;
+}
+.imu_info
+{
+	display: none;
+	clear: both;
+	background-color: #fff;
+}
+.imu_loader
+{
+	display: none;
+	margin-left: 15px;
+}
+

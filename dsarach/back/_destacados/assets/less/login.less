@@ -1,0 +1,79 @@
+@full : 100%;
+@zi-initial: 21;
+@zi-final: 22;
+
+.hiddenanchor{ display:none; }
+
+.box-form{
+    width: 400px;
+    height: 254px;
+    margin: 20px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -148px;
+    filter: alpha(opacity=0);
+    border: 5px #F4F4F4 solid;
+    min-width: 200px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+.animate(){
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+}
+
+.animar(@name, @duration : 2s){
+    z-index: 22;
+    animation-name: @name;
+    animation-delay: .1s;
+   -webkit-animation-name: @name;
+    animation-duration: @duration;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    -webkit-animation-duration: @duration;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+     -webkit-animation-delay: .1s;
+}
+.desaparecer(){
+   z-index: @zi-initial;
+   opacity: 1;
+}
+.aparecer(){
+   z-index: @zi-final;
+   opacity: 1;
+}
+
+#login{
+    .wrapper-inner{ position:relative; }
+    form{ position:absolute; background:white; width:@full; height:@full; }
+    [name=recovery]{ .desaparecer() }
+    [name=login]{ z-index: @zi-final; }
+}
+
+#tologin, #torecovery{
+    &:target{
+        ~ .box-form{
+          .animar(moverBox);
+        }
+    }
+}
+   
+#torecovery:target ~ #login{ 
+    [name=login]{ .desaparecer(); }
+    [name=recovery]{  .animar(aparecer); }
+}
+#tologin:target ~ #login{ 
+    [name=recovery]{ .desaparecer(); }
+    [name=login]{  .animar(aparecer); }
+}
+
+    
+

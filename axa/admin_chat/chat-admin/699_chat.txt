@@ -1,0 +1,6 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>65255222</span><br/>hola, cuanto me cuesta un seguro para varios paises del espacio schengen  ~2012-08-29 11:51:36
+<span class='admin'>Agente</span><br/>Buenas tardes, le saluda Hugo Linares, con mucho gusto le brindo la informacion ~2012-08-29 12:03:59
+<span class='admin'>Agente</span><br/>por cuanto tiempo requiere el seguro? ~2012-08-29 12:05:22
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

@@ -1,0 +1,362 @@
+#mask_overlay {
+	position:fixed;
+	background-color:#fff;
+	z-index:5000;
+	-khtml-opacity: 0.5;
+	-moz-opacity:0.5;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	display:none;
+	background-image:url(../../images/bg.png);
+}
+#alert {
+background-color:#e32b4d; position:absolute; width:100%; z-index:1000
+}
+.alert_inner {
+padding-top:16px; padding-bottom:16px; color: #fff; text-align: center;
+}
+.g_options {
+text-decoration: none;
+}
+.alert_inner a {
+color:#fff;
+font-weight: bold;
+text-decoration: underline;
+}
+.login_special {
+margin:auto;
+-moz-box-shadow: 0px 0px 10px #333;
+-webkit-box-shadow: 0px 0px 10px #333;
+box-shadow: 0px 0px 10px #333;
+padding:50px;
+ position:relative; width:350px; background-color:#fff
+}
+body {
+	background-color:#193441; margin:0px; background-image:url(../../images/bg.png); font-family:Arial, Helvetica, sans-serifr
+}
+a { text-decoration:none; }	
+#topmenu a {
+	color:#3e606f;
+}
+#topmenu {
+	margin:0px 20px 0px 20px;
+}
+#login_form {
+	font-size:24px;
+	color:#3e606f;
+}
+#login_form label {
+	width:120px;
+	float:left;
+	margin-top:5px;
+}
+#login_form input,#ban_form input,select {
+	margin-top:5px;
+	border:1px solid #3e606f;
+	font-size:18px;
+	padding:4px;
+	width:200px;
+	color:#3e606f;
+}
+.l1 {
+	background-color:#e32b4d;
+ color:#fff;
+	padding:4px 10px 4px 10px;
+
+float:left;
+text-align: center;
+}
+#logout_form .l1,#ban_form .l1 {
+	margin-left:90px;
+margin-right:20px;
+}
+#login_form .l1 {
+	margin-top:10px;
+}
+.l2 {
+	background-color:#e32b4d;
+
+	text-align:center;
+	float:left;
+	color:#fff;
+	padding:4px 10px 4px 10px;
+}
+.l3 {
+	background-color:#e32b4d;
+
+	text-align:center;
+
+	padding:4px 10px 4px 10px;
+	color:#fff;
+
+}
+.l4 {
+	background-color:#e32b4d;
+	width:100px;
+	text-align:center;
+	font-size:20px;
+	padding:4px 10px 4px 10px;
+	color:#fff;
+
+}
+.static select {
+width:210px;
+}
+.static span {
+color:#e32b4d;
+font-size:16px;
+}
+.l1:hover,.l2:hover,.l3:hover { background-color:#3e606f; color:#fff; }
+#messages {
+	height:250px;
+	padding:4px 0px 4px 0px;
+	color:#333;
+	overflow: auto;
+	font-family:arial,tahoma,verdana;
+	font-size:14px;
+}
+.smiley_button
+{
+    float:right; width:49px; margin-left:1px; height:60px; background-repeat: no-repeat,repeat-x; background-position: center center;  background-image: url(../../images/smile.png),url(../../images/bt_bg.jpg)
+}
+#smiley_bar {
+    background-color: #3e606f;
+    width:49px;
+    margin-left:1px;
+    position:fixed;
+    text-align: center
+}
+#smiley_bar img {
+    margin:16px 16px 0px 16px;
+    vertical-align: middle
+}
+#messages a {
+color:#3e606f;
+text-decoration:underline;
+}
+#messages a:hover {
+text-decoration:none;
+}
+#messages img {
+    vertical-align: middle;
+    margin-right:2px
+}
+
+#message {
+margin-right:10px; float:left;
+ padding:0px; height:56px; resize: none; outline: none; border:0; font-family:Arial, Helvetica, sans-serif; font-size:12px;
+}
+.qq-upload-button a {
+float:right; background-image:url(../../images/bt_bg.jpg); height:60px; display:block; width:100px;
+}
+.qq-upload-button span {
+position:relative; top:18px; left:12px; color:#fff; font-size:24px;
+}
+.message {
+	float:left;
+background-color:#fff;
+-moz-box-shadow: 0px 0px 10px #333;
+-webkit-box-shadow: 0px 0px 10px #333;
+box-shadow: 0px 0px 10px #333;
+
+padding:10px;
+
+}
+.visitors {
+	float:right;
+
+padding:10px;
+background-color:#fff;
+-moz-box-shadow: 0px 0px 10px #333;
+-webkit-box-shadow: 0px 0px 10px #333;
+box-shadow: 0px 0px 10px #333;
+margin-top:20px;
+}
+.talking_area
+{
+	float:left;
+ padding:10px;
+background-color:#fff;
+-moz-box-shadow: 0px 0px 10px #333;
+-webkit-box-shadow: 0px 0px 10px #333;
+box-shadow: 0px 0px 10px #333;
+margin-top:20px;
+margin-bottom:20px;
+}
+.current_user {
+    color:#3e606f;
+}
+.top_bg{
+	 z-index:1000; padding-top:8px; top:0px; color:#3e606f; height:47px; width:100%; background-image:url(../../images/top.png);
+}
+#home {
+	margin:0px; background-image:url(../../images/t1.png); font-size:24px; padding-left:25px; background-position:left center; background-repeat:no-repeat; float:left; margin-right:30px
+}
+#settings{
+	margin:0px; background-image:url(../../images/t2.png); font-size:24px; padding-left:25px; background-position:left center; background-repeat:no-repeat; float:left; margin-right:30px;
+}
+#logout{
+	margin:0px; background-image:url(../../images/t4.png); font-size:24px; padding-left:25px; background-position:left center; background-repeat:no-repeat; float:right;
+}
+#ban{
+	margin:0px; background-image:url(../../images/t3.png); font-size:24px; padding-left:25px; background-position:left center; background-repeat:no-repeat; float:left; margin-right:30px;
+}
+#group{
+	margin:0px; background-image:url(../../images/t5.png); font-size:24px; padding-left:25px; background-position:left center; background-repeat:no-repeat; float:left; margin-right:30px;
+}
+#history{
+	margin:0px; background-image:url(../../images/t6.png); font-size:24px; padding-left:25px; background-position:left center; background-repeat:no-repeat; float:left; margin-right:30px;
+}
+#files{
+	margin:0px; background-image:url(../../images/t7.png); font-size:24px; padding-left:25px; background-position:left center; background-repeat:no-repeat; float:left; margin-right:30px;
+}
+#login_form {
+	margin:0px 20px 0px 20px;
+}
+.head_talk{
+	background-image:url(../../images/bg.png); font-size:24px; background-color:#3e606f; padding:10px; color:#fff;
+}
+.c {
+	clear:both; height:1px
+}
+#logout_form,#ban_form{
+	font-size:24px;
+	line-height:24px;
+	color:#fff;
+padding:50px;
+    position:fixed;
+    top:300px;
+    border:8px solid #fff;
+    left:300px;
+    z-index:6000;
+    display:none;
+ width:350px; background-color:#3e606f;
+ background-image:url(../../images/bg.png);
+
+}
+.cancel {
+margin-left:10px;
+}
+.delete {
+background-image:url(../../images/t3.png);
+width:19px;
+height:19px;
+display:block;
+
+}
+#users_online , .g_main{
+	position:relative; font-size:14px;
+overflow: auto; height:300px; outline: none; border:0;
+}
+.g_main a {
+color:#3e606f;
+text-decoration:none;
+}
+.static {
+padding:20px 10px 20px 10px;
+}
+#users_online a, .users a, .top_title, .line {
+	display:block;
+	clear:both;
+	background-color:#f4f4f4;
+	padding:8px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#3e606f;
+	border-bottom:1px solid #ccc;
+	margin-bottom:1px;
+}
+.top_title { border:none; background-color: transparent; font-weight:bold;}
+.sel {
+	background-color:#3e606f;
+	color:#ffffff;
+}
+.user_options a {
+	width:200px;
+background-color:#3e606f;
+}
+.user_options { 
+border:4px solid #3e606f;
+background-color: #fff;
+}
+#users_online a:hover {
+	background-color:#3e606f;
+	color:#ffffff;
+}
+#users_online .user_options a:hover {
+	background-color:#3e606f;
+	color:#ffffff;
+	border-bottom:none;
+	margin-bottom:0px;
+}
+select {
+}
+.l10 {
+float:left; width:15%;
+}
+.l11 {
+float:left;  width:42%;
+}
+.l12 {
+float:right
+}
+.l13 {
+color:#fff
+}
+.msg {
+        margin:8px 8px 0px 8px; padding-top: 8px; border-top:1px solid #cccccc;
+        line-height: 1.5em;
+}
+.msg_last {
+    line-height: 1.5em;
+    margin:0px 8px 0px 8px;
+}
+
+.a_upload_new_msg {
+background-image: url(../../images/f_enabled.png), url(../../images/new_msg.png);
+background-position: 95% center, 88% center;
+background-repeat: no-repeat;   
+}
+.a_upload_ {
+background-image: url(../../images/f_enabled.png);
+background-position: 95% center;
+background-repeat: no-repeat;   
+}
+.d_upload_new_msg {
+background-image: url(../../images/f_disabled.png), url(../../images/new_msg.png);
+background-position: 95% center, 88% center;
+background-repeat: no-repeat;   
+}
+.d_upload_ {
+background-image: url(../../images/f_disabled.png);
+background-position: 95% center;
+background-repeat: no-repeat;   
+}
+
+/**
+*   For Iphone 3
+*/
+@media (max-width: 800px) {
+    #topmenu a {
+        background-image:none;
+        padding-left:0px;
+        margin-right:10px;
+        font-size:16px
+    }
+    #topmenu a:last-of-type {
+        float:left
+    }
+    #topmenu a:nth-of-type(5) {
+        clear:both
+    }
+    .head_talk, #talking_to {
+        font-size:16px;
+    }
+    .visitors {
+        width:0px;
+        display:none
+    }
+    #messages {
+        font-size:11px
+    }
+}

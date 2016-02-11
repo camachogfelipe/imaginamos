@@ -1,0 +1,53 @@
+<div id="mask_overlay"></div>
+<script>
+
+$(document).ready(function(){
+	function UpdateUserTime()
+	{
+
+        $.ajax({
+           cache : false,
+           url: 'index.php?page=UpdateUserTime',
+           success: function(data) {
+				setTimeout(UpdateUserTime, 10000);
+		   }
+		   });
+		      		
+	}
+	
+	$("#alert a").click(function(event){
+                event.preventDefault();
+		$("#alert").fadeOut('slow');
+	});
+
+
+
+
+
+});
+	
+	
+</script>
+<?php
+
+?>
+
+<?php if($install_folder) { ?>
+<div id="alert">
+	<div class="alert_inner">
+	<?php echo $_['INSTALLER']; ?>
+	</div>
+</div>
+<?php
+}
+?>
+<div class="top_bg">
+	<div id="topmenu">
+	<a href="index.php" id="home" rel="login_form"><?php echo $_['ADMIN_HOME']; ?></a>
+	<!--<a href="index.php?page=UserBan" id="ban" rel="setting_form"><?php echo $_['ADMIN_BANNED']; ?></a>
+	<a href="index.php?page=users_and_groups" id="group" rel="setting_form"><?php echo $_['ADMIN_USER_AND_GROUPS']; ?></a>
+	<a href="index.php?page=history" id="history" rel="setting_form"><?php echo $_['ADMIN_HISTORY']; ?></a>
+        <a href="index.php?page=files" id="files" rel="setting_form"><?php echo $_['ADMIN_FILES']; ?></a>-->
+	<a href="index.php?page=logout" id="logout"><?php echo $_['ADMIN_LOGOUT']; ?></a>
+	</div>
+</div>

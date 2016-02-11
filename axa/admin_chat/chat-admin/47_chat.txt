@@ -1,0 +1,6 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>Usuario aleatorio: 9</span><br/>HOLA ~2012-06-07 14:17:52
+<span class='usuario'>Usuario aleatorio: 9</span><br/>ERES TAN AMABLE DE... ~2012-06-07 14:19:39
+<span class='admin'>Agente</span><br/>SI CLARO PASA Y SUCEDE QUE CUANDO ~2012-06-07 14:19:55
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

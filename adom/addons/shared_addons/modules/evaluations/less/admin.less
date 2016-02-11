@@ -1,0 +1,19 @@
+/* Micro ClearFix Mixin */
+.clearfix{
+  	zoom:1;
+  	&:before, &:after{ content:""; display:table; }
+  	&:after{ clear: both; }
+}
+
+.evaluations-questions{
+	.clearfix;
+
+	.label-question{
+		float: left;
+		margin-right: 1em;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}

@@ -1,0 +1,76 @@
+<div class="header-interna">
+    <div class="header-cont">
+        <div class="cont-logo">
+            <a href="{{ url:site }}"> {{ theme:image file="logo.png" }}</a>
+        </div>
+        <div class="contieneheader">
+            <div class="header-top-cont">
+                <div class="header-top">
+                    <div class="ht">
+                        <div class="enlace"><a href="#">Intranet</a></div>
+                        <div class="social">
+                            <a>{{ theme:image file='ico-fb.png' }}</a>
+                            <a>{{ theme:image file='ico-tw.png' }}</a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="lang">
+                            <a class="active" style="display:none;">Español</a>
+                            {{ theme:image file='point.png' }}
+                            <a>English</a>
+                        </div>
+                        <!--div class="city">
+                            <select>
+                                <option>Bogotá</option>
+                                <option>Bogotá</option>
+                                <option>Bogotá</option>
+                                <option>Bogotá</option>
+                            </select>
+                        </div-->
+                        <div class="user">
+                            {{ theme:image file='ico-user.png' }}
+                            {{ if user:logged_in }}
+                                <p><b>Bienvenido,</b> {{ user:first_name }} {{ user:last_name }}!</p>
+                            {{ endif }}
+                        </div>
+                        <div class="login">
+                            {{ if user:logged_in }}
+                                <a href="{{ url:site }}users/logout">{{ helper:lang line="logout_label" }}</a>
+                                {{else}}
+                                <a href="{{ url:site }}users/login">{{ helper:lang line="login_label" }}</a>
+                            {{ endif }}
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="header">
+
+                <ul class="main-nav">
+                    <li class="w16"><a href="{{ url:site }}about-us">QUIÉNES SOMOS</a></li>
+                    <li class="w10"><a href="{{ url:site }}services">SERVICIOS</a></li>
+                    <li class="w16"><a>ALIANZA INMOBILIARIA</a></li>
+                    <li class="w10"><a href="{{ url:site }}blog">NOTICIAS</a></li>
+                    <li class="w16"><a>TRABAJE CON  NOSOTROS</a></li>
+                    <li class="w15"><a>CONTÁCTENOS</a></li>
+                    
+                    <li class="w16 subm"><a class="last" href="{{ url:site }}requirements">CLIENTES Y USUARIOS</a>
+                        <div class="desplegable">
+                            <ul class="collap">
+                                <li><a class="last" href="{{ url:site }}requirements">Formulario de requerimientos</a></li>
+                                <li><a href="">Lorem ipsus</a></li>
+                                <li><a href="">Lorem ipsus</a></li>
+                                <li><a href="">Lorem ipsus</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="header-sdw"></div>
+
+
+</div>

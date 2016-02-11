@@ -1,0 +1,173 @@
+/*---MENU RESPONSIVO---*/
+
+.menu_responsivo{
+  background-image: url("../img/bg_menuresponsivo.jpg");
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  height: 40px;
+  position: relative;
+  top: -50px;
+  width: 100%;
+}
+
+.ico_menuresponsivo, .ico_menuresponsivoperfil {
+    background-image: url("../img/iconos/icono_menuresponsivo.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 30px;
+    margin-top: 4px;
+    top: 4px;
+    width: 30px;
+}
+
+.ico_menuresponsivo{
+  float: left;
+  margin-left: 10px;
+}
+
+.ico_menuresponsivoperfil{
+  background-image: url("../img/iconos/icono_menuresponsivoperfil.png");
+  float: right;
+  margin-right: 10px;
+}
+
+.cont_buscadoresponsivo{
+  float: left;
+  height: 30px;
+  margin-top: 2px;
+  margin-left: 10px;
+  position: relative;
+  max-width: 170px;
+}
+
+input.input_buscarresponsivo[type="text"] {
+    background-color: #F1F0F0;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 12px;
+    height: 25px;
+    margin: 4px 0 0;
+    padding-left: 35px;
+    width: 100%;
+}
+
+button.btn_buscarresponsivo {
+    background-color: transparent;
+    background-image: url("../img/iconos/bt_buscar.png");
+    display: block;
+    height: 34px;
+    left: -2px;
+    position: absolute;
+    top: 0;
+    width: 34px;
+}
+
+
+
+.sidr {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    box-shadow: none;
+}
+
+.sidr ul.lista_menuresponsivo{
+	border: none;
+}
+
+.sidr ul.lista_menuresponsivo li{
+    background-image: url("../img/botones/bg_botoneshome.png");
+    background-position: center bottom;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.sidr ul.lista_menuresponsivo li.vacio{
+  height: 0;
+}
+
+
+.sidr ul.lista_menuresponsivo li:nth-child(1){
+	z-index: 60;
+}
+
+.sidr ul.lista_menuresponsivo li:nth-child(2){
+	top: -12px;
+	z-index: 50;
+}
+
+.sidr ul.lista_menuresponsivo li:nth-child(3){
+	top: -24px;
+	z-index: 40;
+}
+
+.sidr ul.lista_menuresponsivo li:nth-child(4){
+	top: -36px;
+	z-index: 30;
+}
+
+.sidr ul.lista_menuresponsivo li:nth-child(5){
+	top: -48px;
+	z-index: 20;
+}
+
+.sidr ul.lista_menuresponsivo li:nth-child(6){
+	top: -60px;
+	z-index: 10;
+}
+
+.sidr ul.lista_menuresponsivo li:hover, .sidr ul.lista_menuresponsivo li.active{
+	box-shadow: none;
+  	background-image: url(../img/botones/bg_botoneshomeazul.png);
+  	background-position: center bottom;
+  	border: none;
+}
+
+.sidr ul.lista_menuresponsivo li a{
+    background-image: none;
+    display: inline-block;
+    line-height: 32px;
+    position: absolute;
+}
+
+.sidr ul.lista_menuresponsivo li:hover a, .sidr ul.lista_menuresponsivo li.active a{
+	box-shadow: none;
+  	background-image: none;
+}
+
+
+/*---der reponsivo---*/
+
+.division_lineagris {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #999999;
+    height: 1px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.sidr-right{
+  text-align: center;
+}
+
+.cont_derinfo{
+  padding-left: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.cont_derinfo img, .cont_derinfo a{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sidr .cont_derinfo p{
+  color: #464646;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sidr .cont_derinforedes{
+  text-align: center;
+}

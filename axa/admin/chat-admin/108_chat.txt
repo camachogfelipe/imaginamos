@@ -1,0 +1,8 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Andres Ramos</span>hola, buena tarde 
+<span class='usuario'>Andres Ramos</span>tengo una pregunta, tal vez me puedas ayudar por este medio 
+<span class='usuario'>Andres Ramos</span>hola 
+<span class='admin'>Carlos Cano</span>Buenas tardes Sr Ramos, mi nombre nombre es Carlos Ca no , en que puedo ayudarle
+<span class='usuario'>Andres Ramos</span>gracias, 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

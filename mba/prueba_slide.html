@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <title>SexySlider &raquo; Help File</title>
+
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/global.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/sexyslider.css" />
+
+
+
+  <script type="text/javascript" src="javascript/jquery.min.js"></script>
+
+  <script type="text/javascript" src="javascript/jquery.sexyslider.min.js"></script>
+
+
+
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+
+      $("#slider").SexySlider({
+
+        width     : 1000,
+
+        height    : 398,
+
+        delay     : 3000,
+
+        strips    : 15,
+
+        autopause : true,
+
+        navigation: '#navigation',
+
+        control   : '#control'
+
+      });
+
+    });
+
+  </script>
+
+
+
+  <script type="text/javascript" src="highslide/highslide.js"></script>
+<script type="text/javascript" src="highslide/highslide-with-html.js"></script>
+<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+
+<script type="text/javascript">
+    hs.graphicsDir = 'highslide/graphics/';
+    hs.outlineType = 'rounded-white';
+	hs.wrapperClassName = 'wide-border';
+</script>
+  </head>
+
+
+
+<body>
+
+
+
+  <div id="top">
+    <div class="hastoc">
+
+
+
+        
+
+        
+
+        <div id="wrapper">
+
+          
+
+
+
+          <div id="slider">
+
+            <img src="images/1.jpg" alt="" width="1000" height="398"/>
+
+            <img src="images/2.jpg" alt="" width="1000" height="398"/>
+
+            <img src="images/1.jpg" alt="" width="1000" height="398"/>
+
+            <img src="images/2.jpg" alt="" width="1000" height="398"/>
+
+          </div>
+
+
+
+   
+
+          <div id="control"></div>
+        </div>
+
+
+
+
+
+
+
+      
+
+       
+    </div><!--/hastoc-->
+  </div>
+
+  <!-- Syntax highlighting Javascript http://www.howtocreate.co.uk/tutorials/jsexamples/syntax/ -->
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+*                               { margin: 0; padding: 0; }
+body { 
+	font: 12px "Lucida Grande", Sans-Serif; 
+	background-image: url(images/img_bkgchatbutt.jpg);
+	background-repeat: repeat-x;
+	background-position: top; 
+    background-color:#ffffff
+}
+h2                              { color: #fa9f00; font: 30px Helvetica, Sans-Serif; margin: 0 0 10px 0; }
+#page-wrap                      { width: 60%; margin: 5px auto; margin-left: 5px; position: relative; }
+
+
+#chat-area {
+    background: none repeat scroll 0 0 white;
+    border-color: #666666;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 170px;
+    overflow: auto;
+    padding: 0;
+    width: 194px;
+}
+
+#chat-area span.usuario {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+#chat-area span.admin {
+    color: #009933;
+    font-weight: bold;
+}
+
+#chat-area span.fecha {
+    color:#FFA2A0;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+#chat-area span.sistema {
+    color: #357994;
+    padding: 4px 8px;
+    margin: 0 0px 0 0;
+    font-style: italic;
+    font-size: 10px;
+}
+#chat-area p                    { padding: 8px 0; border-bottom: 1px solid #ccc; }
+
+#name-area                      { position: absolute; top: 12px; right: 0; color: white; font: bold 12px "Lucida Grande", Sans-Serif; text-align: right; }   
+#name-area span                 { color: #fa9f00; }
+
+
+/*#sendie                         { border: 3px solid #999; width: 360px; padding: 10px; font: 12px "Lucida Grande", Sans-Serif; float: right; }*/
+
+#sendie {
+    display: inline-block;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 40px;
+    margin-top: 5px;
+    width: 194px;
+}
+
+a.button {
+    background-color: #A3141F;
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.3em;
+    height: 40px;
+    padding: 7px 76px;
+    text-decoration: none;
+    width: 205px;
+}
+
+#listausuarios{ 
+	position: absolute;
+	border: 1px solid #1c1c1c; 
+	margin: 40px 15px 30px 70%;
+	height: 350px;
+	width: 200px;
+	color:red;
+	overflow: auto;
+}
+
+.chat_salir {
+    float:left;
+}
+
+#chat_mensaje{
+    float:left;
+    width: 300px;
+    height: 22px;
+    background:url(lapiz.png) no-repeat;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+#listausuarios ul{
+	margin: 15px;
+	position: relative;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+#listausuarios ul li a{
+	text-decoration: none;
+	color: DimGray;
+	font: bold 12px "Lucida Grande", Sans-Serif; text-align: right;
+}
+

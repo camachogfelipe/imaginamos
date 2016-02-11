@@ -1,0 +1,294 @@
+/***/
+
+.tab-txt2{
+	
+}
+.tab-txt2 ul { 
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 695px; 
+}
+.tab-txt2 li:first-child{
+	list-style: disc outside none;
+	width: 650px;
+	background: #f1f1f1; padding:15px; display:block; color:#0d427c;
+	margin-bottom: 20px;
+}
+.tab-txt2 li{list-style: disc outside none; background: #f1f1f1; padding:15px; display:block; color:#0d427c; margin-bottom: 20px; width: 650px;}
+.tab-txt2 li:last-child{
+	list-style: disc outside none;
+	width: 650px;
+	background: #f1f1f1; padding:15px; display:block; color:#0d427c;
+	margin-bottom: 60px;
+}
+/* Texto en verde */
+.tab-txt2 h1{ color:#4f8509;  font-size:19px; font-weight: lighter; }
+/**/
+
+/* Texto Azul */
+.tab-txt2 h2{ color:#0d427c; font-size:19px; font-weight: lighter; }
+/**/
+
+.tab-txt2 a {
+    background: url("../imagenes/flechaLink2.png") no-repeat scroll 8px 50% #BCDE62;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    display: block;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    margin-top: 10px;
+    padding: 7px 10px 7px 25px;
+    text-align: left;
+    text-decoration: none;
+	width:auto;
+	height:auto;
+}
+.tab-txt2 a:hover {
+    background: url("../imagenes/flechaLink2.png") no-repeat scroll 8px 50% #7CA512;
+    text-decoration: none;
+	margin-bottom:-1px;
+}
+
+/***/
+
+/***/
+
+.tab-txt3{
+	
+}
+
+.tab-txt3 ul { 
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 300px; 
+}
+.tab-txt3 li:first-child{
+	width: 280px;
+	background: #f1f1f1; padding:15px; display:block; color:#0d427c;
+	margin-bottom: 20px;
+}
+.tab-txt3 li{background: #f1f1f1; padding:15px; display:block; color:#0d427c; margin-bottom: 20px; width: 280px;}
+.tab-txt3 li:last-child{
+	width: 280px;
+	background: #f1f1f1; padding:15px; display:block; color:#0d427c;
+	margin-bottom: 60px;
+}
+
+.tab-txt3 a {
+    width:auto; color:#fff; text-decoration:none; font-style:normal; font-size:15px; font-family:"Trebuchet MS", sans-serif; padding:7px 10px 7px 25px;  background-position:7px center;-moz-border-radius: 3px; border-radius:3px; text-align:left; display:block; max-width:300px; background: url(../imagenes/degrade.png); background-repeat:repeat-x; background-color:#1e5799; /* Old browsers */
+background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 98%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(98%,#1e5799)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* IE10+ */
+background: linear-gradient(to bottom, #7db9e8 0%,#1e5799 98%); /* W3C */
+}
+.tab-txt3 a:hover {
+    text-decoration:none; background: url(../imagenes/flechaLink.png) no-repeat left #CCC !important;background-position:8px center !important; color:#003 !important;
+}
+
+/* Texto Azul */
+.tab-txt3 h2{ color: #185290; font-family: 'HelveticaNL', sans-serif; font-size:19px; font-weight: lighter; }
+/**/
+
+
+/* para la sección   			*/
+/* Cuando y donde se puede usar */
+/***/
+
+.tab-txt4{
+	
+}
+
+.tab-txt4 ul { 
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 700px; 
+}
+
+.tab-txt4 li:first-child{
+	width: 690px;
+	padding:10px; display:block;
+}
+.tab-txt4 li{width: 690px; padding:10px; display:block;}
+.tab-txt4 li:last-child{
+	width: 690px;
+	padding:10px; display:block;
+}
+
+.tab-txt4 a {
+    width:auto; color:#fff; text-decoration:none; font-style:normal; font-size:15px; font-family:"Trebuchet MS", sans-serif; padding:7px 10px 7px 25px;  background-position:7px center;-moz-border-radius: 3px; border-radius:3px; text-align:left; display:block; max-width:300px; background: url(../imagenes/degrade.png); background-repeat:repeat-x; background-color:#1e5799; /* Old browsers */
+background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 98%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(98%,#1e5799)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* IE10+ */
+background: linear-gradient(to bottom, #7db9e8 0%,#1e5799 98%); /* W3C */
+}
+.tab-txt4 a:hover {
+    text-decoration:none; background: url(../imagenes/flechaLink.png) no-repeat left #CCC !important;background-position:8px center !important; color:#003 !important;
+}
+
+.tab-txt4 b {font-family:'HelveticaNB', sans-serif; font-size:18px; color:#0d427c; text-align:left}
+
+
+/* Texto Azul */
+.tab-txt4 h2{ color: #185290; font-family: 'HelveticaNL', sans-serif; font-size:19px; font-weight: lighter; }
+/**/
+
+
+
+/* para la sección   			*/
+/* Introducción como se usa		*/
+/***/
+
+.tab-txt5{
+	
+}
+
+.tab-txt5 ul { 
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 700px; 
+}
+
+.tab-txt5 li:first-child{
+	width: 690px;
+	padding:10px; display:block;
+}
+.tab-txt5 li{width: 690px; padding:10px; display:block;}
+.tab-txt5 li:last-child{
+	width: 690px;
+	padding:10px; display:block;
+}
+
+.tab-txt5 a { color:#90bd1a; }
+
+.tab-txt5 b {font-family:'HelveticaNB', sans-serif; font-size:18px; color:#0d427c; text-align:left}
+
+
+/* Texto Azul */
+.tab-txt5 h2{ color: #185290; font-family: 'HelveticaNL', sans-serif; font-size:19px; font-weight: lighter; }
+/**/
+
+
+/***/
+.tab-txt6{
+	
+}
+
+.tab-txt6 ul { 
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 300px 
+}
+
+.tab-txt6 li:first-child{
+	width: 290px; display: inline-block; line-height: 19px;	color: #185290; font-family: 'HelveticaNL', sans-serif;	margin-bottom: 20px;
+}
+.tab-txt6 li{width: 290px; display: inline-block; line-height: 19px;	color: #185290; font-family: 'HelveticaNL', sans-serif;	margin-bottom: 20px;}
+.tab-txt6 li:last-child{
+	width: 290px; display: inline-block; line-height: 19px;	color: #185290; font-family: 'HelveticaNL', sans-serif;	margin-bottom: 20px;
+}
+
+.tab-txt6 a {
+    width:auto; color:#fff; text-decoration:none; font-style:normal; font-size:15px; font-family:"Trebuchet MS", sans-serif; padding:7px 10px 7px 25px;  background-position:7px center;-moz-border-radius: 3px; border-radius:3px; text-align:left; display:block; max-width:300px; background: url(../imagenes/degrade.png); background-repeat:repeat-x; background-color:#1e5799; /* Old browsers */
+background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 98%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(98%,#1e5799)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* IE10+ */
+background: linear-gradient(to bottom, #7db9e8 0%,#1e5799 98%); /* W3C */
+}
+.tab-txt6 a:hover {
+    text-decoration:none; background: url(../imagenes/flechaLink.png) no-repeat left #CCC !important;background-position:8px center !important; color:#003 !important;
+}
+
+.tab-txt6 b {font-family:'HelveticaNB', sans-serif; font-size:18px; color:#0d427c; text-align:left}
+
+
+/* Texto Azul */
+.tab-txt6 h2{ color: #185290; font-family: 'HelveticaNL', sans-serif; font-size:19px; font-weight: lighter; }
+/**/
+
+
+/***/
+.tab-txt7{
+	
+}
+
+.tab-txt7 ul { 
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 300px 
+}
+
+.tab-txt7 li:first-child{
+	width: 290px; display: inline-block; line-height: 19px;	font-family: 'HelveticaNL', sans-serif;	margin-bottom: 20px;
+}
+.tab-txt7 li{width: 290px; display: inline-block; line-height: 19px;	 font-family: 'HelveticaNL', sans-serif;	margin-bottom: 20px;}
+.tab-txt7 li:last-child{
+	width: 290px; display: inline-block; line-height: 19px;	 font-family: 'HelveticaNL', sans-serif;	margin-bottom: 20px;
+}
+
+.tab-txt7 a {
+    width:auto; color:#fff; text-decoration:none; font-style:normal; font-size:15px; font-family:"Trebuchet MS", sans-serif; padding:7px 10px 7px 25px;  background-position:7px center;-moz-border-radius: 3px; border-radius:3px; text-align:left; display:block; max-width:300px; background: url(../imagenes/degrade.png); background-repeat:repeat-x; background-color:#1e5799; /* Old browsers */
+background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 98%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(98%,#1e5799)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #7db9e8 0%,#1e5799 98%); /* IE10+ */
+background: linear-gradient(to bottom, #7db9e8 0%,#1e5799 98%); /* W3C */
+}
+.tab-txt7 a:hover {
+    text-decoration:none; background: url(../imagenes/flechaLink.png) no-repeat left #CCC !important;background-position:8px center !important; color:#003 !important;
+}
+
+.tab-txt7 b {font-family:'HelveticaNB', sans-serif; font-size:18px; color:#0d427c; text-align:left}
+
+
+/* Texto Azul */
+.tab-txt7 h2{ color: #185290; font-family: 'HelveticaNL', sans-serif; font-size:19px; font-weight: lighter; }
+/**/
+
+
+
+.tab-txt8{
+	
+}
+.tab-txt8 ul { 
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 695px; 
+}
+.tab-txt8 li:first-child{
+	list-style: disc outside none;
+	width: 650px;
+	background: #f1f1f1; padding:15px; display:block; color:#0d427c;
+	margin-bottom: 20px;
+}
+.tab-txt8 li{list-style: disc outside none; background: #f1f1f1; padding:15px; display:block; color:#0d427c; margin-bottom: 20px; width: 650px;}
+.tab-txt8 li:last-child{
+	list-style: disc outside none;
+	width: 650px;
+	background: #f1f1f1; padding:15px; display:block; color:#0d427c;
+	margin-bottom: 60px;
+}
+/* Texto en verde */
+.tab-txt8 h1{ color:#4f8509;  font-size:19px; font-weight: lighter; }
+/**/
+
+/* Texto Azul */
+.tab-txt8 h2{ color:#0d427c; font-size:19px; font-weight: lighter; }
+/**/
+
+.tab-txt8 a { color:#90bd1a; }
+.tab-txt8 b {font-family:'HelveticaNB', sans-serif; font-size:18px; color:#0d427c; text-align:left}

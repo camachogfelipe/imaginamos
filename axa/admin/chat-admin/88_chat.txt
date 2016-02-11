@@ -1,0 +1,7 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='admin'>Carlos Cano</span>Buenos dias Maryluz Vasquez, mi nombre es Carlos Cano , en que puedo ayudarla 
+<span class='usuario'>MARYLUZ VASQUEZ QUINTERO</span>Hola Carlitos solo estaba haciendo un ensayo si esto si me funcionaba  
+<span class='admin'>Carlos Cano</span>Listo Mary 
+<span class='usuario'>MARYLUZ VASQUEZ QUINTERO</span>Gracias  
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

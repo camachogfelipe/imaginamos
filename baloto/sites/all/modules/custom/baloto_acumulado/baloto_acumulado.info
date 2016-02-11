@@ -1,0 +1,5 @@
+name = Creacion de template para mostrar el acumulado y ultimo sorteo de Baloto
+configure = admin/config/baloto/manage
+description = Acumulado Baloto
+core = 7.x
+package = Baloto

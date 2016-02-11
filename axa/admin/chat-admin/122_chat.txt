@@ -1,0 +1,9 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>MILENA RICO</span>buenas 
+<span class='admin'>Carlos Cano</span>Buenas tardes Milena, mi nombre es Carlos Cano en que puedo ayudarla 
+<span class='usuario'>MILENA RICO</span>calos como estas, oye un favor esq trato de ingresar a fevalnet y me dice q contrse&ntilde;a incorrecta y es la q siempre uso q puedo hacer ahi? 
+<span class='admin'>Carlos Cano</span>me recuersa su ext 
+<span class='admin'>Carlos Cano</span>perdon , me recuerda su ext 
+<span class='usuario'>MILENA RICO</span>1551 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

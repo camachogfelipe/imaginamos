@@ -1,0 +1,6 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>ROBERT HENAO C</span>buenas noches 
+<span class='usuario'>ROBERT HENAO C</span>favor revisar por que el sistema no deja ingresar  a consulta
+<span class='usuario'>ROBERT HENAO C</span>pueden escribirme al correo electronico  rhenao@alpina.com.co
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

@@ -1,0 +1,125 @@
+#body{
+	padding:10px;	
+	font-size:13px;
+	font-family: sans-serif;
+}
+
+
+table{
+
+	font-size:8px;
+	width:60%;
+	margin-top:15px;
+	font-family: sans-serif;
+	border: 0px solid #333333;
+	padding:0px;
+	border-collapse:collapse;
+
+}
+
+table td{
+	padding:0px; 
+	border: 1px solid #ccc;
+}
+
+table .title{
+	font-weight:bold;
+}
+
+table .RangoTitle{
+	font-weight:bold;
+	text-align:center;
+	color:#FFF;
+	background-color:#364D68;
+	height:30px;
+	text-transform:uppercase;
+}
+
+table .celda01{
+	
+	text-align:center;
+	border: 1px solid #ccc;
+	height:20px;
+
+}
+
+h3{
+	font-size:13px;
+	font-weight:bold;
+
+}
+
+h4{
+	text-align:center;
+	font-size:10px;
+	font-family: sans-serif;
+	font-weight:bold;
+	margin-top:6px;
+	margin-bottom:2px;
+
+}
+
+
+#header{
+	width:100%;
+	height:80px;
+	border-bottom:1px dashed #CCC;
+}
+
+
+.width_td{
+	text-align:right;
+	width:80px;
+}
+
+#ref{
+	
+	margin-left:580px;
+	font-size:8px;
+	font-family: sans-serif;
+
+}
+
+
+#container{
+	height:auto;
+	min-height:600px;
+	width:700px;
+	float:left;
+	display:block;
+}
+
+#container2{
+	height:auto;
+	width:700px;
+	float:left;
+	display:block;
+}
+
+.llegando{	
+	width:345px;
+
+
+}
+
+.saliendo{
+	width:345px;
+	position:absolute; 
+	top:90px; 
+	left:369px;
+}
+
+.saliendo_2{
+	width:345px;
+	position:absolute; 
+	top:394px; 
+	left:369px;
+}
+
+.saliendo_3{
+	width:345px;
+	position:absolute; 
+	top:518px; 
+	left:369px;
+}
+

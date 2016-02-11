@@ -1,0 +1,15 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Carolina Ramirez</span>Buenos d&iacute;as 
+<span class='admin'>Carlos Cano</span>Buenos dias Carolina mi nombre es Carlos Cano en que puedo ayudarla 
+<span class='usuario'>Carolina Ramirez</span>carlos como te va, 
+<span class='usuario'>Carolina Ramirez</span>Quisiera saber si tengo cupo todavia para pedir un credito extracupo 
+<span class='usuario'>Carolina Ramirez</span>de $1.000.0000 y si puedo hacerlo por este medio o tengo que dirigirme a las oficinas de feval 
+<span class='admin'>Carlos Cano</span>Claro Carolina , por favor me recuerdas tu codigo 
+<span class='usuario'>Carolina Ramirez</span>30717
+<span class='usuario'>Carolina Ramirez</span>me equivoque con el numero, es un millon de pesos 
+<span class='admin'>Carlos Cano</span>Me permites un momento por favor 
+<span class='usuario'>Carolina Ramirez</span>gracias 
+<span class='admin'>Carlos Cano</span>Carolina, la solicitud de cr&eacute;dito ya se encuentra en  aprobacion, le estare informado cualquier novedad.
+<span class='admin'>Carlos Cano</span>
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

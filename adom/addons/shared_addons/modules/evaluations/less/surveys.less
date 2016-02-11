@@ -1,0 +1,55 @@
+.decimal() {
+	list-style-type: decimal;
+}
+.error{
+	color : red;
+}
+
+.evaluations{
+	ol{
+		.decimal();
+
+		> li{
+			.decimal();
+		}
+	}
+
+	.question{
+		margin-top:1em;
+		color : black;
+
+		.question-title{
+			padding-bottom: .5em;
+		}
+
+		&:first-child{
+			margin-top: 0;
+		}
+		&.error{
+			.question-title{
+				.error;
+			}
+		}
+	}
+
+	input{
+		&[type="checkbox"],
+		&[type="radio"]{
+			margin: .2em 1em;
+			margin-left: 0;
+		}
+	}
+
+	[type="submit"]{
+		margin-top: 4em;
+	}
+
+	.evaluations-completed{
+		text-align: right;
+		width: 100%;
+		display: block;
+		font-size: 0.8em;
+		font-weight: bold;
+		color: green;
+	}
+}

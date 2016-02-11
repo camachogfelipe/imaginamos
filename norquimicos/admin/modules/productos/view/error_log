@@ -1,0 +1,1 @@
+[05-Jun-2013 16:04:05 UTC] PHP Fatal error:  Cannot redeclare class Database in /home/norquimi/public_html/admin/core/class/db.class.php on line 15

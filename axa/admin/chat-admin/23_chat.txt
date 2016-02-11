@@ -1,0 +1,12 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Adrianeitor</span>Buenos dias!! 
+<span class='admin'>Oscar Hernandez</span>Buenas Tardes. En que l epudo ayudar seca escurrida? 
+<span class='usuario'>Adrianeitor</span>lo de escurrida si... pero seca??? talves no has visto el tama&ntilde;o de mis bubbis!!! ja ja 
+<span class='admin'>Oscar Hernandez</span>Ehjejejejeje!!!! 
+<span class='admin'>Oscar Hernandez</span>Se da garra. 
+<span class='admin'>Oscar Hernandez</span>Bueno, por favor dale salir. 
+<span class='usuario'>Adrianeitor</span>y que pasa si diez o mas asociados ingresan a esta misma sala de chat al tiempo??? quien los atiende?? 
+<span class='admin'>Oscar Hernandez</span>Buena pregunta. 
+<span class='admin'>Oscar Hernandez</span>Carlito\'s Net 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

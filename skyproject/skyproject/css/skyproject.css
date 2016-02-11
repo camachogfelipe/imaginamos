@@ -1,0 +1,172 @@
+/* 
+    Document   : skyproject
+    Created on : 19/03/2013, 01:48:58 PM
+    Author     : Sebastian
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    /*font-family: Arial;*/
+		font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    color: #363636;
+		background-color: #f3f8fa !important;
+		background-image: -ms-linear-gradient(top,#fff 0,#e4eef2 300px,#e4eef2 100%) !important;
+		background-image: -moz-linear-gradient(top,#fff 0,#e4eef2 300px,#e4eef2 100%) !important;
+		background-image: -o-linear-gradient(top,#fff 0,#e4eef2 300px,#e4eef2 100%) !important;
+		background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#e4eef2)) !important;
+		background-image: -webkit-linear-gradient(top,#fff 0,#e4eef2 100%) !important;
+		background-image: linear-gradient(to bottom,#fff 0,#e4eef2 100%) !important;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#e4eef2',GradientType=0) !important;
+}
+
+div.login{
+    
+    /*margin-top: -180px;
+    margin-left: -325px;*/
+    /*border:1px solid #CCC;*/
+    background-color: white;
+    width: 650px;
+    height: 320px;
+		position:relative; margin:100px auto 20px;
+    /*position: absolute;
+    top: 50%;
+    left: 50%;*/
+    padding: 30px;
+		-webkit-box-shadow:0px 0px 0px 4px #00aff0 !important;
+		-moz-box-shadow:0px 0px 0px 4px #00aff0 !important;
+		box-shadow:0px 0px 0px 4px #00aff0 !important;
+}
+.formulario{
+    float:right;
+    margin-top: 30px;
+     width: 430px;
+    height: auto; 
+    
+}
+.image{
+    float: left;
+    
+}
+input.boton{
+    width: 100px;
+    height: 45px;
+    float: right;
+    margin-right: 100px;
+}
+input.txt{
+    width: 320px;
+    height: 35px;
+}
+.seccion{
+    margin: 10px 0 10px 10px;
+}
+label{
+    
+    width:110px;
+    float: left;
+}
+div.sec{
+    margin-top: 30px;
+}
+.image{
+    margin-top: 35px;
+    float: left;
+    width: 160px;
+    height: 160px;
+}
+.bienvenida{
+    margin: 30px auto 0 auto;
+    
+    width: 1000px;
+}
+.avatar{
+    float: left;
+    
+    width: 100px;
+    height: 100px;
+}
+.menu{
+     float: right;
+     width: 880px;
+		 margin:30px 0 0;
+}
+.usuario{
+    width: 1000px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.contenido{
+    margin-top: -180px;
+    margin-left: -380px;
+    border:1px solid #CCC;
+    
+    width: 800px;
+    height: 700px ; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+}
+.asignar{
+ position:absolute;    margin-top: -300px;
+    margin-left: -410px;
+   
+    width: 750px;
+    height: 250px; 
+    
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+}
+.reportes{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    float: left;
+}
+.con-reportes {
+    width: 1000px;
+    height: auto;
+    padding: 25px 0;
+    margin: 0 auto;
+}
+.contenedor-info {
+    width: 828px;
+    height: auto;
+    float: right;
+    padding: 25px;
+    /*border: 1px solid #fff;*/
+}
+.reportes2{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    float: left;
+}
+.con-reportes2 {
+    width: 1080px;
+    height: auto;
+    padding: 25px 0 25px 0;
+    margin: 0 auto;
+}
+.contenedor-info2 {
+    width: 1028px;
+    height: auto;
+    float: left;
+    padding: 25px;
+    /*border: 1px solid #888;*/
+}
+.deploy{
+    float: left;
+    width: 100%;
+    margin-left: 200px;
+    margin-top: 15px;
+}
+.tab{
+    width: 200px;
+    margin-right: -65px;
+}

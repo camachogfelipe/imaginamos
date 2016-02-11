@@ -1,0 +1,465 @@
+* {
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+
+
+body {
+
+	
+
+	font-family: Georgia, serif;
+
+	color: #333333;
+
+	font-size: 14px;
+
+}
+
+
+
+a {
+
+	color: #616161;
+
+	text-decoration: none;
+
+	-webkit-transition: 0.5s;
+
+	-moz-transition: 0.5s;
+
+	-o-transition: 0.5s;
+
+	-ms-transition: 0.5s;
+
+	transition: 0.5s;
+
+}
+
+	a:hover,
+
+	a.selected {
+
+	color: #44D6F6;
+
+
+
+
+
+	}
+
+
+
+
+
+.sociales {
+
+	text-align: center;
+
+	margin-bottom: 20px;
+
+}
+
+
+
+	#timeline {
+
+	width: 920px;
+
+	height: 460px;
+
+	overflow: hidden;
+
+	margin: 0px auto;
+
+	position: relative;
+
+	background-image: url(../img_lineatiempo/eje.png);
+
+	background-repeat: repeat-x;
+
+	background-position: left 55px;
+
+	}
+
+		#dates {
+			position:absolute !important;
+
+			width: 920px;
+
+			height: 85px;			
+
+			overflow: hidden;
+		}
+
+			#dates li {
+
+	list-style: none;
+
+	float: left;
+
+	width: 200px;
+
+	height: 85px;
+
+	font-size: 24px;
+
+	text-align: center;
+
+	font-family: DINMedium;	
+
+	background-image: url(../img_lineatiempo/biggerdot.png);
+
+	background-repeat: no-repeat;
+
+	background-position: center 40px;
+
+			}
+
+				#dates a {
+
+					line-height: 38px;
+
+					padding-bottom: 10px;
+
+				
+
+				}
+
+				#dates .selected {
+
+	font-size: 38px;
+
+				
+
+				
+
+				}
+
+		
+
+		#issues {
+			width: 921px;
+
+			height: 350px;
+
+			overflow: hidden;
+
+				font-family: DINMedium;	
+
+		}	
+
+			#issues li {
+
+	width: 921px;
+
+	height: 350px;
+
+	list-style: none;
+
+	float: left;
+
+
+
+			}
+
+				#issues li img {
+
+					float: left;
+
+					margin: 10px 30px 10px 50px;
+
+				}
+
+				#issues li h1 {
+
+					color: #ffcc00;
+
+					font-size: 48px;
+
+					margin: 20px 0;
+
+					
+
+				}
+
+				#issues li p {
+
+					font-size: 14px;
+
+					margin-right: 70px;
+
+					font-weight: normal;
+
+					line-height: 22px;
+
+					
+
+				}
+
+		
+
+		#grad_left,
+
+		#grad_right {
+
+			width: 100px;
+
+			height: 360px;
+
+			position: absolute;
+
+			top: 0;
+
+		}
+
+			#grad_left {
+
+		        left: 0;
+
+		       
+
+			}
+
+			#grad_right {
+
+		        right: 0;
+
+		      
+
+			}
+
+		
+
+		#next,
+
+		#prev {
+
+			position: absolute;
+
+			
+
+			font-size: 70px;
+
+			top: 240px;
+
+			width: 22px;
+
+			height: 38px;
+
+			background-position: 0 0;
+
+			background-repeat: no-repeat;
+
+			text-indent: -9999px;
+
+			overflow: hidden;
+
+		}
+
+			#next:hover,
+
+			#prev:hover {
+
+				background-position: 0 -76px;
+
+			}
+
+			#next {
+
+				right: 0;
+
+				background-image: url('../img_lineatiempo/next.png');
+
+			}
+
+			#prev {
+
+				left: 0;
+
+				background-image: url('../img_lineatiempo/prev.png');
+
+			}
+
+				#next.disabled,
+
+				#prev.disabled {
+
+					opacity: 0.2;
+
+				}
+
+				
+
+				
+
+		
+
+	
+
+	#conthist1 {
+
+	width:779px;
+
+	height:331px;
+
+	margin:auto;
+
+	margin-top:0px;
+
+	background-image: url(../img_lineatiempo/bgconthist1.png);
+
+	background-repeat: no-repeat;
+
+	padding-top:56px;
+
+	padding-left:40px;
+
+	padding-right:40px;
+
+	z-index:1500;
+
+
+
+}
+
+
+
+	#conthist2 {
+
+	width:779px;
+
+	height:331px;
+
+	margin:auto;
+
+	margin-top:0px;
+
+	background-image: url(../img_lineatiempo/bgconthist2.png);
+
+	background-repeat: no-repeat;
+
+	padding-top:56px;
+
+	padding-left:40px;
+
+	padding-right:40px;
+
+	z-index:1500;
+
+
+
+}
+
+
+
+	#conthist3 {
+
+	width:779px;
+
+	height:331px;
+
+	margin:auto;
+
+	margin-top:0px;
+
+	background-image: url(../img_lineatiempo/bgconthist3.png);
+
+	background-repeat: no-repeat;
+
+	padding-top:56px;
+
+	padding-left:40px;
+
+	padding-right:40px;
+
+	z-index:1500;
+
+
+
+}
+
+
+
+
+
+#colizqlinea {
+
+width:167px;
+
+height:177px;
+
+float:left;
+
+
+
+}
+
+	
+
+	
+
+	#colderlinea {
+
+	width:482px;
+
+	height:100%;
+
+	float:right;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 14px;
+
+	line-height: 20px;
+
+	color: #616161;
+
+	text-align:justify;
+
+	padding-top:20px;
+
+}	
+
+
+
+
+
+	.colderlineaanio {
+
+		font-family: DINMedium;
+
+		font-size:46px;
+
+		color:#616161;
+
+		text-align:left;
+
+
+
+}	
+
+
+
+
+
+
+
+#sepclearlinea {
+
+height:15px;
+
+clear:both;
+
+
+
+
+
+
+
+}	
+

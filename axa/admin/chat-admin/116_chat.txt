@@ -1,0 +1,12 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>HARRY ORTIZ</span>Buenos d&iacute;as 
+<span class='usuario'>HARRY ORTIZ</span>&iquest;usted me puede brindar informaci&oacute;n sobre los descuentos de n&oacute;mina que se me realizan por concepto de seguro de vehiculos? 
+<span class='admin'>Carlos Cano</span>Buenos dias Harry , por favor me recuerda su codigo 
+<span class='usuario'>HARRY ORTIZ</span>30078 
+<span class='usuario'>HARRY ORTIZ</span>que pena la demora, no me habia dado cuenta de su respuesta! 
+<span class='admin'>Carlos Cano</span>Harry , la aseguradora esta revisando y ya le confirmo el cobro realizado 
+<span class='usuario'>HARRY ORTIZ</span>gracias 
+<span class='usuario'>HARRY ORTIZ</span>muy amable 
+<span class='usuario'>HARRY ORTIZ</span>. 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

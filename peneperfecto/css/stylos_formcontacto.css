@@ -1,0 +1,148 @@
+/* CSS Document */
+ h1, form, fieldset, input, textarea {
+	margin: 0; padding: 0; border: 0; outline: none;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+
+	font-family: sans-serif; 
+}
+
+#contact {
+	width: 430px;  padding: 20px 20px;
+
+}
+
+h1 {
+	font-size: 35px; color: #445668; 
+	text-align: center; margin: 0 0 35px 0; text-shadow: 0px 1px 0px #f2f2f2;
+}
+
+label {
+	float: left; clear: left; margin: 11px 20px 0 0; width: 95px;
+	text-align: right; font-size: 14px; color: #445668; 
+	text-transform: none; text-shadow: 0px 1px 0px #f2f2f2;
+}
+
+input {
+	width: 260px; height: 35px; padding: 5px 20px 0px 20px; margin: 0 0 20px 0; 
+	background: #0C4465;
+	background: -moz-linear-gradient(top, #0C4465 0%, #0C4465 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0C4465), color-stop(20%,#0C4465)); /* webkit */
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	-moz-box-shadow: 0px 1px 0px #f2f2f2;-webkit-box-shadow: 0px 1px 0px #f2f2f2;
+	font-family: sans-serif; font-size: 16px; color: #f2f2f2; text-transform: none; text-shadow: 0px -1px 0px #334f71;
+	font-size:12px;
+}
+
+
+select {
+	width: 260px;
+	height: 35px;
+	background: #0C4465;
+	background: -moz-linear-gradient(top, #0C4465 0%, #0C4465 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0C4465), color-stop(20%,#0C4465)); /* webkit */
+	border-radius: 5px;
+-moz-border-radius: 5px; -webkit-border-radius: 5px;
+	-moz-box-shadow: 0px 1px 0px #f2f2f2;-webkit-box-shadow: 0px 1px 0px #f2f2f2;
+	font-family: sans-serif;
+	font-size: 16px;
+	color: #f2f2f2;
+	text-transform: uppercase;
+	text-shadow: 0px -1px 0px #334f71;
+	font-size:12px;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 20px;
+	margin-left: 0;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+}
+	input::-webkit-input-placeholder  {
+    	color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;  
+	}
+	input:-moz-placeholder {
+	    color: #a1b2c3; text-shadow: 0px -1px 0px #38506b; 
+	}
+
+textarea {
+	width: 260px; height: 170px; padding: 12px 20px 0px 20px; margin: 0 0 20px 0; 
+	background: #0C4465;
+	background: -moz-linear-gradient(top, #0C4465 0%, #0C4465 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0C4465), color-stop(20%,#0C4465)); /* webkit */
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	-moz-box-shadow: 0px 1px 0px #f2f2f2;-webkit-box-shadow: 0px 1px 0px #f2f2f2;
+	font-family: sans-serif; font-size: 12px; color: #f2f2f2; text-shadow: 0px -1px 0px #334f71; 
+}
+	textarea::-webkit-input-placeholder  {
+    	color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;  
+	}
+	textarea:-moz-placeholder {
+	    color: #a1b2c3; text-shadow: 0px -1px 0px #38506b; 
+	}
+	
+input:focus, textarea:focus {
+	background: #0C4465;
+	background: -moz-linear-gradient(top, #668099 0%, #728eaa 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#668099), color-stop(20%,#728eaa)); /* webkit */
+}
+
+input[type=submit] {
+	width: 185px; height: 52px; float: right; padding: 10px 15px; margin: 0 15px 0 0;
+	-moz-box-shadow: 0px 0px 5px #999;-webkit-box-shadow: 0px 0px 5px #999;
+	
+	background: -moz-linear-gradient(top, #0C4465  0%,#0C4465  100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0C4465 ), color-stop(100%,#0C4465)); /* webkit */
+	cursor: pointer;
+}
+
+
+#botonenviar {
+width:189px;
+height:56px;
+float:left;
+}
+
+.formulario-contacto {width:500px; height:auto; float:left; margin:35px 0 0; padding:0 25px;}
+form.formCon {width:500px; height:auto;}
+form.formCon label {width:228px; height:auto; margin:0 10px 20px; float:left;}
+form.formCon label input {width:208px; margin:0; height:14px; float:left; border:1px solid #ccc; font:14px Helvetica, sans-serif; color:#5f5f5f; padding:8px 10px;}
+form.formCon textarea {width:456px; height:140px; margin:0 10px 15px; resize:none; background-color:#fff; float:left; border:1px solid #ccc; font:14px Helvetica, sans-serif; color:#5f5f5f; padding:8px 10px;}
+form.formCon label.btEnvForm {width:90px; height:auto; float:right; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out;}
+form.formCon label.btEnvForm:hover {box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2); -moz-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);}
+form.formCon label.btEnvForm input {width:90px; height:auto; background:#ae0e30; float:right; font:22px 'BebasNeue-R'; color:#fff; padding:10px 0 6px; cursor:pointer;}
+.formError {z-index: 990;}
+.formError .formErrorContent {z-index: 991;}
+.formError .formErrorArrow {z-index: 996;}
+.formErrorInsideDialog.formError {z-index: 5000;}
+.formErrorInsideDialog.formError .formErrorContent {z-index: 5001;}
+.formErrorInsideDialog.formError .formErrorArrow {z-index: 5006;}
+.inputContainer {position: relative; float: left;}
+.formError {position: absolute; display: block; cursor: pointer;}
+.ajaxSubmit {padding: 20px; background: #55ea55; border: 1px solid #999; display: none}
+.formError .formErrorContent {width: 125px; background: #fff; position:relative; color: #f50012; font:12px Georgia, serif; font-style:italic; border: 1px solid #eee; box-shadow:3px 6px 10px #333; -moz-box-shadow: 3px 6px 10px #333; -webkit-box-shadow: 3px 6px 10px #333; padding: 4px 10px 4px 10px;}
+.greenPopup .formErrorContent {background: #33be40;}
+.blackPopup .formErrorContent {background: #393939; color: #FFF;}
+.formError .formErrorArrow {width: 15px; margin: -2px 0 0 13px; position:relative;}
+body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow {margin: -2px 13px 0 0;}
+.formError .formErrorArrowBottom {box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; margin: 0px 0 0 12px; top:2px;}
+.formError .formErrorArrow div {border-left: 2px solid #ddd; border-right: 2px solid #ddd; box-shadow:3px 6px 10px #333; -moz-box-shadow: 3px 6px 10px #333; -webkit-box-shadow: 3px 6px 10px #333; font-size: 0px; height: 1px; background: #fff; margin: 0 auto; line-height: 0; font-size: 0; display: block;}
+.formError .formErrorArrowBottom div {box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;}
+.greenPopup .formErrorArrow div {background: #33be40;}
+.blackPopup .formErrorArrow div {background: #393939; color: #FFF;}
+.formError .formErrorArrow .line10 {width: 15px; border: none;}
+.formError .formErrorArrow .line9 {width: 13px; border: none;}
+.formError .formErrorArrow .line8 {width: 11px;}
+.formError .formErrorArrow .line7 {width: 9px;}
+.formError .formErrorArrow .line6 {width: 7px;}
+.formError .formErrorArrow .line5 {width: 5px;}
+.formError .formErrorArrow .line4 {width: 3px;}
+.formError .formErrorArrow .line3 {width: 1px; border-left: 2px solid #ddd; border-right: 2px solid #ddd; border-bottom: 0 solid #ddd;}
+.formError .formErrorArrow .line2 {width: 3px; border: none; background: #ddd;}
+.formError .formErrorArrow .line1 {width: 1px; border: none; background: #ddd;}

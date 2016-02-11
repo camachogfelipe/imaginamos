@@ -1,0 +1,30 @@
+##################################################
+# Pro Chat Rooms - End User Software Licence     #
+# Website: http://www.prochatrooms.com           #
+##################################################
+
+== Software ============================================================================
+
+Software: Pro Chat Rooms
+Developer: Pro Chat Rooms
+Url: http://prochatrooms.com
+Support: http://community.prochatrooms.com
+
+========================================================================================
+
+== Information =========================================================================
+
+Pro Chat Rooms is NOT free software - For more details visit, http://www.prochatrooms.com
+This software and all of its source code/files are protected by Copyright Laws. 
+The software license permits you to install this software and/or plugin on one domain only.
+Pro Chat Rooms is unable to provide support if this software is modified by the end user. 
+
+========================================================================================
+
+== Software Licence ====================================================================
+
+This software remains subject to our software licence at all times,
+
+http://prochatrooms.com/software_licence.php
+
+========================================================================================

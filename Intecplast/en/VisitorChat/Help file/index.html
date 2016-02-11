@@ -1,0 +1,406 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;VisitorChat&rdquo; Documentation by &ldquo;insis321&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;VisitorChat client support&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 22/05/2011<br>
+					By: Gregor Kuplenik<br>
+					Email: <a href="mailto:gregor.kuplenik@insis.si">gregor.kuplenik@insis.si</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing VisitorChat. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/insis321">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#install">Installing VisitorChat</a></li>
+			<li><a href="#integrate">Integrating VisitorChat</a></li>
+                        <li><a href="#dom">DOM</a></li>
+			<li><a href="#javascript">JavaScript</a></li>			
+			<li><a href="#php">PHP Code Explanation</a></li>
+                        <li><a href="#css">CSS</a></li>
+                        <li><a href="#sound">Sound Files</a></li>
+			<li><a href="#support">Additional support</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="install"><strong>A) Installing VisitorChat</strong> - <a href="#toc">top</a></h3>
+		<p>
+                    VisitorChat comes with it's own installer which auto-creates all the necessary
+                    config files and database tables.<br /><br />
+                <h4>Uploading the files</h4>
+                Upload the folder "VisitorChat" to your web root directory and navigate to http://yourdomain/VisitorChat/install/.
+                Before installing your database and config files, installer will require for you to
+                grant some permissions on "uploads" folder and
+                "config.php" which reside in VisitorChat/ directory. Both, the "uploads" and
+                the "config.php" file must be granted write permissions by the http service user.
+                <h4>Installer</h4>
+                To install the config file and the database tables, please enter the required
+                fields. You will have to provide Host,Username and Password for your MySQL database.
+                Another required fields is the "Email" field. This is needed for mailing script
+                to deliver any emails sent by the clients, when you are offline. Please note, that
+                the emails are sent through PHP native mail() function, so you must ensure that
+                this works on the server side.
+                <h4>Failing to install with installer</h4>
+                If you by some reason fail to install the easy way (which is very unlikely to happen)
+                you can allways install manually:
+                <ul>
+                    <li>Find the "config.txt.inc" file located in VisitorChat/install/ folder
+                    and open it with your favorite text editor. Copy all the contents to
+                    VisitorChat/config.php and change the settings to fit your needs
+                    </li>
+                    <li>
+                        Now navigate to VisitorChat/install/ where you will find the database
+                        tables residing in tables.sql. Execute them on your MySQL database.
+                    </li>
+                    <li>Chmod "config.php" and "uploads" directory in VisitorChat/ directory
+                    and you are ready to go.
+                    </li>
+                </ul>
+                <h4>Deleting your install folder after installation is completed</h4>
+                After testing that the software works, please delete the install folder. It's not
+                a good security practise to leave your install folder on your production sites.
+                Though I have written the installer in a manner that once the tables were installed
+                no config files can be overwritten, I still advise you that you delete it.
+                </p>
+		
+		
+		
+		<hr>
+
+		<h3 id="integrate"><strong>B) Integrating VisitorChat</strong> - <a href="#toc">top</a></h3>
+
+		<p>
+                    
+                <h4>Made to leave as minimal trace as possible</h4>
+                You can integrate VisitorChat in your site by including 3 Javascript files and one CSS file in specific order:
+                <pre>
+&lt;link href=&quot;VisitorChat/views/stylesheet/stylesheet.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot; rel=&quot;stylesheet&quot;
+&lt;script language=&quot;JavaScript&quot; type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script language=&quot;JavaScript&quot; type=&quot;text/javascript&quot; src=&quot;VisitorChat/views/javascript/visitorchat.js&quot;&gt;&lt;/script&gt;
+        
+                All DOM is generated by the jQuery, so there is no DOM trace in your web sites. This is especially good for blocking the BOT scripts
+                such as spambot etc. It also gives you some advantage in SEO so that search engines can focus on your content.
+
+                </p>  
+                <p>You can use the prepared "index.html" file in the root folder for exact demonstration</p>
+
+                <hr />
+                <h3 id="dom"><strong>C) DOM</strong>  - <a href="#toc">top</a></h3>
+                <h4>Client area template</h4>
+                In the client area, DOM is hidden inside a Javascript file.
+                It is built with jQuery functions and then attached to the body
+                of a website. You can modify it by changing the following code. Please
+                note that you are modifying this code on your own risk. The code is stated like this:
+                <pre>
+   var $content = $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+   .append(
+        $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+        .attr(&quot;id&quot;, &quot;talk_window&quot;)
+        .append(
+            $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+            .attr(&quot;id&quot;, &quot;messages&quot;)
+        )
+        .append(
+            $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+            .attr(&quot;class&quot;, &quot;text_round&quot;)
+            .append(
+            $(&quot;&lt;textarea&gt;&lt;/textarea&gt;&quot;)
+            .attr(&quot;id&quot;, &quot;message&quot;)
+            )
+        )
+   )
+   .append(
+        $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+        .attr(&quot;id&quot;, &quot;send_email&quot;)
+        .append(
+            $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+            .attr(&quot;class&quot;, &quot;email&quot;)
+            .append(
+                $(&quot;&lt;strong&gt;&lt;/strong&gt;&quot;)
+                .html('Thank you for trying to contact us!')
+            )
+            .append('&lt;br /&gt;&lt;br /&gt;')
+            .append('We are currently offline, but you can send us a message using the form below!')
+            .append('&lt;br /&gt;&lt;br /&gt;')
+            .append(
+                $(&quot;&lt;label&gt;&lt;/label&gt;&quot;)
+                .html('Name')
+            )
+            .append('&lt;br /&gt;')
+            .append(
+                $(&quot;&lt;input /&gt;&quot;)
+                .attr({ &quot;type&quot; : &quot;text&quot; , &quot;id&quot; : &quot;sm_name&quot; })
+            )
+            .append('&lt;br /&gt;')
+            .append(
+                $(&quot;&lt;label&gt;&lt;/label&gt;&quot;)
+                .html('E-mail')
+            )
+            .append('&lt;br /&gt;')
+            .append(
+                $(&quot;&lt;input /&gt;&quot;)
+                .attr({ &quot;type&quot; : &quot;text&quot; , &quot;id&quot; : &quot;sm_email&quot; })
+            )
+            .append('&lt;br /&gt;')
+            .append(
+                $(&quot;&lt;label&gt;&lt;/label&gt;&quot;)
+                .html('Message')
+            )
+            .append('&lt;br /&gt;')
+            .append(
+                $(&quot;&lt;textarea&gt;&lt;/textarea&gt;&quot;)
+                .attr(&quot;id&quot;, &quot;sm_msg&quot;)
+            )
+            .append('&lt;br /&gt;')
+            .append(
+                $(&quot;&lt;a&gt;&lt;/a&gt;&quot;)
+                .attr({ &quot;href&quot; : &quot;#&quot;, &quot;id&quot; : &quot;send_email_btn&quot; })
+                .html('Send')
+            )
+            .append(
+                $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+                .attr(&quot;id&quot;, &quot;send_email_result&quot;)
+            )
+            .append(
+                $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+                .attr(&quot;id&quot;, &quot;send_email_loading&quot;)
+                .html('loading ...')
+            )
+            .append(
+                $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+                .attr(&quot;class&quot;, &quot;c&quot;)
+            )
+            .append('&lt;br /&gt;')
+        )
+   )
+   .append(
+        $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+        .attr(&quot;id&quot;, &quot;register&quot;)
+        .append(
+            $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+            .attr(&quot;class&quot;, &quot;email&quot;)
+            .append(
+                $(&quot;&lt;strong&gt;&lt;/strong&gt;&quot;)
+                .html('Fill out your data to start chatting!')
+            )
+            .append('&lt;br /&gt;&lt;br /&gt;')
+            .append(
+                $(&quot;&lt;label&gt;&lt;/label&gt;&quot;)
+                .html('Name')
+            )
+            .append('&lt;br /&gt;')
+            .append(
+                $(&quot;&lt;input /&gt;&quot;)
+                .attr({ &quot;type&quot; : &quot;text&quot; , &quot;id&quot; : &quot;re_name&quot; })
+            )
+            .append('&lt;br /&gt;')
+            .append(
+                $(&quot;&lt;label&gt;&lt;/label&gt;&quot;)
+                .html('E-mail')
+            )
+            .append('&lt;br /&gt;')
+            .append(
+                $(&quot;&lt;input /&gt;&quot;)
+                .attr({ &quot;type&quot; : &quot;text&quot; , &quot;id&quot; : &quot;re_email&quot; })
+            )
+            .append('&lt;br /&gt;')
+            .append(
+                $(&quot;&lt;a&gt;&lt;/a&gt;&quot;)
+                .attr({ &quot;href&quot; : &quot;#&quot;, &quot;id&quot; : &quot;user_register&quot; })
+                .html('Start chatting')
+            )
+            .append(
+                $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+                .attr(&quot;id&quot;, &quot;register_result&quot;)
+            )
+            .append(
+                $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+                .attr(&quot;id&quot;, &quot;register_loading&quot;)
+                .html('please wait ...')
+            )
+            .append(
+                $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+                .attr(&quot;class&quot;, &quot;c&quot;)
+            )
+            .append('&lt;br /&gt;')
+        )
+   )
+   .append(
+        $(&quot;&lt;a&gt;&lt;/a&gt;&quot;)
+        .attr({ &quot;class&quot; : &quot;talk&quot;, &quot;href&quot; : &quot;#&quot; })
+        .append(
+            $(&quot;&lt;img /&gt;&quot;)
+            .attr({
+              &quot;src&quot; : &quot;VisitorChat/views/image/comment.png&quot;,
+              &quot;border&quot; : 0,
+              &quot;id&quot; : &quot;settings&quot;,
+              &quot;align&quot; : &quot;absmiddle&quot;
+            })
+        )
+        .append(' ')
+        .append(
+            $(&quot;&lt;span&gt;&lt;/span&gt;&quot;)
+            .attr(&quot;id&quot;, &quot;online&quot;)
+        )
+        .append(
+            $(&quot;&lt;div&gt;&lt;/div&gt;&quot;)
+            .attr(&quot;id&quot;, &quot;reminder&quot;)
+        )
+   );
+                </pre>
+                
+                <h4>Admin area templates</h4>
+                <p>You can edit the admin area templates if you like. The templates are located
+                in the <strong>VisitorChat/admin/views/template/</strong> folder
+                </p>
+	
+
+		<hr>
+		
+		<h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Client imports three Javascript files.</p>
+		
+		<ol>
+			<li>jQuery (linked to the Google ajax server)</li>
+			<li>Custom script visitorchat.js</li>
+		</ol>
+		  
+		<ol>
+			<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+			<li>Most of the animation in this site is carried out from the customs scripts. You can look all the custom code
+                            in the <strong>visitorchat.js</strong> located in <strong>VisitorChat/views/javascript</strong>
+			</li>
+                        <li>
+                            On the Admin area side, there are 4 custom jQuery files:
+                            <ul>
+                                <li>custom.js (executes on admin landing page)</li>
+                                <li>static.js</li>
+                                <li>history.js and</li>
+                                <li>users_and_groups.js</li>
+                            </ul><br /><br />
+                            All located in the VisitorChat/admin/js/ folder. These custom files 
+                            and functions inside of them are essential for VisitorChat to work.
+                            We do not recommend altering them in any way, unless you are not an 
+                            jQuery expert. Modify them on your own risk.
+                        </li>
+		</ol>
+		
+
+		<hr>
+                <h3 id="php"><strong>E) PHP code explanation</strong> - <a href="#toc">top</a></h3>
+                <p>This software utilizes MVC model so it's upgradable or extendable.
+                    MVC is devided for frontend and backend.
+                Let's start from the top (backend):</p>
+                <ul>
+                    <li>All classes are located in VisitorChat/admin/classes</li>
+                    <li>"index.php" located in VisitorChat/admin/index.php is our "Controller"</li>
+                    <li>PHP scripts located in VisitorChat/admin/program are called "Models"</li>
+                    <li>Views eg. "templates" are located in VisitorChat/admin/views/template/</li>
+                </ul>
+                
+                <p>Here is the MVC procedure in image for better representation:</p>
+                <img src="assets/images/mvc.png" />
+                
+                <h4>Adding a new software extension</h4>
+                <p>It makes more sense to me to show you an example of how extension
+                (or part of the software) can
+                be added, than just provide you the list of the functions and classes.
+                This is how simple the operation with the this little framework is:</p>
+               
+                <p>
+                    Let's assume we would like to add a page which will list all the Admin
+                    users in the database. The url will be: index.php?page=<strong>ListAllUsers</strong>
+                    <br /><br />1.) Open the class.Controller.php file located in classes folder and add a item with exact name <strong>ListAllUsers</strong>
+                    <img src="assets/images/1.png" />
+                </p>
+                <p>
+                    Now, let's make our model file. Put a new file with exact name into "program" folder. <strong>ListAllUsers.php</strong> that is. Let's
+                    write some simple output to it:<br />
+                    <img src="assets/images/2.png" />
+                </p>
+                 <p>
+                    Now we have initialized Controller and Model+View object. Model+View because
+                    we have echoed some string directly into model. We could separate this
+                    like it's done in some other parts of the code, by including any html file from
+                    views/template folder. Now we can navigate to index.php?page=ListAllUsers and we get the output<br />
+                    <img src="assets/images/3.png" border="1" />
+                </p>               
+                <p>
+                    Now you understand how this MVC works. All PHP code is documented and explained in each file. Comments are written in PHPDoc style
+                    so you can even generate a documentation of functions and classes. If you would
+                    like to extend I recommend using Aptana studio or Netbeans or some other similliar
+                    software. You'll get a list of all functions, classes with full explanations.
+                </p>
+                <h4>Language files</h4>
+                <p>I tried my best to offer language translation, so it can be easly modified to your language. Navigate to the root of VisitorChat software and find file "language.php".
+                Modify it to your needs. This is only available for backend, because the frontend is jQuery generated.
+                You can translate that by changing the code in VisitorChat/views/javascript/visitorchat.js explained in <a href="#dom">upper section</a>.
+                </p><hr />
+                
+                <h3 id="css"><strong>F) CSS files</strong> - <a href="#toc">top</a></h3>
+                <p>
+                <ul>
+                    <li>CSS file for admin backend: VisitorChat/admin/views/stylesheet/</li>
+                    <li>CSS file for admin backend: VisitorChat/views/stylesheet/</li>
+                </ul>
+                </p>
+                <hr />
+                <h3 id="sound"><strong>G) Sound Files</strong> - <a href="#toc">top</a></h3>
+                <p>
+                    When you receive a message a sound file is played. Sound files are located
+                    in the root folder of VisitorChat. To ensure maximum compatibility with
+                    browsers a sound file must be made in MP3 and OGG format.
+                </p>
+                <hr />
+                <h3 id="support"><strong>H) Additional support</strong>  - <a href="#toc">top</a></h3>
+                <p>
+                    If you have any question, bug to report or any type of support, please
+                    address to VisitorChat forum and I'll make my best to help you: <a href="http://templatestock.net:8080/forum/">VisitorChat Forum</a>
+                </p>
+                
+                
+                
+                
+                <hr />
+		<p>Once again, thank you so much for purchasing this item. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on codecanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Gregor Kuplenik</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

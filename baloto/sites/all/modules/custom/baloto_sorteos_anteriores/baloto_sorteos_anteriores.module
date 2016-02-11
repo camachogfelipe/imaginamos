@@ -1,0 +1,512 @@
+<?php
+/**
+ * @file
+ * Modulo para mostrar los resultados anteriores de los sorteos
+ *
+ * Autor information: David Carvajal
+ * email: davidgcarvajal@gmail.com
+ */
+
+
+/**
+* Implements hook_entity_insert,
+*/
+function baloto_sorteos_anteriores_entity_insert($entity, $type) {
+  if ($type == 'node' && $entity->type == 'sorteo') {
+    _baloto_sorteos_set_sorteo_cache();
+  }
+}
+
+/**
+* Implementation of hook_entity_delete
+* Hook para verificar si el nodo eliminado es un sorteo
+* Declaracion de variable de control para cache
+*/
+
+function baloto_sorteos_anteriores_entity_delete($entity, $type) {
+  if ($type == 'node' && $entity->type == 'sorteo') {
+    _baloto_sorteos_set_sorteo_cache();
+  }
+}
+
+/**
+* Implementation of hook__entity_update
+* Hook para verificar si el nodo actualizado es un sorteo
+* Declaracion de variable de control para cache
+*/
+
+function baloto_sorteos_anteriores_entity_update($entity, $type) {
+  if ($type == 'node' && $entity->type == 'sorteo') {
+    _baloto_sorteos_set_sorteo_cache();
+  }
+}
+
+/**
+* Implentation of hook_block_info
+**/
+
+function baloto_sorteos_anteriores_block_info() {
+  $blocks['block_sorteos_ant'] = array(
+    'info' => t('Bloque de busqueda de sorteos anteriores'),
+    'cache' => DRUPAL_CACHE_PER_PAGE,
+  );
+  return $blocks;
+}
+
+/**
+* Implentation of hook_block_view
+**/
+
+function baloto_sorteos_anteriores_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'block_sorteos_ant':
+      $block['subject'] = t('Sorteos anteriores');
+      $block['content'] = _baloto_sorteos_anteriores_block();
+      break;
+  }
+  return $block;
+}
+
+function _baloto_sorteos_anteriores_block() {
+  $formulario_anteriores = drupal_get_form('_baloto_sorteos_anteriores_form');
+  $formulario_anteriores_render = render($formulario_anteriores);
+  return $formulario_anteriores_render;
+}
+
+function _cache_process ($cache) {
+  if (isset($cache->data)) {
+    return $cache->data;
+  }
+  return array();
+}
+
+function _baloto_sorteos_set_sorteo_cache () {
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+          ->entityCondition('bundle', 'sorteo');
+          //->range(0, 100);
+  $result = $query->execute();
+  foreach ($result['node'] as $key) {
+    $nid[] = $key->nid;
+  }
+  $sorteos = node_load_multiple($nid);
+  foreach ($sorteos as $value) {
+    $fechas_time = strtotime(_baloto_get_items($value, 'field_fecha_sorteo'));
+    $date = format_date($fechas_time, 'custom', 'd/M/Y');
+    //$date_upper[strtoupper($date)] = strtoupper($date) . ' - ' . $value->title;
+    $date_upper[$value->title] = strtoupper($date) . ' - ' . $value->title;
+    $newnid = $value->nid;
+    //$newdate_array[strtoupper($date)] =$newnid;
+    $newdate_array[$value->title] =$newnid;
+  }
+  ksort($newdate_array);
+  arsort($newdate_array);
+  krsort($date_upper);
+  //arsort($date_upper);
+  //ksort($date_upper);
+  cache_set("_baloto_sorteo_full_cached",$sorteos);
+  cache_set("_baloto_sorteo_date_cached",$date_upper);
+  cache_set("_baloto_sorteo_date_ui_cached",$newdate_array);
+}
+function _baloto_sorteo_get_items($value, $field) {
+  $cifra = field_get_items('node', $value, $field);
+  return $cifra[0]['value'];
+}
+
+function _baloto_sorteo_get_number($value, $field) {
+  $cifra = field_get_items('node', $value, $field);
+  $cifra = $cifra[0]['value'];
+  if ($cifra) {
+    $cifra = retorna_valor_moneda($cifra);
+  }
+  return $cifra;
+}
+
+
+function retorna_valor_moneda($cifra){
+  $cifra = number_format($cifra, '0', ',', '.');
+  $tmp = explode('.', $cifra);
+  if(count($tmp) > 2){
+    $cifra = substr_replace($cifra, "'" , -8, 1);
+  }
+  return $cifra;
+}
+
+
+
+function cantidad_r($node) {
+  $temp = array(
+    'tres' => (count($node->field_cantidad_3_aciertos) > 0) ? $node->field_cantidad_3_aciertos['und'][0]['value'] : 0,
+    'cuatro' => (count($node->field_cantidad_4_aciertos) > 0) ? $node->field_cantidad_4_aciertos['und'][0]['value'] : 0,
+    'cinco' => (count($node->field_cantidad_5_aciertos) > 0) ? $node->field_cantidad_5_aciertos['und'][0]['value'] : 0,
+    'seis' => (count($node->field_cantidad_6_aciertos) > 0) ? $node->field_cantidad_6_aciertos['und'][0]['value'] : 0,
+  );
+  return $temp;
+}
+function totalganado_r($node) {
+  $temp = array(
+    'tres' => (count($node->field_total_3_aciertos) > 0) ? $node->field_total_3_aciertos['und'][0]['value'] : 0,
+    'cuatro' => (count($node->field_total_4_aciertos) > 0) ? $node->field_total_4_aciertos['und'][0]['value'] : 0,
+    'cinco' => (count($node->field_total_5_aciertos) > 0) ? $node->field_total_5_aciertos['und'][0]['value'] : 0,
+    'seis' => (count($node->field_total_6_aciertos) > 0) ? $node->field_total_6_aciertos['und'][0]['value'] : 0,
+  );
+  return $temp;
+}
+function premioganador($node) {
+  $temp = array(
+    'tres' => (count($node->field_3_aciertos) > 0) ? $node->field_3_aciertos['und'][0]['value'] : 0,
+    'cuatro' => (count($node->field_4_aciertos) > 0) ? $node->field_4_aciertos['und'][0]['value'] : 0,
+    'cinco' => (count($node->field_5_aciertos) > 0) ? $node->field_5_aciertos['und'][0]['value'] : 0,
+    'seis' => (count($node->field_6_aciertos) > 0) ? $node->field_6_aciertos['und'][0]['value'] : 0,
+  );
+  return $temp;
+}
+
+function _baloto_sorteos_anteriores_form ($form, &$form_state){
+  $date_array = _cache_process(cache_get("_baloto_sorteo_date_cached"));
+  if(sizeof($date_array) == 0){
+    _baloto_sorteos_set_sorteo_cache();
+    $date_array = _cache_process(cache_get("_baloto_sorteo_date_cached"));
+  }
+  krsort($date_array);
+  $new_array_mapped = $date_array;
+
+  $first_value = reset($new_array_mapped); // First Element's Value
+  $first_key = key($new_array_mapped); // First Element's Key
+
+  $sorteo_array = _cache_process(cache_get("_baloto_sorteo_date_ui_cached"));
+  $resultado = $sorteo_array[$first_key];
+  $node = node_load($resultado);
+  $cifra = _baloto_sorteos_anteriores_get_cifras($node);
+  $cantidad = _baloto_sorteos_anteriores_get_cantidad($node);
+  $totalganado = _baloto_sorteos_anteriores_get_total($node);
+  $premioganador = _baloto_sorteos_anteriores_get_premio_ganador($node);
+  $mensaje = _baloto_sorteos_anteriores_get_mensaje($cantidad,$totalganado, $premioganador);
+  if(count($node->field_revancha_sorteo_n_) != 0){
+    $revancha = array(
+      $node->field_revancha_cifra_uno['und'][0]['value'],
+      $node->field_revancha_cifra_dos['und'][0]['value'],
+      $node->field_revancha_cifra_tres['und'][0]['value'],
+      $node->field_revancha_cifra_cuatro['und'][0]['value'],
+      $node->field_revancha_cifra_cinco['und'][0]['value'],
+      $node->field_revancha_cifra_seis['und'][0]['value'],
+    );
+  } else {
+    $revancha = array('','','','','','');
+  }
+  $cantidad_r = cantidad_r($node);
+  $totalganado_r = totalganado_r($node);
+  $premioganador_r = premioganador($node);
+  $mensaje_revancha = _baloto_sorteos_anteriores_get_mensaje_revancha($cantidad_r,$totalganado_r, $premioganador_r);
+  $baloto = array(
+    '#type' => 'container',
+    '#attributes' => array(
+      'id' => 'contiene_baloto_balotas',
+    ),
+  );
+  $container = array(
+    '#type' => 'container',
+    '#attributes' => array(
+      'id' => 'contiene_revancha_balotas',
+    ),
+  );
+  $form['selecion_fecha'] = array(
+    '#type' => 'select',
+    '#title' => t('Seleccione el sorteo'),
+    '#options' => $new_array_mapped,
+    '#ajax' => array(
+      'callback' => '_baloto_sorteos_anteriores_pais',
+    ),
+  );
+  $form['muestra_rev'] = array(
+    '#type' => 'submit',
+	'#prefix'=> '<div class="s-encierra-submit sub-baloto"><div class="log-min-baloto"></div>',
+    '#attributes' => array(
+      'class' => array('sub-baloto'),
+    ),
+    '#value' => t('Click para ver Revancha'),
+	'#suffix' => '</div>',
+  );
+  $form['link_historico'] = array(
+    '#markup' => l(t('Click para ver histórico por año'), 'filtro-historico-de-resultados', array('attributes' => array('class' => array('link-historico')))),
+  );
+  $form['ganador_tittle'] = array(
+    '#type' => 'item',
+    '#title' => t('Baloto ganador'),
+  );
+  $baloto['c_uno'] = array(
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'disabled' => 'disabled'
+    ),
+    '#default_value' => $cifra[0],
+  );
+  $baloto['c_dos'] = array(
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'disabled' => 'disabled'
+    ),
+    '#default_value' => $cifra[1],
+  );
+  $baloto['c_tres'] = array(
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'disabled' => 'disabled'
+    ),
+    '#default_value' => $cifra[2],
+  );
+  $baloto['c_cuatro'] = array(
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'disabled' => 'disabled'
+    ),
+    '#default_value' => $cifra[3],
+  );
+  $baloto['c_cinco'] = array(
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'disabled' => 'disabled'
+    ),
+    '#default_value' => $cifra[4],
+  );
+  $baloto['c_seis'] = array(
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'disabled' => 'disabled'
+    ),
+    '#default_value' => $cifra[5],
+  );
+  // Balotas para revancha
+  $container['r_uno'] = array(
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'disabled' => 'disabled',
+    ),
+    '#default_value' => $revancha[0],
+  );
+  $container['r_dos'] = array(
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'disabled' => 'disabled',
+    ),
+    '#default_value' => $revancha[1],
+  );
+  $container['r_tres'] = array(
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'disabled' => 'disabled',
+    ),
+    '#default_value' => $revancha[2],
+  );
+  $container['r_cuatro'] = array(
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'disabled' => 'disabled',
+    ),
+    '#default_value' => $revancha[3],
+  );
+  $container['r_cinco'] = array(
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'disabled' => 'disabled',
+    ),
+    '#default_value' => $revancha[4],
+  );
+  $container['r_seis'] = array(
+    '#type' => 'textfield',
+    '#attributes' => array(
+      'disabled' => 'disabled',
+    ),
+    '#default_value' => $revancha[5],
+  );
+  $form['balotas'] = $baloto;
+  $form['balotas_revancha'] = $container;
+  $form['ganadores'] = array(
+    '#type' => 'item',
+    '#prefix' => '<div id="d-mensaje">',
+    '#suffix' => '</div>',
+    '#markup' => $mensaje,
+  );
+  $form['ganadores_revancha'] = array(
+    '#type' => 'item',
+    '#prefix' => '<div id="d-mensaje_revancha">',
+    '#suffix' => '</div>',
+    '#markup' => $mensaje_revancha,
+  );
+  return $form;
+}
+
+
+function _baloto_sorteos_anteriores_pais ($form, &$form_state){
+  $sorteo_array = _cache_process(cache_get("_baloto_sorteo_date_ui_cached"));
+  $fecha = $form_state['values']['selecion_fecha'];
+  $resultado = $sorteo_array[$fecha];
+  $node = node_load($resultado);
+  $cifra = _baloto_sorteos_anteriores_get_cifras($node);
+  $cantidad = _baloto_sorteos_anteriores_get_cantidad($node);
+  $totalganado = _baloto_sorteos_anteriores_get_total($node);
+  $premioganador = _baloto_sorteos_anteriores_get_premio_ganador($node);
+  $mensaje = _baloto_sorteos_anteriores_get_mensaje($cantidad,$totalganado, $premioganador);
+  $commands[] = array();
+  $cantidad_r = cantidad_r($node);
+  $totalganado_r = totalganado_r($node);
+  $premioganador_r = premioganador($node);
+  $mensaje_revancha = _baloto_sorteos_anteriores_get_mensaje_revancha($cantidad_r,$totalganado_r, $premioganador_r);
+  if(count($node->field_revancha_sorteo_n_) != 0){
+    $revancha = array(
+      $node->field_revancha_cifra_uno['und'][0]['value'],
+      $node->field_revancha_cifra_dos['und'][0]['value'],
+      $node->field_revancha_cifra_tres['und'][0]['value'],
+      $node->field_revancha_cifra_cuatro['und'][0]['value'],
+      $node->field_revancha_cifra_cinco['und'][0]['value'],
+      $node->field_revancha_cifra_seis['und'][0]['value'],
+    );
+  }
+  $campos = array('uno'=>'uno','dos'=>'dos','tres'=>'tres','cuatro'=>'cuatro','cinco'=>'cinco','seis'=>'seis');
+  $i = 0;
+  foreach($campos as $key){
+    $commands[] = ajax_command_invoke('#edit-c-'.$key, 'attr', array('value', $cifra[$i]));
+    if(count($node->field_revancha_sorteo_n_) != 0){
+      $commands[] = ajax_command_invoke('#edit-r-'.$key, 'attr', array('value', $revancha[$i]));
+    } else {
+      $commands[] = ajax_command_invoke('#edit-r-'.$key, 'attr', array('value', ''));
+    }
+    $i++;
+  }
+  $commands[] = ajax_command_replace('#d-mensaje', $mensaje);//Replace with the new message
+  $commands[] = ajax_command_replace('#d-mensaje_revancha', $mensaje_revancha);
+  return array('#type' => 'ajax', '#commands' => $commands);
+}
+
+function _baloto_sorteos_anteriores_get_cifras($node){
+  $cifra = array();
+  $campos = array('uno'=>'uno','dos'=>'dos','tres'=>'tres','cuatro'=>'cuatro','cinco'=>'cinco','seis'=>'seis');
+  foreach ($campos as $key) {
+    $cifra[] = _baloto_get_items($node, "field_cifra_$key");
+  }
+  return $cifra;
+}
+
+function _baloto_sorteos_anteriores_get_cantidad($node){
+  $cantidad['tres'] = _baloto_sorteo_get_items($node, 'field_cantidad_ganadores_3_6');
+  $cantidad['cuatro'] = _baloto_sorteo_get_items($node, 'field_cantidad_ganadores_4_6');
+  $cantidad['cinco'] = _baloto_sorteo_get_items($node, 'field_cantidad_ganadores_5_6');
+  $cantidad['seis'] = _baloto_sorteo_get_items($node, 'field_cantidad_ganadores_6_6');
+  return $cantidad;
+}
+function _baloto_sorteos_anteriores_get_total($node) {
+  $totalganado['tres'] = _baloto_sorteo_get_number($node, 'field_total_ganado_3_6');
+  $totalganado['cuatro'] = _baloto_sorteo_get_number($node, 'field_total_ganado_4_6');
+  $totalganado['cinco'] = _baloto_sorteo_get_number($node, 'field_total_ganado_5_6');
+  $totalganado['seis'] = _baloto_sorteo_get_number($node, 'field_total_ganado_6_6');
+  return $totalganado;
+}
+
+function _baloto_sorteos_anteriores_get_premio_ganador($node){
+  $premioganador['tres'] = _baloto_sorteo_get_number($node, 'field_premio_por_ganador_3_6');
+  $premioganador['cuatro'] = _baloto_sorteo_get_number($node, 'field_premio_por_ganador_4_6');
+  $premioganador['cinco'] = _baloto_sorteo_get_number($node, 'field_premio_por_ganador_5_6');
+  $premioganador['seis'] = _baloto_sorteo_get_number($node, 'field_premio_por_ganador_6_6');
+  return $premioganador;
+}
+
+function _baloto_sorteos_anteriores_get_mensaje($cantidad,$totalganado, $premioganador){
+$mensaje = '
+<div class="s-ganadores">GANADORES BALOTO</div>
+<div class="content">
+  <div class="s-encabtab">
+    <div class="s-primero">Aciertos</div>
+    <div class="s-segundo">Ganadores</div>
+    <div class="s-tercero">Premio por Ganador</div>
+    <div class="s-cuarto">Total</div>
+  </div>
+  <div class="first">
+    <div class="s-primero">6 Aciertos</div>
+    <div class="s-segundo">' . retorna_valor_moneda($cantidad['seis']) . '</div>
+    <div class="s-tercero">$' . $premioganador['seis'] . '</div>
+    <div class="s-cuarto">$' . $totalganado['seis'] . '</div>
+  </div>
+  <div class="second">
+    <div class="s-primero">5 Aciertos</div>
+    <div class="s-segundo">' . retorna_valor_moneda($cantidad['cinco']) . '</div>
+    <div class="s-tercero">$' . $premioganador['cinco'] . '</div>
+    <div class="s-cuarto">$' . $totalganado['cinco'] . '</div>
+  </div>
+  <div class="second">
+    <div class="s-primero">4 Aciertos</div>
+    <div class="s-segundo">' . retorna_valor_moneda($cantidad['cuatro']) . '</div>
+    <div class="s-tercero">$' . $premioganador['cuatro'] . '</div>
+    <div class="s-cuarto">$' . $totalganado['cuatro'] . '</div>
+  </div>
+  <div class="last">
+    <div class="s-primero">3 Aciertos</div>
+    <div class="s-segundo">' . retorna_valor_moneda($cantidad['tres']) . '</div>
+    <div class="s-tercero">$' . $premioganador['tres'] . '</div>
+    <div class="s-cuarto">$' . $totalganado['tres'] . '</div>
+  </div>
+</div>';
+  $mensaje = '<div id="d-mensaje">' . $mensaje . '</div>';
+  return $mensaje;
+}
+function _baloto_sorteos_anteriores_get_mensaje_revancha($cantidad,$totalganado, $premioganador){
+$mensaje = '
+<div class="s-ganadores">GANADORES REVANCHA</div>
+<div class="content">
+  <div class="s-encabtab">
+    <div class="s-primero">Aciertos</div>
+    <div class="s-segundo">Ganadores</div>
+    <div class="s-tercero">Premio por Ganador</div>
+    <div class="s-cuarto">Total</div>
+  </div>
+  <div class="first">
+    <div class="s-primero">6 Aciertos</div>
+    <div class="s-segundo">' . retorna_valor_moneda($cantidad['seis']) . '</div>
+    <div class="s-tercero">$' . retorna_valor_moneda($premioganador['seis']) . '</div>
+    <div class="s-cuarto">$' .  retorna_valor_moneda($totalganado['seis'], '0', ',', '.')  . '</div>
+  </div>
+  <div class="second">
+    <div class="s-primero">5 Aciertos</div>
+    <div class="s-segundo">' . retorna_valor_moneda($cantidad['cinco']) . '</div>
+    <div class="s-tercero">$' . retorna_valor_moneda($premioganador['cinco'])  . '</div>
+    <div class="s-cuarto">$' . retorna_valor_moneda($totalganado['cinco']) . '</div>
+  </div>
+  <div class="second">
+    <div class="s-primero">4 Aciertos</div>
+    <div class="s-segundo">' . retorna_valor_moneda($cantidad['cuatro']) . '</div>
+    <div class="s-tercero">$' . retorna_valor_moneda($premioganador['cuatro']) . '</div>
+    <div class="s-cuarto">$' . retorna_valor_moneda($totalganado['cuatro']) . '</div>
+  </div>
+  <div class="last">
+    <div class="s-primero">3 Aciertos</div>
+    <div class="s-segundo">' . retorna_valor_moneda($cantidad['tres']) . '</div>
+    <div class="s-tercero">$' . retorna_valor_moneda($premioganador['tres']). '</div>
+    <div class="s-cuarto">$' .retorna_valor_moneda($totalganado['tres']) . '</div>
+  </div>
+</div>';
+  $mensaje = '<div id="d-mensaje_revancha">' . $mensaje . '</div>';
+  return $mensaje;
+}
+function _baloto_sorteos_anteriores_get_mensaje_2($cantidad,$totalganado, $premioganador){
+$mensaje = '
+<div class="s-ganadores">GANADORES BALOTO</div>
+<div class="content">
+    <div class="s-encabtab"><div>Aciertos</div><div>Ganadores</div><div>Premio por Ganador</div><div>Total</div></div>
+    <div class="first"><div>3 Aciertos</div><div>' . $cantidad['tres'] . '</div><div>$' . $premioganador['tres'] . '</div><div>$' . $totalganado['tres'] . '</div></div>
+    <div class="second"><div>4 Aciertos</div><div>' . $cantidad['cuatro'] . '</div><div>$' . $premioganador['cuatro'] . '</div><div>$' . $totalganado['cuatro'] . '</div></div>
+    <div class="last"><div>5 Aciertos</div><div>' . $cantidad['cinco'] . '</div><div>$' . $premioganador['cinco'] . '</div><div>$' . $totalganado['cinco'] . '</div></div>';
+if ($cantidad['seis']) {
+  $mensaje .= '<div><div>6 Aciertos</div><div>' . $cantidad['seis'] . '</div><div>$' . $premioganador['seis'] . '</div><div>$' . $totalganado['seis'] . '</div></div>';
+  }
+$mensaje .= '</div>';
+/*
+  $mensaje = '<strong>Ganadores, </strong>';
+  $mensaje .= '3 Aciertos: ' . $cantidad['tres'] . ' boletos, premio por ganador: $' . $premioganador['tres'] . ',total: $' . $totalganado['tres'] . ' // ';
+  $mensaje .= '4 Aciertos: ' . $cantidad['cuatro'] . ' boletos, premio por ganador: $' . $premioganador['cuatro'] . ', total: $' . $totalganado['cuatro'] . ' // ';
+  $mensaje .= '5 Aciertos: ' . $cantidad['cinco'] . ' boletos, premio por ganador: $' . $premioganador['cinco'] . ', total: $' . $totalganado['cinco'] . ' // ';
+  if ($cantidad['seis']) {
+    $mensaje .= '6 Aciertos: ' . $cantidad['seis'] . ' boletos, premio por ganador: $' . $premioganador['seis'] . ', total: $' . $totalganado['seis'] . ' // ';
+  }*/
+  $mensaje = '<div id="d-mensaje-2">' . $mensaje . '</div>';
+  return $mensaje;
+}

@@ -1,0 +1,1321 @@
+@import url("../fuentes/calibri/calibri.css");
+
+div.warning, .alert, div.error, tr.error {
+	display:none;
+}
+
+html {
+  height: 100%;
+}
+ul.menu, ul.menu li {
+margin: 0px;
+padding: 0px;
+}
+body {
+  position: relative;
+  margin:0px !important;
+  font-family: CalibriRegular;
+  font-size: 15px;
+  height: 100%;
+  color: #fff;
+}
+#first-time {
+  display: none;
+}
+#admin-menu {
+  margin: 0px;
+  top: -29px;
+}
+p {
+  margin: 0px;
+  margin-bottom: 5px;
+}
+strong{
+  font-family: CalibriBold;
+}
+h2 {
+  font-family: CalibriBold;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+table tbody {
+  border: 0;
+}
+a{
+  text-decoration: none;
+}
+#page-wrapper {
+  display: none;
+  -moz-opacity: 0.00;
+  opacity: 0.00;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=0);
+  width: 100%;
+  background: URL('../images/fondo-baloto-header.jpg') top center no-repeat;
+}
+#cargainicio {
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  background: URL("../images/cargainicio.jpg") no-repeat top center #000747;
+  height: 100%;
+  width: 100%;
+}
+
+#top{
+  height: 630px;
+  width: 100%;
+  /*background: URL("../images/top.jpg") no-repeat top center #000747;*/
+}
+#top .t-content{
+  width: 1000px;
+  height: 715px;
+  margin: auto;
+  padding-top: 20px;
+}
+#t-logo {
+  text-align: center;
+}
+#content-wrapper {
+  background: URL("../images/border-menu.png") no-repeat top center;
+  position: relative;
+  overflow: visible;
+  padding-top: 80px;
+  width: 100%;
+}
+#content-wrapper > * {
+ 
+  margin: auto;
+}
+#content-wrapper > #footer-log {
+  margin-top: 90px;
+  width: 100%;
+}
+#content-wrapper > #footer {
+  width: 100%;
+  background: URL('../images/precontent.png') center center repeat-y;
+}
+#content-wrapper > #footer-copy {
+  margin-top: 10px;
+}
+#content-wrapper > #footer .region-footer{
+  padding: 25px 0px;
+  width: 1000px;
+  margin:auto;
+  overflow: auto;
+}
+#block-menu-menu-menu-principal{
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+#block-menu-menu-menu-principal > .content {
+  width: 1100px;
+  margin: auto;
+  height: 100%;
+  padding-left: 65px;
+  background: URL('../images/ul-menu.png') 20px 12px no-repeat;
+}
+#block-menu-menu-menu-principal > .content li {
+  list-style: none;
+  text-align: center;
+  display: -moz-inline-stack; /* FF2*/
+  display: inline-block;
+  vertical-align: top; /* BASELINE CORRECCIÓN*/
+  padding: 5px;
+  width: 110px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  zoom: 1; /* IE7 (hasLayout)*/
+  margin-left: 17px;
+  *display: inline; /* IE */
+}
+#block-menu-menu-menu-principal > .content li:hover {
+  -moz-opacity: 0.70;
+  opacity: 0.70;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+}
+#block-menu-menu-menu-principal > .content li a{
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: CalibriBold;
+  color:#fff200;
+  font-size: 150%;
+}
+#block-menu-menu-menu-principal > .content li a:hover {
+  text-decoration: none;
+}
+#pre-content .block-block {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#quicktabs-navegacion_internas_baloto {
+  /*overflow: hidden;*/
+  position: relative;
+  height: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+}
+#quicktabs-navegacion_internas_baloto > .item-list {
+  /*height: 620px;*/
+  height: auto;
+  float: left;
+  /*overflow: hidden;*/
+}
+
+#quicktabs-navegacion_internas_baloto > .item-list > ul{
+  float: none;
+  padding-top: 65px;
+}
+#quicktabs-navegacion_internas_baloto > .item-list > ul > li {
+  width: 220px;
+  padding-bottom: 25px;
+  height: 30px;
+  margin: 0px;
+  text-align: left;
+  line-height: 25px;
+  padding-top: 23px;
+  position: relative;
+  bottom: 45px;
+  background: URL("../images/second.png") 7px bottom no-repeat;
+
+}
+#quicktabs-navegacion_internas_baloto > .item-list > ul > li.active {
+  background: URL("../images/second-active.png") 0px bottom no-repeat;
+  border: 0;
+}
+#quicktabs-navegacion_internas_baloto > .item-list > ul > li:not(.active):hover {
+  background: URL("../images/second-hover.png") 7px bottom no-repeat;
+}
+
+#quicktabs-navegacion_internas_baloto > .item-list > ul > li.first {
+  background: URL("../images/first.png") 4px bottom no-repeat;
+}
+#quicktabs-navegacion_internas_baloto > .item-list > ul > li.active.first {
+  background: URL("../images/first-active.png") left bottom no-repeat;
+}
+#quicktabs-navegacion_internas_baloto > .item-list > ul > li.first:not(.active):hover{
+  background: URL("../images/first-hover.png") 4px bottom no-repeat;
+}
+#quicktabs-navegacion_internas_baloto > .item-list > ul > li.last {
+  background: URL("../images/last.png") 4px bottom no-repeat;
+}
+#quicktabs-navegacion_internas_baloto > .item-list > ul > li.last.active{
+  background: URL("../images/last-active.png") left bottom no-repeat;
+}
+#quicktabs-navegacion_internas_baloto > .item-list > ul > li.last:not(.active):hover{
+  background: URL("../images/last-hover.png") 4px bottom no-repeat;
+}
+#quicktabs-navegacion_internas_baloto > .item-list > ul > li > a {
+  text-align: left;
+  display: block;
+  width: 118px;
+  font-size: 120%;
+  color: #fff;
+  font-family: CalibriBold;
+  padding-left: 90px;
+  white-space: normal;
+  line-height: 15px;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+#quicktabs-navegacion_internas_baloto > .item-list > ul > li:hover > a,
+#quicktabs-navegacion_internas_baloto > .item-list > ul > li.active > a {
+  /*color: #8a0d10;*/
+  color: #DB3638;
+}
+#quicktabs-container-navegacion_internas_baloto {
+  width: 650px;
+  padding: 50px 40px 20px 55px;
+  margin-left: 34px;
+  border:0;
+  background: URL("../images/quicktabs-container.png") top center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  /*
+  height: 525px;
+  width: 670px;
+  background: URL("../images/t-content.png") top right no-repeat;
+  border:0;
+  padding: 20px 25px 15px 85px;
+  margin-top: 55px;*/
+}
+#quicktabs-container-navegacion_internas_baloto strong {
+  font-size: 140%;
+}
+.view-header > h2,
+.views-field-title > h2,
+#block-views-preguntas-frecuentes-faq > h2,
+.field-name-title h2,
+.t-title,
+#edit-title,
+.block-views > h2{
+  margin: 0px;
+  font-family: CalibriBold;
+  font-size: 300%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #fff200;
+}
+ .block-baloto-puntos-venta-importacion > h2{
+  color: #FFF200;
+  font-size: 300%;
+ }
+.node-establecimiento .field-name-title h2{
+  font-size: 150%;
+}
+#block-views-preguntas-frecuentes-faq > h2 > span,
+.t-title span,
+.t-title span.t-yellow,
+.block-views > h2 span{
+  color: #FFF;
+  font-size: 105%;
+}
+.t-title span.t-red{
+  color: #e31920;
+  font-size: 100%;
+}
+
+
+.view-establecimientos > .view-content > .views-row {
+  padding-left: 15px;
+  background: url('../images/bullet.png')left 10px no-repeat;
+}
+.view-establecimientos > .item-list > .pager {
+  margin-top: 30px;
+}
+.view-establecimientos > .item-list > .pager > .pager-item a{
+  color: #FFF200;
+}
+.view-establecimientos > .item-list > .pager .pager-next a,
+.view-establecimientos > .item-list > .pager .pager-last a,
+.view-establecimientos > .item-list > .pager .pager-first a,
+.view-establecimientos > .item-list > .pager .pager-previous a {
+  color: white;
+}
+
+/*#quicktabs-container-navegacion_internas_baloto #views-exposed-form-busqueda-sorteos-busqueda-sorteos .views-exposed-widgets .form-text{*/
+#block-baloto-balotimetro-block-balotimetro #t-valores-generados > .form-item input,
+#quicktabs-container-navegacion_internas_baloto #-baloto-consulta-numeros-sorteos-form #t-numeros-jugados .form-text,
+#t-numeros-jugados-revancha .form-text{
+  background: URL('../images/balotaunselect.png') center center no-repeat;
+  width: 60px;
+  height: 60px;
+  border: 0px;
+  text-align: center;
+  color: #3A351F;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 200%;
+  line-height: 60px;
+  text-shadow: 0px 0px 1px black;
+  margin: 20px 0px 20px 0px;
+}
+#quicktabs-container-navegacion_internas_baloto #views-exposed-form-busqueda-sorteos-busqueda-sorteos .views-exposed-widgets .form-text.active {
+  background: URL('../images/balotaselect.png') center center no-repeat;
+}
+#quicktabs-container-navegacion_internas_baloto #views-exposed-form-busqueda-sorteos-busqueda-sorteos .views-exposed-widgets .form-item {
+  background: URL('../images/sombra-bal.png') left bottom no-repeat;
+}
+#quicktabs-container-navegacion_internas_baloto #views-exposed-form-busqueda-sorteos-busqueda-sorteos .views-exposed-widgets #edit-field-cifra-seis-value {
+  margin-right:  0px;
+}
+#quicktabs-container-navegacion_internas_baloto #views-exposed-form-busqueda-sorteos-busqueda-sorteos .views-exposed-widgets .form-text:focus {
+  outline: none;
+}
+#edit-field-fecha-sorteo-value-selective-wrapper {
+  margin-top: 10px;
+  float: none;
+}
+#edit-field-fecha-sorteo-value-selective-wrapper label{
+  font-family: CalibriBold;
+  font-size: 130%;
+}
+.form-type-select {
+  font-weight: 600;
+  height: 29px;
+  line-height: 29px;
+  color: #04284d;
+  margin-top: 8px !important;
+  margin-bottom: 30px !important;
+}
+select{
+  height: 33px !important;
+  padding-right: 38px;
+  color: #04284d;
+  width: 280px;
+  cursor: pointer;
+}
+#edit-submit-busqueda-sorteos {
+  background: URl('../images/botonconsulta.png') center center no-repeat;
+  height: 45px;
+  line-height: 45px;
+  width: 148px;
+  border: 0px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #FFF;
+  font-family: CalibriBold;
+  font-size: 120%;
+}
+#quicktabs-container-navegacion_internas_baloto .views-exposed-widgets .views-submit-button {
+  width: 100%;
+  text-align: center;
+  float: none;
+}
+#views_slideshow_cycle_main_como_se_hace_un_sorteo-como_se_hace_sorteo .views-slideshow-cycle-main-frame {
+	height: 417px !important;
+}
+.views-slideshow-cycle-main-frame {
+  /*height: 417px !important;*/
+  height: 417px;
+}
+#cboxContent{
+  background:#09488b;
+}
+.customStyleSelectBoxInner{
+  min-width: 160px;
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  background: URL('../images/bkg-select.png') top right no-repeat #fff;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  border: #ee8788 solid 2px;
+  padding-left: 10px;
+  padding-right: 30px;
+   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+/*balotimetro*/
+#-baloto-sorteos-anteriores-form .d-balotas,
+#block-baloto-balotimetro-block-balotimetro #t-valores-generados {
+  overflow: auto;
+}
+#-baloto-sorteos-anteriores-form  .form-type-textfield,
+#t-valores-generados > .form-item{
+  float: left;
+  background: URL('../images/sombra-bal.png') left bottom no-repeat;
+  margin-top: 4px;
+  margin-bottom: 0px;
+  width: 105px;
+}
+#-baloto-sorteos-anteriores-form .form-item input,
+#block-baloto-balotimetro-block-balotimetro #t-valores-generados > .form-item input,
+.p-coincide{
+  background: URL('../images/balota-stop.png') center center no-repeat;
+  width: 60px;
+  height: 60px;
+  border: 0px;
+  text-align: center;
+  text-shadow: 0px 0px 1px #000;
+  margin: 20px 0px 20px 0px;
+  color: #3A351F;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 60px;
+  cursor: auto;
+}
+#block-baloto-sorteos-anteriores-block-sorteos-ant .form-type-select{
+  float: left;
+}
+#-baloto-sorteos-anteriores-form #contiene_baloto_balotas,
+#-baloto-sorteos-anteriores-form #contiene_revancha_balotas{
+  overflow: auto;
+}
+#-baloto-sorteos-anteriores-form .sub-revancha ~ #d-mensaje,
+#-baloto-sorteos-anteriores-form .sub-revancha ~ #contiene_baloto_balotas > *,
+#-baloto-sorteos-anteriores-form .sub-baloto ~ #d-mensaje_revancha,
+#-baloto-sorteos-anteriores-form .sub-baloto ~ #contiene_revancha_balotas > *{
+  display: none;
+}
+#-baloto-sorteos-anteriores-form .sub-baloto ~ #d-mensaje,
+#-baloto-sorteos-anteriores-form .sub-baloto ~ #contiene_baloto_balotas > *
+#-baloto-sorteos-anteriores-form .sub-revancha ~ #d-mensaje_revancha,
+#-baloto-sorteos-anteriores-form .sub-revancha ~ #contiene_revancha_balotas > *{
+  display: block;
+}
+#-baloto-sorteos-anteriores-form .sub-baloto .log-min-baloto{
+	width: 210px;
+  	height: 65px;
+	background: url('../images/bkg-baloto-logo-min.png') top center no-repeat;
+}
+#-baloto-sorteos-anteriores-form .sub-revancha .log-min-baloto{
+	width: 210px;
+  	height: 65px;
+	background: url('../images/bkg-logo-revancha.png') top center no-repeat;
+}
+#-baloto-sorteos-anteriores-form .form-submit{
+	background:none;
+  border: 0;
+  cursor: pointer;
+  -moz-opacity: 0.70;
+  opacity: 0.70;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+  font-family: CalibriBold;
+  color:#fff;
+  font-size: 115%;
+}
+#-baloto-sorteos-anteriores-form .s-encierra-submit {
+	text-align: center;
+	display: inline-block;
+	margin-left: 40px;
+	margin-top: 15px;
+}
+.views-slideshow-cycle-main-frame-row {
+  width: 633px !important;
+}
+/*
+#-baloto-sorteos-anteriores-form .sub-revancha{
+  -moz-opacity: 0.70;
+  opacity: 0.70;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+  margin: 20px 0px 0px 40px;
+  width: 210px;
+  height: 100px;
+  line-height: 150px;
+  background: url('../images/bkg-logo-revancha.png') top center no-repeat;
+  border: 0;
+  cursor: pointer;
+  padding: 0px;
+  font-family: CalibriBold;
+  color:#fff;
+  font-size: 115%;
+}*/
+#-baloto-sorteos-anteriores-form .sub-revancha:hover,
+#-baloto-sorteos-anteriores-form .sub-baloto:hover{
+  -moz-opacity: 1;
+  opacity: 1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);
+}
+#block-baloto-balotimetro-block-balotimetro #t-valores-generados > .form-item input.disabled{
+ color: #3A351F !important;
+
+}
+.p-coincide{
+  background: URL('../images/balota-stop.png') center center no-repeat !important;
+}
+
+#-baloto-sorteos-anteriores-form .d-balotas > .form-item.form-item-c-seis input,
+#block-baloto-balotimetro-block-balotimetro #t-valores-generados > .form-item.form-item-cifra-seis input{
+  margin-right: 0px;
+}
+
+#-baloto-sorteos-anteriores-form label{
+  font-family: CalibriBold;
+  font-size: 130%;
+  color: white;
+}
+
+.d-ganador #edit-ganador-tittle{
+  padding-top: 40px;
+}
+
+.form-item-selecion-fecha > label{
+  padding-bottom: 10px;
+}
+
+#block-baloto-balotimetro-block-balotimetro .form-actions {
+  text-align: center;
+  margin-top: 50px;
+}
+#baloto-puntos-venta-importacion-form-busqueda .form-submit,
+#block-baloto-balotimetro-block-balotimetro .form-submit,
+#-baloto-consulta-numeros-sorteos-form .form-submit {
+  background: URl('../images/botonconsulta.png') center center no-repeat;
+  height: 45px;
+  line-height: 45px;
+  width: 148px;
+  border: 0px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #FFF;
+  font-family: CalibriBold;
+  font-size: 120%;
+}
+.p-inicio,
+#block-baloto-balotimetro-block-balotimetro #reset {
+  background: URl('../images/blueboton.png') center center no-repeat;
+  height: 45px;
+  line-height: 45px;
+  width: 148px;
+  border: 0px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #FFF;
+  font-family: CalibriBold;
+  font-size: 120%;
+  margin-left: 20px;
+  display:inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+.p-inicio{
+  font-size: 110%;
+}
+.front .p-inicio{
+  display:none;
+}
+#depto_active{
+  position: absolute;
+  top: 60px;
+}
+/*que es baloto*/
+.quicktabs-wrapper .quicktabs-wrapper ul.quicktabs-style-navlist {
+  float: right;
+  margin-top: 100px;
+}
+.quicktabs-wrapper .quicktabs-wrapper ul.quicktabs-style-navlist li {
+  margin: 0px;
+  width: 175px;
+  height: 70px;
+  background: URL('../images/listseconq.png') center center no-repeat;
+  position: relative;
+  left: 8px;
+  white-space: normal;
+  line-height: 55px;
+  text-align: right;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.quicktabs-wrapper .quicktabs-wrapper ul.quicktabs-style-navlist li a{
+  font-family: CalibriBold;
+  color: #fff;
+  height: auto;
+  line-height: 15px;
+  vertical-align: middle;
+  height: 60px;
+  display: table-cell;
+  width: 175px;
+}
+.quicktabs-wrapper .quicktabs-wrapper ul.quicktabs-style-navlist li.active {
+  background: URL('../images/listseconqactive.png') center center no-repeat;
+  border: 0;
+}
+.quicktabs-wrapper .quicktabs-wrapper ul.quicktabs-style-navlist li.active a{
+  color: #db3638;
+  font-weight: normal;
+}
+.quicktabs-wrapper .quicktabs-wrapper #quicktabs-container-que_es_baloto_,
+ .quicktabs-wrapper .quicktabs-wrapper #quicktabs-container-beneficios_para_colombia,
+ .quicktabs-wrapper .quicktabs-wrapper #quicktabs-container-respaldo_internacional_ {
+  float: left;
+  width: 500px;
+  background: none;
+  border: 0;
+}
+.quicktabs-wrapper .quicktabs-wrapper #quicktabs-container-que_es_baloto_ .field-name-title h2{
+  margin: 0px;
+  font-family: CalibriBold;
+  font-size: 300%;
+  margin-bottom: 20px;
+  color: #fff200;
+}
+.views-field-field-video .field-content > * {
+  margin: auto;
+}
+/*estilos de la vista*/
+.views-slideshow-controls-text {
+  position: relative;
+}
+.views-slideshow-pager-fields {
+  position: relative;
+  display: inline-block;
+  top: 4px;
+}
+.view-display-id-comojugar #views_slideshow_controls_text_terminos_uso-comojugar,
+.view-display-id-como_ganar_cobrar #views_slideshow_controls_text_terminos_uso-como_ganar_cobrar{
+  margin-top: 15px;
+  text-align: center;
+}
+#views_slideshow_controls_text_previous_terminos_uso-comojugar ,
+.views-slideshow-controls-text-previous{
+  width: 26px;
+  height: 26px;
+  background: URL('../images/anterior.png') center center no-repeat;
+  display: inline-block;
+  *display: inline;
+  zoom:1;
+}
+.views-slideshow-controls-text-previous:hover,
+#views_slideshow_controls_text_previous_terminos_uso-comojugar:hover,
+#views_slideshow_controls_text_previous_terminos_uso-como_ganar_cobrar:hover {
+  background: URL('../images/anterior-hover.png') center center no-repeat;
+}
+#views_slideshow_controls_text_pause_terminos_uso-comojugar,
+#views_slideshow_controls_text_next_terminos_uso-comojugar a,
+#views_slideshow_controls_text_previous_terminos_uso-comojugar a,
+.views-slideshow-controls-text-pause a,
+.views-slideshow-controls-text-next a,
+.views-slideshow-controls-text-previous a{
+  display: none;
+}
+#views_slideshow_controls_text_next_terminos_uso-comojugar,
+.views-slideshow-controls-text-next{
+  width: 26px;
+  height: 26px;
+  background: URL('../images/siguiente.png') center center no-repeat;
+  display: inline-block;
+  *display: inline;
+  zoom:1;
+}
+#views_slideshow_controls_text_next_terminos_uso-comojugar:hover, #views_slideshow_controls_text_next_terminos_uso-como_ganar_cobrar:hover,
+.views-slideshow-controls-text-next:hover {
+  background: URL('../images/siguiente-hover.png') center center no-repeat;
+}
+/*node-que-es-baloto*/
+.node-que-es-baloto .field-name-body IMG{
+  margin-right: 20px;
+}
+.node-que-es-baloto .group-left{
+  width: 240px;
+}
+.node-que-es-baloto .field-name-field-imagen IMG {
+  border: 5px solid white;
+}
+.node-que-es-baloto .field-name-field-imagen a IMG:hover{
+  -moz-opacity: 0.80;
+  opacity: 0.80;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=80);
+}
+#quicktabs-que_es_baloto_ ~ .item-list {
+  position: absolute;
+  bottom: 0px;
+  left: 400px;
+}
+#quicktabs-que_es_baloto_ ~ .item-list ul{
+  margin: 0px;
+}
+#quicktabs-que_es_baloto_ ~ .item-list ul li{
+  margin: 0px;
+  display: inline-block;
+  list-style: none;
+  *display: inline;
+  zoom:1;
+}
+#quicktabs-que_es_baloto_ ~ .item-list ul li a{
+  display: block;
+  height: 26px;
+  width: 26px;
+}
+#quicktabs-que_es_baloto_ ~ .item-list ul li.first{
+  width: 26px;
+  height: 26px;
+  background: URL('../images/anterior.png') center center no-repeat;
+}
+#quicktabs-que_es_baloto_ ~ .item-list ul li.first:hover{
+  background: URL('../images/anterior-hover.png') center center no-repeat;
+}
+#quicktabs-que_es_baloto_ ~ .item-list ul li.last{
+  width: 26px;
+  height: 26px;
+  background: URL('../images/siguiente.png') center center no-repeat;
+}
+#quicktabs-que_es_baloto_ ~ .item-list ul li.last:hover {
+  background: URL('../images/siguiente-hover.png') center center no-repeat;
+}
+/*inputstyle*/
+.webform-component {
+  position: relative;
+}
+.webform-component label {
+  position: absolute;
+  height: 29px;
+  line-height: 31px;
+  cursor: text;
+  left: 10px;
+  font-family: Arial;
+  color: #939393;
+  font-weight: lighter;
+  font-size: 85%;
+}
+
+.webform-component input {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #e7e7e7;
+  border: 0;
+  padding-left: 10px;
+  width: 260px;
+  height: 29px;
+  line-height: 29px;
+}
+.webform-component textarea {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #e7e7e7;
+  border: 0;
+  width: 270px;
+}
+.webform-component input:focus {
+  border: 0;
+  outline: none;
+}
+.webform-client-form input[type=submit] {
+  color: white;
+  background: url('../images/submit.png') center center no-repeat;
+  border: 0px;
+  width: 92px;
+  height: 32px;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 100%;
+  text-transform: uppercase;
+}
+.webform-client-form .form-actions {
+  width: 270px;
+  text-align: right;
+}
+
+.node-webform .group-left {
+  width: 370px;
+}
+.node-webform .group-right {
+  width: 280px;
+  float: right;
+}
+.node-webform .field-name-logos-contacto {
+  margin-top: 70px;
+}
+/* Preguntas frecuentes */
+.view-preguntas-frecuentes {
+  font-family: Myriad Pro;
+  font-size: 80%;
+}
+.view-preguntas-frecuentes .views-field-title{
+  height: 27px;
+  line-height: 27px;
+  /*background: #8a0d10;*/
+  background: white;
+  border: 0px;
+}
+.view-preguntas-frecuentes .views-field-title.ui-state-active {
+  background: #fff200;
+}
+.view-preguntas-frecuentes .views-field-title a {
+  font-family: Myriad Pro;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 0px;
+  vertical-align: middle;
+  /*color: white;*/
+  color: black;
+  padding-left: 40px;
+  background: URL('../images/afaq.png') right center no-repeat;
+  margin-right: 10px;
+  display: inline-block;
+	*display:inline;
+	width:600px;
+}
+.view-preguntas-frecuentes .views-field-title.ui-state-active a{
+  color: #8a0d10;
+  background: URL('../images/afaq-focus.png') right center no-repeat;
+}
+.view-preguntas-frecuentes .views-field-title .ui-icon {
+  display: inline;
+  background: URL('../images/faq.png') center center no-repeat;
+  height: 12px;
+  width: 12px;
+  top: 15px;
+  left: 13px;
+}
+.view-preguntas-frecuentes .views-field-title.ui-state-active .ui-icon {
+  background: URL('../images/faq-focus.png') center center no-repeat;
+}
+.view-preguntas-frecuentes .ui-accordion-content {
+  /*background: #eab6b7;
+  border: #f18687 solid 2px;
+  color: #3b3b3b;*/
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px;
+  height: 300px;
+}
+.view-preguntas-frecuentes .ui-accordion-content .views-field-body {
+   font-family: Myriad Pro;
+   font-size: 15px;
+   font-weight: normal;
+   background: URL('../images/faq-content.png') bottom right no-repeat;
+   text-align: justify;
+}
+ul.quicktabs-tabs.quicktabs-style-navlist li.active a {
+  font-weight: normal;
+}
+
+
+.region.region-content{
+  position: relative;
+}
+.s-arriba{
+  width: 31px;
+  height: 12px;
+  position: absolute;
+  left: 20px;
+  top: -12px;
+  background: URL('../images/arriba-cont.png') center bottom;
+  display: none;
+}
+.s-abajo{
+  display: none;
+  width: 31px;
+  height: 12px;
+  position: absolute;
+  left: 20px;
+  bottom: -12px;
+  background: URL('../images/abajo-cont.png') center top;
+}
+.s-centro{
+  display: none;
+  height: 31px;
+  width: 12px;
+  position: absolute;
+  left: -12px;
+  bottom: 50px;
+  background: URL('../images/center.png') center center;
+}
+.s-top{
+  width: 83px;
+  height: 112px;
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+  background: URL('../images/boton-subir.png') center center;
+  display: none;
+  cursor: pointer;
+  -moz-opacity: 0.70;
+  opacity: 0.70;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+}
+.s-top:hover{
+  -moz-opacity: 1;
+  opacity: 1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);
+}
+#t-numeros-jugados-revancha > *,
+#t-numeros-jugados > * {
+  display: inline-block;
+  zoom:1;
+  width: 105px;
+  *display: inline;
+}
+.quicktabs-tabpage > .item-list {
+  display: none;
+}
+p a {
+  font-family: CalibriBold;
+  color: #FFF200 !important;
+}
+.views_slideshow_controls_text span:hover {
+  -moz-opacity: 0.70;
+  opacity: 0.70;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+}
+
+.views-slideshow-controls-bottom {
+  text-align: center;
+}
+.views-slideshow-pager-fields > *{
+  display: inline-block;
+  margin: 0px 7px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.views-slideshow-pager-fields > *:hover,
+.views-slideshow-pager-fields > .active{
+  color: #FFF200;
+}
+#baloto-puntos-venta-importacion-form-busqueda > div > * {
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+  margin: 0px;
+  *display: inline;
+}
+
+#baloto-puntos-venta-importacion-form-busqueda label {
+  color: white;
+}
+
+#baloto-puntos-venta-importacion-form-busqueda .form-actions {
+  margin-top: 30px;
+}
+
+#quicktabs-tabpage-navegacion_internas_baloto-9 .group-left .field-name-body{
+  padding-right: 30px;
+}
+
+#quicktabs-tabpage-navegacion_internas_baloto-9 .group-right{
+  display: none;
+}
+
+#views_slideshow_cycle_main_terminos_uso-comojugar .views-field.views-field-field-image .field-content{
+  text-align: center;
+}
+/*tabla*/
+#d-mensaje,
+#d-mensaje-2,
+#d-mensaje_revancha {
+  width: 450px;
+  margin: 30px auto;
+}
+#d-mensaje_revancha  .s-ganadores,
+#d-mensaje .s-ganadores,
+#d-mensaje-2 .s-ganadores{
+  text-align: center;
+  font-family: CalibriBold;
+  font-weight: bold;
+  font-size: 25px;
+}
+#d-mensaje_revancha .s-encabtab,
+#d-mensaje  .s-encabtab,
+#d-mensaje-2  .s-encabtab {
+  font-family: CalibriBold;
+  font-weight: bold;
+  font-size: 18px;
+  background: #1e7ec6;
+  overflow: auto;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#d-mensaje_revancha .first div,
+#d-mensaje_revancha .second div,
+#d-mensaje_revancha .last div,
+#d-mensaje_revancha  .s-encabtab div,
+#d-mensaje .first div,
+#d-mensaje .second div,
+#d-mensaje .last div,
+#d-mensaje  .s-encabtab div,
+#d-mensaje-2 .first div,
+#d-mensaje-2 .second div,
+#d-mensaje-2 .last div,
+#d-mensaje-2  .s-encabtab div {
+  float: left;
+  padding: 8px;
+}
+#d-mensaje_revancha .last,
+#d-mensaje_revancha .first,
+#d-mensaje .last,
+#d-mensaje .first,
+#d-mensaje-2 .last,
+#d-mensaje-2 .first {
+  overflow: auto;
+  background: #f5f5f5;
+  border-bottom: solid 1px #e0e0e0;
+  color: #808080;
+}
+#d-mensaje_revancha .last, 
+#d-mensaje .last, 
+#d-mensaje-2 .last {
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#d-mensaje_revancha .second, 
+#d-mensaje .second, 
+#d-mensaje-2 .second {
+  overflow: auto;
+  background: #e7e7e7;
+  border-top: solid 1px #fafafa;
+  color: #808080;
+}
+#d-mensaje_revancha .content, 
+#d-mensaje .content, 
+#d-mensaje-2 .content{
+  width: 100%;
+  background: URL('../images/TABLE.png') top center no-repeat;
+  display: block;
+  padding-top: 9px;
+  margin-top: 5px;
+
+}
+#d-mensaje_revancha .first div:first-child,
+#d-mensaje_revancha .second div:first-child,
+#d-mensaje_revancha .last div:first-child,
+#d-mensaje .first div:first-child,
+#d-mensaje .second div:first-child,
+#d-mensaje .last div:first-child,
+#d-mensaje-2 .first div:first-child,
+#d-mensaje-2 .second div:first-child,
+#d-mensaje-2 .last div:first-child  {
+  font-weight: bold;
+}
+
+#-baloto-consulta-numeros-sorteos-form .form-actions.form-wrapper{
+  position: absolute;
+  top: -23px;
+  margin-left: 350px;
+}
+#footer-copy a{
+  display: inline-block;
+  height: 17px;
+}
+#footer-copy a:hover{
+  border-bottom: solid 1px white;
+}
+
+.block-baloto-consulta-numeros-sorteos{
+  position: relative;
+}
+
+.osmplayer-default-teaser-image img{
+	display:block !important;
+}
+.minplayer-default-preview img {
+	display:none !important;
+}
+
+ .block-baloto-puntos-venta-importacion > h2{
+   color: #FFF200;
+  font-size: 300%;
+  padding-top: 9px;
+ }
+
+#pre-content .block-block {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#texture-content-wrapper {
+  background-image: url('../images/fondo-textura.png');
+}
+
+body.front #top {
+  height: 630px;
+  width: 100%;
+}
+
+body #top {
+  height: 126px;
+}
+
+#content-wrapper {
+  background: URL("../images/border-menu.png") no-repeat top center;
+  position: relative;
+  overflow: visible;
+  padding-top: 71px;
+  width: 100%;
+}
+#content-wrapper #texture-content-wrapper > * {
+  width: 1015px;
+  margin: auto;
+}
+#content-wrapper #texture-content-wrapper > #footer-log {
+  margin-top: 90px;
+  width: 100%;
+}
+#content-wrapper #texture-content-wrapper > #footer {
+  width: 100%;
+  background: URL('../images/precontent.png') center center repeat-y;
+}
+#content-wrapper #texture-content-wrapper > #footer-copy {
+  margin-top: 10px;
+}
+#content-wrapper #texture-content-wrapper > #footer .region-footer{
+  padding: 25px 0px;
+  width: 1000px;
+  margin:auto;
+  overflow: auto;
+}
+
+#d-mensaje_revancha .s-segundo,
+#d-mensaje .s-segundo,
+#d-mensaje-2 .s-segundo,
+#d-mensaje_revancha .s-primero,
+#d-mensaje .s-primero,
+#d-mensaje-2 .s-primero {
+	width:84px;
+}
+#d-mensaje_revancha .s-cuarto,
+#d-mensaje .s-cuarto,
+#d-mensaje-2 .s-cuarto,
+#d-mensaje_revancha .s-tercero,
+#d-mensaje .s-tercero,
+#d-mensaje-2 .s-tercero {
+	width:105px;
+}
+#views_slideshow_cycle_main_como_se_hace_un_sorteo-como_se_hace_sorteo .views-field-body p {
+	width:500px;
+}
+.link-historico{
+	display:block;
+font-family: CalibriBold;
+font-size: 130%;
+color: #FFF200;
+-moz-opacity: 0.70;
+opacity: 0.70;
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+}
+
+.link-historico:hover{
+-moz-opacity: 1;
+opacity: 1;
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);
+}
+.view-historico-de-resultados .field-name-title,
+.view-historico-de-resultados .field-name-title *,
+.view-historico-de-resultados .field-name-historico,
+.view-historico-de-resultados .field-name-historico *{
+	display:inline;
+}
+.view-historico-de-resultados .field-name-historico {
+margin: 0px;
+font-family: CalibriBold;
+font-size: 300%;
+margin-top: 10px;
+margin-bottom: 15px;
+color: #FFF200;
+}
+
+.view-historico-de-resultados table{
+	margin:auto;
+}
+.view-historico-de-resultados table tr{
+overflow: auto;
+background: whiteSmoke;
+border-bottom: solid 1px #E0E0E0;
+color: gray;
+}
+.view-historico-de-resultados table tr:nth-child(2n){
+background: #E7E7E7;
+border-top: solid 1px #FAFAFA;
+color: gray;
+}
+.view-historico-de-resultados table h2{
+	margin:0px;
+	font-family: CalibriBold;
+font-weight: bold;
+font-size: 18px;
+background: #1E7EC6;
+color:#fff;
+}
+.view-historico-de-resultados table strong {
+	display: block;
+	background: #1E7EC6;
+	color:#fff;
+	padding: 0px 10px;
+}
+
+
+
+
+
+/*Styles for videos*/
+
+
+.view-videos .views-row{
+  width: 180px;
+  height: 180px;
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
+}
+
+.view-videos .views-row .views-field-title {
+  top: 0px;
+  position: absolute;
+  background: url('../images/bkg-videos.png');
+  display: block;
+  height: 160px;
+  width: 160px;
+  line-height: 180px;
+  padding: 10px;
+}
+
+.view-videos .views-row .views-field-title .field-content{
+  line-height: 15px;
+  display: inline-block;
+}
+
+.view-videos .views-row .views-field-title:hover{
+  display: none;
+}
+
+.view-videos .views-row:hover .views-field-title{
+  display: none;
+}
+
+.view-videos .pager li{
+  color: #FFF200;
+  margin: 0px;
+  padding: 5px;
+}
+
+.view-videos .pager li a{
+  color: #fff;
+}
+.view-videos .pager li.pager-first,
+.view-videos .pager li.pager-last{
+  display: none;
+}
+
+.view-videos .pager li.pager-next{
+  width: 26px;
+  height: 26px;
+  background: url(../images/siguiente.png) center center no-repeat;
+  zoom: 1;
+}
+.view-videos .pager li.pager-next:hover{
+  background: url(../images/siguiente-hover.png) center center no-repeat;
+}
+.view-videos .pager li.pager-previous a,
+.view-videos .pager li.pager-next a{
+  opacity: 0;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
+
+.view-videos .pager li.pager-previous{
+  width: 26px;
+  height: 26px;
+  background: url(../images/anterior.png) center center no-repeat;
+  zoom: 1
+}
+
+.view-videos .pager li.pager-previous:hover{
+  background: url(../images/anterior-hover.png) center center no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

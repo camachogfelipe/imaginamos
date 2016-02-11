@@ -1,0 +1,598 @@
+/* CSS Document */
+
+.containertabs {
+position:relative;
+	width: 895px;
+	margin-top: 60px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+ul.tabs {
+	margin: 0;
+	margin-left:10px;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 42px;	
+	width: 100%;
+	font-family: "Arial Narrow";
+	font-size: 13px;
+
+	font-weight:bold;
+	
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 42px;
+	line-height: 31px;
+	border-left: none;
+	margin-bottom: -1px;
+	margin-right:5px;
+	overflow: hidden;
+	position: relative;
+	background-image: url(../images/bgboton.png);
+	background-repeat: repeat-x;
+	font-weight:bold;
+	color: #0459F;
+}
+
+
+
+ul.tabs li a {
+	text-decoration: none;
+	color: #04519F;	
+	display: block;
+	font-size: 1.2em;
+	padding: 0 20px;	
+	outline: none;
+	font-weight:bold;
+}
+ul.tabs li a:hover {
+	background-image: url(images/bgtabs_contenthover.jpg);
+	background-repeat: repeat-x;
+color: #04519F;	
+	font-weight:bold;
+	border-left:#999999;
+	border-right:#999999;
+}	
+	
+html ul.tabs li.active  {
+	background-image: url(../images/bgbotonhover.png);
+	background-repeat: repeat-x;
+	font-weight:bold;
+	font-family: "Arial Narrow";
+color: #04519F;
+
+}
+.tab_container {
+	border: 1px solid #999;
+	border-top: none;
+	clear: both;
+	float: left; 
+	width: 100%;
+	padding:20px;
+	height:auto;	
+	background: #fff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10x;
+	
+	
+
+}
+.tab_content {
+	padding: 20px;
+	width: 865px;
+	font-size: 14px;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	color: #333333;
+	text-align:justify;
+}
+.tab_content h2 {
+	font-weight: normal;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #004892;
+	font-size: 1.8em;
+	color:#004892;
+}
+.tab_content h3 {
+	color: #004892;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #333333;
+	font-size: 20px;
+	
+}
+.tab_content h3 a{
+	color: #004892;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #333333;
+	font-size: 15px;
+	
+}
+.tab_content img {
+	float: left;
+	margin: 0 10px 10px 0;
+	
+	padding: 5px;
+}
+
+.selectimg {
+
+	border: 1px solid #333333;
+
+}
+#contdata {
+float:left;
+width:231px;
+margin-left:10px;
+margin-right:20px;
+height:205px;
+
+}
+
+#contdata_der {
+float:left;
+width:200px;
+margin-left:10px;
+margin-right:20px;
+height:205px;
+
+}
+
+
+#bt_der {
+	float:left;
+	width:240px;
+	padding-left:30px;
+	margin-left:10px;
+	margin-right:20px;
+	margin-bottom:10px;
+	height:29px;
+	background-image: url(images/bgcolder_tabs.jpg);
+	background-repeat: no-repeat;
+}
+
+
+#col1  {
+	float:left;
+	width:400px;
+	height:420px;
+	padding-top:10px;	
+
+}
+
+#col01  {
+	float:left;
+	width:980px;
+	height:520px;
+	padding-top:10px;	
+
+}
+
+#col02  {
+	float:left;
+	width:350px;
+	height:420px;
+	padding-top:10px;	
+
+}
+
+#col2  {
+float:left;
+width:390px;
+padding-left:20px;
+}
+
+
+#col3  {
+	float:left;
+	width:400px;
+	height:420px;
+	padding-top:10px;	
+
+}
+
+
+
+#imageproc {
+float:left;
+width:350px;
+margin-left:20px;
+margin-top:15px;
+}
+
+
+
+
+#icondescargar {
+	float:left;
+	width:160px;
+	height:86px;	
+	margin-top:15px;
+	font-family: "Lucida Sans Unicode";
+	font-size: 16px;
+	line-height: 20px;
+	color: #26558D;
+	padding-top:10px;
+	padding-left:80px;
+	padding-right:45px;
+	background-image: url(../images/bgdescargar.png);
+	background-repeat: no-repeat;
+	text-align:center
+}
+#icondescargar  a {
+font-size: 16px;
+line-height: 20px;
+color: #26558D;
+text-decoration:none;
+}
+#icondescargar  a:hover {
+font-size: 16px;
+line-height: 20px;
+color: #666666;
+text-decoration:none;
+}
+#icondescargar  a:active {
+font-size: 16px;
+line-height: 20px;
+color: #26558D;
+text-decoration:none;
+}
+
+
+
+
+
+
+
+
+#icondescargardoc {
+	float:left;
+	width:160px;
+	height:86px;	
+	margin-top:15px;
+	font-family: "Lucida Sans Unicode";
+	font-size: 16px;
+	line-height: 20px;
+	color: #26558D;
+	padding-top:10px;
+	padding-left:80px;
+	padding-right:45px;
+	background-image: url(../images/bgdesccarta.png);
+	background-repeat: no-repeat;
+	text-align:center
+}
+#icondescargardoc  a {
+font-size: 16px;
+line-height: 20px;
+color: #26558D;
+text-decoration:none;
+}
+#icondescargardoc  a:hover {
+font-size: 16px;
+line-height: 20px;
+color: #666666;
+text-decoration:none;
+}
+#icondescargardoc a:active {
+font-size: 16px;
+line-height: 20px;
+color: #26558D;
+text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#colum1 {
+	float:left;
+	width:980px;
+	padding-left:10px;
+	
+
+}
+
+
+
+
+#cont_videohome {
+
+width:450px;
+height:212px;
+
+
+	
+
+}
+
+
+
+
+
+
+
+
+#cont_vids {
+
+width:450px;
+	background-image: url(../images/bgpanelvid.png);
+	background-repeat: no-repeat;
+	height: 104px;
+	background-position: right;	
+
+}
+
+
+#cont_vids a:hover {
+
+border: 1px solid #333333;
+
+}
+
+
+#cont_vids a:active {
+
+border: 1px solid #333333;
+
+}
+
+
+#min_vid_1 {
+	float:left;	
+	margin-top:8px;
+	width:50px;
+	height:50px;	
+	margin-right:47px;
+}
+
+#min_vid_1 a:hover {
+	border: 1px solid #333333;
+}
+
+
+#min_vid_1 a:active {
+	border: 1px solid #333333;
+}
+
+
+#min_vid_3 {
+	float:left;
+	
+	margin-top:8px;
+	width:50px;
+	height:50px;		
+	margin-right:47px;
+}
+
+#min_vid_2 {
+	float:left;
+	
+	margin-top:8px;
+	width:50px;
+	height:50px;
+	margin-right:47px;
+}
+
+
+#img_vid {
+
+	width:58px;
+
+	
+}
+
+
+
+
+
+
+
+#btver {
+margin: 0;
+padding: 0;
+width: 59px;
+height: 17px;
+text-align: center;
+background: url("../images/btver.png") 0 0 no-repeat;
+}
+ 
+#btver  a {
+padding-top: 6px;
+width: 100%;
+height: 100%;
+display: block;
+overflow: hidden;
+font-family: "AvantGarde-Book";
+	font-size: 18px;
+	color: #ECF0F6;
+	font-weight: normal;
+text-decoration: none;
+background: url("../images/btver.png") 0 0 no-repeat;
+}
+ 
+#btver  a:hover {
+background-position: -59px 0;
+font-family: "AvantGarde-Book";
+	font-size: 18px;
+	color: #ECF0F6;
+	font-weight: normal;
+	
+}
+
+#btver  :active {
+background-position: -118px 0;
+font-family: "AvantGarde-Book";
+	font-size: 18px;
+	color: #ECF0F6;
+	font-weight: normal;
+	
+}
+
+
+
+#marcofichas {
+	float:left;
+	width:268px;
+	height:228px;	
+	margin-top:15px;
+	font-family: "Lucida Sans Unicode";
+	font-size: 14px;
+	line-height: 20px;
+	color: #26558D;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	background-image: url(../images/bgferias.png);
+	background-repeat: no-repeat;
+	text-align:center
+}
+
+
+#imgferia {
+float:left;
+width:240px;
+height:120px;
+margin-bottom:20px;
+}
+
+#textferia {
+	float:left;
+	width:240px;
+	height:25px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	color: #26558D;
+}
+#textferia a {
+		font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #26558D;
+	text-decoration:none;
+}
+
+#textferia a:hover {
+		font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #26558D;
+	text-decoration:none;
+}
+#textferia a:active {
+		font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #666666;
+	text-decoration:none;
+}
+
+
+
+
+
+#bt1{
+	float:right;
+	margin: 0;
+	padding: 0;
+	width: 87px;
+	height: 31px;
+	text-align: left;
+	background-image: url(../images/btregresar.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+} 
+#bt1  a {
+padding-top: 0px;
+width: 100%;
+height: 100%;
+display: block;
+overflow: hidden;
+font-family: "Times New Roman", Times, serif;
+font-size: 14px;
+color: ffffff;
+font-weight: normal;
+text-decoration: none;
+background: url("../images/bgregresar.png") 0 0 no-repeat;
+} 
+#bt1  a:hover {
+background-position: -87px 0;
+font-family: "Times New Roman", Times, serif;
+font-size: 14px;
+color: ffffff;
+font-weight: normal;
+
+}
+#bt1  :active {
+background-position: -174px 0;
+font-family: "Times New Roman", Times, serif;
+font-size: 14px;
+color: ffffff;
+font-weight: normal;
+}
+
+
+
+#bttabmas {
+position:absolute;
+width:120px;
+
+	margin:-32767px -125px 0px 0px;
+	background-image: url(../images/bgbotonmas.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+
+.subtitentabs {
+font-weight:bold;
+font-size:16px;
+color:#004892;
+
+
+}
+
+
+
+
+
+
+
+
+#textocent {
+width:830px;
+
+text-align:justify;
+
+}
+
+
+
+

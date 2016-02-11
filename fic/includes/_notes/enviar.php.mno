@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_correo" value="name:config_id;datatype:int,name:config_date;datatype:datetime,name:config_path;datatype:string,name:config_web;datatype:string,name:config_mail_remitent;datatype:string,name:config_company;datatype:string" />
+</info>

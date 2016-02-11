@@ -1,0 +1,261 @@
+#fila_panel2 {
+	width:800px;
+	position:relative;
+	margin:auto;
+	padding-left:20px;
+	padding-top:28px;
+}
+#contcaj_imgpanel {
+
+	width:171px;
+
+	height:62px;
+
+	margin-right:25px;
+
+	float:left;
+
+}
+
+
+
+#contcaj_imgpanel2 {
+
+	width:171px;
+
+	height:62px;
+
+	margin-right:2px;
+
+	float:left;
+
+}
+
+
+
+#caj_imgpanel {
+
+	width:191px;
+
+	float:left;
+
+}
+
+
+
+#caj_imgpanel2 {
+
+	width:174px;
+
+	float:left;
+
+}
+
+
+
+#caj_imgpane3 {
+
+	width:198px;
+
+	float:left;
+
+}
+
+
+
+#caj_imgpanel4 {
+
+	width:228px;
+
+	float:left;
+
+}
+
+	
+
+#envpasarelalogos {
+
+	margin:auto;
+
+	width:920px;
+
+	height:152px;
+
+}
+
+
+
+.stepcarousel{
+	position: relative; /*leave this value alone*/
+	width:900px; /*Width of Carousel Viewer itself*/
+	height: 360px; /*Height should enough to fit largest content's height*/
+}
+
+
+
+.stepcarousel .belt{
+
+	position: absolute; /*leave this value alone*/
+
+	left: 0px;
+
+	top: 0;
+
+}
+
+
+
+.stepcarousel .panel{
+
+	float: left; /*leave this value alone*/
+
+	overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+
+	left: 0px;
+
+	width: 910px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+
+}
+
+
+
+td img {display: block;}td img {display: block;}
+
+#thumb2colserv {
+	position:relative;
+	width:200px;
+	height:100%;
+	float:left;
+}
+
+	
+
+#textosdetalleserv {
+
+	float:left;
+
+	width:170px;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-weight: normal;
+
+	font-size: 12px;
+
+	color: #555555;
+
+	text-align:left;
+
+	padding-left:0px;
+
+	padding-top:15px;
+
+	overflow:auto;
+
+	
+
+}
+
+	
+
+#textosdetalleserv h1 {
+
+	font-family: DINRegular;
+
+	font-weight: bold;
+
+	font-size: 22px;
+
+	color: #3F88C1;
+
+	overflow:auto;
+
+}
+
+
+
+#btmodprod1 {
+	width: 170px;
+	height: 153px;
+	text-align: center;
+}
+
+
+
+#btmodprod1 a {
+
+	padding-top:3px;
+
+	width: 100%;
+
+	height: 100%;
+
+	display: block;
+
+	overflow: hidden;
+
+	font-family: DINMedium;
+
+	color: #ffffff;
+
+	font-weight: normal;
+
+	font-size: 16px;
+
+	text-decoration: none;
+
+} 
+
+
+
+#btmodprod1 a:hover #textothumb {
+
+	color: #ffffff;
+
+	font-weight: normal;
+
+	font-size: 16px;
+
+	background:url(../images/bgvelo_over.png);
+
+}
+
+
+
+#btmodprod1 a:active {
+
+	background-position: -340px 0;
+
+	color: #ffffff;
+
+	font-weight: normal;
+
+	font-size: 16px;
+
+}
+
+
+
+#textothumb {
+
+	width: 170px;
+
+	font-family: DINMedium;
+
+	color: #ffffff;
+
+	font-weight: normal;
+
+	font-size: 16px;
+
+	position:absolute;
+
+	bottom:0;
+
+	text-align:center;
+
+	background:url(../images/bgvelo.png);
+
+	padding:5px 0;
+
+}

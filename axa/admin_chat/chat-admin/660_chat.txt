@@ -1,0 +1,6 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>52452956</span><br/>Buenas Tardes ~2012-08-03 15:18:28
+<span class='usuario'>52452956</span><br/>quisiera cotizar un seguro de viaje para Canada ~2012-08-03 15:19:03
+<span class='usuario'>52452956</span><br/>bueeenas ~2012-08-03 15:21:33
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

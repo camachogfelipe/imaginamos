@@ -1,0 +1,233 @@
+
+
+a:focus{
+	outline: none;
+}
+#main_nav li{
+	float: left;
+	height: 40px;
+}
+a.flipv{
+	font-size: 20px;
+	font-family: helvetica;
+	overflow: auto;
+	display: block;
+	color: #fff;
+	font-weight: 600;
+	text-decoration: none;
+}
+#content_wrapper{
+	width: 1000px;
+	margin: 0px auto;
+	display: block;
+	position: relative;
+}
+#main_nav{
+	position: absolute;
+	top: 376px;
+	left: 323px;
+}
+.jScrollPaneContainer {
+overflow:hidden;
+position:relative;
+z-index:1;
+}
+.jScrollPaneTrack {
+background: url(../images/scroll.png) repeat-y;
+cursor:pointer;
+height:100%;
+position:absolute;
+right:0;
+top:0;
+}
+.jScrollPaneDrag {
+background: url(../images/scroll_space_boy.png) no-repeat;
+cursor:pointer;
+overflow:hidden;
+position:absolute;
+}
+.jScrollPaneDragTop {
+left:0;
+overflow:hidden;
+position:absolute;
+top:0;
+}
+.jScrollPaneDragBottom {
+bottom:0;
+left:0;
+overflow:hidden;
+position:absolute;
+}
+a.jScrollArrowUp {
+display:block;
+height:20px;
+overflow:hidden;
+position:absolute;
+right:1px;
+text-indent:-2000px;
+top:0;
+z-index:1;
+}
+a.jScrollArrowUp:hover {
+}
+a.jScrollArrowDown {
+bottom:0;
+display:block;
+height:20px;
+overflow:hidden;
+position:absolute;
+right:1px;
+text-indent:-2000px;
+z-index:1;
+}
+a.jScrollArrowDown:hover {
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+}
+a.jScrollArrowUp {
+	background: url(../images/toparrow.png) no-repeat;
+}
+a.jScrollArrowDown {
+	background: url(../images/bottarrow.png) no-repeat;
+}
+.subpage .holder{
+	position: absolute;
+	top: 130px;
+	left: 260px;
+	text-align: left;
+}
+p{
+	padding: 0px 0px 10px;
+	color: #636363;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: left;
+}
+.scroll_pane{
+	height:334px;
+	overflow:auto;
+	width:520px;
+	text-align:justify;
+}
+#pane{
+	height: 334px;
+	text-align:justify;
+}
+#reboot{
+	position: absolute;
+	color:#fff;
+	top: 489px;
+	left: 373px;
+	width: 104px;
+	height: 43px;
+	display: block;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 18px 0px 0px;
+}
+#reboot:hover{
+	background: url(../images/reboot.png);
+}
+#roebot_eyes{
+	display: none;
+	width: 252px;
+	height: 120px;
+	position: absolute;
+	top: 58px;
+	left: 371px;
+}
+#contact{
+	width: 300px;
+	float: left;
+}
+#contact dt{
+	width: 100px;
+	float: left;
+	clear: both;
+	padding: 10px 0px 0px;
+	color: #EF0A00;
+	font-weight: 600;
+	font-size: 16px;
+}
+#contact dd{
+	width: 200px;
+	float: left;
+	padding: 10px 0px 0px;
+}
+#contact input{
+	width: 150px;
+}
+#contact textarea{
+	width: 150px;
+	height: 70px;
+}
+#floating_dog{
+	position: absolute;
+	top: 196px;
+	left: 546px;
+}
+.wpcf7-not-valid-tip-no-ajax{
+	width: 200px;
+	display: block;
+	color: #CE0921;
+	font-size: 10px;
+}
+.wpcf7-response-output{
+	font-weight: 600;
+	font-size: 15px;
+	padding: 10px;
+	color: #FDCF00;
+}
+#pane h2{
+	color: #FDCF00;
+	font-size: 18px;
+	font-weight: 600;
+	width: 95%;
+}
+#pane .post{
+	width: 95%;
+}
+h3.storytitle{
+	margin: 5px 0px 0px 10px;
+	border-bottom: 1px solid #CE0921;
+	font-size: 15px;
+	font-weight: 600;
+}
+.storycontent{
+	margin: 5px 0px 0px 10px;
+}
+.meta{
+	margin: 5px 0px 0px 10px;
+}
+a{
+	color: #CE0921;
+	text-decoration: none;
+}
+a:hover{
+	color: #73C6F1;
+}
+#menu{
+	float: left;
+	width: 110px;
+	padding: 0px 0px 0px 10px;
+}
+#left_pane{
+	float: left;
+	width: 320px;
+}
+#menu li{
+	color: #FDCF00;
+	font-weight: 600;
+	font-size: 18px;
+	padding: 0px 0px 20px;
+}
+#menu li ul{
+	padding: 5px 0px 0px;
+}
+#menu li li{
+	margin: 0px 0px 0px 10px;
+	font-weight: 500;
+	font-size: 12px;
+	padding: 0px;
+}

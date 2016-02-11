@@ -1,0 +1,7 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de Digiware. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>heidy</span><br/>buenas tardes ~2011-08-18 21:33:00
+<span class='admin'>Agente</span><br/>hola ~2011-08-18 21:33:15
+<span class='usuario'>heidy</span><br/>quiero saber cu&aacute;l es el n&uacute;mero de Digiware~2011-08-18 21:33:44
+<span class='admin'>Agente</span><br/>5082220~2011-08-18 21:33:53
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

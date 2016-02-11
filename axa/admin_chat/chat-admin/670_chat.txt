@@ -1,0 +1,13 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>52258866</span><br/>que pena se desconecto al cambiar de pagina ~2012-08-08 12:17:45
+<span class='admin'>Agente</span><br/>Buenas Tardes Sr. Carlos. Gracias por su espera (dty) ~2012-08-08 12:18:48
+<span class='admin'>Agente</span><br/>Con respecto a su solicitud (DTY) ~2012-08-08 12:19:03
+<span class='admin'>Agente</span><br/>El plan de coberturta de asistencia por 15 d&iacute;as para Europa con cobertura minima EUR 30.000  es USD$88, precio que puede encontrar en nuestra pagina~2012-08-08 12:20:55
+<span class='usuario'>52258866</span><br/>q plan es ese? donde lo encuentro en la pagina? ~2012-08-08 12:21:40
+<span class='usuario'>52258866</span><br/>es que veo que tienen varios y no se cual es el que usted me dice.....ese si es el mas barato? ~2012-08-08 12:23:04
+<span class='admin'>Agente</span><br/>lo consigue en la siguiente direcci&oacute;n: WWW.tarjetasdeasistencia-axa.com    (dty) ~2012-08-08 12:23:13
+<span class='usuario'>52258866</span><br/>en esa pagina estoy ~2012-08-08 12:23:27
+<span class='usuario'>52258866</span><br/>pero no se que plan es para poder comprarlo ~2012-08-08 12:23:36
+<span class='admin'>Agente</span><br/>Por favor ingresar donde dice OTROS PLANES   (dty) ~2012-08-08 12:25:03
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

@@ -1,0 +1,14 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Francisco Javier </span>bUENOS DIAS  
+<span class='admin'>Carlos Cano</span>Buenos dias Francisco , mi nombre es Carlos  Cano en que puedo ayudarlo
+<span class='usuario'>Francisco Javier </span>Carlos tu me puedes ayudar es que la tarjeta que me dio feval se me perdio me puedes ayudar como hango para la entrega de una nueva  
+<span class='admin'>Carlos Cano</span>Con mucho gusto. 
+<span class='admin'>Carlos Cano</span>por favor me recurda su codigo 
+<span class='usuario'>Francisco Javier </span>30060 
+<span class='admin'>Carlos Cano</span>Don Francisco, ya se bloqueo la tarjeta en Feval, de la misma forma es necesario que sea bloqueada en el banco de Bogita, por favor comuniquese a la linea 332000 y el sistema le dara una opcion opcion para el bloqueo, si le solicitan el numero del plastico es este:4239492850023070, igualmente se debe realizar la denuncia por la pedida , este tramite se realiza en la pagina de la policia nacional 
+<span class='admin'>Carlos Cano</span>Le confirmo el numero del banco de bogota 3320000 
+<span class='admin'>Carlos Cano</span>Si desea la expeduicion de un nuevo plastico se debe realizar una consignacion en cualquiera delas cuentas de Feval por valor de $5.000, y enviarnos el soporte 
+<span class='usuario'>Francisco Javier </span>y cuando me hacen entrega de este documento 
+<span class='admin'>Carlos Cano</span>La expedicion del nuevo plastico, se realiza  en aproximadamente una semana. 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

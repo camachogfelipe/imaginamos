@@ -1,0 +1,11 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>52423703</span><br/>tengo problemas para comprar el plan clasico que debo hacer~2012-08-13 15:24:56
+<span class='usuario'>52423703</span><br/>Buenas Tardes ~2012-08-13 15:25:29
+<span class='admin'>Agente</span><br/>Muy Buenas Tardes, con mucho gusto. Me podr&iacute;a indicar &iquest;Cu&aacute;l es el problema que presenta?. (DAT)~2012-08-13 15:29:39
+<span class='usuario'>52423703</span><br/>El  problema es que hago click en comprar y no me da la opci&oacute;n de compra que debo hacer?~2012-08-13 15:33:04
+<span class='admin'>Agente</span><br/>Le comento, al usted hacer click en comprar le deber&iacute;a aparecer una nueva pantalla donde usted es dirigido a pagosonline. &iquest;Logra usted ver esa p&aacute;gina?.   ~2012-08-13 15:36:23
+<span class='usuario'>52423703</span><br/>no~2012-08-13 15:36:37
+<span class='usuario'>52423703</span><br/>que hago?~2012-08-13 15:37:21
+<span class='admin'>Agente</span><br/>Entiendo. En la parte superior de la ventana &iquest;Logra usted ver un aviso que dice que el bloqueo de ventanas emergentes se encuentra bloqueado?. Debemos verificar si hay alg&uacute;n tipo de restricci&oacute;n.~2012-08-13 15:39:03
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

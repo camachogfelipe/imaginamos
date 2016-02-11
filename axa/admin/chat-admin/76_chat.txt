@@ -1,0 +1,10 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>LUZ STELLA MURILLO</span>HOLA..........
+<span class='admin'>Carlos Cano</span>Buenas tardes Stella  
+<span class='admin'>Carlos Cano</span>Buenas tardes Stella 
+<span class='admin'>Carlos Cano</span>En quele puedo ayudar 
+<span class='usuario'>LUZ STELLA MURILLO</span>HOLA CARLOS BUEN D&Iacute;A PARA TI, NO, NI&Ntilde;O YA LLAME PARA HACER LA CONSULTA, PERO, SI ME GUATAR&Iacute;A QUE ME COLABORES CON UNA TARJETA QUE SE SOLICITO POR REPOSICI&Oacute;N A NOMBRE DE JUAN PABLO ESCOBAR, YA QUE EL MANEJA LA N&Oacute;MINA POR LA CUENTA DE FEVAL DIARIO. YA ME HAB&Iacute;A DICHO CAROLINA QUE LA MAQUINA ESTABA DA&Ntilde;ADA, TE DEJO ESTA ENCOMIENDA POR FIS. MUCHAS GRACIAS
+<span class='admin'>Carlos Cano</span>Stella, ya estoy confirando con tesoreria, yase resolvio el problema de la impresora, te cuento en un momento 
+<span class='usuario'>LUZ STELLA MURILLO</span>OK
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

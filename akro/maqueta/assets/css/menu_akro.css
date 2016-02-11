@@ -1,0 +1,52 @@
+/*---MENU RESPONSIVO---*/
+
+.cont_btresponsivo{
+  background-color: #2E2E5E;
+  display: none;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.bt_menuresponsivo {
+    display: block;
+    float: left;
+    height: 31px;
+    margin: 4px;
+    width: 35px;
+}
+
+.sidr ul li a{
+  text-transform: uppercase;
+}
+
+.sidr ul li:hover, .sidr ul li.active{
+  background-color: #2E2E5E;
+}
+
+.sidr ul li:hover a, .sidr ul li.active a{
+  box-shadow: none;
+  color: #fff;
+}
+
+.sidr ul li:hover ul li{
+  background-color: #F8F8F8;
+}
+
+.sidr ul li:hover ul li a{
+  color: #333333;
+}
+
+.sidr ul li ul li:hover, .sidr ul li ul li.active{
+  background-color: #2E2E5E;
+}
+
+.sidr ul li ul li:hover a, .sidr ul li ul li.active a{
+  box-shadow: none;
+  color: #fff;
+}
+
+.sidr ul li ul{
+  display: none;
+}
+
+

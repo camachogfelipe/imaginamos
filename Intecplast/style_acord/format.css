@@ -1,0 +1,58 @@
+/***********************************************************************************************************************
+DOCUMENT: style/format.css
+DEVELOPED BY: Ryan Stemkoski
+COMPANY: Zipline Interactive
+EMAIL: ryan@gozipline.com
+PHONE: 509-321-2849
+DATE: 2/26/2009
+DESCRIPTION: This document contains the structural formatting files for the accordion style menu.
+************************************************************************************************************************/
+#wrapperacord {
+	width: 965px;
+	float:left;
+
+	}
+
+.accordionButton {
+font-family: 'FranklinGothicMediumCondRg';
+font-size:22px;
+color:#ffffff;
+width: 965px;
+float: left;
+padding-left:20px;
+padding-top:6px;
+_float: none;  /* Float works in all browsers but IE6 */
+border-bottom: 1px solid #FFFFFF;
+cursor: pointer;
+background-image: url(../images/barrtitulo1.png);
+background-repeat: no-repeat;
+height:38px;
+margin-bottom:2px;
+text-shadow: 1px 1px 1px #666666;
+}
+	
+.accordionContent {	
+font-family: 'TrebuchetMSRegular';
+font-size:14px;
+color:#000000;
+	width: 965px;
+	
+	float: left;
+	_float: none; /* Float works in all browsers but IE6 */
+
+
+	}
+	
+/***********************************************************************************************************************
+ EXTRA STYLES ADDED FOR MOUSEOVER / ACTIVE EVENTS
+************************************************************************************************************************/
+
+.on {
+	background-image: url(../images/barrtitulo3.png);
+	background-repeat: no-repeat;
+	}
+	
+.over {
+	background-image: url(../images/barrtitulo2.png);
+	background-repeat: no-repeat;
+	}

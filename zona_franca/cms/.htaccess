@@ -1,0 +1,32 @@
+# Enable mod_rewrite
+RewriteEngine On
+# Redirigimos al sitio sin www
+#RewriteCond %{HTTP_HOST} ^www.misitio.co [NC]
+#RewriteRule ^(.*)$ http://misitio.co/$1 [L,R=301]
+
+# Especificamoe el folder donde existe la aplicacion
+RewriteBase /cms/
+#RewriteBase /
+
+# Sobreescribimos las subsecciones del sitio
+RewriteRule ^s/(.*)/ss/(.*)/t/(.*)/f/([0-9]+)/?$ index.php?seccion=$1&subseccion=$2&titulo=$3&id=$4 [L]
+RewriteRule ^s/(.*)/ss/(.*)/p/([0-9]+)/?$ index.php?seccion=$1&subseccion=$2&page=$3 [L]
+RewriteRule ^s/(.*)/ss/(.*)/i/(.*)/?$ index.php?seccion=$1&subseccion=$2&id=$3 [L]
+RewriteRule ^s/(.*)/ss/(.*)/?$ index.php?seccion=$1&subseccion=$2 [L]
+
+# Sobreescribimos las secciones del sitio
+RewriteRule ^s/(.*)/t/(.*)/v/([0-9]+)?$ index.php?seccion=$1&titulo=$2&id=$3 [L]
+RewriteRule ^s/(.*)/p/([0-9]+)/?$ index.php?seccion=$1&page=$2 [L]
+RewriteRule ^s/(.*)/f/(.*)/?$ index.php?seccion=$1&filtro=$2 [L]
+RewriteRule ^s/(.*)/i/(.*)/?$ index.php?seccion=$1&id=$2 [L]
+RewriteRule ^s/(.*)/?$ index.php?seccion=$1 [L]
+
+RewriteRule ^/?$ index.php?seccion=inicio [L]
+
+# Set the default 500 page for Apache errors
+ErrorDocument 500 /zonaFranca/cms/index.php?seccion=error_500&popup
+
+# Set the default 404 page
+ErrorDocument 404 /zonaFranca/cms/index.php?seccion=error_404&popup
+
+#IndexIgnore *.html *.php *.flv *.htaccess

@@ -1,0 +1,11 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='admin'>Carlos Cano</span>Buenos dias Juan Carlos, mi nombre es Carlos Cano , en que puedo ayudarlo 
+<span class='usuario'>juan carlos</span>buenos dias CARLOS , mi pregunta es ,durante la relacion como asociado , e pedido para prestamo de vivienda aprox,,7.millones  hace mas de 10 a&ntilde;os , en ese tiempo no cubria si no  para comprar escasamente un lote , mi pregunta concreta es,  todavia me prestan para vivienda pues yo actualmente no tengo y pago arriendo
+<span class='admin'>Carlos Cano</span>Juan Carlos ,por favor me recurda su codigo por favor 
+<span class='usuario'>juan carlos</span>68071
+<span class='admin'>Carlos Cano</span>Juan Carlos , permitame un momento 
+<span class='admin'>Carlos Cano</span>Juan Carlos ,estoy confirmando cuantos salarios utilizo en ese momento y cuantos tendria disponibles ahora , la consulta va a tomar un par de minutos ,desea continuar en linea  o prefiere que le enviemos la respuesta a su correo electronico 
+<span class='usuario'>juan carlos</span>Claro, Carlos me puede enviar la respuesta al correo , le egradesco me pudiera averiguar opciones para adquirir vivienda , por el fondo o mencinar mi caso gracias. 
+<span class='admin'>Carlos Cano</span>Con mucho gusto Juan Carlos, en el transcurso del d&iacute;a se enviara la informacion requeria a su correo electronico. 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

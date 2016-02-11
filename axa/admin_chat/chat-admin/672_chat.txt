@@ -1,0 +1,6 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>52258866</span><br/>ok listo, el problema es que cada vez que ambio de pagina se me desconecta el chat, si quiere digame el nombre del plan y yo directamente lo cotizo ~2012-08-08 12:27:15
+<span class='admin'>Agente</span><br/>El nombre del plan es: PLAN CLASICO  (dty) ~2012-08-08 12:28:53
+<span class='usuario'>52258866</span><br/>muchas gracias ~2012-08-08 12:30:36
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

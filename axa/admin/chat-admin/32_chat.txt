@@ -1,0 +1,13 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>JORGE ENRIQUE GARCIA FRANCO</span>Buenos d&iacute;as, a trav&eacute;s de este medio puedo saber el saldo por pagar de un Blackberry y un seguro de veh&iacute;culo? Mi c&oacute;digo es 55629. Gracias
+<span class='admin'>Carlos Cano</span>Buenos dias Jorge 
+<span class='admin'>Carlos Cano</span>Claro que si, permitame un momento por favor 
+<span class='admin'>Carlos Cano</span>Plan de datos $12.450, Movistar $31.145 y el seguro del veh&iacute;culo $32.705 y $ 3.960 de la poliza gap
+<span class='admin'>Carlos Cano</span>Cuenteme Don Jorge , alguna otra inquietud 
+<span class='usuario'>JORGE ENRIQUE GARCIA FRANCO</span>Gracias, que pena pero mi inquietud es el saldo pendiente que debo, es decir, cuanto me queda por pagar del telefono y cuanto me queda por pagar el seguro de mi vehiculo.
+<span class='admin'>Carlos Cano</span>Se&ntilde;or Garcia, permitame un momento por favor 
+<span class='admin'>Carlos Cano</span>Se&ntilde;or Garcia:Tanto el plan de datos como la liena de movistar tienen vigencia hasta abril del 2011, el valor hasta esa fecha es $654.525 que corresponde a $187.350 del plan de datos y $467.175 de la linea. 
+<span class='admin'>Carlos Cano</span>En cuanto  a la poliza todoriesgo, la vigencia inicio en septiembre y el valor es de $752.215 y la poliza gap el valor es de $91.080 
+<span class='admin'>Carlos Cano</span>la informaci&oacute;n suministrada fue clara y resolvi&oacute; su inquietud? 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

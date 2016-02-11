@@ -1,0 +1,5 @@
+name = Baloto Consulta Numeros Sorteos
+description = Formulario para consultar numeros sobre sorteos anteriores
+core = 7.x
+package = Baloto
+dependencies[] = baloto_sorteos_anteriores

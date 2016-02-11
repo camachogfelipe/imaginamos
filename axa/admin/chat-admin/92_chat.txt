@@ -1,0 +1,10 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='admin'>Carlos Cano</span>Buenas tardes sr. Leon, mi nombre es Carlos Cano, en que puedo ayudarlo 
+<span class='usuario'>julian alberto leon giraldo</span>buenas tardes 
+<span class='usuario'>julian alberto leon giraldo</span>buenas tardes
+<span class='usuario'>julian alberto leon giraldo</span>buenas tardes
+<span class='admin'>Carlos Cano</span>Buenas tardes 
+<span class='usuario'>julian alberto leon giraldo</span>buenastardes necesito un favor un prestamo por 2000000urgente
+<span class='admin'>Carlos Cano</span>por favor me recuerda el codigo 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

@@ -1,0 +1,9 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Ana Lina Velandia</span>Buenos d&iacute;as 
+<span class='usuario'>Ana Lina Velandia</span>quisiera validar si puedo acceder a un credito de vehiculo 
+<span class='usuario'>Ana Lina Velandia</span>mi c&oacute;digo es 19707 
+<span class='usuario'>Ana Lina Velandia</span>..... 
+<span class='usuario'>Ana Lina Velandia</span>hay alguien ahi? 
+<span class='usuario'>Ana Lina Velandia</span>Buenas 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

@@ -1,0 +1,5 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea del Juego ganador. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Usuario1215</span><br/>sdasd ~2012-05-30 10:42:10
+<span class='usuario'>Usuario1215</span><br/>hola ~2012-05-30 10:44:10
+<span class='usuario'>Usuario1215</span><br/>hay alguien ~2012-05-30 10:44:17
+<span class='admin'>Agente</span><br/>hola sip ~2012-05-30 10:45:00

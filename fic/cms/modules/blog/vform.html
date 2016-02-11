@@ -1,0 +1,43 @@
+<form id="validation"> 
+                                
+
+                                      <div class="section ">
+                                      <label> Input<small>Texto adicional</small></label>   
+                                      <div> 
+                                      <input type="text" class="validate[required] large" name="f_required" id="f_required">
+                                      </div>
+                                      <div> 
+                                        <input type="text" name="menu" id="menu"  class="validate[required,custom[onlyLetterSp]] small" />
+                                         <span class="f_help">Solo se permiten letras</span>
+                                      </div>
+                                     </div>
+                                      <div class="section ">
+                                      <label> Email</label>   
+                                      <div> 
+                                      <input type="text" class="validate[required,custom[email]]  large" name="e_required" id="e_required">
+                                      </div>
+                                      </div>
+                                      
+                                      <div class="section">
+                                      <label> Login  / Creación de cuentas  <small>Texto adicional</small></label>
+                                      <div>
+                                      <input type="text"  name="username" id="username"  class="validate[required,minSize[3],maxSize[20],] medium"  /><label>Usuario</label>
+                                      <span class="f_help">Es necesario que tenga entre 3 y 20 caracteres.</span> 
+                                      </div>
+                                      
+                                      <div>
+                                      <input type="password"  class="validate[required,minSize[3]] medium"  name="password" id="password"  /><label>Clave</label>
+                                      </div>
+                                      <div>
+                                      <input type="password" class="validate[required,equals[password]] medium"  name="passwordCon" id="passwordCon"  /><label>Confirmar clave</label>
+
+                                      </div>
+                                      </div>
+                                      <div class="section ">
+                                      <label> Validar URL<small>Texto adicional</small></label>   
+                                      <div> 
+                                      <input type="text" class="validate[required,custom[url]]  large" name="url_required" id="url_required" value="http://">
+                                      </div>
+                                      </div>
+                         
+                                </form>

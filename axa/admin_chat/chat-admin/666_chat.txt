@@ -1,0 +1,12 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>41624403</span><br/>Buenas tardes, Solicito que por favor se me env&iacute;e el manual de autorizaci&oacute;n y restricciones que tiene el seguro que adquirir con ustedes. Gracias y atenta a su informaci&oacute;n~2012-08-06 16:01:22
+<span class='admin'>Agente</span><br/>muy buenas tardes, nos solicita la informacion de cobertura (oms) ~2012-08-06 16:02:39
+<span class='usuario'>41624403</span><br/>mas que las coberturas las restricciones ~2012-08-06 16:03:54
+<span class='usuario'>41624403</span><br/>un documento, donde vea a lo que tengo y no derecho ~2012-08-06 16:04:12
+<span class='admin'>Agente</span><br/>claro que si, por favor enviar copia de su tarjte de asistencia y su cedula al correo electronico certificiones.viaje@axa-assistance.com.co, y por este mismo medio se le haria el envio de la certificacion en unas 24 horas habiles despues ~2012-08-06 16:05:54
+<span class='usuario'>41624403</span><br/>no pero yo ya tengo el certificado, quiero saber donde puedo encontrar el contarto completo ~2012-08-06 16:08:54
+<span class='usuario'>41624403</span><br/>contrato ~2012-08-06 16:09:04
+<span class='usuario'>41624403</span><br/>en la certificaci&oacute;n dice que en la pagina web encuentro mayor informaci&oacute;n pero no se exactamente a donde dirigirme ~2012-08-06 16:09:35
+<span class='admin'>Agente</span><br/>correcto, para recibir la informacion detallada debe hacerse el envio de la documentacion antes mencionada (oms)  ~2012-08-06 16:12:33
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

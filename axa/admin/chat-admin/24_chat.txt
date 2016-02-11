@@ -1,0 +1,7 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='admin'>Oscar Hernandez</span>Buenas Tardes, Don Palabras. G&oacute;zame la Salchicha 
+<span class='usuario'>Don Palabras</span>No, no, no..... 
+<span class='admin'>Oscar Hernandez</span>Que si, hombre,m que si 
+<span class='usuario'>Don Palabras</span>Pero que 
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

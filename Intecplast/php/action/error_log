@@ -1,0 +1,57 @@
+[12-Jun-2012 11:32:22] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/salde/public_html/intecplast/php/entities/cotizacion.php:79) in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 76
+[12-Jun-2012 11:35:13] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/salde/public_html/intecplast/php/entities/cotizacion.php:79) in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 76
+[12-Jun-2012 11:38:00] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/salde/public_html/intecplast/php/entities/cotizacion.php:79) in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 76
+[12-Jun-2012 11:38:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/salde/public_html/intecplast/php/dao/clienteDAO.php:39) in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 76
+[12-Jun-2012 09:51:09] PHP Parse error:  syntax error, unexpected $end in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 122
+[12-Jun-2012 11:54:01] PHP Fatal error:  Using $this when not in object context in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 139
+[12-Jun-2012 11:55:46] PHP Warning:  require_once(./php/clases.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/salde/public_html/intecplast/lib_carrito.php on line 8
+[12-Jun-2012 11:55:46] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required './php/clases.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/salde/public_html/intecplast/lib_carrito.php on line 8
+[12-Jun-2012 11:58:57] PHP Fatal error:  Using $this when not in object context in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 143
+[12-Jun-2012 12:01:20] PHP Fatal error:  Using $this when not in object context in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 143
+[12-Jun-2012 12:01:23] PHP Fatal error:  Using $this when not in object context in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 143
+[12-Jun-2012 12:01:23] PHP Fatal error:  Using $this when not in object context in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 143
+[12-Jun-2012 12:01:24] PHP Fatal error:  Using $this when not in object context in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 143
+[12-Jun-2012 12:01:25] PHP Fatal error:  Using $this when not in object context in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 143
+[12-Jun-2012 12:01:25] PHP Fatal error:  Using $this when not in object context in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 143
+[12-Jun-2012 12:04:05] PHP Warning:  include(./../../../lib_carrito.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 120
+[12-Jun-2012 12:04:05] PHP Warning:  include(./../../../lib_carrito.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 120
+[12-Jun-2012 12:04:05] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening './../../../lib_carrito.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 120
+[12-Jun-2012 12:04:05] PHP Fatal error:  Using $this when not in object context in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 143
+[12-Jun-2012 12:04:22] PHP Fatal error:  Using $this when not in object context in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 143
+[08-Jul-2012 17:53:39] PHP Fatal error:  Call to undefined method promocion::getEnlace_e() in /home/salde/public_html/intecplast/php/dao/promocionDAO.php on line 212
+[08-Jul-2012 17:55:11] PHP Fatal error:  Call to undefined method promocion::getEnlace_e() in /home/salde/public_html/intecplast/php/dao/promocionDAO.php on line 212
+[08-Jul-2012 19:01:18] PHP Fatal error:  Call to undefined method promocionDAO::setDestacada() in /home/salde/public_html/intecplast/php/action/promocionPrincipal.php on line 30
+[08-Jul-2012 19:02:35] PHP Fatal error:  Call to undefined method promocionDAO::setDestacada() in /home/salde/public_html/intecplast/php/action/promocionPrincipal.php on line 30
+[08-Jul-2012 19:03:58] PHP Fatal error:  Call to undefined method promocionDAO::setDestacada() in /home/salde/public_html/intecplast/php/action/promocionPrincipal.php on line 29
+[08-Jul-2012 19:05:01] PHP Fatal error:  Call to a member function setDestacada() on a non-object in /home/salde/public_html/intecplast/php/action/promocionPrincipal.php on line 29
+[08-Jul-2012 19:06:19] PHP Fatal error:  Call to a member function setDestacada() on a non-object in /home/salde/public_html/intecplast/php/action/promocionPrincipal.php on line 29
+[08-Jul-2012 19:07:37] PHP Fatal error:  Call to a member function setDestacada() on a non-object in /home/salde/public_html/intecplast/php/action/promocionPrincipal.php on line 29
+[15-Jul-2012 16:57:21] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/salde/public_html/intecplast/php/action/convocatoriaAdd.php on line 16
+[16-Jul-2012 19:23:47] PHP Fatal error:  Call to a member function getId() on a non-object in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 96
+[16-Jul-2012 19:25:22] PHP Fatal error:  Call to a member function getId() on a non-object in /home/salde/public_html/intecplast/php/action/procesarDatosCliente.php on line 97
+[03-Oct-2012 11:12:28] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[03-Oct-2012 11:12:57] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[03-Oct-2012 11:14:17] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[03-Oct-2012 11:14:51] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[03-Oct-2012 11:17:54] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[03-Oct-2012 11:21:49] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[03-Oct-2012 11:40:49] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[03-Oct-2012 11:49:31] PHP Fatal error:  Call to a member function getClienteId() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/procesarDatosCliente.php on line 188
+[03-Oct-2012 11:50:07] PHP Fatal error:  Call to a member function getClienteId() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/procesarDatosCliente.php on line 188
+[03-Oct-2012 11:50:25] PHP Fatal error:  Call to a member function getClienteId() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/procesarDatosCliente.php on line 188
+[03-Oct-2012 11:50:42] PHP Fatal error:  Call to a member function getClienteId() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/procesarDatosCliente.php on line 188
+[03-Oct-2012 13:46:04] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[03-Oct-2012 13:53:18] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[03-Oct-2012 13:53:35] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[23-Oct-2012 09:59:57] PHP Fatal error:  Call to a member function getClienteId() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/procesarDatosCliente.php on line 188
+[16-Nov-2012 17:52:43] PHP Fatal error:  Call to a member function getClienteId() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/procesarDatosCliente.php on line 188
+[05-Dec-2012 07:43:22] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[05-Dec-2012 07:43:26] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[05-Dec-2012 07:43:29] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[05-Dec-2012 07:43:35] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[05-Dec-2012 07:43:43] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[05-Dec-2012 07:44:49] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[05-Dec-2012 07:46:52] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[05-Dec-2012 14:01:07] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[05-Dec-2012 14:01:13] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoAdd.php on line 46
+[05-Dec-2012 14:55:18] PHP Fatal error:  Call to a member function getid() on a non-object in /home/siempre/public_html/intecplast_eq1/php/action/productoEdit.php on line 46

@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* Jose Montenegro */
+
+/*emergente*/
+
+
+.vacio{
+	height:30px;
+	width:1000px;
+}
+
+.fondo-emergente {
+	background:url(../images/direct/bg-emergente.png) repeat scroll 0 0 transparent;
+    display: block;
+    height: 100%;
+    left: 0;
+    margin: 0 auto;
+	overflow:auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.contenedoremergente {
+    background-color: #FFFFFF;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    width: 1000px;
+}
+
+.contenedoremergente img{
+	width:70%
+}
+
+#cerrar {
+    background-image: url("../images/direct/cerrar.png");
+    cursor: pointer;
+    height: 23px;
+    margin-right: 60px;
+    margin-top: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 22px;
+}
+
+
+.boton_enviar{
+	background-image: url(../img/fondo_boton.png);
+	cursor:pointer;
+	height:31px;
+	float:right;
+	margin-top:10px;
+	width:117px;
+}
+
+.titulo_emergente {
+    color: #003399;
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.tabla_emergente{
+    border: thin solid #CCCCCC;
+    display: block;
+    margin: 20px auto 0;
+}
+
+
+.tabla_arriba_blanco_emergente, .titulos_clasico_emergente{
+    border: thin solid #CCC;
+    color:#039;
+    font-size: 0.8em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.titulos_clasico_emergente{
+	background-color:#039;
+	color:#FFF;
+}
+
+
+
+/*id*/
+
+
+#tabla_clasico, #tabla_europa, #tabla_economico, #tabla_mundial, #tabla_multiviajes, #tabla_larga, #tabla_estudiantil, #tabla_golden, #tabla_america, #tabla_schengen{
+	display:none;
+}
+
+
+.contenedor_contenido table tbody tr#clasico td, .contenedor_contenido table tbody tr#europa td, .contenedor_contenido table tbody tr#economico td, .contenedor_contenido table tbody tr#mundial td, .contenedor_contenido table tbody tr#multiviajes td, .contenedor_contenido table tbody tr#larga td, .contenedor_contenido table tbody tr#estudiantil td, .contenedor_contenido table tbody tr#golden td, .contenedor_contenido table tbody tr#america td, .contenedor_contenido table tbody tr#schengen td{
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+		
+

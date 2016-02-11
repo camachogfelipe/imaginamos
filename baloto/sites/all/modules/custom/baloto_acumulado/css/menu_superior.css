@@ -1,0 +1,89 @@
+#block-baloto-acumulado-menu-superior-quicktabs {
+	position: absolute;
+	top: 34px;
+	left: 0px;
+	width: 100%;
+}
+
+#block-baloto-acumulado-menu-superior-quicktabs .content { 
+	position: relative;
+	height: 37px;
+	width: 976px;
+	margin: 0px auto;
+}
+#block-baloto-acumulado-menu-superior-quicktabs .prev-tab { 
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	background: url(../imagenes/btn-prev-red.png) no-repeat;
+	top: 8px;
+	left: -83px;
+}
+#block-baloto-acumulado-menu-superior-quicktabs .next-tab { 
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	background: url(../imagenes/btn-next-red.png) no-repeat;
+	top: 8px;
+	right: -60px;
+}
+#block-baloto-acumulado-menu-superior-quicktabs .prev-tab.active { 
+	background: url(../imagenes/btn-prev-blue.png) no-repeat;
+}
+#block-baloto-acumulado-menu-superior-quicktabs .next-tab.active { 
+	background: url(../imagenes/btn-next-blue.png) no-repeat;
+}
+
+#tabs-navegacion-h {
+	overflow: hidden;
+	white-space: nowrap;
+	height: 37px;
+	width: 1000px;
+	margin: 0px auto;
+	padding:0px;
+}
+#tabs-navegacion-h .tab-navegacion-h {
+	list-style: none;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	width: 130px;	
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+	border-right: solid 1px #FF000B;
+	border-left: solid 1px #880006;
+	white-space: nowrap;
+	padding: 0px 10px;
+}
+#tabs-navegacion-h .tab-navegacion-h:hover {	
+	cursor: pointer;
+	color: #FFF200;
+}
+#tabs-navegacion-h .tab-navegacion-h.active {		
+	color: #FFF200;
+}
+#tabs-navegacion-h .tab-navegacion-h.first-tab {	
+	border-left: none;	
+}
+#tabs-navegacion-h .tab-navegacion-h.last-tab {	
+	border-right: none;	
+}
+#tabs-navegacion-h .tab-navegacion-h span {
+	line-height: normal;
+	display: inline-block;	
+	*display: inline;
+	zoom: 1;
+	white-space: normal;
+	text-shadow: -1px -1px 0px #880006;
+  filter: dropshadow(color=#880006, offx=-1, offy=-1);
+  font-weight: bold;
+	font-family: CalibriBold;
+	font-size: 13px;
+	height: 37px;
+}
+
+#tabs-navegacion-h .tab-navegacion-h:active span {
+	position: relative;
+	top: 1px;
+}

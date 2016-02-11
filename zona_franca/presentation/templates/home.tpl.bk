@@ -1,0 +1,466 @@
+{load_presentation_object filename="home" assign="obj"}
+<div class="banner">
+  <div>
+    <form action="">
+      <h1>Buscador de <span>Empleos</span></h1>
+      <h2>¡Encuentre las mejores ofertas aqu&iacute;!</h2>
+      <div class="clear espacio_en_blanco"></div>
+      <input type="text" placeholder="Palabra clave:">
+      <div class="clear espacio_en_blanco"></div>
+      <div class="cont_selecthome float_left">
+        <select class="select_dd" id="selecthome1" style="width:100%;">
+          <option value="">Fecha de publicaci&oacute;n:</option>
+          <option value="">Hoy</option>
+          <option value="">Esta Semana</option>
+          <option value="">Este Mes</option>
+          <option value="">Historial</option>
+        </select>
+      </div>
+      <div class="cont_selecthome float_right">
+        <select class="select_dd" id="selecthome2" style="width:100%;">
+          <option value="">Sector:</option>
+          <option value="">Lorem Ipsum Dolor</option>
+          <option value="">Lorem Ipsum Dolor</option>
+          <option value="">Lorem Ipsum Dolor</option>
+        </select>
+      </div>
+      <div class="clear espacio_en_blanco"></div>
+      <input class="bt_buscarinternas" type="submit" value="Buscar Empleo">
+    </form>
+    <div>
+      <span></span>
+      <ul>
+        <li>
+          <img src="{$obj->mSiteUrl}/images/banner01.jpg" height="373" width="612" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="ofertas">
+  <div>
+    <div class="ultimas">
+      <h1>&Uacute;ltimas<span> Ofertas</span></h1>
+      <h2>Adipiscing Eliter Nullam commodo</h2>
+      <div class="clear espacio_en_blancogrande"></div>
+      <ul id="slider1">
+        <li>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+        </li>
+        <li>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+        </li>
+        <li>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+        </li>
+        <li>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+        </li>
+        <li>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+          <div class="oferta">
+            <h1>12<span>SEP</span></h1>
+            <span></span>
+            <h2>Atem s.a.s<span>Set Un Perspiactis Atem</span></h2>
+            <span></span>
+            <p>At vero eos et accusamus et iusto odio dignissis ducimus qui</p>
+            <span></span>
+            <a class="popup" href="#oferta-detalle">Aplicar a la oferta</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="cargos">
+      <h1>Cargos con mayor <span>Oferta</span></h1>
+      <div class="cont_slider2">
+        <ul id="slider2">
+          <li>
+            <div class="cargo">
+              <h1>5<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">Ingeniero Industrial</a>
+            </div>
+            <div class="cargo">
+              <h1>10<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">Asesor Comercial</a>
+            </div>
+            <div class="cargo">
+              <h1>22<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">Ingeniero de Sistemas</a>
+            </div>
+            <div class="cargo">
+              <h1>6<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">Veterinario Agroupecuario</a>
+            </div>
+            <div class="cargo">
+              <h1>5<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">T&eacute;cnico El&eacute;ctrico</a>
+            </div>
+          </li>
+          <li>
+            <div class="cargo">
+              <h1>5<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum Dolor</a>
+            </div>
+            <div class="cargo">
+              <h1>10<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum</a>
+            </div>
+            <div class="cargo">
+              <h1>22<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum Dolor</a>
+            </div>
+            <div class="cargo">
+              <h1>6<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum</a>
+            </div>
+            <div class="cargo">
+              <h1>5<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum</a>
+            </div>
+          </li>
+          <li>
+            <div class="cargo">
+              <h1>5<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum Dolor</a>
+            </div>
+            <div class="cargo">
+              <h1>10<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum</a>
+            </div>
+            <div class="cargo">
+              <h1>22<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum Dolor</a>
+            </div>
+            <div class="cargo">
+              <h1>6<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum</a>
+            </div>
+            <div class="cargo">
+              <h1>5<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum</a>
+            </div>
+          </li>
+          <li>
+            <div class="cargo">
+              <h1>5<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum Dolor</a>
+            </div>
+            <div class="cargo">
+              <h1>10<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum</a>
+            </div>
+            <div class="cargo">
+              <h1>22<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum Dolor</a>
+            </div>
+            <div class="cargo">
+              <h1>6<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum</a>
+            </div>
+            <div class="cargo">
+              <h1>5<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum</a>
+            </div>
+          </li>
+          <li>
+            <div class="cargo">
+              <h1>5<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum Dolor</a>
+            </div>
+            <div class="cargo">
+              <h1>10<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum</a>
+            </div>
+            <div class="cargo">
+              <h1>22<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum Dolor</a>
+            </div>
+            <div class="cargo">
+              <h1>6<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum</a>
+            </div>
+            <div class="cargo">
+              <h1>5<span>ofertas</span></h1>
+              <a href="ofertas_publicadas.php">lorem ipsum</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="destacados">
+  <div>
+    <div><!-- 1 -->
+      <h1>Noticias<span></span></h1>
+      <ul id="noticias_home">
+      {section name=k loop=$obj->cData start=1 step=1}
+
+        <li>
+          {section name=a loop=$obj->cData start=$smarty.section.k.index step=1 max=1}
+
+          <img src="{$obj->mSiteUrl}/cms/files/articulos/art_img_{$obj->cData[a].fil_image}" height="218" width="191" alt="">
+          <h1>{$obj->cData[a].txt_titulo}</h1>
+          <h2>{$obj->cData[a].fec_creasi}</h2>
+          <p>{$obj->cData[a].descripcion}</p>
+          <a class="popup" href="#oferta-detalle" onclick="DetalleConsejo( '{$obj->cData[a].id}' );">M&aacute;s Informaci&oacute;n</a>
+          {/section}
+
+        </li>
+      {/section}
+
+
+
+      </ul>
+    </div>
+    <div>
+      <h1>Ciudades con<span>Mayor Oferta</span></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed eros venenatis nnc condimentum.</p>
+      <p>dolor sit amet, consectetur adipiscing.</p>
+      <ul>
+        <li><a href="ofertas_publicadas.php">Bogot&aacute;</a><span>5</span></li>
+        <li><a href="ofertas_publicadas.php">Cali</a><span>15</span></li>
+        <li><a href="ofertas_publicadas.php">Barranquilla</a><span>6</span></li>
+        <li><a href="ofertas_publicadas.php">Cartagena</a><span>10</span></li>
+        <!-- <li><a href="">Santa Marta</a><span>5</span></li> -->
+      </ul>
+    </div>
+    <div>
+      <h1>Responde<span>nuestra encuesta</span></h1>
+      <h2>¿Adipiscing Commodo elit nullam?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      <form action="" class="encuesta">
+        <p>
+          <input type="radio" name="data[radio]" value="option1" id="option1" class="cform">
+          <label for="option1" class="lblr">Excelente, sit elit</label>
+        </p>
+        <p>
+          <input type="radio" name="data[radio]" value="option2" id="option2" class="cform">
+          <label for="option2" class="lblr">Buena consecteur addel</label>
+        </p>
+        <p>
+          <input type="radio" name="data[radio]" value="option3" id="option3" class="cform">
+          <label for="option3" class="lblr">Regular</label>
+        </p>
+        <p>
+          <input type="radio" name="data[radio]" value="option4" id="option4" class="cform">
+          <label for="option4" class="lblr">Lorem ipsum dolor</label>
+        </p>
+        <div class="clear"></div>
+        <a>Votar</a>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="socios">
+  <div>
+    <div>
+      <h1>Nuestros<span>socios</span></h1>
+        <ul>
+          <li><a href="descripcion.php" style="background: url({$obj->mSiteUrl}/imgages/socios03.png);"></a></li>
+          <li><a href="descripcion.php" style="background: url({$obj->mSiteUrl}/imgages/socios02.png);"></a></li>
+          <li><a href="descripcion.php" style="background: url({$obj->mSiteUrl}/imgages/socios01.png);"></a></li>
+          <li><a href="descripcion.php" style="background: url({$obj->mSiteUrl}/imgages/socios04.png);"></a></li>
+          <li><a href="descripcion.php" style="background: url({$obj->mSiteUrl}/imgages/socios01.png);"></a></li>
+          <li><a href="descripcion.php" style="background: url({$obj->mSiteUrl}/imgages/socios02.png);"></a></li>
+          <li><a href="descripcion.php" style="background: url({$obj->mSiteUrl}/imgages/socios03.png);"></a></li>
+          <li><a href="descripcion.php" style="background: url({$obj->mSiteUrl}/imgages/socios04.png);"></a></li>
+        </ul>
+      </div>
+      <div>
+        <img src="{$obj->mSiteUrl}/images/img-facebook.png" height="147" width="222" alt="">
+        <a href="https://www.twitter.com" target="_blank"></a><!-- Twitter -->
+        <a href="https://www.facebook.com" target="_blank"></a><!-- Facebook -->
+      </div>
+    </div>
+  </div>
+
+
+<!-- POPUP OFERTAS -->
+<div id="oferta-detalle" style="display: none;">
+  <div class="cont_emergente" id="detalle_conse">
+    <h1 class="centrar_contenido">Lorem Ipsum Dolor Sit Amet</h1>
+    <div class="clear"></div>
+    <div class="sombra_division"></div>
+    <div class="row-fluid">
+      <div class="span4 noticias-detalle">
+        <img src="http://i.istockimg.com/file_thumbview_approve/14377944/2/stock-photo-14377944-four-business-people-with-puzzle.jpg" alt="">
+        <div class="clear espacio_en_blanco"></div>
+        <iframe width="200" height="170" src="http://www.youtube.com/embed/pN2Lkzqe8e0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="span8">
+        <h2>Lorem Ipsum Dolor</h2>
+        <div class="clear espacio_en_blanco"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis ornare ipsum. Sed lacinia interdum laoreet. Pellentesque et ornare mauris. Donec commodo condimentum interdum. Nunc sit amet orci vel eros facilisis placerat. Sed vulputate aliquam libero, quis adipiscing nisi placerat eu. Aenean erat ipsum, cursus sed eleifend non, fringilla ac ante. Pellentesque vitae pellentesque nunc. </p>
+      </div>
+    </div>
+  </div>
+</div>

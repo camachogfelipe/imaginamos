@@ -1,0 +1,6 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>56132146</span><br/>nvbmnbmnb ~2012-06-26 12:00:49
+<span class='usuario'>56132146</span><br/>mnkjhkl ~2012-06-26 12:05:27
+<span class='admin'>Agente</span><br/>hola tuuuuu (mab) ~2012-06-26 12:05:47
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

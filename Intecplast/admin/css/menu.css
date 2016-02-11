@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*p {
+  line-height: 1.5em;
+}*/
+#menu_marco{
+	border: 1px solid #ADB3B6;
+	width: 180px;
+	margin-right: 4px;
+}
+#menu_marco2{
+	border: 1px solid #FFFFFF;
+	width: 178px;
+}
+ul#menu, ul#menu ul {
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	width: 178px;
+	background-image: url(../imagenes/menu/fondo_menu.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-color: #CFD5D5;
+}
+.icono {
+	background-image: url(../imagenes/menu/vineta1.png);
+	background-repeat: no-repeat;
+	position:absolute;
+	height: 13px;
+	width: 12px;
+	left: 5px;
+}
+.icono2 {
+	background-image: url(../imagenes/menu/vineta2.png);
+	background-repeat: no-repeat;
+	position:absolute;
+	height: 13px;
+	width: 12px;
+	left: 5px;
+}
+ul#menu a {
+  display: block;
+  text-decoration: none; 	
+}
+ul#menu li {
+  margin: 0px;
+}
+
+ul#menu li a {
+	color: #000100;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	height: 28px;
+	_height: 20px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 24px;
+	display:block;
+}
+
+ul#menu li a:hover {
+	background-image: url(../imagenes/menu/menu_rollover.png);
+}
+ul#menu li a.active {
+	background-image: url(../imagenes/menu/menu_activo.png);
+}
+
+ul#menu li ul {
+	background-color: #F1F1F1;
+	background-image: url(../imagenes/menu/activo_sup.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+ul#menu li ul li a {
+	color: #424E5C;
+	padding-left: 14px;
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+	display: block;
+}
+
+ul#menu li ul li a:hover {
+	background: #D8E2EB;
+	padding-left: 14px;
+	color: #244A89;
+}
+ul#menu li ul li a:hover.first {
+	background-image: url(../imagenes/menu/activo_sup.png);
+	padding-left: 14px;
+	color: #244A89;
+	background-color: #D8E2EB;
+	background-repeat: no-repeat;
+	background-position: top;
+}

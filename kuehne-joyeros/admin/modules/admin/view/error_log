@@ -1,0 +1,28 @@
+[21-Jun-2012 09:09:00] PHP Warning:  Invalid argument supplied for foreach() in /home/empresat/public_html/cms/cms/modules/admin/model/tables.class.php on line 179
+[21-Jun-2012 09:09:01] PHP Warning:  Invalid argument supplied for foreach() in /home/empresat/public_html/cms/cms/modules/admin/model/tables.class.php on line 179
+[21-Jun-2012 09:09:32] PHP Warning:  Invalid argument supplied for foreach() in /home/empresat/public_html/cms/cms/modules/admin/model/tables.class.php on line 179
+[21-Jun-2012 09:10:39] PHP Warning:  Invalid argument supplied for foreach() in /home/empresat/public_html/cms/cms/modules/admin/model/tables.class.php on line 179
+[25-Jun-2012 10:33:24] PHP Warning:  Invalid argument supplied for foreach() in /home/mwns/public_html/cliente/cms/modules/admin/model/tables.class.php on line 179
+[25-Jun-2012 10:33:24] PHP Warning:  Invalid argument supplied for foreach() in /home/mwns/public_html/cliente/cms/modules/admin/model/tables.class.php on line 179
+[27-Jun-2012 10:49:45] PHP Warning:  Invalid argument supplied for foreach() in /home/mwns/public_html/cliente/cms/modules/admin/model/tables.class.php on line 179
+[27-Jun-2012 16:05:20] PHP Warning:  Invalid argument supplied for foreach() in /home/mwns/public_html/cliente/cms/modules/admin/model/tables.class.php on line 179
+[03-Jul-2012 14:34:24] PHP Warning:  Invalid argument supplied for foreach() in /home/mwns/public_html/cliente/cms/modules/admin/model/tables.class.php on line 179
+[03-Jul-2012 14:39:00] PHP Warning:  include(core/class/db.class.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mwns/public_html/cliente/cms/modules/admin/security/secure.php on line 11
+[03-Jul-2012 14:39:00] PHP Warning:  include(core/class/db.class.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/mwns/public_html/cliente/cms/modules/admin/security/secure.php on line 11
+[03-Jul-2012 14:39:00] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'core/class/db.class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mwns/public_html/cliente/cms/modules/admin/security/secure.php on line 11
+[03-Jul-2012 14:39:00] PHP Fatal error:  Class 'Database' not found in /home/mwns/public_html/cliente/cms/modules/admin/security/secure.php on line 12
+[03-Jul-2012 14:40:45] PHP Fatal error:  Cannot redeclare class Database in /home/mwns/public_html/cliente/cms/core/class/db.class.php on line 15
+[03-Jul-2012 14:40:55] PHP Fatal error:  Cannot redeclare class Database in /home/mwns/public_html/cliente/cms/core/class/db.class.php on line 15
+[03-Jul-2012 14:42:04] PHP Fatal error:  Cannot redeclare class Database in /home/mwns/public_html/cliente/cms/core/class/db.class.php on line 15
+[03-Jul-2012 15:19:52] PHP Fatal error:  Call to a member function registerFunction() on a non-object in /home/mwns/public_html/cliente/cms/modules/admin/model/xajax.php on line 347
+[03-Jul-2012 15:20:41] PHP Fatal error:  Call to a member function registerFunction() on a non-object in /home/mwns/public_html/cliente/cms/modules/admin/model/xajax.php on line 347
+[03-Jul-2012 15:20:46] PHP Fatal error:  Call to a member function registerFunction() on a non-object in /home/mwns/public_html/cliente/cms/modules/admin/model/xajax.php on line 347
+[03-Jul-2012 15:21:18] PHP Fatal error:  Call to a member function registerFunction() on a non-object in /home/mwns/public_html/cliente/cms/modules/admin/model/xajax.php on line 347
+[03-Jul-2012 15:21:20] PHP Fatal error:  Call to a member function registerFunction() on a non-object in /home/mwns/public_html/cliente/cms/modules/admin/model/xajax.php on line 347
+[03-Jul-2012 15:21:21] PHP Fatal error:  Call to a member function registerFunction() on a non-object in /home/mwns/public_html/cliente/cms/modules/admin/model/xajax.php on line 347
+[03-Jul-2012 15:21:21] PHP Fatal error:  Call to a member function registerFunction() on a non-object in /home/mwns/public_html/cliente/cms/modules/admin/model/xajax.php on line 347
+[03-Jul-2012 15:21:21] PHP Fatal error:  Call to a member function registerFunction() on a non-object in /home/mwns/public_html/cliente/cms/modules/admin/model/xajax.php on line 347
+[03-Jul-2012 15:28:06] PHP Fatal error:  Cannot redeclare class Database in /home/mwns/public_html/cliente/cms/core/class/db.class.php on line 15
+[03-Jul-2012 16:24:28] PHP Warning:  Invalid argument supplied for foreach() in /home/mwns/public_html/cliente/cms/modules/admin/model/tables.class.php on line 179
+[03-Jul-2012 16:24:29] PHP Warning:  Invalid argument supplied for foreach() in /home/mwns/public_html/cliente/cms/modules/admin/model/tables.class.php on line 179
+[03-Jul-2012 18:43:53] PHP Fatal error:  Cannot redeclare class Database in /home/mwns/public_html/cliente/cms/core/class/db.class.php on line 15

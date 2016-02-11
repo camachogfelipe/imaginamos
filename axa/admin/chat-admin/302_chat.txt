@@ -1,0 +1,8 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de Digiware. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Usuario3540</span><br/>hola ~2012-05-07 06:39:06
+<span class='admin'>Agente</span><br/>Buen dia  e~2012-05-07 06:39:20
+<span class='admin'>Agente</span><br/>n que le puedo colaborar ~2012-05-07 06:39:27
+<span class='admin'>Agente</span><br/>? ~2012-05-07 06:39:28
+<span class='usuario'>Usuario3540</span><br/>gracias mira es que he apostado una palitica y no me gane nada ~2012-05-07 06:39:40
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

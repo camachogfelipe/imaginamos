@@ -1,0 +1,7 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a de AXA. En un momento ser&aacute; atendido por un Agente<span>
+<span class='usuario'>1130678771</span><br/>Prueba~2012-07-27 12:28:10
+<span class='admin'>Agente</span><br/>Prueba 2~2012-07-27 12:28:21
+<span class='usuario'>1130678771</span><br/>1111~2012-07-27 12:28:29
+<span class='admin'>Agente</span><br/>2222~2012-07-27 12:28:35
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

@@ -1,0 +1,8 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>ca</span><br/>Holaaaaa ~2010-11-21 22:03:28
+<span class='admin'>Carlos Cano</span><br/>hola ~2010-11-21 22:03:41
+<span class='usuario'>ca</span><br/>porque no aparecera el letrerito? ~2010-11-21 22:03:53
+<span class='usuario'>ca</span><br/>mmm ya esta apareciendo, solo hay retrazo ~2010-11-21 22:04:02
+<span class='admin'>Carlos Cano</span><br/>si parece ser solo retrazo... ~2010-11-21 22:04:09
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

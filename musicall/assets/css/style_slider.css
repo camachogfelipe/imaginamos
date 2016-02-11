@@ -1,0 +1,32 @@
+
+
+/* Sudo Slider */
+#slider ul, #slider2 ul, #slider li, #slider2 li{margin:0;padding:0;list-style:none;position:relative;display:block;}
+/* Uncomment this if you wan't to only have 1 visible slide before the javascript kicks in. 
+#slider li {display:none;}	
+#slider li:first-child {display:block;}
+*/
+#slider, #slider2{
+	position:absolute;
+	top:90px;
+	left:143px;
+}
+#slider, #slider li, #slider2, #slider2 li {width:615px !important;overflow:hidden; min-height:200px;}
+/* // Sudo Slider */	
+/* Numeric Navigation */
+#slider li, #slider2 li{ padding-right:15px; height:auto;}
+.graphic, .prevBtn, .nextBtn{margin:0;padding:0;display:block;overflow:hidden;text-indent:-8000px;}
+
+.content_masinfo .prevBtn, .content_masinfo .nextBtn {position:absolute; display:block;width:75px;height:75px;position:absolute;left:290px; top:281px;z-index:10000000; background:url(../img/btns_slider.png); cursor:pointer;}	
+.nextBtn{left:540px !important;}														
+.nextBtn { background-position: top right !important}	
+
+.prevBtn:hover{
+	background-position:bottom left !important;
+}
+
+.nextBtn:hover{
+	background-position:bottom right !important;
+}
+
+.content_masinfo2 .prevBtn, .content_masinfo2 .nextBtn {position:absolute; display:block;width:75px;height:75px;position:absolute;left:290px; top:281px;z-index:10000000; background:url(../img/btns_slider_masinfo2.png); cursor:pointer;}

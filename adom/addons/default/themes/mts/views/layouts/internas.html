@@ -1,0 +1,21 @@
+<!-- content -->
+{{ theme:partial name="header" }}
+{{ theme:partial name="menu_internas" }}
+{{ theme:partial name="breadcrumbs" }}
+<section id="content">
+    <div class="interna-global">
+        <div class="conten-global">
+            <div class="breadcrumb fonregular">
+                {{ theme:partial name="breadcrumbs" }}
+                <div class="buscador">
+                    <input type="text" class="buscar" placeholder="Buscar...">
+                    <input type="submit" class="btnbuscar">
+                </div>
+            </div>
+            {{ template:body }}
+        </div>
+    </div>
+</section>
+{{ theme:partial name="footer" }}
+<!-- /content -->
+

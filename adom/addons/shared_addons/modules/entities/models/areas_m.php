@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * This is a sample module for PyroCMS
+ *
+ * @author 	Eduard Russy
+ * @website     http://www.imaginamos.com
+ * @package 	PyroCMS
+ * @subpackage 	Entities Module
+ */
+if (!defined('BASEPATH'))
+    exit('No direct script access allowed');
+
+class Areas_m extends MY_Model {
+
+    public function __construct() {
+        parent::__construct();
+    }
+
+    //create a new item
+    public function create($input) {
+        $to_insert = array(
+            'name' => $input['name'],
+            'slug' => $this->_check_slug(underscore($input['name']))
+        );
+
+       return $this->db->insert($this->_table, $to_insert);         
+    }
+
+    //make sure the slug is valid
+    public function _check_slug($slug) {
+        return preg_replace('/\s+/', '-', strtolower($slug));
+    }
+}

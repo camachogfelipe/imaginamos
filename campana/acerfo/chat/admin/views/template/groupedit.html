@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title><?php echo $_['ADMIN_SITE_TITLE']; ?> - <?php echo $_['ADMIN_USER_AND_GROUPS'] ?></title>
+  <meta name="description" content="" />
+  <meta name="generator" content="Studio 3 http://aptana.com/" />
+  <meta name="author" content="laptop" />
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<script src="js/cufon-yui.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="views/stylesheet/stylesheet.css" />
+	<script language="JavaScript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script src="js/AgencyFB_700.font.js" type="text/javascript"></script>
+		<script src="js/static.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			Cufon.replace('#topmenu a'); // Works without a selector engine
+			Cufon.replace('#logout_form,.head_talk, .static label,.l3, .static span');		
+			</script>
+	
+
+</head>
+
+<body>
+
+<?php include 'views/template/header.html'; ?>
+
+<div id="login_form"><div class="talking_area"><div class="head_talk"><?php echo $_['ADMIN_GROUP_EDIT']; ?></div>
+	
+	<div class="static">
+		
+		<?php if(empty($_GET['id'])) { ?>
+			
+			<span><?php echo $_['ADMIN_GROUP_NOT_FOUND']; ?></span>
+			
+			
+		<?php } else { ?>	
+		<form method="post" action="" id="form">
+	<label><?php echo $_['ADMIN_GROUP_TITLE']; ?></label> <input type="text" name="title" value="<?php if(isset($group)) echo $group->title; ?>" /> <span><?php if(isset($error[1])) echo $_['ADMIN_GROUP_EXIST']; ?> <?php if(isset($error[2])) echo $_['ADMIN_GROUP_TITLE_LENGTH']; ?></span> <br />
+
+	<label><?php echo $_['GROUP_EDIT_USERS']; ?></label><select name="users">
+		<option value="1" <?php if(isset($group->users) && $group->users == 1) echo 'selected="selected"'; ?>>Allow</option>
+		<option value="2" <?php if(isset($group->users) && $group->users == 0) echo 'selected="selected"'; ?>>Disallow</option>
+		</select><br />
+	<label><?php echo $_['GROUP_EDIT_BANNED']; ?></label><select name="banned">
+		<option value="1" <?php if(isset($group->banned) && $group->banned == 1) echo 'selected="selected"'; ?>>Allow</option>
+		<option value="9" <?php if(isset($group->banned) && $group->banned == 0) echo 'selected="selected"'; ?>>Disallow</option>
+		</select><br />
+	<label><?php echo $_['GROUP_EDIT_HISTORY']; ?></label><select name="history">
+		<option value="1" <?php if(isset($group->history) && $group->history == 1) echo 'selected="selected"'; ?>>Allow</option>
+		<option value="9" <?php if(isset($group->history) && $group->history == 0) echo 'selected="selected"'; ?>>Dissalow</option>
+		</select>
+	<br /><br />
+	<label></label><a class="l3" href="#"><?php echo $_['GROUP_EDIT_SUBMIT']; ?></a>
+	<p><label></label><span><?php if(isset($result) && !empty($result)) echo $_['GROUP_EDIT_SUCCESS']; ?></p>
+	<div class="c"></div>
+	</form>
+	<?php } ?>	
+	</div>
+</div>
+</div>
+
+</body>
+</html>

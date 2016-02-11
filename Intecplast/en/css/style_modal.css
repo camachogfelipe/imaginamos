@@ -1,0 +1,51 @@
+/* CSS Document */
+
+        a.back{
+            width:256px;
+            height:73px;
+            position:fixed;
+            bottom:15px;
+            right:15px;
+            background:#fff url(../images/codrops_back.png) no-repeat top left;
+            z-index:1;
+            cursor:pointer;
+        }
+        a.activator{
+            width:153px;
+            height:150px;
+                         z-index:1;
+            cursor:pointer;
+        }
+        /* Style for overlay and box */
+        .overlay{
+            background:transparent url(../images/overlay.png) repeat top left;
+            position:fixed;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right:0px;
+             z-index:1000;
+        }
+        .box{
+	position:fixed;
+	width:914px;
+	height:428px;
+	top:-680px;
+	left:18%;
+	right:30%;
+	color:#7F7F7F;
+	padding:20px;
+	z-index:1200;
+
+        }
+  
+        a.boxclose{
+		position:absolute;
+            width:40px;
+            height:40px;
+            background:transparent url(../images/cancel.png) repeat top left;
+            margin-top:-18px;
+            margin-left:700px;
+            cursor:pointer;
+			z-index:2000;
+        }

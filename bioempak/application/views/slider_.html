@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="css/waterwheel-carousel.css" />
+
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
+
+<script type="text/javascript">
+      $(document).ready(function () {
+        $("#waterwheel-carousel-default").waterwheelCarousel();
+        
+        $("#waterwheel-carousel-higharch").waterwheelCarousel({
+            startingWaveSeparation: -90,
+            waveSeparationFactor: .7,
+            centerOffset: 10,
+            startingItemSeparation: 120,
+            itemSeparationFactor: .9,
+            itemDecreaseFactor: .75
+        });
+        
+        $("#waterwheel-carousel-horizon").waterwheelCarousel({
+            startingWaveSeparation: 0,
+            centerOffset: 30,
+            startingItemSeparation: 150,
+            itemSeparationFactor: .7,
+            itemDecreaseFactor: .75,
+            opacityDecreaseFactor: 1,
+            autoPlay: 1500
+        });
+        
+        $("#waterwheel-carousel-flat").waterwheelCarousel({
+            itemSeparationFactor: 1,
+            itemDecreaseFactor: 1,
+            waveSeparationFactor: 1,
+            startingWaveSeparation: 0,
+            startingItemSeparation: 280,
+            centerOffset: 10,
+            opacityDecreaseFactor: .3,
+            autoPlay: 3000,
+            edgeReaction: 'reverse'
+        });
+        
+        $("#waterwheel-carousel-vertical").waterwheelCarousel({
+            orientation: 'vertical',
+            startingItemSeparation: 100,
+            startingWaveSeparation: 40,
+            autoPlay: 2000
+        });
+
+      });
+    </script>
+</head>
+
+<body>
+
+<div id="waterwheel-carousel-default">
+      <div class="carousel-controls">
+      	<div class="carousel-prev"><a href="#">&lt; previous</a></div>
+      	<div class="carousel-next"><a href="#">&gt; next</a></div>
+      </div>
+      <div class="carousel-images">
+        <img src="img/img_cliente1.jpg" width="100;" height="100;" alt="Test Image 1" />
+        <img src="img/img_cliente1.jpg" width="100;" height="100;" alt="Test Image 1" />
+        <img src="img/img_cliente1.jpg" width="100;" height="100;" alt="Test Image 1" />
+        <img src="img/img_cliente1.jpg" width="100;" height="100;" alt="Test Image 1" />
+        <img src="img/img_cliente1.jpg" width="100;" height="100;" alt="Test Image 1" />
+        <img src="img/img_cliente1.jpg" width="100;" height="100;" alt="Test Image 1" />
+        <img src="img/img_cliente1.jpg" width="100;" height="100;" alt="Test Image 1" />
+        <img src="img/img_cliente1.jpg" width="100;" height="100;" alt="Test Image 1" />
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>Erika Mari&Atilde;&plusmn;o Rubiano</span>Buenos D&iacute;as! 
+<span class='admin'>Carlos Cano</span>Buenos dias Erika, mi nombre es Carlos Cano , en que puedo ayudarla 
+<span class='usuario'>Erika Mari&Atilde;&plusmn;o Rubiano</span>Carlos c&oacute;mo estas? 
+<span class='usuario'>Erika Mari&Atilde;&plusmn;o Rubiano</span>Quer&iacute;a consultarte acerca de una solicitud de pr&eacute;stamo que necesito hacer 
+<span class='admin'>Carlos Cano</span>Con mucho gusto 
+<span class='usuario'>Erika Mari&Atilde;&plusmn;o Rubiano</span>Necesito 2 millones de pesos en pr&eacute;stamo y quer&iacute;a conocer si tengo el cupo o si en dado caso debiera cancelar alguna de las deudas peque&ntilde;as que tengo. 
+<span class='admin'>Carlos Cano</span>Eri ka por favor me recurda su codigo
+<span class='usuario'>Erika Mari&Atilde;&plusmn;o Rubiano</span>19727 
+<span class='usuario'>Erika Mari&Atilde;&plusmn;o Rubiano</span>19727
+<span class='usuario'>Erika Mari&Atilde;&plusmn;o Rubiano</span>19727
+<span class='sistema'>El usuario abandono la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

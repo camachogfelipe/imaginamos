@@ -1,0 +1,6 @@
+<span class='sistema'>Bienvenido al servicio de asesor&iacute;a en l&iacute;nea de FEVAL. En un momento ser&aacute; atendido por un Asesor<span>
+<span class='usuario'>JAIME</span>buenas tardes,  
+<span class='usuario'>JAIME</span>si tengo un credito en un banco, esto afecta mi solicitud de credito para vivienda o es independiente? 
+<span class='admin'>Carlos Cano</span>Buenas tardes Jaime , mi nombre es Carlos Cano,el credito que informa ,los descuentos son por nomina 
+<span class='sistema'>El administrador termino la conversaci&oacute;n.<span>
+<span class='sistema'>El chat ha finalizado.<span>

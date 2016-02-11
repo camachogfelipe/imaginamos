@@ -1,0 +1,1 @@
+[18-Jan-2013 11:16:59 America/Bogota] PHP Fatal error:  Cannot redeclare class Database in /home/phemixc/public_html/mbabreton/cms/core/class/db.class.php on line 16

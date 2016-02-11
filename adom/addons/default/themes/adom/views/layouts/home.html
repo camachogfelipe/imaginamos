@@ -1,0 +1,92 @@
+{{ theme:partial name="header" }}
+<div class="content_main_slider content_940">
+    <div class="dest_slider" id="etiqueta">
+     <script id="etiqueta-template" type="text/x-handlebars-template">
+	   {{ noparse }}
+	   {{#each etiqueta}}
+		 {{#if eimage}}
+    	<img src="{{ url:base }}uploads/default/files/{{eimage}}" height="155" width="155" alt=""/>
+			{{/if}}
+	   {{/each}}
+	   {{ /noparse }}
+     </script>
+   
+      <!--<img src="{{ theme:image_url file='dest_lider-2.png'}}" height="155" width="155" alt="">
+      <img src="{{ theme:image_url file='dest_lider-3.png'}}" height="155" width="155" alt="">
+      <img src="{{ theme:image_url file='dest_lider-4.png'}}" height="155" width="155" alt="">
+      <img src="{{ theme:image_url file='dest_lider-5.png'}}" height="155" width="155" alt="">-->
+    </div>
+    <div class="slider" id="banner">
+        <script id="banner-template" type="text/x-handlebars-template">
+            <ul>
+                {{ noparse }}
+                {{#each banner}}
+                {{#if is_live}}
+                <li>
+                    <img src="{{ /noparse }}{{ url:base }}uploads/default/files/{{ noparse }}{{image}}" height="356" width="926" />
+                    <div class="slide_caption">
+                        <div class="left">
+                            <h3 class="bold">{{name}}</h3>
+                            <p>
+                                {{description}}
+                            </p>
+                        </div>
+                        {{#if is_url}}
+                        <a class="btn_masinfo right bold" target="_blank" href="{{url}}">Más información</a>
+                        {{/if}}
+                    </div>
+                </li>
+                {{/if}}
+                {{/each}}
+                {{ /noparse }}
+            </ul>
+            </script>
+        </div>
+    </div>
+
+    <div class="content" style="margin-top:15px;">
+        {{ theme:partial name="menu" }}
+        <div class="content_940 content_home">
+            <div class="linea_home">
+                <h4 class="title_dest bold">Destacados</h4>
+            </div>
+            <div id="highlights">
+                <script id="highlights-template" type="text/x-handlebars-template">
+                    <div class="content_dest clearfix">
+                        {{ noparse }}
+                        {{#each highlights}}
+                        {{#if is_live}}
+                        <a href="{{url}}" class="item_dest1 left">
+                            <h3 class="bold">{{title}}</h3>
+                            <div class="contenido_dest">
+                                <div class="dest_wrapper clearfix">
+                                    <div class="img_dest left">
+                                        <img src="{{ /noparse }}{{ url:base }}uploads/default/files/{{ noparse }}{{image}}" width="215" height="215" />
+                                        <div class="over_dest"></div>
+                                    </div>
+                                    <div class="texto_dest right">
+                                        <h4 class="bold">{{title}}</h4>
+                                        <p>
+                                            {{description}}
+                                        </p>
+                                        <div class="masinfo_dest" >Más información</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        {{/if}}
+                        {{/each}}
+                        {{ /noparse }}
+                    </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+        {{ theme:partial name="footer" }}
+        {{ theme:js file="home.js" }}
+    </body>
+</html>
+
+
+
+

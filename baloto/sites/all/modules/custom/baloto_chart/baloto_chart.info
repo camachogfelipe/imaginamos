@@ -1,0 +1,5 @@
+name = Grafico de barras de baloto (chart)
+description = Graficas de baloto
+core = 7.x
+package = Baloto
+dependencies[] = chart

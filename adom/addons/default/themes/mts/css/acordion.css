@@ -1,0 +1,28 @@
+
+li { list-style-type: none; }
+
+.acordion a.head {
+	cursor:pointer;
+	display:block;
+}
+.acordion li {
+	list-style:none outside none; display:inline;
+}
+.acordion li ul{
+	float: left;
+	border-bottom: 8px solid #ededed;
+}
+.acordion li li a {
+	color:#000000;
+	display:block;
+	text-indent:10px;
+	text-decoration: none;
+}
+.acordion li li a:hover {
+	background-color:#FFFF99;
+	color:#FF0000;
+}
+.dobleLine{
+	line-height: 14px !important;
+	padding-top: 3px;
+}
